@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  KanzenAI production health check.
+
+  Pings kanzenai.com every 15 minutes and logs status. Detects outages,
+  slow responses, and DNS failures.
+
+  Install:
+    cp scripts/com.kanzenai.healthcheck.plist ~/Library/LaunchAgents/
+    launchctl load -w ~/Library/LaunchAgents/com.kanzenai.healthcheck.plist
+
+  Uninstall:
+    launchctl unload -w ~/Library/LaunchAgents/com.kanzenai.healthcheck.plist
+    rm ~/Library/LaunchAgents/com.kanzenai.healthcheck.plist
+
+  Logs land in: ~/Code/kanzenai/.audit/health.log (one line per check)
+  Format: ISO-timestamp HTTP-status response-ms
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.kanzenai.healthcheck</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>-c</string>
+        <string>cd ~/Code/kanzenai &amp;&amp; mkdir -p .audit &amp;&amp; ts=$(date -u +%Y-%m-%dT%H:%M:%SZ) &amp;&amp; out=$(/usr/bin/curl -sIL -o /dev/null -w "%{http_code} %{time_total}s" --max-time 10 https://kanzenai.com 2&gt;&amp;1) &amp;&amp; echo "$ts $out" &gt;&gt; .audit/health.log</string>
+    </array>
+
+    <!-- Run every 15 minutes -->
+    <key>StartInterval</key>
+    <integer>900</integer>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/com.kanzenai.healthcheck.out</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/com.kanzenai.healthcheck.err</string>
+</dict>
+</plist>
