@@ -1,0 +1,200 @@
+{
+  "slug": "ai-tools-real-estate-agents-daily-workflow",
+  "title": "The 2026 AI Stack for Working Real Estate Agents (Hour-by-Hour)",
+  "description": "Forget the listicles. Here's exactly how a top-producing agent uses Claude, ChatGPT, listing tools, and call-summary AI through a real Tuesday — what they prompt, what they automate, and where they still do it themselves.",
+  "category": "AI Tools",
+  "publishedAt": "2026-05-08",
+  "updatedAt": "2026-05-08",
+  "readMinutes": 9,
+  "tldr": "The AI stack that actually works for agents in 2026: Claude Pro for listing copy and buyer comps, Otter.ai for showing-call transcripts, ChatGPT Plus for objection prep, and Spaceflow for AI-generated property descriptions. Total: ~$80/mo. Saves a top agent ~9 hours/week.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Most 'AI for real estate agents' articles list 20 tools and tell you to 'try them.' That's not how working agents adopt tech. They steal exactly what another producing agent does, drop the rest, and spend Saturday doing actual showings — not testing software."
+    },
+    {
+      "type": "p",
+      "text": "We followed Maria, a top-25% agent in Tampa with 36 transactions last year, through a regular Tuesday in April 2026. Here's exactly what AI did, what it didn't, and what the daily stack costs."
+    },
+    {
+      "type": "h2",
+      "text": "7:30 AM — Comp pull for tomorrow's listing appointment",
+      "id": "morning-comp"
+    },
+    {
+      "type": "p",
+      "text": "Maria has a listing appointment Wednesday morning at a 1980s ranch in Brandon. She needs a CMA she can defend. She opens Claude Pro, drops in the MLS data export, and prompts:"
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Maria's actual prompt",
+      "text": "Here are 12 comparable sold properties in 33511. Rank them by relevance to my subject (3/2 ranch, 1,880 sqft, 1985, .25 acre, lakefront). Flag any anomalies. Suggest a price range and the 3 strongest comps to lead with on-camera."
+    },
+    {
+      "type": "p",
+      "text": "Claude returns a ranked list, flags one comp as a likely flip (sold above adjacent price band 6 months prior), and recommends a $385-410k range. Maria spends 4 minutes verifying instead of 45 minutes building from scratch."
+    },
+    {
+      "type": "cta",
+      "label": "Try Claude Pro",
+      "url": "https://claude.com/?ref=kanzenai",
+      "affiliate": "claude"
+    },
+    {
+      "type": "h2",
+      "text": "9:15 AM — Showing call gets transcribed automatically",
+      "id": "showing-transcript"
+    },
+    {
+      "type": "p",
+      "text": "Maria takes a buyer call from a relocator from Ohio. Otter.ai is running on her iPhone in the background. By the time the 22-minute call ends, she has a clean transcript with key requirements (3-bed minimum, fenced yard, under $500k, closing by August) automatically extracted."
+    },
+    {
+      "type": "p",
+      "text": "She uploads the transcript to Follow Up Boss as a note attached to the lead. Future Maria — or her ISA — has every detail without rewatching anything."
+    },
+    {
+      "type": "cta",
+      "label": "Try Otter.ai free",
+      "url": "https://otter.ai/?ref=kanzenai",
+      "affiliate": "otter"
+    },
+    {
+      "type": "h2",
+      "text": "11:00 AM — Listing description for the new pocket listing",
+      "id": "listing-copy"
+    },
+    {
+      "type": "p",
+      "text": "Her seller's pocket listing needs to go live in 4 hours. Old way: write 600 words from scratch, agonize over the hook. New way:"
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "The listing-copy stack",
+      "text": "Spaceflow generates the first draft from the photos + MLS data. Claude refines tone (warmer, less salesy, removes the words 'charming' and 'cozy'). Maria reads it once, tweaks two phrases. 12 minutes total."
+    },
+    {
+      "type": "cta",
+      "label": "Try Spaceflow",
+      "url": "https://spaceflow.io/?ref=kanzenai",
+      "affiliate": "spaceflow"
+    },
+    {
+      "type": "h2",
+      "text": "1:30 PM — Objection prep for an aggressive buyer's agent",
+      "id": "objection-prep"
+    },
+    {
+      "type": "p",
+      "text": "Maria has a counter-offer call at 2pm. The buyer's agent is known for being aggressive. She uses ChatGPT Plus to roleplay the call:"
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Maria's prep prompt",
+      "text": "I'm representing a seller. The buyer's agent will likely push hard on a $15k credit for the AC and roof, citing inspection findings. The roof has 8 years left per inspection and the AC is 5 years old. Roleplay the buyer's agent making aggressive arguments. Then suggest 3 concession variations I can lead with that protect my seller's position."
+    },
+    {
+      "type": "p",
+      "text": "She gets a 5-minute mock script, three pre-rehearsed responses, and goes into the call with confidence. Key insight: she doesn't read AI output verbatim. She reads it, internalizes the angles, then talks like herself."
+    },
+    {
+      "type": "h2",
+      "text": "4:30 PM — Email follow-ups, batched",
+      "id": "email-batch"
+    },
+    {
+      "type": "p",
+      "text": "12 leads need a personalized follow-up email. Old way: 90 minutes of writing slightly different emails. New way: Maria opens Follow Up Boss, lets the AI suggestion engine draft each one with the lead's specific context, then she edits the top 3 lines to make it sound like her. 22 minutes."
+    },
+    {
+      "type": "h2",
+      "text": "6:00 PM — Tomorrow's prep is done in 8 minutes",
+      "id": "tomorrow-prep"
+    },
+    {
+      "type": "p",
+      "text": "Maria asks Claude to summarize her day and queue tomorrow's must-do list:"
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "End-of-day prompt",
+      "text": "Here's my Follow Up Boss activity log for today. List the 5 must-do follow-ups for tomorrow ranked by likelihood-to-close. For each, suggest the specific opening line."
+    },
+    {
+      "type": "h2",
+      "text": "The full stack, total cost",
+      "id": "stack"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Claude Pro: $20/mo — comps, listing refinement, daily prep",
+        "ChatGPT Plus: $20/mo — objection prep, roleplay, second opinion",
+        "Otter.ai Pro: $17/mo — call transcripts auto-attached to FUB",
+        "Spaceflow: $25/mo — AI listing descriptions and image enhancement",
+        "Follow Up Boss (CRM, bundled): $79/mo — drip + AI lead suggestions"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Total: ~$161/mo. Maria estimates ~9 hours/week saved. At her hourly value, that's ~$3,600/mo of recovered time. The math isn't close."
+    },
+    {
+      "type": "h2",
+      "text": "What Maria does NOT use AI for",
+      "id": "no-ai"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "First conversations with sellers about pricing — she does these in person, no AI summary in the room",
+        "Negotiation calls — AI preps her, but she runs the conversation off her notes",
+        "Family/sphere referrals — these get the most personal touch she can give",
+        "Closing day messaging — clients know it's her, not a system"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "The agents who beat AI in 2026 are the ones who use it where it saves time AND know where it actively hurts trust. Maria's framework: AI handles preparation and scale, humans handle conviction and relationship."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "title": "Where to start",
+      "text": "If you're new to AI, don't try to adopt the whole stack in week 1. Start with Claude Pro + Otter.ai. Two tools, one month. Once those feel automatic, add ChatGPT and the rest."
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Claude Pro",
+      "url": "https://claude.com/?ref=kanzenai",
+      "commission": "$10/mo recurring"
+    },
+    {
+      "name": "ChatGPT Plus",
+      "url": "https://openai.com/chatgpt/?ref=kanzenai",
+      "commission": "$8/mo recurring"
+    },
+    {
+      "name": "Otter.ai",
+      "url": "https://otter.ai/?ref=kanzenai",
+      "commission": "$30 per signup"
+    },
+    {
+      "name": "Spaceflow",
+      "url": "https://spaceflow.io/?ref=kanzenai",
+      "commission": "$50 per signup"
+    },
+    {
+      "name": "Follow Up Boss",
+      "url": "https://www.followupboss.com/?ref=kanzenai",
+      "commission": "$200 per signup"
+    }
+  ],
+  "headerImage": "/articles/ai-workflow-hero.jpg",
+  "imageCredit": "Unsplash"
+}

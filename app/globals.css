@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background: #f0eee9;
+  color: #0a0a0a;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.display {
+  font-family: 'Playfair Display', ui-serif, Georgia, serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 0.98;
+}
+
+.prose {
+  font-family: 'Source Serif 4', ui-serif, Georgia, serif;
+  font-size: 18px;
+}
+.prose a { color: #0a0a0a; text-decoration: underline; text-underline-offset: 3px; font-weight: 600; }
+.prose a:hover { color: #525252; }
+.prose h2 { scroll-margin-top: 80px; font-family: 'Playfair Display', ui-serif, Georgia, serif; font-weight: 800; }
+
+.cta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  background: #0a0a0a;
+  color: #f0eee9 !important;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none !important;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  transition: background 0.15s;
+}
+.cta-link:hover { background: #262626; }

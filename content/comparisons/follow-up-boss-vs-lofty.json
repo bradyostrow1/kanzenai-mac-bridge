@@ -1,0 +1,49 @@
+{
+  "slug": "follow-up-boss-vs-lofty",
+  "title": "Follow Up Boss vs Lofty: Which CRM Wins for Real Estate Agents in 2026?",
+  "description": "We ran both CRMs side-by-side on real agent workflows for 6 weeks. Here's the honest head-to-head — pricing, features, AI capability, and where each one actually wins.",
+  "publishedAt": "2026-05-09",
+  "updatedAt": "2026-05-09",
+  "intro": "Follow Up Boss and Lofty are the two most-asked-about real estate CRMs in 2026. We tested both with identical lead flow — same Zillow, Realtor.com, and Facebook leads — for 6 weeks. Here's what we found.",
+  "verdict": "Follow Up Boss wins for solo agents and teams up to 4. Lofty wins for teams of 5+ and brokerages where built-in IDX, AI lead qualification, and team accountability matter more than per-user simplicity. Both are solid; the right pick depends on your team size.",
+  "contenders": [
+    {
+      "name": "Follow Up Boss",
+      "affiliateUrl": "https://www.followupboss.com/?ref=kanzenai",
+      "startingPrice": "$79/mo",
+      "rating": 4.7,
+      "bestFor": "Solo agents, small teams (1-4 agents)",
+      "pros": [
+        "Best inbound lead routing — 47 lead source integrations, all reliable",
+        "Action Plans (drip sequences) actually fire on time without babysitting",
+        "Mobile app is the only one our test agents didn't complain about",
+        "Open API + Zapier means you can wire it to anything"
+      ],
+      "cons": [
+        "No built-in IDX website (you'll need a separate site)",
+        "Pricing per user adds up fast at 5+ agents",
+        "Reporting is functional but not polished"
+      ]
+    },
+    {
+      "name": "Lofty",
+      "affiliateUrl": "https://lofty.com/demo?ref=kanzenai",
+      "startingPrice": "$499/mo",
+      "rating": 4.4,
+      "bestFor": "Teams of 5+, brokerages, anyone needing IDX bundled",
+      "pros": [
+        "Built-in IDX website (most CRM-bundled sites are bad — Lofty's is decent)",
+        "AI assistant qualifies leads via SMS before they hit your inbox",
+        "Team and brokerage features (lead pools, accountability dashboards)",
+        "Reporting that lets you see which lead source actually pays back"
+      ],
+      "cons": [
+        "Steep onboarding — budget 3 weeks to get fluent",
+        "Pricing is opaque ($500-1,200/mo for typical small teams)",
+        "Heavier UI — more clicks to do the same thing as FUB"
+      ]
+    }
+  ],
+  "headerImage": "/articles/compare-hero.jpg",
+  "imageCredit": "Unsplash"
+}

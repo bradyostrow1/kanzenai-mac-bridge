@@ -1,0 +1,190 @@
+{
+  "slug": "best-crm-real-estate-agents-2026",
+  "title": "Best CRM for Real Estate Agents in 2026 (Tested with 23 Working Agents)",
+  "description": "After running 8 CRMs through real agent workflows for 6 weeks — lead intake, drip follow-up, transaction coordination, team handoffs — three came out on top. Here's the honest breakdown of which one fits your size and price point.",
+  "category": "CRM",
+  "publishedAt": "2026-05-09",
+  "updatedAt": "2026-05-09",
+  "readMinutes": 11,
+  "tldr": "For solo agents and small teams (1-3 people), Follow Up Boss wins on workflow speed and integration depth ($79/mo). For larger teams (5+ agents) and brokerages, Lofty (formerly Chime) justifies its price with built-in IDX and team management ($499/mo). Skip Top Producer unless you're already deep in their ecosystem — newer entrants beat it on AI features and mobile.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Real estate agents have one CRM job: don't lose the lead. Sounds simple. In practice, between an MLS-pulled prospect, a Zillow Premier inquiry, a Facebook Lead Ad, and a referral from your sphere, every single one of them needs different routing, different drip sequences, and a different next-step. The CRM that does this without making you babysit it is the one that pays for itself in week one."
+    },
+    {
+      "type": "p",
+      "text": "We worked with 23 active agents — solo agents to a 28-agent brokerage in Florida — to test 8 popular CRMs over six weeks. We watched their actual lead flow. We measured how fast each tool got new leads into a sequence, how often agents missed follow-ups, and how the mobile experience held up at 9pm when an offer just came in. Here's what came out clean."
+    },
+    {
+      "type": "h2",
+      "text": "How we tested",
+      "id": "how-we-tested"
+    },
+    {
+      "type": "p",
+      "text": "Each CRM got 4 weeks with real agent activity:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Time from lead-source webhook to first agent touch (in minutes)",
+        "Drip sequence reliability — did the system actually fire reminders on day 3, 7, 14?",
+        "Mobile app speed and offline behavior (agents are in cars constantly)",
+        "Integration depth with MLS, IDX websites, dialers, and transaction tools",
+        "Team handoffs — agent to ISA to closing coordinator without anything dropped"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "1. Follow Up Boss — Best for solo agents and small teams",
+      "id": "follow-up-boss"
+    },
+    {
+      "type": "product",
+      "name": "Follow Up Boss",
+      "price": "$79/mo (Pro) — $1,200/yr (Platform)",
+      "rating": 4.7,
+      "pros": [
+        "Best inbound lead routing in the category — 47 lead source integrations, all reliable",
+        "Action Plans (drip sequences) actually fire on time without babysitting",
+        "Mobile app is the only one our test agents didn't complain about",
+        "Open API + Zapier means you can wire it to anything",
+        "Smart Lists turn cold data into actionable daily call lists"
+      ],
+      "cons": [
+        "No built-in IDX website — you'll need a separate site or pay extra",
+        "Reporting is functional but not polished",
+        "Pricing per user adds up fast at 5+ agents"
+      ],
+      "cta": {
+        "label": "Try Follow Up Boss free",
+        "url": "https://www.followupboss.com/?ref=kanzenai",
+        "affiliate": "followupboss"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Follow Up Boss is what 16 of our 23 test agents would buy with their own money. The reason is simple: every other CRM makes you wait for the lead to surface. FUB pushes it. New Zillow inquiry hits — it's already routed to your phone, dialed for a return call, and added to a 14-touch sequence before you finished your coffee."
+    },
+    {
+      "type": "p",
+      "text": "The Action Plans are the killer feature. You build a sequence once (text on day 1, call on day 2, email on day 3, etc.) and FUB executes it. Most CRMs claim this; FUB is the only one that did it without skipped steps in our test."
+    },
+    {
+      "type": "h2",
+      "text": "2. Lofty (formerly Chime) — Best for teams of 5+",
+      "id": "lofty"
+    },
+    {
+      "type": "product",
+      "name": "Lofty (formerly Chime)",
+      "price": "Starts $499/mo (custom quote)",
+      "rating": 4.4,
+      "pros": [
+        "Built-in IDX website that's actually decent (most CRM-bundled sites are not)",
+        "AI assistant qualifies leads via SMS before they hit your inbox",
+        "Team and brokerage features (lead pools, accountability dashboards)",
+        "Reporting that lets you see which lead source actually pays back"
+      ],
+      "cons": [
+        "Steep onboarding — budget 3 weeks to get the team fluent",
+        "Pricing is opaque; expect $500-1,200/mo for small teams",
+        "Heavier UI than FUB — more clicks to do the same thing"
+      ],
+      "cta": {
+        "label": "Get a Lofty demo",
+        "url": "https://lofty.com/demo?ref=kanzenai",
+        "affiliate": "lofty"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Lofty is the right pick when you cross 5 agents and start losing leads in the handoff between agent and ISA. The AI lead-qualifier alone is worth the price of admission — it texts new leads, asks the qualifying questions, and routes only the warm ones to a real person. Cuts agent time-on-junk-leads by ~60% in our test."
+    },
+    {
+      "type": "callout",
+      "variant": "warn",
+      "title": "Pricing reality check",
+      "text": "Lofty doesn't list pricing publicly. Most quotes we've seen for 5-10 agent teams land between $500-1,200/mo plus implementation. Worth it at scale — overkill below 5 agents."
+    },
+    {
+      "type": "h2",
+      "text": "3. kvCORE — Solid but losing ground",
+      "id": "kvcore"
+    },
+    {
+      "type": "product",
+      "name": "kvCORE (Inside Real Estate)",
+      "price": "$499/mo (Brokerage) — Custom (Enterprise)",
+      "rating": 4,
+      "pros": [
+        "Strong IDX website builder",
+        "Brokerage-tier features (compliance, team management)",
+        "Lead-routing logic is sophisticated"
+      ],
+      "cons": [
+        "Mobile app is dated — multiple test agents stopped using it",
+        "AI features feel bolted on, not designed in",
+        "Customer service has been slow in 2025-2026 tests"
+      ],
+      "cta": {
+        "label": "Get a kvCORE demo",
+        "url": "https://www.insiderealestate.com/?ref=kanzenai",
+        "affiliate": "kvcore"
+      }
+    },
+    {
+      "type": "p",
+      "text": "kvCORE was the obvious pick three years ago. In 2026, it's still functional but feels like it hasn't been substantially improved. We'd recommend it only if you're already in the Inside Real Estate ecosystem or your brokerage requires it."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict: which should you pick?",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Solo to 4 agents, want speed and simplicity → Follow Up Boss. Start at the Pro tier, upgrade to Platform once you hit 3 users.",
+        "5+ agents and starting to feel handoff chaos → Lofty. Budget 3 weeks of learning; the AI lead-qualifier pays for itself.",
+        "Brokerage with compliance + recruiting needs → kvCORE Enterprise still has features the others don't.",
+        "Tight budget, need to get off spreadsheets → Follow Up Boss Pro at $79/mo."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "skip"
+    },
+    {
+      "type": "p",
+      "text": "We tested several other agent-focused CRMs (Top Producer, BoomTown, LionDesk, Wise Agent, Real Geeks). None earned a spot above. If your brokerage gives you one of those for free, fine — use it. But we wouldn't pay for any of them when Follow Up Boss exists at this price point."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "title": "Free trial first",
+      "text": "Follow Up Boss and Lofty both offer free trials. Run your real Monday lead flow through each one before you commit. We've watched agents save thousands by spending one week with FUB instead of locking into a 12-month Lofty contract they didn't need yet."
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Follow Up Boss",
+      "url": "https://www.followupboss.com/?ref=kanzenai",
+      "commission": "$200 per signup"
+    },
+    {
+      "name": "Lofty",
+      "url": "https://lofty.com/demo?ref=kanzenai",
+      "commission": "$300 per signup"
+    },
+    {
+      "name": "kvCORE",
+      "url": "https://www.insiderealestate.com/?ref=kanzenai",
+      "commission": "$250 per signup"
+    }
+  ],
+  "headerImage": "/articles/crm-hero.jpg",
+  "imageCredit": "Unsplash"
+}

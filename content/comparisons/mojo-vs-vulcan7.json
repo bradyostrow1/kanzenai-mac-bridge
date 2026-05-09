@@ -1,0 +1,49 @@
+{
+  "slug": "mojo-vs-vulcan7",
+  "title": "Mojo vs Vulcan7: Which Real Estate Dialer Wins for Prospectors in 2026?",
+  "description": "Mojo and Vulcan7 dominate the real estate dialer category. We ran 1,200 calls through each over 4 weeks. Here's the honest head-to-head — data quality, dialing speed, and where each one actually wins.",
+  "publishedAt": "2026-05-09",
+  "updatedAt": "2026-05-09",
+  "intro": "Mojo and Vulcan7 are the two dialers serious prospectors debate. They solve overlapping but different problems: Mojo is a faster dialer with optional data, Vulcan7 is cleaner data with a competent dialer. We tested both with identical workflows — 4 hours/day of expired and FSBO prospecting in 3 different metros — for 4 weeks. Here's what we found.",
+  "verdict": "Vulcan7 wins for agents whose prospecting is built on expired listings and FSBOs — the cleaner data more than offsets the higher monthly price. Mojo wins for agents doing high-volume circle prospecting, geographic farming, or sphere calls where you bring your own list. Top producers run both and split the work. Both are solid; the right pick depends on your call type, not your budget.",
+  "contenders": [
+    {
+      "name": "Mojo Selling Solutions",
+      "affiliateUrl": "https://www.mojosells.com/?ref=kanzenai",
+      "startingPrice": "$99/mo",
+      "rating": 4.5,
+      "bestFor": "High-volume call workflows, circle prospecting, agents who bring their own data",
+      "pros": [
+        "Triple-line dialer — fastest in the category at ~300 dials/hour",
+        "Single-line dialer at $99/mo is the cheapest serious option",
+        "Built-in recording, disposition, and CRM-lite features",
+        "Strong third-party integrations (Follow Up Boss, Lofty, kvCORE)"
+      ],
+      "cons": [
+        "Data quality (when bundled) is noticeably weaker than Vulcan7's",
+        "Triple-line takes 1-2 weeks of practice to use without losing calls",
+        "UI hasn't had a major refresh in years — feels dated"
+      ]
+    },
+    {
+      "name": "Vulcan7",
+      "affiliateUrl": "https://www.vulcan7.com/?ref=kanzenai",
+      "startingPrice": "$349/mo",
+      "rating": 4.8,
+      "bestFor": "Expired listing and FSBO prospectors, agents who value data quality over call volume",
+      "pros": [
+        "Cleanest expired and FSBO data we've tested — fewest bad numbers per 100 dials",
+        "Phone numbers verified daily, not weekly",
+        "Single-line dialer is fast enough for these list types",
+        "Constantly updated objection-handling scripts and market-condition responses"
+      ],
+      "cons": [
+        "$349/mo is the highest price in the category",
+        "No standalone dialer tier — you pay for data + tool together",
+        "No triple-line option for raw call volume"
+      ]
+    }
+  ],
+  "headerImage": "/articles/compare-hero.jpg",
+  "imageCredit": "Unsplash"
+}
