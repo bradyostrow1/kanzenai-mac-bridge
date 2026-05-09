@@ -42,16 +42,101 @@ function wordCount(json: any): number {
   return count;
 }
 
-async function lastAuditRun(): Promise<{ when: string | null; size: number; latest: string | null }> {
-  if (!existsSync(AUDIT_DIR)) return { when: null, size: 0, latest: null };
+async function lastAuditRun(): Promise<{
+  when: string | null;
+  size: number;
+  latest: string | null;
+  errors: number;
+  warnings: number;
+}> {
+  if (!existsSync(AUDIT_DIR)) return { when: null, size: 0, latest: null, errors: 0, warnings: 0 };
   const files = (await readdir(AUDIT_DIR))
     .filter((f) => f.startsWith("audit-") && f.endsWith(".log"))
     .sort()
     .reverse();
-  if (files.length === 0) return { when: null, size: 0, latest: null };
+  if (files.length === 0) return { when: null, size: 0, latest: null, errors: 0, warnings: 0 };
   const latest = files[0];
-  const stats = await stat(join(AUDIT_DIR, latest));
-  return { when: stats.mtime.toISOString(), size: stats.size, latest };
+  const fpath = join(AUDIT_DIR, latest);
+  const stats = await stat(fpath);
+  const text = await readFile(fpath, "utf8");
+  // Match either "  Summary: X errors, Y warnings" or strip-ANSI then match
+  const stripped = text.replace(/\x1b\[[0-9;]*m/g, "");
+  const m = stripped.match(/Summary:\s*(\d+)\s+errors?,\s*(\d+)\s+warnings?/i);
+  return {
+    when: stats.mtime.toISOString(),
+    size: stats.size,
+    latest,
+    errors: m ? parseInt(m[1], 10) : 0,
+    warnings: m ? parseInt(m[2], 10) : 0,
+  };
+}
+
+async function healthStats(): Promise<{
+  installed: boolean;
+  totalChecks: number;
+  uptime: number;
+  avgMs: number;
+  lastCheck: string | null;
+  lastStatus: number | null;
+}> {
+  const path = join(AUDIT_DIR, "health.log");
+  if (!existsSync(path)) {
+    return { installed: false, totalChecks: 0, uptime: 100, avgMs: 0, lastCheck: null, lastStatus: null };
+  }
+  const text = await readFile(path, "utf8");
+  const lines = text.trim().split("\n").filter(Boolean);
+  if (lines.length === 0) {
+    return { installed: true, totalChecks: 0, uptime: 100, avgMs: 0, lastCheck: null, lastStatus: null };
+  }
+  let okCount = 0;
+  let totalMs = 0;
+  let msCount = 0;
+  let lastStatus: number | null = null;
+  let lastCheck: string | null = null;
+  // Format: "2026-05-09T17:00:00Z 200 0.245s"
+  for (const line of lines) {
+    const parts = line.trim().split(/\s+/);
+    if (parts.length < 2) continue;
+    const ts = parts[0];
+    const code = parseInt(parts[1], 10);
+    const ms = parts[2] ? parseFloat(parts[2]) * 1000 : NaN;
+    if (!isNaN(code)) {
+      if (code >= 200 && code < 400) okCount++;
+      lastStatus = code;
+    }
+    if (!isNaN(ms)) {
+      totalMs += ms;
+      msCount++;
+    }
+    lastCheck = ts;
+  }
+  return {
+    installed: true,
+    totalChecks: lines.length,
+    uptime: Math.round((okCount / lines.length) * 1000) / 10,
+    avgMs: msCount > 0 ? Math.round(totalMs / msCount) : 0,
+    lastCheck,
+    lastStatus,
+  };
+}
+
+async function articleWriterStats(): Promise<{ lastWritten: string | null; lastSlug: string | null; totalCount: number }> {
+  const articles = await loadJsonDir(ARTICLES_DIR);
+  let latest: { slug: string; mtime: Date } | null = null;
+  if (existsSync(ARTICLES_DIR)) {
+    const files = (await readdir(ARTICLES_DIR)).filter((f) => f.endsWith(".json"));
+    for (const f of files) {
+      const s = await stat(join(ARTICLES_DIR, f));
+      if (!latest || s.mtime > latest.mtime) {
+        latest = { slug: f.replace(/\.json$/, ""), mtime: s.mtime };
+      }
+    }
+  }
+  return {
+    lastWritten: latest?.mtime.toISOString() ?? null,
+    lastSlug: latest?.slug ?? null,
+    totalCount: articles.length,
+  };
 }
 
 async function pingProduction(): Promise<{ ok: boolean; ms: number; status: number }> {
@@ -68,11 +153,13 @@ export async function GET() {
   const guard = devGuard();
   if (guard) return guard;
 
-  const [articles, comparisons, audit, prod] = await Promise.all([
+  const [articles, comparisons, audit, prod, health, writer] = await Promise.all([
     loadJsonDir(ARTICLES_DIR),
     loadJsonDir(COMPARISONS_DIR),
     lastAuditRun(),
     pingProduction(),
+    healthStats(),
+    articleWriterStats(),
   ]);
 
   const totalWords = articles.reduce((sum, a) => sum + wordCount(a.json), 0);
@@ -112,6 +199,8 @@ export async function GET() {
       placeholderLinks,
     },
     audit,
+    health,
+    writer,
     production: {
       url: PROD_URL,
       ...prod,

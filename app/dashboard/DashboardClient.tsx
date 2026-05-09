@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
-import { Activity, FileText, GitCompare, AlertTriangle, RotateCw, Bot, ExternalLink, Play, Settings2 } from "lucide-react";
+import { Activity, FileText, GitCompare, AlertTriangle, RotateCw, Bot, ExternalLink, Play, Settings2, Shield, Edit3, Heart, MessageSquare, ArrowDown } from "lucide-react";
 import { ChatPanel } from "./ChatPanel";
 
 type Stats = {
@@ -22,7 +22,9 @@ type Stats = {
     list: Array<{ slug: string; title: string; publishedAt: string }>;
   };
   affiliate: { placeholderLinks: number };
-  audit: { when: string | null; size: number; latest: string | null };
+  audit: { when: string | null; size: number; latest: string | null; errors: number; warnings: number };
+  health: { installed: boolean; totalChecks: number; uptime: number; avgMs: number; lastCheck: string | null; lastStatus: number | null };
+  writer: { lastWritten: string | null; lastSlug: string | null; totalCount: number };
   production: { url: string; ok: boolean; ms: number; status: number };
 };
 
@@ -119,6 +121,9 @@ export function DashboardClient() {
           />
         </div>
 
+        {/* BOT SYSTEM */}
+        <BotSystemPanel stats={stats} />
+
         {/* MAIN: chat (left) + side rail (right) */}
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-6 mb-6">
           {/* CHAT PANEL */}
@@ -128,22 +133,6 @@ export function DashboardClient() {
 
           {/* SIDE RAIL */}
           <aside className="space-y-3">
-            <Panel
-              icon={<Bot className="w-3.5 h-3.5" />}
-              title="Bots"
-              right={<span className="text-[#525252]">launchd</span>}
-            >
-              <BotRow
-                name="Audit"
-                schedule="daily 7 AM"
-                active={!!stats?.audit.when}
-                detail={stats?.audit.when ? `last: ${timeAgo(stats.audit.when)}` : "not installed"}
-              />
-              <BotRow name="Article writer" schedule="on-demand" active detail="ready" />
-              <BotRow name="Health check" schedule="every 15m" active={false} detail="not installed" />
-              <BotRow name="Chat orchestrator" schedule="on-demand" active detail="Kanzen ←" />
-            </Panel>
-
             <Panel
               icon={<Play className="w-3.5 h-3.5" />}
               title="Quick actions"
@@ -241,6 +230,226 @@ launchctl load -w \\
       </main>
     </div>
   );
+}
+
+function BotSystemPanel({ stats }: { stats: Stats | null }) {
+  const [auditRunning, setAuditRunning] = useState(false);
+  const [auditFlash, setAuditFlash] = useState<string | null>(null);
+
+  async function runAuditNow() {
+    setAuditRunning(true);
+    setAuditFlash(null);
+    try {
+      const r = await fetch("/api/dashboard/audit", { method: "POST" });
+      const data = await r.json();
+      const m = (data.output ?? "").match(/Summary:\s*(\d+)\s+errors?,\s*(\d+)\s+warnings?/i);
+      setAuditFlash(m ? `${m[1]} errors, ${m[2]} warnings` : "audit complete");
+    } catch (e: any) {
+      setAuditFlash(`failed: ${e.message}`);
+    } finally {
+      setAuditRunning(false);
+      setTimeout(() => setAuditFlash(null), 8000);
+    }
+  }
+
+  const audit = stats?.audit;
+  const health = stats?.health;
+  const writer = stats?.writer;
+
+  return (
+    <section className="border border-[#1f1f1f] bg-[#0d0d0d] mb-6">
+      <div className="px-4 py-2.5 border-b border-[#1f1f1f] flex items-center justify-between">
+        <span className="flex items-center gap-1.5 text-[10px] uppercase tracking-[0.18em] text-[#a3a3a3]">
+          <Bot className="w-3.5 h-3.5" />
+          Bot System
+        </span>
+        <span className="text-[10px] uppercase tracking-[0.18em] text-[#525252]">
+          {[audit?.when, writer?.lastWritten, health?.installed].filter(Boolean).length} of 4 active
+        </span>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-[#1f1f1f]">
+        {/* AUDIT BOT */}
+        <BotCard
+          icon={<Shield className="w-4 h-4" />}
+          name="Audit"
+          schedule="daily 7 AM · launchd"
+          active={!!audit?.when}
+          status={audit?.when ? "ready" : "not installed"}
+          metric={
+            audit?.when ? (
+              <div className="flex items-baseline gap-3">
+                <span className={`text-2xl font-semibold tracking-tight ${audit.errors > 0 ? "text-red-300" : audit.warnings > 0 ? "text-amber-300" : "text-emerald-300"}`}>
+                  {audit.errors}
+                </span>
+                <span className="text-[11px] text-[#525252]">errors</span>
+                <span className="text-2xl font-semibold tracking-tight text-amber-300/80">{audit.warnings}</span>
+                <span className="text-[11px] text-[#525252]">warnings</span>
+              </div>
+            ) : (
+              <div className="text-[#525252] text-[12px]">Run once to see findings</div>
+            )
+          }
+          subtitle={audit?.when ? `last run · ${timeAgo(audit.when)}` : "no runs yet"}
+          action={
+            <button
+              onClick={runAuditNow}
+              disabled={auditRunning}
+              className="inline-flex items-center gap-1.5 px-2.5 py-1 border border-[#262626] hover:border-[#525252] disabled:opacity-50 transition text-[11px]"
+            >
+              {auditRunning ? <Loader className="w-3 h-3 animate-spin" /> : <Play className="w-3 h-3" />}
+              {auditRunning ? "running…" : "run now"}
+            </button>
+          }
+          flash={auditFlash}
+        />
+
+        {/* ARTICLE WRITER */}
+        <BotCard
+          icon={<Edit3 className="w-4 h-4" />}
+          name="Article writer"
+          schedule="on-demand · ~$0.15"
+          active
+          status="ready"
+          metric={
+            <div className="flex items-baseline gap-3">
+              <span className="text-2xl font-semibold tracking-tight text-[#f0eee9]">{writer?.totalCount ?? "—"}</span>
+              <span className="text-[11px] text-[#525252]">articles total</span>
+            </div>
+          }
+          subtitle={
+            writer?.lastWritten
+              ? `last · ${timeAgo(writer.lastWritten)} · ${writer.lastSlug?.slice(0, 28) ?? ""}…`
+              : "no articles yet"
+          }
+          action={
+            <a
+              href="#chat"
+              onClick={(e) => {
+                e.preventDefault();
+                document.querySelector("textarea")?.focus();
+              }}
+              className="inline-flex items-center gap-1.5 px-2.5 py-1 border border-[#262626] hover:border-[#525252] transition text-[11px]"
+            >
+              <MessageSquare className="w-3 h-3" />
+              tell Kanzen
+            </a>
+          }
+        />
+
+        {/* HEALTH CHECK */}
+        <BotCard
+          icon={<Heart className="w-4 h-4" />}
+          name="Health check"
+          schedule="every 15m · launchd"
+          active={!!health?.installed && (health?.totalChecks ?? 0) > 0}
+          status={health?.installed ? "ready" : "not installed"}
+          metric={
+            health?.installed && health.totalChecks > 0 ? (
+              <div className="flex items-baseline gap-3">
+                <span className={`text-2xl font-semibold tracking-tight ${health.uptime >= 99 ? "text-emerald-300" : health.uptime >= 95 ? "text-amber-300" : "text-red-300"}`}>
+                  {health.uptime}%
+                </span>
+                <span className="text-[11px] text-[#525252]">uptime</span>
+                <span className="text-[12px] text-[#a3a3a3]">{health.avgMs}ms avg</span>
+              </div>
+            ) : (
+              <div className="text-[#525252] text-[12px]">install plist to start</div>
+            )
+          }
+          subtitle={
+            health?.installed
+              ? `${health.totalChecks} checks · last ${timeAgo(health.lastCheck)}`
+              : "see install panel →"
+          }
+        />
+
+        {/* KANZEN ORCHESTRATOR */}
+        <BotCard
+          icon={<MessageSquare className="w-4 h-4" />}
+          name="Kanzen"
+          schedule="chat-driven · Sonnet 4.5"
+          active
+          status="ready"
+          metric={
+            <div className="flex items-baseline gap-3">
+              <span className="text-2xl font-semibold tracking-tight text-[#f0eee9]">6</span>
+              <span className="text-[11px] text-[#525252]">tools wired</span>
+            </div>
+          }
+          subtitle="orchestrates the other 3 bots"
+          action={
+            <a
+              href="#chat"
+              onClick={(e) => {
+                e.preventDefault();
+                document.querySelector("textarea")?.focus();
+                window.scrollBy({ top: 200, behavior: "smooth" });
+              }}
+              className="inline-flex items-center gap-1.5 px-2.5 py-1 border border-emerald-700 hover:border-emerald-400 text-emerald-300 transition text-[11px]"
+            >
+              <ArrowDown className="w-3 h-3" />
+              chat with Kanzen
+            </a>
+          }
+        />
+      </div>
+    </section>
+  );
+}
+
+function BotCard({
+  icon,
+  name,
+  schedule,
+  active,
+  status,
+  metric,
+  subtitle,
+  action,
+  flash,
+}: {
+  icon: React.ReactNode;
+  name: string;
+  schedule: string;
+  active: boolean;
+  status: string;
+  metric?: React.ReactNode;
+  subtitle?: string;
+  action?: React.ReactNode;
+  flash?: string | null;
+}) {
+  return (
+    <div className="p-4 hover:bg-[#0f0f0f] transition flex flex-col">
+      <div className="flex items-start justify-between mb-3">
+        <div className="flex items-center gap-2">
+          <span className={active ? "text-[#f0eee9]" : "text-[#525252]"}>{icon}</span>
+          <div>
+            <div className="text-[#f0eee9] text-[13px] font-semibold flex items-center gap-1.5">
+              {name}
+              <span className={`w-1.5 h-1.5 rounded-full ${active ? "bg-emerald-400" : "bg-[#525252]"}`} />
+            </div>
+            <div className="text-[10px] text-[#525252] uppercase tracking-wider mt-0.5">{schedule}</div>
+          </div>
+        </div>
+      </div>
+      <div className="flex-1">
+        {metric && <div className="mb-2">{metric}</div>}
+        {subtitle && <div className="text-[11px] text-[#525252]">{subtitle}</div>}
+      </div>
+      {(action || flash) && (
+        <div className="mt-3 flex items-center justify-between gap-2">
+          {action}
+          {flash && (
+            <span className="text-[11px] text-emerald-300 animate-pulse">{flash}</span>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function Loader({ className }: { className?: string }) {
+  return <RotateCw className={className} />;
 }
 
 function StatusPill({ stats }: { stats: Stats | null }) {
