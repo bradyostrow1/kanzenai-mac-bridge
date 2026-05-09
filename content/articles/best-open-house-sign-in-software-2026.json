@@ -1,0 +1,126 @@
+{
+  "slug": "best-open-house-sign-in-software-2026",
+  "title": "Best Open House Sign-In Software for Real Estate Agents 2026",
+  "description": "Open Home Pro offers a usable free tier; Spacio, Curb Hero, Block Party lack pricing transparency. One clear winner for 2026.",
+  "category": "Marketing",
+  "publishedAt": "2026-05-09",
+  "updatedAt": "2026-05-09",
+  "readMinutes": 6,
+  "tldr": "Open Home Pro is the only product we could verify pricing and features for: free up to 25 leads, $25/month for unlimited. Spacio, Curb Hero, Block Party, and SignInTime either lack accessible pricing or have shut down. If you need transparent pricing and a working free tier, Open Home Pro is your only documented option in this set.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Open house sign-in apps promise digital lead capture, automated follow-up, and analytics. Most agents need three things: a tool that works offline or on flaky WiFi, exports leads cleanly to their CRM, and doesn't cost more than the commission from one closed lead. We set out to compare five products mentioned in 2026 search results. Four of them have no reachable vendor pages or transparent pricing. One does."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed vendor websites for Open Home Pro, Spacio, Curb Hero, Block Party, and SignInTime. We documented public pricing tiers, feature lists, export options, and lead limits. We did not fabricate test scenarios or invent transaction counts. Where a vendor site was unreachable or a domain was for sale, we note that explicitly. All claims derive from the vendor's own published material as of May 2026."
+    },
+    {
+      "type": "h2",
+      "text": "Open Home Pro",
+      "id": "open-home-pro"
+    },
+    {
+      "type": "p",
+      "text": "Open Home Pro offers a free tier with unlimited open houses and listings but caps lead storage at 25. The Premium plan is $25/month billed monthly or annually (annual saves 20%), unlocking unlimited leads, CSV export, automated follow-up emails, advanced analytics, email open tracking, custom branding, and a seller summary report. The free tier includes basic analytics and visitor notes. The vendor states agents report 5–20+ leads per open house on average. Digital sign-in and customizable visitor questions are available on both tiers. Data is encrypted in transit and not shared with third parties. Support is via email at support@openhomepro.com. The app is available on iOS and Android."
+    },
+    {
+      "type": "product",
+      "name": "Open Home Pro",
+      "price": "Free (up to 25 leads); $25/mo Premium (unlimited leads, billed monthly or annually)",
+      "rating": 4,
+      "pros": [
+        "Permanent free tier with unlimited open houses",
+        "CSV lead export and automated follow-up on Premium",
+        "Email open tracking and seller summary reports",
+        "Encrypted data, no third-party sharing"
+      ],
+      "cons": [
+        "Free tier caps lead storage at 25",
+        "No public SLA or uptime guarantee",
+        "Support is email-only"
+      ],
+      "cta": {
+        "label": "Visit Open Home Pro",
+        "url": "https://www.openhomepro.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Spacio",
+      "id": "spacio"
+    },
+    {
+      "type": "p",
+      "text": "No vendor page was reachable for Spacio. Pricing, features, and availability are unknown. See the vendor directly if you're interested."
+    },
+    {
+      "type": "h2",
+      "text": "Curb Hero",
+      "id": "curb-hero"
+    },
+    {
+      "type": "p",
+      "text": "No vendor page was reachable for Curb Hero. Pricing, features, and availability are unknown. See the vendor directly if you're interested."
+    },
+    {
+      "type": "h2",
+      "text": "Block Party",
+      "id": "block-party"
+    },
+    {
+      "type": "p",
+      "text": "No vendor page was reachable for Block Party. Pricing, features, and availability are unknown. See the vendor directly if you're interested."
+    },
+    {
+      "type": "h2",
+      "text": "SignInTime",
+      "id": "signintime"
+    },
+    {
+      "type": "p",
+      "text": "The SignInTime.com domain is listed for sale at $2,795 via HugeDomains. No product or pricing information exists. The service appears defunct."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "If you host occasional open houses and want zero cost: Open Home Pro Free (up to 25 leads).",
+        "If you need unlimited lead export, automated follow-up, and email tracking: Open Home Pro Premium at $25/month.",
+        "If you already use Spacio, Curb Hero, or Block Party: verify current pricing and availability directly with those vendors; public information is unavailable.",
+        "If you're evaluating SignInTime: the domain is for sale; the product does not appear to exist."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "SignInTime: domain is parked for sale, no product exists.",
+        "Spacio, Curb Hero, Block Party: no public pricing or feature documentation as of May 2026; impossible to evaluate without direct vendor contact."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Open Home Pro",
+      "url": "https://www.openhomepro.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/hero-mosaic-fountain.jpg",
+  "imageCredit": "Unsplash"
+}

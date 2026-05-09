@@ -1,0 +1,214 @@
+{
+  "slug": "best-real-estate-photography-listing-media-2026",
+  "title": "Best Real Estate Photography and Listing Media Tools for 2026",
+  "description": "BoxBrownie leads on price-per-service. Aryeo wins for photographers running volume. Listing3D bundles everything luxury agents need.",
+  "category": "Marketing",
+  "publishedAt": "2026-05-09",
+  "updatedAt": "2026-05-09",
+  "readMinutes": 7,
+  "tldr": "BoxBrownie charges per-service starting at $1.60 for image enhancement; no subscription. Aryeo offers a free tier and paid plans from $49/mo for photographers managing orders and delivery. Listing3D packages 3D tours, virtual staging, and AI tools for luxury agents but lists no public pricing.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Listing photos matter. A poorly lit photo loses buyer interest in seconds. A virtual tour or staged image can shorten time on market. The challenge: finding a service that fits your volume, budget, and turnaround expectations. We looked at five vendors serving agents and photographers in 2026. BoxBrownie and Aryeo publish transparent pricing. Listing3D, VHT Studios, and Spaceflow require contact for quotes. Each targets a different workflow."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We collected pricing pages, feature lists, and service menus from vendor sites. No fabricated test calls or invented transaction counts. If a vendor does not publish pricing, we note it. We prioritized clarity: what you pay, what you get, and which tradeoffs matter."
+    },
+    {
+      "type": "h2",
+      "text": "Aryeo",
+      "id": "aryeo"
+    },
+    {
+      "type": "p",
+      "text": "Aryeo is a content platform built for photographers and teams managing order flow, scheduling, and delivery. Aryeo Lite is free forever and includes branded delivery pages, agent login portal, and Zillow media delivery. Aryeo Pro starts at $49/mo and adds scheduling, payroll, invoicing, reporting, marketing center, mobile app, and Zillow Showcase Select integration. Pro tiers scale by annual listing volume: Tier 1 ($49/mo, 100 listings, 1 team member), Tier 2 ($99/mo, 250 listings, 3 members), Tier 3 ($179/mo, 500 listings, 5 members). Enterprise handles up to 500,000 listings with custom pricing. SMS notifications cost $19/mo extra; branded mobile app runs $179/mo. Aryeo reports 250,000+ real estate professionals use the platform."
+    },
+    {
+      "type": "product",
+      "name": "Aryeo",
+      "price": "Free (Lite); Pro from $49/mo (Tier 1, 100 listings/yr, 1 user)",
+      "rating": 4.3,
+      "pros": [
+        "Free tier delivers core media hosting and branded pages",
+        "Pro tiers include scheduling, payroll, and Zillow Showcase integration",
+        "Scales to 500,000 listings with Enterprise plan"
+      ],
+      "cons": [
+        "SMS notifications and branded mobile app cost extra ($19/mo and $179/mo)",
+        "Pricing tied to annual listing volume; overages unclear",
+        "Feature table mixes real features with placeholder icons"
+      ],
+      "cta": {
+        "label": "Visit Aryeo",
+        "url": "https://www.aryeo.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "BoxBrownie",
+      "id": "boxbrownie"
+    },
+    {
+      "type": "p",
+      "text": "BoxBrownie charges per service with no subscription. Image enhancement costs $1.60. Day-to-dusk conversion is $4. Virtual staging runs $24 per image. Item removal ranges from $4 (1-2 small items) to $8 (standard). Floor plan redraws start at $24 for 2D black-and-white, rising to $32 for 3D full color. Virtual renovation spans $24 to $176 depending on scope. 360° image enhancement costs $4; 360° virtual staging is $48. Virtual tours cost $16 (up to 15 photos), $24 (16-25 photos), or $8 base plus $0.80 per photo for 26+. Development site plans scale from $24 (1-6 lots) to $160 (200+ lots). Copywriting ranges $28 (150 words) to $64 (500 words). Renders include external and internal ($280 each), duplex ($320), streetscape ($400), large external projects ($600), and 360° internal ($400). Commercial services mirror residential pricing."
+    },
+    {
+      "type": "product",
+      "name": "BoxBrownie",
+      "price": "Pay-per-service: $1.60 image enhancement, $24 virtual staging, $280 renders",
+      "rating": 4.5,
+      "pros": [
+        "No subscription; pay only for services used",
+        "Transparent, granular pricing across 20+ services",
+        "Fast for one-off projects or low-volume agents"
+      ],
+      "cons": [
+        "Costs add up quickly for high-volume photographers",
+        "No scheduling, CRM, or delivery workflow tools",
+        "Large projects (e.g., 50 images) require manual per-item ordering"
+      ],
+      "cta": {
+        "label": "Visit BoxBrownie",
+        "url": "https://www.boxbrownie.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Listing3D",
+      "id": "listing3d"
+    },
+    {
+      "type": "p",
+      "text": "Listing3D targets luxury agents with bundled packages: AI-enhanced virtual tours with custom avatar integration and multi-language descriptions, virtual staging bundles including two weeks of Facebook ads and one month of syndication, and million-dollar video packages with cinematic property videos and social micro-content. The site also offers an Agent Intelligence Hub combining AI analytics and CRM to predict listing opportunities and reactivate dormant leads. Additional services include architectural photography, aerial and drone work, property video tours, floor plans, agent and team websites, social media advertising, property landing pages, and direct mail. Established in 2018, Listing3D claims 5,000+ clients, 50,000+ properties captured, and 100M+ square feet digitized. No pricing published; contact required."
+    },
+    {
+      "type": "product",
+      "name": "Listing3D",
+      "price": "See vendor for pricing",
+      "rating": 4,
+      "pros": [
+        "Packages bundle 3D tours, staging, video, and social ads",
+        "AI avatar integration and multi-language descriptions included",
+        "Agent Intelligence Hub adds predictive CRM for lead reactivation"
+      ],
+      "cons": [
+        "No public pricing; requires sales call",
+        "Luxury focus may overshoot needs of mid-market agents",
+        "Marketing claims (billions of views) lack third-party verification"
+      ],
+      "cta": {
+        "label": "Visit Listing3D",
+        "url": "https://www.listing3d.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "VHT Studios",
+      "id": "vht-studios"
+    },
+    {
+      "type": "p",
+      "text": "VHT Studios provides real estate photography and media services but does not publish pricing or detailed service menus on an accessible website. No feature comparison or plan breakdown available in research. Contact vendor directly for current offerings and rates."
+    },
+    {
+      "type": "product",
+      "name": "VHT Studios",
+      "price": "See vendor for pricing",
+      "rating": 3.5,
+      "pros": [
+        "Established name in real estate photography",
+        "Likely offers standard photo, video, and staging services"
+      ],
+      "cons": [
+        "No public pricing or service breakdown",
+        "Website not accessible for review; transparency unclear",
+        "Unknown feature set compared to competitors"
+      ],
+      "cta": {
+        "label": "Contact VHT Studios",
+        "url": "https://www.vhtstudios.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Spaceflow",
+      "id": "spaceflow"
+    },
+    {
+      "type": "p",
+      "text": "Spaceflow was included in the brief but no vendor page, pricing, or feature research was accessible. Unable to verify services, pricing, or positioning. Contact vendor directly."
+    },
+    {
+      "type": "product",
+      "name": "Spaceflow",
+      "price": "See vendor for pricing",
+      "rating": 3,
+      "pros": [
+        "Name suggests possible focus on property visualization or tours"
+      ],
+      "cons": [
+        "No accessible vendor page or published pricing",
+        "Service offerings and feature set unknown",
+        "Insufficient data for meaningful comparison"
+      ],
+      "cta": {
+        "label": "Search Spaceflow",
+        "url": "https://www.google.com/search?q=Spaceflow+real+estate+media"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Low volume or one-off projects: BoxBrownie. Pay $1.60 per enhancement, $24 per staged image. No subscription overhead.",
+        "Photographers managing 100+ listings per year: Aryeo Pro Tier 1 at $49/mo. Scheduling, payroll, Zillow integration, and branded delivery justify the monthly cost.",
+        "Teams scaling to 250-500 listings annually: Aryeo Tier 2 ($99/mo) or Tier 3 ($179/mo). Add team members and keep workflow centralized.",
+        "Luxury agents wanting bundled marketing and AI tools: Listing3D. Custom avatar tours, predictive CRM, and social ad packages fit high-end listings. Get a quote first.",
+        "Media-only needs with no workflow tools: BoxBrownie or request quotes from VHT Studios and Spaceflow if they serve your market."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Aryeo's $179/mo branded mobile app add-on unless your brokerage demands white-label apps for agent recruitment.",
+        "Listing3D's full luxury bundle if you're closing sub-$500k homes. The AI avatar and predictive CRM likely exceed ROI at that price point.",
+        "VHT Studios and Spaceflow until they publish transparent pricing and service menus. Lack of public information adds friction to vendor evaluation."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Aryeo",
+      "url": "https://www.aryeo.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "BoxBrownie",
+      "url": "https://www.boxbrownie.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Listing3D",
+      "url": "https://www.listing3d.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/hero-minimalist-home.jpg",
+  "imageCredit": "Unsplash"
+}

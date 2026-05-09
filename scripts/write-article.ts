@@ -232,8 +232,8 @@ const REVIEW_SCHEMA = `{
     {"type": "cta", "label": "string", "url": "string"}
   ],
   "affiliateProducts": [{"name": "string", "url": "string", "commission": "string (best estimate or 'varies')"}],
-  "headerImage": "/articles/[hero-image-filename] (use one of: crm-hero.jpg, ai-workflow-hero.jpg, leadgen-hero.jpg, compare-hero.jpg, interior-warm.jpg)",
-  "imageCredit": "Unsplash"
+  "headerImage": "/articles/<filename>.jpg — pick a UNIQUE one from this pool that no other article is using yet. Available: hero-living-pink.jpg (warm pink/gold living room), hero-marble-modern.jpg (modern marble interior), hero-living-chandelier.jpg (chandelier living), hero-kitchen-luxury.jpg (luxury kitchen), hero-toronto-house.jpg (modern home exterior), hero-contemporary-driveway.jpg (suburban driveway home), hero-suburban-facade.jpg (suburban facade), hero-minimalist-home.jpg (minimalist home), hero-mosaic-fountain.jpg (mosaic foyer), hero-marble-sophisticated.jpg (sophisticated marble), interior-warm.jpg (warm interior). DO NOT pick crm-hero.jpg, ai-workflow-hero.jpg, leadgen-hero.jpg, or compare-hero.jpg — those are reserved for legacy articles. Pick something that thematically fits the topic.",
+  "imageCredit": "Pexels"
 }`;
 
 const COMPARE_SCHEMA = `{

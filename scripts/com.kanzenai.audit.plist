@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  KanzenAI daily audit launchd job.
+
+  Install:
+    cp scripts/com.kanzenai.audit.plist ~/Library/LaunchAgents/
+    launchctl load -w ~/Library/LaunchAgents/com.kanzenai.audit.plist
+
+  Uninstall:
+    launchctl unload -w ~/Library/LaunchAgents/com.kanzenai.audit.plist
+    rm ~/Library/LaunchAgents/com.kanzenai.audit.plist
+
+  Logs land in: ~/Code/kanzenai/.audit/audit-YYYY-MM-DD.log
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.kanzenai.audit</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>-c</string>
+        <string>cd ~/Code/kanzenai &amp;&amp; mkdir -p .audit &amp;&amp; /usr/local/bin/npm run audit &gt; ".audit/audit-$(date +%Y-%m-%d).log" 2&gt;&amp;1</string>
+    </array>
+
+    <!-- Run daily at 7:00 AM local time -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>7</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <!-- If the Mac is asleep at 7am, run as soon as it wakes -->
+    <key>RunAtLoad</key>
+    <false/>
+
+    <!-- Keep things tidy -->
+    <key>StandardOutPath</key>
+    <string>/tmp/com.kanzenai.audit.out</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/com.kanzenai.audit.err</string>
+</dict>
+</plist>

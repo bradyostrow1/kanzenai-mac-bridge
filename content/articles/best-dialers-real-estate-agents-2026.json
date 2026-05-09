@@ -166,7 +166,7 @@
       "type": "product",
       "name": "Espresso Agent",
       "price": "$300/mo (data + dialer)",
-      "rating": 4.0,
+      "rating": 4,
       "pros": [
         "Good expired and FSBO data (close to Vulcan7 quality)",
         "Includes a CRM that's better than Vulcan7's",
@@ -249,6 +249,6 @@
       "commission": "$60 per signup"
     }
   ],
-  "headerImage": "/articles/interior-warm.jpg",
+  "headerImage": "/articles/hero-living-chandelier.jpg",
   "imageCredit": "Unsplash"
 }

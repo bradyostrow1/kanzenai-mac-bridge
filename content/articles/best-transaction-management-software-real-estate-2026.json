@@ -132,7 +132,7 @@
       "type": "product",
       "name": "Paperless Pipeline",
       "price": "$30/mo (Solo) — $80/mo (Small Team)",
-      "rating": 4.0,
+      "rating": 4,
       "pros": [
         "Simplest UI in the category — onboarding takes hours, not days",
         "Strong checklist/task system keeps deals on track",
@@ -207,6 +207,6 @@
       "commission": "$25 per signup"
     }
   ],
-  "headerImage": "/articles/ai-workflow-hero.jpg",
+  "headerImage": "/articles/hero-kitchen-luxury.jpg",
   "imageCredit": "Unsplash"
 }

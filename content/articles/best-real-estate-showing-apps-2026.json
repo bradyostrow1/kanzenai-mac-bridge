@@ -1,0 +1,178 @@
+{
+  "slug": "best-real-estate-showing-apps-2026",
+  "title": "Best Real Estate Showing Apps and Software for 2026",
+  "description": "ShowingTime leads at $15/month with 24/7 support. SentriLock and SUPRA dominate lockbox-integrated showing. Compare the top scheduling tools for agents.",
+  "category": "Scheduling",
+  "publishedAt": "2026-05-09",
+  "updatedAt": "2026-05-09",
+  "readMinutes": 7,
+  "tldr": "ShowingTime Appointment Center offers the most complete agent-focused package at $15/month with showing management, offer tracking, and market reports. SentriLock and SUPRA eKey deliver showing management tightly coupled to their lockbox ecosystems, suited for agents already in those networks. Aligned Showings and Showmojo lack transparent pricing or accessible vendor information as of mid-2026.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Showing management software automates appointment scheduling, reduces phone tag with buyer agents, and keeps listing activity visible in real time. The category splits into two camps: standalone platforms like ShowingTime that work across any lockbox system, and lockbox-native tools from SentriLock and SUPRA that bundle scheduling with hardware access. Agents value 24/7 support, mobile apps, and automated confirmation workflows. The difference between a $15/month subscription and a lockbox-bundled service often comes down to whether your MLS or association has already chosen your hardware ecosystem."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We pulled pricing and feature sets directly from vendor websites and public documentation in May 2026. No fabricated call tests or invented transaction counts. Where a vendor page was unreachable or pricing absent, we note it. The rankings reflect feature depth, pricing transparency, and the size of the existing user base according to vendor-published statistics."
+    },
+    {
+      "type": "h2",
+      "text": "ShowingTime Appointment Center",
+      "id": "showingtime-appointment-center"
+    },
+    {
+      "type": "p",
+      "text": "ShowingTime Appointment Center bundles showing management, offer tracking (market availability dependent), and comparative market reports in a $15/month agent subscription. The platform provides 24/7 live appointment specialists, a dedicated mobile app, and ShowingCart for batch scheduling. Target Market Analysis and Pricing Benchmark Report tools surface anonymized pricing, showing activity, days on market, and absorption rate data to guide listing conversations. Team and office pricing available through sales contact."
+    },
+    {
+      "type": "product",
+      "name": "ShowingTime Appointment Center",
+      "price": "$15/month per agent; team and office pricing available",
+      "rating": 4.5,
+      "pros": [
+        "24/7 live appointment specialist support",
+        "Offer Manager organizes offers by listing and stores buyer agent contacts",
+        "Target Market Analysis and Pricing Benchmark reporting included",
+        "ShowingCart batch scheduling feature"
+      ],
+      "cons": [
+        "Offer Manager subject to market availability",
+        "Team pricing not published on site",
+        "Market reports limited to comparative inventory data"
+      ],
+      "cta": {
+        "label": "Visit ShowingTime",
+        "url": "https://www.showingtime.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "SentriLock Showing Service",
+      "id": "sentrilock-showing-service"
+    },
+    {
+      "type": "p",
+      "text": "SentriLock integrates showing management into the SentriKey Real Estate app, which already controls SentriGuard electronic lockboxes. Agents manage appointments, confirm showings, and handle client feedback in one interface. The platform also enables temporary access via SentriConnect for contractors and service providers. Over 500,000 agents use SentriLock lockboxes; the showing service extends that footprint without requiring a separate app or login. Pricing flows through MLS and association partnerships rather than direct agent subscriptions."
+    },
+    {
+      "type": "product",
+      "name": "SentriLock Showing Service",
+      "price": "See your MLS or association for pricing",
+      "rating": 4,
+      "pros": [
+        "Unified app for lockbox access and showing coordination",
+        "Temporary access control via SentriConnect",
+        "Deep integration with SentriGuard lockbox ecosystem",
+        "Customer support satisfaction emphasized by vendor"
+      ],
+      "cons": [
+        "No direct agent pricing published",
+        "Requires SentriLock lockbox adoption by MLS",
+        "Feature set less detailed on public pages than ShowingTime"
+      ],
+      "cta": {
+        "label": "Visit SentriLock",
+        "url": "https://www.sentrilock.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "SUPRA eKey Showing Management",
+      "id": "supra-ekey-showing-management"
+    },
+    {
+      "type": "p",
+      "text": "SUPRA's showing management sits inside the eKEY app used by roughly 1 million agents to open iBox BT LE lockboxes. The platform enables over 70 percent of all U.S. and Canada listing accesses via networked lockboxes (32+ million accesses annually per vendor data). Agents schedule in-person and virtual showings, optimize tours, and pull real-time lockbox access logs. The system works offline when the app is updated for the day. Pricing and access come through the agent's MLS or association, not individual subscription."
+    },
+    {
+      "type": "product",
+      "name": "SUPRA eKey Showing Management",
+      "price": "See your MLS or association for pricing",
+      "rating": 4,
+      "pros": [
+        "One million eKEY app users already in ecosystem",
+        "Offline lockbox access when app is current",
+        "Real-time access logs from iBox BT LE lockboxes",
+        "Virtual and in-person showing coordination in one app"
+      ],
+      "cons": [
+        "No published agent-direct pricing",
+        "Requires SUPRA lockbox infrastructure",
+        "Public feature detail lighter than standalone platforms"
+      ],
+      "cta": {
+        "label": "Visit SUPRA",
+        "url": "https://www.supraekey.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Aligned Showings",
+      "id": "aligned-showings"
+    },
+    {
+      "type": "p",
+      "text": "No accessible vendor page or pricing information available as of May 2026. Without published features or subscription details, we cannot assess fit or cost."
+    },
+    {
+      "type": "h2",
+      "text": "Showmojo",
+      "id": "showmojo"
+    },
+    {
+      "type": "p",
+      "text": "No accessible vendor page or pricing information available as of May 2026. Without published features or subscription details, we cannot assess fit or cost."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Best for solo agents seeking transparent pricing and robust reporting: ShowingTime Appointment Center at $15/month delivers 24/7 support, offer management, and comparative market tools without requiring a specific lockbox brand.",
+        "Best for agents already using SentriLock lockboxes: SentriLock Showing Service unifies property access and appointment scheduling in the SentriKey app, eliminating app-switching and simplifying temporary access workflows.",
+        "Best for agents in SUPRA-dominant MLSs: SUPRA eKey Showing Management leverages the million-user eKEY footprint and offline-capable lockbox access, ideal when your market runs on iBox hardware.",
+        "Best for teams and brokerages: ShowingTime offers team and office pricing tiers; contact sales for volume rates and centralized admin controls."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Aligned Showings and Showmojo: Both lack accessible vendor pages or published pricing as of May 2026, making cost and feature comparison impossible.",
+        "Paying for a standalone platform if your MLS bundles showing management: SentriLock and SUPRA may already be included in your association dues; verify before subscribing elsewhere."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "ShowingTime Appointment Center",
+      "url": "https://www.showingtime.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "SentriLock Showing Service",
+      "url": "https://www.sentrilock.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "SUPRA eKey",
+      "url": "https://www.supraekey.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/hero-suburban-facade.jpg",
+  "imageCredit": "Unsplash"
+}

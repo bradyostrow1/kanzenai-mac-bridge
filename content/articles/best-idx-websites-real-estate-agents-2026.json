@@ -163,7 +163,7 @@
       "type": "product",
       "name": "IDX Broker",
       "price": "$59.99/mo (Lite) — $129.99/mo (Platinum)",
-      "rating": 4.0,
+      "rating": 4,
       "pros": [
         "Cheapest way to add MLS search to an existing WordPress/Squarespace site",
         "Works with any CMS or framework via embed code",
@@ -244,6 +244,6 @@
       "commission": "20% recurring"
     }
   ],
-  "headerImage": "/articles/crm-hero.jpg",
+  "headerImage": "/articles/hero-contemporary-driveway.jpg",
   "imageCredit": "Unsplash"
 }
