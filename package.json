@@ -8,7 +8,8 @@
     "start": "next start -p 5050",
     "write": "node --env-file=.env.local --import tsx scripts/write-article.ts",
     "write:noenv": "node --import tsx scripts/write-article.ts",
-    "audit": "node --import tsx scripts/audit.ts"
+    "audit": "node --import tsx scripts/audit.ts",
+    "swap-links": "node --import tsx scripts/swap-affiliate-links.ts"
   },
   "dependencies": {
     "lucide-react": "0.468.0",

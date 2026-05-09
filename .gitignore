@@ -34,6 +34,10 @@ yarn-error.log*
 .env*.local
 .env
 
+# affiliate-link backups
+content/**/*.json.bak
+.audit/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

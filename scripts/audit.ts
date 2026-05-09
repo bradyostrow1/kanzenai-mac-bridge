@@ -12,7 +12,7 @@
  *   7. Date sanity                (warns) — publishedAt in future or > 2 yrs old
  *   8. Thin content               (warns) — body word count < 600
  *   9. Meta description length    (warns) — outside 120-170 SEO range
- *  10. Live site health           (errors) — kanzenai.vercel.app returns non-200
+ *  10. Live site health           (errors) — kanzenai.com returns non-200
  *  11. Subscribe API              (errors) — POST returns non-200 for valid email
  *
  * Run:
@@ -41,7 +41,7 @@ const ROOT = process.cwd();
 const ARTICLES_DIR = join(ROOT, "content", "articles");
 const COMPARISONS_DIR = join(ROOT, "content", "comparisons");
 const PUBLIC_DIR = join(ROOT, "public");
-const PROD_URL = process.env.KANZENAI_PROD_URL ?? "https://kanzenai.vercel.app";
+const PROD_URL = process.env.KANZENAI_PROD_URL ?? "https://kanzenai.com";
 
 const findings: Finding[] = [];
 
