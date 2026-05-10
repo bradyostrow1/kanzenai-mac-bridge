@@ -1,190 +1,205 @@
 {
   "slug": "best-crm-real-estate-agents-2026",
-  "title": "Best CRM for Real Estate Agents in 2026 (Tested with 23 Working Agents)",
-  "description": "After running 8 CRMs through real agent workflows for 6 weeks — lead intake, drip follow-up, transaction coordination, team handoffs — three came out on top. Here's the honest breakdown of which one fits your size and price point.",
+  "title": "Best CRM for Real Estate Agents in 2026",
+  "description": "Follow Up Boss, Lofty, kvCORE, and Sierra Interactive compared. Pricing, integrations, and trade-offs for solo agents and teams.",
   "category": "CRM",
-  "publishedAt": "2026-05-09",
-  "updatedAt": "2026-05-09",
-  "readMinutes": 11,
-  "tldr": "For solo agents and small teams (1-3 people), Follow Up Boss wins on workflow speed and integration depth ($79/mo). For larger teams (5+ agents) and brokerages, Lofty (formerly Chime) justifies its price with built-in IDX and team management ($499/mo). Skip Top Producer unless you're already deep in their ecosystem — newer entrants beat it on AI features and mobile.",
+  "publishedAt": "2026-05-10",
+  "updatedAt": "2026-05-10",
+  "readMinutes": 8,
+  "tldr": "Follow Up Boss wins for simplicity and open integrations. Sierra Interactive offers the best value for small teams scaling up. Lofty bundles lead generation but pricing is opaque. kvCORE requires direct vendor contact for current plans.",
   "body": [
     {
       "type": "p",
-      "text": "Real estate agents have one CRM job: don't lose the lead. Sounds simple. In practice, between an MLS-pulled prospect, a Zillow Premier inquiry, a Facebook Lead Ad, and a referral from your sphere, every single one of them needs different routing, different drip sequences, and a different next-step. The CRM that does this without making you babysit it is the one that pays for itself in week one."
-    },
-    {
-      "type": "p",
-      "text": "We worked with 23 active agents — solo agents to a 28-agent brokerage in Florida — to test 8 popular CRMs over six weeks. We watched their actual lead flow. We measured how fast each tool got new leads into a sequence, how often agents missed follow-ups, and how the mobile experience held up at 9pm when an offer just came in. Here's what came out clean."
+      "text": "Real estate CRMs split into two camps: lead engines that bundle advertising, and pure workflow tools that connect to your existing stack. Follow Up Boss and Sierra Interactive prioritize integration depth and agent productivity. Lofty sells an all-in-one platform with built-in ad management. kvCORE sits behind Inside Real Estate's paywall with no public pricing. We reviewed current pricing pages and feature lists to surface the trade-offs."
     },
     {
       "type": "h2",
-      "text": "How we tested",
-      "id": "how-we-tested"
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
     },
     {
       "type": "p",
-      "text": "Each CRM got 4 weeks with real agent activity:"
-    },
-    {
-      "type": "ul",
-      "items": [
-        "Time from lead-source webhook to first agent touch (in minutes)",
-        "Drip sequence reliability — did the system actually fire reminders on day 3, 7, 14?",
-        "Mobile app speed and offline behavior (agents are in cars constantly)",
-        "Integration depth with MLS, IDX websites, dialers, and transaction tools",
-        "Team handoffs — agent to ISA to closing coordinator without anything dropped"
-      ]
+      "text": "We pulled pricing directly from vendor sites in May 2026. No invented test calls or fabricated closing counts. We mapped published plan tiers, seat limits, and feature gates. Where pricing was unavailable, we note it. Integration claims come from vendor marketing pages. Public customer testimonials appear where vendors surface them."
     },
     {
       "type": "h2",
-      "text": "1. Follow Up Boss — Best for solo agents and small teams",
+      "text": "Follow Up Boss",
       "id": "follow-up-boss"
+    },
+    {
+      "type": "p",
+      "text": "Follow Up Boss sells workflow simplicity and 250+ integrations. The vendor markets to solo agents and teams who want a clean CRM that connects to any lead source. AI features like smart summaries and predictive lead scoring ship standard. Calling is an add-on for the entry tier."
     },
     {
       "type": "product",
       "name": "Follow Up Boss",
-      "price": "$79/mo (Pro) — $1,200/yr (Platform)",
-      "rating": 4.7,
+      "price": "$69/month Grow plan (add calling for $39/user), $499/month Pro for up to 10 users, $1,000/month Platform for up to 30 users",
+      "rating": 4.5,
       "pros": [
-        "Best inbound lead routing in the category — 47 lead source integrations, all reliable",
-        "Action Plans (drip sequences) actually fire on time without babysitting",
-        "Mobile app is the only one our test agents didn't complain about",
-        "Open API + Zapier means you can wire it to anything",
-        "Smart Lists turn cold data into actionable daily call lists"
+        "250+ integrations including Zillow, email-to-lead tools, and calendar sync",
+        "AI features (smart summaries, suggested tasks, predictive lead prioritization) included in all plans",
+        "7-day-a-week phone and email support with no contract",
+        "Smart Lists and Action Plans automate follow-up without custom workflows",
+        "Annual billing saves two months (Grow $58/month, Pro $416/month)"
       ],
       "cons": [
-        "No built-in IDX website — you'll need a separate site or pay extra",
-        "Reporting is functional but not polished",
-        "Pricing per user adds up fast at 5+ agents"
+        "Calling costs extra on Grow plan ($39/user monthly, $33/user annually)",
+        "Team inboxes and call reporting locked to Pro tier and above",
+        "No built-in lead generation; bring your own sources",
+        "Additional users on Pro cost $49/month, $41/month annual"
       ],
       "cta": {
-        "label": "Try Follow Up Boss free",
-        "url": "https://www.followupboss.com/?ref=kanzenai",
-        "affiliate": "followupboss"
+        "label": "Try Follow Up Boss",
+        "url": "https://www.followupboss.com/?ref=kanzenai"
       }
     },
     {
-      "type": "p",
-      "text": "Follow Up Boss is what 16 of our 23 test agents would buy with their own money. The reason is simple: every other CRM makes you wait for the lead to surface. FUB pushes it. New Zillow inquiry hits — it's already routed to your phone, dialed for a return call, and added to a 14-touch sequence before you finished your coffee."
-    },
-    {
-      "type": "p",
-      "text": "The Action Plans are the killer feature. You build a sequence once (text on day 1, call on day 2, email on day 3, etc.) and FUB executes it. Most CRMs claim this; FUB is the only one that did it without skipped steps in our test."
-    },
-    {
       "type": "h2",
-      "text": "2. Lofty (formerly Chime) — Best for teams of 5+",
+      "text": "Lofty",
       "id": "lofty"
     },
     {
+      "type": "p",
+      "text": "Lofty (formerly Chime) bundles CRM, IDX websites, dialer, and paid lead generation into tiered packages. The vendor lists four plans—Agent, Team, Broker, Enterprise—but pricing requires a demo request. Feature descriptions mention AI assistants (Sales Agent, Social Agent, Homeowner Agent) and over 33 lead generation methods including Google PPC, direct mail, and Lofty Bloom for hyper-local leads with zip exclusivity."
+    },
+    {
       "type": "product",
-      "name": "Lofty (formerly Chime)",
-      "price": "Starts $499/mo (custom quote)",
-      "rating": 4.4,
+      "name": "Lofty",
+      "price": "See vendor for current pricing (Agent, Team, Broker, Enterprise tiers; ad campaigns priced separately)",
+      "rating": 4,
       "pros": [
-        "Built-in IDX website that's actually decent (most CRM-bundled sites are not)",
-        "AI assistant qualifies leads via SMS before they hit your inbox",
-        "Team and brokerage features (lead pools, accountability dashboards)",
-        "Reporting that lets you see which lead source actually pays back"
+        "Integrated lead generation: Google PPC, Facebook ads, direct mail, Google LSA, and Lofty Bloom",
+        "AI agents for 24/7 lead capture (Sales Agent), social posting (Social Agent), and database mining (Homeowner Agent)",
+        "Transaction management and back-office services included at higher tiers",
+        "Social Studio automates social media marketing",
+        "Closely mobile app for home search experience"
       ],
       "cons": [
-        "Steep onboarding — budget 3 weeks to get the team fluent",
-        "Pricing is opaque; expect $500-1,200/mo for small teams",
-        "Heavier UI than FUB — more clicks to do the same thing"
+        "No transparent pricing; all plans require demo request",
+        "Ad campaigns add 20% management fee; Home Evaluation Page costs $70/month if no IDX site",
+        "Lead estimates (20-30 buyer leads, 10-20 seller leads) are historical averages, not guarantees",
+        "White-label and advanced routing available only on Broker/Enterprise tiers",
+        "Lender co-op splits marketing cost but limits to Accelerator and Enterprise plans"
       ],
       "cta": {
-        "label": "Get a Lofty demo",
-        "url": "https://lofty.com/demo?ref=kanzenai",
-        "affiliate": "lofty"
+        "label": "Request Lofty Pricing",
+        "url": "https://www.lofty.com/?ref=kanzenai"
       }
     },
     {
-      "type": "p",
-      "text": "Lofty is the right pick when you cross 5 agents and start losing leads in the handoff between agent and ISA. The AI lead-qualifier alone is worth the price of admission — it texts new leads, asks the qualifying questions, and routes only the warm ones to a real person. Cuts agent time-on-junk-leads by ~60% in our test."
-    },
-    {
-      "type": "callout",
-      "variant": "warn",
-      "title": "Pricing reality check",
-      "text": "Lofty doesn't list pricing publicly. Most quotes we've seen for 5-10 agent teams land between $500-1,200/mo plus implementation. Worth it at scale — overkill below 5 agents."
-    },
-    {
       "type": "h2",
-      "text": "3. kvCORE — Solid but losing ground",
+      "text": "kvCORE",
       "id": "kvcore"
     },
     {
+      "type": "p",
+      "text": "kvCORE, owned by Inside Real Estate, offers CRM, IDX websites, and behavior-based lead scoring. No pricing page was accessible in the research bundle. The platform is known for MLS integration depth and broker-level tools, but current plan details require direct vendor contact."
+    },
+    {
       "type": "product",
-      "name": "kvCORE (Inside Real Estate)",
-      "price": "$499/mo (Brokerage) — Custom (Enterprise)",
-      "rating": 4,
+      "name": "kvCORE",
+      "price": "See vendor for current pricing",
+      "rating": 3.5,
       "pros": [
-        "Strong IDX website builder",
-        "Brokerage-tier features (compliance, team management)",
-        "Lead-routing logic is sophisticated"
+        "Deep MLS integration and behavioral lead scoring",
+        "Broker-friendly tools for managing large agent networks",
+        "IDX websites with behavior tracking"
       ],
       "cons": [
-        "Mobile app is dated — multiple test agents stopped using it",
-        "AI features feel bolted on, not designed in",
-        "Customer service has been slow in 2025-2026 tests"
+        "No public pricing or feature comparison available",
+        "Requires demo to see plan tiers and seat costs",
+        "Less transparency than competitors"
       ],
       "cta": {
-        "label": "Get a kvCORE demo",
-        "url": "https://www.insiderealestate.com/?ref=kanzenai",
-        "affiliate": "kvcore"
+        "label": "Contact kvCORE",
+        "url": "https://kvcore.com/?ref=kanzenai"
       }
     },
     {
+      "type": "h2",
+      "text": "Sierra Interactive",
+      "id": "sierra-interactive"
+    },
+    {
       "type": "p",
-      "text": "kvCORE was the obvious pick three years ago. In 2026, it's still functional but feels like it hasn't been substantially improved. We'd recommend it only if you're already in the Inside Real Estate ecosystem or your brokerage requires it."
+      "text": "Sierra Interactive sells three tiers: Starter for solo agents, Essential for evolving teams, and Growth for high-volume operations. Plans include users, IDX website tiers (Ace, Pro, Exec, Luxury, Pinnacle), and integrations. The vendor waives setup fees on annual contracts. Additional users scale down in cost as team size grows."
+    },
+    {
+      "type": "product",
+      "name": "Sierra Interactive",
+      "price": "$299.95/month Starter (1 user, annual), $399.95/month Essential (3 users), $599.95/month Growth (5 users); monthly pricing adds $60-125/month and $500 setup fee",
+      "rating": 4.3,
+      "pros": [
+        "Transparent per-user pricing: $75/user (Starter), $60/user for 4-10 on Essential, $25/user for 11+ on Essential, down to $5/user for 50+ on Growth",
+        "No setup fee on annual plans; $500 one-time on monthly",
+        "Website options scale by plan: Ace/Pro on Starter, add Exec/Luxury/Pinnacle on Essential/Growth",
+        "Growth tier includes 90-day onboarding, two hours additional training, dedicated support",
+        "MLS feeds: one included, $25/additional on all tiers"
+      ],
+      "cons": [
+        "Monthly pricing expensive: Starter $359.95, Essential $474.95, Growth $724.95 plus $500 setup",
+        "Essential and Growth tiers required for premium website designs (Exec, Luxury, Pinnacle)",
+        "Agent Site Manager costs extra ($50/month) on Starter",
+        "30-day onboarding on Starter vs. 60-90 days on higher plans",
+        "Feature list on pricing page cuts off mid-sentence; full comparison unclear"
+      ],
+      "cta": {
+        "label": "Schedule Sierra Demo",
+        "url": "https://www.sierrainteractive.com/?ref=kanzenai"
+      }
     },
     {
       "type": "h2",
-      "text": "Verdict: which should you pick?",
+      "text": "Verdict",
       "id": "verdict"
     },
     {
       "type": "ul",
       "items": [
-        "Solo to 4 agents, want speed and simplicity → Follow Up Boss. Start at the Pro tier, upgrade to Platform once you hit 3 users.",
-        "5+ agents and starting to feel handoff chaos → Lofty. Budget 3 weeks of learning; the AI lead-qualifier pays for itself.",
-        "Brokerage with compliance + recruiting needs → kvCORE Enterprise still has features the others don't.",
-        "Tight budget, need to get off spreadsheets → Follow Up Boss Pro at $79/mo."
+        "Solo agents who value simplicity and integration breadth: Follow Up Boss Grow plan ($69/month, add calling if needed). Seven-day support, no contract, AI features standard.",
+        "Small teams (3-5 agents) scaling up: Sierra Interactive Essential ($399.95/month annual, 3 users). Transparent per-seat pricing, included MLS feed, 60-day onboarding.",
+        "Teams buying leads and want bundled advertising: Lofty Team or Broker tier. Request pricing; expect ad management fees and lender co-op options.",
+        "High-volume teams (10+ agents) needing priority support: Follow Up Boss Pro ($499/month for 10 users) or Sierra Interactive Growth ($599.95/month for 5 users, $10-25/user for 6-49 additional).",
+        "Brokers managing large agent networks: kvCORE if MLS depth is critical; request demo for current pricing."
       ]
     },
     {
       "type": "h2",
       "text": "What we'd skip",
-      "id": "skip"
+      "id": "what-wed-skip"
     },
     {
-      "type": "p",
-      "text": "We tested several other agent-focused CRMs (Top Producer, BoomTown, LionDesk, Wise Agent, Real Geeks). None earned a spot above. If your brokerage gives you one of those for free, fine — use it. But we wouldn't pay for any of them when Follow Up Boss exists at this price point."
-    },
-    {
-      "type": "callout",
-      "variant": "tip",
-      "title": "Free trial first",
-      "text": "Follow Up Boss and Lofty both offer free trials. Run your real Monday lead flow through each one before you commit. We've watched agents save thousands by spending one week with FUB instead of locking into a 12-month Lofty contract they didn't need yet."
+      "type": "ul",
+      "items": [
+        "Follow Up Boss Grow without calling add-on if you need AI features that rely on call data. The vendor notes AI results improve with calling enabled.",
+        "Lofty ad campaigns if you already run your own Google/Facebook ads. The 20% management fee and opaque lead estimates make ROI hard to forecast.",
+        "Sierra Interactive monthly billing. The $60-125/month premium over annual pricing plus $500 setup fee makes little sense unless you're testing short-term.",
+        "kvCORE if you need transparent pricing up front. The lack of a public pricing page adds friction to budgeting."
+      ]
     }
   ],
   "affiliateProducts": [
     {
       "name": "Follow Up Boss",
       "url": "https://www.followupboss.com/?ref=kanzenai",
-      "commission": "$200 per signup"
+      "commission": "varies"
     },
     {
       "name": "Lofty",
-      "url": "https://lofty.com/demo?ref=kanzenai",
-      "commission": "$300 per signup"
+      "url": "https://www.lofty.com/?ref=kanzenai",
+      "commission": "varies"
     },
     {
       "name": "kvCORE",
-      "url": "https://www.insiderealestate.com/?ref=kanzenai",
-      "commission": "$250 per signup"
+      "url": "https://kvcore.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Sierra Interactive",
+      "url": "https://www.sierrainteractive.com/?ref=kanzenai",
+      "commission": "varies"
     }
   ],
   "headerImage": "/articles/hero-marble-modern.jpg",
-  "imageCredit": "Unsplash"
+  "imageCredit": "Pexels"
 }
