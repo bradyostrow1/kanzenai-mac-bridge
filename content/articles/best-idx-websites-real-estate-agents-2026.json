@@ -1,219 +1,207 @@
 {
   "slug": "best-idx-websites-real-estate-agents-2026",
-  "title": "Best IDX Websites for Real Estate Agents in 2026 (Tested for Lead Conversion, Not Just Looks)",
-  "description": "Real Geeks, Sierra Interactive, kvCORE, Placester, IDX Broker — we built five demo sites and tracked which ones actually converted searchers into leads. Here's what we found.",
+  "title": "Best IDX Websites for Real Estate Agents in 2026",
+  "description": "Sierra Interactive, Real Geeks, Placester, and IDX Broker tested for lead capture, CRM depth, and pricing transparency. One clear winner emerged.",
   "category": "Marketing",
-  "publishedAt": "2026-05-09",
-  "updatedAt": "2026-05-09",
-  "readMinutes": 11,
-  "tldr": "Sierra Interactive wins for serious agents and small teams who want maximum lead conversion ($499/mo). Real Geeks is the best price-to-performance pick at $299/mo. Placester is the only credible budget option ($99/mo) — but expect to grow out of it within a year. Skip free MLS-bundled sites; they don't capture leads.",
+  "publishedAt": "2026-05-10",
+  "updatedAt": "2026-05-10",
+  "readMinutes": 9,
+  "tldr": "Sierra Interactive and Real Geeks lead for teams needing CRM-plus-website bundles. Placester wins for agents wanting AI-driven site building at $59/mo. IDX Broker remains the best standalone search tool for developers and existing sites. kvCORE pricing is opaque—skip unless you're already in their ecosystem.",
   "body": [
     {
       "type": "p",
-      "text": "An IDX website does one job: take a stranger searching homes and turn them into a registered lead in your CRM. Every other feature — design polish, blog, neighborhood pages — is in service of that one conversion. We built demo sites on five platforms, ran identical Facebook Ad traffic to each, and measured registration rate, time-on-site, and 30-day return rate. Here's what came out clean."
+      "text": "An IDX website is table stakes in 2026. Buyers expect live MLS search, mobile property alerts, and instant lead capture. But the market splits into two camps: all-in-one platforms bundling CRM, dialer, and ad management (Sierra Interactive, Real Geeks), and lean site builders or plug-and-play IDX layers (Placester, IDX Broker). We evaluated five vendors on pricing clarity, feature depth, and real-world fit for solo agents versus teams. One vendor refused to publish prices. Two deliver enterprise-grade lead routing. One offers AI site generation for under $60/mo."
     },
     {
       "type": "h2",
-      "text": "How we tested",
-      "id": "method"
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
     },
     {
       "type": "p",
-      "text": "Each platform got a 4-week test in the same metro market with identical ad budget ($500 in Facebook Lead Ads + $500 in Google search ads). We measured:"
-    },
-    {
-      "type": "ul",
-      "items": [
-        "Registration rate — % of visitors who became a lead",
-        "Time-to-first-action — how long until they searched, saved, or registered",
-        "Mobile bounce rate (78% of traffic was mobile)",
-        "30-day return rate — % of leads who came back without us prompting",
-        "Lead-to-CRM speed — how fast did the lead show up in our follow-up tool"
-      ]
+      "text": "We reviewed vendor pricing pages, feature matrices, and public plan details as of May 2026. No fabricated testing—no invented call volumes, no phantom agent panels. We flagged gaps where vendors hide pricing or lock features behind sales calls. Pros and cons derive from the vendors' own feature lists and publicly visible positioning. Prices are quoted exactly as listed. If a vendor doesn't publish a number, we say so."
     },
     {
       "type": "h2",
-      "text": "1. Sierra Interactive — Best for conversion",
-      "id": "sierra"
+      "text": "Sierra Interactive",
+      "id": "sierra-interactive"
+    },
+    {
+      "type": "p",
+      "text": "Sierra sells CRM-first, website-second. Three tiers: Starter at $299.95/mo annual (1 user), Essential at $399.95/mo (3 users), Growth at $599.95/mo (5 users). Monthly billing adds a $500 setup fee and lifts rates to $359.95, $474.95, and $724.95 respectively. Additional users cost $75/mo on Starter, $60/mo on Essential (users 4-10), $25/mo (11+), and tiered discounts on Growth. Website designs include Ace and Pro templates; Starter and Essential get limited site options, Growth unlocks premium designs. MLS feeds cost $25/additional feed across all plans. Sierra bundles marketing automation, dialer, text campaigns, and Lead Engage. Dedicated onboarding stretches 30 days (Starter) to 90 days plus two extra training hours (Growth). Best for teams already committed to a unified CRM-dialer-website stack and willing to pay $400–$700/mo base before user add-ons."
     },
     {
       "type": "product",
       "name": "Sierra Interactive",
-      "price": "$499/mo + $250 setup",
-      "rating": 4.8,
+      "price": "$299.95/mo Starter (annual, 1 user), $399.95/mo Essential (3 users), $599.95/mo Growth (5 users). Monthly billing: $359.95, $474.95, $724.95 + $500 setup. Additional users $75–$10/mo depending on tier.",
+      "rating": 4.2,
       "pros": [
-        "Highest registration rate in our test — 7.1% of visitors became leads",
-        "Mobile speed is best-in-class (Lighthouse 92+)",
-        "Built-in CRM is actually usable (not bolted on)",
-        "Forced-registration after 3 searches drives lead capture without killing UX",
-        "Excellent SEO foundation — neighborhood pages rank without much help"
+        "Deep CRM with built-in dialer and SMS automation",
+        "90-day onboarding and dedicated support on Growth plan",
+        "Advanced lead routing and ISA user roles for teams",
+        "Integrates marketing automation, email, and ad management in one platform"
       ],
       "cons": [
-        "Setup fee + monthly puts year one near $6,500",
-        "Customization requires their support team — limited DIY editing",
-        "Aesthetic is functional, not stunning — looks like 2020 not 2026"
+        "High base price—$300–$600/mo before user add-ons",
+        "Monthly billing triggers $500 setup fee",
+        "Extra MLS feeds cost $25 each; premium websites locked to Growth tier",
+        "Overkill for solo agents who don't need enterprise CRM"
       ],
       "cta": {
-        "label": "Try Sierra Interactive",
-        "url": "https://www.sierrainteractive.com/?ref=kanzenai",
-        "affiliate": "sierra"
+        "label": "Visit Sierra Interactive",
+        "url": "https://www.sierrainteractive.com/?ref=kanzenai"
       }
     },
     {
-      "type": "p",
-      "text": "Sierra Interactive is what serious agents quietly buy. It's not flashy and the demo isn't pretty, but every design decision is in service of converting search traffic into registered leads. The forced-registration prompt after 3 searches sounds aggressive — until you see the numbers. Sierra's 7.1% conversion rate was double the worst performer in our test."
+      "type": "h2",
+      "text": "Real Geeks",
+      "id": "real-geeks"
     },
     {
-      "type": "h2",
-      "text": "2. Real Geeks — Best price-to-performance",
-      "id": "real-geeks"
+      "type": "p",
+      "text": "Real Geeks hides exact pricing behind \"Request Pricing\" buttons but surfaces four tiers: Establish (2 CRM users), Grow (3 users), Expand (5 users, most popular), Conquer (15 users). All include unlimited text/email, automated drip workflows, AI-powered SEO Fast Track, custom-branded property search app, and property valuation pages. Grow adds a texting assistant; Expand and Conquer layer in Facebook ad management, PPC property search ads, monthly guaranteed leads (details at realgeeks.com/leadguarantee), and full-service account management on Conquer. Extra CRM users cost $25/mo. Multiple MLS feeds cost $100/mo (Establish), $50/mo (Grow), $25/mo (Expand and Conquer). Optional add-ons: Geek AI assistant at $200/mo, Brand Boost lead retargeting at $300/mo (Expand/Conquer only), Facebook/IG listing boost ads at $100/listing. Real Geeks positions as the friendliest entry for agents wanting website, CRM, and ad guidance in one subscription—but you must request a quote to see the base price."
     },
     {
       "type": "product",
       "name": "Real Geeks",
-      "price": "$299/mo (Solo) — $599/mo (Team)",
-      "rating": 4.5,
+      "price": "See vendor for current pricing. Four tiers: Establish (2 users), Grow (3 users), Expand (5 users), Conquer (15 users). Extra users $25/mo. Multiple MLS $100–$25/mo depending on tier.",
+      "rating": 4.3,
       "pros": [
-        "5.4% conversion rate — second only to Sierra",
-        "Bundled CRM and drip nurture (saves $80/mo vs. standalone CRM)",
-        "Done-for-you Facebook Ads template that converts at $4-7 cost-per-lead",
-        "Solid mobile experience and acceptable Lighthouse scores",
-        "Setup is faster than Sierra (2-3 days to live site)"
+        "AI-powered SEO Fast Track and custom property search app included",
+        "Expand/Conquer tiers include Facebook ad tool, PPC ads, and guaranteed monthly leads",
+        "Geek Verified Leads add built-in lead verification",
+        "US-based phone and email support; dedicated success manager on Expand/Conquer"
       ],
       "cons": [
-        "Templates feel a bit dated — limited design flexibility",
-        "Customer support is slower than Sierra's during peak hours",
-        "Add-on costs (premium IDX, additional users) stack up over time"
+        "No public base pricing—must request quote",
+        "Lead guarantees apply only to Expand/Conquer with 6- or 12-month commitment",
+        "Geek AI assistant costs extra $200/mo; Brand Boost retargeting $300/mo",
+        "Additional MLS feeds expensive on lower tiers ($100/mo Establish)"
       ],
       "cta": {
-        "label": "Try Real Geeks",
-        "url": "https://www.realgeeks.com/?ref=kanzenai",
-        "affiliate": "realgeeks"
+        "label": "Visit Real Geeks",
+        "url": "https://www.realgeeks.com/?ref=kanzenai"
       }
     },
     {
-      "type": "p",
-      "text": "Real Geeks is the right pick if you want most of Sierra's conversion power at 60% of the price. The bundled drip nurture is the killer feature — leads who don't convert in week one get a 14-touch sequence automatically. Most platforms charge extra for this; Real Geeks builds it in."
-    },
-    {
       "type": "h2",
-      "text": "3. kvCORE Websites — Solid if you're already in the ecosystem",
+      "text": "kvCORE",
       "id": "kvcore"
     },
     {
+      "type": "p",
+      "text": "kvCORE's pricing page is unreachable in the research bundle. No public tiers, no feature breakdown, no user costs. This is a red flag for agents shopping independently. kvCORE is typically bundled through brokerage partnerships or sold via direct sales. If your brokerage offers kvCORE, you may get it subsidized or free. If you're shopping solo, expect to schedule a demo and negotiate. We cannot recommend a product with zero pricing transparency for independent comparison."
+    },
+    {
       "type": "product",
-      "name": "kvCORE (Inside Real Estate)",
-      "price": "$499/mo (Brokerage tier)",
-      "rating": 4.1,
+      "name": "kvCORE",
+      "price": "See vendor for current pricing. No public tier or user cost details available.",
+      "rating": 3.5,
       "pros": [
-        "Strong IDX search and map functionality",
-        "AI-powered behavioral nurture — ranks leads by activity",
-        "Built for brokerages that need agent recruitment + retention",
-        "Compliance and document management built-in"
+        "Often bundled free or discounted through brokerage partnerships",
+        "Comprehensive CRM and marketing automation when accessible",
+        "Strong MLS integration in supported markets"
       ],
       "cons": [
-        "4.2% registration rate — meaningfully behind Sierra and Real Geeks",
-        "UI is heavy; the back-end has a lot of clicks for simple tasks",
-        "Locked into Inside Real Estate ecosystem (CRM, lead routing, etc.)"
+        "No public pricing—opaque for independent agents",
+        "Typically sold via brokerage deals or direct sales demos",
+        "Hard to evaluate cost vs. competitors without a quote",
+        "Less suitable for agents outside partner brokerages"
       ],
       "cta": {
-        "label": "Get a kvCORE demo",
-        "url": "https://www.insiderealestate.com/?ref=kanzenai",
-        "affiliate": "kvcore"
+        "label": "Visit kvCORE",
+        "url": "https://kvcore.com/?ref=kanzenai"
       }
     },
     {
       "type": "h2",
-      "text": "4. Placester — The budget pick that's good enough",
+      "text": "Placester",
       "id": "placester"
+    },
+    {
+      "type": "p",
+      "text": "Placester targets agents wanting a fast, AI-generated website without CRM bloat. Three plans: Agent Essential at $59/mo ($566 annual), Agent Plus at $79/mo ($758 annual), Agent Premier at $129/mo ($1,238 annual). All include AI Website Builder & Editor, AI Content Assistant, AI-ready SEO foundation, and auto-generated LLMs.txt. Essential: 25 pages/posts, 100 emails/mo, basic modules (About, Blog, Contact, Listings, Quick Search), single MLS ($25/mo extra). Plus: 75 pages/posts, 500 emails/mo, CRM with lead activity and saved searches, advanced modules (Call to Action, Mortgage Calculator, Open Houses, Video), unlimited MLS ($25/mo per IDX). Premier: 125 pages/posts, 2,500 emails/mo, premium modules (Accordion, Custom Code, Gallery, Social Feed), advanced SEO, custom JS, Zapier integration. No contracts, 20% discount on annual billing, free trial. Placester is the leanest option for agents who want modern IDX search, AI site building, and light CRM without paying $300+/mo for features they won't use."
     },
     {
       "type": "product",
       "name": "Placester",
-      "price": "$99/mo (Pro)",
-      "rating": 3.8,
+      "price": "$59/mo Agent Essential ($566 annual), $79/mo Agent Plus ($758 annual), $129/mo Agent Premier ($1,238 annual). MLS $25/mo (Essential single, Plus/Premier unlimited at $25/mo per IDX). 20% discount annual billing, no contracts.",
+      "rating": 4.1,
       "pros": [
-        "By far the cheapest credible option in the category",
-        "Templates are surprisingly modern (better aesthetic than Sierra)",
-        "Easy DIY editing — no support ticket required for basic changes",
-        "Decent mobile experience"
+        "AI Website Builder launches IDX site in minutes; AI Content Assistant for landing pages and guides",
+        "Lowest entry price: $59/mo for Essential with single MLS",
+        "No contracts; free trial on all plans",
+        "Premier includes Zapier, custom code, advanced SEO, and 2,500 emails/mo"
       ],
       "cons": [
-        "3.1% registration rate — meaningfully lower than the leaders",
-        "No built-in CRM — you'll need Follow Up Boss or similar separately",
-        "IDX search is functional but slower than Sierra/Real Geeks",
-        "Lead-to-CRM handoff requires a Zapier integration"
+        "CRM is light—no dialer, no advanced lead routing until you integrate third-party tools",
+        "Essential capped at 25 pages/posts and 100 emails/mo; tight for active agents",
+        "MLS fees add up: $25/mo per IDX on Plus/Premier for multiple feeds",
+        "Not a full marketing suite—lacks built-in ad management or PPC tools"
       ],
       "cta": {
-        "label": "Try Placester",
-        "url": "https://placester.com/?ref=kanzenai",
-        "affiliate": "placester"
+        "label": "Visit Placester",
+        "url": "https://www.placester.com/?ref=kanzenai"
       }
     },
     {
-      "type": "p",
-      "text": "Placester is the right call if you're new to the business, can't afford $300+/mo, and need a real website right now. You'll likely outgrow it within 12-18 months as your lead volume scales — but spending $99/mo for a year is a lot smarter than spending $500/mo for a year while you're still building your sphere."
+      "type": "h2",
+      "text": "IDX Broker",
+      "id": "idx-broker"
     },
     {
-      "type": "h2",
-      "text": "5. IDX Broker — For DIY agents who already have a website",
-      "id": "idx-broker"
+      "type": "p",
+      "text": "IDX Broker is not a website builder—it's an IDX layer you embed into an existing site or WordPress install via the IMPress plugin. Three tiers: Core at $60/mo (modern interactive map templates, customizable search and detail pages, real-time text notifications, seamless lead experience), Engage at $99/mo (adds Market Reports, sold listings showcase, natural language search, virtual room redesign), Elite at $149/mo (customizable website designs, SEO-friendly responsive templates, advanced IDX features, AI-powered search). Optional IXACT Contact CRM integration at $50/mo. IDX Broker shines for agents with an existing WordPress site, developers building custom real estate portals, or teams wanting best-in-class IDX without switching CRMs. If you need a turnkey website, look elsewhere. If you want powerful, customizable search on your own domain, IDX Broker is the standard."
     },
     {
       "type": "product",
       "name": "IDX Broker",
-      "price": "$59.99/mo (Lite) — $129.99/mo (Platinum)",
-      "rating": 4,
+      "price": "$60/mo Core, $99/mo Engage, $149/mo Elite. Optional IXACT Contact CRM $50/mo.",
+      "rating": 4.4,
       "pros": [
-        "Cheapest way to add MLS search to an existing WordPress/Squarespace site",
-        "Works with any CMS or framework via embed code",
-        "Strong technical foundation (search speed, MLS data freshness)",
-        "Good for agents who already invested in a custom-designed site"
+        "Best standalone IDX tool for WordPress (IMPress plugin) and custom sites",
+        "Core tier at $60/mo offers unlimited map results, customizable search, and lead capture",
+        "Engage adds Market Reports, sold listings, and natural language search",
+        "Elite includes full website templates, advanced IDX, and AI features for $149/mo"
       ],
       "cons": [
-        "Not a full website — just the IDX search tool",
-        "No CRM, no drip, no Facebook Ad integration",
-        "Setup requires technical comfort or a developer"
+        "Not a website builder—requires existing site or WordPress knowledge",
+        "No built-in CRM unless you add IXACT Contact ($50/mo) or integrate third-party",
+        "Elite tier necessary for full website; otherwise you're embedding search only",
+        "Steeper learning curve for non-technical agents"
       ],
       "cta": {
-        "label": "Try IDX Broker",
-        "url": "https://www.idxbroker.com/?ref=kanzenai",
-        "affiliate": "idxbroker"
+        "label": "Visit IDX Broker",
+        "url": "https://www.idxbroker.com/?ref=kanzenai"
       }
     },
     {
       "type": "h2",
-      "text": "Verdict — which should you pick?",
+      "text": "Verdict",
       "id": "verdict"
     },
     {
       "type": "ul",
       "items": [
-        "Top-25% producer focused on lead conversion → Sierra Interactive. The 7.1% conversion rate justifies the price.",
-        "Solo agent or small team wanting bundled value → Real Geeks. Best price-to-performance.",
-        "Brokerage or large team in the Inside Real Estate ecosystem → kvCORE.",
-        "New agent on tight budget → Placester. Plan to upgrade within 18 months.",
-        "DIY agent with an existing custom site → IDX Broker for the search tool only."
+        "Solo agents on a budget: Placester Agent Essential at $59/mo delivers AI site building, single MLS, and light CRM without enterprise bloat.",
+        "Teams needing CRM + website + dialer in one platform: Sierra Interactive Growth ($599.95/mo, 5 users) or Real Geeks Expand (request pricing, 5 users, guaranteed leads). Sierra wins if you want dedicated onboarding and transparent pricing; Real Geeks if you prioritize ad management and lead verification.",
+        "Agents with an existing WordPress site: IDX Broker Core ($60/mo) or Engage ($99/mo) for best-in-class search and Market Reports without rebuilding your site.",
+        "Teams scaling fast with ad budgets: Real Geeks Expand or Conquer for PPC property search ads, full-service account management, and monthly lead guarantees.",
+        "Developers or brokerages building custom portals: IDX Broker Elite ($149/mo) for advanced IDX, customizable templates, and AI-powered search."
       ]
     },
     {
-      "type": "callout",
-      "variant": "info",
-      "title": "Hidden cost reality",
-      "text": "All five platforms have setup fees, MLS feed fees, or per-user upgrades that aren't on the public pricing page. Budget 25-35% above sticker for year one (setup + MLS data + add-ons). Get the full quote before you sign."
-    },
-    {
       "type": "h2",
-      "text": "What we'd skip in 2026",
-      "id": "skip"
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
     },
     {
       "type": "ul",
       "items": [
-        "Free MLS-bundled agent sites — zero lead capture, zero customization",
-        "Squarespace + manual MLS embed — slow, breaks every MLS feed update",
-        "Wix's 'Real Estate' template — looks fine, doesn't convert (1.8% in our test)",
-        "Custom WordPress builds with no IDX — fine for branding, useless for lead gen"
+        "kvCORE for independent agents—no public pricing, opaque feature access, and only attractive if your brokerage subsidizes it.",
+        "Sierra Interactive Starter or Essential if you're solo—$300–$400/mo is steep when Placester delivers IDX + light CRM for $59–$79/mo.",
+        "Real Geeks Establish if you need multiple MLS feeds—$100/mo per extra feed is punitive compared to Placester's $25/mo or IDX Broker's inclusive model.",
+        "Placester Essential if you run active drip campaigns—100 emails/mo ceiling will choke your nurture sequences; jump to Plus ($79/mo, 500 emails) or Premier ($129/mo, 2,500 emails)."
       ]
     }
   ],
@@ -221,29 +209,29 @@
     {
       "name": "Sierra Interactive",
       "url": "https://www.sierrainteractive.com/?ref=kanzenai",
-      "commission": "$300 per signup"
+      "commission": "varies"
     },
     {
       "name": "Real Geeks",
       "url": "https://www.realgeeks.com/?ref=kanzenai",
-      "commission": "$200 per signup"
+      "commission": "varies"
     },
     {
       "name": "kvCORE",
-      "url": "https://www.insiderealestate.com/?ref=kanzenai",
-      "commission": "$250 per signup"
+      "url": "https://kvcore.com/?ref=kanzenai",
+      "commission": "varies"
     },
     {
       "name": "Placester",
-      "url": "https://placester.com/?ref=kanzenai",
-      "commission": "$50 per signup"
+      "url": "https://www.placester.com/?ref=kanzenai",
+      "commission": "varies"
     },
     {
       "name": "IDX Broker",
       "url": "https://www.idxbroker.com/?ref=kanzenai",
-      "commission": "20% recurring"
+      "commission": "varies"
     }
   ],
-  "headerImage": "/articles/hero-contemporary-driveway.jpg",
-  "imageCredit": "Unsplash"
+  "headerImage": "/articles/compare-hero.jpg",
+  "imageCredit": "Pexels"
 }

@@ -9,7 +9,8 @@
     "write": "node --env-file=.env.local --import tsx scripts/write-article.ts",
     "write:noenv": "node --import tsx scripts/write-article.ts",
     "audit": "node --import tsx scripts/audit.ts",
-    "swap-links": "node --import tsx scripts/swap-affiliate-links.ts"
+    "swap-links": "node --import tsx scripts/swap-affiliate-links.ts",
+    "dedup-images": "node --import tsx scripts/dedup-images.ts"
   },
   "dependencies": {
     "lucide-react": "0.468.0",

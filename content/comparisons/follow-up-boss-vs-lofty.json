@@ -1,49 +1,57 @@
 {
   "slug": "follow-up-boss-vs-lofty",
-  "title": "Follow Up Boss vs Lofty: Which CRM Wins for Real Estate Agents in 2026?",
-  "description": "We ran both CRMs side-by-side on real agent workflows for 6 weeks. Here's the honest head-to-head — pricing, features, AI capability, and where each one actually wins.",
-  "publishedAt": "2026-05-09",
-  "updatedAt": "2026-05-09",
-  "intro": "Follow Up Boss and Lofty are the two most-asked-about real estate CRMs in 2026. We tested both with identical lead flow — same Zillow, Realtor.com, and Facebook leads — for 6 weeks. Here's what we found.",
-  "verdict": "Follow Up Boss wins for solo agents and teams up to 4. Lofty wins for teams of 5+ and brokerages where built-in IDX, AI lead qualification, and team accountability matter more than per-user simplicity. Both are solid; the right pick depends on your team size.",
+  "title": "Follow Up Boss vs Lofty for Real Estate Agents in 2026",
+  "description": "Head-to-head: Follow Up Boss offers transparent pricing and unlimited contacts; Lofty bundles AI tools and lead gen but hides costs behind demos.",
+  "publishedAt": "2026-05-10",
+  "updatedAt": "2026-05-10",
+  "intro": "Follow Up Boss and Lofty both promise to organize leads and automate follow-up, but they differ sharply on pricing transparency, feature bundling, and target user. Follow Up Boss publishes tiered monthly rates and charges per-user; Lofty gates pricing behind sales demos and bundles lead generation, AI agents, and brand advertising into custom packages. If you want predictable costs and straightforward CRM workflows, Follow Up Boss is simpler. If you need lead gen, IDX websites, and multi-channel marketing in one vendor and can negotiate pricing, Lofty offers more under one roof.",
+  "verdict": "Follow Up Boss wins for solo agents and small teams who value transparent pricing, unlimited contacts, and 7-day-a-week phone support. Lofty wins for teams and brokers ready to buy lead generation, branded websites, and AI automation as a bundle and willing to negotiate custom pricing.",
   "contenders": [
     {
       "name": "Follow Up Boss",
       "affiliateUrl": "https://www.followupboss.com/?ref=kanzenai",
-      "startingPrice": "$79/mo",
-      "rating": 4.7,
-      "bestFor": "Solo agents, small teams (1-4 agents)",
+      "startingPrice": "$69/month per user (Grow plan), $499/month for up to 10 users (Pro plan)",
+      "rating": 4.5,
+      "bestFor": "Solo agents and small teams seeking transparent per-user pricing, unlimited contacts, and straightforward CRM automation",
       "pros": [
-        "Best inbound lead routing — 47 lead source integrations, all reliable",
-        "Action Plans (drip sequences) actually fire on time without babysitting",
-        "Mobile app is the only one our test agents didn't complain about",
-        "Open API + Zapier means you can wire it to anything"
+        "Transparent published pricing: Grow plan at $69/user/month, Pro at $499/month for 10 users, Platform at $1,000/month for 30 users",
+        "Unlimited contacts, lead sources, and integrations on every plan",
+        "7-day-a-week phone and email support included in all plans",
+        "AI features (smart summaries, suggested tasks, predictive lead prioritization) included on Pro and Platform tiers",
+        "No contract; cancel any time",
+        "Simple add-ons: calling at $39/user/month on Grow, unlimited calling and texting included in Pro and Platform",
+        "Over 250 integrations listed"
       ],
       "cons": [
-        "No built-in IDX website (you'll need a separate site)",
-        "Pricing per user adds up fast at 5+ agents",
-        "Reporting is functional but not polished"
+        "Calling and texting cost extra on Grow plan ($39/user/month add-on)",
+        "AI features limited on Grow plan; full AI suite requires Pro or Platform",
+        "No built-in lead generation or IDX website tools; must integrate third parties",
+        "Platform tier pricing jumps to $1,000/month for 30 users"
       ]
     },
     {
       "name": "Lofty",
-      "affiliateUrl": "https://lofty.com/demo?ref=kanzenai",
-      "startingPrice": "$499/mo",
-      "rating": 4.4,
-      "bestFor": "Teams of 5+, brokerages, anyone needing IDX bundled",
+      "affiliateUrl": "https://www.lofty.com/?ref=kanzenai",
+      "startingPrice": "Contact vendor for pricing (Agent, Team, Broker, and Enterprise tiers available)",
+      "rating": 4,
+      "bestFor": "Teams and brokers who want lead generation, IDX websites, AI agents, and multi-channel marketing bundled under one vendor",
       "pros": [
-        "Built-in IDX website (most CRM-bundled sites are bad — Lofty's is decent)",
-        "AI assistant qualifies leads via SMS before they hit your inbox",
-        "Team and brokerage features (lead pools, accountability dashboards)",
-        "Reporting that lets you see which lead source actually pays back"
+        "Bundled platform includes CRM, IDX websites, lead generation (33+ methods listed), transaction management, and mobile apps",
+        "AI suite: AI Assistant, Sales Agent (virtual ISA), Social Agent, Homeowner Agent for automated lead nurturing and social posting",
+        "Lead gen offerings: Google PPC, Google LSA (pay-per-lead), direct mail, Lofty Bloom (hyper-local with zip exclusivity), brand advertising",
+        "Over 50 live training sessions weekly for customers",
+        "White-label options and customizable org structure on higher tiers",
+        "Back-office services available for operations support"
       ],
       "cons": [
-        "Steep onboarding — budget 3 weeks to get fluent",
-        "Pricing is opaque ($500-1,200/mo for typical small teams)",
-        "Heavier UI — more clicks to do the same thing as FUB"
+        "No published pricing; all tiers require demo and custom quote",
+        "Contact/lead limits apply on lower tiers; unlimited contacts not standard",
+        "Lead generation requires separate purchase and 20% ad management fee on some campaigns",
+        "Estimated lead volumes (e.g., 20-30 buyer leads) are not guaranteed",
+        "Complexity: bundling CRM, websites, and ad campaigns may overwhelm solo agents seeking simple CRM"
       ]
     }
   ],
-  "headerImage": "/articles/crm-hero.jpg",
+  "headerImage": "/articles/hero-living-chandelier.jpg",
   "imageCredit": "Unsplash"
 }

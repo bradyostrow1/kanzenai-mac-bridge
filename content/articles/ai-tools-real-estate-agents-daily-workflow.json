@@ -1,200 +1,238 @@
 {
   "slug": "ai-tools-real-estate-agents-daily-workflow",
-  "title": "The 2026 AI Stack for Working Real Estate Agents (Hour-by-Hour)",
-  "description": "Forget the listicles. Here's exactly how a top-producing agent uses Claude, ChatGPT, listing tools, and call-summary AI through a real Tuesday — what they prompt, what they automate, and where they still do it themselves.",
+  "title": "The 2026 AI Stack for Real Estate Agents Hour by Hour",
+  "description": "Five AI tools that handle transcription, lead follow-up, and daily writing tasks. What works, what doesn't, and how to build your stack.",
   "category": "AI Tools",
-  "publishedAt": "2026-05-08",
-  "updatedAt": "2026-05-08",
-  "readMinutes": 9,
-  "tldr": "The AI stack that actually works for agents in 2026: Claude Pro for listing copy and buyer comps, Otter.ai for showing-call transcripts, ChatGPT Plus for objection prep, and Spaceflow for AI-generated property descriptions. Total: ~$80/mo. Saves a top agent ~9 hours/week.",
+  "publishedAt": "2026-05-10",
+  "updatedAt": "2026-05-10",
+  "readMinutes": 8,
+  "tldr": "ChatGPT Plus and Follow Up Boss deliver the most value for real estate agents in 2026. ChatGPT Plus at $20/month handles listing copy, email drafts, and client summaries. Follow Up Boss starts at $69/month for Grow plan and automates lead follow-up with built-in AI features. Claude Pro, Otter.ai, and Spaceflow lack accessible pricing or real estate-specific features.",
   "body": [
     {
       "type": "p",
-      "text": "Most 'AI for real estate agents' articles list 20 tools and tell you to 'try them.' That's not how working agents adopt tech. They steal exactly what another producing agent does, drop the rest, and spend Saturday doing actual showings — not testing software."
-    },
-    {
-      "type": "p",
-      "text": "We followed Maria, a top-25% agent in Tampa with 36 transactions last year, through a regular Tuesday in April 2026. Here's exactly what AI did, what it didn't, and what the daily stack costs."
+      "text": "AI tools promise to save agents hours each week. Most fail to deliver. We reviewed five products agents ask about in 2026: general-purpose chatbots, transcription services, and CRM automation. Two tools justify their cost. Three remain unproven or opaque on pricing."
     },
     {
       "type": "h2",
-      "text": "7:30 AM — Comp pull for tomorrow's listing appointment",
-      "id": "morning-comp"
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
     },
     {
       "type": "p",
-      "text": "Maria has a listing appointment Wednesday morning at a 1980s ranch in Brandon. She needs a CMA she can defend. She opens Claude Pro, drops in the MLS data export, and prompts:"
-    },
-    {
-      "type": "callout",
-      "variant": "info",
-      "title": "Maria's actual prompt",
-      "text": "Here are 12 comparable sold properties in 33511. Rank them by relevance to my subject (3/2 ranch, 1,880 sqft, 1985, .25 acre, lakefront). Flag any anomalies. Suggest a price range and the 3 strongest comps to lead with on-camera."
-    },
-    {
-      "type": "p",
-      "text": "Claude returns a ranked list, flags one comp as a likely flip (sold above adjacent price band 6 months prior), and recommends a $385-410k range. Maria spends 4 minutes verifying instead of 45 minutes building from scratch."
-    },
-    {
-      "type": "cta",
-      "label": "Try Claude Pro",
-      "url": "https://claude.com/?ref=kanzenai",
-      "affiliate": "claude"
+      "text": "We examined vendor pricing pages, feature lists, and public documentation for each product. We did not fabricate test scenarios or invent transaction data. If pricing was unavailable or features unclear, we note that gap. The goal: identify which tools solve real estate-specific problems and which are general-purpose AI with no edge for agents."
     },
     {
       "type": "h2",
-      "text": "9:15 AM — Showing call gets transcribed automatically",
-      "id": "showing-transcript"
+      "text": "ChatGPT Plus",
+      "id": "chatgpt-plus"
     },
     {
       "type": "p",
-      "text": "Maria takes a buyer call from a relocator from Ohio. Otter.ai is running on her iPhone in the background. By the time the 22-minute call ends, she has a clean transcript with key requirements (3-bed minimum, fenced yard, under $500k, closing by August) automatically extracted."
+      "text": "ChatGPT Plus unlocks GPT-4, the more capable language model from OpenAI. The $20/month subscription adds faster response times, priority access during peak hours, early feature access, and higher usage limits. Free users get GPT-3.5, which handles most tasks but struggles with nuanced market analysis or lengthy listing descriptions. Plus subscribers also access DALL-E image generation, web browsing for current information, code interpreter for data work, and vision capabilities for analyzing uploaded images."
     },
     {
       "type": "p",
-      "text": "She uploads the transcript to Follow Up Boss as a note attached to the lead. Future Maria — or her ISA — has every detail without rewatching anything."
+      "text": "For real estate agents, ChatGPT Plus excels at writing assistance: listing copy, email sequences, social media posts, and client summaries. The web interface works on any browser. Mobile apps for iOS and Android sync conversations across devices and support voice input. API access exists for developers but follows pay-as-you-go pricing separate from the flat monthly subscription."
     },
     {
-      "type": "cta",
-      "label": "Try Otter.ai free",
-      "url": "https://otter.ai/?ref=kanzenai",
-      "affiliate": "otter"
+      "type": "product",
+      "name": "ChatGPT Plus",
+      "price": "$20/month",
+      "rating": 4.5,
+      "pros": [
+        "GPT-4 model produces more accurate, nuanced writing than free tier",
+        "Web browsing enables current market research and comps",
+        "Mobile app syncs conversations and supports voice input",
+        "DALL-E integration for property marketing visuals"
+      ],
+      "cons": [
+        "No real estate-specific features or templates",
+        "Usage limits exist even on Plus tier during peak demand",
+        "Requires careful prompt engineering for best results"
+      ],
+      "cta": {
+        "label": "Visit ChatGPT Plus",
+        "url": "https://chat.openai.com/?ref=kanzenai"
+      }
     },
     {
       "type": "h2",
-      "text": "11:00 AM — Listing description for the new pocket listing",
-      "id": "listing-copy"
+      "text": "Follow Up Boss",
+      "id": "follow-up-boss"
     },
     {
       "type": "p",
-      "text": "Her seller's pocket listing needs to go live in 4 hours. Old way: write 600 words from scratch, agonize over the hook. New way:"
+      "text": "Follow Up Boss offers three tiers. Grow plan costs $69/month per user (monthly billing) or $58/month per user (annual billing) and includes lead source connections, Smart Lists for organization, Action Plans for automation, call/text/email from the platform, calendar and email sync, performance reporting, and mobile app. Calling costs an additional $39/user on monthly or $33/user on annual billing. AI features are included but work best with the Calling add-on."
     },
     {
-      "type": "callout",
-      "variant": "info",
-      "title": "The listing-copy stack",
-      "text": "Spaceflow generates the first draft from the photos + MLS data. Claude refines tone (warmer, less salesy, removes the words 'charming' and 'cozy'). Maria reads it once, tweaks two phrases. 12 minutes total."
+      "type": "p",
+      "text": "Pro plan costs $499/month for up to 10 users (monthly) or $416/month for 10 users (annual). Additional users cost $49/month or $41/month annually. Pro adds unlimited calling and texting, team inboxes, call reporting, enhanced support and training, personalized onboarding, and full AI features like smart summaries, smart messages, suggested tasks, and predictive lead prioritization."
     },
     {
-      "type": "cta",
-      "label": "Try Spaceflow",
-      "url": "https://spaceflow.io/?ref=kanzenai",
-      "affiliate": "spaceflow"
+      "type": "p",
+      "text": "Platform plan costs $1,000/month for 30 users (monthly) or $833/month for 30 users (annual). Additional users cost $20/month or $17/month annually. Platform adds teams within teams, enhanced onboarding, dedicated success manager, and priority support. All plans include unlimited contacts, lead sources, integrations, free trial, no contract, and 7-day-a-week support."
+    },
+    {
+      "type": "product",
+      "name": "Follow Up Boss",
+      "price": "$69/month Grow plan, $499/month Pro for up to 10 users, $1,000/month Platform for 30 users",
+      "rating": 4,
+      "pros": [
+        "AI features built into existing CRM workflow, not a separate tool",
+        "Smart summaries and suggested tasks reduce manual data entry",
+        "Unlimited contacts and lead sources on all plans",
+        "7-day-a-week phone and email support included"
+      ],
+      "cons": [
+        "Calling feature costs extra on Grow plan ($39-$33/user)",
+        "AI features work best with Calling data, creating hidden cost",
+        "Pro plan jumps to $499/month for 10 users, steep for small teams"
+      ],
+      "cta": {
+        "label": "Visit Follow Up Boss",
+        "url": "https://www.followupboss.com/?ref=kanzenai"
+      }
     },
     {
       "type": "h2",
-      "text": "1:30 PM — Objection prep for an aggressive buyer's agent",
-      "id": "objection-prep"
+      "text": "Claude Pro",
+      "id": "claude-pro"
     },
     {
       "type": "p",
-      "text": "Maria has a counter-offer call at 2pm. The buyer's agent is known for being aggressive. She uses ChatGPT Plus to roleplay the call:"
+      "text": "Claude Pro is Anthropic's subscription offering for its Claude AI assistant. No vendor pricing page was accessible during research. The model competes with GPT-4 on reasoning tasks and offers longer context windows for processing large documents. Without confirmed pricing or feature details, agents should see vendor for current rates and capabilities."
     },
     {
-      "type": "callout",
-      "variant": "info",
-      "title": "Maria's prep prompt",
-      "text": "I'm representing a seller. The buyer's agent will likely push hard on a $15k credit for the AC and roof, citing inspection findings. The roof has 8 years left per inspection and the AC is 5 years old. Roleplay the buyer's agent making aggressive arguments. Then suggest 3 concession variations I can lead with that protect my seller's position."
-    },
-    {
-      "type": "p",
-      "text": "She gets a 5-minute mock script, three pre-rehearsed responses, and goes into the call with confidence. Key insight: she doesn't read AI output verbatim. She reads it, internalizes the angles, then talks like herself."
+      "type": "product",
+      "name": "Claude Pro",
+      "price": "See vendor for current pricing",
+      "rating": 3,
+      "pros": [
+        "Longer context window handles large contracts or documents",
+        "Competes with GPT-4 on reasoning and analysis tasks"
+      ],
+      "cons": [
+        "No accessible pricing information",
+        "No real estate-specific features documented",
+        "Limited public information on usage limits or feature set"
+      ],
+      "cta": {
+        "label": "Visit Claude",
+        "url": "https://www.anthropic.com/?ref=kanzenai"
+      }
     },
     {
       "type": "h2",
-      "text": "4:30 PM — Email follow-ups, batched",
-      "id": "email-batch"
+      "text": "Otter.ai",
+      "id": "otter-ai"
     },
     {
       "type": "p",
-      "text": "12 leads need a personalized follow-up email. Old way: 90 minutes of writing slightly different emails. New way: Maria opens Follow Up Boss, lets the AI suggestion engine draft each one with the lead's specific context, then she edits the top 3 lines to make it sound like her. 22 minutes."
+      "text": "Otter.ai provides automated transcription for meetings and voice notes. No vendor pricing page was accessible during research. Transcription tools serve agents who record client calls, team meetings, or property tours and need searchable text. Without confirmed pricing, feature limits, or real estate integrations, agents should see vendor for current details."
+    },
+    {
+      "type": "product",
+      "name": "Otter.ai",
+      "price": "See vendor for current pricing",
+      "rating": 3,
+      "pros": [
+        "Automated transcription saves manual note-taking time",
+        "Searchable transcripts for client call records"
+      ],
+      "cons": [
+        "No accessible pricing information",
+        "No documented integrations with real estate CRMs",
+        "Unclear feature limits or accuracy guarantees"
+      ],
+      "cta": {
+        "label": "Visit Otter.ai",
+        "url": "https://otter.ai/?ref=kanzenai"
+      }
     },
     {
       "type": "h2",
-      "text": "6:00 PM — Tomorrow's prep is done in 8 minutes",
-      "id": "tomorrow-prep"
+      "text": "Spaceflow",
+      "id": "spaceflow"
     },
     {
       "type": "p",
-      "text": "Maria asks Claude to summarize her day and queue tomorrow's must-do list:"
+      "text": "Spaceflow is listed as an AI tool for real estate agents but no vendor page was reachable during research. Without accessible pricing, feature descriptions, or use case documentation, we cannot evaluate fit for agent workflows. Agents should see vendor for current information."
     },
     {
-      "type": "callout",
-      "variant": "info",
-      "title": "End-of-day prompt",
-      "text": "Here's my Follow Up Boss activity log for today. List the 5 must-do follow-ups for tomorrow ranked by likelihood-to-close. For each, suggest the specific opening line."
+      "type": "product",
+      "name": "Spaceflow",
+      "price": "See vendor for current pricing",
+      "rating": 2.5,
+      "pros": [
+        "Product exists but insufficient data to confirm benefits"
+      ],
+      "cons": [
+        "No accessible vendor information",
+        "No documented features or pricing",
+        "Unclear product category or use case for agents"
+      ],
+      "cta": {
+        "label": "Visit Spaceflow",
+        "url": "https://www.spaceflow.io/?ref=kanzenai"
+      }
     },
     {
       "type": "h2",
-      "text": "The full stack, total cost",
-      "id": "stack"
+      "text": "Verdict",
+      "id": "verdict"
     },
     {
       "type": "ul",
       "items": [
-        "Claude Pro: $20/mo — comps, listing refinement, daily prep",
-        "ChatGPT Plus: $20/mo — objection prep, roleplay, second opinion",
-        "Otter.ai Pro: $17/mo — call transcripts auto-attached to FUB",
-        "Spaceflow: $25/mo — AI listing descriptions and image enhancement",
-        "Follow Up Boss (CRM, bundled): $79/mo — drip + AI lead suggestions"
+        "Solo agents writing listing copy daily: ChatGPT Plus at $20/month delivers immediate ROI on GPT-4 access and web browsing for comps.",
+        "Small teams managing 50+ leads per agent: Follow Up Boss Grow plan at $69/month (add Calling for $39/month) automates follow-up and surfaces priority leads with AI.",
+        "Growing teams with ISAs or 10+ agents: Follow Up Boss Pro at $499/month for 10 users includes unlimited calling, team inboxes, and full AI features without add-on costs.",
+        "Agents already using ChatGPT free tier: Upgrade to Plus only if you hit usage limits or need GPT-4 for complex market analysis.",
+        "Large brokerages with 30+ agents: Follow Up Boss Platform at $1,000/month for 30 users adds dedicated support and team hierarchy management."
       ]
     },
     {
-      "type": "p",
-      "text": "Total: ~$161/mo. Maria estimates ~9 hours/week saved. At her hourly value, that's ~$3,600/mo of recovered time. The math isn't close."
-    },
-    {
       "type": "h2",
-      "text": "What Maria does NOT use AI for",
-      "id": "no-ai"
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
     },
     {
       "type": "ul",
       "items": [
-        "First conversations with sellers about pricing — she does these in person, no AI summary in the room",
-        "Negotiation calls — AI preps her, but she runs the conversation off her notes",
-        "Family/sphere referrals — these get the most personal touch she can give",
-        "Closing day messaging — clients know it's her, not a system"
+        "Claude Pro until pricing and real estate use cases are documented publicly. No transparent path to evaluate cost versus ChatGPT Plus.",
+        "Otter.ai without confirmed CRM integrations. Transcription alone doesn't justify a separate tool unless it feeds lead data into your workflow automatically.",
+        "Spaceflow until vendor provides accessible product information. Insufficient data to recommend for any agent profile.",
+        "Follow Up Boss Grow plan without Calling add-on. AI features need call data to deliver value, making the base $69/month incomplete for most agents."
       ]
-    },
-    {
-      "type": "p",
-      "text": "The agents who beat AI in 2026 are the ones who use it where it saves time AND know where it actively hurts trust. Maria's framework: AI handles preparation and scale, humans handle conviction and relationship."
-    },
-    {
-      "type": "callout",
-      "variant": "tip",
-      "title": "Where to start",
-      "text": "If you're new to AI, don't try to adopt the whole stack in week 1. Start with Claude Pro + Otter.ai. Two tools, one month. Once those feel automatic, add ChatGPT and the rest."
     }
   ],
   "affiliateProducts": [
     {
-      "name": "Claude Pro",
-      "url": "https://claude.com/?ref=kanzenai",
-      "commission": "$10/mo recurring"
-    },
-    {
       "name": "ChatGPT Plus",
-      "url": "https://openai.com/chatgpt/?ref=kanzenai",
-      "commission": "$8/mo recurring"
-    },
-    {
-      "name": "Otter.ai",
-      "url": "https://otter.ai/?ref=kanzenai",
-      "commission": "$30 per signup"
-    },
-    {
-      "name": "Spaceflow",
-      "url": "https://spaceflow.io/?ref=kanzenai",
-      "commission": "$50 per signup"
+      "url": "https://chat.openai.com/?ref=kanzenai",
+      "commission": "varies"
     },
     {
       "name": "Follow Up Boss",
       "url": "https://www.followupboss.com/?ref=kanzenai",
-      "commission": "$200 per signup"
+      "commission": "varies"
+    },
+    {
+      "name": "Claude Pro",
+      "url": "https://www.anthropic.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Otter.ai",
+      "url": "https://otter.ai/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Spaceflow",
+      "url": "https://www.spaceflow.io/?ref=kanzenai",
+      "commission": "varies"
     }
   ],
   "headerImage": "/articles/ai-workflow-hero.jpg",
-  "imageCredit": "Unsplash"
+  "imageCredit": "Pexels"
 }
