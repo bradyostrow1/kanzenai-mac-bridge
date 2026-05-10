@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Clock, ExternalLink } from "lucide-react";
-import { getArticle, listArticles, type Article, type ArticleBlock } from "@/lib/articles";
+import { getArticle, listArticles, relatedArticles, type Article, type ArticleBlock } from "@/lib/articles";
 import { articleSchema, breadcrumbSchema, jsonLdScript } from "@/lib/jsonld";
+import { RelatedArticles } from "@/components/RelatedArticles";
 
 export function generateStaticParams() {
   return listArticles().map((a) => ({ slug: a.slug }));
@@ -100,6 +101,13 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
       <article className="mt-10 prose prose-lg max-w-none prose-headings:tracking-tight prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-p:text-ink-0 prose-p:leading-relaxed prose-li:text-ink-0 prose-strong:text-ink-0">
         {article.body.map((block, i) => renderBlock(block, i))}
       </article>
+
+      {/* Related articles */}
+      <RelatedArticles
+        articles={relatedArticles(article, 3)}
+        heading="Keep reading"
+        subheading={`More ${article.category.toLowerCase()} reviews and tools we've tested.`}
+      />
 
       {/* Affiliate disclosure footer */}
       <div className="mt-12 text-[12px] text-ink-2 border-t border-bg-2 pt-5 leading-relaxed">

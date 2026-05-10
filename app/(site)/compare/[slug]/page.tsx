@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ExternalLink } from "lucide-react";
-import { getComparison, listComparisons } from "@/lib/articles";
+import { getComparison, listComparisons, relatedToComparison } from "@/lib/articles";
 import { comparisonSchema, breadcrumbSchema, jsonLdScript } from "@/lib/jsonld";
+import { RelatedArticles, RelatedComparisons } from "@/components/RelatedArticles";
 
 export function generateStaticParams() {
   return listComparisons().map((c) => ({ slug: c.slug }));
@@ -113,6 +114,21 @@ export default function ComparePage({ params }: { params: { slug: string } }) {
         </div>
         <p className="mt-2 text-lg text-ink-0 leading-relaxed">{c.verdict}</p>
       </div>
+
+      {/* Related */}
+      {(() => {
+        const related = relatedToComparison(c, 3);
+        return (
+          <>
+            <RelatedComparisons comparisons={related.comparisons} />
+            <RelatedArticles
+              articles={related.articles}
+              heading="Deep dives"
+              subheading={`Full reviews of ${c.contenders.map((x) => x.name).join(" and ")}.`}
+            />
+          </>
+        );
+      })()}
 
       {/* Affiliate disclosure */}
       <div className="mt-12 text-[12px] text-ink-2 border-t border-bg-2 pt-5 leading-relaxed">

@@ -129,3 +129,37 @@ export function categorySlug(category: string): string {
     .replace(/\s+&\s+/g, "-")
     .replace(/\s+/g, "-");
 }
+
+/**
+ * Pick N articles related to the given article. Strategy:
+ *   1. Same category, sorted by recency.
+ *   2. If fewer than N, fill from other recent articles.
+ *   3. Always exclude the source article itself.
+ */
+export function relatedArticles(source: Article, n = 3): Article[] {
+  const all = listArticles().filter((a) => a.slug !== source.slug);
+  const sameCategory = all.filter((a) => a.category === source.category);
+  if (sameCategory.length >= n) return sameCategory.slice(0, n);
+  const others = all.filter((a) => a.category !== source.category);
+  return [...sameCategory, ...others].slice(0, n);
+}
+
+/**
+ * Pick N comparisons + N articles related to a comparison. Articles are matched
+ * by checking if any contender's name is referenced in their content/products.
+ */
+export function relatedToComparison(
+  source: Comparison,
+  n = 3,
+): { comparisons: Comparison[]; articles: Article[] } {
+  const otherComparisons = listComparisons()
+    .filter((c) => c.slug !== source.slug)
+    .slice(0, n);
+
+  const productNames = source.contenders.map((c) => c.name.toLowerCase());
+  const matchedArticles = listArticles().filter((a) => {
+    const text = JSON.stringify(a).toLowerCase();
+    return productNames.some((name) => text.includes(name));
+  });
+  return { comparisons: otherComparisons, articles: matchedArticles.slice(0, n) };
+}
