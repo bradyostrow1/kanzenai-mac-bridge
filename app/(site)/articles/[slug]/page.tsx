@@ -2,16 +2,50 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Clock, ExternalLink } from "lucide-react";
 import { getArticle, listArticles, type Article, type ArticleBlock } from "@/lib/articles";
+import { articleSchema, breadcrumbSchema, jsonLdScript } from "@/lib/jsonld";
 
 export function generateStaticParams() {
   return listArticles().map((a) => ({ slug: a.slug }));
 }
 
+export function generateMetadata({ params }: { params: { slug: string } }) {
+  const article = getArticle(params.slug);
+  if (!article) return {};
+  return {
+    title: `${article.title} · KanzenAI`,
+    description: article.description,
+    alternates: { canonical: `https://kanzenai.com/articles/${article.slug}` },
+    openGraph: {
+      type: "article",
+      url: `https://kanzenai.com/articles/${article.slug}`,
+      title: article.title,
+      description: article.description,
+      publishedTime: article.publishedAt,
+      modifiedTime: article.updatedAt,
+      images: article.headerImage ? [`https://kanzenai.com${article.headerImage}`] : [],
+    },
+  };
+}
+
 export default function ArticlePage({ params }: { params: { slug: string } }) {
   const article = getArticle(params.slug);
   if (!article) notFound();
+  const articleLd = articleSchema(article);
+  const breadcrumbLd = breadcrumbSchema([
+    { name: "Home", url: "https://kanzenai.com/" },
+    { name: "Reviews", url: "https://kanzenai.com/articles" },
+    { name: article.title, url: `https://kanzenai.com/articles/${article.slug}` },
+  ]);
   return (
     <main className="max-w-3xl mx-auto px-5 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLdScript(articleLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLdScript(breadcrumbLd) }}
+      />
       <Link href="/" className="inline-flex items-center gap-1.5 text-ink-2 hover:text-ink-0 text-[13px]">
         <ArrowLeft className="w-3.5 h-3.5" />
         All reviews

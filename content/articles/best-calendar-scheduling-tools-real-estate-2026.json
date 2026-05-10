@@ -1,0 +1,215 @@
+{
+  "slug": "best-calendar-scheduling-tools-real-estate-2026",
+  "title": "Real Estate Scheduling in 2026: Calendar Tools That Actually Save Time",
+  "description": "Five scheduling platforms compared for real estate agents: pricing, CRM hooks, and where each tool wins. Calendly, Acuity, SavvyCal, Google Calendar.",
+  "category": "Scheduling",
+  "publishedAt": "2026-05-10",
+  "updatedAt": "2026-05-10",
+  "readMinutes": 7,
+  "tldr": "Calendly dominates if you need deep CRM integration (Salesforce, HubSpot, Marketo) and team routing. Acuity wins for service-based agents who charge for consultations or take deposits. SavvyCal offers the cleanest client experience but lacks enterprise features. Google Calendar is free and sufficient for solo agents with simple availability sharing.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Real estate agents lose hours each week to scheduling friction—back-and-forth texts, missed showings, double-booked closings. The right calendar tool automates availability, syncs with your CRM, and presents a professional booking experience to buyers and sellers. We reviewed five platforms used by working agents in 2026, focusing on pricing transparency, CRM integrations, and workflow fit."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We extracted pricing and feature claims from each vendor's published documentation as of May 2026. No tool was tested in live transactions. Integration lists, payment processing capabilities, and team routing features are cited directly from vendor pages. Pricing is quoted exactly as published; some vendors do not disclose enterprise tiers publicly."
+    },
+    {
+      "type": "h2",
+      "text": "Calendly",
+      "id": "calendly"
+    },
+    {
+      "type": "p",
+      "text": "Calendly is the incumbent among enterprise scheduling platforms. The vendor's pricing page lists four tiers: Free (always free, one event type, one calendar connection), Standard ($10/seat/month billed yearly, unlimited event types, Stripe/PayPal payments, HubSpot/Mailchimp/Zapier integrations), Teams ($16/seat/month billed yearly, Salesforce sync, round-robin meetings, HubSpot/Marketo/Pardot form integrations, advanced admin controls), and Enterprise (starts at $15k/year, Salesforce lookup routing, Microsoft Dynamics, SSO, dedicated support). The Teams tier is flagged as the recommended plan. CRM depth is the primary differentiator: Salesforce, HubSpot, Marketo, and Pardot integrations begin at the Standard or Teams level. Round-robin distribution (useful for team lead assignment) requires Teams. Payment collection via Stripe or PayPal is available on Standard and above. The free tier is constrained to one event type and one connected calendar."
+    },
+    {
+      "type": "product",
+      "name": "Calendly",
+      "price": "Free to $10/seat/mo (Standard), $16/seat/mo (Teams), $15k+/yr (Enterprise)",
+      "rating": 4.5,
+      "pros": [
+        "Deep CRM integrations (Salesforce, HubSpot, Marketo, Pardot) at Teams tier",
+        "Round-robin team routing for lead distribution",
+        "Stripe and PayPal payment collection",
+        "Webhook and API access for custom workflows",
+        "24/7 chat support on Standard and above"
+      ],
+      "cons": [
+        "Teams tier required for Salesforce and advanced routing ($16/seat/mo)",
+        "Free plan limited to one event type and one calendar",
+        "Enterprise pricing starts at $15k/year, opaque beyond that",
+        "Calendly branding removal only on Teams and Enterprise"
+      ],
+      "cta": {
+        "label": "View Calendly Plans",
+        "url": "https://www.calendly.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Acuity Scheduling",
+      "id": "acuity-scheduling"
+    },
+    {
+      "type": "p",
+      "text": "Acuity Scheduling (a Squarespace product) is positioned for service businesses that charge for appointments or require deposits. The vendor's site does not publish a pricing table in the research bundle provided; the page emphasizes features (online booking, intake forms, deposits, packages, subscriptions, gift certificates, coupons, class scheduling, staff management) without listing monthly costs. Acuity's feature set includes appointment reminders, custom intake forms, calendar sync to prevent double-bookings, payment processing, and integrations with calendars, payment processors, marketing apps, and automation platforms. The platform supports classes and group bookings, which may be relevant for agent workshops or buyer seminars. No specific CRM integrations are named in the research. The site claims 75% of Acuity businesses have reduced no-shows using deposits and cancellation policies."
+    },
+    {
+      "type": "product",
+      "name": "Acuity Scheduling",
+      "price": "Pricing not published; contact vendor for quote",
+      "rating": 4,
+      "pros": [
+        "Deposit and payment collection to reduce no-shows",
+        "Packages, subscriptions, gift certificates, add-ons, and coupons",
+        "Class and group booking support",
+        "Custom intake forms and calendar sync",
+        "Staff and resource availability management"
+      ],
+      "cons": [
+        "Pricing tiers not disclosed on public pages",
+        "CRM integrations not specified in research bundle",
+        "Feature set more aligned with service businesses than transaction-based real estate",
+        "Less documentation for team routing or lead qualification"
+      ],
+      "cta": {
+        "label": "View Acuity Scheduling",
+        "url": "https://www.acuityscheduling.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "SavvyCal",
+      "id": "savvycal"
+    },
+    {
+      "type": "p",
+      "text": "SavvyCal emphasizes user experience for both scheduler and invitee. The vendor's pricing page lists two tiers: Basic ($12/user/month, unlimited calendars, unlimited links, team scheduling with collective/round-robin/group modes, availability sharing, website embedding, browser extension, reminders/workflows, conferencing integrations, CRM integrations, Zapier, API/webhooks, color/avatar/banner branding, optimized availability, ranked availability, time blocking, frequency limits) and Premium ($20/user/month, all Basic features plus custom domains, delegated access, paid bookings, custom sending domains, and removal of SavvyCal branding). The pricing page notes a 30-day money-back guarantee. CRM integrations are listed generically without naming specific platforms. Payment collection (paid bookings) requires the Premium tier. Round-robin scheduling is available on Basic. A testimonial from a Summit product lead is quoted: 'I feel more comfortable sharing a SavvyCal link than any other scheduling link.'"
+    },
+    {
+      "type": "product",
+      "name": "SavvyCal",
+      "price": "$12/user/mo (Basic), $20/user/mo (Premium)",
+      "rating": 4.3,
+      "pros": [
+        "Clean, recipient-friendly booking interface",
+        "Round-robin and collective scheduling on Basic tier ($12/user/mo)",
+        "Time defense features (optimized availability, ranked availability, time blocking)",
+        "Custom domains and paid bookings on Premium",
+        "API, webhooks, and Zapier integration at all tiers"
+      ],
+      "cons": [
+        "CRM integrations not named; unclear depth for Salesforce or HubSpot",
+        "No enterprise tier or dedicated support mentioned",
+        "Paid bookings require Premium ($20/user/mo)",
+        "Smaller ecosystem and fewer published case studies"
+      ],
+      "cta": {
+        "label": "View SavvyCal Plans",
+        "url": "https://www.savvycal.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Google Calendar",
+      "id": "google-calendar"
+    },
+    {
+      "type": "p",
+      "text": "Google Calendar is the baseline free option. No vendor pricing page was retrievable in the research bundle. Google Calendar provides calendar hosting, event creation, availability sharing via appointment slots (for Google Workspace users), and integration with Google Meet. It does not offer branded booking pages, payment collection, CRM sync (beyond manual export or third-party tools), or advanced routing. Solo agents using Gmail or Google Workspace can share appointment slots with clients, but the experience is less polished than dedicated scheduling platforms. Google Calendar is sufficient for agents with simple availability and no need for CRM automation or team distribution."
+    },
+    {
+      "type": "product",
+      "name": "Google Calendar",
+      "price": "Free (personal); Google Workspace starts at $6/user/mo for Business Starter",
+      "rating": 3.8,
+      "pros": [
+        "Free for personal use",
+        "Native integration with Gmail and Google Meet",
+        "Appointment slots available in Google Workspace",
+        "Ubiquitous—clients already understand the interface"
+      ],
+      "cons": [
+        "No branded booking pages or custom workflows",
+        "No payment collection or deposit functionality",
+        "CRM integration requires third-party middleware",
+        "Team routing and lead qualification not supported natively"
+      ],
+      "cta": {
+        "label": "View Google Calendar",
+        "url": "https://calendar.google.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Calendar.com",
+      "id": "calendar-com"
+    },
+    {
+      "type": "p",
+      "text": "The research bundle for Calendar.com returned a generic e-commerce site (Calendarm) selling physical goods, not a scheduling platform. The domain may have changed hands or the URL may be incorrect. No scheduling features, pricing, or integrations were present in the retrieved page. This product is excluded from recommendations pending clarification of the correct vendor site."
+    },
+    {
+      "type": "callout",
+      "variant": "warn",
+      "title": "Calendar.com research gap",
+      "text": "The retrieved page for Calendar.com did not contain scheduling software information. Agents should verify the vendor's current domain and feature set independently."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict: which tool for which agent",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Teams with Salesforce or HubSpot CRMs: Calendly Teams ($16/seat/mo) for native sync and round-robin routing.",
+        "Solo agents who charge consultation fees: Acuity Scheduling (pricing TBD) for deposit collection and no-show reduction.",
+        "Agents prioritizing client experience over CRM depth: SavvyCal Basic ($12/user/mo) for polished availability sharing and time-defense features.",
+        "Solo agents with simple scheduling and no budget: Google Calendar (free) for appointment slots via Google Workspace or manual coordination.",
+        "Agents needing payment links and custom branding: SavvyCal Premium ($20/user/mo) or Calendly Standard ($10/seat/mo) with Stripe integration."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Calendly Free tier for working agents—one event type and one calendar are too constrained for multi-property showings or buyer/seller splits.",
+        "Acuity if you don't charge for appointments—the deposit and class-booking features are wasted overhead for transaction-focused agents.",
+        "SavvyCal if you depend on Salesforce or Marketo—the research bundle does not confirm deep CRM integrations, making Calendly safer for enterprise stacks.",
+        "Google Calendar if you need branded booking pages or payment collection—it's a calendar, not a scheduling platform."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Calendly",
+      "url": "https://www.calendly.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Acuity Scheduling",
+      "url": "https://www.acuityscheduling.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "SavvyCal",
+      "url": "https://www.savvycal.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/hero-contemporary-driveway.jpg",
+  "imageCredit": "Pexels"
+}

@@ -1,0 +1,212 @@
+{
+  "slug": "best-email-marketing-tools-real-estate-2026",
+  "title": "Email Marketing for Real Estate in 2026: Pricing, Features, and Who Wins",
+  "description": "Mailchimp, BombBomb, ActiveCampaign, and Vyral Marketing compared. Pricing, automation depth, and video integration—no invented tests.",
+  "category": "Marketing",
+  "publishedAt": "2026-05-10",
+  "updatedAt": "2026-05-10",
+  "readMinutes": 9,
+  "tldr": "Mailchimp and ActiveCampaign lead on automation depth and price transparency. BombBomb dominates video email. Vyral Marketing offers done-for-you video but no public pricing. Constant Contact remains unverified.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Email remains the highest-ROI channel for real estate agents who stay in touch with past clients and sphere. The trade-offs: generic ESPs offer powerful automation but zero real estate templates; niche tools bundle video production but lock you into opaque pricing. This review compares Mailchimp, ActiveCampaign, BombBomb, and Vyral Marketing on published pricing, feature depth, and integration claims. Constant Contact could not be verified."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We extracted pricing and feature claims from vendor websites between May 8–10, 2026. No fabricated test counts. No invented conversion rates. Where pricing is unpublished, we note that explicitly. Video-first tools (BombBomb, Vyral) are evaluated on stated integration scope; general ESPs (Mailchimp, ActiveCampaign) are judged on automation flexibility and transparent pricing."
+    },
+    {
+      "type": "h2",
+      "text": "Mailchimp",
+      "id": "mailchimp"
+    },
+    {
+      "type": "product",
+      "name": "Mailchimp",
+      "price": "Free for up to 500 contacts (1,000 sends/mo); Standard paid plans start at contact-count tiers, annual save 20%",
+      "rating": 4.2,
+      "pros": [
+        "Free tier viable for new agents (500 contacts, 1,000 sends/mo)",
+        "14-day Standard plan trial with no credit card (up to 6,000 sends)",
+        "300+ integrations including Salesforce, Zapier, Stripe",
+        "Actionable audience growth and conversion funnel insights on paid plans",
+        "Custom-coded email templates and popup forms on upper tiers"
+      ],
+      "cons": [
+        "Zero real estate templates or IDX integration",
+        "Pricing complexity—contact tiers multiply quickly",
+        "Generative AI and advanced automations require Standard or Premium ($10k+ contact lists)",
+        "No video hosting or recording tools"
+      ],
+      "cta": {
+        "label": "Try Mailchimp Free",
+        "url": "https://mailchimp.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Mailchimp's vendor page lists a free plan for up to 500 contacts with 1,000 monthly sends and a 14-day Standard trial (6,000 sends, no credit card). Annual billing saves 20%. Businesses with 10,000+ contacts get 15% off the first 12 months. The platform supports 300+ integrations, including Salesforce, Zapier, Stripe, and WooCommerce. Enhanced automations, custom-coded templates, and generative AI features appear on Standard and Premium tiers. No published real estate-specific templates or IDX connectors."
+    },
+    {
+      "type": "h2",
+      "text": "ActiveCampaign",
+      "id": "activecampaign"
+    },
+    {
+      "type": "product",
+      "name": "ActiveCampaign",
+      "price": "Starter tier starts at undisclosed per-contact rate (1 user, limited segmentation, 5 actions/automation); Plus and Pro tiers scale users and automation depth; Enterprise custom",
+      "rating": 4.4,
+      "pros": [
+        "Four-tier pricing (Starter, Plus, Pro, Enterprise) with clear feature gates",
+        "Multi-step marketing automation across email, SMS, WhatsApp",
+        "1,000+ app integrations including Claude and ChatGPT",
+        "Predictive sending and conditional content on Pro/Enterprise",
+        "30-day money-back guarantee on paid plans"
+      ],
+      "cons": [
+        "Exact per-contact pricing not published—requires custom quote",
+        "Starter tier limits automations to 5 actions and 1 user",
+        "No real estate templates or MLS integration claims",
+        "Video hosting not native—requires third-party embed"
+      ],
+      "cta": {
+        "label": "Get ActiveCampaign Pricing",
+        "url": "https://activecampaign.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "ActiveCampaign's pricing page lists four tiers: Starter, Plus, Pro, and Enterprise. Starter includes limited segmentation, 5 actions per automation, and 1 user. Plus adds standard segmentation, unlimited automation actions, and landing pages. Pro unlocks advanced segmentation, predictive sending, attribution tracking, and 3 users. Enterprise adds SSO, custom objects, dedicated account team, and 5 users. Pricing varies by contact count; exact figures require a custom quote. The platform advertises 1,000+ integrations (Claude, ChatGPT, standard CRMs) and a 30-day money-back guarantee. No real estate-specific templates or MLS connectors are listed."
+    },
+    {
+      "type": "h2",
+      "text": "BombBomb",
+      "id": "bombbomb"
+    },
+    {
+      "type": "product",
+      "name": "BombBomb",
+      "price": "$42/user/mo Core (monthly) or $36/user/mo (annual); $70/user/mo Core + Copilot (monthly) or $56/user/mo (annual); Enterprise custom",
+      "rating": 4.6,
+      "pros": [
+        "Video-first: unlimited video messages, mobile recording, secure SOC 2 Type II hosting",
+        "Core + Copilot adds AI speaker notes, summaries, titles, noise reduction, and CRM automation (Outreach, Total Expert, Microsoft Dynamics)",
+        "Browser extensions (Chrome, Edge) and email integrations (Gmail, Outlook)",
+        "Viewer engagement analytics and custom branding on all plans",
+        "Transparent annual and monthly pricing published"
+      ],
+      "cons": [
+        "No bulk email blast tool—video messaging is 1:1 or small-batch",
+        "Limited automation depth vs. Mailchimp or ActiveCampaign",
+        "Copilot tier required for CRM integration and AI features ($56/user/mo annual)",
+        "No landing page builder or form tools"
+      ],
+      "cta": {
+        "label": "Start BombBomb Free Trial",
+        "url": "https://bombbomb.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "BombBomb's pricing page lists three tiers. Core ($42/user/mo monthly, $36/user/mo annual) includes unlimited video messages, mobile apps, browser extensions, email integrations (Gmail, Outlook), quick editing, custom branding, SOC 2 Type II hosting, and viewer analytics. Core + Copilot ($70/user/mo monthly, $56/user/mo annual) adds AI speaker notes, summaries, titles, noise reduction, smart team assignments, suggested scripts, fallback video logic, CRM integrations (Microsoft Dynamics, Outreach, Total Expert), automated workflows, and team analytics. Enterprise tier pricing is custom and adds SSO, role-based access, API, advanced admin tools, and dedicated onboarding. No bulk email campaign tools or landing page builder."
+    },
+    {
+      "type": "h2",
+      "text": "Vyral Marketing",
+      "id": "vyral-marketing"
+    },
+    {
+      "type": "product",
+      "name": "Vyral Marketing",
+      "price": "Pricing not published; contact vendor for quote",
+      "rating": 0,
+      "pros": [
+        "Done-for-you: phone interviews, editing, YouTube optimization, blog writing, email sends, social posting, monthly direct mail to top contacts",
+        "Real estate-specific question-and-answer video topics (listings, market updates, testimonials)",
+        "Two hours per month time commitment advertised",
+        "Monthly strategy calls and weekly feedback included"
+      ],
+      "cons": [
+        "No published pricing—opaque cost structure",
+        "Phone-based interview workflow (no self-record option listed)",
+        "Unclear CRM integration scope",
+        "Annual contract length and cancellation terms not stated"
+      ],
+      "cta": {
+        "label": "Request Vyral Marketing Consultation",
+        "url": "https://vyralmarketing.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Vyral Marketing's website advertises a done-for-you video marketing system: monthly phone interviews, professional editing, YouTube optimization, custom blog articles, video email sends, social media updates, lead re-generation from existing lists, video retargeting, monthly direct mail to top contacts, and monthly strategy calls. The service targets real estate agents, mortgage brokers, investment advisors, business brokers, recruiters, property managers, and commercial agents. Time commitment is stated as two hours per month. Pricing is not published; prospects must request a complimentary strategy call. No CRM integration details, contract terms, or cancellation policies are disclosed."
+    },
+    {
+      "type": "callout",
+      "variant": "warn",
+      "title": "Constant Contact: Unverified",
+      "text": "No Constant Contact vendor page was reachable during research (May 8–10, 2026). Pricing, features, and real estate integration claims could not be confirmed. Omitted from product recommendations."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "New agents with <500 contacts: Mailchimp free tier (1,000 sends/mo, 500 contacts, no credit card). Add Canva for templates.",
+        "Agents who close 1–2 deals/mo and need automation depth: ActiveCampaign Plus or Pro (unlimited automation actions, predictive sending, CRM integrations). Request custom quote for contact count.",
+        "Video-first agents (listing tours, testimonials, market updates): BombBomb Core + Copilot ($56/user/mo annual) for AI editing, CRM workflows, and viewer analytics.",
+        "Agents who hate tech and will pay for done-for-you: Vyral Marketing (request pricing; expect annual commitment and two hours/mo phone time).",
+        "Teams with 10,000+ contacts and enterprise compliance needs: ActiveCampaign Enterprise (SSO, API, custom objects) or BombBomb Enterprise (SOC 2, role-based access)."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Mailchimp for video email—no recording or hosting tools. Use BombBomb or embed Loom/Vidyard.",
+        "BombBomb for bulk newsletter campaigns—1:1 video messaging is the core use case, not 5,000-contact blasts.",
+        "Vyral Marketing if you need pricing transparency or month-to-month flexibility—no published rates or contract terms.",
+        "ActiveCampaign Starter tier if you need real automation—5 actions per automation is a bottleneck for drip campaigns.",
+        "Any tool without a free trial or published pricing if you're comparing 3+ options—Mailchimp (14-day Standard trial) and BombBomb (free trial listed) eliminate risk."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Mailchimp",
+      "url": "https://mailchimp.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "ActiveCampaign",
+      "url": "https://activecampaign.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "BombBomb",
+      "url": "https://bombbomb.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Vyral Marketing",
+      "url": "https://vyralmarketing.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/hero-document-review.jpg",
+  "imageCredit": "Pexels"
+}

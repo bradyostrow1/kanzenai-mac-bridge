@@ -1,0 +1,159 @@
+{
+  "slug": "best-bookkeeping-software-real-estate-2026",
+  "title": "Bookkeeping Software for Real Estate in 2026: Commission-Split Specialists vs. General Ledger",
+  "description": "QuickBooks, Brokermint, and Xero compared for agent bookkeeping: which handles commission splits, which needs an accountant, and what pricing looks like.",
+  "category": "Invoicing",
+  "publishedAt": "2026-05-10",
+  "updatedAt": "2026-05-10",
+  "readMinutes": 7,
+  "tldr": "Brokermint is purpose-built for brokerage commission accounting and agent billing; QuickBooks and Xero are general small-business ledgers that require manual workarounds for split tracking. AgentPay could not be verified. Bench appears to be an electronics manufacturer, not bookkeeping software.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Real estate bookkeeping splits into two worlds: commission-split automation for brokerages (tracking agent payouts, office splits, referral fees) and general small-business accounting for solo agents (expense tracking, quarterly estimates, Schedule C prep). Most real estate agents start with QuickBooks or Xero because they recognize the name, then discover neither platform automates commission calculations. Brokermint exists specifically to solve brokerage back-office math. This review covers what each platform actually does, what it costs, and who should use it."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed vendor pricing pages, feature lists, and published plan details as of May 2026. No hands-on testing was conducted. QuickBooks and Xero pricing is published; Brokermint requires a demo for quotes. AgentPay returned no accessible vendor page, so it is excluded from product recommendations. Bench.com resolves to an electronics manufacturing company, not bookkeeping software, and is also excluded."
+    },
+    {
+      "type": "h2",
+      "text": "QuickBooks",
+      "id": "quickbooks"
+    },
+    {
+      "type": "p",
+      "text": "QuickBooks Online is the default small-business ledger in North America. The Early plan ($25/mo, currently discounted to $5/mo for three months) sends up to 20 invoices and enters up to 5 bills per month; Growing ($55/mo, discounted to $11/mo) removes invoice and bill caps and adds auto-reconciliation; Established ($90/mo, discounted to $18/mo) adds multi-currency, project tracking, and expense claims. All plans include bank reconciliation, W-9/1099 management, sales tax tracking, and real-time reports. QuickBooks does not natively calculate real estate commission splits—agents must manually journal-entry office cuts, referral fees, and agent payouts. The platform integrates with Brokermint via API (on Brokermint's Professional plan), allowing commission data to flow into QuickBooks for final bookkeeping."
+    },
+    {
+      "type": "product",
+      "name": "QuickBooks",
+      "price": "$25/mo Early (up to 20 invoices), $55/mo Growing (unlimited invoices, auto-reconcile), $90/mo Established (multi-currency, projects). Promotional discount: 80% off first 3 months.",
+      "rating": 4.2,
+      "pros": [
+        "Industry-standard GL used by most CPAs",
+        "W-9/1099 and sales tax built-in",
+        "Integrates with Brokermint for commission sync"
+      ],
+      "cons": [
+        "No native commission-split logic",
+        "Transaction caps on Early plan too low for active brokerages",
+        "Requires manual journal entries for agent payouts"
+      ],
+      "cta": {
+        "label": "View QuickBooks Plans",
+        "url": "https://www.quickbooks.com/pricing/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Brokermint",
+      "id": "brokermint"
+    },
+    {
+      "type": "p",
+      "text": "Brokermint is brokerage back-office software: transaction management, commission automation, agent billing, and accounting in one platform. The Standard plan includes team management, MLS integration, QuickBooks integration, transaction checklists, eSignature, commission automation, and mobile app. The Professional plan adds full accounting ledger, agent billing, next-day ACH payments, agent onboarding, multiple office locations, CRM integration, API access, custom branding, and SSO. Pricing is not published; the vendor requires a demo. Brokermint calculates commission splits per transaction (office split, referral fees, agent net) and can push finalized accounting data to QuickBooks. It is not a general small-business ledger—it exists to automate the math brokerages do hundreds of times per year."
+    },
+    {
+      "type": "product",
+      "name": "Brokermint",
+      "price": "Pricing not published; contact vendor for quote. Standard plan includes commission automation and QuickBooks sync; Professional adds full accounting ledger and agent billing.",
+      "rating": 4.5,
+      "pros": [
+        "Purpose-built commission-split engine for brokerages",
+        "Automates agent billing and ACH payouts (Professional plan)",
+        "Pushes finalized data to QuickBooks for CPA reconciliation"
+      ],
+      "cons": [
+        "Opaque pricing—requires sales demo",
+        "Overkill for solo agents with no splits to track",
+        "Professional plan required for full accounting ledger"
+      ],
+      "cta": {
+        "label": "Request Brokermint Demo",
+        "url": "https://www.brokermint.com/plans/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Xero",
+      "id": "xero"
+    },
+    {
+      "type": "p",
+      "text": "Xero is a cloud accounting platform comparable to QuickBooks, popular outside the U.S. and gaining traction domestically. The Early plan ($25/mo, discounted to $5/mo for three months) sends up to 20 invoices and enters up to 5 bills; Growing ($55/mo, discounted to $11/mo) removes caps and adds auto-reconciliation and 60-day cash flow forecast; Established ($90/mo, discounted to $18/mo) adds 180-day forecast, multi-currency, project tracking, expense claims, and KPI analytics. All plans include bank reconciliation, W-9/1099, sales tax, and real-time reports. Like QuickBooks, Xero has no native commission-split logic. An optional Inventory Plus add-on ($39/mo after first free month) is irrelevant to most real estate users. Xero's app marketplace includes fewer real-estate-specific integrations than QuickBooks."
+    },
+    {
+      "type": "product",
+      "name": "Xero",
+      "price": "$25/mo Early (up to 20 invoices), $55/mo Growing (unlimited, auto-reconcile), $90/mo Established (multi-currency, projects, KPIs). Promotional discount: 80% off first 3 months.",
+      "rating": 4.3,
+      "pros": [
+        "Clean UI, slightly easier onboarding than QuickBooks",
+        "No per-user license fees",
+        "Strong international currency support on Established plan"
+      ],
+      "cons": [
+        "Smaller U.S. CPA adoption than QuickBooks",
+        "No commission-split automation",
+        "Fewer real-estate integrations than QuickBooks ecosystem"
+      ],
+      "cta": {
+        "label": "View Xero Plans",
+        "url": "https://www.xero.com/pricing/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Brokerages managing agent splits and office payouts: Brokermint Professional—the only platform here that calculates commission math natively. Sync finalized data to QuickBooks for CPA year-end.",
+        "Solo agents or small teams with no commission splits: QuickBooks Growing ($55/mo) or Xero Growing ($55/mo). Both handle basic invoicing, expense tracking, and 1099 prep. QuickBooks has broader CPA adoption in the U.S.",
+        "Solo agents on tight budget: QuickBooks Early or Xero Early ($25/mo). Invoice caps (20/mo) may be restrictive if you bill multiple clients per transaction.",
+        "Teams needing project-level P&L (e.g., tracking profitability per listing): QuickBooks Established or Xero Established ($90/mo) for project tracking and KPI dashboards."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "AgentPay: No accessible vendor page or verifiable product details as of May 2026.",
+        "Bench: The domain resolves to Benchmark Electronics, an advanced electronics manufacturer. Not bookkeeping software.",
+        "QuickBooks or Xero for brokerage commission tracking without Brokermint integration: manual journal entries for every split is untenable at scale.",
+        "Brokermint for solo agents with zero commission splits: expensive overkill when QuickBooks or Xero suffices."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "QuickBooks",
+      "url": "https://www.quickbooks.com/pricing/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Brokermint",
+      "url": "https://www.brokermint.com/plans/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Xero",
+      "url": "https://www.xero.com/pricing/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/compare-hero.jpg",
+  "imageCredit": "Pexels"
+}

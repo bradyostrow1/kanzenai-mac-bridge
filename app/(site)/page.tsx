@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight, Clock, ArrowUpRight } from "lucide-react";
 import { listArticles, listComparisons } from "@/lib/articles";
 import { EmailSignup } from "@/components/EmailSignup";
+import { ORG_SCHEMA, articleListSchema, jsonLdScript } from "@/lib/jsonld";
 
 export default function Home() {
   const articles = listArticles();
@@ -11,6 +12,8 @@ export default function Home() {
 
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdScript(ORG_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdScript(articleListSchema(articles)) }} />
       {/* HERO */}
       <section className="bg-bg-0">
         <div className="max-w-[1400px] mx-auto px-8 pt-4 pb-12">

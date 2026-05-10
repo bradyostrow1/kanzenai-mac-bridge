@@ -2,9 +2,29 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import { getComparison, listComparisons } from "@/lib/articles";
+import { comparisonSchema, breadcrumbSchema, jsonLdScript } from "@/lib/jsonld";
 
 export function generateStaticParams() {
   return listComparisons().map((c) => ({ slug: c.slug }));
+}
+
+export function generateMetadata({ params }: { params: { slug: string } }) {
+  const c = getComparison(params.slug);
+  if (!c) return {};
+  return {
+    title: `${c.title} · KanzenAI`,
+    description: c.description,
+    alternates: { canonical: `https://kanzenai.com/compare/${c.slug}` },
+    openGraph: {
+      type: "article",
+      url: `https://kanzenai.com/compare/${c.slug}`,
+      title: c.title,
+      description: c.description,
+      publishedTime: c.publishedAt,
+      modifiedTime: c.updatedAt,
+      images: c.headerImage ? [`https://kanzenai.com${c.headerImage}`] : [],
+    },
+  };
 }
 
 export default function ComparePage({ params }: { params: { slug: string } }) {
@@ -12,9 +32,17 @@ export default function ComparePage({ params }: { params: { slug: string } }) {
   if (!c) notFound();
   const a = c.contenders[0];
   const b = c.contenders[1];
+  const cmpLd = comparisonSchema(c);
+  const breadcrumbLd = breadcrumbSchema([
+    { name: "Home", url: "https://kanzenai.com/" },
+    { name: "Compare", url: "https://kanzenai.com/compare" },
+    { name: c.title, url: `https://kanzenai.com/compare/${c.slug}` },
+  ]);
 
   return (
     <main className="max-w-4xl mx-auto px-5 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdScript(cmpLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdScript(breadcrumbLd) }} />
       <Link href="/" className="inline-flex items-center gap-1.5 text-ink-2 hover:text-ink-0 text-[13px]">
         <ArrowLeft className="w-3.5 h-3.5" />
         All comparisons
