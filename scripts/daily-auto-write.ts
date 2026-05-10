@@ -1,18 +1,21 @@
 #!/usr/bin/env tsx
 /**
- * Picks the next-best article topic and writes it. Designed to run daily via
- * launchd at 8 AM. Picks a topic that:
- *   - Doesn't duplicate any existing article
+ * Picks the next-best article topic(s) and writes them. Designed to run daily
+ * via launchd at 8 AM. Each topic:
+ *   - Doesn't duplicate any existing article (or any topic picked earlier in
+ *     this same run — the script re-reads the directory between iterations)
  *   - Fills a sparse category if any exist
  *   - Targets a real-estate-tech keyword agents actually search for
  *
- * Then it runs the existing write-article.ts pipeline.
+ * Default count: 3 articles per run (set KANZENAI_DAILY_COUNT env var to override).
+ * Cost: ~$0.15 per article = ~$0.45 default daily run.
  *
- * The auto-deploy-watcher (separately installed) picks up the new JSON file
- * 2-3 minutes later and ships it to production.
+ * The auto-deploy-watcher (separately installed) picks up the new JSON files
+ * 2-3 minutes after the last write and ships them to production.
  *
  * Run manually:
- *   npm run auto-write
+ *   npm run auto-write           # 3 articles
+ *   COUNT=1 npm run auto-write   # just one
  *
  * Schedule daily: install com.kanzenai.daily-article.plist
  */
@@ -152,22 +155,54 @@ async function runWriter(s: Suggestion): Promise<void> {
 
 // ─── Main ───────────────────────────────────────────────────────────────────
 async function main() {
-  console.log(`KanzenAI daily auto-write — ${new Date().toISOString()}\n`);
+  const argCount = parseInt(
+    process.argv.find((a) => a.startsWith("--count="))?.split("=")[1] ??
+      process.env.COUNT ??
+      process.env.KANZENAI_DAILY_COUNT ??
+      "3",
+    10,
+  );
+  const count = Math.max(1, Math.min(10, isNaN(argCount) ? 3 : argCount));
 
-  console.log("→ Reading existing coverage...");
-  const coverage = await existingCoverage();
-  console.log(`  ${coverage.split("\n").length} articles\n`);
+  console.log(`KanzenAI daily auto-write — ${new Date().toISOString()}`);
+  console.log(`Target: ${count} article${count === 1 ? "" : "s"}\n`);
 
-  console.log("→ Asking Claude for the next topic...");
-  const suggestion = await suggestTopic(coverage);
-  console.log(`\n  Topic: ${suggestion.topic}`);
-  console.log(`  Products: ${suggestion.products.join(", ")}`);
-  console.log(`  Category: ${suggestion.category}`);
-  console.log(`  Slug: ${suggestion.slug}`);
-  console.log(`  Why: ${suggestion.rationale}\n`);
+  let written = 0;
+  let failed = 0;
 
-  await runWriter(suggestion);
-  console.log(`\n✓ Done. Auto-deploy watcher will ship it within 2-3 min.\n`);
+  for (let i = 1; i <= count; i++) {
+    console.log(`\n${"═".repeat(60)}`);
+    console.log(`  Article ${i} of ${count}`);
+    console.log(`${"═".repeat(60)}\n`);
+
+    try {
+      console.log("→ Reading existing coverage (re-read each iteration)...");
+      const coverage = await existingCoverage();
+      console.log(`  ${coverage.split("\n").length} articles currently\n`);
+
+      console.log("→ Asking Claude for the next topic...");
+      const suggestion = await suggestTopic(coverage);
+      console.log(`\n  Topic: ${suggestion.topic}`);
+      console.log(`  Products: ${suggestion.products.join(", ")}`);
+      console.log(`  Category: ${suggestion.category}`);
+      console.log(`  Slug: ${suggestion.slug}`);
+      console.log(`  Why: ${suggestion.rationale}\n`);
+
+      await runWriter(suggestion);
+      written++;
+    } catch (err: any) {
+      console.error(`\n✗ Article ${i} failed: ${err.message}`);
+      failed++;
+      // Continue with next article instead of aborting the whole run
+    }
+  }
+
+  console.log(`\n${"─".repeat(60)}`);
+  console.log(`  ${written} written · ${failed} failed (of ${count} planned)`);
+  console.log(`  Auto-deploy watcher will ship them within 2-3 min`);
+  console.log(`${"─".repeat(60)}\n`);
+
+  if (failed > 0 && written === 0) process.exit(1);
 }
 
 main().catch((err) => {
