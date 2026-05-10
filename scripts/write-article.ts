@@ -228,6 +228,12 @@ VOICE:
 • Surface key tradeoffs explicitly
 • No em-dashes, no "delve", no "in conclusion", no "trusted partner", no "industry-leading"
 
+TITLE DISTINCTIVENESS:
+• Avoid "Best [X] for Real Estate Agents in 2026" boilerplate — Google penalizes near-duplicate titles in the same site.
+• Use a distinctive angle: a hook, a comparator, a year + qualifier, or a benefit-led phrase.
+• Examples of good titles: "Real Estate CRMs in 2026: Pricing, Trade-offs, and Who Wins", "IDX Websites for Real Estate in 2026: Lead Capture Showdown", "The 2026 AI Stack for Working Real Estate Agents".
+• Bad (boilerplate) titles: "Best CRM for Real Estate Agents in 2026", "Best Dialers for Real Estate Agents in 2026", "Best Tools for Real Estate Agents in 2026" — these are interchangeable and lose CTR.
+
 OUTPUT:
 • Valid JSON only, no prose outside, no markdown fences
 • Pricing quoted EXACTLY as found in research (e.g. "$69/mo Grow plan, $499/mo Pro for up to 10 users")
