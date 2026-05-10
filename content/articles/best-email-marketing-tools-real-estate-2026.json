@@ -46,7 +46,7 @@
       ],
       "cta": {
         "label": "Try Mailchimp Free",
-        "url": "https://mailchimp.com/?ref=kanzenai"
+        "url": "/go/mailchimp"
       }
     },
     {
@@ -78,7 +78,7 @@
       ],
       "cta": {
         "label": "Get ActiveCampaign Pricing",
-        "url": "https://activecampaign.com/?ref=kanzenai"
+        "url": "/go/activecampaign"
       }
     },
     {
@@ -110,7 +110,7 @@
       ],
       "cta": {
         "label": "Start BombBomb Free Trial",
-        "url": "https://bombbomb.com/?ref=kanzenai"
+        "url": "/go/bombbomb"
       }
     },
     {
@@ -141,7 +141,7 @@
       ],
       "cta": {
         "label": "Request Vyral Marketing Consultation",
-        "url": "https://vyralmarketing.com/?ref=kanzenai"
+        "url": "/go/vyral-marketing"
       }
     },
     {
@@ -188,22 +188,22 @@
   "affiliateProducts": [
     {
       "name": "Mailchimp",
-      "url": "https://mailchimp.com/?ref=kanzenai",
+      "url": "/go/mailchimp",
       "commission": "varies"
     },
     {
       "name": "ActiveCampaign",
-      "url": "https://activecampaign.com/?ref=kanzenai",
+      "url": "/go/activecampaign",
       "commission": "varies"
     },
     {
       "name": "BombBomb",
-      "url": "https://bombbomb.com/?ref=kanzenai",
+      "url": "/go/bombbomb",
       "commission": "varies"
     },
     {
       "name": "Vyral Marketing",
-      "url": "https://vyralmarketing.com/?ref=kanzenai",
+      "url": "/go/vyral-marketing",
       "commission": "varies"
     }
   ],

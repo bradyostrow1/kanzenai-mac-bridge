@@ -48,7 +48,7 @@
       ],
       "cta": {
         "label": "Visit Vulcan7",
-        "url": "https://www.vulcan7.com/?ref=kanzenai"
+        "url": "/go/vulcan7"
       }
     },
     {
@@ -78,7 +78,7 @@
       ],
       "cta": {
         "label": "Visit RedX",
-        "url": "https://www.redx.com/?ref=kanzenai"
+        "url": "/go/redx"
       }
     },
     {
@@ -108,7 +108,7 @@
       ],
       "cta": {
         "label": "Visit PhoneBurner",
-        "url": "https://www.phoneburner.com/?ref=kanzenai"
+        "url": "/go/phoneburner"
       }
     },
     {
@@ -138,7 +138,7 @@
       ],
       "cta": {
         "label": "Visit Espresso Agent",
-        "url": "https://www.espressoagent.com/?ref=kanzenai"
+        "url": "/go/espresso-agent"
       }
     },
     {
@@ -189,22 +189,22 @@
   "affiliateProducts": [
     {
       "name": "Vulcan7",
-      "url": "https://www.vulcan7.com/?ref=kanzenai",
+      "url": "/go/vulcan7",
       "commission": "varies"
     },
     {
       "name": "RedX",
-      "url": "https://www.redx.com/?ref=kanzenai",
+      "url": "/go/redx",
       "commission": "varies"
     },
     {
       "name": "PhoneBurner",
-      "url": "https://www.phoneburner.com/?ref=kanzenai",
+      "url": "/go/phoneburner",
       "commission": "varies"
     },
     {
       "name": "Espresso Agent",
-      "url": "https://www.espressoagent.com/?ref=kanzenai",
+      "url": "/go/espresso-agent",
       "commission": "varies"
     }
   ],

@@ -47,7 +47,7 @@
       ],
       "cta": {
         "label": "View QuickBooks Plans",
-        "url": "https://www.quickbooks.com/pricing/?ref=kanzenai"
+        "url": "/go/quickbooks"
       }
     },
     {
@@ -76,7 +76,7 @@
       ],
       "cta": {
         "label": "Request Brokermint Demo",
-        "url": "https://www.brokermint.com/plans/?ref=kanzenai"
+        "url": "/go/brokermint"
       }
     },
     {
@@ -105,7 +105,7 @@
       ],
       "cta": {
         "label": "View Xero Plans",
-        "url": "https://www.xero.com/pricing/?ref=kanzenai"
+        "url": "/go/xero"
       }
     },
     {
@@ -140,17 +140,17 @@
   "affiliateProducts": [
     {
       "name": "QuickBooks",
-      "url": "https://www.quickbooks.com/pricing/?ref=kanzenai",
+      "url": "/go/quickbooks",
       "commission": "varies"
     },
     {
       "name": "Brokermint",
-      "url": "https://www.brokermint.com/plans/?ref=kanzenai",
+      "url": "/go/brokermint",
       "commission": "varies"
     },
     {
       "name": "Xero",
-      "url": "https://www.xero.com/pricing/?ref=kanzenai",
+      "url": "/go/xero",
       "commission": "varies"
     }
   ],

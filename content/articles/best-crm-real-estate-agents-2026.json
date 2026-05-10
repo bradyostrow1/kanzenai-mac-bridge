@@ -50,7 +50,7 @@
       ],
       "cta": {
         "label": "Try Follow Up Boss",
-        "url": "https://www.followupboss.com/?ref=kanzenai"
+        "url": "/go/follow-up-boss"
       }
     },
     {
@@ -83,7 +83,7 @@
       ],
       "cta": {
         "label": "Request Lofty Pricing",
-        "url": "https://www.lofty.com/?ref=kanzenai"
+        "url": "/go/lofty"
       }
     },
     {
@@ -112,7 +112,7 @@
       ],
       "cta": {
         "label": "Contact kvCORE",
-        "url": "https://kvcore.com/?ref=kanzenai"
+        "url": "/go/kvcore"
       }
     },
     {
@@ -145,7 +145,7 @@
       ],
       "cta": {
         "label": "Schedule Sierra Demo",
-        "url": "https://www.sierrainteractive.com/?ref=kanzenai"
+        "url": "/go/sierra-interactive"
       }
     },
     {
@@ -181,22 +181,22 @@
   "affiliateProducts": [
     {
       "name": "Follow Up Boss",
-      "url": "https://www.followupboss.com/?ref=kanzenai",
+      "url": "/go/follow-up-boss",
       "commission": "varies"
     },
     {
       "name": "Lofty",
-      "url": "https://www.lofty.com/?ref=kanzenai",
+      "url": "/go/lofty",
       "commission": "varies"
     },
     {
       "name": "kvCORE",
-      "url": "https://kvcore.com/?ref=kanzenai",
+      "url": "/go/kvcore",
       "commission": "varies"
     },
     {
       "name": "Sierra Interactive",
-      "url": "https://www.sierrainteractive.com/?ref=kanzenai",
+      "url": "/go/sierra-interactive",
       "commission": "varies"
     }
   ],

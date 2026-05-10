@@ -38,7 +38,7 @@
       ],
       "cta": {
         "label": "Visit Smith.ai",
-        "url": "https://smithai.com/?ref=kanzenai"
+        "url": "/go/smith-ai"
       }
     },
     {
@@ -61,7 +61,7 @@
       ],
       "cta": {
         "label": "Visit Verse.io",
-        "url": "https://verse.io/?ref=kanzenai"
+        "url": "/go/verse-io"
       }
     },
     {
@@ -84,7 +84,7 @@
       ],
       "cta": {
         "label": "Visit Conversion Monster",
-        "url": "https://conversionmonster.com/?ref=kanzenai"
+        "url": "/go/conversion-monster"
       }
     },
     {
@@ -113,7 +113,7 @@
       ],
       "cta": {
         "label": "Visit Ylopo",
-        "url": "https://ylopo.com/?ref=kanzenai"
+        "url": "/go/ylopo"
       }
     },
     {
@@ -136,7 +136,7 @@
       ],
       "cta": {
         "label": "Visit Agentology",
-        "url": "https://agentology.com/?ref=kanzenai"
+        "url": "/go/agentology"
       }
     },
     {
@@ -173,27 +173,27 @@
   "affiliateProducts": [
     {
       "name": "Smith.ai",
-      "url": "https://smithai.com/?ref=kanzenai",
+      "url": "/go/smith-ai",
       "commission": "varies"
     },
     {
       "name": "Verse.io",
-      "url": "https://verse.io/?ref=kanzenai",
+      "url": "/go/verse-io",
       "commission": "varies"
     },
     {
       "name": "Conversion Monster",
-      "url": "https://conversionmonster.com/?ref=kanzenai",
+      "url": "/go/conversion-monster",
       "commission": "varies"
     },
     {
       "name": "Ylopo",
-      "url": "https://ylopo.com/?ref=kanzenai",
+      "url": "/go/ylopo",
       "commission": "varies"
     },
     {
       "name": "Agentology",
-      "url": "https://agentology.com/?ref=kanzenai",
+      "url": "/go/agentology",
       "commission": "varies"
     }
   ],

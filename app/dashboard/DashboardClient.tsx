@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
-import { Activity, FileText, GitCompare, AlertTriangle, RotateCw, Bot, ExternalLink, Play, Settings2, Shield, Edit3, Heart, MessageSquare, ArrowDown } from "lucide-react";
+import { Activity, FileText, GitCompare, AlertTriangle, RotateCw, Bot, ExternalLink, Play, Settings2, Shield, Edit3, Heart, MessageSquare, ArrowDown, MousePointerClick } from "lucide-react";
 import { ChatPanel } from "./ChatPanel";
 
 type Stats = {
@@ -232,9 +232,23 @@ launchctl load -w \\
   );
 }
 
+type ClickStats = {
+  total: number;
+  installed: boolean;
+  byVendor: Array<{ slug: string; name: string; clicks: number; uniqueVisitors: number }>;
+};
+
 function BotSystemPanel({ stats }: { stats: Stats | null }) {
   const [auditRunning, setAuditRunning] = useState(false);
   const [auditFlash, setAuditFlash] = useState<string | null>(null);
+  const [clicks, setClicks] = useState<ClickStats | null>(null);
+
+  useEffect(() => {
+    fetch("/api/dashboard/clicks")
+      .then((r) => r.json())
+      .then(setClicks)
+      .catch(() => {});
+  }, []);
 
   async function runAuditNow() {
     setAuditRunning(true);
@@ -267,7 +281,7 @@ function BotSystemPanel({ stats }: { stats: Stats | null }) {
           {[audit?.when, writer?.lastWritten, health?.installed].filter(Boolean).length} of 4 active
         </span>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-[#1f1f1f]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 divide-y sm:divide-y-0 sm:divide-x divide-[#1f1f1f]">
         {/* AUDIT BOT */}
         <BotCard
           icon={<Shield className="w-4 h-4" />}
@@ -360,6 +374,30 @@ function BotSystemPanel({ stats }: { stats: Stats | null }) {
             health?.installed
               ? `${health.totalChecks} checks · last ${timeAgo(health.lastCheck)}`
               : "see install panel →"
+          }
+        />
+
+        {/* CLICK TRACKER */}
+        <BotCard
+          icon={<MousePointerClick className="w-4 h-4" />}
+          name="Click tracker"
+          schedule="passive · /go/<vendor>"
+          active={(clicks?.total ?? 0) > 0}
+          status={clicks ? `${clicks.total} clicks` : "loading"}
+          metric={
+            clicks && clicks.total > 0 ? (
+              <div className="flex items-baseline gap-3">
+                <span className="text-2xl font-semibold tracking-tight text-[#f0eee9]">{clicks.total}</span>
+                <span className="text-[11px] text-[#525252]">clicks tracked</span>
+              </div>
+            ) : (
+              <div className="text-[#525252] text-[12px]">no clicks yet</div>
+            )
+          }
+          subtitle={
+            clicks && clicks.byVendor.length > 0
+              ? `top: ${clicks.byVendor[0].name} · ${clicks.byVendor[0].clicks} clicks`
+              : "redirects via /go/<slug> route"
           }
         />
 

@@ -50,7 +50,7 @@
       ],
       "cta": {
         "label": "Visit Structurely",
-        "url": "https://www.structurely.com/?ref=kanzenai"
+        "url": "/go/structurely"
       }
     },
     {
@@ -77,7 +77,7 @@
       ],
       "cta": {
         "label": "Contact Lofty",
-        "url": "https://www.lofty.com/?ref=kanzenai"
+        "url": "/go/lofty"
       }
     },
     {
@@ -104,7 +104,7 @@
       ],
       "cta": {
         "label": "Contact Real Geeks",
-        "url": "https://www.realgeeks.com/?ref=kanzenai"
+        "url": "/go/real-geeks"
       }
     },
     {
@@ -139,17 +139,17 @@
   "affiliateProducts": [
     {
       "name": "Structurely",
-      "url": "https://www.structurely.com/?ref=kanzenai",
+      "url": "/go/structurely",
       "commission": "varies"
     },
     {
       "name": "Lofty AI Assistant",
-      "url": "https://www.lofty.com/?ref=kanzenai",
+      "url": "/go/lofty",
       "commission": "varies"
     },
     {
       "name": "Real Geeks Robin AI",
-      "url": "https://www.realgeeks.com/?ref=kanzenai",
+      "url": "/go/real-geeks",
       "commission": "varies"
     }
   ],

@@ -188,20 +188,71 @@ function checkDuplicateImages(items: Array<{ file: string; json: any }>) {
 }
 
 function checkPlaceholderAffiliateLinks(items: Array<{ file: string; json: any }>) {
-  let count = 0;
+  // Old format: ?ref=kanzenai still appearing in articles
+  let oldFormatCount = 0;
   for (const { file, json } of items) {
     const text = JSON.stringify(json);
     const matches = text.match(/\?ref=kanzenai/g);
-    if (matches && matches.length > 0) {
-      count += matches.length;
-    }
+    if (matches) oldFormatCount += matches.length;
   }
-  if (count > 0) {
+  if (oldFormatCount > 0) {
     flag(
       "warn",
-      "placeholder-affiliate",
-      `${count} placeholder affiliate URLs (?ref=kanzenai) — these don't track yet. Replace with real affiliate IDs from each vendor's program.`,
+      "old-affiliate-format",
+      `${oldFormatCount} unconverted ?ref=kanzenai URLs still in articles. Run: npm run convert-go-links`,
     );
+  }
+
+  // Validate all /go/<slug> links resolve in lib/affiliates.ts
+  const affiliatesPath = join(ROOT, "lib", "affiliates.ts");
+  let knownSlugs = new Set<string>();
+  if (existsSync(affiliatesPath)) {
+    try {
+      const text = require("node:fs").readFileSync(affiliatesPath, "utf8");
+      const slugMatches = text.matchAll(/^\s+"([\w-]+)":\s+\{/gm);
+      for (const m of slugMatches) knownSlugs.add(m[1]);
+    } catch {}
+  }
+
+  const goLinkUses = new Map<string, number>();
+  const unknownSlugs = new Map<string, string[]>();
+  for (const { file, json } of items) {
+    const text = JSON.stringify(json);
+    const matches = text.matchAll(/\/go\/([\w-]+)/g);
+    for (const m of matches) {
+      const slug = m[1];
+      goLinkUses.set(slug, (goLinkUses.get(slug) ?? 0) + 1);
+      if (!knownSlugs.has(slug)) {
+        const list = unknownSlugs.get(slug) ?? [];
+        list.push(file);
+        unknownSlugs.set(slug, list);
+      }
+    }
+  }
+
+  for (const [slug, files] of unknownSlugs) {
+    flag(
+      "error",
+      "unknown-affiliate-slug",
+      `/go/${slug} is referenced but missing from lib/affiliates.ts — clicks will 404`,
+      [...new Set(files)],
+    );
+  }
+
+  // Count placeholder vendors that are actually being used
+  if (existsSync(affiliatesPath)) {
+    const text = require("node:fs").readFileSync(affiliatesPath, "utf8");
+    const placeholderSlugs = new Set<string>();
+    const placeholderRegex = /^\s+"([\w-]+)":\s+\{[^}]*status:\s*"placeholder"/gm;
+    for (const m of text.matchAll(placeholderRegex)) placeholderSlugs.add(m[1]);
+    const usedPlaceholders = [...goLinkUses.keys()].filter((s) => placeholderSlugs.has(s));
+    if (usedPlaceholders.length > 0) {
+      flag(
+        "warn",
+        "placeholder-affiliate",
+        `${usedPlaceholders.length} vendors still use placeholder URLs (status: "placeholder" in lib/affiliates.ts). They redirect but don't track. Update once vendor approves your affiliate code.`,
+      );
+    }
   }
 }
 

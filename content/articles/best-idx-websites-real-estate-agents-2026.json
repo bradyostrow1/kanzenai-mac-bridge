@@ -49,7 +49,7 @@
       ],
       "cta": {
         "label": "Visit Sierra Interactive",
-        "url": "https://www.sierrainteractive.com/?ref=kanzenai"
+        "url": "/go/sierra-interactive"
       }
     },
     {
@@ -80,7 +80,7 @@
       ],
       "cta": {
         "label": "Visit Real Geeks",
-        "url": "https://www.realgeeks.com/?ref=kanzenai"
+        "url": "/go/real-geeks"
       }
     },
     {
@@ -110,7 +110,7 @@
       ],
       "cta": {
         "label": "Visit kvCORE",
-        "url": "https://kvcore.com/?ref=kanzenai"
+        "url": "/go/kvcore"
       }
     },
     {
@@ -141,7 +141,7 @@
       ],
       "cta": {
         "label": "Visit Placester",
-        "url": "https://www.placester.com/?ref=kanzenai"
+        "url": "/go/placester"
       }
     },
     {
@@ -172,7 +172,7 @@
       ],
       "cta": {
         "label": "Visit IDX Broker",
-        "url": "https://www.idxbroker.com/?ref=kanzenai"
+        "url": "/go/idx-broker"
       }
     },
     {
@@ -208,27 +208,27 @@
   "affiliateProducts": [
     {
       "name": "Sierra Interactive",
-      "url": "https://www.sierrainteractive.com/?ref=kanzenai",
+      "url": "/go/sierra-interactive",
       "commission": "varies"
     },
     {
       "name": "Real Geeks",
-      "url": "https://www.realgeeks.com/?ref=kanzenai",
+      "url": "/go/real-geeks",
       "commission": "varies"
     },
     {
       "name": "kvCORE",
-      "url": "https://kvcore.com/?ref=kanzenai",
+      "url": "/go/kvcore",
       "commission": "varies"
     },
     {
       "name": "Placester",
-      "url": "https://www.placester.com/?ref=kanzenai",
+      "url": "/go/placester",
       "commission": "varies"
     },
     {
       "name": "IDX Broker",
-      "url": "https://www.idxbroker.com/?ref=kanzenai",
+      "url": "/go/idx-broker",
       "commission": "varies"
     }
   ],

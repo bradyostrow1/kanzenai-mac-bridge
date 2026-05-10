@@ -52,7 +52,7 @@
       ],
       "cta": {
         "label": "Visit ChatGPT Plus",
-        "url": "https://chat.openai.com/?ref=kanzenai"
+        "url": "/go/openai"
       }
     },
     {
@@ -90,7 +90,7 @@
       ],
       "cta": {
         "label": "Visit Follow Up Boss",
-        "url": "https://www.followupboss.com/?ref=kanzenai"
+        "url": "/go/follow-up-boss"
       }
     },
     {
@@ -118,7 +118,7 @@
       ],
       "cta": {
         "label": "Visit Claude",
-        "url": "https://www.anthropic.com/?ref=kanzenai"
+        "url": "/go/claude"
       }
     },
     {
@@ -146,7 +146,7 @@
       ],
       "cta": {
         "label": "Visit Otter.ai",
-        "url": "https://otter.ai/?ref=kanzenai"
+        "url": "/go/otter"
       }
     },
     {
@@ -173,7 +173,7 @@
       ],
       "cta": {
         "label": "Visit Spaceflow",
-        "url": "https://www.spaceflow.io/?ref=kanzenai"
+        "url": "/go/spaceflow"
       }
     },
     {
@@ -209,27 +209,27 @@
   "affiliateProducts": [
     {
       "name": "ChatGPT Plus",
-      "url": "https://chat.openai.com/?ref=kanzenai",
+      "url": "/go/openai",
       "commission": "varies"
     },
     {
       "name": "Follow Up Boss",
-      "url": "https://www.followupboss.com/?ref=kanzenai",
+      "url": "/go/follow-up-boss",
       "commission": "varies"
     },
     {
       "name": "Claude Pro",
-      "url": "https://www.anthropic.com/?ref=kanzenai",
+      "url": "/go/claude",
       "commission": "varies"
     },
     {
       "name": "Otter.ai",
-      "url": "https://otter.ai/?ref=kanzenai",
+      "url": "/go/otter",
       "commission": "varies"
     },
     {
       "name": "Spaceflow",
-      "url": "https://www.spaceflow.io/?ref=kanzenai",
+      "url": "/go/spaceflow",
       "commission": "varies"
     }
   ],

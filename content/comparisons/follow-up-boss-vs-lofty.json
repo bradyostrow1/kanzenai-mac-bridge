@@ -9,7 +9,7 @@
   "contenders": [
     {
       "name": "Follow Up Boss",
-      "affiliateUrl": "https://www.followupboss.com/?ref=kanzenai",
+      "affiliateUrl": "/go/follow-up-boss",
       "startingPrice": "$69/month per user (Grow plan), $499/month for up to 10 users (Pro plan)",
       "rating": 4.5,
       "bestFor": "Solo agents and small teams seeking transparent per-user pricing, unlimited contacts, and straightforward CRM automation",
@@ -31,7 +31,7 @@
     },
     {
       "name": "Lofty",
-      "affiliateUrl": "https://www.lofty.com/?ref=kanzenai",
+      "affiliateUrl": "/go/lofty",
       "startingPrice": "Contact vendor for pricing (Agent, Team, Broker, and Enterprise tiers available)",
       "rating": 4,
       "bestFor": "Teams and brokers who want lead generation, IDX websites, AI agents, and multi-channel marketing bundled under one vendor",

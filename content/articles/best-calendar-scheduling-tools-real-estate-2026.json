@@ -50,7 +50,7 @@
       ],
       "cta": {
         "label": "View Calendly Plans",
-        "url": "https://www.calendly.com/?ref=kanzenai"
+        "url": "/go/calendly"
       }
     },
     {
@@ -82,7 +82,7 @@
       ],
       "cta": {
         "label": "View Acuity Scheduling",
-        "url": "https://www.acuityscheduling.com/?ref=kanzenai"
+        "url": "/go/acuity-scheduling"
       }
     },
     {
@@ -114,7 +114,7 @@
       ],
       "cta": {
         "label": "View SavvyCal Plans",
-        "url": "https://www.savvycal.com/?ref=kanzenai"
+        "url": "/go/savvycal"
       }
     },
     {
@@ -145,7 +145,7 @@
       ],
       "cta": {
         "label": "View Google Calendar",
-        "url": "https://calendar.google.com/?ref=kanzenai"
+        "url": "/go/google-calendar"
       }
     },
     {
@@ -196,17 +196,17 @@
   "affiliateProducts": [
     {
       "name": "Calendly",
-      "url": "https://www.calendly.com/?ref=kanzenai",
+      "url": "/go/calendly",
       "commission": "varies"
     },
     {
       "name": "Acuity Scheduling",
-      "url": "https://www.acuityscheduling.com/?ref=kanzenai",
+      "url": "/go/acuity-scheduling",
       "commission": "varies"
     },
     {
       "name": "SavvyCal",
-      "url": "https://www.savvycal.com/?ref=kanzenai",
+      "url": "/go/savvycal",
       "commission": "varies"
     }
   ],

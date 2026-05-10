@@ -125,6 +125,11 @@ const TOOLS = [
       required: [],
     },
   },
+  {
+    name: "read_clicks",
+    description: "Read affiliate click tracking data (from /go/<vendor> redirects). Returns total clicks, top vendors by click count, top articles driving clicks, and recent click events. Use when Brady asks 'what's getting clicked', 'which products are popular', 'click stats', 'affiliate performance'.",
+    input_schema: { type: "object", properties: {}, required: [] },
+  },
 ] as const;
 
 // ─── Tool implementations ───────────────────────────────────────────────────
@@ -144,6 +149,8 @@ async function execTool(name: ToolName, input: any): Promise<string> {
       return await toolReadAudit();
     case "read_health_log":
       return await toolReadHealth(input?.lines ?? 50);
+    case "read_clicks":
+      return await toolReadClicks();
     default:
       return `Unknown tool: ${name}`;
   }
@@ -265,6 +272,40 @@ async function toolReadAudit(): Promise<string> {
   if (files.length === 0) return "No audit logs yet. Run audit first.";
   const text = await readFile(join(AUDIT_DIR, files[0]), "utf8");
   return `Latest audit log: ${files[0]}\n\n${stripAnsi(text).slice(-3000)}`;
+}
+
+async function toolReadClicks(): Promise<string> {
+  const path = join(AUDIT_DIR, "clicks.log");
+  if (!existsSync(path)) return "No click data yet. The /go/<vendor> redirects log here, but only after someone actually clicks an affiliate link on the site.";
+  const text = await readFile(path, "utf8");
+  const lines = text.trim().split("\n").filter(Boolean);
+  if (lines.length === 0) return "Click log file exists but is empty.";
+
+  const events = lines.map((l) => {
+    try { return JSON.parse(l); } catch { return null; }
+  }).filter(Boolean);
+
+  const byVendor = new Map<string, { name: string; count: number }>();
+  const byArticle = new Map<string, number>();
+  for (const e of events) {
+    const v = byVendor.get(e.vendor) ?? { name: e.name, count: 0 };
+    v.count++;
+    byVendor.set(e.vendor, v);
+    if (e.article) byArticle.set(e.article, (byArticle.get(e.article) ?? 0) + 1);
+  }
+
+  const topVendors = [...byVendor.entries()].sort((a, b) => b[1].count - a[1].count).slice(0, 10);
+  const topArticles = [...byArticle.entries()].sort((a, b) => b[1] - a[1]).slice(0, 10);
+
+  return `Total clicks: ${events.length}
+
+Top vendors:
+${topVendors.map(([slug, v]) => `  ${v.count.toString().padStart(4)} · ${v.name} (${slug})`).join("\n")}
+
+Top articles driving clicks:
+${topArticles.length > 0 ? topArticles.map(([a, n]) => `  ${n.toString().padStart(4)} · /${a}`).join("\n") : "  (none yet)"}
+
+Most recent: ${events[events.length - 1]?.ts}`;
 }
 
 async function toolReadHealth(lines: number): Promise<string> {

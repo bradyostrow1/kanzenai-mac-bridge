@@ -48,7 +48,7 @@
       ],
       "cta": {
         "label": "Visit Open Home Pro",
-        "url": "https://www.openhomepro.com/?ref=kanzenai"
+        "url": "/go/open-home-pro"
       }
     },
     {
@@ -117,7 +117,7 @@
   "affiliateProducts": [
     {
       "name": "Open Home Pro",
-      "url": "https://www.openhomepro.com/?ref=kanzenai",
+      "url": "/go/open-home-pro",
       "commission": "varies"
     }
   ],

@@ -47,7 +47,7 @@
       ],
       "cta": {
         "label": "Try ListingAI Free",
-        "url": "https://www.listingai.com/?ref=kanzenai"
+        "url": "/go/listing-ai"
       }
     },
     {
@@ -76,7 +76,7 @@
       ],
       "cta": {
         "label": "Start WriterAccess Trial",
-        "url": "https://www.writeraccess.com/?ref=kanzenai"
+        "url": "/go/writeraccess"
       }
     },
     {
@@ -128,12 +128,12 @@
   "affiliateProducts": [
     {
       "name": "ListingAI",
-      "url": "https://www.listingai.com/?ref=kanzenai",
+      "url": "/go/listing-ai",
       "commission": "varies"
     },
     {
       "name": "WriterAccess",
-      "url": "https://www.writeraccess.com/?ref=kanzenai",
+      "url": "/go/writeraccess",
       "commission": "varies"
     }
   ],

@@ -48,7 +48,7 @@
       ],
       "cta": {
         "label": "Visit ShowingTime",
-        "url": "https://www.showingtime.com/?ref=kanzenai"
+        "url": "/go/showingtime"
       }
     },
     {
@@ -78,7 +78,7 @@
       ],
       "cta": {
         "label": "Visit SentriLock",
-        "url": "https://www.sentrilock.com/?ref=kanzenai"
+        "url": "/go/sentrilock"
       }
     },
     {
@@ -108,7 +108,7 @@
       ],
       "cta": {
         "label": "Visit SUPRA",
-        "url": "https://www.supraekey.com/?ref=kanzenai"
+        "url": "/go/supra-ekey"
       }
     },
     {
@@ -159,17 +159,17 @@
   "affiliateProducts": [
     {
       "name": "ShowingTime Appointment Center",
-      "url": "https://www.showingtime.com/?ref=kanzenai",
+      "url": "/go/showingtime",
       "commission": "varies"
     },
     {
       "name": "SentriLock Showing Service",
-      "url": "https://www.sentrilock.com/?ref=kanzenai",
+      "url": "/go/sentrilock",
       "commission": "varies"
     },
     {
       "name": "SUPRA eKey",
-      "url": "https://www.supraekey.com/?ref=kanzenai",
+      "url": "/go/supra-ekey",
       "commission": "varies"
     }
   ],

@@ -48,7 +48,7 @@
       ],
       "cta": {
         "label": "Visit Dotloop",
-        "url": "https://www.dotloop.com/?ref=kanzenai"
+        "url": "/go/dotloop"
       }
     },
     {
@@ -78,7 +78,7 @@
       ],
       "cta": {
         "label": "Visit SkySlope",
-        "url": "https://www.skyslope.com/?ref=kanzenai"
+        "url": "/go/skyslope"
       }
     },
     {
@@ -108,7 +108,7 @@
       ],
       "cta": {
         "label": "Visit Brokermint",
-        "url": "https://www.brokermint.com/?ref=kanzenai"
+        "url": "/go/brokermint"
       }
     },
     {
@@ -138,7 +138,7 @@
       ],
       "cta": {
         "label": "Visit Paperless Pipeline",
-        "url": "https://www.paperlesspipeline.com/?ref=kanzenai"
+        "url": "/go/paperless-pipeline"
       }
     },
     {
@@ -172,22 +172,22 @@
   "affiliateProducts": [
     {
       "name": "Dotloop",
-      "url": "https://www.dotloop.com/?ref=kanzenai",
+      "url": "/go/dotloop",
       "commission": "varies"
     },
     {
       "name": "SkySlope",
-      "url": "https://www.skyslope.com/?ref=kanzenai",
+      "url": "/go/skyslope",
       "commission": "varies"
     },
     {
       "name": "Brokermint",
-      "url": "https://www.brokermint.com/?ref=kanzenai",
+      "url": "/go/brokermint",
       "commission": "varies"
     },
     {
       "name": "Paperless Pipeline",
-      "url": "https://www.paperlesspipeline.com/?ref=kanzenai",
+      "url": "/go/paperless-pipeline",
       "commission": "varies"
     }
   ],

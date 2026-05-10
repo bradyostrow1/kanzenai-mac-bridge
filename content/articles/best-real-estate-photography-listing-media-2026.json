@@ -47,7 +47,7 @@
       ],
       "cta": {
         "label": "Visit Aryeo",
-        "url": "https://www.aryeo.com/?ref=kanzenai"
+        "url": "/go/aryeo"
       }
     },
     {
@@ -76,7 +76,7 @@
       ],
       "cta": {
         "label": "Visit BoxBrownie",
-        "url": "https://www.boxbrownie.com/?ref=kanzenai"
+        "url": "/go/boxbrownie"
       }
     },
     {
@@ -105,7 +105,7 @@
       ],
       "cta": {
         "label": "Visit Listing3D",
-        "url": "https://www.listing3d.com/?ref=kanzenai"
+        "url": "/go/listing3d"
       }
     },
     {
@@ -133,7 +133,7 @@
       ],
       "cta": {
         "label": "Contact VHT Studios",
-        "url": "https://www.vhtstudios.com/?ref=kanzenai"
+        "url": "/go/vht-studios"
       }
     },
     {
@@ -195,17 +195,17 @@
   "affiliateProducts": [
     {
       "name": "Aryeo",
-      "url": "https://www.aryeo.com/?ref=kanzenai",
+      "url": "/go/aryeo",
       "commission": "varies"
     },
     {
       "name": "BoxBrownie",
-      "url": "https://www.boxbrownie.com/?ref=kanzenai",
+      "url": "/go/boxbrownie",
       "commission": "varies"
     },
     {
       "name": "Listing3D",
-      "url": "https://www.listing3d.com/?ref=kanzenai",
+      "url": "/go/listing3d",
       "commission": "varies"
     }
   ],

@@ -10,7 +10,8 @@
     "write:noenv": "node --import tsx scripts/write-article.ts",
     "audit": "node --import tsx scripts/audit.ts",
     "swap-links": "node --import tsx scripts/swap-affiliate-links.ts",
-    "dedup-images": "node --import tsx scripts/dedup-images.ts"
+    "dedup-images": "node --import tsx scripts/dedup-images.ts",
+    "convert-go-links": "node --import tsx scripts/convert-to-go-links.ts"
   },
   "dependencies": {
     "lucide-react": "0.468.0",

@@ -49,7 +49,7 @@
       ],
       "cta": {
         "label": "Visit Real Geeks",
-        "url": "https://www.realgeeks.com/?ref=kanzenai"
+        "url": "/go/real-geeks"
       }
     },
     {
@@ -80,7 +80,7 @@
       ],
       "cta": {
         "label": "Try Follow Up Boss Free",
-        "url": "https://www.followupboss.com/?ref=kanzenai"
+        "url": "/go/follow-up-boss"
       }
     },
     {
@@ -111,7 +111,7 @@
       ],
       "cta": {
         "label": "Start BombBomb Free Trial",
-        "url": "https://www.bombbomb.com/?ref=kanzenai"
+        "url": "/go/bombbomb"
       }
     },
     {
@@ -141,7 +141,7 @@
       ],
       "cta": {
         "label": "Contact Zillow Premier Agent",
-        "url": "https://www.zillow.com/premier-agent/?ref=kanzenai"
+        "url": "/go/zillow-premier-agent"
       }
     },
     {
@@ -176,22 +176,22 @@
   "affiliateProducts": [
     {
       "name": "Real Geeks",
-      "url": "https://www.realgeeks.com/?ref=kanzenai",
+      "url": "/go/real-geeks",
       "commission": "varies"
     },
     {
       "name": "Follow Up Boss",
-      "url": "https://www.followupboss.com/?ref=kanzenai",
+      "url": "/go/follow-up-boss",
       "commission": "varies"
     },
     {
       "name": "BombBomb",
-      "url": "https://www.bombbomb.com/?ref=kanzenai",
+      "url": "/go/bombbomb",
       "commission": "varies"
     },
     {
       "name": "Zillow Premier Agent",
-      "url": "https://www.zillow.com/premier-agent/?ref=kanzenai",
+      "url": "/go/zillow-premier-agent",
       "commission": "varies"
     }
   ],
