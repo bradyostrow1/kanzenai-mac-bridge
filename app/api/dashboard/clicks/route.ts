@@ -59,6 +59,20 @@ export async function GET() {
     }
   }
 
+  // Time-series: clicks per day for last 14 days
+  const now = Date.now();
+  const oneDayMs = 24 * 60 * 60 * 1000;
+  const buckets = new Map<string, number>();
+  for (let i = 13; i >= 0; i--) {
+    const day = new Date(now - i * oneDayMs).toISOString().slice(0, 10);
+    buckets.set(day, 0);
+  }
+  for (const e of events) {
+    const day = (e.ts ?? "").slice(0, 10);
+    if (buckets.has(day)) buckets.set(day, (buckets.get(day) ?? 0) + 1);
+  }
+  const timeSeries = [...buckets.entries()].map(([date, clicks]) => ({ date, clicks }));
+
   return NextResponse.json({
     total: events.length,
     installed: true,
@@ -74,6 +88,7 @@ export async function GET() {
       .map(([article, clicks]) => ({ article, clicks }))
       .sort((a, b) => b.clicks - a.clicks)
       .slice(0, 20),
+    timeSeries,
     recent: events.slice(-20).reverse().map((e) => ({
       ts: e.ts,
       vendor: e.vendor,

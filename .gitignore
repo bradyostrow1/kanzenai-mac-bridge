@@ -38,6 +38,9 @@ yarn-error.log*
 content/**/*.json.bak
 .audit/
 
+# real affiliate codes — never commit
+affiliate-codes.json
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

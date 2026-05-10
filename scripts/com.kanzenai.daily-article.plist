@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  KanzenAI daily article writer.
+
+  Runs at 8 AM every day. Asks Claude for the next-best topic, then runs the
+  writer pipeline. The auto-deploy-watcher ships the new article 2-3 min later.
+
+  Cost: ~$0.15 per run (Claude API).
+
+  Install:
+    cp ~/Code/kanzenai/scripts/com.kanzenai.daily-article.plist ~/Library/LaunchAgents/
+    launchctl load -w ~/Library/LaunchAgents/com.kanzenai.daily-article.plist
+
+  Logs: ~/Code/kanzenai/.audit/daily-article-YYYY-MM-DD.log
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.kanzenai.daily-article</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>-c</string>
+        <string>cd $HOME/Code/kanzenai &amp;&amp; mkdir -p .audit &amp;&amp; npm run auto-write &gt; ".audit/daily-article-$(date +%Y-%m-%d).log" 2&gt;&amp;1</string>
+    </array>
+
+    <!-- Run daily at 8:00 AM local -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>8</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+        <key>HOME</key>
+        <string>/Users/bradyostrow</string>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/com.kanzenai.daily-article.out</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/com.kanzenai.daily-article.err</string>
+</dict>
+</plist>

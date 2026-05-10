@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  KanzenAI vendor follow-up bot.
+
+  Runs daily at 9 AM. Sends a polite follow-up to vendor outreach emails that
+  are 7+ days old and haven't received a response.
+
+  Mark a vendor as responded by adding a line to .audit/outreach-responses.log:
+    {"id":"real-geeks-2026-05","respondedAt":"2026-05-15T10:00Z"}
+
+  Install:
+    cp ~/Code/kanzenai/scripts/com.kanzenai.followups.plist ~/Library/LaunchAgents/
+    launchctl load -w ~/Library/LaunchAgents/com.kanzenai.followups.plist
+
+  Logs: ~/Code/kanzenai/.audit/followups-YYYY-MM-DD.log
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.kanzenai.followups</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>-c</string>
+        <string>cd $HOME/Code/kanzenai &amp;&amp; mkdir -p .audit &amp;&amp; npm run followups &gt; ".audit/followups-$(date +%Y-%m-%d).log" 2&gt;&amp;1</string>
+    </array>
+
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>9</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+        <key>HOME</key>
+        <string>/Users/bradyostrow</string>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/com.kanzenai.followups.out</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/com.kanzenai.followups.err</string>
+</dict>
+</plist>

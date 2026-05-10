@@ -1,0 +1,7 @@
+{
+  "_README": "Copy this to affiliate-codes.json (gitignored). Add one entry per vendor as their codes come back. Run: npm run rotate. Then deploy.",
+  "_example_follow-up-boss": "https://followupboss.partnerlinks.io/YOUR_REAL_ID",
+  "_example_real-geeks": "https://realgeeks.com/?via=YOUR_REAL_ID",
+  "_example_bombbomb": "https://www.shareasale.com/r.cfm?b=12345&u=YOUR_PUB_ID&m=98765",
+  "_help": "Slug must match a key in lib/affiliates.ts. Find slugs there or via npm run audit."
+}

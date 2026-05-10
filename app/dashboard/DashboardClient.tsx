@@ -3,6 +3,8 @@
 import { useEffect, useState, useCallback } from "react";
 import { Activity, FileText, GitCompare, AlertTriangle, RotateCw, Bot, ExternalLink, Play, Settings2, Shield, Edit3, Heart, MessageSquare, ArrowDown, MousePointerClick } from "lucide-react";
 import { ChatPanel } from "./ChatPanel";
+import { OutreachPanel } from "./OutreachPanel";
+import { ClickChart } from "./ClickChart";
 
 type Stats = {
   articles: {
@@ -123,6 +125,12 @@ export function DashboardClient() {
 
         {/* BOT SYSTEM */}
         <BotSystemPanel stats={stats} />
+
+        {/* CLICK PERFORMANCE */}
+        <ClickChart />
+
+        {/* VENDOR OUTREACH */}
+        <OutreachPanel />
 
         {/* MAIN: chat (left) + side rail (right) */}
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-6 mb-6">

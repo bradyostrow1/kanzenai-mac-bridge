@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  KanzenAI auto-deploy watcher.
+
+  Polls every 2 min. If content/, lib/, components/, app/, or scripts/ has
+  uncommitted changes, waits 90s for the editor to stabilize, then commits +
+  ships to Vercel automatically.
+
+  Install:
+    chmod +x ~/Code/kanzenai/scripts/auto-deploy-watcher.sh
+    cp ~/Code/kanzenai/scripts/com.kanzenai.auto-deploy.plist ~/Library/LaunchAgents/
+    launchctl load -w ~/Library/LaunchAgents/com.kanzenai.auto-deploy.plist
+
+  Uninstall:
+    launchctl unload -w ~/Library/LaunchAgents/com.kanzenai.auto-deploy.plist
+    rm ~/Library/LaunchAgents/com.kanzenai.auto-deploy.plist
+
+  Log: ~/Code/kanzenai/.audit/auto-deploy.log
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.kanzenai.auto-deploy</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>-c</string>
+        <string>$HOME/Code/kanzenai/scripts/auto-deploy-watcher.sh</string>
+    </array>
+
+    <!-- Run every 2 minutes -->
+    <key>StartInterval</key>
+    <integer>120</integer>
+
+    <key>RunAtLoad</key>
+    <false/>
+
+    <!-- Need npm, npx, node — make PATH explicit -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+        <key>HOME</key>
+        <string>/Users/bradyostrow</string>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/com.kanzenai.auto-deploy.out</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/com.kanzenai.auto-deploy.err</string>
+</dict>
+</plist>
