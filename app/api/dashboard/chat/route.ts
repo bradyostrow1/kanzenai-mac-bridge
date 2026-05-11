@@ -40,10 +40,12 @@ function devGuard() {
 // ─── Persona ────────────────────────────────────────────────────────────────
 const SYSTEM_PROMPT = `You are Kanzen, the operations bot for KanzenAI — Brady Ostrow's affiliate review site for real estate agents at https://kanzenai.com.
 
-You manage:
-- Article writing pipeline (Claude-powered, ~$0.15/article, takes 30-60s)
+You manage the same automation that runs 24/7 via launchd:
+- Daily article bot (3 articles/day, Claude auto-picks topics, ~$0.45/day)
+- Single-article writer (manual override, you pick topic + products)
 - Daily audit (11 checks across content + production)
 - Production health monitoring (kanzenai.com on Vercel)
+- Vendor follow-up bot (chases unanswered outreach emails)
 - Deployment to Vercel
 
 When Brady asks something, decide which tool(s) to call, execute, then report. Be terse — match Brady's style.
@@ -57,17 +59,23 @@ VOICE:
 - If something failed, say exactly what failed
 
 WHEN TO USE TOOLS:
+- "post the daily articles", "daily run", "fire today's articles", "run the daily bot", "do the daily" → run_daily_articles (DO NOT ask for products — this tool auto-picks topics, same as the 8 AM cron). Count defaults to 3.
+- "write [specific topic]", "compare X vs Y", "make me one about [explicit subject]" → write_article (ONLY when Brady names a specific topic AND products)
 - "run audit", "any issues", "is the site clean" → run_audit
 - "stats", "how's the site doing" → get_site_stats
-- "write [topic]", "new article on X", "make me one about Y" → write_article (clarify if vague)
-- "deploy", "push live", "ship it" → deploy_to_production (only after content changes)
-- Recent uptime/health questions → read_recent_audit
+- "deploy", "push live", "ship it" → deploy_to_production (only after manual writes; daily articles auto-deploy)
+- "follow up on emails", "chase the vendors", "send followups" → run_followups
+- "what's getting clicked", "click stats", "affiliate performance" → read_clicks
+- Recent uptime/health questions → read_recent_audit, read_health_log
 
-CLARIFICATION:
-If Brady asks for an article without specifying products, ask which products he wants covered. Don't invent products. Suggest 3-5 candidates from the real-estate-tech space if he wants ideas.
+DAILY ARTICLES RULE:
+If Brady says ANY variant of "post the daily articles" / "do the daily run" / "fire the bots" — call run_daily_articles immediately. Do NOT ask "which products" or "which topic" — the script auto-picks based on coverage gaps. Only ask if he wants a count other than 3.
+
+WRITE_ARTICLE CLARIFICATION:
+Only ask for products when Brady wants ONE specific article and hasn't named products. For the daily batch, use run_daily_articles.
 
 DEPLOY DISCIPLINE:
-Don't deploy unless he explicitly asks OR he just wrote new content and asks to ship it. Auto-deploys on every change burn build minutes.`;
+Don't deploy unless he explicitly asks. run_daily_articles already deploys at the end. Don't double-deploy.`;
 
 // ─── Tool definitions sent to Claude ────────────────────────────────────────
 const TOOLS = [
@@ -110,6 +118,22 @@ const TOOLS = [
     input_schema: { type: "object", properties: {}, required: [] },
   },
   {
+    name: "run_daily_articles",
+    description: "Fire the daily article bot — same script that launchd runs at 8 AM. Auto-picks N topics based on coverage gaps (no manual topic/product input needed) and writes them sequentially via Claude. Default count is 3. Cost ~$0.15 per article. Takes 2-5 minutes total. Use whenever Brady says 'post the daily articles', 'daily run', 'fire today's articles', 'do the daily', 'run the bot', etc. DO NOT ask for products — the script picks everything automatically.",
+    input_schema: {
+      type: "object",
+      properties: {
+        count: { type: "number", description: "How many articles to write (default 3, max 10)" },
+      },
+      required: [],
+    },
+  },
+  {
+    name: "run_followups",
+    description: "Send follow-up emails to any vendor outreach that's >=7 days old without a response. Reads .audit/outreach.log and .audit/outreach-responses.log to decide who to chase. Use when Brady says 'follow up', 'chase the vendors', 'send followups'.",
+    input_schema: { type: "object", properties: {}, required: [] },
+  },
+  {
     name: "read_recent_audit",
     description: "Read the most recent audit log file from .audit/. Use when Brady asks about past audit results.",
     input_schema: { type: "object", properties: {}, required: [] },
@@ -145,6 +169,10 @@ async function execTool(name: ToolName, input: any): Promise<string> {
       return await toolWriteArticle(input);
     case "deploy_to_production":
       return await toolDeploy();
+    case "run_daily_articles":
+      return await toolRunDailyArticles(input?.count);
+    case "run_followups":
+      return await toolRunFollowups();
     case "read_recent_audit":
       return await toolReadAudit();
     case "read_health_log":
@@ -255,6 +283,23 @@ async function toolWriteArticle(input: any): Promise<string> {
     return `Article written successfully.\n\n${r.out.slice(-1500)}\n\nSlug: ${slugMatch?.[1] ?? "(unknown)"}\nNot deployed yet — call deploy_to_production if Brady wants it live.`;
   }
   return `Article generation FAILED (exit ${r.code}):\n${r.err.slice(-1500)}\n${r.out.slice(-1500)}`;
+}
+
+async function toolRunDailyArticles(count?: number): Promise<string> {
+  const n = Math.max(1, Math.min(10, Number.isFinite(count) ? Number(count) : 3));
+  const r = await spawnAndCapture("npm", ["run", "auto-write", "--", "--count", String(n)], 900_000);
+  const tail = stripAnsi(r.out).slice(-2500);
+  if (r.code === 0) {
+    return `Daily bot finished. Wrote ${n} article(s). Auto-deploy watcher will ship in 2-3 min.\n\n${tail}`;
+  }
+  return `Daily bot FAILED (exit ${r.code}):\n${stripAnsi(r.err).slice(-1500)}\n${tail}`;
+}
+
+async function toolRunFollowups(): Promise<string> {
+  const r = await spawnAndCapture("npm", ["run", "followups"], 120_000);
+  const tail = stripAnsi(r.out).slice(-1500);
+  if (r.code === 0) return `Follow-up bot ran clean.\n\n${tail}`;
+  return `Follow-up bot FAILED (exit ${r.code}):\n${stripAnsi(r.err).slice(-1500)}\n${tail}`;
 }
 
 async function toolDeploy(): Promise<string> {
