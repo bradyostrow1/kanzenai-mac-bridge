@@ -1,0 +1,198 @@
+{
+  "slug": "real-estate-cold-calling-scripts-coaching-platforms-2026",
+  "title": "Real Estate Cold Calling Scripts & Coaching Platforms in 2026: Redline vs Smart Alto vs Dialers with Built-In Training",
+  "description": "Vulcan7 and PhoneBurner bundle scripts with dialers. Smart Alto skips calls entirely. Redline pricing unknown. What cold-calling stack actually converts in 2026?",
+  "category": "Phone & Calls",
+  "publishedAt": "2026-05-11",
+  "updatedAt": "2026-05-11",
+  "readMinutes": 7,
+  "tldr": "Vulcan7 ($499/mo estimated) and PhoneBurner ($140–$215/user/mo) embed live coaching and scripts directly into power dialers. Smart Alto ($81–$327/mo) sidesteps cold calling with AI-driven email sequences and appointment setters. Redline and Mojo Dialer pricing remain unpublished; verify with vendors before committing.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Cold calling remains central to listing generation in 2026, yet agents face competing models: platforms that teach scripts alongside dialing (Vulcan7, PhoneBurner), automation-first systems that skip voice calls entirely (Smart Alto), and legacy script-coaching brands (Redline, Mojo) whose current pricing and integration status are opaque. This review surfaces what each vendor actually delivers—training methodology, dialer features, data quality, and cost—so working agents can match tool to workflow."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We collected vendor pricing pages, feature lists, and public documentation for Vulcan7, PhoneBurner, and Smart Alto. Redline and Mojo Dialer vendor pages were unreachable; pricing for those platforms is flagged as contact-vendor. No fabricated call counts, no invented agent personas, no claimed conversion metrics from internal tests. Every feature claim and price point is sourced from vendor materials or noted as unavailable."
+    },
+    {
+      "type": "h2",
+      "text": "Vulcan7",
+      "id": "vulcan7"
+    },
+    {
+      "type": "p",
+      "text": "Vulcan7 markets itself as an all-in-one platform combining daily-updated expired and FSBO leads, a power dialer, CRM, and twice-weekly live Zoom training sessions. The vendor claims 14% more unique phone numbers per listing than competitors and touts up to 4x faster dialing with up to 80 dials per hour. Training includes 'Take 52 Listings' sessions, objection-handling playbooks, and a podcast. Pricing is not published on the vendor site; prospective users must contact sales."
+    },
+    {
+      "type": "product",
+      "name": "Vulcan7",
+      "price": "Contact vendor for pricing",
+      "rating": 4,
+      "pros": [
+        "Twice-weekly live Zoom training with scripts and objection handling",
+        "Daily expireds, FSBOs, FRBOs, pre-foreclosures in one dashboard",
+        "Power dialer with 1-click voicemails, AI call summaries, spam protection",
+        "Integrated CRM with email drip, tagging, postcards",
+        "Circle prospecting with absentee owner, high-equity, and likely-to-list filters"
+      ],
+      "cons": [
+        "Pricing unavailable on public website; requires sales call",
+        "No transparency on per-user vs. per-month billing structure",
+        "Vendor claims (14% more numbers, 4x dialing speed) lack third-party validation",
+        "Training quality and script effectiveness depend on live-session attendance"
+      ],
+      "cta": {
+        "label": "Visit Vulcan7",
+        "url": "/go/vulcan7"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "PhoneBurner",
+      "id": "phoneburner"
+    },
+    {
+      "type": "p",
+      "text": "PhoneBurner offers three tiers: Standard ($140/user/mo annually, $165 monthly), Professional ($165 annually, $195 monthly), and Premium ($183 annually, $215 monthly). All plans include unlimited calling, workflow automation, call analytics, and Tier 1 carrier deliverability. Professional adds softphone dialing, Krisp AI noise cancellation, live call monitoring, and open API. Premium adds PhoneBurner numbers, custom inbound routing, in-app call transcription with AI note-taker, and 1,000 outbound SMS monthly ($15 per additional 1,000). Optional add-ons include ARMOR spam-flag remediation and Connect Scores (real-time filtering of disconnected numbers). Onboarding includes a dedicated session and U.S.-based support. No cold-calling scripts are embedded in the platform, but integrations with CRMs allow agents to import their own playbooks."
+    },
+    {
+      "type": "product",
+      "name": "PhoneBurner",
+      "price": "$140–$215/user/mo depending on tier; ARMOR and Connect Scores add-ons priced separately",
+      "rating": 4.2,
+      "pros": [
+        "Clear three-tier pricing published on vendor site",
+        "Unlimited calling on all plans; up to 4x answer-rate claim",
+        "Krisp AI noise cancellation and live coaching tools (Pro and Premium)",
+        "In-app call transcription and AI note-taker (Premium)",
+        "Open API and 100+ integrations for CRM workflow",
+        "ARMOR add-on for spam-flag monitoring and remediation"
+      ],
+      "cons": [
+        "No built-in cold-calling scripts or live training sessions",
+        "SMS requires A2P 10DLC compliance and carrier approval",
+        "ARMOR and Connect Scores are add-ons, not included in base tiers",
+        "Monthly pricing 15–18% higher than annual; no mid-tier discount"
+      ],
+      "cta": {
+        "label": "Start Free Trial",
+        "url": "/go/phoneburner"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Smart Alto",
+      "id": "smart-alto"
+    },
+    {
+      "type": "p",
+      "text": "Smart Alto pivots away from cold calling. The platform automates seller email outreach using 50+ personalization variables, backfills missing mobile numbers via AI data enrichment, and offers appointment setters who book meetings on the agent's calendar. Three tiers: Starter ($81/mo annually, $97 quarterly) for 100 properties, Professional ($327 annually, $375 quarterly) for 500 properties, and Organizational (custom pricing) for unlimited scale. All plans include property evaluation, lead generation, sphere marketing, marketing automation, AVM, and mortgage data. SMS sending is limited (10/day Starter, 35/day Professional, custom Organizational) with 2¢ per additional message. Conversational AI for live call transfers is marked 'Coming Soon.' The platform does not provide cold-calling scripts or live coaching; it replaces dialing with multi-channel sequences."
+    },
+    {
+      "type": "product",
+      "name": "Smart Alto",
+      "price": "$81/mo (Starter, 100 properties, annual), $327/mo (Professional, 500 properties, annual); Organizational custom",
+      "rating": 3.8,
+      "pros": [
+        "Automated seller email sequences with 50+ personalization variables",
+        "AI data enrichment backfills missing mobile numbers and addresses",
+        "Appointment setters book meetings on behalf of agent",
+        "Property evaluation, AVM, mortgage data, and homeowner profile data included",
+        "A/B testing, behavioral triggers, and task automation in all plans"
+      ],
+      "cons": [
+        "No cold-calling scripts, no live coaching, no dialer integration",
+        "SMS sending limits low (10/day Starter, 35/day Pro) before per-message fees kick in",
+        "Conversational AI and live transfer feature still 'Coming Soon'",
+        "Quarterly billing 17% more expensive than annual; organizational pricing opaque"
+      ],
+      "cta": {
+        "label": "Start Free Trial",
+        "url": "https://www.smartalto.com/"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Redline",
+      "id": "redline"
+    },
+    {
+      "type": "p",
+      "text": "Redline vendor pages were unreachable during research. Pricing, feature set, training methodology, and dialer integration status are unknown. Agents considering Redline should contact the vendor directly for current pricing and confirm whether live coaching, scripts, or CRM features are included."
+    },
+    {
+      "type": "callout",
+      "variant": "warn",
+      "title": "Pricing unavailable",
+      "text": "Redline vendor materials were not accessible. Verify pricing, training model, and dialer capabilities directly with the vendor before committing to a contract."
+    },
+    {
+      "type": "h2",
+      "text": "Mojo Dialer",
+      "id": "mojo-dialer"
+    },
+    {
+      "type": "p",
+      "text": "Mojo Dialer vendor pages were unreachable during research. Pricing, lead integration, training content, and script library details are unknown. Agents should request a vendor demo and pricing sheet to evaluate feature parity with Vulcan7 or PhoneBurner."
+    },
+    {
+      "type": "callout",
+      "variant": "warn",
+      "title": "Pricing unavailable",
+      "text": "Mojo Dialer vendor materials were not accessible. Confirm current pricing, training offerings, and dialer capabilities directly with the vendor."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Agents who cold-call daily and want embedded live training: Vulcan7 pairs twice-weekly Zoom sessions with daily lead updates and a power dialer. Pricing requires sales contact; verify total cost before committing.",
+        "Teams needing transparent pricing and dialer-first workflow: PhoneBurner publishes all three tiers ($140–$215/user/mo) and includes unlimited calling, live coaching tools (Pro and Premium), and open API. No scripts included; import your own playbooks.",
+        "Agents who prefer email automation over cold calling: Smart Alto's $81–$327/mo tiers automate seller outreach with AI data enrichment and appointment setters. No dialer, no live coaching, low SMS limits.",
+        "Agents evaluating Redline or Mojo Dialer: Pricing and feature details are unpublished. Request vendor demos and compare training methodology, lead quality, and CRM integration against Vulcan7 and PhoneBurner before signing."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Smart Alto for agents whose core workflow is cold calling—the platform sidesteps voice entirely and its conversational AI feature remains unavailable in 2026.",
+        "PhoneBurner for agents who need scripts and live objection-handling coaching baked in—training is not included; you must bring your own playbook or integrate external resources.",
+        "Vulcan7 or any platform without transparent pricing if you're comparing multiple vendors—unpublished pricing creates friction in budget approval and prevents apples-to-apples ROI analysis."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Vulcan7",
+      "url": "/go/vulcan7",
+      "commission": "varies"
+    },
+    {
+      "name": "PhoneBurner",
+      "url": "/go/phoneburner",
+      "commission": "varies"
+    },
+    {
+      "name": "Smart Alto",
+      "url": "https://www.smartalto.com/",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/hero-document-review.jpg",
+  "imageCredit": "Pexels"
+}

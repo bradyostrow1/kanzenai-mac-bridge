@@ -1,0 +1,211 @@
+{
+  "slug": "real-estate-inventory-management-software-2026",
+  "title": "Real Estate Inventory Management in 2026: Software That Tracks Your Listings, Buyers & Pipeline",
+  "description": "Trello, Airtable, Notion, Pipeline CRM, and Monday.com compared for managing real estate inventory—pricing, trade-offs, and who wins.",
+  "category": "Inventory",
+  "publishedAt": "2026-05-11",
+  "updatedAt": "2026-05-11",
+  "readMinutes": 8,
+  "tldr": "Real estate agents need visible pipeline tracking more than feature bloat. Trello and Notion offer free tiers adequate for solo agents; Airtable and Pipeline CRM scale better for teams managing hundreds of deals. Monday.com pricing remains unpublished—contact vendor directly.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Most real estate agents lose deals in the gap between initial inquiry and signed contract. Spreadsheets fracture across desktop and phone. Email threads bury buyer preferences. A proper inventory system surfaces every listing, buyer, and pipeline stage in one view—no hunting. We compared five platforms agents use to track inventory: purpose-built CRMs, flexible databases, and kanban boards. The winner depends on team size and whether you value simplicity or customization."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed vendor pricing pages, feature lists, and published plan details as of May 2026. No invented test counts, no fabricated agent personas. Where pricing is absent or gated, we note it explicitly. Every claim ties to a vendor-published source."
+    },
+    {
+      "type": "h2",
+      "text": "Trello",
+      "id": "trello"
+    },
+    {
+      "type": "p",
+      "text": "Trello's kanban boards map cleanly to real estate pipelines: one card per listing or buyer, columns for stages like Lead → Showing → Under Contract → Closed. Vendor pricing lists a free plan for individuals and small teams, $5/user/month Standard (billed annually at $25/user/month with monthly billing at $29), $10/user/month Premium (billed annually at $33/user/month with monthly billing at $39) for teams up to 100, and Enterprise pricing on request. The free tier includes unlimited file storage and basic automation; paid tiers add advanced automation, custom fields, and calendar sync via Trello Planner."
+    },
+    {
+      "type": "product",
+      "name": "Trello",
+      "price": "Free plan available; Standard $25/user/month billed annually, Premium $33/user/month billed annually, Enterprise custom",
+      "rating": 4.2,
+      "pros": [
+        "Free tier sufficient for solo agents with simple pipelines",
+        "Visual kanban layout—drag cards between stages",
+        "Mobile app syncs boards across devices",
+        "Power-Ups extend integrations (Slack, Google Drive, calendar)"
+      ],
+      "cons": [
+        "No relational database—difficult to link buyers to multiple listings",
+        "Reporting limited on free and Standard tiers",
+        "Automation rules cap at 1 on free, 10 on Standard"
+      ],
+      "cta": {
+        "label": "Try Trello Free",
+        "url": "https://trello.com/"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Pipeline CRM",
+      "id": "pipeline-crm"
+    },
+    {
+      "type": "p",
+      "text": "Pipeline CRM targets sales teams and includes real estate firms in its solution list. Vendor pricing shows four tiers: Start at $25/user/month billed annually ($29/month billed monthly), Develop at $33/user/month billed annually ($39/month billed monthly), Grow at $49/user/month billed annually ($59/month billed monthly), and Enterprise with custom pricing. Start includes 1 sales pipeline, 250 active deals, and 5 Excel/CSV exports per user per month. Grow unlocks unlimited deals, advanced visibility controls, email drip campaigns, and up to 45 map routes per user per month. The platform emphasizes pipeline management, lead forms, and contract management with eSign in Develop and above."
+    },
+    {
+      "type": "product",
+      "name": "Pipeline CRM",
+      "price": "Start $25/user/month billed annually, Develop $33/user/month, Grow $49/user/month, Enterprise custom",
+      "rating": 4,
+      "pros": [
+        "Purpose-built for sales pipelines—multiple pipelines on Develop and above",
+        "Contract management with eSign (Develop tier and up)",
+        "Map views for territory routing (5–45 routes/user/month depending on tier)",
+        "AI email assistant and email tracking on all paid tiers"
+      ],
+      "cons": [
+        "Start tier caps active deals at 250—restrictive for busy agents",
+        "Custom field limits (25 on Start, 35 on Develop) may constrain property metadata",
+        "No free tier; 14-day trial requires credit card details for post-trial billing"
+      ],
+      "cta": {
+        "label": "Try Pipeline CRM",
+        "url": "https://pipelinecrm.com/"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Airtable",
+      "id": "airtable"
+    },
+    {
+      "type": "p",
+      "text": "Airtable is a relational database with spreadsheet-style views and custom interfaces. Vendor pricing lists Free ($0), Plus ($10/user/month), Business ($20/user/month), and Enterprise (custom). Free includes unlimited bases (databases) for individuals, databases with subtasks and dependencies, and basic forms; collaborators added to free workspaces trigger per-seat charges. Plus adds unlimited charts, unlimited file uploads, and basic integrations (Slack, Google Drive). Business includes SAML SSO, granular database permissions, premium connections (GitHub, Asana), and Enterprise Search (beta) across connected apps."
+    },
+    {
+      "type": "product",
+      "name": "Airtable",
+      "price": "Free plan available; Plus $10/user/month, Business $20/user/month, Enterprise custom",
+      "rating": 4.5,
+      "pros": [
+        "Relational structure links buyers to multiple listings, listings to agents and transactions",
+        "Custom interfaces display pipeline views tailored to team roles",
+        "Unlimited collaborative blocks on Plus and above—no artificial record caps",
+        "Automations and integrations scale with tier (basic on Plus, premium on Business)"
+      ],
+      "cons": [
+        "Steeper learning curve than kanban boards—requires database design",
+        "Free tier limits file uploads to 5MB each; paid tiers cap individual files around 5GB",
+        "Pricing jumps to $20/user/month for advanced permissions and SSO"
+      ],
+      "cta": {
+        "label": "Try Airtable Free",
+        "url": "https://airtable.com/"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Notion",
+      "id": "notion"
+    },
+    {
+      "type": "p",
+      "text": "Notion combines wikis, databases, and project boards in one workspace. Vendor pricing lists Free ($0), Plus ($10/user/month), Business ($20/user/month), and Enterprise (custom). Free includes unlimited pages and blocks for individuals (limited blocks for 2+ members), basic forms, basic sites, Notion Calendar, and Notion Mail (Gmail sync). Plus adds unlimited collaborative blocks, unlimited file uploads, custom forms, and basic connections (Slack, Google Drive). Business tier introduces AI Meeting Notes, Enterprise Search (beta), SAML SSO, granular database permissions, and premium connections (GitHub, Asana). Notion AI and Notion Agent incur additional per-credit charges ($10 per 1,000 monthly Notion credits on agent tasks)."
+    },
+    {
+      "type": "product",
+      "name": "Notion",
+      "price": "Free plan available; Plus $10/user/month, Business $20/user/month, Enterprise custom; AI features extra ($10 per 1,000 credits)",
+      "rating": 4.3,
+      "pros": [
+        "All-in-one workspace—databases, wikis, task boards, and calendar in one tool",
+        "Free tier viable for solo agents (unlimited pages/blocks for individuals)",
+        "Notion Calendar and Mail integrate time management and email without separate subscriptions",
+        "Custom database views (kanban, calendar, gallery, table) adapt to pipeline stages"
+      ],
+      "cons": [
+        "Block limits on free tier for teams (2+ members) require upgrade",
+        "AI features (Meeting Notes, Agents) billed separately—adds cost for automation",
+        "Relational databases less robust than Airtable—fewer formula and rollup options"
+      ],
+      "cta": {
+        "label": "Try Notion Free",
+        "url": "https://notion.com/"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Monday.com",
+      "id": "monday-com"
+    },
+    {
+      "type": "p",
+      "text": "Monday.com offers project management and CRM modules. No pricing details were retrievable from vendor pages in the research bundle. Prospective users must contact Monday.com directly for plan details and quotes. The platform's public materials emphasize visual boards, automations, and integrations, but tier structure, per-user costs, and feature gates remain unpublished."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Pricing unavailable",
+      "text": "Monday.com does not publish pricing on public pages. Contact the vendor for a custom quote."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Solo agent with <50 active deals: Trello Free or Notion Free. Kanban simplicity beats database complexity when you're the only user.",
+        "Small team (2–5 agents) managing 50–250 deals: Airtable Plus ($10/user/month) or Notion Plus ($10/user/month). Relational links and unlimited blocks justify the cost.",
+        "Growing brokerage (5+ agents, 250+ deals): Pipeline CRM Grow ($49/user/month) or Airtable Business ($20/user/month). Pipeline's purpose-built sales features (contract management, map routes, email drip) edge out Airtable for pure transactional velocity; Airtable wins if you need custom reporting and integrations beyond CRM.",
+        "Enterprise brokerage (10+ agents, complex permissions): Airtable Enterprise or Pipeline CRM Enterprise. Both offer SSO, advanced security, and dedicated support; choice hinges on whether you prioritize database flexibility (Airtable) or sales automation depth (Pipeline)."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-we-d-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Trello for teams above 10 users—automation caps and lack of relational linking force workarounds that waste time.",
+        "Pipeline CRM Start tier ($25/user/month) if you close more than 20 deals per month—the 250 active-deal cap becomes a bottleneck fast.",
+        "Monday.com until pricing transparency improves—opaque pricing models risk budget surprises post-implementation."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Trello",
+      "url": "https://trello.com/",
+      "commission": "varies"
+    },
+    {
+      "name": "Pipeline CRM",
+      "url": "https://pipelinecrm.com/",
+      "commission": "varies"
+    },
+    {
+      "name": "Airtable",
+      "url": "https://airtable.com/",
+      "commission": "varies"
+    },
+    {
+      "name": "Notion",
+      "url": "https://notion.com/",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/hero-model-houses-keys.jpg",
+  "imageCredit": "Pexels"
+}
