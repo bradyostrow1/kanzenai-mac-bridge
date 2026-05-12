@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  KanzenAI auto-reply bot.
+
+  Runs every 15 minutes. Searches X for fresh posts from 10k+ follower
+  real-estate accounts, drafts a reply via Claude, posts immediately if
+  on-brand. Hard-capped at 10 replies/day, 1 per target/day, 30min between.
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.kanzenai.auto-reply</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>-c</string>
+        <string>cd $HOME/Code/kanzenai &amp;&amp; mkdir -p .audit &amp;&amp; npm run auto-reply &gt;&gt; ".audit/auto-reply-$(date +%Y-%m-%d).log" 2&gt;&amp;1</string>
+    </array>
+    <key>StartInterval</key>
+    <integer>900</integer>
+    <key>RunAtLoad</key>
+    <false/>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+        <key>HOME</key>
+        <string>/Users/bradyostrow</string>
+    </dict>
+    <key>StandardOutPath</key>
+    <string>/tmp/com.kanzenai.auto-reply.out</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/com.kanzenai.auto-reply.err</string>
+</dict>
+</plist>
