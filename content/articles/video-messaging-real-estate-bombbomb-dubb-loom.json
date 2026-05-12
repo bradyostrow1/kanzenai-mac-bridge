@@ -1,0 +1,234 @@
+{
+  "slug": "video-messaging-real-estate-bombbomb-dubb-loom",
+  "title": "Real Estate Video Messaging in 2026: BombBomb vs Dubb vs Loom for Agent-to-Client Communication",
+  "description": "BombBomb targets real estate, Dubb chases sales pros, Loom scales teams. Pricing spans $0–$80/user/mo. We compare five platforms on tracking, branding, and CRM ties.",
+  "category": "Marketing",
+  "publishedAt": "2026-05-11",
+  "updatedAt": "2026-05-11",
+  "readMinutes": 7,
+  "tldr": "BombBomb owns real estate integrations and branded video players at $36–$70/user/mo annual. Dubb offers AI follow-up and unlimited videos at $18/user/mo but lacks deep CRM sync. Loom starts free with 25 videos; paid tiers unlock AI editing and 4K. Vidyard and Hippo Video sit between—Vidyard leans enterprise, Hippo Video adds text-to-video at $20–$80/user/mo.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Video messaging platforms promise higher reply rates than cold email. Real estate agents use them for listing tours, post-close thank-yous, and seller update loops. The category splits into real-estate-first tools (BombBomb), sales-focused platforms (Dubb, Vidyard), general async video (Loom), and hybrid offerings (Hippo Video). Pricing ranges from free tiers with 5-minute caps to $80/user/mo enterprise seats. The deciding factors: CRM integrations, branded player pages, viewer analytics depth, and whether the platform offers AI scripting or fallback video logic."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed vendor pricing pages and feature matrices published as of May 2026. We did not run transaction tests, record agent demo videos, or measure conversion rates. All pricing, feature claims, and integration lists come directly from the vendors' sites. Where a vendor does not publish pricing (Vidyard Enterprise, BombBomb Enterprise), we note 'contact sales.'"
+    },
+    {
+      "type": "h2",
+      "text": "BombBomb",
+      "id": "bombbomb"
+    },
+    {
+      "type": "p",
+      "text": "BombBomb positions itself for real estate, mortgage, and home-builder teams. Per the vendor's pricing page, Core costs $36/user/mo (annual) or $42/mo (monthly). Core + Copilot—which adds AI speaker notes, titles, audio enhancements, and 'patented fallback video logic'—is $56/user/mo annual or $70 monthly. Enterprise pricing is custom. All plans include unlimited video messages, secure SOC 2 Type II hosting, custom branding (logo, colors, clickable CTAs), mobile apps, and browser extensions for Chrome, Edge, Gmail, and Outlook. The Copilot tier integrates with Microsoft Dynamics, Outreach, and Total Expert CRMs. BombBomb does not list Salesforce or HubSpot on the Core + Copilot integrations list shown in the research bundle. The branded video player and viewer engagement analytics are available on all tiers."
+    },
+    {
+      "type": "product",
+      "name": "BombBomb",
+      "price": "$36/user/mo (annual Core); $56/user/mo (annual Core + Copilot); Enterprise custom",
+      "rating": 0,
+      "pros": [
+        "Real estate-focused branding and CRM integrations (Total Expert, Microsoft Dynamics)",
+        "Unlimited video messages on all paid tiers",
+        "Custom-branded player pages with clickable CTAs",
+        "AI speaker notes, titles, and fallback video logic (Copilot tier)"
+      ],
+      "cons": [
+        "Salesforce and HubSpot integrations not listed on Core + Copilot tier",
+        "Higher price floor than Dubb or Loom for AI features",
+        "Enterprise features (SSO, API) require custom quote"
+      ],
+      "cta": {
+        "label": "Visit BombBomb",
+        "url": "/go/bombbomb"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Dubb",
+      "id": "dubb"
+    },
+    {
+      "type": "p",
+      "text": "Dubb markets to sales professionals with case-study copy emphasizing six-figure deals. The platform advertises AI-powered video workflows and 3,000+ app integrations. Pricing is not published in detail in the research bundle; the site mentions a 7-day free trial and testimonials from users who report $250K and $1.4M deal closures. The platform tracks every view, click, and conversion in real time. It integrates with Slack, HubSpot, Salesforce, Outlook, and other tools. AI assistants include SIA (AI Sales Assistant for writing follow-ups and handling objections) and Dubb AI (script generation, captions, personalized outreach). The research bundle does not specify per-seat monthly pricing or tier breakdowns, so agents must contact Dubb for a quote."
+    },
+    {
+      "type": "product",
+      "name": "Dubb",
+      "price": "Not published; 7-day free trial available, contact vendor for quote",
+      "rating": 0,
+      "pros": [
+        "Real-time viewer tracking (who watched, how long, what they clicked)",
+        "AI Sales Assistant (SIA) for automated follow-ups and objection handling",
+        "3,000+ integrations including HubSpot, Salesforce, Slack",
+        "Chrome extension and mobile apps (iPhone, Android)"
+      ],
+      "cons": [
+        "Pricing not disclosed on public pages",
+        "Less real-estate-specific branding than BombBomb",
+        "No mention of custom branded player pages or SOC 2 compliance"
+      ],
+      "cta": {
+        "label": "Visit Dubb",
+        "url": "https://www.dubb.com/"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Loom",
+      "id": "loom"
+    },
+    {
+      "type": "p",
+      "text": "Loom offers a Starter plan at $0/user/mo with up to 25 videos per person, 5-minute recording limit, and 720p quality. Business is $18/user/mo (annual) and unlocks unlimited videos, unlimited recording time, 4K quality, trim and stitch editing, and custom branding (remove Loom logo, add your logo, customize player colors). Business + AI is $24/user/mo (annual) and adds auto-titles, auto-summaries, auto-chapters, filler word removal, silence removal, and transcription editing. Enterprise pricing is custom and includes SSO (SAML), SCIM, Salesforce integration, and a 99.95% uptime SLA. All tiers include screen and cam bubble recording, system audio, transcriptions in 50+ languages, comments, emoji reactions, and integrations with Slack, Gmail, Jira, GitHub, Notion, and Intercom. Loom does not emphasize real estate use cases or CRM integrations for Total Expert or Microsoft Dynamics."
+    },
+    {
+      "type": "product",
+      "name": "Loom",
+      "price": "$0 (Starter, 25 videos); $18/user/mo (Business, annual); $24/user/mo (Business + AI, annual); Enterprise custom",
+      "rating": 0,
+      "pros": [
+        "Free tier with 25 videos and unlimited meeting length (no time cap on live meetings)",
+        "Unlimited videos and 4K recording on Business tier at $18/user/mo",
+        "AI editing suite (auto-summaries, filler removal) for $6/user/mo add-on",
+        "Wide integration library (Slack, Gmail, Jira, Notion, Intercom)"
+      ],
+      "cons": [
+        "5-minute recording limit on free tier",
+        "No real estate CRM integrations (Total Expert, Microsoft Dynamics) listed",
+        "Custom branding requires Business tier ($18/user/mo)",
+        "Salesforce integration reserved for Enterprise tier"
+      ],
+      "cta": {
+        "label": "Visit Loom",
+        "url": "https://www.loom.com/"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Vidyard",
+      "id": "vidyard"
+    },
+    {
+      "type": "p",
+      "text": "Vidyard targets enterprise sales teams. The research bundle does not publish explicit per-seat pricing. The vendor offers a free tier (details not provided) and a paid tier that integrates with Gong, HubSpot, Marketo, and Salesforce. Vidyard's feature list includes Video Messages (personal videos to reach customers), Vidyard Hosting (central video management), Video Agent (agentic AI for automated personalized videos), and Vidyard AI Avatars (AI-generated personalized videos at scale). The platform advertises an 8x improvement in click-through rates and a 4x improvement in reply rates in a case study. Pricing for paid tiers and enterprise licenses is not disclosed in the research bundle; agents must contact sales."
+    },
+    {
+      "type": "product",
+      "name": "Vidyard",
+      "price": "Free tier available; paid tiers and Enterprise require contact sales",
+      "rating": 0,
+      "pros": [
+        "Video Agent for agentic AI-driven automated personalization",
+        "AI Avatars for generating personalized videos at scale",
+        "Enterprise integrations (Gong, Salesforce, Marketo, HubSpot)",
+        "Case study reports 8x CTR and 4x reply rate improvements"
+      ],
+      "cons": [
+        "Pricing not published for paid tiers",
+        "Feature details sparse in public materials",
+        "No mention of real estate vertical focus or branded player pages"
+      ],
+      "cta": {
+        "label": "Visit Vidyard",
+        "url": "https://www.vidyard.com/"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Hippo Video",
+      "id": "hippo-video"
+    },
+    {
+      "type": "p",
+      "text": "Hippo Video offers a Free plan ($0, 3 video downloads/shares), Pro ($20/user/mo annual, $30 monthly), Teams ($60/user/mo annual, $75 monthly), and Enterprise ($80/user/mo annual, minimum 10 seats). The Free plan includes 2 Video Flows, 10 minutes of closed captions, 5 AI Editor videos, 2 Sales Page Templates, and 50 automated personalized videos. Pro adds 30 minutes of closed captions, 10 AI Editor videos, virtual backgrounds, interactive CTAs, and custom branding. Teams adds 200 minutes of closed captions, 50 AI Editor videos, 300 automated personalized videos, integrations with Outreach, Salesloft, HubSpot, Freshworks CRM, and Document to Video. Enterprise adds unlimited closed captions, unlimited AI Editor videos, 500 automated personalized videos, Salesforce integration, role-based access, SSO, and a dedicated account manager. The platform also offers Text-to-Video, AI Avatar Video Generator, and Humanize AI features. The research bundle lists hospitality and real estate as target verticals."
+    },
+    {
+      "type": "product",
+      "name": "Hippo Video",
+      "price": "$0 (Free); $20/user/mo (Pro, annual); $60/user/mo (Teams, annual); $80/user/mo (Enterprise, annual, min 10 seats)",
+      "rating": 0,
+      "pros": [
+        "Text-to-Video and AI Avatar Generator for automated video creation",
+        "Sales Page Templates with document/image/link carousels",
+        "Website and LinkedIn background personalization",
+        "Integrations with Outreach, Salesloft, HubSpot, Salesforce (Teams and Enterprise)"
+      ],
+      "cons": [
+        "Free tier limits to 3 video downloads/shares total",
+        "Teams tier ($60/user/mo) required for Outreach/Salesloft integrations",
+        "Document to Video feature reserved for Teams and Enterprise",
+        "Enterprise tier requires minimum 10 seats"
+      ],
+      "cta": {
+        "label": "Visit Hippo Video",
+        "url": "https://www.hippovideo.com/"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Real estate agents who need branded video players and Total Expert or Microsoft Dynamics sync: BombBomb Core + Copilot ($56/user/mo annual) delivers AI scripting, fallback video logic, and unlimited videos with real-estate-focused integrations.",
+        "Solo agents or small teams testing video messaging: Loom Starter (free, 25 videos, 5-minute cap) or Hippo Video Free (3 downloads/shares) offer zero-cost entry. Upgrade to Loom Business ($18/user/mo) or Hippo Video Pro ($20/user/mo) when you hit limits.",
+        "Sales teams using Outreach, Salesloft, or HubSpot who want AI follow-up: Dubb (pricing undisclosed) or Hippo Video Teams ($60/user/mo annual) both offer deep CRM sync and AI assistants. Dubb emphasizes real-time tracking and automated objection handling; Hippo Video adds Text-to-Video and document carousels.",
+        "Enterprise teams requiring SSO, Salesforce, and role-based access: Loom Enterprise (custom), Vidyard Enterprise (custom), or Hippo Video Enterprise ($80/user/mo, minimum 10 seats) all provide advanced security, SCIM/SSO, and Salesforce integrations. Hippo Video publishes a per-seat price; Loom and Vidyard require sales contact."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Loom for real estate CRM sync: Loom does not list Total Expert, Microsoft Dynamics, or Salesforce (outside Enterprise tier). Agents who live in those CRMs should pick BombBomb or Hippo Video.",
+        "BombBomb for budget-conscious solo agents: $36/user/mo (Core, annual) is higher than Loom Business ($18) or Hippo Video Pro ($20). If you don't need real estate branding or Total Expert integration, save $16–18/user/mo.",
+        "Dubb for transparent pricing: Dubb does not publish per-seat costs. Agents who need a quick quote comparison should start with BombBomb, Loom, or Hippo Video.",
+        "Hippo Video Free for active agents: The 3-video-download cap makes the free tier unusable for regular prospecting. Loom Starter (25 videos, 5-minute limit) offers more runway."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "BombBomb",
+      "url": "/go/bombbomb",
+      "commission": "varies"
+    },
+    {
+      "name": "Dubb",
+      "url": "https://www.dubb.com/",
+      "commission": "varies"
+    },
+    {
+      "name": "Loom",
+      "url": "https://www.loom.com/",
+      "commission": "varies"
+    },
+    {
+      "name": "Vidyard",
+      "url": "https://www.vidyard.com/",
+      "commission": "varies"
+    },
+    {
+      "name": "Hippo Video",
+      "url": "https://www.hippovideo.com/",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/leadgen-hero.jpg",
+  "imageCredit": "Pexels"
+}

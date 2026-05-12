@@ -1,0 +1,228 @@
+{
+  "slug": "real-estate-direct-mail-platforms-2026-print-automation-vs-handwritten-cards",
+  "title": "Real Estate Direct Mail Platforms in 2026: Print Automation vs Handwritten Card Services",
+  "description": "ProspectsPLUS! jumbo postcards at $0.98 each. Handwrytten robot cards from $1.99. We break down cost-per-touch tradeoffs for 2026.",
+  "category": "Marketing",
+  "publishedAt": "2026-05-11",
+  "updatedAt": "2026-05-11",
+  "readMinutes": 7,
+  "tldr": "Print-automation platforms like ProspectsPLUS! deliver volume postcards at $0.98–$1.44/piece mailed Standard Class. Robot-handwritten services like Handwrytten command $1.29–$1.99/card plus postage, targeting higher engagement. REI BlackBook bundles direct mail inside a CRM at $97–$297/mo. MailBoxPower and Corefact require vendor quotes.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Direct mail in 2026 splits into two camps: high-volume print-automation platforms that mail 8.5×5.5 postcards for under a dollar, and robot-handwritten card services charging $1.29–$1.99 per envelope. The first camp wins on cost per impression; the second bets on higher open rates and perceived personalization. We examined five vendors to surface the pricing and feature tradeoffs agents face when choosing between touch volume and touch quality."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We pulled published pricing pages for Handwrytten, ProspectsPLUS!, and REI BlackBook. MailBoxPower and Corefact returned no reachable vendor pages; we flag those as contact-vendor-for-quote. We did not run our own mail campaigns or fabricate testing scenarios. All pricing is quoted exactly as listed on vendor sites as of May 2026. We note where platforms bundle CRM or lead-capture features and where they charge separately for postage, data lists, or design services."
+    },
+    {
+      "type": "h2",
+      "text": "ProspectsPLUS!",
+      "id": "prospectsplus"
+    },
+    {
+      "type": "product",
+      "name": "ProspectsPLUS!",
+      "price": "Jumbo postcards $0.98/piece (10,000+ Standard Class), $1.20/piece (10,000+ First Class); Panoramic $1.21–$1.44; Mega $2.28–$2.75; contact for mailing lists and EDDM setup fees",
+      "rating": null,
+      "pros": [
+        "Tiered volume pricing drops jumbo postcards to $0.98/piece mailed Standard Class at 10,000+",
+        "First Class postage option available for time-sensitive campaigns (jumbo $1.20 at 10,000+)",
+        "EDDM full-service option includes postage at $0.90–$1.51 per piece plus $25/route",
+        "Free ground shipping on orders over $49; ships-to-you pricing starts at $0.45 for standard postcards"
+      ],
+      "cons": [
+        "No published pricing for mailing lists, geographic targeting, or Listing Lens AI feature",
+        "EDDM route fees ($25 each) add up quickly in multi-route campaigns",
+        "Mega and Super-Mega sizes jump to $2.28–$3.30/piece, limiting cost advantage at larger formats",
+        "No CRM, lead-capture, or automation features—print fulfillment only"
+      ],
+      "cta": {
+        "label": "Visit ProspectsPLUS!",
+        "url": "https://www.prospectsplus.com/"
+      }
+    },
+    {
+      "type": "p",
+      "text": "ProspectsPLUS! publishes per-piece pricing for postcards, flyers, newsletters, door hangers, and brochures. Jumbo postcards (8.5×5.5) mailed Standard Class cost $1.02 at 500–999 pieces, dropping to $0.98 at 10,000+. First Class postage adds $0.18–$0.22 per piece depending on volume. EDDM full-service includes 19.2¢ USPS postage plus a $25 per carrier route fee; the 11×5.5 Panoramic format lists at $0.90/piece for 10,000+ EDDM. Mailing lists and geographic targeting carry no published pricing—contact vendor for quote. The platform offers no CRM, lead capture, or workflow automation; it is a print-and-mail fulfillment service."
+    },
+    {
+      "type": "h2",
+      "text": "Handwrytten",
+      "id": "handwrytten"
+    },
+    {
+      "type": "product",
+      "name": "Handwrytten",
+      "price": "Pro plan $449/mo ($374 annual), $1.99/card; Enterprise $649/mo ($540 annual), $1.49/card; Elite $849/mo ($707 annual), $1.29/card; Agency $2,499/mo ($2,082 annual), $1.19/card; retail cards $3.75 each (discounts to $1.19+); postage billed separately at USPS rates",
+      "rating": null,
+      "pros": [
+        "Robot handwriting on cards and envelopes targets higher open rates than printed postcards",
+        "API access, Zapier, HubSpot, Salesforce, Shopify integrations on all business plans",
+        "QR-code tracking, automated birthday/anniversary campaigns, multistep sequences included",
+        "Elite and Agency tiers add delivery tracking, priority mailing, and weekly strategy calls"
+      ],
+      "cons": [
+        "Per-card pricing ($1.19–$1.99) plus postage makes cost per touch 2–4× higher than print postcards",
+        "Monthly platform fees ($374–$2,082 annual) add fixed overhead for low-volume senders",
+        "Consumer plans (Silver/Gold/Platinum) carry 30-day expiration on unused credits",
+        "International mail incurs 10¢/card manual-processing surcharge on top of USPS international rates"
+      ],
+      "cta": {
+        "label": "Visit Handwrytten",
+        "url": "https://www.handwrytten.com/"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Handwrytten uses proprietary robots to write cards in ballpoint pen. Business plans start at Pro ($449/mo or $374 annual) with $1.99/card pricing; Enterprise drops to $1.49, Elite to $1.29, Agency to $1.19. All plans include QR tracking, birthday/anniversary automation, API access, and integrations with Salesforce, HubSpot, Blackbaud, and Shopify. Elite adds free delivery tracking and priority mailing; Agency adds weekly strategy calls, hosted SFTP, and free small-insert storage. Postage is billed separately at current USPS rates. Consumer plans (Silver $100/mo for 24 cards, Gold $198/mo for 50, Platinum $378/mo for 100) offer 10–20% discounts but credits expire every 30 days. Retail cards without a plan cost $3.75 each. The vendor positions handwritten cards as a differentiation play for high-value client touchpoints—listing announcements, closing gifts, sphere-of-influence nurture—where the per-card cost trades against higher engagement."
+    },
+    {
+      "type": "h2",
+      "text": "REI BlackBook",
+      "id": "rei-blackbook"
+    },
+    {
+      "type": "product",
+      "name": "REI BlackBook",
+      "price": "Basic $97/mo ($81 annual), 1 user, 500 contacts, pay-as-you-go calling/texting; Growth $197/mo ($165 annual), 3 users, 5,000 contacts, 500 texts, 250 ringless voicemails; Professional $297/mo ($248 annual), 10 users, 10,000 contacts, 1,500 texts, 500 ringless voicemails; 14-day free trial",
+      "rating": null,
+      "pros": [
+        "All-in-one CRM, dialer, text/ringless-voicemail credits, and lead-capture websites at $97–$297/mo",
+        "Growth and Professional plans include bundled SMS (500–1,500/mo) and ringless voicemail (250–500/mo)",
+        "Marketing automation, property pipeline, and task management eliminate need for separate tools",
+        "14-day free trial; annual billing saves $194–$594/year"
+      ],
+      "cons": [
+        "No published direct-mail postcard printing or fulfillment feature in pricing page",
+        "Calling, texting, and RVM overage fees (3–8¢ per unit) accumulate quickly on high-volume campaigns",
+        "Basic plan forces pay-as-you-go calling (6¢/min) and texting (4.5¢/text) with no included minutes",
+        "Contact limits (500–10,000) require plan upgrades as database grows"
+      ],
+      "cta": {
+        "label": "Visit REI BlackBook",
+        "url": "https://www.reiblackbook.com/"
+      }
+    },
+    {
+      "type": "p",
+      "text": "REI BlackBook bundles CRM, business phone system, text/ringless-voicemail credits, and lead-capture websites at $97–$297/mo. The Growth plan ($197/mo or $165 annual) includes 500 local calling minutes, 500 text messages, 250 ringless voicemails, 3 call-tracking numbers, and 3 lead-capture websites. Professional ($297/mo or $248 annual) expands to 1,500 texts, 1,500 minutes, 500 ringless voicemails, and 10 users. Overage pricing runs 1.5–8¢ per text, 3–6¢ per minute, 6–8¢ per ringless voicemail. The pricing page does not list direct-mail postcard printing or fulfillment. The platform targets real estate investors running high-touch follow-up sequences via phone, text, and voicemail; agents seeking integrated direct-mail campaigns will need to pair REI BlackBook with a separate print vendor."
+    },
+    {
+      "type": "h2",
+      "text": "MailBoxPower",
+      "id": "mailboxpower"
+    },
+    {
+      "type": "product",
+      "name": "MailBoxPower",
+      "price": "Pricing not published; contact vendor for quote",
+      "rating": null,
+      "pros": [
+        "Vendor name suggests direct-mail automation focus"
+      ],
+      "cons": [
+        "No reachable pricing page or feature documentation in research bundle",
+        "Unable to verify integration capabilities, per-piece costs, or CRM features"
+      ],
+      "cta": {
+        "label": "Contact MailBoxPower",
+        "url": "https://mailboxpower.com/"
+      }
+    },
+    {
+      "type": "p",
+      "text": "MailBoxPower returned no accessible vendor page. Pricing, feature set, and integration details are unavailable. Agents interested in this platform should contact the vendor directly."
+    },
+    {
+      "type": "h2",
+      "text": "Corefact",
+      "id": "corefact"
+    },
+    {
+      "type": "product",
+      "name": "Corefact",
+      "price": "Pricing not published; contact vendor for quote",
+      "rating": null,
+      "pros": [
+        "Vendor known in real estate marketing space"
+      ],
+      "cons": [
+        "No reachable pricing page or feature documentation in research bundle",
+        "Unable to verify per-piece costs, design services, or automation capabilities"
+      ],
+      "cta": {
+        "label": "Contact Corefact",
+        "url": "https://corefact.com/"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Corefact returned no accessible vendor page. Pricing, feature set, design services, and mailing options are unavailable. Agents should contact the vendor for a custom quote."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "High-volume geographic farming or EDDM campaigns: ProspectsPLUS! delivers jumbo postcards at $0.98–$1.02/piece Standard Class (10,000+ volume) and EDDM Panoramic at $0.90/piece. No CRM or automation—pair with a separate lead-capture stack.",
+        "Sphere-of-influence nurture, listing announcements, closing gifts: Handwrytten's robot handwriting commands $1.29–$1.99/card plus postage, betting on higher open rates. Zapier and HubSpot integrations let you trigger cards from CRM workflows. Elite ($707/mo annual) adds delivery tracking for accountability.",
+        "Real estate investors running integrated phone/text/RVM sequences: REI BlackBook bundles CRM, dialer, 500–1,500 texts/mo, and 250–500 ringless voicemails at $165–$248/mo annual. No direct-mail printing; use ProspectsPLUS! or Handwrytten for postcard fulfillment.",
+        "Agents needing First Class speed: ProspectsPLUS! offers First Class postage at $1.20–$1.44/piece for jumbo and panoramic formats (10,000+ volume). Handwrytten Elite tier includes priority mailing for time-sensitive handwritten cards.",
+        "Budget-conscious teams testing direct mail: ProspectsPLUS! ships-to-you pricing starts at $0.37–$0.45 for standard postcards (2,500+ quantity), letting you self-mail or hand-deliver. REI BlackBook Basic ($97/mo) offers CRM and lead capture with pay-as-you-go calling/texting."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-we-d-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Handwrytten consumer plans (Silver/Gold/Platinum) for working agents. Credits expire every 30 days and per-card pricing stays above $3.00 without business-plan volume discounts. Business plans with API access make more sense for CRM-triggered campaigns.",
+        "ProspectsPLUS! Mega and Super-Mega formats for cost-per-touch campaigns. Pricing jumps to $2.28–$3.30/piece mailed, erasing the print-automation cost advantage. Use jumbo or panoramic sizes for volume plays.",
+        "REI BlackBook Basic plan for high-call-volume teams. Pay-as-you-go calling at 6¢/min and texting at 4.5¢/text accumulates fast. Growth plan ($197/mo) includes 500 minutes and 500 texts, cutting per-unit cost in half.",
+        "Handwrytten Elite or Agency tiers unless you need weekly strategy calls or hosted SFTP. Pro ($374/mo annual, $1.99/card) and Enterprise ($540/mo annual, $1.49/card) deliver the same robot handwriting, QR tracking, and integrations at lower overhead."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "ProspectsPLUS!",
+      "url": "https://www.prospectsplus.com/",
+      "commission": "varies"
+    },
+    {
+      "name": "Handwrytten",
+      "url": "https://www.handwrytten.com/",
+      "commission": "varies"
+    },
+    {
+      "name": "REI BlackBook",
+      "url": "https://www.reiblackbook.com/",
+      "commission": "varies"
+    },
+    {
+      "name": "MailBoxPower",
+      "url": "https://mailboxpower.com/",
+      "commission": "varies"
+    },
+    {
+      "name": "Corefact",
+      "url": "https://corefact.com/",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/interior-warm.jpg",
+  "imageCredit": "Pexels"
+}

@@ -19,7 +19,7 @@
  *     --slug "mojo-vs-vulcan7-2026"
  */
 
-import { writeFileSync, mkdirSync, existsSync, readFileSync } from "node:fs";
+import { writeFileSync, mkdirSync, existsSync, readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 
 // Manually load .env.local — Node's --env-file flag won't override shell vars
@@ -345,6 +345,94 @@ async function main() {
   json.publishedAt = today;
   json.updatedAt = today;
   json.slug = args.slug;
+
+  // Hero image selection — Pexels API first, fall back to existing pool.
+  const PUBLIC_IMG_DIR = join(process.cwd(), "public", "articles");
+  const usedHeroes = new Set<string>();
+  for (const sourceDir of [ARTICLES_DIR, COMPARISONS_DIR]) {
+    if (!existsSync(sourceDir)) continue;
+    for (const file of readdirSync(sourceDir)) {
+      if (!file.endsWith(".json") || file === `${args.slug}.json`) continue;
+      try {
+        const other = JSON.parse(readFileSync(join(sourceDir, file), "utf8")) as { headerImage?: string };
+        if (other.headerImage) {
+          const name = other.headerImage.split("/").pop();
+          if (name) usedHeroes.add(name);
+        }
+      } catch { /* skip malformed */ }
+    }
+  }
+
+  let heroAssigned = false;
+
+  // ─── Strategy 1: Pexels API search themed to the article ───
+  const PEXELS_KEY = process.env.PEXELS_API_KEY;
+  if (PEXELS_KEY) {
+    try {
+      const title = typeof json.title === "string" ? json.title : args.topic;
+      // Strip year/punctuation; take a short query
+      const query = title
+        .replace(/\b(20\d\d|in|for|the|best|vs|and|or|with|a|an|of)\b/gi, " ")
+        .replace(/[^a-zA-Z ]/g, " ")
+        .split(/\s+/)
+        .filter((w) => w.length > 2)
+        .slice(0, 5)
+        .join(" ")
+        .trim() || "real estate office";
+
+      console.log(`  → Pexels search: "${query}"`);
+      const resp = await fetch(
+        `https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=15&orientation=landscape`,
+        { headers: { Authorization: PEXELS_KEY } },
+      );
+      if (resp.ok) {
+        const data = (await resp.json()) as {
+          photos?: Array<{ id: number; src: { large: string; large2x?: string }; photographer?: string; url?: string }>;
+        };
+        const photos = (data.photos ?? []).filter((p) => p?.id && p?.src?.large);
+        if (photos.length > 0) {
+          const pick = photos[Math.floor(Math.random() * Math.min(photos.length, 8))];
+          const heroName = `${args.slug}-hero.jpg`;
+          const url = pick.src.large2x ?? pick.src.large;
+          const imgResp = await fetch(url);
+          if (imgResp.ok) {
+            const buf = Buffer.from(await imgResp.arrayBuffer());
+            writeFileSync(join(PUBLIC_IMG_DIR, heroName), buf);
+            json.headerImage = `/articles/${heroName}`;
+            if (pick.photographer) {
+              json.imageCredit = `Pexels · ${pick.photographer}`;
+            }
+            console.log(`  ✓ Pexels hero saved: ${heroName} (photo by ${pick.photographer ?? "unknown"})`);
+            heroAssigned = true;
+          }
+        } else {
+          console.log(`  ⚠️  Pexels returned 0 photos for "${query}"`);
+        }
+      } else {
+        console.log(`  ⚠️  Pexels HTTP ${resp.status}`);
+      }
+    } catch (e) {
+      console.log(`  ⚠️  Pexels fetch failed: ${(e as Error).message}`);
+    }
+  }
+
+  // ─── Strategy 2: fall back to existing pool, pick an unused one ───
+  if (!heroAssigned) {
+    const allImgs = existsSync(PUBLIC_IMG_DIR)
+      ? readdirSync(PUBLIC_IMG_DIR).filter((f) => f.endsWith(".jpg"))
+      : [];
+    const freeImgs = allImgs.filter((f) => !usedHeroes.has(f));
+    const claudePicked = typeof json.headerImage === "string" ? json.headerImage.split("/").pop() ?? "" : "";
+    if (claudePicked && !usedHeroes.has(claudePicked) && allImgs.includes(claudePicked)) {
+      // Claude's choice is unique and exists — keep it.
+    } else if (freeImgs.length > 0) {
+      const pick = freeImgs[Math.floor(Math.random() * freeImgs.length)];
+      json.headerImage = `/articles/${pick}`;
+      console.log(`  Hero auto-assigned from pool: ${pick}`);
+    } else {
+      console.log(`  ⚠️  Hero pool exhausted and Pexels unavailable. Will trip audit.`);
+    }
+  }
 
   const dir = args.mode === "compare" ? COMPARISONS_DIR : ARTICLES_DIR;
   if (!existsSync(dir)) mkdirSync(dir, { recursive: true });

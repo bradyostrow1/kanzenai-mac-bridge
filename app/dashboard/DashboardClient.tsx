@@ -5,6 +5,8 @@ import { Activity, FileText, GitCompare, AlertTriangle, RotateCw, Bot, ExternalL
 import { ChatPanel } from "./ChatPanel";
 import { OutreachPanel } from "./OutreachPanel";
 import { ClickChart } from "./ClickChart";
+import { LiveJobPanel } from "./LiveJobPanel";
+import { DetailModal } from "./DetailModal";
 
 type Stats = {
   articles: {
@@ -18,15 +20,26 @@ type Stats = {
       readMinutes: number;
       headerImage?: string;
     }>;
+    categoryBreakdown: Record<string, number>;
   };
   comparisons: {
     count: number;
     list: Array<{ slug: string; title: string; publishedAt: string }>;
   };
-  affiliate: { placeholderLinks: number };
+  affiliate: {
+    placeholderLinks: number;
+    placeholderVendors: Array<{ slug: string; name: string; commission: string }>;
+  };
   audit: { when: string | null; size: number; latest: string | null; errors: number; warnings: number };
   health: { installed: boolean; totalChecks: number; uptime: number; avgMs: number; lastCheck: string | null; lastStatus: number | null };
-  writer: { lastWritten: string | null; lastSlug: string | null; totalCount: number };
+  writer: {
+    lastWritten: string | null;
+    lastSlug: string | null;
+    totalCount: number;
+    writtenToday: number;
+    writtenThisWeek: number;
+    todaySlugs: string[];
+  };
   production: { url: string; ok: boolean; ms: number; status: number };
 };
 
@@ -42,10 +55,13 @@ function timeAgo(iso: string | null): string {
   return `${Math.round(h / 24)}d ago`;
 }
 
+type DetailKey = "today" | "production" | "articles" | "comparisons" | "issues" | null;
+
 export function DashboardClient() {
   const [stats, setStats] = useState<Stats | null>(null);
   const [refreshing, setRefreshing] = useState(false);
   const [lastSync, setLastSync] = useState<Date | null>(null);
+  const [detail, setDetail] = useState<DetailKey>(null);
 
   const loadStats = useCallback(async () => {
     setRefreshing(true);
@@ -93,7 +109,22 @@ export function DashboardClient() {
 
       <main className="max-w-[1600px] mx-auto p-6">
         {/* TOP METRICS STRIP */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 mb-6">
+          <MetricCard
+            icon={<Edit3 className="w-3.5 h-3.5" />}
+            label="Posted today"
+            value={stats ? stats.writer.writtenToday.toString() : "—"}
+            sub={
+              stats
+                ? stats.writer.writtenToday > 0
+                  ? `latest: ${stats.writer.todaySlugs[0]?.slice(0, 32) ?? ""}${(stats.writer.todaySlugs[0]?.length ?? 0) > 32 ? "…" : ""}`
+                  : "nothing posted yet today"
+                : "loading…"
+            }
+            tone={stats && stats.writer.writtenToday > 0 ? "ok" : "neutral"}
+            pulse={stats ? stats.writer.writtenToday > 0 : false}
+            onClick={() => setDetail("today")}
+          />
           <MetricCard
             icon={<Activity className="w-3.5 h-3.5" />}
             label="Production"
@@ -101,18 +132,25 @@ export function DashboardClient() {
             sub={stats ? `${stats.production.ms}ms · ${stats.production.status}` : "checking…"}
             tone={stats?.production.ok ? "ok" : stats ? "err" : "neutral"}
             pulse={stats?.production.ok}
+            onClick={() => setDetail("production")}
           />
           <MetricCard
             icon={<FileText className="w-3.5 h-3.5" />}
-            label="Articles"
+            label="Articles total"
             value={stats ? stats.articles.count.toString() : "—"}
-            sub={stats ? `${stats.articles.totalWords.toLocaleString()} words` : ""}
+            sub={
+              stats
+                ? `${stats.articles.totalWords.toLocaleString()} words · +${stats.writer.writtenThisWeek} this week`
+                : ""
+            }
+            onClick={() => setDetail("articles")}
           />
           <MetricCard
             icon={<GitCompare className="w-3.5 h-3.5" />}
             label="Comparisons"
             value={stats ? stats.comparisons.count.toString() : "—"}
             sub="head-to-head"
+            onClick={() => setDetail("comparisons")}
           />
           <MetricCard
             icon={<AlertTriangle className="w-3.5 h-3.5" />}
@@ -120,11 +158,26 @@ export function DashboardClient() {
             value={stats ? stats.affiliate.placeholderLinks.toString() : "—"}
             sub="placeholder affiliate links"
             tone={stats && stats.affiliate.placeholderLinks > 0 ? "warn" : "neutral"}
+            onClick={() => setDetail("issues")}
           />
         </div>
 
+        {/* DETAIL MODAL — switches content by `detail` key */}
+        {detail && stats && (
+          <DetailModal
+            title={DETAIL_TITLES[detail]}
+            subtitle={detailSubtitle(detail, stats)}
+            onClose={() => setDetail(null)}
+          >
+            {renderDetail(detail, stats)}
+          </DetailModal>
+        )}
+
         {/* BOT SYSTEM */}
         <BotSystemPanel stats={stats} />
+
+        {/* LIVE JOB CONTROL */}
+        <LiveJobPanel onJobComplete={loadStats} />
 
         {/* CLICK PERFORMANCE */}
         <ClickChart />
@@ -530,6 +583,7 @@ function MetricCard({
   sub,
   tone,
   pulse,
+  onClick,
 }: {
   icon?: React.ReactNode;
   label: string;
@@ -537,11 +591,18 @@ function MetricCard({
   sub?: string;
   tone?: "ok" | "warn" | "err" | "neutral";
   pulse?: boolean;
+  onClick?: () => void;
 }) {
   const valueColor =
     tone === "ok" ? "text-emerald-300" : tone === "warn" ? "text-amber-300" : tone === "err" ? "text-red-300" : "text-[#f0eee9]";
+  const Tag = onClick ? "button" : "div";
   return (
-    <div className="border border-[#1f1f1f] bg-[#0d0d0d] px-4 py-3 hover:border-[#262626] transition">
+    <Tag
+      onClick={onClick}
+      className={`text-left w-full border border-[#1f1f1f] bg-[#0d0d0d] px-4 py-3 transition ${
+        onClick ? "hover:border-[#525252] hover:bg-[#0f0f0f] cursor-pointer" : "hover:border-[#262626]"
+      }`}
+    >
       <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.18em] text-[#525252]">
         <span className="flex items-center gap-1.5">
           {icon}
@@ -556,7 +617,8 @@ function MetricCard({
       </div>
       <div className={`text-2xl font-semibold mt-1 tracking-tight ${valueColor}`}>{value}</div>
       {sub && <div className="text-[11px] text-[#525252] mt-0.5">{sub}</div>}
-    </div>
+      {onClick && <div className="text-[9px] text-[#3d3d3d] mt-2 uppercase tracking-[0.18em]">click for detail →</div>}
+    </Tag>
   );
 }
 
@@ -631,5 +693,208 @@ function QuickLink({ href, target, children }: { href: string; target?: string; 
       <span>{children}</span>
       <ExternalLink className="w-3 h-3 text-[#525252] group-hover:text-[#f0eee9] transition" />
     </a>
+  );
+}
+
+// ─── Detail modal content ──────────────────────────────────────────────────
+const DETAIL_TITLES: Record<NonNullable<DetailKey>, string> = {
+  today: "Posted today",
+  production: "Production health",
+  articles: "All articles",
+  comparisons: "All comparisons",
+  issues: "Open issues",
+};
+
+function detailSubtitle(key: NonNullable<DetailKey>, s: Stats): string {
+  switch (key) {
+    case "today":
+      return `${s.writer.writtenToday} article${s.writer.writtenToday === 1 ? "" : "s"} published today · ${s.writer.writtenThisWeek} this week`;
+    case "production":
+      return `${s.production.url} · ${s.production.ok ? "Live" : "Down"} · ${s.production.status} · ${s.production.ms}ms`;
+    case "articles":
+      return `${s.articles.count} total · ${s.articles.totalWords.toLocaleString()} words`;
+    case "comparisons":
+      return `${s.comparisons.count} head-to-head pages`;
+    case "issues":
+      return `${s.affiliate.placeholderLinks} placeholder links across ${s.affiliate.placeholderVendors.length} vendors`;
+  }
+}
+
+function renderDetail(key: NonNullable<DetailKey>, s: Stats): React.ReactNode {
+  if (key === "today") {
+    if (s.writer.writtenToday === 0) {
+      return (
+        <div className="text-[13px] text-[#a3a3a3]">
+          Nothing posted yet today. The daily bot fires at 8 AM via launchd, or fire it now from the Live job panel.
+        </div>
+      );
+    }
+    return (
+      <ul className="divide-y divide-[#1f1f1f]">
+        {s.writer.todaySlugs.map((slug) => {
+          const meta = s.articles.list.find((a) => a.slug === slug);
+          return (
+            <li key={slug}>
+              <a
+                href={`/articles/${slug}`}
+                target="_blank"
+                rel="noopener"
+                className="flex items-center gap-3 py-2.5 hover:bg-[#0f0f0f] px-2 -mx-2 group"
+              >
+                {meta?.headerImage && (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={meta.headerImage} alt="" className="w-12 h-12 object-cover rounded-sm" />
+                )}
+                <div className="flex-1 min-w-0">
+                  <div className="text-[#f0eee9] text-[13px] truncate group-hover:text-white">
+                    {meta?.title ?? slug}
+                  </div>
+                  <div className="text-[10px] text-[#525252] uppercase tracking-wider mt-0.5">
+                    {meta?.category ?? "—"} · {meta?.readMinutes ?? "—"} min · {meta?.publishedAt ?? "—"}
+                  </div>
+                </div>
+                <ExternalLink className="w-3 h-3 text-[#525252] group-hover:text-[#f0eee9]" />
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    );
+  }
+
+  if (key === "production") {
+    return (
+      <div className="space-y-3 text-[13px]">
+        <DetailRow label="URL" value={
+          <a href={s.production.url} target="_blank" rel="noopener" className="text-emerald-300 hover:text-emerald-200 underline">
+            {s.production.url}
+          </a>
+        } />
+        <DetailRow label="Status" value={s.production.ok ? "Live · HTTP 200" : `Down · HTTP ${s.production.status}`} tone={s.production.ok ? "ok" : "err"} />
+        <DetailRow label="Response time" value={`${s.production.ms} ms`} />
+        <DetailRow label="Health checks" value={s.health.installed ? `${s.health.totalChecks} total · ${s.health.uptime}% uptime · avg ${s.health.avgMs}ms` : "Not installed"} />
+        <DetailRow label="Last check" value={s.health.lastCheck ? `${timeAgo(s.health.lastCheck)} · HTTP ${s.health.lastStatus ?? "—"}` : "never"} />
+        <div className="pt-3 border-t border-[#1f1f1f] flex gap-2">
+          <a
+            href="https://vercel.com/bradyostrow1s-projects/kanzenai"
+            target="_blank"
+            rel="noopener"
+            className="text-[11px] px-3 py-1.5 border border-[#262626] hover:border-[#525252] text-[#f0eee9] transition"
+          >
+            Vercel dashboard ↗
+          </a>
+          <a
+            href={s.production.url}
+            target="_blank"
+            rel="noopener"
+            className="text-[11px] px-3 py-1.5 border border-[#262626] hover:border-[#525252] text-[#f0eee9] transition"
+          >
+            Open live site ↗
+          </a>
+        </div>
+      </div>
+    );
+  }
+
+  if (key === "articles") {
+    const cats = Object.entries(s.articles.categoryBreakdown).sort((a, b) => b[1] - a[1]);
+    return (
+      <div className="space-y-4">
+        <div>
+          <div className="text-[10px] uppercase tracking-[0.18em] text-[#525252] mb-2">By category</div>
+          <div className="flex flex-wrap gap-1.5">
+            {cats.map(([cat, n]) => (
+              <span key={cat} className="text-[11px] px-2 py-1 border border-[#262626] bg-[#0a0a0a] text-[#f0eee9]">
+                {cat} <span className="text-[#a3a3a3] ml-1">· {n}</span>
+              </span>
+            ))}
+          </div>
+        </div>
+        <div>
+          <div className="text-[10px] uppercase tracking-[0.18em] text-[#525252] mb-2">All articles · newest first</div>
+          <ul className="divide-y divide-[#1f1f1f]">
+            {s.articles.list.map((a) => (
+              <li key={a.slug}>
+                <a
+                  href={`/articles/${a.slug}`}
+                  target="_blank"
+                  rel="noopener"
+                  className="flex items-center gap-3 py-2 hover:bg-[#0f0f0f] px-2 -mx-2 group"
+                >
+                  {a.headerImage && (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={a.headerImage} alt="" className="w-10 h-10 object-cover rounded-sm" />
+                  )}
+                  <div className="flex-1 min-w-0">
+                    <div className="text-[#f0eee9] text-[12px] truncate group-hover:text-white">{a.title}</div>
+                    <div className="text-[10px] text-[#525252] uppercase tracking-wider mt-0.5">
+                      {a.category} · {a.readMinutes} min · {a.publishedAt}
+                    </div>
+                  </div>
+                  <ExternalLink className="w-3 h-3 text-[#525252] group-hover:text-[#f0eee9]" />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    );
+  }
+
+  if (key === "comparisons") {
+    return (
+      <ul className="divide-y divide-[#1f1f1f]">
+        {s.comparisons.list.map((c) => (
+          <li key={c.slug}>
+            <a
+              href={`/compare/${c.slug}`}
+              target="_blank"
+              rel="noopener"
+              className="block py-2.5 hover:bg-[#0f0f0f] px-2 -mx-2 group"
+            >
+              <div className="text-[#f0eee9] text-[13px] group-hover:text-white">{c.title}</div>
+              <div className="text-[10px] text-[#525252] uppercase tracking-wider mt-0.5">{c.publishedAt}</div>
+            </a>
+          </li>
+        ))}
+      </ul>
+    );
+  }
+
+  if (key === "issues") {
+    return (
+      <div className="space-y-4">
+        <div className="text-[13px] text-[#a3a3a3] leading-relaxed">
+          These vendors have placeholder affiliate URLs. They redirect to vendor sites but don&apos;t track clicks back to a real affiliate code. Cleared one at a time as each vendor approves your partner application.
+        </div>
+        <ul className="divide-y divide-[#1f1f1f] border border-[#1f1f1f]">
+          {s.affiliate.placeholderVendors.map((v) => (
+            <li key={v.slug} className="flex items-center gap-3 px-3 py-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0" />
+              <div className="flex-1 min-w-0">
+                <div className="text-[#f0eee9] text-[13px] truncate">{v.name}</div>
+                <code className="text-[10px] text-[#525252]">{v.slug}</code>
+              </div>
+              <span className="text-[11px] text-[#a3a3a3]">{v.commission}</span>
+            </li>
+          ))}
+        </ul>
+        <div className="text-[11px] text-[#525252] uppercase tracking-[0.18em]">
+          Paste codes into <code className="text-amber-200">affiliate-codes.json</code> then run <code className="text-amber-200">npm run rotate</code>.
+        </div>
+      </div>
+    );
+  }
+
+  return null;
+}
+
+function DetailRow({ label, value, tone }: { label: string; value: React.ReactNode; tone?: "ok" | "err" }) {
+  const color = tone === "ok" ? "text-emerald-300" : tone === "err" ? "text-red-300" : "text-[#f0eee9]";
+  return (
+    <div className="flex items-baseline gap-3">
+      <span className="text-[10px] uppercase tracking-[0.18em] text-[#525252] w-32 shrink-0">{label}</span>
+      <span className={`text-[13px] ${color}`}>{value}</span>
+    </div>
   );
 }

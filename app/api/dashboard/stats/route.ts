@@ -120,8 +120,37 @@ async function healthStats(): Promise<{
   };
 }
 
-async function articleWriterStats(): Promise<{ lastWritten: string | null; lastSlug: string | null; totalCount: number }> {
+async function articleWriterStats(): Promise<{
+  lastWritten: string | null;
+  lastSlug: string | null;
+  totalCount: number;
+  writtenToday: number;
+  writtenThisWeek: number;
+  todaySlugs: string[];
+}> {
   const articles = await loadJsonDir(ARTICLES_DIR);
+  // Use LOCAL date, not UTC — otherwise evening hours on the East Coast roll the
+  // "today" boundary forward and articles dated today look like yesterday's.
+  const now = new Date();
+  const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+  const sevenDaysAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
+
+  let writtenToday = 0;
+  let writtenThisWeek = 0;
+  const todaySlugs: string[] = [];
+
+  for (const { json } of articles) {
+    const pub = typeof json.publishedAt === "string" ? json.publishedAt : null;
+    if (pub === today) {
+      writtenToday++;
+      if (json.slug) todaySlugs.push(json.slug);
+    }
+    if (pub) {
+      const t = Date.parse(pub);
+      if (!isNaN(t) && t >= sevenDaysAgo) writtenThisWeek++;
+    }
+  }
+
   let latest: { slug: string; mtime: Date } | null = null;
   if (existsSync(ARTICLES_DIR)) {
     const files = (await readdir(ARTICLES_DIR)).filter((f) => f.endsWith(".json"));
@@ -136,6 +165,9 @@ async function articleWriterStats(): Promise<{ lastWritten: string | null; lastS
     lastWritten: latest?.mtime.toISOString() ?? null,
     lastSlug: latest?.slug ?? null,
     totalCount: articles.length,
+    writtenToday,
+    writtenThisWeek,
+    todaySlugs,
   };
 }
 
@@ -168,6 +200,27 @@ export async function GET() {
     return sum + (matches?.length ?? 0);
   }, 0);
 
+  // Enumerate placeholder vendors from lib/affiliates.ts for the issues detail view
+  const placeholderVendors: Array<{ slug: string; name: string; commission: string }> = [];
+  try {
+    const affiliatesPath = join(ROOT, "lib", "affiliates.ts");
+    if (existsSync(affiliatesPath)) {
+      const src = await readFile(affiliatesPath, "utf8");
+      const entryRe = /"([\w-]+)":\s*\{\s*url:\s*"[^"]+",\s*name:\s*"([^"]+)",\s*status:\s*"placeholder",\s*commission:\s*"([^"]+)"/g;
+      let m: RegExpExecArray | null;
+      while ((m = entryRe.exec(src)) !== null) {
+        placeholderVendors.push({ slug: m[1], name: m[2], commission: m[3] });
+      }
+    }
+  } catch { /* fail soft */ }
+
+  // Category breakdown
+  const categoryBreakdown: Record<string, number> = {};
+  for (const a of articles) {
+    const c = (a.json.category ?? "Uncategorized") as string;
+    categoryBreakdown[c] = (categoryBreakdown[c] ?? 0) + 1;
+  }
+
   const articleSummaries = articles
     .map((a) => ({
       slug: a.json.slug,
@@ -190,6 +243,7 @@ export async function GET() {
       count: articles.length,
       totalWords,
       list: articleSummaries,
+      categoryBreakdown,
     },
     comparisons: {
       count: comparisons.length,
@@ -197,6 +251,7 @@ export async function GET() {
     },
     affiliate: {
       placeholderLinks,
+      placeholderVendors,
     },
     audit,
     health,
