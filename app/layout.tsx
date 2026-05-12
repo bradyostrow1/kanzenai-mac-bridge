@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { ReactNode } from "react";
-import { Analytics } from "@vercel/analytics/next";
+import { VisitorBeacon } from "@/components/VisitorBeacon";
 
 export const metadata = {
   metadataBase: new URL("https://kanzenai.com"),
@@ -28,7 +28,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <body className="font-sans text-ink-0 bg-bg-0 antialiased">
         {children}
-        <Analytics />
+        <VisitorBeacon />
       </body>
     </html>
   );

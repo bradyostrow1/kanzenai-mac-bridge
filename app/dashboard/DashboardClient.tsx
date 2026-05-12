@@ -65,6 +65,7 @@ export function DashboardClient() {
   const [refreshing, setRefreshing] = useState(false);
   const [lastSync, setLastSync] = useState<Date | null>(null);
   const [detail, setDetail] = useState<DetailKey>(null);
+  const [visitors, setVisitors] = useState<{ today: number; total: number } | null>(null);
 
   const loadStats = useCallback(async () => {
     setRefreshing(true);
@@ -83,6 +84,18 @@ export function DashboardClient() {
     const t = setInterval(loadStats, 30_000);
     return () => clearInterval(t);
   }, [loadStats]);
+
+  useEffect(() => {
+    async function loadVisitors() {
+      try {
+        const r = await fetch("/api/dashboard/visitors", { cache: "no-store" });
+        if (r.ok) setVisitors(await r.json());
+      } catch { /* offline ok */ }
+    }
+    loadVisitors();
+    const t = setInterval(loadVisitors, 60_000);
+    return () => clearInterval(t);
+  }, []);
 
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-[#f0eee9] font-sans">
@@ -115,10 +128,10 @@ export function DashboardClient() {
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 mb-6">
           <MetricCard
             icon={<User className="w-3.5 h-3.5" />}
-            label="Site visitors"
-            value="Vercel ↗"
-            sub="click → live visitor count"
-            onClick={() => window.open("https://vercel.com/bradyostrow1s-projects/kanzenai/analytics", "_blank")}
+            label="Visitors today"
+            value={visitors ? visitors.today.toLocaleString() : "—"}
+            sub={visitors ? `${visitors.total.toLocaleString()} lifetime` : "counter loading…"}
+            tone={visitors && visitors.today > 0 ? "ok" : "neutral"}
           />
           <MetricCard
             icon={<Edit3 className="w-3.5 h-3.5" />}
