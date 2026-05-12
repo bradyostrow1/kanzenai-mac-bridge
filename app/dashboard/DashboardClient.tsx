@@ -10,6 +10,7 @@ import { DetailModal } from "./DetailModal";
 import { XQueuePanel } from "./XQueuePanel";
 import { XReplyQueuePanel } from "./XReplyQueuePanel";
 import { XHistoryPanel } from "./XHistoryPanel";
+import { XTodayPanel } from "./XTodayPanel";
 
 type Stats = {
   articles: {
@@ -295,6 +296,7 @@ export function DashboardClient() {
 
         {/* X COMMAND CENTER */}
         <SectionLabel>X · @KanzenOfficial</SectionLabel>
+        <XTodayPanel />
         <XHistoryPanel />
         <XReplyQueuePanel />
         <CollapsibleSection title="X tweet queue (article-driven posts)" defaultOpen={false}>
