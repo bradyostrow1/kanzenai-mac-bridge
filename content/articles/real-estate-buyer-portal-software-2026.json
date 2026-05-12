@@ -1,0 +1,219 @@
+{
+  "slug": "real-estate-buyer-portal-software-2026",
+  "title": "Real Estate Buyer Portal Software in 2026: Showing Homes vs Sharing Listings vs Full Client Dashboards",
+  "description": "HomeSpotter dominates mobile collaboration. Most portals lack published pricing. What works for touring versus long-term nurture.",
+  "category": "Lead Gen",
+  "publishedAt": "2026-05-12",
+  "updatedAt": "2026-05-12",
+  "readMinutes": 7,
+  "tldr": "HomeSpotter Connect offers MLS-integrated mobile apps with real-time messaging for buyer collaboration, part of a broader suite including listing ads and open-house tools. Rela, Homesnap Pro, and Curb Hero lack accessible vendor pages, making pricing and feature verification impossible. Realync serves multifamily exclusively—video tours for apartments, not single-family buyer portals.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Buyer portal software splits into three buckets: mobile apps for on-the-go showing collaboration (HomeSpotter Connect), open-house sign-in tools repurposed as lead dashboards (Curb Hero, Spacio), and full-featured client portals with document sharing and transaction tracking (often bundled into CRMs). This review examines what's verifiable in 2026. HomeSpotter is the only vendor with published feature documentation. Rela, Homesnap Pro, and Curb Hero have no accessible vendor pages. Realync targets multifamily leasing, not residential buyer representation."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed vendor websites, pricing pages, and published integration lists. Where vendor pages were unreachable or pricing unpublished, we note that explicitly. No fabricated testing. No invented case studies. Conclusions reflect only what vendors document publicly."
+    },
+    {
+      "type": "h2",
+      "text": "HomeSpotter Connect",
+      "id": "homespotter-connect"
+    },
+    {
+      "type": "p",
+      "text": "HomeSpotter Connect is a mobile-first MLS search app with built-in chat for real-time buyer-agent collaboration. Agents recommend listings; buyers browse, save, and message within the app. The vendor claims 300+ MLS integrations and 95% listing coverage in North America. Connect is one module in a three-product suite: Boost (Facebook/Instagram listing ads), Spacio (open-house lead capture), and Connect (client collaboration). Pricing is not published on the vendor site; contact HomeSpotter for a quote. The platform integrates with 50+ vendors, per the vendor's integration page."
+    },
+    {
+      "type": "product",
+      "name": "HomeSpotter Connect",
+      "price": "Contact vendor for pricing",
+      "rating": 4.2,
+      "pros": [
+        "300+ MLS integrations with 95% North America listing coverage per vendor",
+        "Real-time chat inside the app for buyer-agent collaboration",
+        "White-labeled with brokerage and agent branding",
+        "Part of a suite that includes listing ads (Boost) and open-house tools (Spacio)"
+      ],
+      "cons": [
+        "No published pricing; requires sales contact",
+        "Mobile-first design may not suit agents who prefer desktop workflows",
+        "Feature set focuses on search and messaging—lacks transaction document storage"
+      ],
+      "cta": {
+        "label": "Visit HomeSpotter",
+        "url": "https://www.homespotter.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Rela",
+      "id": "rela"
+    },
+    {
+      "type": "p",
+      "text": "No accessible vendor page for Rela. Pricing, feature set, and integration claims cannot be verified. If considering Rela, contact the vendor directly for documentation."
+    },
+    {
+      "type": "product",
+      "name": "Rela",
+      "price": "No published pricing; vendor page unreachable",
+      "rating": 0,
+      "pros": [
+        "Cannot verify—no accessible vendor documentation"
+      ],
+      "cons": [
+        "No vendor page reachable for feature or pricing verification",
+        "Cannot assess MLS integrations, white-labeling, or mobile-first design"
+      ],
+      "cta": {
+        "label": "Contact Rela",
+        "url": "https://rela.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Homesnap Pro",
+      "id": "homesnap-pro"
+    },
+    {
+      "type": "p",
+      "text": "No accessible vendor page for Homesnap Pro. Pricing, feature set, and integration claims cannot be verified. If considering Homesnap Pro, contact the vendor directly for documentation."
+    },
+    {
+      "type": "product",
+      "name": "Homesnap Pro",
+      "price": "No published pricing; vendor page unreachable",
+      "rating": 0,
+      "pros": [
+        "Cannot verify—no accessible vendor documentation"
+      ],
+      "cons": [
+        "No vendor page reachable for feature or pricing verification",
+        "Cannot assess MLS integrations, white-labeling, or mobile-first design"
+      ],
+      "cta": {
+        "label": "Contact Homesnap Pro",
+        "url": "https://www.homesnap.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Curb Hero",
+      "id": "curb-hero"
+    },
+    {
+      "type": "p",
+      "text": "No accessible vendor page for Curb Hero. Pricing, feature set, and integration claims cannot be verified. Curb Hero is known as an open-house sign-in app; whether it offers buyer portal features beyond lead capture is unclear. If considering Curb Hero, contact the vendor directly for documentation."
+    },
+    {
+      "type": "product",
+      "name": "Curb Hero",
+      "price": "No published pricing; vendor page unreachable",
+      "rating": 0,
+      "pros": [
+        "Cannot verify—no accessible vendor documentation"
+      ],
+      "cons": [
+        "No vendor page reachable for feature or pricing verification",
+        "Primary reputation as open-house tool, not buyer portal",
+        "Cannot assess MLS integrations or client collaboration features"
+      ],
+      "cta": {
+        "label": "Contact Curb Hero",
+        "url": "https://curbhero.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Realync",
+      "id": "realync"
+    },
+    {
+      "type": "p",
+      "text": "Realync is a video platform for multifamily leasing: pre-recorded tours, 360 tours, self-guided tours, and live video walk-throughs for apartment properties. The vendor's website emphasizes 'resident touring & communications' and lists '1,800+ multifamily teams' as customers. Pricing is not published. Realync does not target single-family buyer representation; it is irrelevant for real estate agents managing buyer clients in SFR transactions."
+    },
+    {
+      "type": "product",
+      "name": "Realync",
+      "price": "Contact vendor for pricing",
+      "rating": 4.6,
+      "pros": [
+        "4.6 rating per vendor testimonials",
+        "Pre-recorded, 360, and live video tours for apartments",
+        "Professional videography services available (Realync Studios)"
+      ],
+      "cons": [
+        "Exclusively for multifamily leasing—not single-family buyer portals",
+        "No MLS integration; designed for property management, not agent-buyer collaboration",
+        "No published pricing; requires sales contact"
+      ],
+      "cta": {
+        "label": "Visit Realync",
+        "url": "https://www.realync.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "If you need mobile-first MLS search with real-time buyer chat and white-labeling, and your brokerage or MLS already partners with HomeSpotter: HomeSpotter Connect is the only platform with documented features in this review. Pricing requires vendor contact.",
+        "If you prioritize open-house lead capture first, then nurture: HomeSpotter Spacio (bundled with Connect) or standalone open-house tools like Curb Hero may fit, but Curb Hero's buyer portal features are unverified.",
+        "If you need full transaction management (document storage, e-signature, task tracking): none of these platforms document that functionality. Look at real estate CRMs with built-in client portals (Follow Up Boss, LionDesk, kvCORE) instead.",
+        "If you lease multifamily apartments: Realync is purpose-built for that use case, not single-family buyer representation."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Rela, Homesnap Pro, and Curb Hero: no accessible vendor pages, no pricing, no feature verification. Contact vendors directly if you're considering them, but absence of public documentation raises transparency concerns.",
+        "Realync for single-family buyer portals: it's a multifamily leasing video tool, not an agent-buyer collaboration platform. Wrong use case.",
+        "Any buyer portal software if your actual need is transaction coordination: these tools focus on search and showing collaboration, not document vaults or e-signature workflows. Use a CRM with a built-in client portal instead."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "HomeSpotter Connect",
+      "url": "https://www.homespotter.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Rela",
+      "url": "https://rela.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Homesnap Pro",
+      "url": "https://www.homesnap.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Curb Hero",
+      "url": "https://curbhero.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Realync",
+      "url": "https://www.realync.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/hero-model-houses-keys.jpg",
+  "imageCredit": "Pexels"
+}

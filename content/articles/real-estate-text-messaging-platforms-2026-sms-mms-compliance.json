@@ -1,0 +1,212 @@
+{
+  "slug": "real-estate-text-messaging-platforms-2026-sms-mms-compliance",
+  "title": "Real Estate Text Messaging Platforms in 2026: Compliant SMS vs MMS vs All-in-One Solutions",
+  "description": "EZ Texting and SimpleTexting lead for pure SMS marketing. Skipio pivots to AI voice. CallAction and RealScout pricing undisclosed.",
+  "category": "Phone & Calls",
+  "publishedAt": "2026-05-12",
+  "updatedAt": "2026-05-12",
+  "readMinutes": 7,
+  "tldr": "EZ Texting offers short-code and high-volume tiers starting at $25/mo; SimpleTexting starts at $39/mo with rollover credits. Skipio abandoned SMS-only plans for AI voice services ($499–749/mo). CallAction and RealScout provide no public pricing—contact for quotes.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Text messaging remains the fastest path to agent-client communication, but compliance requirements, carrier registration, and MMS costs have fragmented the market. In 2026, platforms split into three lanes: pure-play SMS/MMS marketing tools (EZ Texting, SimpleTexting), AI-voice hybrids (Skipio), and conversation-execution systems with opaque pricing (CallAction, RealScout). The delta between plans hinges on carrier-approved number types (10DLC, toll-free, short code), credit bundling, and whether the platform treats SMS as a broadcast channel or a two-way conversation layer."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed vendor pricing pages, feature lists, and public plan structures as of May 2026. Two vendors (RealScout, CallAction) publish no pricing; we note that explicitly. EZ Texting and SimpleTexting publish tiered plans with credit bundles and overage rates. Skipio's site lists AI voice pricing only—SMS-focused plans are no longer advertised."
+    },
+    {
+      "type": "h2",
+      "text": "EZ Texting",
+      "id": "ez-texting"
+    },
+    {
+      "type": "product",
+      "name": "EZ Texting",
+      "price": "$25/mo Launch (500 credits), $75/mo Boost (500 credits), $125/mo Scale (500 credits), $3,000/mo Enterprise (200k credits). Annual billing saves 20%. Overage credits $0.04–$0.01 per SMS. MMS = 3 credits per message.",
+      "rating": 0,
+      "pros": [
+        "Short-code option at Enterprise tier ($3k/mo, 200k credits, $0.01 overage)",
+        "High-volume, high-speed numbers on Scale plan ($125/mo)",
+        "Free signup forms, keywords, QR codes, click-to-text buttons across all tiers",
+        "AI Compose and AI Reply included in every plan",
+        "RCS (Rich Communication Services) support: verified sender, carousels, buttons, encrypted channels"
+      ],
+      "cons": [
+        "Base plans include only 500 credits/mo—bulk users must purchase add-on bundles",
+        "Telecom pass-through fees billed separately on Launch plan; waived on Boost and above",
+        "Enterprise short-code setup takes 4–12 weeks",
+        "No public API documentation linked from pricing page"
+      ],
+      "cta": {
+        "label": "Visit EZ Texting",
+        "url": "https://www.eztexting.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "EZ Texting positions itself as the RCS-ready option. Vendor pricing pages list local 10DLC numbers for Launch and Boost, high-speed numbers for Scale, and dedicated short codes for Enterprise. The platform includes text-to-pay, text-to-give, and workflows (after-hours replies, event reminders, abandoned-cart recovery). Overage rates drop from $0.04 per credit on Launch to $0.01 on Enterprise. MMS costs three credits per send. Vendor feature pages claim Shutterstock media library access and an open API, though API docs are not linked from pricing."
+    },
+    {
+      "type": "h2",
+      "text": "SimpleTexting",
+      "id": "simpletexting"
+    },
+    {
+      "type": "product",
+      "name": "SimpleTexting",
+      "price": "$39/mo (500 credits, local number, annual billing). Extra credits at $0.055 each. MMS = 3 credits. One-time carrier registration $4. Additional users $20/mo, additional numbers $10/mo.",
+      "rating": 0,
+      "pros": [
+        "Rollover credits: unused credits carry to next month on monthly plans",
+        "Free incoming SMS; incoming MMS costs 1 credit",
+        "Extended messaging: 306 characters for 2 credits (vs 160-char SMS at 1 credit)",
+        "Mailchimp and Zapier integrations included; custom API builds available via support",
+        "30-day money-back guarantee",
+        "Live support 7 days/week"
+      ],
+      "cons": [
+        "No short-code option advertised on public pricing",
+        "Rollover credits lost on plan downgrade",
+        "Carrier fees (~$0.0025/message US, $0.0068 Canada) billed separately",
+        "Advanced automations require contacting support for custom pricing"
+      ],
+      "cta": {
+        "label": "Visit SimpleTexting",
+        "url": "https://www.simpletexting.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "SimpleTexting pricing pages list local, toll-free, and dedicated short-code number types, though short-code pricing is not specified. Base plan ($39/mo annual, 500 credits) includes mass texting, auto-replies, drip campaigns, MMS (3 credits), and API access. Additional teammates cost $20/mo; additional numbers $10/mo. Rollover credits carry forward one month on monthly billing. Extended messages (up to 306 characters, 2 credits) and MMS (up to 1,600 characters, 3 credits) exceed standard SMS limits. Vendor pages note nonprofit discounts (15% off) and average carrier fees of $0.0025/message."
+    },
+    {
+      "type": "h2",
+      "text": "Skipio",
+      "id": "skipio"
+    },
+    {
+      "type": "product",
+      "name": "Skipio",
+      "price": "$499/mo AI Growth (2,000 AI voice minutes, 1 AI agent), $749/mo AI Pro (3,000 minutes, multiple agents), Custom Enterprise. Additional usage $0.25/min. SMS texting plans no longer listed.",
+      "rating": 0,
+      "pros": [
+        "AI voice call answering, routing, appointment scheduling, and CRM integration",
+        "AI call summaries and structured data extraction",
+        "Pro tier includes SMS and webchat alongside voice",
+        "Automation workflows and API access on Pro and Enterprise"
+      ],
+      "cons": [
+        "Standalone SMS pricing not published—focus shifted to AI voice",
+        "Growth tier limited to single AI agent; multi-agent requires Pro ($749/mo)",
+        "Voice overage at $0.25/min may escalate costs for high-call-volume offices",
+        "Enterprise pricing undisclosed; must contact sales"
+      ],
+      "cta": {
+        "label": "Visit Skipio",
+        "url": "https://www.skipio.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Skipio's pricing page lists only AI voice tiers as of May 2026. AI Growth ($499/mo) includes 2,000 voice minutes and one AI agent for call answering, routing, and scheduling. AI Pro ($749/mo) adds multiple agents, advanced routing, SMS conversations, and API access. Vendor pages describe Skipio as 'the Managed AI Employee category for customer conversations' and position it as communication infrastructure for multi-location businesses. No SMS-only or text-marketing plans appear on the current pricing page—historical references to 'Replace Zipwhip' suggest past SMS focus, but current tiers bundle SMS under voice-led offerings."
+    },
+    {
+      "type": "h2",
+      "text": "RealScout",
+      "id": "realscout"
+    },
+    {
+      "type": "p",
+      "text": "RealScout's vendor site was unreachable during research. No pricing, feature claims, or integration details are available. Contact vendor for quote."
+    },
+    {
+      "type": "h2",
+      "text": "CallAction",
+      "id": "callaction"
+    },
+    {
+      "type": "product",
+      "name": "CallAction",
+      "price": "Pricing not published. Contact vendor for quote.",
+      "rating": 0,
+      "pros": [
+        "Vendor site describes platform as 'conversation execution layer'—not a CRM or dialer",
+        "Positions as continuity system across inquiry → conversation → outcome → nurture loop",
+        "Primary product experience on CallAction.co"
+      ],
+      "cons": [
+        "No pricing disclosed",
+        "No feature list or integration catalog on vendor site",
+        "Site redirects to CallAction.co for onboarding and tools; limited public documentation"
+      ],
+      "cta": {
+        "label": "Visit CallAction",
+        "url": "https://www.callaction.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "CallAction's pricing page states the platform is 'actively evolving' and directs users to CallAction.co for onboarding and features. The vendor site describes CallAction as the 'conversation execution layer for modern sales teams,' distinct from CRMs or dialers. No pricing, credit bundles, or integration specifics are published. Contact vendor for quote."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "For pure SMS marketing with RCS future-proofing: EZ Texting. Short-code option at Enterprise tier; RCS verified sender and encrypted channels. Launch plan at $25/mo for agents testing broadcast campaigns.",
+        "For rollover credits and trial-friendly onboarding: SimpleTexting. $39/mo base, 30-day money-back, live support 7 days. Rollover credits mitigate waste on monthly billing.",
+        "For AI voice + SMS hybrid: Skipio AI Growth ($499/mo). Best for teams needing after-hours call answering and appointment scheduling alongside text follow-up. Multi-agent routing requires Pro ($749/mo).",
+        "For enterprise multi-location or franchise needs: EZ Texting Enterprise ($3k/mo, short code, 200k credits) or Skipio Enterprise (custom, multi-location AI deployment). Both require sales contact for final pricing.",
+        "If budget constrains to under $40/mo and MMS is rare: SimpleTexting base plan. If MMS volume is high, EZ Texting Launch ($25/mo) may cost less due to lower telecom fees on annual billing."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "RealScout and CallAction: No public pricing or feature claims. Cannot evaluate cost or capability. Contact vendors directly if considering.",
+        "Skipio for SMS-only use cases: Platform pivoted to AI voice; SMS-only plans not advertised. If voice answering is not needed, EZ Texting or SimpleTexting offer clearer SMS-focused tiers.",
+        "EZ Texting Launch if high message volume expected: Base 500 credits deplete quickly; overage at $0.04/credit adds up. Boost ($75/mo) or Scale ($125/mo) provide better per-message economics at volume.",
+        "SimpleTexting for short-code campaigns: No short-code pricing published. If carrier-approved short codes are required, EZ Texting Enterprise is the only disclosed option."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "EZ Texting",
+      "url": "https://www.eztexting.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "SimpleTexting",
+      "url": "https://www.simpletexting.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Skipio",
+      "url": "https://www.skipio.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "CallAction",
+      "url": "https://www.callaction.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/real-estate-text-messaging-platforms-2026-sms-mms-compliance-hero.jpg",
+  "imageCredit": "Pexels · RDNE Stock project"
+}
