@@ -163,9 +163,11 @@ function renderBlock(block: ArticleBlock, i: number) {
         <div key={i} className="my-8 border border-bg-2 rounded-xl p-6 not-prose">
           <div className="flex items-start justify-between gap-4">
             <div>
-              <div className="text-[11px] uppercase tracking-[0.14em] text-warm font-bold">
-                {"★".repeat(Math.round(block.rating))}{"☆".repeat(5 - Math.round(block.rating))} {block.rating.toFixed(1)}/5
-              </div>
+              {typeof block.rating === "number" && block.rating > 0 && (
+                <div className="text-[11px] uppercase tracking-[0.14em] text-warm font-bold">
+                  {"★".repeat(Math.round(block.rating))}{"☆".repeat(5 - Math.round(block.rating))} {block.rating.toFixed(1)}/5
+                </div>
+              )}
               <h3 className="text-xl font-bold mt-1">{block.name}</h3>
               <div className="text-ink-2 text-[14px] mt-1">{block.price}</div>
             </div>
