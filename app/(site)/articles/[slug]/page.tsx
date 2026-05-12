@@ -4,6 +4,7 @@ import { ArrowLeft, Clock, ExternalLink } from "lucide-react";
 import { getArticle, listArticles, relatedArticles, type Article, type ArticleBlock } from "@/lib/articles";
 import { articleSchema, breadcrumbSchema, jsonLdScript } from "@/lib/jsonld";
 import { RelatedArticles } from "@/components/RelatedArticles";
+import { EmailCaptureForm } from "@/components/EmailCaptureForm";
 
 export function generateStaticParams() {
   return listArticles().map((a) => ({ slug: a.slug }));
@@ -101,6 +102,16 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
       <article className="mt-10 prose prose-lg max-w-none prose-headings:tracking-tight prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-p:text-ink-0 prose-p:leading-relaxed prose-li:text-ink-0 prose-strong:text-ink-0">
         {article.body.map((block, i) => renderBlock(block, i))}
       </article>
+
+      {/* Email capture — show after the article body */}
+      <div className="mt-14">
+        <EmailCaptureForm
+          variant="stack"
+          source={`article:${article.slug}`}
+          headline="Get the 2026 Real Estate Tool Stack — free"
+          sub={`A one-page pricing breakdown of every ${article.category.toLowerCase()} tool plus every other category. Updated monthly. 1 honest email per week — that's it.`}
+        />
+      </div>
 
       {/* Related articles */}
       <RelatedArticles
