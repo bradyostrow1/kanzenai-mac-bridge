@@ -156,21 +156,21 @@ export function LiveJobPanel({ onJobComplete }: { onJobComplete?: () => void }) 
   }, [job]);
 
   return (
-    <section className="border border-[#1f1f1f] bg-[#0d0d0d] mb-6">
-      <div className="px-4 py-2.5 border-b border-[#1f1f1f] flex items-center justify-between">
-        <span className="flex items-center gap-1.5 text-[10px] uppercase tracking-[0.18em] text-[#a3a3a3]">
+    <section className="border border-rule bg-bg-1 mb-6">
+      <div className="px-4 py-2.5 border-b border-rule flex items-center justify-between">
+        <span className="flex items-center gap-1.5 text-[10px] uppercase tracking-[0.18em] text-ink-2">
           <Radio className="w-3.5 h-3.5" />
           Live job
         </span>
         {job && (
-          <span className="text-[10px] uppercase tracking-[0.18em] text-[#525252]">
+          <span className="text-[10px] uppercase tracking-[0.18em] text-ink-3">
             {job.type} · {job.status} · {elapsed}
           </span>
         )}
       </div>
 
       {/* Action buttons */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 divide-y lg:divide-y-0 lg:divide-x divide-[#1f1f1f]">
+      <div className="grid grid-cols-2 lg:grid-cols-4 divide-y lg:divide-y-0 lg:divide-x divide-rule">
         {ACTIONS.map((a) => {
           const isStarting = starting === a.type;
           const isRunning = running && job?.type === a.type;
@@ -179,28 +179,28 @@ export function LiveJobPanel({ onJobComplete }: { onJobComplete?: () => void }) 
               key={a.type}
               onClick={() => start(a.type)}
               disabled={isStarting || running}
-              className="text-left p-4 hover:bg-[#0f0f0f] disabled:opacity-50 disabled:cursor-not-allowed transition group"
+              className="text-left p-4 hover:bg-bg-2 disabled:opacity-50 disabled:cursor-not-allowed transition group"
             >
               <div className="flex items-center justify-between mb-1">
-                <span className="text-[#f0eee9] text-[13px] font-medium">{a.label}</span>
+                <span className="text-ink-0 text-[13px] font-medium">{a.label}</span>
                 {isRunning ? (
-                  <Loader2 className="w-3.5 h-3.5 animate-spin text-emerald-400" />
+                  <Loader2 className="w-3.5 h-3.5 animate-spin text-emerald-700" />
                 ) : isStarting ? (
-                  <Loader2 className="w-3.5 h-3.5 animate-spin text-[#a3a3a3]" />
+                  <Loader2 className="w-3.5 h-3.5 animate-spin text-ink-2" />
                 ) : (
-                  <Play className="w-3 h-3 text-[#525252] group-hover:text-[#a3a3a3]" />
+                  <Play className="w-3 h-3 text-ink-3 group-hover:text-ink-2" />
                 )}
               </div>
-              <div className="text-[11px] text-[#a3a3a3] leading-snug mb-1">{a.hint}</div>
-              <div className="text-[10px] uppercase tracking-[0.12em] text-[#525252]">{a.estimate}</div>
+              <div className="text-[11px] text-ink-2 leading-snug mb-1">{a.hint}</div>
+              <div className="text-[10px] uppercase tracking-[0.12em] text-ink-3">{a.estimate}</div>
             </button>
           );
         })}
       </div>
 
       {/* Daily article count selector */}
-      <div className="px-4 py-2 border-t border-[#1f1f1f] flex items-center gap-3 text-[11px]">
-        <span className="text-[#525252]">daily articles count:</span>
+      <div className="px-4 py-2 border-t border-rule flex items-center gap-3 text-[11px]">
+        <span className="text-ink-3">daily articles count:</span>
         {[1, 3, 5, 10].map((n) => (
           <button
             key={n}
@@ -208,36 +208,36 @@ export function LiveJobPanel({ onJobComplete }: { onJobComplete?: () => void }) 
             disabled={running}
             className={`px-2 py-0.5 border transition ${
               count === n
-                ? "border-emerald-700 bg-emerald-950 text-emerald-300"
-                : "border-[#262626] text-[#a3a3a3] hover:border-[#525252]"
+                ? "border-emerald-600 bg-emerald-100 text-emerald-800"
+                : "border-rule text-ink-2 hover:border-ink-2"
             } disabled:opacity-40`}
           >
             {n}
           </button>
         ))}
-        <span className="text-[#525252] ml-auto">{count === 1 ? "$0.15" : `~$${(count * 0.15).toFixed(2)}`} est.</span>
+        <span className="text-ink-3 ml-auto">{count === 1 ? "$0.15" : `~$${(count * 0.15).toFixed(2)}`} est.</span>
       </div>
 
       {error && (
-        <div className="px-4 py-2 border-t border-red-900/40 bg-red-950/20 text-red-300 text-[12px]">{error}</div>
+        <div className="px-4 py-2 border-t border-red-300/40 bg-red-50 text-red-800 text-[12px]">{error}</div>
       )}
 
       {/* Live progress view */}
       {job && (
-        <div className="border-t border-[#1f1f1f]">
+        <div className="border-t border-rule">
           {/* Progress bar for daily-articles */}
           {job.type === "daily-articles" && job.progress.totalArticles && (
-            <div className="px-4 py-3 border-b border-[#1f1f1f]">
+            <div className="px-4 py-3 border-b border-rule">
               <div className="flex items-baseline justify-between mb-2">
-                <div className="text-[11px] uppercase tracking-[0.18em] text-[#a3a3a3]">
+                <div className="text-[11px] uppercase tracking-[0.18em] text-ink-2">
                   {job.progress.written + job.progress.failed} of {job.progress.totalArticles} complete
                 </div>
-                <div className="text-[10px] text-[#525252]">{progressPct}%</div>
+                <div className="text-[10px] text-ink-3">{progressPct}%</div>
               </div>
-              <div className="h-1.5 bg-[#171717] overflow-hidden">
+              <div className="h-1.5 bg-bg-2 overflow-hidden">
                 <div
                   className={`h-full transition-all duration-700 ${
-                    job.status === "failed" ? "bg-red-500" : job.status === "done" ? "bg-emerald-500" : "bg-emerald-600"
+                    job.status === "failed" ? "bg-red-500" : job.status === "done" ? "bg-emerald-500" : "bg-emerald-700"
                   }`}
                   style={{ width: `${progressPct}%` }}
                 />
@@ -253,30 +253,30 @@ export function LiveJobPanel({ onJobComplete }: { onJobComplete?: () => void }) 
                   key={t.index}
                   className={`border px-3 py-2 ${
                     t.status === "running"
-                      ? "border-emerald-700/60 bg-emerald-950/20"
+                      ? "border-emerald-600/60 bg-emerald-50"
                       : t.status === "done"
-                        ? "border-[#262626] bg-[#0f0f0f]"
+                        ? "border-rule bg-bg-2"
                         : t.status === "failed"
-                          ? "border-red-900/50 bg-red-950/20"
-                          : "border-[#1f1f1f] bg-transparent"
+                          ? "border-red-300/50 bg-red-50"
+                          : "border-rule bg-transparent"
                   }`}
                 >
                   <div className="flex items-center gap-2 text-[12px]">
-                    <span className="text-[#525252] font-mono w-6">#{t.index}</span>
-                    {t.status === "running" && <Loader2 className="w-3 h-3 animate-spin text-emerald-400" />}
-                    {t.status === "done" && <CheckCircle2 className="w-3 h-3 text-emerald-400" />}
-                    {t.status === "failed" && <XCircle className="w-3 h-3 text-red-400" />}
-                    {t.status === "pending" && <div className="w-3 h-3 border border-[#262626] rounded-full" />}
+                    <span className="text-ink-3 font-mono w-6">#{t.index}</span>
+                    {t.status === "running" && <Loader2 className="w-3 h-3 animate-spin text-emerald-700" />}
+                    {t.status === "done" && <CheckCircle2 className="w-3 h-3 text-emerald-700" />}
+                    {t.status === "failed" && <XCircle className="w-3 h-3 text-red-700" />}
+                    {t.status === "pending" && <div className="w-3 h-3 border border-rule rounded-full" />}
                     <span
                       className={`flex-1 ${
-                        t.status === "pending" ? "text-[#525252]" : "text-[#f0eee9]"
+                        t.status === "pending" ? "text-ink-3" : "text-ink-0"
                       } leading-tight`}
                     >
-                      {t.topic ?? <span className="italic text-[#525252]">awaiting topic from Claude…</span>}
+                      {t.topic ?? <span className="italic text-ink-3">awaiting topic from Claude…</span>}
                     </span>
                   </div>
                   {t.products && (
-                    <div className="text-[10px] text-[#a3a3a3] mt-1 ml-8 truncate">{t.products}</div>
+                    <div className="text-[10px] text-ink-2 mt-1 ml-8 truncate">{t.products}</div>
                   )}
                 </div>
               ))}
@@ -285,12 +285,12 @@ export function LiveJobPanel({ onJobComplete }: { onJobComplete?: () => void }) 
 
           {/* Current step ticker */}
           {running && (
-            <div className="px-4 py-2 border-t border-[#1f1f1f] flex items-center gap-2">
-              <Loader2 className="w-3 h-3 animate-spin text-emerald-400" />
-              <span className="text-[12px] text-[#a3a3a3] font-mono truncate">{job.progress.currentStep}</span>
+            <div className="px-4 py-2 border-t border-rule flex items-center gap-2">
+              <Loader2 className="w-3 h-3 animate-spin text-emerald-700" />
+              <span className="text-[12px] text-ink-2 font-mono truncate">{job.progress.currentStep}</span>
               <button
                 onClick={stop}
-                className="ml-auto inline-flex items-center gap-1 px-2 py-0.5 border border-[#262626] hover:border-red-700 text-[10px] text-[#a3a3a3] hover:text-red-300 transition"
+                className="ml-auto inline-flex items-center gap-1 px-2 py-0.5 border border-rule hover:border-red-600 text-[10px] text-ink-2 hover:text-red-800 transition"
               >
                 <Square className="w-2.5 h-2.5" />
                 stop
@@ -299,10 +299,10 @@ export function LiveJobPanel({ onJobComplete }: { onJobComplete?: () => void }) 
           )}
 
           {/* Raw log toggle */}
-          <div className="border-t border-[#1f1f1f]">
+          <div className="border-t border-rule">
             <button
               onClick={() => setShowRawLog((v) => !v)}
-              className="w-full px-4 py-2 flex items-center gap-1.5 text-[10px] uppercase tracking-[0.18em] text-[#525252] hover:text-[#a3a3a3] hover:bg-[#0f0f0f] transition"
+              className="w-full px-4 py-2 flex items-center gap-1.5 text-[10px] uppercase tracking-[0.18em] text-ink-3 hover:text-ink-2 hover:bg-bg-2 transition"
             >
               {showRawLog ? <ChevronDown className="w-3 h-3" /> : <ChevronRight className="w-3 h-3" />}
               raw log ({job.log.length.toLocaleString()} bytes)
@@ -310,9 +310,9 @@ export function LiveJobPanel({ onJobComplete }: { onJobComplete?: () => void }) 
             {showRawLog && (
               <pre
                 ref={logRef}
-                className="px-4 pb-3 text-[11px] text-[#a3a3a3] font-mono whitespace-pre-wrap overflow-y-auto max-h-[400px] bg-[#070707]"
+                className="px-4 pb-3 text-[11px] text-ink-2 font-mono whitespace-pre-wrap overflow-y-auto max-h-[400px] bg-[#070707]"
               >
-                {job.log || <span className="text-[#525252] italic">waiting for output…</span>}
+                {job.log || <span className="text-ink-3 italic">waiting for output…</span>}
               </pre>
             )}
           </div>
@@ -322,8 +322,8 @@ export function LiveJobPanel({ onJobComplete }: { onJobComplete?: () => void }) 
             <div
               className={`px-4 py-2 border-t text-[12px] flex items-center gap-2 ${
                 job.status === "done"
-                  ? "border-emerald-900/40 bg-emerald-950/20 text-emerald-300"
-                  : "border-red-900/40 bg-red-950/20 text-red-300"
+                  ? "border-emerald-300/40 bg-emerald-50 text-emerald-800"
+                  : "border-red-300/40 bg-red-50 text-red-800"
               }`}
             >
               {job.status === "done" ? (
@@ -337,7 +337,7 @@ export function LiveJobPanel({ onJobComplete }: { onJobComplete?: () => void }) 
                   : `${job.status === "killed" ? "Killed" : "Failed"} after ${elapsed} (exit ${job.exitCode ?? "—"}).`}
               </span>
               {job.type === "daily-articles" && (
-                <span className="ml-auto text-[11px] text-[#a3a3a3]">
+                <span className="ml-auto text-[11px] text-ink-2">
                   {job.progress.written} written · {job.progress.failed} failed
                 </span>
               )}

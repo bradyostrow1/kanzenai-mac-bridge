@@ -264,6 +264,18 @@ async function main() {
     }
   }
 
+  // Optional boilerplate promo as a final reply (env-gated)
+  if (process.env.BOILERPLATE_PROMO === "1") {
+    try {
+      const promo = `btw — this whole publishing engine is what I sell at kanzenai.com/boilerplate. Next.js + Claude + X bots + dashboard. $149.`;
+      const r = await twitter.v2.tweet(promo, { reply: { in_reply_to_tweet_id: postedIds[postedIds.length - 1] } });
+      postedIds.push(r.data.id);
+      console.log(`  ✓ Boilerplate promo posted: https://x.com/i/web/status/${r.data.id}`);
+    } catch (e) {
+      console.log(`  · Promo skipped: ${(e as Error).message}`);
+    }
+  }
+
   // Log success
   await appendFile(THREADS_LOG, JSON.stringify({
     ts: new Date().toISOString(),

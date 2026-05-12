@@ -371,6 +371,24 @@ async function main() {
       const reply = await postTweet(replyText, main.id);
       console.log(`  ✓ Reply (link) posted: https://x.com/i/web/status/${reply.id}`);
 
+      // Optional boilerplate promo as a 3rd reply (env-gated to control frequency)
+      let promoId: string | undefined;
+      if (process.env.BOILERPLATE_PROMO === "1") {
+        try {
+          const promoVariants = [
+            "btw — this whole stack is what I'm selling at kanzenai.com/boilerplate. Next.js + Claude auto-writer + X bots + dashboard. $149, deploys in 10 min.",
+            "this site auto-published itself. The boilerplate I built it on is $149 → kanzenai.com/boilerplate",
+            "stack that auto-publishes this: Next.js + Claude + Pexels + X bots + dashboard. Selling it for $149 if you want to skip the build → kanzenai.com/boilerplate",
+          ];
+          const promo = promoVariants[Math.floor(Math.random() * promoVariants.length)];
+          const promoTweet = await postTweet(promo, reply.id);
+          promoId = promoTweet.id;
+          console.log(`  ✓ Boilerplate promo posted: https://x.com/i/web/status/${promoId}`);
+        } catch (e) {
+          console.log(`  · Promo skipped: ${(e as Error).message}`);
+        }
+      }
+
       await appendFile(
         LOG_PATH,
         JSON.stringify({
@@ -378,6 +396,7 @@ async function main() {
           slug: article.slug,
           tweetId: main.id,
           replyId: reply.id,
+          promoId,
           text: tweetText,
         }) + "\n",
       );

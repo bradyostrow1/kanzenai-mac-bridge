@@ -20,7 +20,8 @@
     "x-analytics": "node --import tsx scripts/x-analytics.ts",
     "find-x-replies-search": "node --import tsx scripts/find-x-replies-search.ts",
     "auto-reply": "node --import tsx scripts/auto-reply.ts",
-    "post-x-thread": "node --import tsx scripts/post-x-thread.ts"
+    "post-x-thread": "node --import tsx scripts/post-x-thread.ts",
+    "x-follow-network": "node --import tsx scripts/x-follow-network.ts"
   },
   "dependencies": {
     "lucide-react": "0.468.0",

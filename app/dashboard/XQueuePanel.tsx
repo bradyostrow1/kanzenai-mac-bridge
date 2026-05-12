@@ -70,25 +70,25 @@ export function XQueuePanel() {
   const pendingCount = items.filter((i) => i.status === "pending").length;
 
   return (
-    <section className="border border-[#1f1f1f] bg-[#0d0d0d] mb-6">
-      <div className="px-4 py-2.5 border-b border-[#1f1f1f] flex items-center justify-between">
-        <span className="flex items-center gap-1.5 text-[10px] uppercase tracking-[0.18em] text-[#a3a3a3]">
+    <section className="border border-rule bg-bg-1 mb-6">
+      <div className="px-4 py-2.5 border-b border-rule flex items-center justify-between">
+        <span className="flex items-center gap-1.5 text-[10px] uppercase tracking-[0.18em] text-ink-2">
           <Twitter className="w-3.5 h-3.5" />
           X tweet queue
           {pendingCount > 0 && (
-            <span className="ml-2 px-1.5 py-0.5 bg-emerald-950 text-emerald-300 border border-emerald-900 text-[10px]">
+            <span className="ml-2 px-1.5 py-0.5 bg-emerald-100 text-emerald-800 border border-emerald-300 text-[10px]">
               {pendingCount} pending
             </span>
           )}
         </span>
-        <div className="flex items-center gap-3 text-[10px] text-[#525252]">
+        <div className="flex items-center gap-3 text-[10px] text-ink-3">
           <button
             onClick={() => setShowDiscarded((v) => !v)}
-            className="hover:text-[#f0eee9] transition uppercase tracking-[0.18em]"
+            className="hover:text-ink-0 transition uppercase tracking-[0.18em]"
           >
             {showDiscarded ? "hide discarded" : "show discarded"}
           </button>
-          <button onClick={load} className="hover:text-[#f0eee9] transition flex items-center gap-1">
+          <button onClick={load} className="hover:text-ink-0 transition flex items-center gap-1">
             <RefreshCw className="w-3 h-3" />
             refresh
           </button>
@@ -96,13 +96,13 @@ export function XQueuePanel() {
       </div>
 
       {loading ? (
-        <div className="p-6 text-[12px] text-[#525252]">loading queue…</div>
+        <div className="p-6 text-[12px] text-ink-3">loading queue…</div>
       ) : visible.length === 0 ? (
-        <div className="p-6 text-[12px] text-[#525252]">
-          No tweets queued. Run <code className="text-amber-200">X_QUEUE_ONLY=1 npm run post-to-x -- --backlog 2</code> to seed.
+        <div className="p-6 text-[12px] text-ink-3">
+          No tweets queued. Run <code className="text-amber-800">X_QUEUE_ONLY=1 npm run post-to-x -- --backlog 2</code> to seed.
         </div>
       ) : (
-        <div className="divide-y divide-[#1f1f1f]">
+        <div className="divide-y divide-rule">
           {visible.map((item) => {
             const isCopiedMain = copied === `${item.slug}-tweet`;
             const isCopiedReply = copied === `${item.slug}-reply`;
@@ -119,28 +119,28 @@ export function XQueuePanel() {
               >
                 <div className="flex items-start justify-between gap-3 mb-2">
                   <div className="flex-1 min-w-0">
-                    <div className="text-[11px] uppercase tracking-[0.18em] text-[#525252] mb-1">
+                    <div className="text-[11px] uppercase tracking-[0.18em] text-ink-3 mb-1">
                       {item.category ?? "—"} · {timeAgo(item.generatedAt)}
                     </div>
                     <a
                       href={item.url}
                       target="_blank"
                       rel="noopener"
-                      className="text-[#f0eee9] hover:text-white text-[13px] truncate block"
+                      className="text-ink-0 hover:text-ink-0 text-[13px] truncate block"
                     >
                       {item.title}
-                      <ExternalLink className="inline w-3 h-3 ml-1 align-baseline text-[#525252]" />
+                      <ExternalLink className="inline w-3 h-3 ml-1 align-baseline text-ink-3" />
                     </a>
                   </div>
                   <span
                     className={`text-[10px] uppercase tracking-[0.18em] px-2 py-0.5 border ${
                       item.status === "pending"
-                        ? "border-emerald-800 text-emerald-300"
+                        ? "border-emerald-600 text-emerald-800"
                         : item.status === "copied"
-                          ? "border-amber-800 text-amber-300"
+                          ? "border-amber-600 text-amber-800"
                           : item.status === "posted"
-                            ? "border-[#262626] text-[#525252]"
-                            : "border-red-900 text-red-400"
+                            ? "border-rule text-ink-3"
+                            : "border-red-300 text-red-700"
                     }`}
                   >
                     {item.status}
@@ -149,34 +149,34 @@ export function XQueuePanel() {
 
                 {/* Main tweet */}
                 <div className="mb-3">
-                  <div className="text-[10px] uppercase tracking-[0.18em] text-[#525252] mb-1 flex justify-between">
+                  <div className="text-[10px] uppercase tracking-[0.18em] text-ink-3 mb-1 flex justify-between">
                     <span>Tweet ({item.tweetText.length} chars)</span>
                   </div>
-                  <pre className="text-[12.5px] text-[#f0eee9] font-sans whitespace-pre-wrap leading-relaxed bg-[#0a0a0a] border border-[#1f1f1f] p-3">
+                  <pre className="text-[12.5px] text-ink-0 font-sans whitespace-pre-wrap leading-relaxed bg-bg-0 border border-rule p-3">
                     {item.tweetText}
                   </pre>
                   <button
                     onClick={() => copy(item.tweetText, `${item.slug}-tweet`)}
-                    className="mt-1.5 inline-flex items-center gap-1.5 px-2.5 py-1 border border-[#262626] hover:border-[#525252] text-[11px] text-[#f0eee9] transition"
+                    className="mt-1.5 inline-flex items-center gap-1.5 px-2.5 py-1 border border-rule hover:border-ink-2 text-[11px] text-ink-0 transition"
                   >
-                    {isCopiedMain ? <Check className="w-3 h-3 text-emerald-400" /> : <Copy className="w-3 h-3" />}
+                    {isCopiedMain ? <Check className="w-3 h-3 text-emerald-700" /> : <Copy className="w-3 h-3" />}
                     {isCopiedMain ? "copied" : "copy tweet"}
                   </button>
                 </div>
 
                 {/* Reply tweet */}
                 <div className="mb-3">
-                  <div className="text-[10px] uppercase tracking-[0.18em] text-[#525252] mb-1">
+                  <div className="text-[10px] uppercase tracking-[0.18em] text-ink-3 mb-1">
                     Reply (post this AS A REPLY to your own tweet)
                   </div>
-                  <pre className="text-[12px] text-[#a3a3a3] font-sans whitespace-pre-wrap leading-relaxed bg-[#0a0a0a] border border-[#1f1f1f] p-2">
+                  <pre className="text-[12px] text-ink-2 font-sans whitespace-pre-wrap leading-relaxed bg-bg-0 border border-rule p-2">
                     {item.replyText}
                   </pre>
                   <button
                     onClick={() => copy(item.replyText, `${item.slug}-reply`)}
-                    className="mt-1.5 inline-flex items-center gap-1.5 px-2.5 py-1 border border-[#262626] hover:border-[#525252] text-[11px] text-[#f0eee9] transition"
+                    className="mt-1.5 inline-flex items-center gap-1.5 px-2.5 py-1 border border-rule hover:border-ink-2 text-[11px] text-ink-0 transition"
                   >
-                    {isCopiedReply ? <Check className="w-3 h-3 text-emerald-400" /> : <Copy className="w-3 h-3" />}
+                    {isCopiedReply ? <Check className="w-3 h-3 text-emerald-700" /> : <Copy className="w-3 h-3" />}
                     {isCopiedReply ? "copied" : "copy reply"}
                   </button>
                 </div>
@@ -187,14 +187,14 @@ export function XQueuePanel() {
                     href="https://x.com/compose/post"
                     target="_blank"
                     rel="noopener"
-                    className="inline-flex items-center gap-1.5 px-2.5 py-1 border border-[#262626] hover:border-emerald-700 hover:bg-emerald-950/20 text-[#f0eee9] transition"
+                    className="inline-flex items-center gap-1.5 px-2.5 py-1 border border-rule hover:border-emerald-600 hover:bg-emerald-50 text-ink-0 transition"
                   >
                     open x.com compose ↗
                   </a>
                   {item.status !== "posted" && (
                     <button
                       onClick={() => updateStatus(item.slug, "posted")}
-                      className="px-2.5 py-1 border border-[#262626] hover:border-emerald-700 text-emerald-400 transition"
+                      className="px-2.5 py-1 border border-rule hover:border-emerald-600 text-emerald-700 transition"
                     >
                       mark posted
                     </button>
@@ -202,7 +202,7 @@ export function XQueuePanel() {
                   {item.status !== "discarded" && (
                     <button
                       onClick={() => updateStatus(item.slug, "discarded")}
-                      className="ml-auto inline-flex items-center gap-1.5 px-2.5 py-1 border border-[#262626] hover:border-red-700 hover:text-red-300 text-[#a3a3a3] transition"
+                      className="ml-auto inline-flex items-center gap-1.5 px-2.5 py-1 border border-rule hover:border-red-600 hover:text-red-800 text-ink-2 transition"
                     >
                       <Trash2 className="w-3 h-3" />
                       discard
@@ -211,7 +211,7 @@ export function XQueuePanel() {
                   {item.status === "discarded" && (
                     <button
                       onClick={() => updateStatus(item.slug, "pending")}
-                      className="ml-auto px-2.5 py-1 border border-[#262626] hover:border-emerald-700 text-emerald-400 transition"
+                      className="ml-auto px-2.5 py-1 border border-rule hover:border-emerald-600 text-emerald-700 transition"
                     >
                       restore
                     </button>

@@ -80,19 +80,19 @@ export function ChatPanel({ onActionComplete }: { onActionComplete?: () => void 
   return (
     <div className="flex flex-col h-full">
       {/* Header */}
-      <div className="px-5 py-4 border-b border-[#262626] flex items-center justify-between">
+      <div className="px-5 py-4 border-b border-rule flex items-center justify-between">
         <div>
-          <div className="text-[#f0eee9] font-semibold flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+          <div className="text-ink-0 font-semibold flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-emerald-700 animate-pulse" />
             Kanzen
           </div>
-          <div className="text-[11px] text-[#a3a3a3] mt-0.5">Operations bot · Claude Sonnet 4.5</div>
+          <div className="text-[11px] text-ink-2 mt-0.5">Operations bot · Claude Sonnet 4.5</div>
         </div>
         {messages.length > 0 && (
           <button
             onClick={clear}
             title="Clear conversation"
-            className="p-2 text-[#a3a3a3] hover:text-[#f0eee9] hover:bg-[#171717] transition"
+            className="p-2 text-ink-2 hover:text-ink-0 hover:bg-bg-2 transition"
           >
             <Trash2 className="w-3.5 h-3.5" />
           </button>
@@ -109,13 +109,13 @@ export function ChatPanel({ onActionComplete }: { onActionComplete?: () => void 
               <MessageView key={i} message={m} />
             ))}
             {busy && (
-              <div className="flex items-center gap-2 text-[#a3a3a3] text-[13px]">
+              <div className="flex items-center gap-2 text-ink-2 text-[13px]">
                 <Loader2 className="w-3.5 h-3.5 animate-spin" />
                 Working…
               </div>
             )}
             {error && (
-              <div className="border border-red-900 bg-red-950/30 text-red-300 px-3 py-2 text-[13px]">
+              <div className="border border-red-300 bg-red-50 text-red-800 px-3 py-2 text-[13px]">
                 Error: {error}
               </div>
             )}
@@ -124,7 +124,7 @@ export function ChatPanel({ onActionComplete }: { onActionComplete?: () => void 
       </div>
 
       {/* Input */}
-      <div className="px-5 py-4 border-t border-[#262626]">
+      <div className="px-5 py-4 border-t border-rule">
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -144,7 +144,7 @@ export function ChatPanel({ onActionComplete }: { onActionComplete?: () => void 
             disabled={busy}
             rows={1}
             placeholder="Tell Kanzen what to do…"
-            className="flex-1 bg-[#171717] border border-[#262626] focus:border-[#525252] px-3 py-2.5 text-[#f0eee9] placeholder:text-[#525252] outline-none resize-none disabled:opacity-50 text-[13px]"
+            className="flex-1 bg-bg-2 border border-rule focus:border-ink-0 px-3 py-2.5 text-ink-0 placeholder:text-ink-3 outline-none resize-none disabled:opacity-50 text-[13px]"
             style={{ minHeight: 44, maxHeight: 200 }}
           />
           <button
@@ -155,7 +155,7 @@ export function ChatPanel({ onActionComplete }: { onActionComplete?: () => void 
             <Send className="w-4 h-4" />
           </button>
         </form>
-        <div className="mt-2 text-[10px] text-[#525252]">
+        <div className="mt-2 text-[10px] text-ink-3">
           Enter to send · Shift+Enter for newline · ⌘K to focus
         </div>
       </div>
@@ -166,9 +166,9 @@ export function ChatPanel({ onActionComplete }: { onActionComplete?: () => void 
 function EmptyState({ onSuggestion }: { onSuggestion: (s: string) => void }) {
   return (
     <div className="max-w-2xl mx-auto py-8">
-      <div className="text-[#a3a3a3] text-[13px] mb-1">完全 · KANZEN</div>
-      <h2 className="text-[#f0eee9] text-2xl font-bold mb-2">Hey Brady. What needs doing?</h2>
-      <p className="text-[#a3a3a3] text-[14px] leading-relaxed mb-6">
+      <div className="text-ink-2 text-[13px] mb-1">完全 · KANZEN</div>
+      <h2 className="text-ink-0 text-2xl font-bold mb-2">Hey Brady. What needs doing?</h2>
+      <p className="text-ink-2 text-[14px] leading-relaxed mb-6">
         I can run audits, write articles, deploy to production, and check uptime. Tell me what you want — I'll figure out which tools to use.
       </p>
       <div className="space-y-2">
@@ -176,9 +176,9 @@ function EmptyState({ onSuggestion }: { onSuggestion: (s: string) => void }) {
           <button
             key={s}
             onClick={() => onSuggestion(s)}
-            className="block w-full text-left px-4 py-3 border border-[#262626] hover:border-[#525252] hover:bg-[#171717] text-[#f0eee9] text-[13px] transition"
+            className="block w-full text-left px-4 py-3 border border-rule hover:border-ink-2 hover:bg-bg-2 text-ink-0 text-[13px] transition"
           >
-            <span className="text-[#525252] mr-2">›</span>
+            <span className="text-ink-3 mr-2">›</span>
             {s}
           </button>
         ))}
@@ -207,7 +207,7 @@ function renderInline(text: string): React.ReactNode[] {
         out.push(<span key={key++}>{text.slice(next)}</span>);
         break;
       }
-      out.push(<strong key={key++} className="font-semibold text-white">{text.slice(next + 2, end)}</strong>);
+      out.push(<strong key={key++} className="font-semibold text-ink-0">{text.slice(next + 2, end)}</strong>);
       i = end + 2;
     } else {
       const end = text.indexOf("`", next + 1);
@@ -216,7 +216,7 @@ function renderInline(text: string): React.ReactNode[] {
         break;
       }
       out.push(
-        <code key={key++} className="font-mono text-[12px] bg-[#171717] px-1 py-0.5 border border-[#262626] text-amber-200">
+        <code key={key++} className="font-mono text-[12px] bg-bg-2 px-1 py-0.5 border border-rule text-amber-800">
           {text.slice(next + 1, end)}
         </code>,
       );
@@ -258,16 +258,16 @@ function MessageView({ message }: { message: Message }) {
       {blocks.map((b, i) => {
         if (b.type === "text") {
           return (
-            <div key={i} className="text-[#f0eee9] text-[13px] leading-relaxed">
+            <div key={i} className="text-ink-0 text-[13px] leading-relaxed">
               <MarkdownText text={b.text} />
             </div>
           );
         }
         if (b.type === "tool_use") {
           return (
-            <div key={i} className="border border-[#262626] bg-[#0f0f0f] px-3 py-2">
-              <div className="flex items-center gap-2 text-[11px] text-[#a3a3a3]">
-                <span className="text-amber-400">⚡</span>
+            <div key={i} className="border border-rule bg-bg-2 px-3 py-2">
+              <div className="flex items-center gap-2 text-[11px] text-ink-2">
+                <span className="text-amber-700">⚡</span>
                 <code className="font-mono">{b.name}({summarizeInput(b.input)})</code>
               </div>
             </div>
@@ -276,11 +276,11 @@ function MessageView({ message }: { message: Message }) {
         if (b.type === "tool_result") {
           const txt = typeof b.content === "string" ? b.content : JSON.stringify(b.content);
           return (
-            <details key={i} className="border border-[#262626] bg-[#0f0f0f]">
-              <summary className="px-3 py-2 cursor-pointer text-[11px] text-[#a3a3a3] hover:text-[#f0eee9]">
+            <details key={i} className="border border-rule bg-bg-2">
+              <summary className="px-3 py-2 cursor-pointer text-[11px] text-ink-2 hover:text-ink-0">
                 tool result · {txt.length} chars
               </summary>
-              <pre className="px-3 pb-3 text-[11px] text-[#a3a3a3] whitespace-pre-wrap overflow-x-auto max-h-[300px] overflow-y-auto">
+              <pre className="px-3 pb-3 text-[11px] text-ink-2 whitespace-pre-wrap overflow-x-auto max-h-[300px] overflow-y-auto">
                 {txt.slice(0, 5000)}
               </pre>
             </details>

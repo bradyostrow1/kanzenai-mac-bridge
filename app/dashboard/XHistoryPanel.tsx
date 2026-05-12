@@ -111,20 +111,20 @@ export function XHistoryPanel() {
   });
 
   return (
-    <section className="border border-[#1f1f1f] bg-[#0d0d0d] mb-6">
-      <div className="px-4 py-2.5 border-b border-[#1f1f1f] flex items-center justify-between">
-        <span className="flex items-center gap-1.5 text-[10px] uppercase tracking-[0.18em] text-[#a3a3a3]">
+    <section className="border border-rule bg-bg-1 mb-6">
+      <div className="px-4 py-2.5 border-b border-rule flex items-center justify-between">
+        <span className="flex items-center gap-1.5 text-[10px] uppercase tracking-[0.18em] text-ink-2">
           <Twitter className="w-3.5 h-3.5" />
           X history & analytics
           {items.length > 0 && (
-            <span className="ml-2 text-[10px] text-[#525252]">{items.length} tweets · synced {fetchedAt ? timeAgo(fetchedAt) : "never"}</span>
+            <span className="ml-2 text-[10px] text-ink-3">{items.length} tweets · synced {fetchedAt ? timeAgo(fetchedAt) : "never"}</span>
           )}
         </span>
-        <div className="flex items-center gap-3 text-[10px] text-[#525252]">
+        <div className="flex items-center gap-3 text-[10px] text-ink-3">
           <button
             onClick={runInsights}
             disabled={insightsLoading || items.length === 0}
-            className="hover:text-[#f0eee9] transition flex items-center gap-1 uppercase tracking-[0.18em] disabled:opacity-50"
+            className="hover:text-ink-0 transition flex items-center gap-1 uppercase tracking-[0.18em] disabled:opacity-50"
           >
             {insightsLoading ? <Loader2 className="w-3 h-3 animate-spin" /> : <Sparkles className="w-3 h-3" />}
             run analyst
@@ -132,7 +132,7 @@ export function XHistoryPanel() {
           <button
             onClick={refreshMetrics}
             disabled={refreshing}
-            className="hover:text-[#f0eee9] transition flex items-center gap-1 disabled:opacity-50"
+            className="hover:text-ink-0 transition flex items-center gap-1 disabled:opacity-50"
           >
             {refreshing ? <Loader2 className="w-3 h-3 animate-spin" /> : <RefreshCw className="w-3 h-3" />}
             fetch fresh
@@ -141,12 +141,12 @@ export function XHistoryPanel() {
       </div>
 
       {error && (
-        <div className="px-4 py-2 border-b border-red-900/40 bg-red-950/20 text-red-300 text-[12px]">{error}</div>
+        <div className="px-4 py-2 border-b border-red-300/40 bg-red-50 text-red-800 text-[12px]">{error}</div>
       )}
 
       {/* Totals strip */}
       {totals && (
-        <div className="grid grid-cols-3 lg:grid-cols-6 divide-y lg:divide-y-0 lg:divide-x divide-[#1f1f1f] border-b border-[#1f1f1f]">
+        <div className="grid grid-cols-3 lg:grid-cols-6 divide-y lg:divide-y-0 lg:divide-x divide-rule border-b border-rule">
           <Tot icon={<Eye className="w-3 h-3" />} label="impressions" value={totals.impressions} />
           <Tot icon={<Heart className="w-3 h-3" />} label="likes" value={totals.likes} />
           <Tot icon={<MessageCircle className="w-3 h-3" />} label="replies" value={totals.replies} />
@@ -158,12 +158,12 @@ export function XHistoryPanel() {
 
       {/* Insights */}
       {insights && (
-        <div className="px-4 py-4 border-b border-[#1f1f1f] bg-[#0a0a0a]">
+        <div className="px-4 py-4 border-b border-rule bg-bg-0">
           <div className="flex items-center justify-between mb-2">
-            <span className="text-[10px] uppercase tracking-[0.18em] text-amber-300">Claude analyst report</span>
-            {insightsAt && <span className="text-[10px] text-[#525252]">{timeAgo(insightsAt)}</span>}
+            <span className="text-[10px] uppercase tracking-[0.18em] text-amber-800">Claude analyst report</span>
+            {insightsAt && <span className="text-[10px] text-ink-3">{timeAgo(insightsAt)}</span>}
           </div>
-          <div className="text-[12.5px] text-[#f0eee9] leading-relaxed">
+          <div className="text-[12.5px] text-ink-0 leading-relaxed">
             <MarkdownLite text={insights} />
           </div>
         </div>
@@ -171,13 +171,13 @@ export function XHistoryPanel() {
 
       {/* Sort tabs */}
       {items.length > 0 && (
-        <div className="px-4 py-2 border-b border-[#1f1f1f] flex items-center gap-2 text-[10px]">
-          <span className="text-[#525252] uppercase tracking-[0.18em] mr-2">sort:</span>
+        <div className="px-4 py-2 border-b border-rule flex items-center gap-2 text-[10px]">
+          <span className="text-ink-3 uppercase tracking-[0.18em] mr-2">sort:</span>
           {(["recent", "impressions", "likes", "clicks"] as const).map((s) => (
             <button
               key={s}
               onClick={() => setSort(s)}
-              className={`px-2 py-0.5 transition ${sort === s ? "bg-emerald-950 text-emerald-300 border border-emerald-900" : "text-[#a3a3a3] hover:text-[#f0eee9] border border-transparent"}`}
+              className={`px-2 py-0.5 transition ${sort === s ? "bg-emerald-100 text-emerald-800 border border-emerald-300" : "text-ink-2 hover:text-ink-0 border border-transparent"}`}
             >
               {s}
             </button>
@@ -187,19 +187,19 @@ export function XHistoryPanel() {
 
       {/* Tweet rows */}
       {loading ? (
-        <div className="p-6 text-[12px] text-[#525252]">loading…</div>
+        <div className="p-6 text-[12px] text-ink-3">loading…</div>
       ) : items.length === 0 ? (
-        <div className="p-6 text-[12px] text-[#525252]">
+        <div className="p-6 text-[12px] text-ink-3">
           No tweets yet. Posts auto-appear after the daily-article job runs (8 AM) or you post manually.
         </div>
       ) : (
-        <div className="divide-y divide-[#1f1f1f]">
+        <div className="divide-y divide-rule">
           {sorted.map((m) => (
-            <div key={m.tweetId} className="px-4 py-3 hover:bg-[#0f0f0f] transition">
+            <div key={m.tweetId} className="px-4 py-3 hover:bg-bg-2 transition">
               <div className="flex items-start gap-3">
                 <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2 text-[10px] uppercase tracking-[0.16em] text-[#525252] mb-1">
-                    <span className={m.kind === "auto-post" ? "text-emerald-400" : m.kind === "reply" ? "text-amber-300" : "text-[#a3a3a3]"}>
+                  <div className="flex items-center gap-2 text-[10px] uppercase tracking-[0.16em] text-ink-3 mb-1">
+                    <span className={m.kind === "auto-post" ? "text-emerald-700" : m.kind === "reply" ? "text-amber-800" : "text-ink-2"}>
                       {m.kind}{m.targetUser ? ` → @${m.targetUser}` : ""}
                     </span>
                     <span>·</span>
@@ -208,15 +208,15 @@ export function XHistoryPanel() {
                       href={`https://x.com/i/web/status/${m.tweetId}`}
                       target="_blank"
                       rel="noopener"
-                      className="ml-auto flex items-center gap-1 hover:text-[#f0eee9] normal-case tracking-normal"
+                      className="ml-auto flex items-center gap-1 hover:text-ink-0 normal-case tracking-normal"
                     >
                       view <ExternalLink className="w-3 h-3" />
                     </a>
                   </div>
-                  <div className="text-[12.5px] text-[#f0eee9] leading-relaxed whitespace-pre-wrap line-clamp-3">{m.text || "(no text)"}</div>
+                  <div className="text-[12.5px] text-ink-0 leading-relaxed whitespace-pre-wrap line-clamp-3">{m.text || "(no text)"}</div>
                 </div>
               </div>
-              <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-2 text-[11px] text-[#a3a3a3]">
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-2 text-[11px] text-ink-2">
                 <Stat icon={<Eye className="w-3 h-3" />} value={m.impressions ?? "—"} />
                 <Stat icon={<Heart className="w-3 h-3" />} value={m.likes} />
                 <Stat icon={<MessageCircle className="w-3 h-3" />} value={m.replies} />
@@ -235,11 +235,11 @@ export function XHistoryPanel() {
 function Tot({ icon, label, value }: { icon: React.ReactNode; label: string; value: number }) {
   return (
     <div className="px-4 py-2">
-      <div className="flex items-center gap-1.5 text-[9px] uppercase tracking-[0.18em] text-[#525252]">
+      <div className="flex items-center gap-1.5 text-[9px] uppercase tracking-[0.18em] text-ink-3">
         {icon}
         {label}
       </div>
-      <div className="text-[18px] font-semibold text-[#f0eee9] mt-0.5 tracking-tight">{value.toLocaleString()}</div>
+      <div className="text-[18px] font-semibold text-ink-0 mt-0.5 tracking-tight">{value.toLocaleString()}</div>
     </div>
   );
 }
@@ -259,10 +259,10 @@ function MarkdownLite({ text }: { text: string }) {
       {text.split("\n").map((line, i) => {
         const trimmed = line.trim();
         if (trimmed.startsWith("## ")) return (
-          <div key={i} className="text-[11px] uppercase tracking-[0.18em] text-amber-300 mt-3 mb-1 first:mt-0">{trimmed.slice(3)}</div>
+          <div key={i} className="text-[11px] uppercase tracking-[0.18em] text-amber-800 mt-3 mb-1 first:mt-0">{trimmed.slice(3)}</div>
         );
         if (trimmed.startsWith("- ") || trimmed.startsWith("• ")) return (
-          <div key={i} className="ml-3"><span className="text-[#525252] mr-2">•</span>{trimmed.slice(2)}</div>
+          <div key={i} className="ml-3"><span className="text-ink-3 mr-2">•</span>{trimmed.slice(2)}</div>
         );
         if (trimmed === "") return <div key={i} className="h-1.5" />;
         return <div key={i}>{trimmed}</div>;
