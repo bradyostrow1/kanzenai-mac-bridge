@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  KanzenAI daily X thread.
+
+  Runs at 11 AM every day. Picks the most threadworthy un-threaded article
+  and posts a 5-tweet thread to @KanzenOfficial. Spaces activity from the
+  8 AM daily-article cron so the timeline doesn't look botty.
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.kanzenai.x-thread</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>-c</string>
+        <string>cd $HOME/Code/kanzenai &amp;&amp; mkdir -p .audit &amp;&amp; npm run post-x-thread &gt;&gt; ".audit/x-thread-$(date +%Y-%m-%d).log" 2&gt;&amp;1</string>
+    </array>
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>11</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+    <key>RunAtLoad</key>
+    <false/>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+        <key>HOME</key>
+        <string>/Users/bradyostrow</string>
+    </dict>
+    <key>StandardOutPath</key>
+    <string>/tmp/com.kanzenai.x-thread.out</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/com.kanzenai.x-thread.err</string>
+</dict>
+</plist>
