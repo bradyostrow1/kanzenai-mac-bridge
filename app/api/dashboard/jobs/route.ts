@@ -22,9 +22,9 @@ type Job = {
 
 declare global {
   // eslint-disable-next-line no-var
-  var __kanzenaiJobs: Map<string, Job> | undefined;
+  var __kanzenaiJobs: Map<string, unknown> | undefined;
 }
-const JOBS: Map<string, Job> = (globalThis.__kanzenaiJobs ??= new Map());
+const JOBS: Map<string, Job> = (globalThis.__kanzenaiJobs ??= new Map()) as Map<string, Job>;
 
 function devGuard() {
   if (process.env.NODE_ENV !== "development") {
