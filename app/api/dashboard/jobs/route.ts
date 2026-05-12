@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { spawn, ChildProcess } from "node:child_process";
 import { randomBytes } from "node:crypto";
 
-export const maxDuration = 900;
+export const maxDuration = 800;
 
 type JobStatus = "running" | "done" | "failed" | "killed";
 type JobType = "daily-articles" | "audit" | "followups" | "deploy";
