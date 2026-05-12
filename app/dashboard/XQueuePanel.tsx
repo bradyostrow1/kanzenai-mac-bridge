@@ -1,0 +1,227 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { Copy, Check, Trash2, ExternalLink, Twitter, RefreshCw } from "lucide-react";
+
+type QueueItem = {
+  slug: string;
+  title: string;
+  url: string;
+  category?: string;
+  tweetText: string;
+  replyText: string;
+  generatedAt: string;
+  status: "pending" | "copied" | "posted" | "discarded";
+};
+
+function timeAgo(iso: string): string {
+  const ms = Date.now() - Date.parse(iso);
+  const s = Math.round(ms / 1000);
+  if (s < 60) return `${s}s ago`;
+  const m = Math.round(s / 60);
+  if (m < 60) return `${m}m ago`;
+  const h = Math.round(m / 60);
+  if (h < 24) return `${h}h ago`;
+  return `${Math.round(h / 24)}d ago`;
+}
+
+export function XQueuePanel() {
+  const [items, setItems] = useState<QueueItem[]>([]);
+  const [copied, setCopied] = useState<string | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [showDiscarded, setShowDiscarded] = useState(false);
+
+  async function load() {
+    try {
+      const r = await fetch("/api/dashboard/x-queue", { cache: "no-store" });
+      const data = await r.json();
+      setItems(data.items ?? []);
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  useEffect(() => {
+    load();
+    const t = setInterval(load, 15_000);
+    return () => clearInterval(t);
+  }, []);
+
+  async function updateStatus(slug: string, status: QueueItem["status"]) {
+    await fetch("/api/dashboard/x-queue", {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ slug, status }),
+    });
+    load();
+  }
+
+  async function copy(text: string, key: string, status: QueueItem["status"] = "copied") {
+    await navigator.clipboard.writeText(text);
+    setCopied(key);
+    setTimeout(() => setCopied(null), 1500);
+    if (status) {
+      const item = items.find((i) => `${i.slug}-tweet` === key || `${i.slug}-reply` === key);
+      if (item && item.status === "pending") updateStatus(item.slug, "copied");
+    }
+  }
+
+  const visible = items.filter((i) => showDiscarded || i.status !== "discarded");
+  const pendingCount = items.filter((i) => i.status === "pending").length;
+
+  return (
+    <section className="border border-[#1f1f1f] bg-[#0d0d0d] mb-6">
+      <div className="px-4 py-2.5 border-b border-[#1f1f1f] flex items-center justify-between">
+        <span className="flex items-center gap-1.5 text-[10px] uppercase tracking-[0.18em] text-[#a3a3a3]">
+          <Twitter className="w-3.5 h-3.5" />
+          X tweet queue
+          {pendingCount > 0 && (
+            <span className="ml-2 px-1.5 py-0.5 bg-emerald-950 text-emerald-300 border border-emerald-900 text-[10px]">
+              {pendingCount} pending
+            </span>
+          )}
+        </span>
+        <div className="flex items-center gap-3 text-[10px] text-[#525252]">
+          <button
+            onClick={() => setShowDiscarded((v) => !v)}
+            className="hover:text-[#f0eee9] transition uppercase tracking-[0.18em]"
+          >
+            {showDiscarded ? "hide discarded" : "show discarded"}
+          </button>
+          <button onClick={load} className="hover:text-[#f0eee9] transition flex items-center gap-1">
+            <RefreshCw className="w-3 h-3" />
+            refresh
+          </button>
+        </div>
+      </div>
+
+      {loading ? (
+        <div className="p-6 text-[12px] text-[#525252]">loading queue…</div>
+      ) : visible.length === 0 ? (
+        <div className="p-6 text-[12px] text-[#525252]">
+          No tweets queued. Run <code className="text-amber-200">X_QUEUE_ONLY=1 npm run post-to-x -- --backlog 2</code> to seed.
+        </div>
+      ) : (
+        <div className="divide-y divide-[#1f1f1f]">
+          {visible.map((item) => {
+            const isCopiedMain = copied === `${item.slug}-tweet`;
+            const isCopiedReply = copied === `${item.slug}-reply`;
+            return (
+              <div
+                key={item.slug}
+                className={`p-4 ${
+                  item.status === "posted"
+                    ? "opacity-50"
+                    : item.status === "discarded"
+                      ? "opacity-30"
+                      : ""
+                }`}
+              >
+                <div className="flex items-start justify-between gap-3 mb-2">
+                  <div className="flex-1 min-w-0">
+                    <div className="text-[11px] uppercase tracking-[0.18em] text-[#525252] mb-1">
+                      {item.category ?? "—"} · {timeAgo(item.generatedAt)}
+                    </div>
+                    <a
+                      href={item.url}
+                      target="_blank"
+                      rel="noopener"
+                      className="text-[#f0eee9] hover:text-white text-[13px] truncate block"
+                    >
+                      {item.title}
+                      <ExternalLink className="inline w-3 h-3 ml-1 align-baseline text-[#525252]" />
+                    </a>
+                  </div>
+                  <span
+                    className={`text-[10px] uppercase tracking-[0.18em] px-2 py-0.5 border ${
+                      item.status === "pending"
+                        ? "border-emerald-800 text-emerald-300"
+                        : item.status === "copied"
+                          ? "border-amber-800 text-amber-300"
+                          : item.status === "posted"
+                            ? "border-[#262626] text-[#525252]"
+                            : "border-red-900 text-red-400"
+                    }`}
+                  >
+                    {item.status}
+                  </span>
+                </div>
+
+                {/* Main tweet */}
+                <div className="mb-3">
+                  <div className="text-[10px] uppercase tracking-[0.18em] text-[#525252] mb-1 flex justify-between">
+                    <span>Tweet ({item.tweetText.length} chars)</span>
+                  </div>
+                  <pre className="text-[12.5px] text-[#f0eee9] font-sans whitespace-pre-wrap leading-relaxed bg-[#0a0a0a] border border-[#1f1f1f] p-3">
+                    {item.tweetText}
+                  </pre>
+                  <button
+                    onClick={() => copy(item.tweetText, `${item.slug}-tweet`)}
+                    className="mt-1.5 inline-flex items-center gap-1.5 px-2.5 py-1 border border-[#262626] hover:border-[#525252] text-[11px] text-[#f0eee9] transition"
+                  >
+                    {isCopiedMain ? <Check className="w-3 h-3 text-emerald-400" /> : <Copy className="w-3 h-3" />}
+                    {isCopiedMain ? "copied" : "copy tweet"}
+                  </button>
+                </div>
+
+                {/* Reply tweet */}
+                <div className="mb-3">
+                  <div className="text-[10px] uppercase tracking-[0.18em] text-[#525252] mb-1">
+                    Reply (post this AS A REPLY to your own tweet)
+                  </div>
+                  <pre className="text-[12px] text-[#a3a3a3] font-sans whitespace-pre-wrap leading-relaxed bg-[#0a0a0a] border border-[#1f1f1f] p-2">
+                    {item.replyText}
+                  </pre>
+                  <button
+                    onClick={() => copy(item.replyText, `${item.slug}-reply`)}
+                    className="mt-1.5 inline-flex items-center gap-1.5 px-2.5 py-1 border border-[#262626] hover:border-[#525252] text-[11px] text-[#f0eee9] transition"
+                  >
+                    {isCopiedReply ? <Check className="w-3 h-3 text-emerald-400" /> : <Copy className="w-3 h-3" />}
+                    {isCopiedReply ? "copied" : "copy reply"}
+                  </button>
+                </div>
+
+                {/* Status controls */}
+                <div className="flex gap-2 text-[11px]">
+                  <a
+                    href="https://x.com/compose/post"
+                    target="_blank"
+                    rel="noopener"
+                    className="inline-flex items-center gap-1.5 px-2.5 py-1 border border-[#262626] hover:border-emerald-700 hover:bg-emerald-950/20 text-[#f0eee9] transition"
+                  >
+                    open x.com compose ↗
+                  </a>
+                  {item.status !== "posted" && (
+                    <button
+                      onClick={() => updateStatus(item.slug, "posted")}
+                      className="px-2.5 py-1 border border-[#262626] hover:border-emerald-700 text-emerald-400 transition"
+                    >
+                      mark posted
+                    </button>
+                  )}
+                  {item.status !== "discarded" && (
+                    <button
+                      onClick={() => updateStatus(item.slug, "discarded")}
+                      className="ml-auto inline-flex items-center gap-1.5 px-2.5 py-1 border border-[#262626] hover:border-red-700 hover:text-red-300 text-[#a3a3a3] transition"
+                    >
+                      <Trash2 className="w-3 h-3" />
+                      discard
+                    </button>
+                  )}
+                  {item.status === "discarded" && (
+                    <button
+                      onClick={() => updateStatus(item.slug, "pending")}
+                      className="ml-auto px-2.5 py-1 border border-[#262626] hover:border-emerald-700 text-emerald-400 transition"
+                    >
+                      restore
+                    </button>
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
+    </section>
+  );
+}

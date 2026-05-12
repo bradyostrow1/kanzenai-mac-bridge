@@ -5,7 +5,7 @@ import { randomBytes } from "node:crypto";
 export const maxDuration = 800;
 
 type JobStatus = "running" | "done" | "failed" | "killed";
-type JobType = "daily-articles" | "audit" | "followups" | "deploy";
+type JobType = "daily-articles" | "audit" | "followups" | "deploy" | "x-analytics" | "x-monitor";
 
 type Job = {
   id: string;
@@ -43,6 +43,10 @@ function jobSpec(type: JobType, opts: { count?: number }): { cmd: string; args: 
       return { cmd: "npm", args: ["run", "followups"] };
     case "deploy":
       return { cmd: "npx", args: ["vercel", "deploy", "--prod", "--yes"] };
+    case "x-analytics":
+      return { cmd: "npm", args: ["run", "x-analytics"] };
+    case "x-monitor":
+      return { cmd: "npm", args: ["run", "find-x-replies"] };
   }
 }
 
@@ -56,8 +60,8 @@ export async function POST(req: Request) {
 
   const body = await req.json().catch(() => ({}));
   const type: JobType = body.type;
-  if (!["daily-articles", "audit", "followups", "deploy"].includes(type)) {
-    return NextResponse.json({ error: "type must be daily-articles | audit | followups | deploy" }, { status: 400 });
+  if (!["daily-articles", "audit", "followups", "deploy", "x-analytics", "x-monitor"].includes(type)) {
+    return NextResponse.json({ error: "type must be daily-articles | audit | followups | deploy | x-analytics | x-monitor" }, { status: 400 });
   }
 
   // Reject if a job of the same type is already running

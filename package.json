@@ -13,14 +13,20 @@
     "dedup-images": "node --import tsx scripts/dedup-images.ts",
     "convert-go-links": "node --import tsx scripts/convert-to-go-links.ts",
     "rotate": "node --import tsx scripts/rotate-affiliate-codes.ts",
-    "auto-write": "node --import tsx scripts/daily-auto-write.ts",
-    "followups": "node --import tsx scripts/send-followups.ts"
+    "auto-write": "node --import tsx scripts/daily-auto-write.ts && node --import tsx scripts/post-to-x.ts",
+    "followups": "node --import tsx scripts/send-followups.ts",
+    "post-to-x": "node --import tsx scripts/post-to-x.ts",
+    "find-x-replies": "node --import tsx scripts/find-x-replies.ts",
+    "x-analytics": "node --import tsx scripts/x-analytics.ts",
+    "find-x-replies-search": "node --import tsx scripts/find-x-replies-search.ts"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "lucide-react": "0.468.0",
     "next": "14.2.18",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "twitter-api-v2": "^1.29.0"
   },
   "devDependencies": {
     "@tailwindcss/typography": "0.5.15",

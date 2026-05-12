@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  KanzenAI X reply monitor.
+
+  Polls TARGET_ACCOUNTS in lib/x-targets.ts every 30 minutes, drafts replies
+  via Claude when keywords match, queues them on the dashboard for one-click
+  approval.
+
+  Install:
+    cp ~/Code/kanzenai/scripts/com.kanzenai.x-monitor.plist ~/Library/LaunchAgents/
+    launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.kanzenai.x-monitor.plist
+
+  Logs: ~/Code/kanzenai/.audit/x-monitor-YYYY-MM-DD.log
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.kanzenai.x-monitor</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>-c</string>
+        <string>cd $HOME/Code/kanzenai &amp;&amp; mkdir -p .audit &amp;&amp; npm run find-x-replies &gt;&gt; ".audit/x-monitor-$(date +%Y-%m-%d).log" 2&gt;&amp;1</string>
+    </array>
+
+    <!-- Run every 30 minutes -->
+    <key>StartInterval</key>
+    <integer>1800</integer>
+
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+        <key>HOME</key>
+        <string>/Users/bradyostrow</string>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/com.kanzenai.x-monitor.out</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/com.kanzenai.x-monitor.err</string>
+</dict>
+</plist>

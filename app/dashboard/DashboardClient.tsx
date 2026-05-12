@@ -1,12 +1,15 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
-import { Activity, FileText, GitCompare, AlertTriangle, RotateCw, Bot, ExternalLink, Play, Settings2, Shield, Edit3, Heart, MessageSquare, ArrowDown, MousePointerClick } from "lucide-react";
+import { Activity, FileText, GitCompare, AlertTriangle, RotateCw, Bot, ExternalLink, Play, Settings2, Shield, Edit3, Heart, MessageSquare, ArrowDown, MousePointerClick, User, ChevronDown, ChevronRight } from "lucide-react";
 import { ChatPanel } from "./ChatPanel";
 import { OutreachPanel } from "./OutreachPanel";
 import { ClickChart } from "./ClickChart";
 import { LiveJobPanel } from "./LiveJobPanel";
 import { DetailModal } from "./DetailModal";
+import { XQueuePanel } from "./XQueuePanel";
+import { XReplyQueuePanel } from "./XReplyQueuePanel";
+import { XHistoryPanel } from "./XHistoryPanel";
 
 type Stats = {
   articles: {
@@ -108,8 +111,15 @@ export function DashboardClient() {
       </header>
 
       <main className="max-w-[1600px] mx-auto p-6">
-        {/* TOP METRICS STRIP */}
+        {/* TOP METRICS STRIP — the 5 numbers worth knowing at a glance */}
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 mb-6">
+          <MetricCard
+            icon={<User className="w-3.5 h-3.5" />}
+            label="Site visitors"
+            value="Vercel ↗"
+            sub="click → live visitor count"
+            onClick={() => window.open("https://vercel.com/bradyostrow1s-projects/kanzenai/analytics", "_blank")}
+          />
           <MetricCard
             icon={<Edit3 className="w-3.5 h-3.5" />}
             label="Posted today"
@@ -117,8 +127,8 @@ export function DashboardClient() {
             sub={
               stats
                 ? stats.writer.writtenToday > 0
-                  ? `latest: ${stats.writer.todaySlugs[0]?.slice(0, 32) ?? ""}${(stats.writer.todaySlugs[0]?.length ?? 0) > 32 ? "…" : ""}`
-                  : "nothing posted yet today"
+                  ? `${stats.writer.writtenThisWeek} this week`
+                  : "nothing posted yet"
                 : "loading…"
             }
             tone={stats && stats.writer.writtenToday > 0 ? "ok" : "neutral"}
@@ -129,7 +139,7 @@ export function DashboardClient() {
             icon={<Activity className="w-3.5 h-3.5" />}
             label="Production"
             value={stats?.production.ok ? "Live" : stats ? "Down" : "—"}
-            sub={stats ? `${stats.production.ms}ms · ${stats.production.status}` : "checking…"}
+            sub={stats ? `${stats.production.ms}ms · HTTP ${stats.production.status}` : "checking…"}
             tone={stats?.production.ok ? "ok" : stats ? "err" : "neutral"}
             pulse={stats?.production.ok}
             onClick={() => setDetail("production")}
@@ -137,20 +147,13 @@ export function DashboardClient() {
           <MetricCard
             icon={<FileText className="w-3.5 h-3.5" />}
             label="Articles total"
-            value={stats ? stats.articles.count.toString() : "—"}
+            value={stats ? (stats.articles.count + stats.comparisons.count).toString() : "—"}
             sub={
               stats
-                ? `${stats.articles.totalWords.toLocaleString()} words · +${stats.writer.writtenThisWeek} this week`
+                ? `${stats.articles.totalWords.toLocaleString()} words · ${stats.comparisons.count} comparisons`
                 : ""
             }
             onClick={() => setDetail("articles")}
-          />
-          <MetricCard
-            icon={<GitCompare className="w-3.5 h-3.5" />}
-            label="Comparisons"
-            value={stats ? stats.comparisons.count.toString() : "—"}
-            sub="head-to-head"
-            onClick={() => setDetail("comparisons")}
           />
           <MetricCard
             icon={<AlertTriangle className="w-3.5 h-3.5" />}
@@ -173,116 +176,41 @@ export function DashboardClient() {
           </DetailModal>
         )}
 
-        {/* BOT SYSTEM */}
+        {/* OPERATIONS — bot cron status + manual job runner */}
+        <SectionLabel>Operations</SectionLabel>
         <BotSystemPanel stats={stats} />
-
-        {/* LIVE JOB CONTROL */}
         <LiveJobPanel onJobComplete={loadStats} />
 
-        {/* CLICK PERFORMANCE */}
-        <ClickChart />
+        {/* X COMMAND CENTER */}
+        <SectionLabel>X · @KanzenOfficial</SectionLabel>
+        <XHistoryPanel />
+        <XReplyQueuePanel />
+        <CollapsibleSection title="X tweet queue (article-driven posts)" defaultOpen={false}>
+          <XQueuePanel />
+        </CollapsibleSection>
 
-        {/* VENDOR OUTREACH */}
-        <OutreachPanel />
+        {/* CHAT */}
+        <SectionLabel>Chat with Kanzen</SectionLabel>
+        <section className="border border-[#1f1f1f] bg-[#0d0d0d] h-[640px] flex flex-col mb-6">
+          <ChatPanel onActionComplete={loadStats} />
+        </section>
 
-        {/* MAIN: chat (left) + side rail (right) */}
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-6 mb-6">
-          {/* CHAT PANEL */}
-          <section className="border border-[#1f1f1f] bg-[#0d0d0d] h-[640px] flex flex-col">
-            <ChatPanel onActionComplete={loadStats} />
-          </section>
+        {/* GROWTH — collapsed by default */}
+        <SectionLabel>Growth (click for detail)</SectionLabel>
+        <CollapsibleSection title="Affiliate click chart" defaultOpen={false}>
+          <ClickChart />
+        </CollapsibleSection>
+        <CollapsibleSection title="Vendor outreach status" defaultOpen={false}>
+          <OutreachPanel />
+        </CollapsibleSection>
 
-          {/* SIDE RAIL */}
-          <aside className="space-y-3">
-            <Panel
-              icon={<Play className="w-3.5 h-3.5" />}
-              title="Quick actions"
-            >
-              <QuickLink href="https://kanzenai.com" target="_blank">
-                Open kanzenai.com
-              </QuickLink>
-              <QuickLink href="https://vercel.com/bradyostrow1s-projects/kanzenai" target="_blank">
-                Vercel project
-              </QuickLink>
-              <QuickLink href="https://search.google.com/search-console" target="_blank">
-                Search Console
-              </QuickLink>
-              <QuickLink href="/articles" target="_blank">
-                Browse live articles
-              </QuickLink>
-            </Panel>
-
-            <Panel
-              icon={<Settings2 className="w-3.5 h-3.5" />}
-              title="Install daily bots"
-              collapsed
-            >
-              <div className="text-[11px] text-[#a3a3a3] leading-relaxed">
-                One-time setup to run audits + health checks 24/7:
-              </div>
-              <pre className="mt-2 p-2 bg-[#0a0a0a] border border-[#262626] text-[10px] text-[#f0eee9] overflow-x-auto leading-relaxed">
-{`cp scripts/com.kanzenai.audit.plist \\
-   ~/Library/LaunchAgents/
-cp scripts/com.kanzenai.healthcheck.plist \\
-   ~/Library/LaunchAgents/
-launchctl load -w \\
-  ~/Library/LaunchAgents/com.kanzenai.audit.plist
-launchctl load -w \\
-  ~/Library/LaunchAgents/com.kanzenai.healthcheck.plist`}
-              </pre>
-            </Panel>
-          </aside>
-        </div>
-
-        {/* CONTENT GRID */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-3">
-          <div className="lg:col-span-2 border border-[#1f1f1f] bg-[#0d0d0d]">
-            <PanelHeader title={`Articles · ${stats?.articles.count ?? "—"}`} />
-            <div className="divide-y divide-[#1f1f1f]">
-              {stats?.articles.list.slice(0, 8).map((a) => (
-                <a
-                  key={a.slug}
-                  href={`/articles/${a.slug}`}
-                  target="_blank"
-                  rel="noopener"
-                  className="flex items-center gap-3 px-4 py-3 hover:bg-[#171717] transition group"
-                >
-                  {a.headerImage && (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img src={a.headerImage} alt="" className="w-10 h-10 object-cover rounded-sm" />
-                  )}
-                  <div className="flex-1 min-w-0">
-                    <div className="text-[#f0eee9] truncate text-[13px] group-hover:text-white">
-                      {a.title}
-                    </div>
-                    <div className="text-[10px] text-[#525252] uppercase tracking-wider mt-0.5">
-                      {a.category} · {a.readMinutes} min · {a.publishedAt}
-                    </div>
-                  </div>
-                  <ExternalLink className="w-3 h-3 text-[#525252] group-hover:text-[#f0eee9]" />
-                </a>
-              ))}
-            </div>
-          </div>
-          <div className="border border-[#1f1f1f] bg-[#0d0d0d]">
-            <PanelHeader title={`Comparisons · ${stats?.comparisons.count ?? "—"}`} />
-            <div className="divide-y divide-[#1f1f1f]">
-              {stats?.comparisons.list.map((c) => (
-                <a
-                  key={c.slug}
-                  href={`/compare/${c.slug}`}
-                  target="_blank"
-                  rel="noopener"
-                  className="block px-4 py-3 hover:bg-[#171717] transition group"
-                >
-                  <div className="text-[#f0eee9] text-[13px] group-hover:text-white">{c.title}</div>
-                  <div className="text-[10px] text-[#525252] uppercase tracking-wider mt-0.5">
-                    {c.publishedAt}
-                  </div>
-                </a>
-              ))}
-            </div>
-          </div>
+        {/* QUICK LINKS — small footer-style row */}
+        <div className="flex flex-wrap gap-2 mt-6 mb-2 text-[11px]">
+          <QuickPill href="https://kanzenai.com">Open kanzenai.com ↗</QuickPill>
+          <QuickPill href="https://x.com/KanzenOfficial">@KanzenOfficial ↗</QuickPill>
+          <QuickPill href="https://vercel.com/bradyostrow1s-projects/kanzenai">Vercel project ↗</QuickPill>
+          <QuickPill href="https://vercel.com/bradyostrow1s-projects/kanzenai/analytics">Vercel analytics ↗</QuickPill>
+          <QuickPill href="https://search.google.com/search-console">Search Console ↗</QuickPill>
         </div>
 
         <div className="mt-10 text-[10px] text-[#3d3d3d] text-center uppercase tracking-[0.2em]">
@@ -679,6 +607,51 @@ function BotRow({ name, schedule, active, detail }: { name: string; schedule: st
       </div>
       <div className="text-[10px] text-[#525252]">{schedule}</div>
     </div>
+  );
+}
+
+function SectionLabel({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="text-[10px] uppercase tracking-[0.22em] text-[#525252] mb-2 mt-6 first:mt-0">
+      {children}
+    </div>
+  );
+}
+
+function CollapsibleSection({
+  title,
+  defaultOpen = true,
+  children,
+}: {
+  title: string;
+  defaultOpen?: boolean;
+  children: React.ReactNode;
+}) {
+  const [open, setOpen] = useState(defaultOpen);
+  return (
+    <div className="mb-6">
+      <button
+        onClick={() => setOpen((v) => !v)}
+        className="w-full flex items-center gap-2 px-4 py-2.5 border border-[#1f1f1f] bg-[#0d0d0d] hover:bg-[#0f0f0f] text-[11px] uppercase tracking-[0.18em] text-[#a3a3a3] hover:text-[#f0eee9] transition"
+      >
+        {open ? <ChevronDown className="w-3.5 h-3.5" /> : <ChevronRight className="w-3.5 h-3.5" />}
+        {title}
+      </button>
+      {open && <div className="mt-0">{children}</div>}
+    </div>
+  );
+}
+
+function QuickPill({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener"
+      className="px-2.5 py-1 border border-[#262626] hover:border-[#525252] text-[#a3a3a3] hover:text-[#f0eee9] transition"
+    >
+      {children}
+    </a>
   );
 }
 

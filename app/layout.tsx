@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { ReactNode } from "react";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
   metadataBase: new URL("https://kanzenai.com"),
@@ -25,7 +26,10 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="font-sans text-ink-0 bg-bg-0 antialiased">{children}</body>
+      <body className="font-sans text-ink-0 bg-bg-0 antialiased">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

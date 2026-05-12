@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Play, Square, Loader2, CheckCircle2, XCircle, Radio, ChevronDown, ChevronRight } from "lucide-react";
 
-type JobType = "daily-articles" | "audit" | "followups" | "deploy";
+type JobType = "daily-articles" | "audit" | "followups" | "deploy" | "x-analytics" | "x-monitor";
 type JobStatus = "running" | "done" | "failed" | "killed";
 
 type Topic = {
@@ -33,10 +33,12 @@ type JobDetail = {
 };
 
 const ACTIONS: Array<{ type: JobType; label: string; hint: string; estimate: string }> = [
-  { type: "daily-articles", label: "Daily articles", hint: "Auto-write 3 new articles (Claude picks topics)", estimate: "~3-5 min" },
-  { type: "audit", label: "Audit", hint: "11 site checks: content + production health", estimate: "~10s" },
+  { type: "daily-articles", label: "Daily articles", hint: "Auto-write 3 articles + auto-tweet each", estimate: "~3-5 min" },
+  { type: "audit", label: "Audit", hint: "11 site checks: content + production", estimate: "~10s" },
   { type: "followups", label: "Vendor follow-ups", hint: "Chase outreach emails >= 7 days old", estimate: "~5s" },
   { type: "deploy", label: "Deploy", hint: "Push current state live to kanzenai.com", estimate: "~45s" },
+  { type: "x-monitor", label: "X reply monitor", hint: "Poll target accounts, draft replies to queue", estimate: "~30s" },
+  { type: "x-analytics", label: "X analytics", hint: "Refresh impressions/likes/clicks for all tweets", estimate: "~5s" },
 ];
 
 function formatDuration(ms: number): string {

@@ -15,7 +15,7 @@
  *
  * Designed to be called from the daily-auto-write job after articles publish.
  */
-import { createHmac, randomBytes } from "node:crypto";
+import { TwitterApi } from "twitter-api-v2";
 import { readdir, readFile, appendFile, mkdir } from "node:fs/promises";
 import { join } from "node:path";
 import { existsSync, readFileSync } from "node:fs";
@@ -25,6 +25,7 @@ const ARTICLES_DIR = join(ROOT, "content", "articles");
 const COMPARISONS_DIR = join(ROOT, "content", "comparisons");
 const AUDIT_DIR = join(ROOT, ".audit");
 const LOG_PATH = join(AUDIT_DIR, "x-posts.log");
+const QUEUE_PATH = join(AUDIT_DIR, "x-queue.json");
 const SITE_URL = "https://kanzenai.com";
 
 // ─── env loader ────────────────────────────────────────────────────────────
@@ -73,6 +74,7 @@ function parseArgs() {
 }
 const args = parseArgs();
 const DRY_RUN = args["dry-run"] === true;
+const QUEUE_ONLY = args["queue"] === true || process.env.X_QUEUE_ONLY === "1"; // queue instead of posting
 const BACKLOG_DAYS = typeof args["backlog"] === "string" ? Number(args["backlog"]) : 0;
 const SLUG_FILTER = typeof args["slug"] === "string" ? args["slug"] : null;
 
@@ -119,6 +121,36 @@ async function alreadyPosted(slug: string): Promise<boolean> {
       return false;
     }
   });
+}
+
+type QueueItem = {
+  slug: string;
+  title: string;
+  url: string;
+  category?: string;
+  tweetText: string;
+  replyText: string;
+  generatedAt: string;
+  status: "pending" | "copied" | "posted" | "discarded";
+};
+
+async function loadQueue(): Promise<QueueItem[]> {
+  if (!existsSync(QUEUE_PATH)) return [];
+  try {
+    return JSON.parse(await readFile(QUEUE_PATH, "utf8")) as QueueItem[];
+  } catch {
+    return [];
+  }
+}
+
+async function saveQueue(items: QueueItem[]) {
+  const { writeFile } = await import("node:fs/promises");
+  await writeFile(QUEUE_PATH, JSON.stringify(items, null, 2));
+}
+
+async function alreadyQueued(slug: string): Promise<boolean> {
+  const q = await loadQueue();
+  return q.some((i) => i.slug === slug && i.status !== "discarded");
 }
 
 // ─── Claude tweet writer ───────────────────────────────────────────────────
@@ -223,58 +255,18 @@ Write the perfect X post for this article. Output the tweet text only, no preamb
   return text.replace(/^["']|["']$/g, "").trim();
 }
 
-// ─── OAuth 1.0a signing ────────────────────────────────────────────────────
-function percentEncode(s: string): string {
-  return encodeURIComponent(s).replace(/[!*'()]/g, (c) => `%${c.charCodeAt(0).toString(16).toUpperCase()}`);
-}
-
-function oauthHeader(method: string, url: string, params: Record<string, string> = {}): string {
-  const oauth: Record<string, string> = {
-    oauth_consumer_key: X_CONSUMER_KEY!,
-    oauth_nonce: randomBytes(16).toString("hex"),
-    oauth_signature_method: "HMAC-SHA1",
-    oauth_timestamp: Math.floor(Date.now() / 1000).toString(),
-    oauth_token: X_ACCESS_TOKEN!,
-    oauth_version: "1.0",
-  };
-
-  const allParams = { ...oauth, ...params };
-  const paramStr = Object.keys(allParams)
-    .sort()
-    .map((k) => `${percentEncode(k)}=${percentEncode(allParams[k])}`)
-    .join("&");
-
-  const signatureBase = `${method.toUpperCase()}&${percentEncode(url)}&${percentEncode(paramStr)}`;
-  const signingKey = `${percentEncode(X_CONSUMER_SECRET!)}&${percentEncode(X_ACCESS_TOKEN_SECRET!)}`;
-  const signature = createHmac("sha1", signingKey).update(signatureBase).digest("base64");
-
-  oauth.oauth_signature = signature;
-
-  return (
-    "OAuth " +
-    Object.keys(oauth)
-      .sort()
-      .map((k) => `${percentEncode(k)}="${percentEncode(oauth[k])}"`)
-      .join(", ")
-  );
-}
+// ─── X client (twitter-api-v2 library, OAuth 1.0a User Context) ────────────
+const twitter = new TwitterApi({
+  appKey: X_CONSUMER_KEY!,
+  appSecret: X_CONSUMER_SECRET!,
+  accessToken: X_ACCESS_TOKEN!,
+  accessSecret: X_ACCESS_TOKEN_SECRET!,
+});
 
 async function postTweet(text: string, replyToId?: string): Promise<{ id: string; text: string }> {
-  const url = "https://api.twitter.com/2/tweets";
-  const body: { text: string; reply?: { in_reply_to_tweet_id: string } } = { text };
-  if (replyToId) body.reply = { in_reply_to_tweet_id: replyToId };
-
-  const auth = oauthHeader("POST", url);
-  const resp = await fetch(url, {
-    method: "POST",
-    headers: { Authorization: auth, "Content-Type": "application/json" },
-    body: JSON.stringify(body),
-  });
-  const data = await resp.json();
-  if (!resp.ok) {
-    throw new Error(`X API ${resp.status}: ${JSON.stringify(data).slice(0, 500)}`);
-  }
-  return { id: data.data.id, text: data.data.text };
+  const opts = replyToId ? { reply: { in_reply_to_tweet_id: replyToId } } : {};
+  const r = await twitter.v2.tweet(text, opts);
+  return { id: r.data.id, text: r.data.text };
 }
 
 // ─── selection logic ───────────────────────────────────────────────────────
@@ -319,7 +311,12 @@ async function main() {
   console.log(`→ ${candidates.length} candidate(s) for X posting`);
 
   for (const article of candidates) {
-    if (await alreadyPosted(article.slug)) {
+    if (QUEUE_ONLY) {
+      if (await alreadyQueued(article.slug)) {
+        console.log(`  · skip ${article.slug} (already in queue)`);
+        continue;
+      }
+    } else if (await alreadyPosted(article.slug)) {
       console.log(`  · skip ${article.slug} (already posted)`);
       continue;
     }
@@ -338,22 +335,40 @@ async function main() {
       tweetText = tweetText.slice(0, 267) + "…";
     }
 
+    const replyText = `Full breakdown → ${article.url}`;
+
     console.log("─── Tweet preview ───");
     console.log(tweetText);
     console.log("─── Reply preview ───");
-    console.log(`Full breakdown → ${article.url}`);
+    console.log(replyText);
     console.log("─────────────────────");
 
     if (DRY_RUN) {
-      console.log("  · DRY RUN — not posting");
+      console.log("  · DRY RUN — not saving");
+      continue;
+    }
+
+    if (QUEUE_ONLY) {
+      const q = await loadQueue();
+      q.unshift({
+        slug: article.slug,
+        title: article.title,
+        url: article.url,
+        category: article.category,
+        tweetText,
+        replyText,
+        generatedAt: new Date().toISOString(),
+        status: "pending",
+      });
+      await saveQueue(q);
+      console.log(`  ✓ Queued for manual posting (dashboard)`);
       continue;
     }
 
     try {
       const main = await postTweet(tweetText);
       console.log(`  ✓ Main tweet posted: https://x.com/i/web/status/${main.id}`);
-      // Reply with the link
-      const reply = await postTweet(`Full breakdown → ${article.url}`, main.id);
+      const reply = await postTweet(replyText, main.id);
       console.log(`  ✓ Reply (link) posted: https://x.com/i/web/status/${reply.id}`);
 
       await appendFile(
@@ -367,10 +382,21 @@ async function main() {
         }) + "\n",
       );
     } catch (e) {
-      console.error(`  ✗ X post failed: ${(e as Error).message}`);
+      console.error(`  ✗ X post failed: ${(e as Error).message} — falling back to queue`);
+      const q = await loadQueue();
+      q.unshift({
+        slug: article.slug,
+        title: article.title,
+        url: article.url,
+        category: article.category,
+        tweetText,
+        replyText,
+        generatedAt: new Date().toISOString(),
+        status: "pending",
+      });
+      await saveQueue(q);
     }
 
-    // Brief gap between articles so we don't hammer the API
     await new Promise((r) => setTimeout(r, 2000));
   }
 }
