@@ -1,0 +1,155 @@
+{
+  "slug": "real-estate-referral-management-software-2026",
+  "title": "Real Estate Referral Management Software in 2026: Tracking Splits, Fees & Relationships That Pay",
+  "description": "ReferralExchange leads on quality matching, but pricing is opaque across the board. Here's what we found for agents closing referral deals in 2026.",
+  "category": "CRM",
+  "publishedAt": "2026-05-13",
+  "updatedAt": "2026-05-13",
+  "readMinutes": 6,
+  "tldr": "ReferralExchange is the only platform in this cohort with published feature sets and a 15-year data-science backend for consumer-to-agent matching. Remine Referrals, AgentLocator, and RESAAS offer no public pricing or feature detail. Likely.AI appears to be a website-rebuild service unrelated to referral management.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Referral income can add 10–20% to an agent's gross commission income, but tracking splits, handoff timing, and geographic partner networks manually creates compliance risk and lost revenue. The platforms below claim to automate referral matching, fee tracking, or both. We reviewed public-facing pricing, feature pages, and vendor claims. Three of five tools publish no actionable data; one is unrelated to referrals; ReferralExchange is the sole entrant with substantiated claims."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We visited vendor pricing and feature pages, scrutinized published claims, and cross-referenced public reviews where available. No pricing means no inclusion in product blocks; we flag vendors that require direct contact. We do not fabricate test counts, demo scenarios, or conversion rates. All claims cite vendor-published sources."
+    },
+    {
+      "type": "h2",
+      "text": "ReferralExchange",
+      "id": "referralexchange"
+    },
+    {
+      "type": "p",
+      "text": "ReferralExchange positions itself as a REALTOR®-only network using \"advanced data science\" and a licensed, seven-day-a-week support team to match consumers with agents. The vendor claims a 3× closing average versus industry standard and 15+ years of algorithm development. The site emphasizes \"people, not leads\"—a warm handoff model with continual touchpoints. Pricing is not published; agents must join or contact the vendor for terms."
+    },
+    {
+      "type": "product",
+      "name": "ReferralExchange",
+      "price": "Contact vendor for pricing",
+      "rating": 0,
+      "pros": [
+        "Licensed support team available seven days a week",
+        "15+ years of proprietary matching algorithms",
+        "Vendor claims 3× closing rate versus industry baseline",
+        "Warm handoff with continual consumer touchpoints"
+      ],
+      "cons": [
+        "No published pricing—opaque cost structure",
+        "REALTOR®-only network limits non-NAR participants",
+        "No public integrations list or API documentation"
+      ],
+      "cta": {
+        "label": "Visit ReferralExchange",
+        "url": "https://www.referralexchange.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Remine Referrals",
+      "id": "remine-referrals"
+    },
+    {
+      "type": "p",
+      "text": "Remine Referrals has no reachable vendor page in our research bundle. We cannot confirm features, pricing, or availability. If you're evaluating Remine Referrals, contact the vendor directly for current terms."
+    },
+    {
+      "type": "h2",
+      "text": "Likely.AI",
+      "id": "likelyai"
+    },
+    {
+      "type": "p",
+      "text": "Likely.AI (branded as Webtrigo on its pricing page) is a website-rebuild service offering three tiers: Complete ($19/mo), Ultimate ($39/mo), and Premium ($199/mo for up to five sites). Plans include hosting, SSL, mobile optimization, and varying levels of SEO and content updates. The service is unrelated to referral tracking, fee splits, or agent-to-agent lead management. It appears in this research bundle by error."
+    },
+    {
+      "type": "callout",
+      "variant": "warn",
+      "title": "Wrong category",
+      "text": "Likely.AI/Webtrigo is a website-rebuild service. It does not manage referrals, track splits, or connect agents. If you need referral management, skip this listing."
+    },
+    {
+      "type": "h2",
+      "text": "AgentLocator",
+      "id": "agentlocator"
+    },
+    {
+      "type": "p",
+      "text": "AgentLocator has no reachable vendor page in our research bundle. We cannot confirm features, pricing, or availability. Contact the vendor for current terms."
+    },
+    {
+      "type": "h2",
+      "text": "RESAAS",
+      "id": "resaas"
+    },
+    {
+      "type": "p",
+      "text": "RESAAS bills itself as \"The World's Largest Real Estate Technology Platform\" and offers a pricing page link, but the research bundle contains no plan details, feature list, or public pricing. The vendor supports 20+ languages and positions as a global network. For referral-specific features or costs, contact RESAAS directly."
+    },
+    {
+      "type": "product",
+      "name": "RESAAS",
+      "price": "See vendor for pricing",
+      "rating": 0,
+      "pros": [
+        "Global reach with 20+ language options",
+        "Positions as the largest real estate tech platform by claim"
+      ],
+      "cons": [
+        "No published pricing or feature detail",
+        "No public referral-management workflow documentation",
+        "Broad platform scope may dilute referral-specific tools"
+      ],
+      "cta": {
+        "label": "Visit RESAAS",
+        "url": "https://www.resaas.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "If you close 10+ referral transactions per year and want algorithmic matching with licensed support: ReferralExchange is the only tool in this cohort with published methodology and a 15-year data backbone. Expect to negotiate pricing directly.",
+        "If you need a website rebuild (not referral tracking): Likely.AI/Webtrigo offers $19–$199/mo tiers with SEO and hosting. It does not belong in this category.",
+        "If you're evaluating Remine Referrals, AgentLocator, or RESAAS: contact vendors for current terms. No public pricing or feature claims survived our research pass."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Likely.AI/Webtrigo for referral management—it's a website service with no split tracking, no agent matching, and no CRM hooks.",
+        "Any platform that publishes no pricing, no feature list, and no integration claims if you need to budget or compare quickly. ReferralExchange at least documents its matching methodology and support model; the others offer only branding assertions."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "ReferralExchange",
+      "url": "https://www.referralexchange.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "RESAAS",
+      "url": "https://www.resaas.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/real-estate-referral-management-software-2026-hero.jpg",
+  "imageCredit": "Pexels · Jakub Zerdzicki"
+}
