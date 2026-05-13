@@ -1,0 +1,161 @@
+{
+  "slug": "real-estate-cma-software-cloud-reports-vs-presentation-builders",
+  "title": "Real Estate Comparative Market Analysis (CMA) Software in 2026: Cloud Reports vs Presentation Builders",
+  "description": "Cloud CMA vs HouseCanary vs Remine for real estate agents—pricing, live presentations, and predictive analytics compared.",
+  "category": "Marketing",
+  "publishedAt": "2026-05-13",
+  "updatedAt": "2026-05-13",
+  "readMinutes": 6,
+  "tldr": "Cloud CMA dominates interactive listing presentations with live MLS data and print-quality reports. HouseCanary serves agents needing AVM-heavy valuation reports at scale ($190–$790/year). Remine focuses on predictive analytics and prospecting over presentation polish.",
+  "body": [
+    {
+      "type": "p",
+      "text": "CMA software splits into two camps: presentation builders that win listings with interactive slides and branded reports, and data platforms that deliver automated valuations and lead scores. Cloud CMA owns the first category with live-presentation mode and print/digital hybrid output. HouseCanary and Remine lean on predictive analytics and AVMs but lack the polish agents need in face-to-face listing appointments. RPR and Homespotter Pricing offered no accessible pricing or feature detail for this review."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed vendor pricing pages, feature lists, and published user testimonials. Cloud CMA provided specific pricing tiers via partner MLSs. HouseCanary publishes transparent SaaS pricing at $190–$1,990/year. Remine's site describes features but omits pricing; contact vendor for quote. RPR and Homespotter Pricing pages were unreachable; both are flagged for manual follow-up."
+    },
+    {
+      "type": "h2",
+      "text": "Cloud CMA",
+      "id": "cloud-cma"
+    },
+    {
+      "type": "p",
+      "text": "Cloud CMA markets itself as a listing-presentation tool: live-data interactive mode, telestrator marker for screen annotations, and print-quality PDF reports. Vendor testimonials cite \"most professional CMA ever seen\" (Melissa Galvan, Red Owl Real Estate) and \"clients thought I was a genius\" (Eileen Lacerte, Better Homes and Gardens). The product emphasizes hybrid delivery—digital for video calls, print for in-person meetings—and mobile-responsive output. Pricing is typically bundled with MLS membership; standalone pricing is not published. The platform integrates live MLS feeds and optimizes for Zoom/video conferencing workflows."
+    },
+    {
+      "type": "product",
+      "name": "Cloud CMA",
+      "price": "Included with many MLS memberships; standalone pricing unpublished—contact vendor",
+      "rating": 0,
+      "pros": [
+        "Live interactive mode with telestrator for video presentations",
+        "Print-quality PDF reports for in-person meetings",
+        "Mobile-responsive for client self-service",
+        "MLS live-data integration"
+      ],
+      "cons": [
+        "Pricing not transparent for non-MLS subscribers",
+        "No published AVM or predictive analytics features",
+        "Feature set narrowly focused on listing presentations"
+      ],
+      "cta": {
+        "label": "Try Cloud CMA Free",
+        "url": "https://www.cloudcma.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "HouseCanary",
+      "id": "housecanary"
+    },
+    {
+      "type": "p",
+      "text": "HouseCanary sells AVM-driven valuation reports and API access. The Basic plan ($190/year or $19/month) includes 2 custom valuation reports/month and CanaryAI generative assistant. Pro ($790/year or $79/month) adds 15 custom valuations, 15 AVM PDFs, and API access. Teams ($1,990/year or $199/month) supports 10 users, 40 valuations, 40 AVM PDFs, and 50-property monitoring. All plans include nationwide brokerage services and SOC2 reports by request. The platform targets agents needing automated valuations at scale rather than interactive client-facing presentations."
+    },
+    {
+      "type": "product",
+      "name": "HouseCanary",
+      "price": "$190/year Basic (2 valuations/mo), $790/year Pro (15 valuations + API), $1,990/year Teams (10 users, 40 valuations)",
+      "rating": 0,
+      "pros": [
+        "Transparent SaaS pricing with monthly and annual options",
+        "AVM PDF reports included at Pro and Teams tiers",
+        "API access for scalable data workflows",
+        "CanaryAI generative assistant on all plans"
+      ],
+      "cons": [
+        "No interactive presentation mode for listing appointments",
+        "Custom valuation limits restrictive at Basic tier",
+        "Not optimized for client-facing video presentations"
+      ],
+      "cta": {
+        "label": "View HouseCanary Plans",
+        "url": "https://www.housecanary.com/pricing/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Remine",
+      "id": "remine"
+    },
+    {
+      "type": "p",
+      "text": "Remine emphasizes predictive analytics (Buy Score, Sell Score), mortgage data, and prospecting filters for agents and lenders. The platform provides property owner contact info, distressed-deal tracking, and targeted map visualizations. Features include absentee owner filters, mortgage age/rate queries, and CRM export. Remine positions itself as a lead-generation tool rather than a CMA presentation builder. Pricing is not published; contact vendor for quote."
+    },
+    {
+      "type": "product",
+      "name": "Remine",
+      "price": "Pricing unpublished—contact vendor for quote",
+      "rating": 0,
+      "pros": [
+        "Proprietary Buy Score and Sell Score predictive models",
+        "Nationwide mortgage data with distressed-deal filters",
+        "Contact information included with no per-lead fees",
+        "CRM export and integrated mail marketing"
+      ],
+      "cons": [
+        "Pricing not transparent",
+        "No client-facing presentation features",
+        "Focus on prospecting over listing-appointment polish"
+      ],
+      "cta": {
+        "label": "Request Remine Demo",
+        "url": "https://www.remine.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**For listing-presentation dominance**: Cloud CMA. Live interactive mode, telestrator annotations, and print-quality reports win face-to-face appointments. Pricing bundled with many MLSs.",
+        "**For AVM-heavy workflows at known cost**: HouseCanary. $790/year Pro plan delivers 15 custom valuations, 15 AVM PDFs, and API access—transparent pricing rare in this category.",
+        "**For predictive prospecting over presentation polish**: Remine. Buy/Sell Scores and mortgage data excel at lead generation; lacks client-facing CMA features.",
+        "**If you need both presentation and predictive analytics**: Stack Cloud CMA (presentation) with Remine or HouseCanary (data/AVMs). No single platform delivers both at high quality."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**RPR and Homespotter Pricing**: Vendor pages unreachable. Cannot evaluate pricing, features, or integration claims. Follow up directly if MLS-affiliated.",
+        "**HouseCanary Basic ($190/year)**: 2 valuations/month too restrictive for active agents. Pro at $790/year offers better per-report economics.",
+        "**Remine for listing presentations**: Strong on prospecting, weak on client-facing polish. Not a Cloud CMA replacement."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Cloud CMA",
+      "url": "https://www.cloudcma.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "HouseCanary",
+      "url": "https://www.housecanary.com/pricing/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Remine",
+      "url": "https://www.remine.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/real-estate-cma-software-cloud-reports-vs-presentation-builders-hero.jpg",
+  "imageCredit": "Pexels · RDNE Stock project"
+}

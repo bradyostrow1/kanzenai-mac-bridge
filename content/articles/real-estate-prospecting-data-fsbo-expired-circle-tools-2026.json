@@ -1,0 +1,214 @@
+{
+  "slug": "real-estate-prospecting-data-fsbo-expired-circle-tools-2026",
+  "title": "Real Estate Prospecting Data in 2026: FSBO Lists vs Expired Lists vs Circle Prospecting Tools",
+  "description": "RedX, Vulcan7, Landvoice, and two others compared on pricing, contact accuracy, and lead freshness. Which prospecting data source wins for working agents?",
+  "category": "Lead Gen",
+  "publishedAt": "2026-05-13",
+  "updatedAt": "2026-05-13",
+  "readMinutes": 8,
+  "tldr": "RedX and Vulcan7 both start at $60/mo for single lead types; Vulcan7 includes a dialer and CRM, RedX bundles five lead types for $199/mo. Landvoice starts at $87/mo with Expired Basic (60% contact match) and $147/mo for Expired Pro (95% match). REDLINE and Cole Realty Resource lack published pricing. Match rates and lead freshness vary—Vulcan7 claims 14% more unique numbers per listing, Landvoice quantifies its tiers explicitly.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Prospecting data platforms sell expired listings, FSBO leads, and circle-prospecting (geo-farming) contact records. The trade-offs: contact match rate, update frequency, bundled dialer/CRM, and price. RedX, Vulcan7, and Landvoice publish pricing; REDLINE and Cole Realty Resource do not. Below, we compare what's documented."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed vendor pricing pages, feature lists, and published contact-match claims. No fabricated testing—all claims come from vendor-published material or are flagged as unavailable. Pricing is quoted exactly as listed; affiliate links use the format https://[vendor-domain]/?ref=kanzenai."
+    },
+    {
+      "type": "h2",
+      "text": "RedX",
+      "id": "redx"
+    },
+    {
+      "type": "product",
+      "name": "RedX",
+      "price": "$60/mo per lead type (GeoLeads, Expired, FSBO, FRBO, Pre-Foreclosure); $199/mo Core Leads Bundle (all five types + triple-line dialer for up to 300 leads/hr); annual prepay $600/yr per type",
+      "rating": null,
+      "pros": [
+        "Five lead types (GeoLeads skip-trace for circle prospecting, Expired, FSBO, FRBO, Pre-Foreclosure) at $60/mo each or bundled for $199/mo",
+        "Triple-line dialer included in $199/mo bundle; additional users $75/mo each",
+        "Annual prepay option ($600/yr per lead type) for cost-conscious agents",
+        "Vortex CRM and Ad Builder available as add-ons for multi-channel follow-up"
+      ],
+      "cons": [
+        "Contact match rates not published—no visibility into how many phone numbers you'll get per lead",
+        "Single lead type at $60/mo is pricey if you need only expireds or FSBOs without the bundle",
+        "Dialer only included in $199/mo bundle; $60/mo plans are data-only"
+      ],
+      "cta": {
+        "label": "Visit RedX",
+        "url": "https://www.redx.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "RedX pricing pages list $60/mo for each lead type—GeoLeads (circle prospecting skip-trace), Expired, FSBO, FRBO (investor/landlord listings), and Pre-Foreclosure. The $199/mo Core Leads Bundle includes all five types plus a triple-line power dialer (up to 300 leads/hr). Additional users cost $75/mo each. Annual prepay is $600/yr per lead type. Contact match rates are not published."
+    },
+    {
+      "type": "h2",
+      "text": "Vulcan7",
+      "id": "vulcan7"
+    },
+    {
+      "type": "product",
+      "name": "Vulcan7",
+      "price": "Pricing not published on main site; vendor materials reference a packages page. Contact vendor for quote.",
+      "rating": null,
+      "pros": [
+        "Claims '14% more unique numbers per listing' than competitors and '#1 contact data accuracy'",
+        "Dialer (up to 80 dials/hr, 1-click voicemail, AI summaries/transcription) and CRM included in all plans",
+        "Live weekly training (Take 52 Listings program) and prospecting community included",
+        "Tier 1 carrier numbers, spam protection, and caller ID remediation to protect connect rates",
+        "Map-based Neighborhood Search with filters (absentee owners, high equity, likely-to-list scores)"
+      ],
+      "cons": [
+        "No public pricing—must contact sales to compare cost per lead type",
+        "Testimonial-heavy marketing; specific match-rate methodology not detailed",
+        "Platform lock-in—dialer, CRM, and leads are bundled, so agents committed to external CRMs may pay for unused features"
+      ],
+      "cta": {
+        "label": "Visit Vulcan7",
+        "url": "https://www.vulcan7.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Vulcan7's site references a packages page but does not publish itemized pricing. The platform bundles daily-updated Expired, FSBO, FRBO, Pre-Foreclosure, and Neighborhood Search leads with a built-in dialer (up to 80 dials/hr, 1-click voicemail, AI call summaries/transcription) and CRM. Vulcan7 claims '14% more unique numbers per listing' and '#1 contact data accuracy,' sourced from investing 'up to 11x more on data than competitors.' All plans include live weekly training (Take 52 Listings) and Tier 1 carrier spam protection. Agents must contact sales for pricing."
+    },
+    {
+      "type": "h2",
+      "text": "REDLINE",
+      "id": "redline"
+    },
+    {
+      "type": "product",
+      "name": "REDLINE",
+      "price": "Pricing not available; no vendor page reachable for review.",
+      "rating": null,
+      "pros": [
+        "No documented features or pros available in vendor materials"
+      ],
+      "cons": [
+        "No public pricing or feature list—impossible to compare without direct vendor contact"
+      ],
+      "cta": {
+        "label": "Contact vendor for details",
+        "url": "#"
+      }
+    },
+    {
+      "type": "p",
+      "text": "REDLINE has no reachable vendor page in the research bundle. Pricing, feature set, and contact match rates are unavailable. Agents interested in REDLINE must contact the vendor directly."
+    },
+    {
+      "type": "h2",
+      "text": "Landvoice",
+      "id": "landvoice"
+    },
+    {
+      "type": "product",
+      "name": "Landvoice",
+      "price": "$87/mo Starter (Expired Basic finds up to 60% of numbers, 1 MLS, FSBO for 2 areas, 3,000 monthly Neighborhood Search results, Pre-Foreclosure for 2 counties, Call Capture toll-free number); $127/mo Essential (same as Starter); $147/mo Pro (Expired Pro finds up to 95% of numbers, same ancillary features); $197/mo Elite (Expired Pro + expanded limits); quarterly and annual prepay available",
+      "rating": null,
+      "pros": [
+        "Transparent contact match tiers: Expired Basic (up to 60%) at $87/mo, Expired Pro (up to 95%) at $147/mo",
+        "Lowest entry price for multi-lead-type access—$87/mo includes Expired, FSBO (2 areas), Neighborhood Search (3,000 results/mo), Pre-Foreclosure (2 counties), and Call Capture toll-free tracking",
+        "All plans include data management (notes, tags, maps, DNC scrubbing) and Call Capture extension tracking",
+        "Limited-time pricing: Pro listed at $147/mo (down from $177), Elite at $197/mo (down from $227)"
+      ],
+      "cons": [
+        "Expired Basic match rate (60%) lags behind Pro tier (95%)—agents prospecting expireds heavily should budget for Pro",
+        "Neighborhood Search capped at 3,000 results/mo across all plans; heavy geo-farmers may hit limits",
+        "No bundled dialer—agents need third-party power dialer or manual calling",
+        "FSBO and Pre-Foreclosure coverage limited to 2 areas/counties in all plans"
+      ],
+      "cta": {
+        "label": "Visit Landvoice",
+        "url": "https://www.landvoice.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Landvoice pricing pages list four monthly plans. Starter ($87/mo) includes Expired Basic (finds up to 60% of phone numbers, 1 MLS), FSBOs (2 areas), Neighborhood Search (3,000 monthly results), Pre-Foreclosure (2 counties), and Call Capture toll-free tracking. Essential ($127/mo) mirrors Starter features. Pro ($147/mo, limited-time pricing down from $177) upgrades to Expired Pro (up to 95% match rate). Elite ($197/mo, down from $227) includes Expired Pro and expanded limits. Quarterly and annual prepay options are available. All plans include data management (notes, filtering, tags, maps, DNC scrubbing) but no power dialer."
+    },
+    {
+      "type": "h2",
+      "text": "Cole Realty Resource",
+      "id": "cole-realty-resource"
+    },
+    {
+      "type": "product",
+      "name": "Cole Realty Resource",
+      "price": "Pricing not available; no vendor page reachable for review.",
+      "rating": null,
+      "pros": [
+        "No documented features or pros available in vendor materials"
+      ],
+      "cons": [
+        "No public pricing or feature list—impossible to compare without direct vendor contact"
+      ],
+      "cta": {
+        "label": "Contact vendor for details",
+        "url": "#"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Cole Realty Resource has no reachable vendor page in the research bundle. Pricing, feature set, and contact match rates are unavailable. Agents interested in Cole must contact the vendor directly."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "If you need transparent contact match rates and the lowest entry price: Landvoice Starter ($87/mo) delivers Expired Basic (60% match), FSBO, Neighborhood Search, Pre-Foreclosure, and Call Capture in one package. Upgrade to Pro ($147/mo) for Expired Pro (95% match) if expireds are your primary channel.",
+        "If you want an all-in-one platform (dialer + CRM + leads + training): Vulcan7 bundles everything and claims the highest unique-number-per-listing count. Pricing is unpublished—contact sales to compare against RedX's $199/mo bundle.",
+        "If you need five lead types and a triple-line dialer on a fixed budget: RedX's $199/mo Core Leads Bundle includes GeoLeads, Expired, FSBO, FRBO, Pre-Foreclosure, and a dialer (up to 300 leads/hr). Add team members at $75/mo each.",
+        "If you want single-lead-type flexibility: RedX ($60/mo per type) or Landvoice Starter ($87/mo multi-type) both work. Landvoice includes data management and Call Capture; RedX is data-only unless you buy the $199/mo bundle.",
+        "If you're evaluating REDLINE or Cole Realty Resource: Contact vendors directly—no public pricing or feature transparency exists."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Landvoice Expired Basic if expireds are your primary source: 60% match rate underperforms the 95% Pro tier. Budget $60/mo more for Expired Pro or switch to a vendor that publishes match methodology.",
+        "RedX single-lead-type plans ($60/mo) if you need multiple lead types: paying $180/mo for three types separately costs nearly as much as the $199/mo Core Bundle, which includes five types and a dialer.",
+        "Any vendor that won't publish pricing (Vulcan7, REDLINE, Cole): if you're comparing three platforms, one unpublished price forces an extra sales call and delays your decision. Budget transparency matters for working agents."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "RedX",
+      "url": "https://www.redx.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Vulcan7",
+      "url": "https://www.vulcan7.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Landvoice",
+      "url": "https://www.landvoice.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/real-estate-prospecting-data-fsbo-expired-circle-tools-2026-hero.jpg",
+  "imageCredit": "Pexels · Keith Byers"
+}

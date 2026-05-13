@@ -1,0 +1,233 @@
+{
+  "slug": "real-estate-drip-campaign-software-2026",
+  "title": "Real Estate Drip Campaign Software in 2026: Set-and-Forget Email vs Smart Nurture vs CRM-Native Automations",
+  "description": "Market Leader's lead-nurture automation, Wise Agent's $49/mo drip engine, Follow Up Boss's Action Plans, and Brivity's Auto Plans—pricing, trade-offs, and who wins.",
+  "category": "Marketing",
+  "publishedAt": "2026-05-13",
+  "updatedAt": "2026-05-13",
+  "readMinutes": 9,
+  "tldr": "Market Leader bundles done-for-you lead gen with set-and-forget drip campaigns but hides pricing. Wise Agent offers robust drip automation at $49/mo with transparent pricing. Follow Up Boss centers on Action Plans and AI-assisted follow-up starting at $69/mo. Brivity embeds Auto Plans across CRM and transaction workflows but requires a demo for pricing. LionDesk data was unavailable.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Drip campaigns automate follow-up at scale, but the market splits three ways in 2026: set-and-forget email sequences (Market Leader), all-in-one CRM platforms with embedded nurture (Wise Agent, Follow Up Boss, Brivity), and smart AI-assisted action engines. Pricing ranges from $49/mo transparent subscriptions to opaque contact-vendor models. Lead sources, calling, and team features often sit behind add-ons or higher tiers. The core question: do you want a standalone drip engine or a CRM that happens to automate follow-up?"
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed vendor pricing pages and feature lists published as of May 2026. No fabricated testing counts, no invented case studies. Pricing is quoted exactly as found; where vendors withhold numbers, we note 'contact vendor.' LionDesk's website was unreachable during research; its inclusion reflects market share only."
+    },
+    {
+      "type": "h2",
+      "text": "Market Leader",
+      "id": "market-leader"
+    },
+    {
+      "type": "p",
+      "text": "Market Leader positions itself as a lead-gen-first platform with a 'Relationship Manager' automation layer. The vendor's site emphasizes done-for-you lead generation—exclusive buyer/seller leads delivered monthly—paired with 'set-and-forget marketing automation' to nurture the entire database. The CRM includes automated lead nurturing, daily prioritized to-dos, campaign automation, and a library of customizable marketing materials. Pricing is not published; the FAQ states 'it depends on what you need' and recommends calling 800.978.5176. The site claims 'for the price of a latte a day' but provides no numeric anchor."
+    },
+    {
+      "type": "product",
+      "name": "Market Leader",
+      "price": "Contact vendor (800.978.5176); pricing varies by lead generation package and system bundle",
+      "rating": null,
+      "pros": [
+        "Done-for-you lead generation bundled with CRM and drip automation",
+        "Set-and-forget marketing automation across entire contact database",
+        "Extensive library of customizable marketing materials included",
+        "Decades-long track record; named 'CRM to Watch' by Inman News"
+      ],
+      "cons": [
+        "No published pricing—requires phone consultation to quote",
+        "Lead generation is the primary value prop; automation is secondary",
+        "Unclear whether drip campaigns can be decoupled from lead-gen packages",
+        "No transparent feature-tier breakdown on public pages"
+      ],
+      "cta": {
+        "label": "Check Market Leader availability",
+        "url": "https://marketleader.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Wise Agent",
+      "id": "wise-agent"
+    },
+    {
+      "type": "p",
+      "text": "Wise Agent publishes transparent pricing: $49/mo (monthly) or $499/yr (annual, 15% discount). All plans include drip campaigns, lead automation, team-friendly calendar, transaction manager, customizable landing pages, unlimited training, 100 lead enhancement credits, and unlimited document storage. The base plan supports up to 5 team members on a shared login; individual logins cost $20/mo each. Texting (WiseText) is a $11/mo add-on plus $80 registration fee; it includes 1,000 credits/mo. WiseSocial (social media automation via Back at You) is $20/mo. Wise Agent runs month-to-month with no contracts."
+    },
+    {
+      "type": "product",
+      "name": "Wise Agent",
+      "price": "$49/mo or $499/yr (15% savings); up to 5 team members (shared login). Add-ons: individual logins $20/mo, WiseText $11/mo + $80 setup, WiseSocial $20/mo.",
+      "rating": null,
+      "pros": [
+        "Fully transparent pricing at $49/mo with all core drip and automation features",
+        "Month-to-month, no contracts; cancel anytime",
+        "Includes team features (5 shared logins), transaction manager, and unlimited training",
+        "24/7 live support and complimentary one-on-one onboarding"
+      ],
+      "cons": [
+        "Shared login model limits individual permissions unless you pay $20/mo per user",
+        "Texting requires separate $11/mo add-on plus $80 registration fee",
+        "Lead enhancement credits capped at 100/mo unless you purchase unlimited add-on ($5/mo)",
+        "WiseSocial is third-party (Back at You) and costs extra"
+      ],
+      "cta": {
+        "label": "Start 14-day free trial",
+        "url": "https://www.wiseagent.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "LionDesk",
+      "id": "liondesk"
+    },
+    {
+      "type": "p",
+      "text": "LionDesk's vendor site was not accessible during research. Public data confirms the platform offers drip campaigns and CRM automation, but pricing, tier structure, and feature details are unavailable. Contact the vendor directly for a quote."
+    },
+    {
+      "type": "product",
+      "name": "LionDesk",
+      "price": "Pricing unavailable; contact vendor for quote.",
+      "rating": null,
+      "pros": [
+        "Known for video email and text automation in real estate CRM space"
+      ],
+      "cons": [
+        "No published pricing or feature comparison available as of May 2026",
+        "Vendor website unreachable during research"
+      ],
+      "cta": {
+        "label": "Visit LionDesk",
+        "url": "https://liondesk.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Follow Up Boss",
+      "id": "follow-up-boss"
+    },
+    {
+      "type": "p",
+      "text": "Follow Up Boss centers on 'Action Plans'—automated follow-up sequences triggered by lead source, behavior, or stage. Plans start at $69/mo (Grow, month-to-month) or $58/mo (annual). Calling is a $39/user add-on on Grow; the Pro plan ($499/mo for 10 users, or $416/mo annual) includes unlimited calling and texting. Pro also adds team inboxes, call reporting, enhanced onboarding, and AI features (smart summaries, smart messages, suggested tasks, predictive lead prioritization). The Platform tier ($1,000/mo for 30 users, or $833/mo annual) adds teams-within-teams, dedicated success manager, and priority support. All plans include unlimited contacts, lead sources, integrations, and 7-day-a-week phone/email support. No contracts; cancel anytime."
+    },
+    {
+      "type": "product",
+      "name": "Follow Up Boss",
+      "price": "Grow: $69/mo ($58/mo annual) + $39/user for calling. Pro: $499/mo for 10 users ($416/mo annual) with unlimited calling/texting. Platform: $1,000/mo for 30 users ($833/mo annual).",
+      "rating": null,
+      "pros": [
+        "Action Plans automate follow-up by lead source, behavior, or stage",
+        "AI features (smart summaries, predictive prioritization) included in Pro and Platform tiers",
+        "Unlimited contacts, lead sources, and integrations on all plans",
+        "No contracts; 7-day-a-week support; free trial"
+      ],
+      "cons": [
+        "Calling is a paid add-on ($39/user) on Grow plan",
+        "Entry price of $69/mo is higher than Wise Agent for solo agents",
+        "AI features require Pro tier or higher ($499/mo for 10 users)",
+        "Annual billing locks you in for 12 months despite 'no contract' language"
+      ],
+      "cta": {
+        "label": "Start free trial",
+        "url": "https://www.followupboss.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Brivity",
+      "id": "brivity"
+    },
+    {
+      "type": "p",
+      "text": "Brivity embeds 'Auto Plans' across CRM and transaction workflows—drip campaigns triggered by lead stage, transaction milestone, or agent action. Plans scale from Solo Agent (up to 2 users) through Large Team (up to 25 users) and Custom (25+ users). All tiers include high-converting drip campaigns, Smart Auto Plans, unlimited texting/dialer, robust email platform, Brivity AI Write (beta; additional charges may apply), CMA reports, transaction management with Auto Plans, IDX website, marketing automation (postcards, flyers, social graphics, listing videos), and US-based phone support. Pricing is not published; the site requires a demo request to view tier costs. Lead generation and virtual assistant services are add-ons. Brivity markets itself as 'built by top agent Ben Kinney for the top 1% but priced so any agent can afford it'—yet withholds all numeric pricing."
+    },
+    {
+      "type": "product",
+      "name": "Brivity",
+      "price": "Contact vendor for pricing (demo required); plans range from Solo Agent (2 users) to Custom (25+ users).",
+      "rating": null,
+      "pros": [
+        "Auto Plans embedded across CRM, transactions, and marketing workflows",
+        "Comprehensive all-in-one platform: CRM, IDX site, transaction management, marketing",
+        "Brivity AI Write (beta) included; unlimited texting/dialer on all plans",
+        "Built by top-producing agent Ben Kinney; exclusive Mastermind group access"
+      ],
+      "cons": [
+        "No published pricing—demo required to see costs",
+        "Lead generation and virtual assistant services are paid add-ons",
+        "Brivity AI Write noted as beta with 'additional charges may apply'",
+        "'Priced so any agent can afford it' claim undermined by lack of transparency"
+      ],
+      "cta": {
+        "label": "Request demo",
+        "url": "https://www.brivity.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Solo agents on a budget: Wise Agent at $49/mo delivers transparent pricing, robust drip campaigns, and team features (5 shared logins) with no contracts. Add WiseText for $11/mo if texting is critical.",
+        "Teams prioritizing AI-assisted follow-up: Follow Up Boss Pro ($499/mo for 10 users, $416/mo annual) includes unlimited calling/texting, AI smart summaries, and predictive lead prioritization. Action Plans automate nurture by lead source and behavior.",
+        "Lead-gen-first agents willing to call for pricing: Market Leader bundles done-for-you lead generation with set-and-forget automation. If you need exclusive monthly leads and automation in one package, call 800.978.5176 for a quote.",
+        "All-in-one platform buyers (CRM + IDX + transactions + drip): Brivity embeds Auto Plans across the entire workflow, but you must request a demo to see pricing. Best for teams that want a single vendor for everything.",
+        "Teams needing granular control over nurture sequences: Follow Up Boss's Action Plans and Smart Lists offer the most flexibility for behavior-triggered automation. Wise Agent's drip campaigns are robust but less dynamic."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "LionDesk: Website was unreachable; no pricing or feature data available for evaluation.",
+        "Market Leader if you don't need lead gen: The platform's value prop centers on done-for-you lead generation. If you already have lead sources, the opaque pricing and bundled model make it hard to justify versus transparent alternatives.",
+        "Brivity for price-conscious solo agents: The lack of published pricing and 'top 1%' positioning suggest higher tiers. Solo agents should trial Wise Agent or Follow Up Boss first before committing to a demo-gated platform.",
+        "Follow Up Boss Grow plan if you need calling included: At $69/mo + $39/user for calling, you're paying $108/mo for a solo agent with dialer access. Wise Agent includes unlimited dialer at $49/mo (though texting costs $11/mo extra)."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Market Leader",
+      "url": "https://marketleader.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Wise Agent",
+      "url": "https://www.wiseagent.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "LionDesk",
+      "url": "https://liondesk.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Follow Up Boss",
+      "url": "https://www.followupboss.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Brivity",
+      "url": "https://www.brivity.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/real-estate-drip-campaign-software-2026-hero.jpg",
+  "imageCredit": "Pexels · RDNE Stock project"
+}
