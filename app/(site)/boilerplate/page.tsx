@@ -23,7 +23,7 @@ export default function BoilerplatePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <a
-              href="https://gumroad.com/l/affiliateai-boilerplate"
+              href="https://gumroad.com/l/icchv"
               target="_blank"
               rel="noopener"
               className="inline-flex items-center justify-center gap-2 bg-ink-0 text-bg-0 px-7 py-4 text-[14px] font-semibold uppercase tracking-[0.12em] hover:bg-ink-1 transition"
@@ -121,7 +121,7 @@ export default function BoilerplatePage() {
             One-time. Lifetime updates. 7-day refund if it doesn't deploy clean.
           </p>
           <a
-            href="https://gumroad.com/l/affiliateai-boilerplate"
+            href="https://gumroad.com/l/icchv"
             target="_blank"
             rel="noopener"
             className="inline-flex items-center justify-center gap-2 bg-ink-0 text-bg-0 px-8 py-4 text-[14px] font-semibold uppercase tracking-[0.12em] hover:bg-ink-1 transition"

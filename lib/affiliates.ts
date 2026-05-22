@@ -110,6 +110,23 @@ export const AFFILIATES: Record<string, Vendor> = {
   "conversion-monster":  { url: "https://www.conversionmonster.com/?ref=kanzenai", name: "Conversion Monster",  status: "placeholder", commission: "varies" },
   "ylopo":               { url: "https://www.ylopo.com/?ref=kanzenai",             name: "Ylopo",               status: "placeholder", commission: "varies" },
   "agentology":          { url: "https://www.agentology.com/?ref=kanzenai",        name: "Agentology",          status: "placeholder", commission: "varies" },
+
+  // Added 2026-05-22 — closes 11 missing vendors flagged by audit (vendors referenced in articles but absent from registry)
+  // CRMs
+  "marketleader":        { url: "https://www.marketleader.com/?ref=kanzenai",       name: "Market Leader",       status: "placeholder", commission: "varies" },
+  "wiseagent":           { url: "https://wiseagent.com/?ref=kanzenai",              name: "Wise Agent",          status: "placeholder", commission: "$100/signup" },
+  "liondesk":            { url: "https://www.liondesk.com/?ref=kanzenai",           name: "LionDesk",            status: "placeholder", commission: "varies" },
+  "brivity":             { url: "https://www.brivity.com/?ref=kanzenai",            name: "Brivity",             status: "placeholder", commission: "$150/signup" },
+  // IDX / lead-gen
+  "homespotter":         { url: "https://www.homespotter.com/?ref=kanzenai",        name: "HomeSpotter",         status: "placeholder", commission: "varies" },
+  "rela":                { url: "https://www.rela.co/?ref=kanzenai",                name: "Rela",                status: "placeholder", commission: "varies" },
+  "homesnap":            { url: "https://www.homesnap.com/?ref=kanzenai",           name: "Homesnap",            status: "placeholder", commission: "varies" },
+  // Video / virtual tours
+  "realync":             { url: "https://realync.com/?ref=kanzenai",                name: "Realync",             status: "placeholder", commission: "varies" },
+  // CMA / valuations / data
+  "cloudcma":            { url: "https://cloudcma.com/?ref=kanzenai",               name: "Cloud CMA",           status: "placeholder", commission: "varies" },
+  "housecanary":         { url: "https://www.housecanary.com/?ref=kanzenai",        name: "HouseCanary",         status: "placeholder", commission: "varies" },
+  "remine":              { url: "https://remine.com/?ref=kanzenai",                 name: "Remine",              status: "placeholder", commission: "varies" },
 };
 
 /** Map a vendor name (e.g. "Follow Up Boss") to its slug (e.g. "follow-up-boss") */
