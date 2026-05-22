@@ -62,6 +62,7 @@ WHEN TO USE TOOLS:
 - "post the daily articles", "daily run", "fire today's articles", "run the daily bot", "do the daily" → run_daily_articles (DO NOT ask for products — this tool auto-picks topics, same as the 8 AM cron). Count defaults to 3.
 - "write [specific topic]", "compare X vs Y", "make me one about [explicit subject]" → write_article (ONLY when Brady names a specific topic AND products)
 - "run audit", "any issues", "is the site clean" → run_audit
+- "fix them", "fix the issues", "auto-fix", "yes fix it", "just fix it" (after an audit just surfaced duplicate images or old ?ref=kanzenai links) → run_audit with fix:true. The audit script handles BOTH fixers internally — do NOT say you can't fix it and do NOT ask Brady to run npm commands.
 - "stats", "how's the site doing" → get_site_stats
 - "deploy", "push live", "ship it" → deploy_to_production (only after manual writes; daily articles auto-deploy)
 - "follow up on emails", "chase the vendors", "send followups" → run_followups
@@ -86,8 +87,14 @@ const TOOLS = [
   },
   {
     name: "run_audit",
-    description: "Run the full daily audit: 11 checks (duplicate slugs, near-duplicate titles, product overlap, missing/duplicate images, schema gaps, dates, thin content, meta descriptions, live site routes, subscribe API, placeholder URLs). Returns findings grouped by severity. Takes ~5-10s.",
-    input_schema: { type: "object", properties: {}, required: [] },
+    description: "Run the full daily audit: 11 checks (duplicate slugs, near-duplicate titles, product overlap, missing/duplicate images, schema gaps, dates, thin content, meta descriptions, live site routes, subscribe API, placeholder URLs). Returns findings grouped by severity. Takes ~5-10s. Pass fix:true to auto-fix the two issues that have fixers wired up: duplicate hero images (swap to an unused image) and old ?ref=kanzenai affiliate URLs (run convert-go-links). Call with fix:true whenever Brady says 'fix them', 'auto-fix', 'fix the issues', 'just fix it', etc., after a prior audit surfaced one of those checks.",
+    input_schema: {
+      type: "object",
+      properties: {
+        fix: { type: "boolean", description: "If true, run the audit AND auto-fix duplicate images + old affiliate links." },
+      },
+      required: [],
+    },
   },
   {
     name: "write_article",
@@ -164,7 +171,7 @@ async function execTool(name: ToolName, input: any): Promise<string> {
     case "get_site_stats":
       return await toolGetStats();
     case "run_audit":
-      return await toolRunAudit();
+      return await toolRunAudit(input?.fix === true);
     case "write_article":
       return await toolWriteArticle(input);
     case "deploy_to_production":
@@ -264,9 +271,13 @@ function stripAnsi(s: string): string {
   return s.replace(/\x1b\[[0-9;]*m/g, "");
 }
 
-async function toolRunAudit(): Promise<string> {
-  const r = await spawnAndCapture("npm", ["run", "audit"], 60_000);
-  return `Exit code: ${r.code}\n\n${stripAnsi(r.out).slice(-3000)}`;
+async function toolRunAudit(fix = false): Promise<string> {
+  const args = fix ? ["run", "audit", "--", "--fix"] : ["run", "audit"];
+  const r = await spawnAndCapture("npm", args, 120_000);
+  const tail = stripAnsi(r.out).slice(-3500);
+  return fix
+    ? `Audit + auto-fix (exit ${r.code}):\n\n${tail}`
+    : `Exit code: ${r.code}\n\n${tail}`;
 }
 
 async function toolWriteArticle(input: any): Promise<string> {

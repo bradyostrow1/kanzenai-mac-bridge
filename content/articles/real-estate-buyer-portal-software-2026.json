@@ -127,7 +127,7 @@
       ],
       "cta": {
         "label": "Contact Curb Hero",
-        "url": "https://curbhero.com/?ref=kanzenai"
+        "url": "/go/curb-hero"
       }
     },
     {
@@ -205,7 +205,7 @@
     },
     {
       "name": "Curb Hero",
-      "url": "https://curbhero.com/?ref=kanzenai",
+      "url": "/go/curb-hero",
       "commission": "varies"
     },
     {

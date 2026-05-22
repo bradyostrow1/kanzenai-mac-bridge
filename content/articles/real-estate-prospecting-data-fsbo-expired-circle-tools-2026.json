@@ -44,7 +44,7 @@
       ],
       "cta": {
         "label": "Visit RedX",
-        "url": "https://www.redx.com/?ref=kanzenai"
+        "url": "/go/redx"
       }
     },
     {
@@ -75,7 +75,7 @@
       ],
       "cta": {
         "label": "Visit Vulcan7",
-        "url": "https://www.vulcan7.com/?ref=kanzenai"
+        "url": "/go/vulcan7"
       }
     },
     {
@@ -195,12 +195,12 @@
   "affiliateProducts": [
     {
       "name": "RedX",
-      "url": "https://www.redx.com/?ref=kanzenai",
+      "url": "/go/redx",
       "commission": "varies"
     },
     {
       "name": "Vulcan7",
-      "url": "https://www.vulcan7.com/?ref=kanzenai",
+      "url": "/go/vulcan7",
       "commission": "varies"
     },
     {

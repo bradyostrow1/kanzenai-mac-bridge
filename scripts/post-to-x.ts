@@ -77,6 +77,17 @@ const DRY_RUN = args["dry-run"] === true;
 const QUEUE_ONLY = args["queue"] === true || process.env.X_QUEUE_ONLY === "1"; // queue instead of posting
 const BACKLOG_DAYS = typeof args["backlog"] === "string" ? Number(args["backlog"]) : 0;
 const SLUG_FILTER = typeof args["slug"] === "string" ? args["slug"] : null;
+// X For You algorithm: author diversity scorer attenuates repeated authors with
+// `decay^position`. Posting back-to-back tanks the 2nd and 3rd post's reach.
+// We pace at least MIN_GAP_MINUTES apart and cap each invocation at --limit
+// candidates (default 1). Cron the script every 30-60 min and it self-paces.
+const MIN_GAP_MINUTES = Number(process.env.X_POST_MIN_GAP_MIN ?? args["min-gap"] ?? 120);
+const LIMIT = typeof args["limit"] === "string" ? Math.max(1, Number(args["limit"])) : 1;
+const SKIP_GAP = args["skip-gap"] === true || args["force"] === true; // override pacing
+// Minimum banger-screen score required before posting. Drafts below get
+// regenerated up to BANGER_RETRIES times before falling back to best-effort.
+const BANGER_MIN = Number(process.env.X_BANGER_MIN ?? 0.55);
+const BANGER_RETRIES = Number(process.env.X_BANGER_RETRIES ?? 2); // 1 initial + 2 retries = 3 attempts
 
 // ─── article loader ────────────────────────────────────────────────────────
 type Article = {
@@ -86,6 +97,7 @@ type Article = {
   tldr?: string;
   category?: string;
   publishedAt: string;
+  headerImage?: string;
   body?: Array<{ type: string; name?: string; price?: string }>;
 };
 
@@ -255,6 +267,79 @@ Write the perfect X post for this article. Output the tweet text only, no preamb
   return text.replace(/^["']|["']$/g, "").trim();
 }
 
+// ─── Banger screener (mirrors X's banger_initial_screen.py classifier) ────
+// X scores every post 0.0-1.0 via a VLM. Score >= 0.4 clears the screen and
+// is eligible for Phoenix retrieval (out-of-network discovery). We screen
+// drafts BEFORE posting so we never burn a tweet on slop.
+const BANGER_SYSTEM = `You are X's banger_initial_screen classifier — a VLM that rates every post 0.0-1.0 on quality. The For-You algorithm uses your score to decide if a post is eligible for out-of-network discovery (Phoenix Retrieval). Posts below 0.4 get filtered.
+
+HIGH score (>=0.7):
+- Concrete data: specific prices, percentages, named products, hard numbers
+- Strong first-50-character hook that stops the scroll
+- Drives dwell time — reader has to pause to digest the contrast/list/data
+- Insight, not announcement
+- Format invites engagement (specific contrast, contrarian claim, list with surprise)
+- Reads like the target audience's existing content patterns
+
+LOW score (<0.4):
+- Generic phrasing ("check this out", "I made a thing", "thoughts?")
+- Engagement bait ("RT if you agree", "drop a 🔥")
+- No specific numbers or named entities
+- Sycophantic / promotional / corporate tone
+- One-liner with no payoff
+- AI-generated slop tells: "delve", "in conclusion", "elevate", "navigate the landscape"
+- Just hashtags or hot-take with no evidence
+
+Output ONLY this JSON. No preamble, no explanation outside the JSON:
+{"score": 0.0-1.0, "reasoning": "one short sentence on why"}`;
+
+async function screenBanger(text: string): Promise<{ score: number; reasoning: string }> {
+  try {
+    const resp = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: {
+        "x-api-key": ANTHROPIC_KEY!,
+        "anthropic-version": "2023-06-01",
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({
+        model: "claude-sonnet-4-5-20250929",
+        max_tokens: 250,
+        system: BANGER_SYSTEM,
+        messages: [{ role: "user", content: `Post:\n\n${text}` }],
+      }),
+    });
+    if (!resp.ok) {
+      return { score: 0.5, reasoning: `screener HTTP ${resp.status} — defaulting to 0.5` };
+    }
+    const data = await resp.json();
+    const raw: string = (data.content?.[0]?.text ?? "").trim();
+    const match = raw.match(/\{[^}]+\}/);
+    if (!match) return { score: 0.5, reasoning: "no JSON in screener output" };
+    const parsed = JSON.parse(match[0]);
+    const score = Math.max(0, Math.min(1, Number(parsed.score) || 0.5));
+    return { score, reasoning: String(parsed.reasoning ?? "") };
+  } catch (e) {
+    return { score: 0.5, reasoning: `screener error: ${(e as Error).message}` };
+  }
+}
+
+async function craftTweetWithScreening(
+  article: Article & { url: string },
+): Promise<{ text: string; score: number; reasoning: string; attempts: number }> {
+  let best = { text: "", score: -1, reasoning: "" };
+  const totalAttempts = 1 + BANGER_RETRIES;
+  for (let i = 0; i < totalAttempts; i++) {
+    const text = await craftTweet(article);
+    const { score, reasoning } = await screenBanger(text);
+    console.log(`  · Draft ${i + 1}/${totalAttempts}: banger=${score.toFixed(2)} — ${reasoning}`);
+    if (score > best.score) best = { text, score, reasoning };
+    if (score >= BANGER_MIN) return { ...best, attempts: i + 1 };
+  }
+  console.log(`  ⚠ No draft cleared ${BANGER_MIN}. Posting best (${best.score.toFixed(2)}).`);
+  return { ...best, attempts: totalAttempts };
+}
+
 // ─── X client (twitter-api-v2 library, OAuth 1.0a User Context) ────────────
 const twitter = new TwitterApi({
   appKey: X_CONSUMER_KEY!,
@@ -263,10 +348,50 @@ const twitter = new TwitterApi({
   accessSecret: X_ACCESS_TOKEN_SECRET!,
 });
 
-async function postTweet(text: string, replyToId?: string): Promise<{ id: string; text: string }> {
-  const opts = replyToId ? { reply: { in_reply_to_tweet_id: replyToId } } : {};
+// Upload a hero image and return the media_id, or null if upload fails. Best-effort —
+// a failed media upload should never block the post.
+async function uploadHero(headerImage?: string): Promise<string | null> {
+  if (!headerImage) return null;
+  try {
+    const absolute = join(ROOT, "public", headerImage.replace(/^\//, ""));
+    if (!existsSync(absolute)) {
+      console.log(`  · No hero on disk at ${absolute} — posting text-only`);
+      return null;
+    }
+    const id = await twitter.v1.uploadMedia(absolute);
+    console.log(`  · Hero uploaded (media_id ${id})`);
+    return id;
+  } catch (e) {
+    console.log(`  · Hero upload failed (${(e as Error).message}) — posting text-only`);
+    return null;
+  }
+}
+
+async function postTweet(
+  text: string,
+  replyToId?: string,
+  mediaId?: string | null,
+): Promise<{ id: string; text: string }> {
+  const opts: Record<string, unknown> = {};
+  if (replyToId) opts.reply = { in_reply_to_tweet_id: replyToId };
+  if (mediaId) opts.media = { media_ids: [mediaId] };
   const r = await twitter.v2.tweet(text, opts);
   return { id: r.data.id, text: r.data.text };
+}
+
+// Read the timestamp of the most recent successful auto-post so we can self-pace.
+async function lastPostMs(): Promise<number> {
+  if (!existsSync(LOG_PATH)) return 0;
+  try {
+    const lines = (await readFile(LOG_PATH, "utf8")).split("\n").filter(Boolean);
+    for (let i = lines.length - 1; i >= 0; i--) {
+      try {
+        const o = JSON.parse(lines[i]);
+        if (typeof o.ts === "string") return Date.parse(o.ts);
+      } catch { /* skip */ }
+    }
+  } catch { /* ignore */ }
+  return 0;
 }
 
 // ─── selection logic ───────────────────────────────────────────────────────
@@ -310,7 +435,30 @@ async function main() {
 
   console.log(`→ ${candidates.length} candidate(s) for X posting`);
 
+  // ─── Pacing gate: enforce MIN_GAP_MINUTES between author auto-posts ──
+  // The For-You algorithm's author_diversity_scorer multiplies the 2nd+ post
+  // from the same author by `decay^position`, so back-to-back posting tanks
+  // discovery reach. We skip this run if the previous auto-post was too recent
+  // (unless --skip-gap is passed). DRY_RUN/QUEUE_ONLY bypass since neither
+  // actually hits X.
+  if (!DRY_RUN && !QUEUE_ONLY && !SKIP_GAP && !SLUG_FILTER) {
+    const last = await lastPostMs();
+    if (last > 0) {
+      const gapMin = (Date.now() - last) / 60_000;
+      if (gapMin < MIN_GAP_MINUTES) {
+        const waitMin = Math.ceil(MIN_GAP_MINUTES - gapMin);
+        console.log(`→ Last post was ${Math.round(gapMin)}m ago — algorithm-friendly gap is ${MIN_GAP_MINUTES}m. Wait ${waitMin}m. Re-run later (or pass --skip-gap to override).`);
+        return;
+      }
+    }
+  }
+
+  let postedCount = 0;
   for (const article of candidates) {
+    if (postedCount >= LIMIT) {
+      console.log(`→ Hit per-run limit (${LIMIT}). Remaining candidates wait until next run.`);
+      break;
+    }
     if (QUEUE_ONLY) {
       if (await alreadyQueued(article.slug)) {
         console.log(`  · skip ${article.slug} (already in queue)`);
@@ -323,8 +471,15 @@ async function main() {
 
     console.log(`\n→ ${article.slug}`);
     let tweetText: string;
+    let bangerScore = -1;
+    let bangerReasoning = "";
+    let bangerAttempts = 0;
     try {
-      tweetText = await craftTweet(article);
+      const screened = await craftTweetWithScreening(article);
+      tweetText = screened.text;
+      bangerScore = screened.score;
+      bangerReasoning = screened.reasoning;
+      bangerAttempts = screened.attempts;
     } catch (e) {
       console.error(`  ✗ Claude tweet failed: ${(e as Error).message}`);
       continue;
@@ -366,28 +521,19 @@ async function main() {
     }
 
     try {
-      const main = await postTweet(tweetText);
-      console.log(`  ✓ Main tweet posted: https://x.com/i/web/status/${main.id}`);
+      // Upload the article's hero image — algorithm weighs photo_expand.
+      const heroMediaId = await uploadHero(article.headerImage);
+
+      const main = await postTweet(tweetText, undefined, heroMediaId);
+      console.log(`  ✓ Main tweet posted: https://x.com/i/web/status/${main.id}${heroMediaId ? " (+ hero image)" : ""}`);
       const reply = await postTweet(replyText, main.id);
       console.log(`  ✓ Reply (link) posted: https://x.com/i/web/status/${reply.id}`);
 
-      // Optional boilerplate promo as a 3rd reply (env-gated to control frequency)
-      let promoId: string | undefined;
-      if (process.env.BOILERPLATE_PROMO === "1") {
-        try {
-          const promoVariants = [
-            "btw — this whole stack is what I'm selling at kanzenai.com/boilerplate. Next.js + Claude auto-writer + X bots + dashboard. $149, deploys in 10 min.",
-            "this site auto-published itself. The boilerplate I built it on is $149 → kanzenai.com/boilerplate",
-            "stack that auto-publishes this: Next.js + Claude + Pexels + X bots + dashboard. Selling it for $149 if you want to skip the build → kanzenai.com/boilerplate",
-          ];
-          const promo = promoVariants[Math.floor(Math.random() * promoVariants.length)];
-          const promoTweet = await postTweet(promo, reply.id);
-          promoId = promoTweet.id;
-          console.log(`  ✓ Boilerplate promo posted: https://x.com/i/web/status/${promoId}`);
-        } catch (e) {
-          console.log(`  · Promo skipped: ${(e as Error).message}`);
-        }
-      }
+      // NOTE: The immediate "boilerplate promo" 3rd reply was REMOVED. Posting
+      // a 3rd tweet from the same author seconds after the main tweet triggers
+      // the author_diversity_scorer's decay (multiplier ~ decay^2), tanking
+      // reach of the main tweet. Run the standalone scripts/post-boilerplate-promo.ts
+      // weekly instead.
 
       await appendFile(
         LOG_PATH,
@@ -396,10 +542,14 @@ async function main() {
           slug: article.slug,
           tweetId: main.id,
           replyId: reply.id,
-          promoId,
+          mediaId: heroMediaId,
+          bangerScore,
+          bangerReasoning,
+          bangerAttempts,
           text: tweetText,
         }) + "\n",
       );
+      postedCount++;
     } catch (e) {
       console.error(`  ✗ X post failed: ${(e as Error).message} — falling back to queue`);
       const q = await loadQueue();

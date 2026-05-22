@@ -11,6 +11,7 @@ import { XQueuePanel } from "./XQueuePanel";
 import { XReplyQueuePanel } from "./XReplyQueuePanel";
 import { XHistoryPanel } from "./XHistoryPanel";
 import { XTodayPanel } from "./XTodayPanel";
+import { TrafficHero } from "./TrafficHero";
 
 type Stats = {
   articles: {
@@ -203,6 +204,9 @@ export function DashboardClient() {
       </div>
 
       <main className="max-w-[1600px] mx-auto p-6">
+        {/* ALWAYS-ON TRAFFIC STRIP — web (counterapi) + X (logs + analytics) */}
+        <TrafficHero />
+
         {/* HERO METRICS — the 4 numbers that touch revenue */}
         <SectionLabel>Today's signals</SectionLabel>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-3">

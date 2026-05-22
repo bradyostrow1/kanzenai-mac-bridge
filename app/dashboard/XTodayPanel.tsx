@@ -1,12 +1,20 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Twitter, ExternalLink, MessageSquare, Megaphone, GitBranch, RefreshCw, Loader2 } from "lucide-react";
+import { Twitter, ExternalLink, MessageSquare, Megaphone, GitBranch, RefreshCw, Loader2, Image as ImageIcon, Zap } from "lucide-react";
 
 type Item =
-  | { kind: "post"; ts: string; slug?: string; mainId: string; linkReplyId?: string; promoId?: string; text: string }
+  | {
+      kind: "post"; ts: string; slug?: string; mainId: string;
+      linkReplyId?: string; promoId?: string; text: string;
+      hasMedia?: boolean; bangerScore?: number | null; bangerReasoning?: string | null; bangerAttempts?: number | null;
+    }
   | { kind: "reply"; ts: string; targetUser?: string; targetTweetId?: string; tweetId: string; text: string; authorFollowers?: number }
-  | { kind: "thread"; ts: string; slug: string; title: string; rootTweetId: string; tweetIds: string[]; texts: string[] };
+  | {
+      kind: "thread"; ts: string; slug: string; title: string; rootTweetId: string;
+      tweetIds: string[]; texts: string[];
+      bangerScore?: number | null; bangerReasoning?: string | null; bangerAttempts?: number | null;
+    };
 
 type Resp = {
   items: Item[];
@@ -77,6 +85,18 @@ export function XTodayPanel() {
                     label="auto-post"
                     color="text-emerald-700"
                     ts={it.ts}
+                    badges={
+                      <>
+                        {it.hasMedia && (
+                          <span title="Hero image attached — drives photo_expand signal" className="flex items-center gap-0.5 text-ink-3 normal-case tracking-normal">
+                            <ImageIcon className="w-3 h-3" />
+                          </span>
+                        )}
+                        {typeof it.bangerScore === "number" && (
+                          <BangerBadge score={it.bangerScore} attempts={it.bangerAttempts ?? 1} reasoning={it.bangerReasoning ?? ""} />
+                        )}
+                      </>
+                    }
                   />
                   <div className="text-[12.5px] text-ink-0 leading-relaxed whitespace-pre-wrap mt-1">{it.text}</div>
                   <div className="flex flex-wrap items-center gap-3 mt-2 text-[11px]">
@@ -122,6 +142,11 @@ export function XTodayPanel() {
                     label={`thread · ${it.tweetIds.length} tweets`}
                     color="text-blue-700"
                     ts={it.ts}
+                    badges={
+                      typeof it.bangerScore === "number"
+                        ? <BangerBadge score={it.bangerScore} attempts={it.bangerAttempts ?? 1} reasoning={it.bangerReasoning ?? ""} />
+                        : undefined
+                    }
                   />
                   <div className="text-[12.5px] text-ink-0 leading-relaxed mt-1 font-medium">{it.title}</div>
                   <div className="mt-2 space-y-1.5 text-[12px] text-ink-1 border-l-2 border-rule pl-3">
@@ -152,7 +177,7 @@ export function XTodayPanel() {
   );
 }
 
-function RowMeta({ icon, label, color, ts, extra }: { icon: React.ReactNode; label: string; color: string; ts: string; extra?: string }) {
+function RowMeta({ icon, label, color, ts, extra, badges }: { icon: React.ReactNode; label: string; color: string; ts: string; extra?: string; badges?: React.ReactNode }) {
   return (
     <div className="flex items-center gap-2 text-[10px] uppercase tracking-[0.16em]">
       {icon}
@@ -160,7 +185,27 @@ function RowMeta({ icon, label, color, ts, extra }: { icon: React.ReactNode; lab
       <span className="text-ink-3">·</span>
       <span className="text-ink-3 normal-case tracking-normal">{timeLocal(ts)} · {timeAgo(ts)}</span>
       {extra && <span className="text-ink-3 normal-case tracking-normal">· {extra}</span>}
+      {badges && <span className="ml-auto flex items-center gap-2">{badges}</span>}
     </div>
+  );
+}
+
+function BangerBadge({ score, attempts, reasoning }: { score: number; attempts: number; reasoning: string }) {
+  // X For-You banger_initial_screen: >=0.4 clears the screen, >=0.7 is hot.
+  const color =
+    score >= 0.7 ? "text-emerald-700 bg-emerald-50 border-emerald-200"
+    : score >= 0.55 ? "text-amber-800 bg-amber-50 border-amber-200"
+    : score >= 0.4 ? "text-orange-700 bg-orange-50 border-orange-200"
+    : "text-red-700 bg-red-50 border-red-200";
+  return (
+    <span
+      title={`Banger ${score.toFixed(2)} (${attempts} attempt${attempts === 1 ? "" : "s"})\n${reasoning}`}
+      className={`inline-flex items-center gap-1 px-1.5 py-0.5 border text-[9px] tracking-normal normal-case ${color}`}
+    >
+      <Zap className="w-2.5 h-2.5" />
+      banger {score.toFixed(2)}
+      {attempts > 1 && <span className="text-ink-3">×{attempts}</span>}
+    </span>
   );
 }
 

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  KanzenAI X post drain.
+
+  The X For-You algorithm penalizes back-to-back posts from the same author
+  (author_diversity_scorer applies decay^position). post-to-x.ts now enforces
+  a MIN_GAP_MINUTES gap and posts at most --limit candidates per run.
+
+  This cron runs every hour. Each invocation checks the gap, posts one
+  candidate if eligible, then exits. The 8 AM daily-article cron writes 3
+  articles; this cron paces them through the day at ~2hr intervals.
+
+  Install:
+    cp scripts/com.kanzenai.x-post-drain.plist ~/Library/LaunchAgents/
+    launchctl bootstrap "gui/$(id -u)" ~/Library/LaunchAgents/com.kanzenai.x-post-drain.plist
+
+  Logs: ~/Code/kanzenai/.audit/x-post-drain.log
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.kanzenai.x-post-drain</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>-c</string>
+        <string>cd $HOME/Code/kanzenai &amp;&amp; mkdir -p .audit &amp;&amp; npm run post-to-x &gt;&gt; ".audit/x-post-drain.log" 2&gt;&amp;1</string>
+    </array>
+
+    <!-- Every hour, on the hour. Pacing gate inside post-to-x.ts decides
+         whether to actually post or just exit. -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Minute</key>
+        <integer>5</integer>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+        <key>HOME</key>
+        <string>/Users/bradyostrow</string>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/com.kanzenai.x-post-drain.out</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/com.kanzenai.x-post-drain.err</string>
+</dict>
+</plist>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  KanzenAI unified scheduler.
+
+  This single plist runs the cross-platform node-cron scheduler that dispatches
+  ALL bots (daily-article, x-thread, x-post-drain, audit, auto-reply,
+  boilerplate-promo, followups, auto-deploy-watcher).
+
+  When this is loaded, you should UNLOAD all the per-bot plists:
+    launchctl bootout "gui/$(id -u)" ~/Library/LaunchAgents/com.kanzenai.daily-article.plist
+    launchctl bootout "gui/$(id -u)" ~/Library/LaunchAgents/com.kanzenai.x-thread.plist
+    launchctl bootout "gui/$(id -u)" ~/Library/LaunchAgents/com.kanzenai.x-post-drain.plist
+    launchctl bootout "gui/$(id -u)" ~/Library/LaunchAgents/com.kanzenai.audit.plist
+    launchctl bootout "gui/$(id -u)" ~/Library/LaunchAgents/com.kanzenai.auto-reply.plist
+    launchctl bootout "gui/$(id -u)" ~/Library/LaunchAgents/com.kanzenai.boilerplate-promo.plist
+    launchctl bootout "gui/$(id -u)" ~/Library/LaunchAgents/com.kanzenai.followups.plist
+    launchctl bootout "gui/$(id -u)" ~/Library/LaunchAgents/com.kanzenai.auto-deploy.plist
+  Otherwise jobs will fire twice.
+
+  Install:
+    cp scripts/com.kanzenai.scheduler.plist ~/Library/LaunchAgents/
+    launchctl bootstrap "gui/$(id -u)" ~/Library/LaunchAgents/com.kanzenai.scheduler.plist
+
+  Logs: ~/Code/kanzenai/.audit/scheduler.log
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.kanzenai.scheduler</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>-c</string>
+        <string>cd $HOME/Code/kanzenai &amp;&amp; mkdir -p .audit &amp;&amp; npm run scheduler &gt;&gt; .audit/scheduler.log 2&gt;&amp;1</string>
+    </array>
+
+    <!-- Run continuously. Restart if it crashes. -->
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>ThrottleInterval</key>
+    <integer>30</integer>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+        <key>HOME</key>
+        <string>/Users/bradyostrow</string>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/com.kanzenai.scheduler.out</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/com.kanzenai.scheduler.err</string>
+</dict>
+</plist>

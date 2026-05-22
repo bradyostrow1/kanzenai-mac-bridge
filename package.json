@@ -21,11 +21,16 @@
     "find-x-replies-search": "node --import tsx scripts/find-x-replies-search.ts",
     "auto-reply": "node --import tsx scripts/auto-reply.ts",
     "post-x-thread": "node --import tsx scripts/post-x-thread.ts",
-    "x-follow-network": "node --import tsx scripts/x-follow-network.ts"
+    "post-boilerplate-promo": "node --import tsx scripts/post-boilerplate-promo.ts",
+    "x-follow-network": "node --import tsx scripts/x-follow-network.ts",
+    "scheduler": "node --import tsx scripts/scheduler.ts",
+    "vercel-deploy": "npx vercel deploy --prod --yes"
   },
   "dependencies": {
+    "chokidar": "^5.0.0",
     "lucide-react": "0.468.0",
     "next": "14.2.18",
+    "node-cron": "^4.2.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "twitter-api-v2": "^1.29.0"
@@ -33,6 +38,7 @@
   "devDependencies": {
     "@tailwindcss/typography": "0.5.15",
     "@types/node": "22.10.1",
+    "@types/node-cron": "^3.0.11",
     "@types/react": "18.3.13",
     "@types/react-dom": "18.3.1",
     "autoprefixer": "10.4.20",

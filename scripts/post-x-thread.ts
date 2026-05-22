@@ -115,6 +115,44 @@ async function pickArticle(): Promise<Article | null> {
   return candidates[0]?.article ?? null;
 }
 
+// ─── Banger screener (mirrors X For-You banger_initial_screen.py) ────────
+// Score 0.0-1.0 — Phoenix Retrieval filters posts below 0.4. We score the
+// HOOK tweet (tweet #1) since the first post in a thread is what gets indexed
+// for out-of-network discovery.
+const BANGER_MIN = Number(process.env.X_BANGER_MIN ?? 0.55);
+
+const BANGER_SYSTEM = `You are X's banger_initial_screen classifier — rate the post 0.0-1.0. Score >=0.4 clears the screen and is eligible for out-of-network discovery (Phoenix Retrieval).
+
+HIGH (>=0.7): specific data, named products, strong first-50-character hook, contrarian/list/contrast format, drives dwell time, looks like the audience's existing content.
+LOW (<0.4): generic phrasing, engagement bait, no specific numbers, sycophantic tone, AI-slop tells ("delve", "in conclusion"), one-liner with no payoff.
+
+Output ONLY this JSON: {"score": 0.0-1.0, "reasoning": "one sentence"}`;
+
+async function screenBanger(text: string): Promise<{ score: number; reasoning: string }> {
+  try {
+    const resp = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: { "x-api-key": ANTHROPIC_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
+      body: JSON.stringify({
+        model: "claude-sonnet-4-5-20250929",
+        max_tokens: 250,
+        system: BANGER_SYSTEM,
+        messages: [{ role: "user", content: `Post:\n\n${text}` }],
+      }),
+    });
+    if (!resp.ok) return { score: 0.5, reasoning: `screener HTTP ${resp.status}` };
+    const data = await resp.json();
+    const raw: string = (data.content?.[0]?.text ?? "").trim();
+    const match = raw.match(/\{[^}]+\}/);
+    if (!match) return { score: 0.5, reasoning: "no JSON" };
+    const parsed = JSON.parse(match[0]);
+    const score = Math.max(0, Math.min(1, Number(parsed.score) || 0.5));
+    return { score, reasoning: String(parsed.reasoning ?? "") };
+  } catch (e) {
+    return { score: 0.5, reasoning: `screener error: ${(e as Error).message}` };
+  }
+}
+
 // ─── Claude thread drafter ─────────────────────────────────────────────────
 const SYSTEM = `You are the X thread ghostwriter for KanzenAI — an independent affiliate review site for working real estate agents.
 
@@ -215,8 +253,28 @@ async function main() {
   console.log(`→ Article: ${article.title}`);
   console.log(`  slug: ${article.slug}\n`);
 
-  console.log("→ Drafting 5-tweet thread via Claude...");
-  const tweets = await draftThread(article);
+  // Up to 3 attempts to clear the banger screen on tweet #1 (the hook —
+  // that's what Phoenix Retrieval indexes for out-of-network discovery).
+  console.log("→ Drafting 5-tweet thread via Claude (with banger screening)...");
+  let tweets: string[] = [];
+  let bangerScore = -1;
+  let bangerReasoning = "";
+  let bangerAttempts = 0;
+  for (let i = 0; i < 3; i++) {
+    bangerAttempts = i + 1;
+    const draft = await draftThread(article);
+    const screen = await screenBanger(draft[0]);
+    console.log(`  · Draft ${i + 1}/3: hook banger=${screen.score.toFixed(2)} — ${screen.reasoning}`);
+    if (screen.score > bangerScore) {
+      tweets = draft;
+      bangerScore = screen.score;
+      bangerReasoning = screen.reasoning;
+    }
+    if (screen.score >= BANGER_MIN) break;
+  }
+  if (bangerScore < BANGER_MIN) {
+    console.log(`  ⚠ No hook cleared ${BANGER_MIN}. Posting best (${bangerScore.toFixed(2)}).`);
+  }
 
   console.log("\n─── Thread preview ───");
   tweets.forEach((t, i) => {
@@ -238,13 +296,31 @@ async function main() {
     tweets[4] = finalWithUrl;
   }
 
+  // Upload hero image — only attached to tweet 1. Algorithm weighs
+  // photo_expand, and the root tweet is what Phoenix Retrieval indexes.
+  let heroMediaId: string | null = null;
+  const heroPath = (article as Article & { headerImage?: string }).headerImage;
+  if (heroPath) {
+    try {
+      const absolute = join(ROOT, "public", heroPath.replace(/^\//, ""));
+      if (existsSync(absolute)) {
+        heroMediaId = await twitter.v1.uploadMedia(absolute);
+        console.log(`→ Hero uploaded (media_id ${heroMediaId})`);
+      }
+    } catch (e) {
+      console.log(`→ Hero upload failed: ${(e as Error).message} — text-only thread`);
+    }
+  }
+
   console.log("\n→ Posting thread...");
   const postedIds: string[] = [];
   let inReplyTo: string | undefined;
 
   for (let i = 0; i < tweets.length; i++) {
     try {
-      const opts = inReplyTo ? { reply: { in_reply_to_tweet_id: inReplyTo } } : {};
+      const opts: Record<string, unknown> = {};
+      if (inReplyTo) opts.reply = { in_reply_to_tweet_id: inReplyTo };
+      if (i === 0 && heroMediaId) opts.media = { media_ids: [heroMediaId] };
       const r = await twitter.v2.tweet(tweets[i], opts);
       postedIds.push(r.data.id);
       inReplyTo = r.data.id;
@@ -264,17 +340,9 @@ async function main() {
     }
   }
 
-  // Optional boilerplate promo as a final reply (env-gated)
-  if (process.env.BOILERPLATE_PROMO === "1") {
-    try {
-      const promo = `btw — this whole publishing engine is what I sell at kanzenai.com/boilerplate. Next.js + Claude + X bots + dashboard. $149.`;
-      const r = await twitter.v2.tweet(promo, { reply: { in_reply_to_tweet_id: postedIds[postedIds.length - 1] } });
-      postedIds.push(r.data.id);
-      console.log(`  ✓ Boilerplate promo posted: https://x.com/i/web/status/${r.data.id}`);
-    } catch (e) {
-      console.log(`  · Promo skipped: ${(e as Error).message}`);
-    }
-  }
+  // The immediate boilerplate-promo reply was REMOVED — author_diversity_scorer
+  // penalizes a 6th tweet from the same author seconds after the thread.
+  // scripts/post-boilerplate-promo.ts runs weekly as a standalone post.
 
   // Log success
   await appendFile(THREADS_LOG, JSON.stringify({
@@ -284,6 +352,9 @@ async function main() {
     rootTweetId: postedIds[0],
     allTweetIds: postedIds,
     tweetTexts: tweets,
+    bangerScore,
+    bangerReasoning,
+    bangerAttempts,
   }) + "\n");
 
   console.log(`\n✓ Thread posted (5 tweets, root: https://x.com/i/web/status/${postedIds[0]})`);

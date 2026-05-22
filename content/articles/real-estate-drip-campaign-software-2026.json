@@ -137,7 +137,7 @@
       ],
       "cta": {
         "label": "Start free trial",
-        "url": "https://www.followupboss.com/?ref=kanzenai"
+        "url": "/go/follow-up-boss"
       }
     },
     {
@@ -219,7 +219,7 @@
     },
     {
       "name": "Follow Up Boss",
-      "url": "https://www.followupboss.com/?ref=kanzenai",
+      "url": "/go/follow-up-boss",
       "commission": "varies"
     },
     {

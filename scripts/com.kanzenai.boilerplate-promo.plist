@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  KanzenAI weekly boilerplate-promo tweet.
+
+  Runs Tuesday 10 AM. Posts a single fresh tweet promoting
+  kanzenai.com/boilerplate from a rotating pool of variants. This replaces
+  the old "post promo as 3rd reply on every auto-tweet" pattern, which
+  triggered author_diversity_scorer's decay and killed the main post's reach.
+
+  Install:
+    cp scripts/com.kanzenai.boilerplate-promo.plist ~/Library/LaunchAgents/
+    launchctl bootstrap "gui/$(id -u)" ~/Library/LaunchAgents/com.kanzenai.boilerplate-promo.plist
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.kanzenai.boilerplate-promo</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>-c</string>
+        <string>cd $HOME/Code/kanzenai &amp;&amp; mkdir -p .audit &amp;&amp; node --import tsx scripts/post-boilerplate-promo.ts &gt;&gt; ".audit/boilerplate-promo.log" 2&gt;&amp;1</string>
+    </array>
+
+    <!-- Tuesday at 10:00 AM local -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Weekday</key>
+        <integer>2</integer>
+        <key>Hour</key>
+        <integer>10</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+        <key>HOME</key>
+        <string>/Users/bradyostrow</string>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/com.kanzenai.boilerplate-promo.out</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/com.kanzenai.boilerplate-promo.err</string>
+</dict>
+</plist>

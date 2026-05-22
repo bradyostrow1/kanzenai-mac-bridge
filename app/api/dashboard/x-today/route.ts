@@ -32,14 +32,30 @@ function isToday(iso: string): boolean {
   return localYMD(new Date(iso)) === localYMD(new Date());
 }
 
-type PostLog = { ts: string; slug?: string; tweetId: string; replyId?: string; promoId?: string; text: string };
+type PostLog = {
+  ts: string; slug?: string; tweetId: string; replyId?: string; promoId?: string;
+  mediaId?: string | null; bangerScore?: number; bangerReasoning?: string; bangerAttempts?: number;
+  text: string;
+};
 type ReplyLog = { ts: string; targetUser?: string; targetTweetId?: string; postedTweetId: string; text: string; authorFollowers?: number };
-type ThreadLog = { ts: string; slug: string; title: string; rootTweetId: string; allTweetIds: string[]; tweetTexts: string[] };
+type ThreadLog = {
+  ts: string; slug: string; title: string; rootTweetId: string;
+  allTweetIds: string[]; tweetTexts: string[];
+  bangerScore?: number; bangerReasoning?: string; bangerAttempts?: number;
+};
 
 type TodayItem =
-  | { kind: "post"; ts: string; slug?: string; mainId: string; linkReplyId?: string; promoId?: string; text: string }
+  | {
+      kind: "post"; ts: string; slug?: string; mainId: string;
+      linkReplyId?: string; promoId?: string; text: string;
+      hasMedia: boolean; bangerScore: number | null; bangerReasoning: string | null; bangerAttempts: number | null;
+    }
   | { kind: "reply"; ts: string; targetUser?: string; targetTweetId?: string; tweetId: string; text: string; authorFollowers?: number }
-  | { kind: "thread"; ts: string; slug: string; title: string; rootTweetId: string; tweetIds: string[]; texts: string[] };
+  | {
+      kind: "thread"; ts: string; slug: string; title: string; rootTweetId: string;
+      tweetIds: string[]; texts: string[];
+      bangerScore: number | null; bangerReasoning: string | null; bangerAttempts: number | null;
+    };
 
 export async function GET() {
   const guard = devGuard();
@@ -53,6 +69,10 @@ export async function GET() {
     ...posts.map((e): TodayItem => ({
       kind: "post", ts: e.ts, slug: e.slug, mainId: e.tweetId,
       linkReplyId: e.replyId, promoId: e.promoId, text: e.text,
+      hasMedia: !!e.mediaId,
+      bangerScore: typeof e.bangerScore === "number" ? e.bangerScore : null,
+      bangerReasoning: e.bangerReasoning ?? null,
+      bangerAttempts: typeof e.bangerAttempts === "number" ? e.bangerAttempts : null,
     })),
     ...replies.map((e): TodayItem => ({
       kind: "reply", ts: e.ts, targetUser: e.targetUser, targetTweetId: e.targetTweetId,
@@ -61,6 +81,9 @@ export async function GET() {
     ...threads.map((e): TodayItem => ({
       kind: "thread", ts: e.ts, slug: e.slug, title: e.title,
       rootTweetId: e.rootTweetId, tweetIds: e.allTweetIds, texts: e.tweetTexts,
+      bangerScore: typeof e.bangerScore === "number" ? e.bangerScore : null,
+      bangerReasoning: e.bangerReasoning ?? null,
+      bangerAttempts: typeof e.bangerAttempts === "number" ? e.bangerAttempts : null,
     })),
   ].sort((a, b) => Date.parse(b.ts) - Date.parse(a.ts));
 
