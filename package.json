@@ -24,6 +24,7 @@
     "post-boilerplate-promo": "node --import tsx scripts/post-boilerplate-promo.ts",
     "x-follow-network": "node --import tsx scripts/x-follow-network.ts",
     "scheduler": "node --import tsx scripts/scheduler.ts",
+    "vendor-approval-tracker": "node --import tsx scripts/vendor-approval-tracker.ts",
     "vercel-deploy": "npx vercel deploy --prod --yes"
   },
   "dependencies": {

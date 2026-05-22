@@ -115,6 +115,11 @@ const JOBS: Job[] = [
 
   // 6 AM — followups to vendors >=7d old without response
   { name: "followups", cron: "0 6 * * *", npmScript: "followups", description: "Vendor outreach follow-ups" },
+
+  // 4 PM — vendor-approval-tracker: polls each affiliate network's API, detects new approvals,
+  // auto-updates lib/affiliates.ts (placeholder -> live + real tracked URL). Skips networks
+  // without credentials in .env.local. Telegram alert on changes.
+  { name: "vendor-approval-tracker", cron: "0 16 * * *", npmScript: "vendor-approval-tracker", description: "Polls Awin/ShareASale/Impact/CJ/Refersion for newly-approved affiliate programs" },
 ];
 
 // Continuous watcher — replaces auto-deploy-watcher.sh with chokidar (cross-platform).
