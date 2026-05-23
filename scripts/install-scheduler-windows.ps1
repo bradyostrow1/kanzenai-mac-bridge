@@ -1,13 +1,6 @@
-# KanzenAI scheduler — Windows installer
+# KanzenAI scheduler - Windows installer (PS 5.1 safe, ASCII only)
 # Registers a Task Scheduler entry that runs the cross-platform node-cron
 # scheduler at user logon, restarts it if it crashes, runs hidden.
-#
-# Run from PowerShell (NOT as admin — runs in user context):
-#   cd C:\Users\User\Code\kanzenai
-#   pwsh -ExecutionPolicy Bypass -File scripts\install-scheduler-windows.ps1
-#
-# Uninstall:
-#   schtasks /Delete /TN "KanzenAI Scheduler" /F
 
 $ErrorActionPreference = "Stop"
 
@@ -18,33 +11,30 @@ $LogFile     = Join-Path $LogDir "scheduler.log"
 
 if (-not (Test-Path $LogDir)) { New-Item -ItemType Directory -Path $LogDir | Out-Null }
 
-# Sanity check — must be run from kanzenai project root
 if (-not (Test-Path (Join-Path $ProjectPath "scripts\scheduler.ts"))) {
     Write-Error "Run this from the kanzenai project root. Cannot find scripts\scheduler.ts."
     exit 1
 }
 if (-not (Test-Path (Join-Path $ProjectPath ".env.local"))) {
-    Write-Warning ".env.local not found at $ProjectPath\.env.local — copy your secrets there first."
+    Write-Warning ".env.local not found at $ProjectPath\.env.local - copy your secrets there first."
 }
 
-# Resolve node + npm full paths (Task Scheduler doesn't inherit PATH the same way).
 $npmPath = (Get-Command npm.cmd -ErrorAction SilentlyContinue).Source
 if (-not $npmPath) {
-    Write-Error "npm.cmd not found on PATH. Install Node.js LTS first: https://nodejs.org/"
+    Write-Error "npm.cmd not found on PATH. Install Node.js LTS first."
     exit 1
 }
 
-# Build the command — run via cmd.exe so output redirection works.
 $cmdLine = "/c cd /d `"$ProjectPath`" && `"$npmPath`" run scheduler >> `"$LogFile`" 2>&1"
 
-# Delete any existing task with the same name
-schtasks /Query /TN $TaskName 2>$null
-if ($LASTEXITCODE -eq 0) {
-    Write-Host "Removing existing task..."
-    schtasks /Delete /TN $TaskName /F | Out-Null
+# Remove any existing task silently
+try {
+    Unregister-ScheduledTask -TaskName $TaskName -Confirm:$false -ErrorAction Stop
+    Write-Host "Removed existing task."
+} catch {
+    # task didn't exist, no-op
 }
 
-# Create the task
 $action = New-ScheduledTaskAction -Execute "cmd.exe" -Argument $cmdLine -WorkingDirectory $ProjectPath
 $trigger = New-ScheduledTaskTrigger -AtLogOn -User $env:USERNAME
 $settings = New-ScheduledTaskSettingsSet `
@@ -65,13 +55,13 @@ Register-ScheduledTask `
     -Description "Runs the KanzenAI cross-platform scheduler. Manages all bot crons in one node process." | Out-Null
 
 Write-Host ""
-Write-Host "✓ Installed Task Scheduler entry: $TaskName"
-Write-Host "  Project:  $ProjectPath"
-Write-Host "  Log:      $LogFile"
-Write-Host "  Trigger:  At user logon (or run now: 'schtasks /Run /TN `"$TaskName`"')"
+Write-Host "Installed Task Scheduler entry: $TaskName"
+Write-Host "  Project: $ProjectPath"
+Write-Host "  Log:     $LogFile"
+Write-Host "  Trigger: At user logon"
 Write-Host ""
-Write-Host "→ Start it now:    schtasks /Run /TN `"$TaskName`""
-Write-Host "→ Check status:    schtasks /Query /TN `"$TaskName`" /V /FO LIST"
-Write-Host "→ Tail the log:    Get-Content -Wait `"$LogFile`""
-Write-Host "→ Stop running:    schtasks /End /TN `"$TaskName`""
-Write-Host "→ Remove:          schtasks /Delete /TN `"$TaskName`" /F"
+Write-Host "Start now:    schtasks /Run /TN `"$TaskName`""
+Write-Host "Check status: schtasks /Query /TN `"$TaskName`" /V /FO LIST"
+Write-Host "Tail log:     Get-Content -Wait `"$LogFile`""
+Write-Host "Stop:         schtasks /End /TN `"$TaskName`""
+Write-Host "Remove:       Unregister-ScheduledTask -TaskName `"$TaskName`" -Confirm:`$false"

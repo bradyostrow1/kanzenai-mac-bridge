@@ -1,6 +1,24 @@
 /**
  * KanzenAI auto-reply bot.
  *
+ * ⚠️ DISABLED IN scheduler.ts AS OF 2026-05-22.
+ *   Reason: every 15-min run hit twitter.v2.search 7x (paid endpoint, ~$1-5/day)
+ *   and the bio-match niche filter rejected ~100% of candidates — net 0 replies
+ *   posted for real spend. The selection logic needs a rebuild before this can
+ *   be turned back on. See "REBUILD PLAN" comments below.
+ *
+ * REBUILD PLAN (when we come back to this):
+ *   1. Stop scanning broad QUERIES; instead, follow a fixed list of 20-50 named
+ *      real-estate tech operator accounts and pull THEIR timelines (cheaper +
+ *      every candidate is already on-niche, no bio match needed).
+ *   2. Drop the 10k+ follower minimum — engagement matters more than follower
+ *      vanity, and 1-5k-follower agents reply back more often.
+ *   3. Move from twitter.v2.search to user-timeline reads (much cheaper) for
+ *      the prospect feed, and only use search for explicit product-name
+ *      mentions ("Follow Up Boss", "kvCORE" etc.) which is rare + tractable.
+ *   4. Cap daily Anthropic-draft calls (cheap but not free) at the same 10/day
+ *      ceiling that already gates posting.
+ *
  * Searches X for brand-new posts from 10k+ follower accounts in the real
  * estate / agent tech niche, drafts a substantive reply via Claude, and
  * posts it immediately if Claude judges it on-brand.

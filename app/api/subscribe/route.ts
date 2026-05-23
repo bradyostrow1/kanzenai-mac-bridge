@@ -95,19 +95,19 @@ function welcomeEmailHtml(source?: string): string {
       <div style="font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:36px;letter-spacing:-1px;">KanzenAI</div>
       <div style="font-size:11px;letter-spacing:4px;color:#525252;margin-top:8px;">HONEST REVIEWS · REAL ESTATE AGENT TOOL STACK</div>
     </div>
-    <p style="font-size:16px;line-height:1.6;margin:0 0 16px;">You're in. Here's the link I promised:</p>
+    <p style="font-size:16px;line-height:1.6;margin:0 0 16px;">You're in. Here's the link we promised:</p>
     <div style="margin:20px 0;text-align:center;">
       <a href="https://kanzenai.com/resources/tool-stack?ref=welcome" style="display:inline-block;background:#0a0a0a;color:#f0eee9;text-decoration:none;padding:14px 28px;font-weight:600;font-size:14px;letter-spacing:0.5px;">→ Open the 2026 Real Estate Tool Stack</a>
     </div>
     <p style="font-size:15px;line-height:1.6;margin:24px 0 16px;">It's a one-page breakdown of every CRM, dialer, AI tool, and lead-gen platform agents are actually using in 2026 — with the pricing they hide.</p>
     <p style="font-size:15px;line-height:1.6;margin:0 0 16px;">A few things to know:</p>
     <ul style="font-size:15px;line-height:1.7;padding-left:20px;margin:0 0 24px;">
-      <li>I review every tool myself before listing it. No vendor pays for placement.</li>
-      <li>When you click a tool's link from my site, I may earn a commission. It doesn't change the review.</li>
-      <li>I'll send 1 honest email per week. Pricing changes, new tool launches, agent-stack breakdowns. That's it.</li>
+      <li>We review every tool ourselves before listing it. No vendor pays for placement.</li>
+      <li>When you click a tool's link from our site, we may earn a commission. It doesn't change the review.</li>
+      <li>We'll send 1 honest email per week. Pricing changes, new tool launches, agent-stack breakdowns. That's it.</li>
     </ul>
-    <p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Reply to this email if you want me to dig into a specific tool. I read every reply.</p>
-    <p style="font-size:15px;line-height:1.6;margin:24px 0 0;">— Brady<br/><span style="color:#525252;font-size:13px;">Founder, KanzenAI</span></p>
+    <p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Reply to this email if you want us to dig into a specific tool. We read every reply.</p>
+    <p style="font-size:15px;line-height:1.6;margin:24px 0 0;">— The KanzenAI Editorial Team</p>
     <hr style="border:none;border-top:1px solid #d0cec9;margin:40px 0 16px;" />
     <p style="font-size:11px;color:#525252;margin:0;">Sent because you signed up at kanzenai.com (${safeSource}). Reply with "unsubscribe" to opt out.</p>
   </div>
@@ -115,7 +115,7 @@ function welcomeEmailHtml(source?: string): string {
 }
 
 function welcomeEmailText(source?: string): string {
-  return `You're in. Here's the link I promised:
+  return `You're in. Here's the link we promised:
 
 → The 2026 Real Estate Tool Stack
 https://kanzenai.com/resources/tool-stack?ref=welcome
@@ -123,14 +123,13 @@ https://kanzenai.com/resources/tool-stack?ref=welcome
 A one-page breakdown of every CRM, dialer, AI tool, and lead-gen platform agents are actually using in 2026 — with the pricing they hide.
 
 A few things to know:
-- I review every tool myself before listing it. No vendor pays for placement.
-- When you click a tool's link from my site, I may earn a commission. It doesn't change the review.
-- I'll send 1 honest email per week. Pricing changes, new tool launches, agent-stack breakdowns. That's it.
+- We review every tool ourselves before listing it. No vendor pays for placement.
+- When you click a tool's link from our site, we may earn a commission. It doesn't change the review.
+- We'll send 1 honest email per week. Pricing changes, new tool launches, agent-stack breakdowns. That's it.
 
-Reply to this email if you want me to dig into a specific tool. I read every reply.
+Reply to this email if you want us to dig into a specific tool. We read every reply.
 
-— Brady
-Founder, KanzenAI
+— The KanzenAI Editorial Team
 
 ---
 Sent because you signed up at kanzenai.com (source: ${source ?? "homepage"}). Reply with "unsubscribe" to opt out.`;

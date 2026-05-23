@@ -1,0 +1,25 @@
+[Unit]
+Description=KanzenAI scheduler (single node-cron process — 7 jobs + auto-deploy watcher)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=brady
+Group=brady
+WorkingDirectory=/opt/kanzen
+EnvironmentFile=/opt/kanzen/.env.local
+Environment=NODE_ENV=production
+Environment=TZ=America/New_York
+ExecStart=/usr/bin/npm run scheduler
+Restart=always
+RestartSec=5
+StandardOutput=append:/var/log/kanzen-scheduler.log
+StandardError=append:/var/log/kanzen-scheduler.log
+
+# Limits — Node + a couple of child processes max
+LimitNOFILE=4096
+MemoryMax=1G
+
+[Install]
+WantedBy=multi-user.target

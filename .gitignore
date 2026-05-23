@@ -44,3 +44,4 @@ affiliate-codes.json
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.env*
