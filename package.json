@@ -30,6 +30,10 @@
     "reply-hunter:live": "node --import tsx scripts/x-reply-hunter.ts --live",
     "x-engagement": "node --import tsx scripts/x-engagement.ts",
     "x-engagement:live": "node --import tsx scripts/x-engagement.ts --live",
+    "x-strategist": "node --import tsx scripts/x-strategist.ts",
+    "x-strategist:live": "node --import tsx scripts/x-strategist.ts --live",
+    "x-strategy:undo": "node --import tsx scripts/x-strategy-undo.ts",
+    "x-strategy:freeze": "node --import tsx scripts/x-strategy-freeze.ts",
     "vercel-deploy": "npx vercel deploy --prod --yes"
   },
   "dependencies": {

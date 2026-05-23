@@ -75,12 +75,26 @@ type Suggestion = {
 };
 
 async function suggestTopic(coverage: string): Promise<Suggestion> {
+  // Bot 11 · X Strategist may have a topic-emphasis steer in the live config.
+  // Loaded lazily so a bad config never breaks the writer's main path.
+  let emphasis = "";
+  try {
+    const { loadStrategy } = await import("../lib/x-strategy.js");
+    emphasis = loadStrategy().topic_emphasis;
+  } catch (e: any) {
+    console.warn(`[daily-auto-write] strategy load failed (${e.message}) — no emphasis`);
+  }
+
+  const emphasisSection = emphasis
+    ? `\n\nSTRATEGY EMPHASIS (from Bot 11, treat as a soft steer — don't break the other rules to satisfy it): ${emphasis}`
+    : "";
+
   const system = `You suggest the next article for KanzenAI, an affiliate review site for working real estate agents. Pick a topic that:
 1. Does NOT duplicate any topic already covered (titles given below)
 2. Targets a real keyword real-estate agents would search (transactional intent preferred — "best X for Y", "X vs Y")
 3. Fills a sparse category if possible. Categories: CRM, Lead Gen, AI Tools, Marketing, Phone & Calls, Scheduling, Invoicing, Inventory.
 4. Names 3-5 REAL products that exist in the real-estate-tech space (no fictional products)
-5. Uses a distinctive, non-boilerplate title (not "Best X for Real Estate Agents in 2026" — instead something like "Real Estate Y in 2026: A vs B vs C", or "The Guide to X for Working Agents", etc.)
+5. Uses a distinctive, non-boilerplate title (not "Best X for Real Estate Agents in 2026" — instead something like "Real Estate Y in 2026: A vs B vs C", or "The Guide to X for Working Agents", etc.)${emphasisSection}
 
 Output STRICT JSON with this shape, no prose, no markdown fences:
 {

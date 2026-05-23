@@ -34,6 +34,7 @@ import { TwitterApi, ApiResponseError } from "twitter-api-v2";
 import { appendFile, mkdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { existsSync, readFileSync } from "node:fs";
+import { loadStrategy } from "../lib/x-strategy.js";
 
 const ROOT = process.cwd();
 const ARTICLES_DIR = join(ROOT, "content", "articles");
@@ -71,33 +72,12 @@ const CAPS = {
   perTimelineMaxRecent: 5,        // pull only the 5 most recent posts per operator
 } as const;
 
-// ─── Named-operator timeline source (NOT paid search) ─────────────
-// Keep this list short, high-signal, and updated by hand. ~20–40 accounts
-// is the sweet spot — broad enough to catch hot conversations, narrow enough
-// to stay relevant.
-const OPERATORS: string[] = [
-  // RE-tech analysts + publications
-  "MikeDelPrete",
-  "RobHahnNotorious",
-  "BradInman",
-  // RE-tech founders / brokerage execs
-  "SpencerRascoff",
-  "glennsanford",
-  // RE coaches with active timelines
-  "kevinwardnow",
-  "TheMikeFerry",
-  // Vendor accounts — replies under their launches put us in front of buyers
-  "FollowUpBoss",
-  "Lofty",
-  // Add more after reviewing CTR — keep curated, never grow past ~40.
-];
-
-const NICHE_KEYWORDS = [
-  "real estate", "realtor", "brokerage", "crm", "lead gen",
-  "ai", "agent tech", "follow up boss", "kvcore", "lofty",
-  "vulcan", "redx", "mojo", "phoneburner", "isa", "transaction",
-  "listing", "dialer", "showings", "open house", "buyer", "seller",
-];
+// Named-operator list + niche keywords come from config/x-strategy.json
+// (managed by Bot 11 · X Strategist). Hard rails in lib/x-strategy.ts make
+// sure a malformed config can never break this bot.
+const STRATEGY = loadStrategy();
+const OPERATORS: string[] = STRATEGY.operators;
+const NICHE_KEYWORDS: string[] = STRATEGY.niche_keywords;
 
 const twitter = new TwitterApi({
   appKey: process.env.X_CONSUMER_KEY!,

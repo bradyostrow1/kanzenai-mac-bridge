@@ -413,6 +413,24 @@ function shouldConsider(article: Article, today: string, backlogCutoff: number):
 async function main() {
   if (!existsSync(AUDIT_DIR)) await mkdir(AUDIT_DIR, { recursive: true });
 
+  // ─── Preferred-hour gate (managed by Bot 11 · X Strategist) ─────
+  // The strategist picks 2-4 hours/day with the best historical engagement
+  // in our niche. Outside those hours we short-circuit. DRY_RUN/QUEUE_ONLY/
+  // SLUG_FILTER bypass — those are deliberate one-shots, not the cron drain.
+  if (!DRY_RUN && !QUEUE_ONLY && !SLUG_FILTER && !SKIP_GAP) {
+    try {
+      const { loadStrategy } = await import("../lib/x-strategy.js");
+      const strat = loadStrategy();
+      const hour = new Date().getHours();
+      if (!strat.preferred_post_hours_local.includes(hour)) {
+        console.log(`→ Hour ${hour} not in strategy preferred_post_hours_local ${JSON.stringify(strat.preferred_post_hours_local)} — skipping`);
+        return;
+      }
+    } catch (e: any) {
+      console.warn(`[post-to-x] strategy load failed (${e.message}) — proceeding without hour gate`);
+    }
+  }
+
   const all = await loadArticles();
   const today = localDateString();
   const backlogCutoff = BACKLOG_DAYS > 0 ? Date.now() - BACKLOG_DAYS * 24 * 60 * 60 * 1000 : 0;

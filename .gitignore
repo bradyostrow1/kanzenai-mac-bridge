@@ -38,6 +38,11 @@ yarn-error.log*
 content/**/*.json.bak
 .audit/
 
+# x-strategy runtime state (per-host — Bot 11 writes these on the VPS).
+# Only the default config is checked in; the live one is per-host.
+config/x-strategy.json
+config/x-strategy-changelog.jsonl
+
 # real affiliate codes — never commit
 affiliate-codes.json
 

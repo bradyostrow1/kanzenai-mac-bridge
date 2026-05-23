@@ -137,6 +137,13 @@ const JOBS: Job[] = [
   // After N consecutive failures, Telegram alert so Brady can decide
   // whether the vendor dropped him or the URL format changed.
   { name: "affiliate-link-guard", cron: "0 5 * * *", npmScript: "affiliate-link-guard", description: "Daily health-check on every live affiliate link" },
+
+  // 6 AM — x-strategist (Bot 11). Scans named-operator timelines, asks Claude
+  // to extract trending formats/topics/hours, and auto-updates config/x-strategy.json.
+  // DRY-RUN BY DEFAULT — uses the dry-run alias so the first runs only LOG
+  // what would change. Brady flips to x-strategist:live once the proposals
+  // look sane. Versioned snapshots in .audit/x-strategy-versions/ for undo.
+  { name: "x-strategist", cron: "0 6 * * *", npmScript: "x-strategist", description: "Bot 11 — dry-run pattern scan + proposed config diff. Flip to x-strategist:live when ready" },
 ];
 
 // Continuous watcher — replaces auto-deploy-watcher.sh with chokidar (cross-platform).

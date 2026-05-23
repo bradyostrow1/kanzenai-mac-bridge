@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-05-22T00:00:00.000Z",
+  "updated_by": "default",
+  "frozen": false,
+
+  "operators": [
+    "MikeDelPrete",
+    "RobHahnNotorious",
+    "BradInman",
+    "SpencerRascoff",
+    "glennsanford",
+    "kevinwardnow",
+    "TheMikeFerry",
+    "FollowUpBoss",
+    "Lofty"
+  ],
+
+  "follow_pool": [
+    "matt_laricy",
+    "TomFerry",
+    "EmilGirov",
+    "InmanNews",
+    "GaryKeller",
+    "homelight",
+    "Compass",
+    "ZillowGroup",
+    "realtorcom"
+  ],
+
+  "niche_keywords": [
+    "real estate",
+    "realtor",
+    "brokerage",
+    "crm",
+    "lead gen",
+    "ai",
+    "agent tech",
+    "follow up boss",
+    "kvcore",
+    "lofty",
+    "vulcan",
+    "redx",
+    "mojo",
+    "phoneburner",
+    "isa",
+    "transaction",
+    "listing",
+    "dialer",
+    "showings",
+    "open house",
+    "buyer",
+    "seller"
+  ],
+
+  "preferred_post_hours_local": [8, 11, 14, 17],
+  "thread_vs_single_ratio": 0.5,
+
+  "topic_emphasis": "",
+
+  "last_scan_summary": null
+}

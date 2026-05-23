@@ -24,6 +24,7 @@ import { TwitterApi, ApiResponseError } from "twitter-api-v2";
 import { appendFile, mkdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { existsSync, readFileSync } from "node:fs";
+import { loadStrategy } from "../lib/x-strategy.js";
 
 const ROOT = process.cwd();
 const AUDIT_DIR = join(ROOT, ".audit");
@@ -58,33 +59,12 @@ const CAPS = {
   perTimelineMaxRecent: 3,  // only peek at 3 most recent posts per operator
 } as const;
 
-// Same curated operators as Bot 4 — keep these synchronized by hand.
-const OPERATORS: string[] = [
-  "MikeDelPrete", "RobHahnNotorious", "BradInman",
-  "SpencerRascoff", "glennsanford",
-  "kevinwardnow", "TheMikeFerry",
-  "FollowUpBoss", "Lofty",
-];
-
-// Wider list of accounts that are good follow targets but NOT necessarily
-// in the active-engagement loop. Drip-followed at most followsPerDay.
-const FOLLOW_POOL: string[] = [
-  "matt_laricy",        // top-producer Chicago
-  "TomFerry",           // RE coaching
-  "EmilGirov",          // RE-tech / brokerage exec
-  "InmanNews",          // industry publication
-  "GaryKeller",         // Keller Williams founder
-  "homelight",          // RE-tech brand
-  "Compass",            // brokerage
-  "ZillowGroup",        // platform
-  "realtorcom",         // platform
-  // Expand over time, never past ~50.
-];
-
-const NICHE_KEYWORDS = [
-  "real estate", "realtor", "brokerage", "crm", "lead",
-  "ai", "agent tech", "listing", "dialer", "buyer", "seller",
-];
+// Operators / follow pool / niche keywords come from config/x-strategy.json
+// (managed by Bot 11 · X Strategist). Bot 4 reads the same operators list.
+const STRATEGY = loadStrategy();
+const OPERATORS: string[] = STRATEGY.operators;
+const FOLLOW_POOL: string[] = STRATEGY.follow_pool;
+const NICHE_KEYWORDS: string[] = STRATEGY.niche_keywords;
 
 const twitter = new TwitterApi({
   appKey: process.env.X_CONSUMER_KEY!,
