@@ -26,6 +26,10 @@
     "scheduler": "node --import tsx scripts/scheduler.ts",
     "vendor-approval-tracker": "node --import tsx scripts/vendor-approval-tracker.ts",
     "affiliate-link-guard": "node --import tsx scripts/affiliate-link-guard.ts",
+    "reply-hunter": "node --import tsx scripts/x-reply-hunter.ts",
+    "reply-hunter:live": "node --import tsx scripts/x-reply-hunter.ts --live",
+    "x-engagement": "node --import tsx scripts/x-engagement.ts",
+    "x-engagement:live": "node --import tsx scripts/x-engagement.ts --live",
     "vercel-deploy": "npx vercel deploy --prod --yes"
   },
   "dependencies": {

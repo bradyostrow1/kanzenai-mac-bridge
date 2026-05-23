@@ -107,11 +107,20 @@ const JOBS: Job[] = [
   // 7 AM — daily 11-check audit
   { name: "audit", cron: "0 7 * * *", npmScript: "audit", description: "11-check daily audit" },
 
-  // DISABLED 2026-05-22 — auto-reply burns paid twitter.v2.search every 15 min and the
-  // bio-match niche filter rejects ~100% of candidates, so $0 ROI for real spend.
-  // Re-enable only after rebuilding the prospect selection (see scripts/auto-reply.ts
-  // TODO at top of file) so it actually finds posts worth replying to.
-  // { name: "auto-reply", cron: "*/15 * * * *", npmScript: "auto-reply", description: "Auto-reply hunter (caps: 10/day, 1/target)" },
+  // ─── X GROWTH (Bots 4 + 5) ──────────────────────────────────────
+  // Built 2026-05-22, COMMENTED OUT until Brady reviews + enables.
+  // Risk: aggressive X automation gets accounts limited or banned. Both bots
+  // are dry-run by default; the scheduler entry adds --live, so flipping these
+  // on is a 2-step decision (uncomment here, run npm script).
+  //
+  // Recommend enabling reply-hunter FIRST and watching for 7 days before
+  // turning on x-engagement. Both share .audit/x-reply-hunter-stop.txt as
+  // the panic brake — touch that file and both bots back off until cleared.
+  //
+  // { name: "reply-hunter",  cron: "0 * * * *",        npmScript: "reply-hunter:live",  description: "Bot 4 — read named-operator timelines, post ≤1 substantive reply/run (caps: 8/day, 90min gap)" },
+  // { name: "x-engagement",  cron: "0 10,16 * * *",    npmScript: "x-engagement:live",  description: "Bot 5 — likes + slow follow drip on operator+vendor list (caps: 5 likes/run, 5 follows/day)" },
+  //
+  // Legacy `auto-reply` job is permanently disabled — replaced by `reply-hunter`.
 
   // Tuesday 10 AM — weekly boilerplate promo tweet
   { name: "boilerplate-promo", cron: "0 10 * * 2", npmScript: "post-boilerplate-promo", description: "Weekly boilerplate sales tweet" },

@@ -1,11 +1,19 @@
 /**
  * KanzenAI auto-reply bot.
  *
- * ⚠️ DISABLED IN scheduler.ts AS OF 2026-05-22.
+ * ⚠️ REPLACED 2026-05-22 by scripts/x-reply-hunter.ts (Bot 4 in the roster).
+ *   The new bot follows the REBUILD PLAN below — named-operator timeline reads
+ *   instead of paid v2.search, hard rate limits, dry-run default, account-
+ *   protection back-off.
+ *
+ *   This file is KEPT for reference only. Do NOT re-enable it from the
+ *   scheduler — the `auto-reply` job entry is commented out in scheduler.ts.
+ *   Use `npm run reply-hunter` / the `reply-hunter` job entry instead.
+ *
+ * ORIGINAL DISABLE NOTE (kept for context):
  *   Reason: every 15-min run hit twitter.v2.search 7x (paid endpoint, ~$1-5/day)
  *   and the bio-match niche filter rejected ~100% of candidates — net 0 replies
- *   posted for real spend. The selection logic needs a rebuild before this can
- *   be turned back on. See "REBUILD PLAN" comments below.
+ *   posted for real spend.
  *
  * REBUILD PLAN (when we come back to this):
  *   1. Stop scanning broad QUERIES; instead, follow a fixed list of 20-50 named
