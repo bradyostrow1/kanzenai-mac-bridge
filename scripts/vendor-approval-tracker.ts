@@ -41,10 +41,11 @@ function log(msg: string) {
 }
 
 type Approval = {
-  network: "awin" | "shareasale" | "impact" | "cj" | "refersion";
-  vendorSlug: string;   // must match a slug in lib/affiliates.ts
-  vendorName: string;   // for Telegram alert
+  network: "awin" | "shareasale" | "impact" | "cj" | "refersion" | "partnerstack";
+  vendorSlug: string;   // matches an existing slug in lib/affiliates.ts (or auto-added if not)
+  vendorName: string;   // for Telegram alert + auto-add
   trackedUrl: string;   // the deep-link to put in AFFILIATES[slug].url
+  commission?: string;  // human-readable, surfaces in registry on auto-add
 };
 
 /* ──────────────── Network adapters ──────────────── */
@@ -127,6 +128,43 @@ async function pollRefersion(): Promise<Approval[]> {
   return [];
 }
 
+// PartnerStack — most of the AI-tool-shopper programs Brady is applying to
+// (Copy.ai, Writesonic, Rytr, Kit/ConvertKit) run on PartnerStack.
+// API docs: https://api.partnerstack.com/docs (header `X-PARTNER-Key`).
+async function pollPartnerStack(): Promise<Approval[]> {
+  const key = process.env.PARTNERSTACK_API_KEY;
+  if (!key) { log("partnerstack: no keys, skip"); return []; }
+  try {
+    const r = await fetch("https://api.partnerstack.com/v2/partnerships", {
+      headers: { "X-PARTNER-Key": key, Accept: "application/json" },
+    });
+    if (!r.ok) { log(`partnerstack: HTTP ${r.status}`); return []; }
+    const data: any = await r.json();
+    const partnerships = data.data || data.partnerships || [];
+    return partnerships
+      .filter((p: any) => (p.status || "").toLowerCase() === "approved")
+      .map((p: any) => {
+        const programName = p.program?.name || p.program_name || p.name || "";
+        const trackedUrl = p.tracking_link
+          ?? p.partner_link
+          ?? p.referral_link
+          ?? p.links?.[0]?.url
+          ?? "";
+        return {
+          network: "partnerstack" as const,
+          vendorSlug: deriveSlugFromName(programName),
+          vendorName: programName,
+          trackedUrl,
+          commission: p.program?.default_commission_description || undefined,
+        };
+      })
+      .filter((a: Approval) => a.vendorSlug && a.trackedUrl);
+  } catch (e: any) {
+    log(`partnerstack: error ${e.message}`);
+    return [];
+  }
+}
+
 /* ──────────────── Helpers ──────────────── */
 
 function deriveSlugFromName(name: string): string {
@@ -147,22 +185,59 @@ async function readAffiliates(): Promise<Map<string, { name: string; url: string
   return map;
 }
 
-async function applyUpdates(approvals: Approval[]): Promise<string[]> {
-  if (!approvals.length) return [];
+/**
+ * Insert a brand-new vendor entry just before the closing `};` of the
+ * AFFILIATES object literal. Preserves formatting so future regex parsing
+ * + future autoflips keep working. Network-source noted in a trailing comment.
+ */
+function insertNewVendor(src: string, a: Approval): string {
+  const safeName = a.vendorName.replace(/"/g, '\\"');
+  const safeUrl = a.trackedUrl.replace(/"/g, '\\"');
+  const commission = a.commission
+    ? `, commission: "${a.commission.replace(/"/g, '\\"')}"`
+    : "";
+  const newEntry =
+    `\n  // Auto-added ${new Date().toISOString().slice(0, 10)} on ${a.network} approval\n` +
+    `  "${a.vendorSlug}":${" ".repeat(Math.max(1, 22 - a.vendorSlug.length))}` +
+    `{ url: "${safeUrl}", name: "${safeName}", status: "live"${commission} },\n`;
+  // Insert before the LAST `};` that closes AFFILIATES (the file may have other
+  // object literals later, so we anchor on the AFFILIATES block boundary).
+  const blockRe = /(export const AFFILIATES[^=]*=\s*\{[\s\S]*?)(^\};)/m;
+  return src.replace(blockRe, (_m, body, close) => `${body}${newEntry}${close}`);
+}
+
+async function applyUpdates(approvals: Approval[]): Promise<{ flipped: string[]; added: string[] }> {
+  if (!approvals.length) return { flipped: [], added: [] };
   const current = await readAffiliates();
-  const changed: string[] = [];
+  const flipped: string[] = [];
+  const added: string[] = [];
   let src = await fs.readFile(AFFILIATES_PATH, "utf8");
 
   for (const a of approvals) {
     const existing = current.get(a.vendorSlug);
+
     if (!existing) {
-      log(`skip ${a.vendorSlug}: not in registry (need to add manually first)`);
+      // Auto-add: registry edit is low-risk per directive's approval gates.
+      // The vendor was approved on a real network — keep the entry rather than
+      // silently dropping it.
+      src = insertNewVendor(src, a);
+      added.push(`${a.vendorSlug} (${a.network})`);
+      appendFileSync(EVENT_LOG, JSON.stringify({
+        ts: new Date().toISOString(),
+        event: "added",
+        network: a.network,
+        vendorSlug: a.vendorSlug,
+        vendorName: a.vendorName,
+        trackedUrl: a.trackedUrl,
+      }) + "\n");
       continue;
     }
+
     if (existing.status === "live" && existing.url === a.trackedUrl) {
       continue; // already up to date
     }
-    // Find the line for this slug and replace the url + status
+
+    // Flip existing placeholder → live, updating URL to the real tracked link.
     const re = new RegExp(
       `("${a.vendorSlug}":\\s*\\{\\s*url:\\s*")[^"]+(",[^}]*?status:\\s*")placeholder(")`,
       "g"
@@ -170,10 +245,10 @@ async function applyUpdates(approvals: Approval[]): Promise<string[]> {
     const next = src.replace(re, (_m, p1, p2, p3) => `${p1}${a.trackedUrl}${p2}live${p3}`);
     if (next !== src) {
       src = next;
-      changed.push(`${a.vendorSlug} (${a.network})`);
-      // Append to event stream
+      flipped.push(`${a.vendorSlug} (${a.network})`);
       appendFileSync(EVENT_LOG, JSON.stringify({
         ts: new Date().toISOString(),
+        event: "flipped",
         network: a.network,
         vendorSlug: a.vendorSlug,
         vendorName: a.vendorName,
@@ -181,24 +256,31 @@ async function applyUpdates(approvals: Approval[]): Promise<string[]> {
       }) + "\n");
     }
   }
-  if (changed.length) {
+  if (flipped.length || added.length) {
     await fs.writeFile(AFFILIATES_PATH, src);
   }
-  return changed;
+  return { flipped, added };
 }
 
-async function pingTelegram(changed: string[]): Promise<void> {
-  if (!changed.length) return;
+async function pingTelegram(flipped: string[], added: string[]): Promise<void> {
+  if (!flipped.length && !added.length) return;
   const token = process.env.TELEGRAM_BOT_TOKEN;
   const chat  = process.env.TELEGRAM_HOME_CHANNEL;
   if (!token || !chat) { log("telegram: no creds, skip"); return; }
-  const text = `KanzenAi affiliate approvals (${changed.length}):\n` +
-    changed.map(c => `  - ${c}`).join("\n");
+  const lines: string[] = ["💰 KanzenAI affiliate approvals:"];
+  if (added.length) {
+    lines.push("", "NEW vendors added (auto-live):");
+    for (const v of added) lines.push(`  + ${v}`);
+  }
+  if (flipped.length) {
+    lines.push("", "Flipped placeholder → live:");
+    for (const v of flipped) lines.push(`  ✓ ${v}`);
+  }
   try {
     await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ chat_id: chat, text }),
+      body: JSON.stringify({ chat_id: chat, text: lines.join("\n") }),
     });
     log("telegram: sent");
   } catch (e: any) {
@@ -217,6 +299,7 @@ async function main() {
     ["impact", pollImpact],
     ["cj", pollCJ],
     ["refersion", pollRefersion],
+    ["partnerstack", pollPartnerStack],
   ] as const) {
     try {
       const r = await fn();
@@ -233,11 +316,12 @@ async function main() {
     return;
   }
 
-  const changed = await applyUpdates(allApprovals);
-  if (changed.length) {
-    log(`updated lib/affiliates.ts (${changed.length} vendors):`);
-    for (const c of changed) log(`  - ${c}`);
-    await pingTelegram(changed);
+  const { flipped, added } = await applyUpdates(allApprovals);
+  if (flipped.length || added.length) {
+    log(`updated lib/affiliates.ts: ${flipped.length} flipped, ${added.length} added`);
+    for (const c of added) log(`  + ${c} (new)`);
+    for (const c of flipped) log(`  ✓ ${c}`);
+    await pingTelegram(flipped, added);
   } else {
     log("no changes to apply (registry already up to date)");
   }

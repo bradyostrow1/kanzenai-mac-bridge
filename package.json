@@ -25,6 +25,7 @@
     "x-follow-network": "node --import tsx scripts/x-follow-network.ts",
     "scheduler": "node --import tsx scripts/scheduler.ts",
     "vendor-approval-tracker": "node --import tsx scripts/vendor-approval-tracker.ts",
+    "affiliate-link-guard": "node --import tsx scripts/affiliate-link-guard.ts",
     "vercel-deploy": "npx vercel deploy --prod --yes"
   },
   "dependencies": {
