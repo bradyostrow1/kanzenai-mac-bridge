@@ -24,7 +24,14 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
       description: article.description,
       publishedTime: article.publishedAt,
       modifiedTime: article.updatedAt,
-      images: article.headerImage ? [`https://kanzenai.com${article.headerImage}`] : [],
+      // OG image comes from the co-located opengraph-image.tsx — Next.js
+      // auto-wires it. Bot 12 generates a branded 1200x630 card per article.
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.description,
+      // Twitter image inherits from the OG image route automatically.
     },
   };
 }
