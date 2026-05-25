@@ -1,0 +1,212 @@
+{
+  "slug": "ai-landing-page-builders-indie-hackers-2026",
+  "title": "AI Landing Page Builders for Indie Hackers in 2026: Unbounce vs Leadpages vs Instapage vs Unicorn Platform",
+  "description": "Unbounce caps traffic at 20K on its $99/mo plan. Leadpages doesn't. We compared pricing, A/B testing access, and AI features across five builders.",
+  "category": "Marketing",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 8,
+  "tldr": "Leadpages offers unlimited traffic and A/B testing starting at $49/mo (50% off for three months), undercutting Unbounce's $99/mo Build plan with a 20K visitor cap. Instapage gates core optimization behind enterprise pricing. Unicorn Platform and Sitekick lack published pricing. For indie hackers running paid ads, traffic caps create unpredictable costs—Leadpages eliminates that risk.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Landing page builders charge by traffic volume, features, or both. For indie hackers running paid ads, traffic caps turn into invoice surprises. Unbounce's $99/mo Build plan caps traffic at 20,000 visitors; exceed that and you upgrade or lose data. Leadpages eliminated traffic caps across all plans and currently offers its Grow plan at $49/mo for the first three months. Instapage markets to enterprise teams and doesn't publish pricing. We compared five platforms on pricing transparency, A/B testing access, and AI tooling."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We pulled published pricing pages from Unbounce, Leadpages, and Instapage as of May 2026. Unicorn Platform and Sitekick did not have reachable vendor pages at the time of research; for those, we note that pricing is unavailable and recommend contacting the vendor directly. We focused on three decision points for indie hackers: traffic caps (do overages force an upgrade?), when A/B testing becomes available (gated at $149/mo vs included at entry tier), and whether AI copywriting is included or an add-on. We did not conduct original testing; all claims are sourced from vendor documentation or third-party review aggregators cited inline."
+    },
+    {
+      "type": "h2",
+      "text": "Unbounce",
+      "id": "unbounce"
+    },
+    {
+      "type": "p",
+      "text": "Unbounce offers four self-service plans and two enterprise tiers. The Starter plan at $29/mo (billed annually $22/mo) includes five pages and a 500-visitor cap. The Build plan at $99/mo (annually $74/mo) removes the page limit but caps traffic at 20,000 visitors. A/B testing appears in the Experiment plan at $149/mo (annually $112/mo), which supports up to 30,000 visitors. Smart Traffic—AI-driven visitor routing to the best-match variant—unlocks in the Optimize plan at $249/mo (annually $187/mo) with a 50,000-visitor cap. All plans include unlimited conversions, 100+ templates, and customer support. Unbounce's pricing page states that AI copywriting (Smart Copy) is available across all tiers."
+    },
+    {
+      "type": "product",
+      "name": "Unbounce",
+      "price": "$99/mo Build plan (20K traffic cap, no A/B testing) · $149/mo Experiment plan (30K cap, unlimited A/B testing) · $249/mo Optimize plan (50K cap, AI traffic routing)",
+      "rating": 4.5,
+      "pros": [
+        "AI copywriting included at all tiers starting at $29/mo",
+        "1000+ integrations on Build plan and up",
+        "Popups and sticky bars included in Build tier"
+      ],
+      "cons": [
+        "Traffic caps on all self-service plans create upgrade pressure",
+        "A/B testing starts at $149/mo—2x the cost of Leadpages entry tier with testing",
+        "Smart Traffic requires $249/mo, vs Leadpages' $99/mo AI routing"
+      ],
+      "cta": {
+        "label": "View Unbounce Pricing",
+        "url": "https://unbounce.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Leadpages",
+      "id": "leadpages"
+    },
+    {
+      "type": "p",
+      "text": "Leadpages lists three plans with no traffic caps. The Grow plan is $49/mo for the first three months (50% off the standard $99/mo rate), then reverts to $99/mo. It includes 500 pages, 10 custom domains, manual A/B testing, dynamic text replacement, and 2,000 IP-based lead enrichment credits per month. The Optimize plan at $99/mo for three months (standard $199/mo) adds Smart Traffic (AI visitor routing), click and scroll heatmaps, auto-personalization, and 24-month analytics retention. The Scale plan at $399/mo includes 2,000+ pages, a full auto-optimization loop, team seats with workspaces, audit logs, and a dedicated customer success manager. All plans include unlimited traffic, AI page creation, and SSL. Leadpages' pricing page cites 4.6/5 on Capterra (302 reviews) and 4.3/5 on G2 (229 reviews)."
+    },
+    {
+      "type": "product",
+      "name": "Leadpages",
+      "price": "$49/mo Grow (first 3 months, then $99/mo) · $99/mo Optimize (first 3 months, then $199/mo) · $399/mo Scale · All plans: unlimited traffic, A/B testing included",
+      "rating": 4.4,
+      "pros": [
+        "No traffic caps on any plan—no surprise upgrades when ads scale",
+        "A/B testing included at entry tier, vs $149/mo for Unbounce Experiment",
+        "Smart Traffic (AI routing) at $99/mo promo vs $249/mo for Unbounce Optimize"
+      ],
+      "cons": [
+        "Introductory pricing reverts after three months; budget $99–199/mo long-term",
+        "Heatmaps and auto-personalization require Optimize tier ($199/mo standard)",
+        "Fewer integrations at Grow tier (5 active) vs Unbounce Build (1000+)"
+      ],
+      "cta": {
+        "label": "Start Leadpages Free Trial",
+        "url": "https://leadpages.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Instapage",
+      "id": "instapage"
+    },
+    {
+      "type": "p",
+      "text": "Instapage does not publish pricing on its website. The vendor markets a drag-and-drop builder, AI content generation for headlines and CTAs, AdMap for campaign visualization, heatmaps, A/B testing, and AMP support. The site lists features—collaboration tools, global blocks for batch updates, analytics—but gates access behind a 'Get a demo' CTA. Per Instapage's own copy, the platform targets enterprises and agencies running multi-audience campaigns. No self-service tiers or traffic limits are disclosed."
+    },
+    {
+      "type": "product",
+      "name": "Instapage",
+      "price": "Pricing not published; contact vendor for quote",
+      "rating": 4.3,
+      "pros": [
+        "AdMap visualizes ad-to-page connections for campaign-level clarity",
+        "AMP support and Thor Render Engine for fast mobile load times",
+        "AI experiments dynamically route traffic without manual oversight"
+      ],
+      "cons": [
+        "No published pricing creates friction for budget-constrained indie hackers",
+        "Enterprise focus suggests higher cost floor than Leadpages or Unbounce",
+        "14-day trial requires demo call; no instant signup"
+      ],
+      "cta": {
+        "label": "Request Instapage Demo",
+        "url": "https://instapage.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Unicorn Platform",
+      "id": "unicorn-platform"
+    },
+    {
+      "type": "p",
+      "text": "No vendor page was reachable for Unicorn Platform at the time of research. Pricing, feature set, and availability are unknown. Indie hackers interested in this tool should contact the vendor directly for current offerings."
+    },
+    {
+      "type": "product",
+      "name": "Unicorn Platform",
+      "price": "Pricing unavailable; contact vendor",
+      "rating": 0,
+      "pros": [
+        "Details unavailable—no reachable vendor page"
+      ],
+      "cons": [
+        "No published pricing or feature documentation",
+        "Cannot evaluate fit without vendor outreach"
+      ],
+      "cta": {
+        "label": "Search for Unicorn Platform",
+        "url": "https://google.com/search?q=unicorn+platform"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Sitekick",
+      "id": "sitekick"
+    },
+    {
+      "type": "p",
+      "text": "No vendor page was reachable for Sitekick at the time of research. Pricing, feature set, and availability are unknown. Indie hackers interested in this tool should contact the vendor directly for current offerings."
+    },
+    {
+      "type": "product",
+      "name": "Sitekick",
+      "price": "Pricing unavailable; contact vendor",
+      "rating": 0,
+      "pros": [
+        "Details unavailable—no reachable vendor page"
+      ],
+      "cons": [
+        "No published pricing or feature documentation",
+        "Cannot evaluate fit without vendor outreach"
+      ],
+      "cta": {
+        "label": "Search for Sitekick",
+        "url": "https://google.com/search?q=sitekick+ai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "If you're running paid ads with unpredictable traffic: Leadpages Grow at $49/mo (first three months) eliminates traffic caps and includes A/B testing at entry tier. Unbounce's 20K cap on the $99/mo Build plan forces upgrades when ads scale.",
+        "If you need AI visitor routing under $200/mo: Leadpages Optimize at $99/mo (promo pricing) includes Smart Traffic and heatmaps. Unbounce gates Smart Traffic behind the $249/mo Optimize plan.",
+        "If you manage 10+ clients or need audit logs: Leadpages Scale at $399/mo includes team workspaces and compliance features. Unbounce's Agency tier pricing is undisclosed; contact sales.",
+        "If you're enterprise with budget for demos: Instapage offers AdMap and AMP support but requires a sales call for pricing. Not ideal for indie hackers who need instant signup and transparent costs.",
+        "If pricing transparency matters: Skip Unicorn Platform and Sitekick until vendor pages resurface. Undocumented tools create evaluation friction."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Unbounce Build plan for paid ad campaigns: The 20K traffic cap creates upgrade pressure when campaigns succeed. Leadpages eliminates that ceiling.",
+        "Instapage for solopreneurs: Enterprise sales cycles and undisclosed pricing waste time when you need a tool running today.",
+        "Any platform without published pricing: Unicorn Platform and Sitekick lack documentation. Demo calls delay decisions indie hackers make in hours, not weeks."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Unbounce",
+      "url": "https://unbounce.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Leadpages",
+      "url": "https://leadpages.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Instapage",
+      "url": "https://instapage.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-landing-page-builders-indie-hackers-2026-hero.jpg",
+  "imageCredit": "Pexels · Anna Pou",
+  "niche": "ai-tools"
+}

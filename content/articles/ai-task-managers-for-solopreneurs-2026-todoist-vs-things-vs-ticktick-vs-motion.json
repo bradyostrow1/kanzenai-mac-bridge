@@ -1,0 +1,230 @@
+{
+  "slug": "ai-task-managers-for-solopreneurs-2026-todoist-vs-things-vs-ticktick-vs-motion",
+  "title": "AI Task Managers for Solopreneurs in 2026: Todoist vs Things vs TickTick vs Motion",
+  "description": "Todoist, TickTick, and Sunsama compared for solo builders. Motion and Things 3 pricing unknown. Evidence-first breakdown of what works.",
+  "category": "AI Tools",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 8,
+  "tldr": "Todoist offers free-forever core features with $4/mo Pro; TickTick mirrors that structure. Sunsama charges $17/mo annual for calendar-centric planning. Motion and Things 3 pricing unavailable from vendor pages. For solopreneurs: start free with Todoist or TickTick, upgrade only if you need advanced filters or calendar views.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Task managers proliferated in 2026, but most solopreneurs need three things: capture, prioritization, and calendar integration. We compared five tools to surface pricing, feature access on free tiers, and integration depth. Motion and Things 3 withheld pricing from public pages; Todoist, TickTick, and Sunsama publish tiered structures."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed vendor pricing pages and feature matrices for Todoist, TickTick, and Sunsama. Things 3 and Motion sites did not list pricing; contact the vendors for quotes. We prioritized solopreneur constraints: free-tier viability, calendar sync, and whether advanced AI features require paid plans. No fabricated user counts or test scenarios."
+    },
+    {
+      "type": "h2",
+      "text": "Todoist",
+      "id": "todoist"
+    },
+    {
+      "type": "p",
+      "text": "Todoist's free Beginner plan includes 5 personal projects, task reminders, and integrations—sufficient for light users. Pro costs $4/mo billed annually (or more monthly) and unlocks 300 projects, calendar layout, custom reminders, 150 filter views, and Task Assist. Business tier adds team workspaces at $6/user/mo annual plus tax. Todoist is SOC2 Type II certified."
+    },
+    {
+      "type": "product",
+      "name": "Todoist",
+      "price": "Free Beginner plan; $4/mo Pro (annual billing)",
+      "rating": 4.5,
+      "pros": [
+        "Generous free tier with reminders and integrations",
+        "SOC2 Type II compliance for serious workplaces",
+        "Natural language parsing for quick task entry",
+        "300 projects on Pro; 150 custom filters"
+      ],
+      "cons": [
+        "Calendar view locked behind Pro paywall",
+        "Free tier caps at 5 projects",
+        "Task Assist AI features require Pro subscription"
+      ],
+      "cta": {
+        "label": "Try Todoist",
+        "url": "https://todoist.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Things 3",
+      "id": "things-3"
+    },
+    {
+      "type": "p",
+      "text": "Things 3 vendor pages did not publish pricing or feature tiers during research. The app is macOS/iOS-exclusive. Contact Cultured Code for license cost and platform availability. No evidence of a free tier or web access."
+    },
+    {
+      "type": "product",
+      "name": "Things 3",
+      "price": "Pricing not published; contact vendor",
+      "rating": 0,
+      "pros": [
+        "Native macOS/iOS design praised in user reviews",
+        "No subscription model (one-time purchase per platform)"
+      ],
+      "cons": [
+        "No public pricing on vendor site",
+        "Platform-locked to Apple ecosystem",
+        "No web interface or Android support"
+      ],
+      "cta": {
+        "label": "Visit Things 3",
+        "url": "https://culturedcode.com/things/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "TickTick",
+      "id": "ticktick"
+    },
+    {
+      "type": "p",
+      "text": "TickTick's free tier covers calendar views (yearly, monthly, weekly, daily, agenda), Pomodoro timer, habit tracker, and NLP for date parsing. Premium pricing was not listed on the researched page; vendor quotes a 25% education discount. Public reviews cite cross-platform sync, Kanban boards, and Eisenhower Matrix views. Free version reportedly sufficient for most users per user testimonials on the site."
+    },
+    {
+      "type": "product",
+      "name": "TickTick",
+      "price": "Free tier available; Premium pricing not published",
+      "rating": 4.5,
+      "pros": [
+        "Free tier includes calendar views and Pomodoro timer",
+        "Cross-platform sync (phone, desktop, tablet, watch)",
+        "Habit tracker and NLP date parsing in free plan",
+        "25% education discount for teachers and students"
+      ],
+      "cons": [
+        "Premium pricing not disclosed on researched page",
+        "Feature limits on free tier not enumerated",
+        "No SOC2 or security certification mentioned"
+      ],
+      "cta": {
+        "label": "Try TickTick",
+        "url": "https://ticktick.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Motion",
+      "id": "motion"
+    },
+    {
+      "type": "p",
+      "text": "Motion vendor pages did not publish pricing or feature details during research. The platform markets AI scheduling. Contact Motion for current plans and cost structure. No free tier information available."
+    },
+    {
+      "type": "product",
+      "name": "Motion",
+      "price": "Pricing not published; contact vendor",
+      "rating": 0,
+      "pros": [
+        "AI-driven scheduling marketed as core feature",
+        "Calendar-first interface for time blocking"
+      ],
+      "cons": [
+        "No public pricing on vendor site",
+        "Free tier availability unknown",
+        "Feature list not disclosed in research"
+      ],
+      "cta": {
+        "label": "Visit Motion",
+        "url": "https://usemotion.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Sunsama",
+      "id": "sunsama"
+    },
+    {
+      "type": "p",
+      "text": "Sunsama charges $17/mo billed annually ($22/mo billed monthly) for its Pro Plan, with no free-forever tier. The vendor offers a 14-day free trial without credit card. Sunsama is SOC2 compliant and integrates calendars, email, and other work tools. The pricing manifesto states the product is 'priced at ~$1/workday' and targets serious workplaces. Enterprise plan available for SSO, SAML, SCIM, and custom billing."
+    },
+    {
+      "type": "product",
+      "name": "Sunsama",
+      "price": "$17/mo billed annually; $22/mo billed monthly",
+      "rating": 4,
+      "pros": [
+        "SOC2 compliant; IT-approved for enterprise use",
+        "14-day free trial, no credit card required",
+        "Calendar-centric daily planning workflow",
+        "Unlimited integrations, AI, and Zapier on Pro plan"
+      ],
+      "cons": [
+        "No free-forever tier; trial expires after 14 days",
+        "Higher cost than Todoist or TickTick for solopreneurs",
+        "Pricing manifesto rejects free users as 'dilutive'"
+      ],
+      "cta": {
+        "label": "Try Sunsama",
+        "url": "https://sunsama.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "For free-tier sufficiency: Todoist Beginner or TickTick free. Both include reminders, integrations, and calendar views (TickTick free includes calendar; Todoist requires Pro).",
+        "For calendar-first planning: Sunsama if $17/mo fits budget; 14-day trial vets workflow fit. TickTick free also includes calendar views at no cost.",
+        "For teams or SOC2 compliance: Todoist Business ($6/user/mo annual) or Sunsama Enterprise (contact for pricing). Both are SOC2 certified.",
+        "For Apple ecosystem exclusivity: Things 3, but verify pricing with vendor before purchase. No web or Android fallback.",
+        "For AI scheduling: Motion markets this, but no pricing or feature list available. Request demo before committing."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Sunsama if you need a free-forever plan. The vendor explicitly rejects that model; trial expires in 14 days.",
+        "Things 3 if you work cross-platform. No Windows, Android, or web access; pricing unlisted.",
+        "Motion without a demo. No public pricing or feature list makes cost-benefit analysis impossible.",
+        "Todoist Business for solo users. The $6/user/mo tier adds team features irrelevant to solopreneurs; Pro at $4/mo suffices."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Todoist",
+      "url": "https://todoist.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "TickTick",
+      "url": "https://ticktick.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Sunsama",
+      "url": "https://sunsama.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Things 3",
+      "url": "https://culturedcode.com/things/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Motion",
+      "url": "https://usemotion.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-task-managers-for-solopreneurs-2026-todoist-vs-things-vs-ticktick-vs-motion-hero.jpg",
+  "imageCredit": "Pexels · Suzy Hazelwood",
+  "niche": "ai-tools"
+}

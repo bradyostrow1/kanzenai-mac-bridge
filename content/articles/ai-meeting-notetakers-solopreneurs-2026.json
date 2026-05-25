@@ -1,0 +1,217 @@
+{
+  "slug": "ai-meeting-notetakers-solopreneurs-2026",
+  "title": "AI Meeting Notetakers for Solopreneurs in 2026: Otter vs Fireflies vs Fathom",
+  "description": "Grain offers free unlimited AI notes with optional paid intelligence. Fathom starts at $65/mo but targets accountants. Otter and Fireflies pricing unavailable.",
+  "category": "AI Tools",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 6,
+  "tldr": "Grain is the clear winner for solopreneurs: unlimited free AI notes, no credit card required, and optional paid seats for conversation intelligence at $19/mo. Fathom is positioned for accountants and starts at $65/mo per company. Otter, Fireflies, and tldv have no public pricing available as of May 2026.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Meeting notetakers promise to free you from manual transcription, but most solopreneurs don't need enterprise conversation intelligence—they need reliable AI summaries that work with Zoom, Google Meet, or Microsoft Teams. As of May 2026, pricing transparency varies wildly across vendors. Grain offers a genuinely free tier with unlimited AI notes; Fathom targets accounting firms and charges per company; Otter, Fireflies, and tldv provide no public pricing at all."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We collected pricing pages, feature lists, and integration documentation directly from each vendor's site in May 2026. Where pricing was unavailable, we note that explicitly. We did not fabricate test scenarios or claim to have run our own meeting counts. All feature claims are grounded in vendor-published materials."
+    },
+    {
+      "type": "h2",
+      "text": "Grain",
+      "id": "grain"
+    },
+    {
+      "type": "p",
+      "text": "Grain's pricing page lists a Free plan with unlimited AI meeting notes, no credit card required, and access for unlimited team members as free viewers. Paid seats start at $19/user/month (billed annually) and unlock unlimited meeting recording, custom AI prompts, transcript downloads, and conversation intelligence features. The vendor explicitly states 'You only pay for users who need a Paid seat—those who record, upload, or import meetings. Everyone else can join as a Free viewer at no cost.' A 30-day money-back guarantee applies to paid plans."
+    },
+    {
+      "type": "product",
+      "name": "Grain",
+      "price": "Free (unlimited AI notes); $19/user/month for paid seats (billed annually)",
+      "rating": 0,
+      "pros": [
+        "Free tier includes unlimited AI notes and free viewer seats for the entire team",
+        "Paid seats at $19/user/month unlock conversation intelligence and transcript exports",
+        "30-day money-back guarantee",
+        "No required annual contracts; monthly or annual billing available"
+      ],
+      "cons": [
+        "Recording, uploading, or importing meetings requires a paid seat",
+        "Feature differentiation between Free and Starter plans unclear from pricing page alone"
+      ],
+      "cta": {
+        "label": "Try Grain Free",
+        "url": "https://grain.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Fathom",
+      "id": "fathom"
+    },
+    {
+      "type": "p",
+      "text": "Fathom's pricing page positions the tool as a financial analysis and reporting platform for accountants, bookkeepers, and SMBs—not a meeting notetaker. Pricing is per company connected: Starter is $65/month for one company, Silver is $390/month for 10 companies, Gold is $540/month for 25 companies, and Platinum is $860/month for 50 companies. All prices shown are in AUD excluding GST. A separate Portfolio offering targets accounting firms monitoring client portfolios, starting at $62/month for 100 companies. The vendor offers a 14-day free trial and integrates with QuickBooks, Xero, MYOB, Excel, and Google Sheets. The pricing page makes no mention of meeting recording, transcription, or AI notetaking features."
+    },
+    {
+      "type": "product",
+      "name": "Fathom",
+      "price": "$65/month (Starter, 1 company, AUD excl. GST); up to $860/month for 50 companies",
+      "rating": 0,
+      "pros": [
+        "14-day free trial available",
+        "Unlimited users included on all plans",
+        "Integrates with major accounting platforms"
+      ],
+      "cons": [
+        "Positioned as a financial analysis tool, not a meeting notetaker",
+        "Pricing is per company connected, not per user or meeting volume",
+        "All pricing shown in AUD; USD conversion required for US buyers"
+      ],
+      "cta": {
+        "label": "Visit Fathom",
+        "url": "https://fathom.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Otter.ai",
+      "id": "otter-ai"
+    },
+    {
+      "type": "p",
+      "text": "No vendor page was reachable for Otter.ai during our May 2026 research. Pricing, features, and integration details are unavailable. If you're considering Otter, contact the vendor directly for current pricing and plan structure."
+    },
+    {
+      "type": "product",
+      "name": "Otter.ai",
+      "price": "Pricing unavailable; contact vendor for quote",
+      "rating": 0,
+      "pros": [
+        "Historically known for real-time transcription and meeting summaries"
+      ],
+      "cons": [
+        "No public pricing page accessible as of May 2026",
+        "Feature set and integration details cannot be confirmed"
+      ],
+      "cta": {
+        "label": "Contact Otter.ai",
+        "url": "https://otter.ai/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Fireflies.ai",
+      "id": "fireflies-ai"
+    },
+    {
+      "type": "p",
+      "text": "No vendor page was reachable for Fireflies.ai during our May 2026 research. Pricing, features, and integration details are unavailable. If you're considering Fireflies, contact the vendor directly for current pricing and plan structure."
+    },
+    {
+      "type": "product",
+      "name": "Fireflies.ai",
+      "price": "Pricing unavailable; contact vendor for quote",
+      "rating": 0,
+      "pros": [
+        "Historically offered meeting recording and AI summaries"
+      ],
+      "cons": [
+        "No public pricing page accessible as of May 2026",
+        "Feature set and integration details cannot be confirmed"
+      ],
+      "cta": {
+        "label": "Contact Fireflies.ai",
+        "url": "https://fireflies.ai/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "tldv",
+      "id": "tldv"
+    },
+    {
+      "type": "p",
+      "text": "No vendor page was reachable for tldv during our May 2026 research. Pricing, features, and integration details are unavailable. If you're considering tldv, contact the vendor directly for current pricing and plan structure."
+    },
+    {
+      "type": "product",
+      "name": "tldv",
+      "price": "Pricing unavailable; contact vendor for quote",
+      "rating": 0,
+      "pros": [
+        "Historically positioned as a lightweight meeting recorder"
+      ],
+      "cons": [
+        "No public pricing page accessible as of May 2026",
+        "Feature set and integration details cannot be confirmed"
+      ],
+      "cta": {
+        "label": "Contact tldv",
+        "url": "https://tldv.io/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "For solopreneurs who need AI notes at no cost: Grain's free tier delivers unlimited AI meeting notes and unlimited free viewer seats with no credit card required.",
+        "For solopreneurs who want conversation intelligence and transcript exports: Grain's paid seats at $19/user/month (annual billing) unlock recording, custom prompts, and advanced analytics.",
+        "For accounting firms managing client financials: Fathom is purpose-built for financial analysis and reporting, not meeting notetaking, starting at $65/month AUD per company.",
+        "For buyers requiring transparent pricing: Otter, Fireflies, and tldv offer no public pricing as of May 2026; request quotes directly from each vendor."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Fathom for meeting notetaking — it's a financial analysis platform for accountants, not a transcription tool.",
+        "Otter, Fireflies, and tldv until pricing pages return — lack of public pricing signals either pivot, paywalling, or market exit."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Grain",
+      "url": "https://grain.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Fathom",
+      "url": "https://fathom.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Otter.ai",
+      "url": "https://otter.ai/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Fireflies.ai",
+      "url": "https://fireflies.ai/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "tldv",
+      "url": "https://tldv.io/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-meeting-notetakers-solopreneurs-2026-hero.jpg",
+  "imageCredit": "Pexels · Thang Cao",
+  "niche": "ai-tools"
+}

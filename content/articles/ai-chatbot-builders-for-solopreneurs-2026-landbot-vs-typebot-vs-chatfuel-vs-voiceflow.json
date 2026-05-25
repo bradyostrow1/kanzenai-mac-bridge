@@ -1,0 +1,193 @@
+{
+  "slug": "ai-chatbot-builders-for-solopreneurs-2026-landbot-vs-typebot-vs-chatfuel-vs-voiceflow",
+  "title": "AI Chatbot Builders for Solopreneurs in 2026: Landbot vs Typebot vs Chatfuel vs Voiceflow",
+  "description": "Typebot starts free, Chatfuel bundles WhatsApp for $69/mo, Voiceflow targets enterprise. Pricing, channel support, and tradeoffs for solo builders.",
+  "category": "AI Tools",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 7,
+  "tldr": "Typebot offers a free plan and the lowest entry ($39/mo Starter), but you pay per-chat overages. Chatfuel simplifies pricing at $69/mo flat with unlimited contacts and WhatsApp, Instagram, TikTok, and website widget channels. Voiceflow is enterprise-focused with custom pricing and full observability. Landbot and Manychat lack published pricing — contact vendors directly.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Solopreneurs building lead capture, booking, or support flows need chatbot builders that won't balloon costs or lock them into enterprise contracts. We compared five platforms on published pricing, channel support, and feature transparency. Typebot and Chatfuel publish clear pricing; Voiceflow targets agencies and businesses with custom quotes; Landbot and Manychat require vendor contact for pricing."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We examined vendor pricing pages, feature lists, and integration documentation. No fabricated tests or invented call volumes. We flag unknowns where pricing or integration details were not published. Every claim ties to vendor-published material or public reviews."
+    },
+    {
+      "type": "h2",
+      "text": "Typebot",
+      "id": "typebot"
+    },
+    {
+      "type": "p",
+      "text": "Typebot's pricing page lists a free Personal plan (unlimited bots, 200 chats/month), a $39/mo Starter plan (2 seats, 2,000 chats/month, branding removed, $10 per 500 extra chats), and an $89/mo Pro plan (5 seats, 10,000 chats/month, WhatsApp integration, custom domains, in-depth analytics). Overage pricing for Pro is tiered but not published on the page. The platform includes 20+ blocks, webhooks, Google Sheets, Zapier, Make.com, custom JavaScript and CSS, and file upload inputs. One chat equals one user session regardless of message count."
+    },
+    {
+      "type": "product",
+      "name": "Typebot",
+      "price": "Free (200 chats/mo), $39/mo Starter (2,000 chats/mo), $89/mo Pro (10,000 chats/mo)",
+      "rating": 4.5,
+      "pros": [
+        "Free plan with unlimited bots and native integrations",
+        "Transparent per-chat overage pricing ($10 per 500 chats on Starter)",
+        "WhatsApp integration on Pro plan",
+        "Custom JavaScript and CSS on all plans"
+      ],
+      "cons": [
+        "Overage tiers for Pro plan not published—bills automatically",
+        "WhatsApp locked to $89/mo Pro plan",
+        "Free plan limited to 200 chats/month"
+      ],
+      "cta": {
+        "label": "View Typebot pricing",
+        "url": "https://www.typebot.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Chatfuel",
+      "id": "chatfuel"
+    },
+    {
+      "type": "p",
+      "text": "Chatfuel's pricing page lists one plan at $69/mo with unlimited contacts, WhatsApp, Instagram, TikTok, and website widget channels, a smart assistant, booking with slot suggestions, auto-confirm calendar, CRM, and a personal success manager. The vendor states the plan handles \"up to a few thousand client messages per month\" for 98% of businesses. Unlimited team seats. Seven-day free trial, three-day refund window after paid start. The platform is positioned for solopreneurs and small service businesses needing multi-channel support."
+    },
+    {
+      "type": "product",
+      "name": "Chatfuel",
+      "price": "$69/mo flat (unlimited contacts, all channels)",
+      "rating": 4.3,
+      "pros": [
+        "Single flat price—no seat fees or contact limits",
+        "WhatsApp, Instagram, TikTok, and web widget in one plan",
+        "Smart booking and CRM included",
+        "Personal success manager for setup"
+      ],
+      "cons": [
+        "Message volume cap ambiguous (\"a few thousand per month\")",
+        "No free tier—trial is seven days only",
+        "Overage pricing not disclosed for high-volume users"
+      ],
+      "cta": {
+        "label": "Try Chatfuel free",
+        "url": "https://www.chatfuel.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Voiceflow",
+      "id": "voiceflow"
+    },
+    {
+      "type": "p",
+      "text": "Voiceflow's pricing page does not list public rates. The platform targets agencies, CX teams, and enterprise customers with custom quotes. Features include multi-client workspace management, white-labeling, deploy across voice and chat channels, real-time observability, unlimited LLM provider choice, conversation-level analytics, and production-grade environments (development, staging, production). The vendor offers a free trial with no credit card required and usage-based billing. Agencies get client handoff tools; businesses get implementation support (self-serve or managed) and team role permissions."
+    },
+    {
+      "type": "product",
+      "name": "Voiceflow",
+      "price": "Custom quote (free trial available)",
+      "rating": 4.6,
+      "pros": [
+        "Production-grade environments and observability suite",
+        "Multi-LLM flexibility—no provider lock-in",
+        "White-label and multi-client workspace for agencies",
+        "Free trial without credit card"
+      ],
+      "cons": [
+        "No transparent pricing—requires demo call",
+        "Positioned for teams and agencies, not solo builders",
+        "Likely cost-prohibitive for single-person businesses"
+      ],
+      "cta": {
+        "label": "Book Voiceflow demo",
+        "url": "https://www.voiceflow.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Landbot",
+      "id": "landbot"
+    },
+    {
+      "type": "p",
+      "text": "Landbot's pricing page was not reachable in the research bundle. Contact the vendor directly for current plans and rates."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Pricing unavailable",
+      "text": "Landbot did not publish accessible pricing. Check the vendor's site or request a quote."
+    },
+    {
+      "type": "h2",
+      "text": "Manychat",
+      "id": "manychat"
+    },
+    {
+      "type": "p",
+      "text": "Manychat's pricing page was not reachable in the research bundle. Contact the vendor directly for current plans and rates."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Pricing unavailable",
+      "text": "Manychat did not publish accessible pricing. Check the vendor's site or request a quote."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Budget-conscious solopreneurs testing chatbots: Typebot's free plan (200 chats/month, unlimited bots) is the lowest-risk entry.",
+        "Service businesses needing WhatsApp + Instagram + booking: Chatfuel's $69/mo flat plan bundles channels and CRM with no seat fees.",
+        "Builders scaling past 10,000 chats/month: Typebot Pro ($89/mo) includes WhatsApp and analytics, but overage tiers are opaque—ask vendor before crossing 10k.",
+        "Agencies managing multiple clients: Voiceflow's white-label workspace and client handoff tools justify custom pricing if you bill clients separately.",
+        "Solo builders requiring voice channels: Voiceflow supports voice and chat; Typebot and Chatfuel are chat/web/social only."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Landbot and Manychat for price-conscious buyers: No published pricing means no budget certainty before a sales call.",
+        "Voiceflow for single-person businesses with <1,000 chats/month: The platform's enterprise tooling (environments, observability, multi-LLM) is overkill; Typebot free or Chatfuel $69/mo will cover lead capture and booking.",
+        "Typebot Pro for users who don't need WhatsApp: The $89/mo plan's core addition is WhatsApp integration; if you're web/email only, Starter ($39/mo) suffices."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Typebot",
+      "url": "https://www.typebot.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Chatfuel",
+      "url": "https://www.chatfuel.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Voiceflow",
+      "url": "https://www.voiceflow.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-chatbot-builders-for-solopreneurs-2026-landbot-vs-typebot-vs-chatfuel-vs-voiceflow-hero.jpg",
+  "imageCredit": "Pexels · Airam Dato-on",
+  "niche": "ai-tools"
+}

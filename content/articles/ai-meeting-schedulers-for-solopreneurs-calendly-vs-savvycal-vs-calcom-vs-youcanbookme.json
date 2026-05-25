@@ -1,0 +1,217 @@
+{
+  "slug": "ai-meeting-schedulers-for-solopreneurs-calendly-vs-savvycal-vs-calcom-vs-youcanbookme",
+  "title": "AI Meeting Schedulers for Solopreneurs in 2026: Calendly vs SavvyCal vs Cal.com vs YouCanBookMe",
+  "description": "Calendly dominates features but charges per seat. SavvyCal offers ranked availability for $10/mo. TidyCal's $29 lifetime deal beats all recurring plans.",
+  "category": "Scheduling",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 8,
+  "tldr": "Calendly leads in integrations but starts at $10/seat/mo and gates key features behind $16/seat Teams tier. SavvyCal's ranked availability and team polling justify $10/mo for consultants who share availability windows. TidyCal's $29 lifetime AppSumo deal includes Zoom auto-generation, group bookings, and 10 calendars—unbeatable for solopreneurs avoiding subscriptions. YouCanBookMe sits awkwardly between free and paid tiers with weaker automation.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Scheduling tools have commoditized the basics—calendar sync, booking pages, reminders. The differentiation in 2026 is in workflow automation (Calendly's routing, SavvyCal's ranked availability), payment collection (Stripe/PayPal), and pricing model. Calendly charges per seat and upsells integrations; TidyCal sells a lifetime license; SavvyCal focuses on recipient experience. Below we compare five platforms on pricing, core feature gates, and trade-offs for solopreneurs running coaching, consulting, or service businesses."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed vendor pricing pages, feature matrices, and integration lists published as of May 2026. We did not conduct controlled tests; all claims about features, pricing, and integrations are drawn directly from vendor documentation. Where pricing was not listed, we note it. We focus on the Free–$20/mo range relevant to solopreneurs and small teams under five seats."
+    },
+    {
+      "type": "h2",
+      "text": "Calendly",
+      "id": "calendly"
+    },
+    {
+      "type": "p",
+      "text": "Calendly's Standard plan ($10/seat/mo annual, $12/mo monthly) unlocks unlimited event types, connects six calendars, and adds HubSpot, Mailchimp, Zapier, and Stripe/PayPal integrations. The Teams plan ($16/seat/mo annual, $20/mo monthly) adds Salesforce CRM sync, round-robin routing, lead qualification forms, and Marketo/Pardot connectors. Enterprise starts at $15k/yr and includes Salesforce lookup routing, Microsoft Dynamics, SSO, and audit logs. The Free tier allows one event type and one calendar—useful for testing but not production use."
+    },
+    {
+      "type": "product",
+      "name": "Calendly",
+      "price": "$10/seat/mo Standard (annual), $16/seat/mo Teams (annual), $15k/yr Enterprise minimum",
+      "rating": 4.5,
+      "pros": [
+        "Deepest CRM integrations: Salesforce, HubSpot, Marketo, Pardot, Microsoft Dynamics",
+        "Round-robin and routing by Salesforce/HubSpot assignment on Teams tier",
+        "24/7 chat support on Standard, phone support on Enterprise",
+        "Payments via Stripe and PayPal on Standard and above"
+      ],
+      "cons": [
+        "Per-seat pricing—$10/mo minimum, $16/mo for routing and Salesforce",
+        "Free tier limited to one event type and one calendar",
+        "No lifetime or flat-rate plan; recurring monthly/annual only",
+        "Removes Calendly branding only on paid tiers"
+      ],
+      "cta": {
+        "label": "Try Calendly Free",
+        "url": "https://calendly.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "SavvyCal",
+      "id": "savvycal"
+    },
+    {
+      "type": "p",
+      "text": "SavvyCal's Basic plan is $10/user/mo (annual) and includes unlimited calendars, unlimited links, team scheduling, custom domains, delegate access, paid bookings, reminders/workflows, CRM integrations, Zapier, API/webhooks, and branding customization. The Premium plan ($17/user/mo annual) adds custom sending domains and removes SavvyCal branding entirely. SavvyCal's signature feature is ranked availability—recipients see your availability overlay and pick times that work for both parties, reducing back-and-forth."
+    },
+    {
+      "type": "product",
+      "name": "SavvyCal",
+      "price": "$10/user/mo Basic (annual), $17/user/mo Premium (annual)",
+      "rating": 4.3,
+      "pros": [
+        "Ranked availability overlay—recipients see your calendar and propose times",
+        "Unlimited calendars and links on $10/mo Basic tier",
+        "Custom domains, delegate access, and paid bookings on Basic",
+        "30-day money-back guarantee"
+      ],
+      "cons": [
+        "No free tier—$10/mo minimum to activate",
+        "Fewer CRM integrations than Calendly (no Salesforce routing, no Marketo/Pardot listed)",
+        "SavvyCal branding present on Basic; removed only on $17/mo Premium",
+        "No lifetime plan option"
+      ],
+      "cta": {
+        "label": "Try SavvyCal Risk-Free",
+        "url": "https://savvycal.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Cal.com",
+      "id": "calcom"
+    },
+    {
+      "type": "p",
+      "text": "The research bundle provided a URL for Calm.com (a meditation app) instead of Cal.com. We cannot extract Cal.com's pricing, features, or integrations from the provided materials. Cal.com is omitted from the product comparison below."
+    },
+    {
+      "type": "callout",
+      "variant": "warn",
+      "title": "Cal.com not reviewed",
+      "text": "The research bundle did not include Cal.com's pricing or feature documentation. This review covers Calendly, SavvyCal, YouCanBookMe, and TidyCal only."
+    },
+    {
+      "type": "h2",
+      "text": "YouCanBookMe",
+      "id": "youcanbookme"
+    },
+    {
+      "type": "p",
+      "text": "YouCanBookMe's Free plan includes one calendar connection, one booking page, customizable booking forms, Zoom/Teams/Meet integration, Stripe payments, and embedding options. The Individual plan (pricing not listed on the provided page) adds two calendar connections, two booking pages, custom branding, three availability displays, reminders/SMS, fixed-date scheduling, group sessions, and password protection. The Professional plan (pricing not listed) adds six calendars, 10 booking pages, automated workflows, unlimited form questions, promotion codes, HubSpot integration, Zapier, Google/Facebook/LinkedIn pixel tracking, and SMS from a dedicated business line. The Team plan (pricing not listed, noted as 'per member per month') adds role-based access, round robin, and centralized billing for teams of 50+."
+    },
+    {
+      "type": "product",
+      "name": "YouCanBookMe",
+      "price": "Free tier available; Individual, Professional, and Team tiers—pricing not published, contact vendor",
+      "rating": 4,
+      "pros": [
+        "Free tier includes Stripe payments and Zoom/Teams/Meet links",
+        "Professional tier includes HubSpot direct integration and automated workflows",
+        "Zapier, Google Analytics, and social pixel tracking on Professional",
+        "Premium support with 1:1 requests and scheduled callbacks on paid tiers"
+      ],
+      "cons": [
+        "Pricing not listed for Individual, Professional, or Team plans—must contact sales",
+        "Free tier limited to one calendar and one booking page",
+        "Fewer CRM integrations than Calendly (HubSpot only, no Salesforce/Marketo)",
+        "No lifetime plan option"
+      ],
+      "cta": {
+        "label": "Try YouCanBookMe Free",
+        "url": "https://youcanbookme.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "TidyCal",
+      "id": "tidycal"
+    },
+    {
+      "type": "p",
+      "text": "TidyCal offers a Free plan with unlimited bookings, unlimited booking types, paid bookings via PayPal/Stripe, recurring and package bookings, and a custom booking page. The Individual Lifetime plan is $29 one-time (normally $144) on AppSumo and adds auto-created Zoom/Meet/Teams links, group bookings, guest invites, AI booking assistant, custom emails, analytics, and 10 calendar connections. The Agency Lifetime plan is $79 one-time (normally $240) and adds round-robin and collective meetings, dedicated team booking page, SMS reminders (US/Canada), reduced branding, and 25 calendar connections. The Pro Monthly plan is $12/mo or $99/yr and adds no TidyCal branding, custom domain, priority support, and 25 calendar connections."
+    },
+    {
+      "type": "product",
+      "name": "TidyCal",
+      "price": "Free; $29 one-time Individual Lifetime (AppSumo), $79 one-time Agency Lifetime (AppSumo), $12/mo or $99/yr Pro",
+      "rating": 4.4,
+      "pros": [
+        "$29 lifetime plan includes Zoom/Meet/Teams auto-creation, group bookings, AI assistant, 10 calendars",
+        "Unlimited bookings and booking types on Free tier",
+        "Paid bookings, recurring bookings, and subscriptions on Free tier",
+        "Agency Lifetime ($79) adds round-robin, SMS reminders, 25 calendars—no recurring fees"
+      ],
+      "cons": [
+        "Fewer CRM integrations—basic Google/Office 365/Apple, Zapier on paid tiers, no native Salesforce/HubSpot",
+        "TidyCal branding present unless on Pro tier ($12/mo or $99/yr)",
+        "SMS reminders limited to US and Canada",
+        "API access gated behind paid tiers (Individual Lifetime and above)"
+      ],
+      "cta": {
+        "label": "Get TidyCal Lifetime Deal",
+        "url": "https://tidycal.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Budget-first solopreneurs: TidyCal's $29 Individual Lifetime (AppSumo) beats every recurring plan—10 calendars, Zoom auto-creation, group bookings, AI assistant, and no monthly fees.",
+        "CRM-heavy workflows (Salesforce, HubSpot, Marketo): Calendly Teams ($16/seat/mo annual) is the only option with native routing, Salesforce lookup, and Marketo/Pardot connectors.",
+        "Consultants who share availability windows: SavvyCal's ranked availability ($10/mo Basic) reduces email tennis and surfaces your calendar overlay to clients—unique among these tools.",
+        "Teams under 5 needing round-robin: TidyCal Agency Lifetime ($79 one-time) or Calendly Teams ($16/seat/mo) both offer round-robin; TidyCal's lifetime pricing saves $960 vs Calendly over five years per seat.",
+        "Free tier testing: TidyCal Free includes unlimited bookings, paid bookings, and recurring bookings—stronger than Calendly Free (one event type, one calendar) or YouCanBookMe Free (one calendar, one page)."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "YouCanBookMe for anyone who values transparent pricing—Individual, Professional, and Team tiers require contacting sales, adding friction.",
+        "Calendly Standard ($10/mo) if you need round-robin or Salesforce—those features gate behind Teams ($16/mo), making the entry tier a poor value for CRM users.",
+        "SavvyCal Premium ($17/mo) unless you absolutely need custom sending domains or zero branding—Basic ($10/mo) includes all core features and custom domains already."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Calendly",
+      "url": "https://calendly.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "SavvyCal",
+      "url": "https://savvycal.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "YouCanBookMe",
+      "url": "https://youcanbookme.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "TidyCal",
+      "url": "https://tidycal.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-meeting-schedulers-for-solopreneurs-calendly-vs-savvycal-vs-calcom-vs-youcanbookme-hero.jpg",
+  "imageCredit": "Pexels · Michaela",
+  "niche": "ai-tools"
+}

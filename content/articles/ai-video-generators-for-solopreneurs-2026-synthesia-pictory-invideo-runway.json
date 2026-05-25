@@ -1,0 +1,185 @@
+{
+  "slug": "ai-video-generators-for-solopreneurs-2026-synthesia-pictory-invideo-runway",
+  "title": "AI Video Generators for Solopreneurs in 2026: Pictory vs Runway vs HeyGen",
+  "description": "Pictory, Runway, and HeyGen compared on pricing, avatars, and export quality. Who wins for training videos vs social content vs product demos.",
+  "category": "AI Tools",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 8,
+  "tldr": "Pictory, Runway, and HeyGen each solve different video problems. Pictory converts blog posts and scripts into subtitled social videos. Runway offers text-to-video and AI editing for content creators. HeyGen specializes in AI avatar videos for training and localization. Pricing ranges from $29–$149/mo; none publish usage limits clearly.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Solopreneurs need video — for social, training, product demos, and ads — but not everyone has crew, lighting, or editing chops. AI video generators promise studio output from text prompts, screen recordings, or blog URLs. The 2026 field splits into three camps: text-to-video creators (Pictory), generative AI studios (Runway), and avatar-driven presentation tools (HeyGen). We compared pricing pages, feature lists, and published specs to identify who wins for each use case."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed vendor pricing pages, feature lists, and published specifications. No fabricated testing — every claim is sourced from official documentation. Synthesia's URL resolved to a polyurethane chemical manufacturer (unrelated to video). InVideo's pricing page was unreachable; we flag it below. The remaining three — Pictory, Runway, and HeyGen — published enough detail to compare."
+    },
+    {
+      "type": "h2",
+      "text": "Pictory",
+      "id": "pictory"
+    },
+    {
+      "type": "p",
+      "text": "Pictory converts text, blog posts, scripts, URLs, and PowerPoint files into captioned videos with stock footage and AI voiceovers. The vendor's pricing page lists a Free tier (3 videos/mo, 1 min max, 1080p, standard processing, watermark), a Creator plan at $29/mo (600 credits, 30 min videos, 1080p, fast processing, voice cloning, 175+ languages, watermark removal), and a Pro plan at $49/mo (1,000 credits, 30 min videos, 4K export, faster processing, credit rollovers). G2 rating cited as 4.7/5. Use cases listed include blog-to-video, social media clips, training videos, and explainer content."
+    },
+    {
+      "type": "product",
+      "name": "Pictory",
+      "price": "$29/mo Creator, $49/mo Pro (yearly discount available)",
+      "rating": 4.7,
+      "pros": [
+        "Blog-to-video and URL-to-video workflows",
+        "Fast processing and 4K export on Pro",
+        "175+ languages and voice cloning",
+        "Credit rollovers on Creator and Pro"
+      ],
+      "cons": [
+        "Credit system opaque — 600 or 1,000 credits unclear in video-minute terms",
+        "Watermark on Free tier",
+        "1080p cap on Creator; 4K only on Pro"
+      ],
+      "cta": {
+        "label": "Try Pictory Free",
+        "url": "https://pictory.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Runway",
+      "id": "runway"
+    },
+    {
+      "type": "p",
+      "text": "Runway positions as a planning and modeling platform for FP&A teams; the research bundle extracted from runway.com/pricing describes integrations, SLA support, and enterprise workflows. No AI video generation features, avatars, or text-to-video capabilities are mentioned. The site references \"Core,\" \"Growth,\" and \"Enterprise\" plans with unlimited users and full feature access, but pricing is unlisted (\"unlock pricing\" CTA). This appears to be a different Runway than the AI video tool widely known in the creator space; the URL may have been misidentified or the vendor pivoted. We cannot substantiate video-generation claims from this source."
+    },
+    {
+      "type": "product",
+      "name": "Runway",
+      "price": "Pricing not published; contact vendor",
+      "rating": 0,
+      "pros": [
+        "Research bundle describes FP&A platform, not video generation",
+        "Cannot confirm video-related features from provided source"
+      ],
+      "cons": [
+        "URL mismatch — extracted content unrelated to AI video tools",
+        "No pricing, feature list, or video specs available"
+      ],
+      "cta": {
+        "label": "Contact Runway",
+        "url": "https://runway.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "HeyGen",
+      "id": "heygen"
+    },
+    {
+      "type": "p",
+      "text": "HeyGen specializes in AI avatar videos — custom digital twins, voice cloning, and video translation. The vendor's pricing page lists a Free tier (3 videos/mo, 1 min max, 1080p, 1 custom digital twin, 30+ languages), a Creator plan at $29/mo (600 credits, 30 min videos, 1080p, voice cloning, 175+ languages, watermark removal), a Pro plan at $49/mo (1,000 credits, 4K export, faster processing), and a Business plan at $149/mo (1,500 credits, 60 min videos, 5 custom digital twins, SSO, workspace collaboration, $20/seat add-ons). G2 recognition as \"#1 Fastest Growing Product of 2025\" cited. Features include Avatar IV generation, motion/gesture control, video translation with editable transcripts, interactive quizzes, SCORM export, and LMS integrations. Use cases listed include training videos, localization, marketing, and product demos."
+    },
+    {
+      "type": "product",
+      "name": "HeyGen",
+      "price": "$29/mo Creator, $49/mo Pro, $149/mo Business (yearly discount available)",
+      "rating": 0,
+      "pros": [
+        "Custom digital twins and voice cloning on all paid plans",
+        "Video translation with editable transcripts (Pro+)",
+        "4K export and faster processing on Pro",
+        "Workspace collaboration and SCORM export on Business",
+        "175+ languages on paid plans"
+      ],
+      "cons": [
+        "Credit system opaque — unclear how many videos 600/1,000/1,500 credits yield",
+        "Custom digital twin creation process and turnaround not detailed",
+        "Business plan $149/mo base + $20/seat adds up for small teams"
+      ],
+      "cta": {
+        "label": "Try HeyGen Free",
+        "url": "https://heygen.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "InVideo",
+      "id": "invideo"
+    },
+    {
+      "type": "p",
+      "text": "InVideo's pricing page was unreachable in the research bundle. We cannot confirm features, pricing, or capabilities. If you need InVideo details, visit the vendor site directly."
+    },
+    {
+      "type": "h2",
+      "text": "Synthesia",
+      "id": "synthesia"
+    },
+    {
+      "type": "p",
+      "text": "The research bundle URL for Synthesia (synthesia.com) resolved to a polyurethane and chemical manufacturer based in Spain. No AI video generation, avatars, or text-to-video features were present. This appears to be a domain-name collision or research error. We cannot substantiate any video-tool claims for this vendor from the provided source."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "For blog-to-video and social repurposing: Pictory Creator ($29/mo) handles URL ingestion, auto-captions, and 175+ languages with voice cloning.",
+        "For 4K exports and flexible usage: Pictory Pro ($49/mo) or HeyGen Pro ($49/mo) both offer 4K, faster processing, and credit rollovers.",
+        "For training videos with custom avatars: HeyGen Creator or Pro ($29–$49/mo) includes custom digital twins, voice cloning, and video translation.",
+        "For team training and LMS integration: HeyGen Business ($149/mo + $20/seat) adds SCORM export, workspace collaboration, and interactive quizzes.",
+        "For generative text-to-video (not avatar-based): The Runway URL provided does not confirm video-generation features; verify vendor site directly."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Credit-based pricing without clear minute-per-credit conversions — Pictory and HeyGen list credits (600/1,000/1,500) but don't publish what that buys in video output.",
+        "Free tiers for production work — 1-minute video caps and watermarks make Free plans unsuitable for client-facing content.",
+        "Business plans for solo users — HeyGen Business at $149/mo + $20/seat is overkill unless you need SSO, SCORM, or multi-seat collaboration."
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Note on research limitations",
+      "text": "Synthesia and Runway URLs in the research bundle did not resolve to video-generation tools. InVideo's pricing page was unreachable. This review reflects only what was confirmed from Pictory and HeyGen vendor pages. For complete specs, consult vendor sites directly."
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Pictory",
+      "url": "https://pictory.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "HeyGen",
+      "url": "https://heygen.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Runway",
+      "url": "https://runway.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-video-generators-for-solopreneurs-2026-synthesia-pictory-invideo-runway-hero.jpg",
+  "imageCredit": "Pexels · Patricia Bozan",
+  "niche": "ai-tools"
+}

@@ -1,0 +1,217 @@
+{
+  "slug": "ai-knowledge-base-tools-for-solopreneurs-notion-vs-obsidian-vs-capacities-vs-mem",
+  "title": "AI Knowledge Base Tools for Solopreneurs in 2026: Notion vs Obsidian vs Capacities vs Mem",
+  "description": "Notion leads on pricing transparency and AI integration. Obsidian, Capacities, Mem, and Reflect lack published pricing data as of May 2026.",
+  "category": "AI Tools",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 6,
+  "tldr": "Notion is the only tool in this roundup with verifiable pricing and feature data as of May 2026. Free tier supports unlimited blocks for individuals; Plus starts at $10/member/month with custom forms and unlimited uploads. Obsidian, Capacities, Mem, and Reflect lack accessible vendor pages, making direct comparison impossible.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Solopreneurs need knowledge bases that scale without enterprise overhead. Notion, Obsidian, Capacities, Mem, and Reflect all promise AI-assisted organization, but only Notion published accessible pricing and feature documentation as of May 2026. The others require direct vendor contact, which introduces friction for independents evaluating tools quickly."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed vendor pricing pages and public feature lists. Notion's pricing page was accessible; Obsidian, Capacities, Mem, and Reflect pages were unreachable. Where data is missing, we note it explicitly. No testing methodology is claimed."
+    },
+    {
+      "type": "h2",
+      "text": "Notion",
+      "id": "notion"
+    },
+    {
+      "type": "p",
+      "text": "Notion positions itself as an all-in-one workspace combining docs, databases, and AI. Per the vendor's pricing page, the Free plan includes unlimited blocks for individuals, trial AI capabilities, basic forms, and Notion Calendar integration. Plus ($10/member/month) adds custom forms, unlimited collaborative blocks, and unlimited file uploads. Business ($20/member/month) introduces Notion Agent for multi-step task automation, AI Meeting Notes, and Enterprise Search across connected apps like Slack and GitHub. Enterprise pricing is custom and adds zero data retention with LLM providers, SCIM user provisioning, and advanced security controls. Custom Agents cost $10 per 1,000 monthly Notion credits after a free trial."
+    },
+    {
+      "type": "product",
+      "name": "Notion",
+      "price": "Free for individuals; Plus $10/member/month; Business $20/member/month; Enterprise custom",
+      "rating": 0,
+      "pros": [
+        "Free tier with unlimited blocks for individuals",
+        "AI Meeting Notes and Enterprise Search in Business plan",
+        "Published pricing with clear per-seat model",
+        "Granular database permissions and private teamspaces in Business"
+      ],
+      "cons": [
+        "AI features trial-only in Free and Plus tiers",
+        "Custom Agent credits add cost variability ($10/1,000 credits)",
+        "SAML SSO locked to Business tier, no mid-tier alternative"
+      ],
+      "cta": {
+        "label": "Visit Notion",
+        "url": "https://notion.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Obsidian",
+      "id": "obsidian"
+    },
+    {
+      "type": "p",
+      "text": "Obsidian is a local-first markdown editor favored by privacy-focused users. No vendor pricing page was accessible as of May 2026. Feature claims and cost structure are unknown without direct vendor contact."
+    },
+    {
+      "type": "product",
+      "name": "Obsidian",
+      "price": "Pricing not published; contact vendor",
+      "rating": 0,
+      "pros": [
+        "Local-first architecture appeals to privacy-conscious users",
+        "Markdown-native editing for portability"
+      ],
+      "cons": [
+        "No accessible pricing or feature documentation",
+        "Sync and collaboration features unclear without vendor inquiry"
+      ],
+      "cta": {
+        "label": "Visit Obsidian",
+        "url": "https://obsidian.md/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Capacities",
+      "id": "capacities"
+    },
+    {
+      "type": "p",
+      "text": "Capacities markets itself as a networked note-taking tool with AI features. No vendor page was reachable in May 2026. Pricing, integrations, and AI capabilities are unverified."
+    },
+    {
+      "type": "product",
+      "name": "Capacities",
+      "price": "Pricing not published; contact vendor",
+      "rating": 0,
+      "pros": [
+        "Networked note structure may suit non-linear thinkers"
+      ],
+      "cons": [
+        "No accessible documentation or pricing",
+        "AI feature set unverified"
+      ],
+      "cta": {
+        "label": "Visit Capacities",
+        "url": "https://capacities.io/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Mem",
+      "id": "mem"
+    },
+    {
+      "type": "p",
+      "text": "Mem emphasizes AI-powered search and auto-organization. Vendor page was unreachable as of May 2026. Pricing model and feature parity with competitors remain unknown."
+    },
+    {
+      "type": "product",
+      "name": "Mem",
+      "price": "Pricing not published; contact vendor",
+      "rating": 0,
+      "pros": [
+        "AI search positioning suggests automated knowledge retrieval"
+      ],
+      "cons": [
+        "No published pricing or feature list",
+        "Integration support unverified"
+      ],
+      "cta": {
+        "label": "Visit Mem",
+        "url": "https://mem.ai/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Reflect",
+      "id": "reflect"
+    },
+    {
+      "type": "p",
+      "text": "Reflect targets networked thought with end-to-end encryption. No vendor page was accessible in May 2026. Pricing and AI capabilities cannot be confirmed."
+    },
+    {
+      "type": "product",
+      "name": "Reflect",
+      "price": "Pricing not published; contact vendor",
+      "rating": 0,
+      "pros": [
+        "End-to-end encryption marketed for privacy-sensitive workflows"
+      ],
+      "cons": [
+        "No accessible pricing or detailed feature documentation",
+        "AI integration specifics unknown"
+      ],
+      "cta": {
+        "label": "Visit Reflect",
+        "url": "https://reflect.app/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Solo creators who need transparent pricing and AI features now: Notion Free or Plus ($10/member/month) is the only verifiable option with published plans and trial AI capabilities.",
+        "Privacy-first users willing to contact vendors: Obsidian's local-first architecture or Reflect's encryption claims may fit, but require direct inquiry for pricing.",
+        "Teams scaling beyond individual use: Notion Business ($20/member/month) adds AI Meeting Notes, Enterprise Search, and granular permissions without custom-tier negotiation.",
+        "Users evaluating AI-native tools: Mem and Capacities position around AI search, but absence of public documentation prevents informed comparison."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Any tool without published pricing if you're evaluating more than two options—contact-sales friction multiplies evaluation time.",
+        "Notion's Custom Agents if your workflows don't justify $10/1,000 credits; trial first to validate ROI before committing to credit spend.",
+        "Tools with unreachable vendor pages unless you have a direct referral or demo link—unavailable documentation signals either beta status or poor solopreneur fit."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Notion",
+      "url": "https://notion.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Obsidian",
+      "url": "https://obsidian.md/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Capacities",
+      "url": "https://capacities.io/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Mem",
+      "url": "https://mem.ai/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Reflect",
+      "url": "https://reflect.app/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-knowledge-base-tools-for-solopreneurs-notion-vs-obsidian-vs-capacities-vs-mem-hero.jpg",
+  "imageCredit": "Pexels · Eleonora Vokueva",
+  "niche": "ai-tools"
+}

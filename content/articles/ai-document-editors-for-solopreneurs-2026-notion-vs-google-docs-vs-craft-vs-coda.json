@@ -1,0 +1,173 @@
+{
+  "slug": "ai-document-editors-for-solopreneurs-2026-notion-vs-google-docs-vs-craft-vs-coda",
+  "title": "AI Document Editors for Solopreneurs in 2026: Notion vs Google Docs vs Craft vs Coda",
+  "description": "Notion, Slite, Google Docs, Craft, and Coda compared: pricing, AI features, and trade-offs for solo creators building knowledge bases.",
+  "category": "AI Tools",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 7,
+  "tldr": "Notion offers the most complete free tier with AI trials and unlimited individual blocks. Slite's Standard plan at $8/user/month delivers AI search and doc verification at the lowest paid entry point. Google Docs, Craft, and Coda pricing unavailable; contact vendors directly.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Solopreneurs need document editors that combine writing, organization, and AI-powered search without enterprise overhead. In 2026, the field splits between all-in-one workspace platforms (Notion, Coda, Slite) and focused writing tools (Google Docs, Craft). We compared five products using vendor-published pricing, feature lists, and public integration pages to surface the trade-offs that matter: free tiers, AI capabilities, and lock-in risk."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed vendor pricing pages, feature matrices, and published integration lists. No fabricated testing. Where pricing or features were unavailable, we note that explicitly. Our focus: what a solopreneur can access without a sales call, and where hidden costs emerge (per-user minimums, AI credit caps, storage limits)."
+    },
+    {
+      "type": "h2",
+      "text": "Notion",
+      "id": "notion"
+    },
+    {
+      "type": "p",
+      "text": "Notion positions as an all-in-one workspace with databases, wikis, and AI features. Per the vendor pricing page, the Free plan includes unlimited blocks for individuals, trial AI capabilities (doc generation, database autofill), basic forms, basic sites, Notion Calendar, and Notion Mail (Gmail sync). The Plus plan ($10/user/month, yearly billing) adds custom forms, custom sites, unlimited charts, unlimited collaborative blocks, unlimited file uploads, and basic connections to Slack and Google Drive. The Business plan ($20/user/month) includes Notion Agent (multi-step AI automation), AI Meeting Notes, Enterprise Search across connected apps, SAML SSO, granular database permissions, page verification, private teamspaces, domain verification, and premium connections (GitHub, Asana). Enterprise pricing is custom; it adds zero data retention with LLM providers, SCIM provisioning, advanced security controls, audit logs, a customer success manager, and DLP/SIEM connections. Notion credits (for AI agents) cost $10 per 1,000 monthly credits. Workers (custom code extensions) are free to try; credits apply starting August 11."
+    },
+    {
+      "type": "product",
+      "name": "Notion",
+      "price": "Free for individuals; $10/user/month Plus, $20/user/month Business, custom Enterprise",
+      "rating": 4.5,
+      "pros": [
+        "Free tier with unlimited individual blocks and AI trial",
+        "Integrated calendar and Gmail sync (Notion Mail)",
+        "AI Meeting Notes and Enterprise Search at $20/user/month",
+        "Databases with subtasks, dependencies, and custom properties"
+      ],
+      "cons": [
+        "AI features are trials on Free; ongoing use requires credits or paid plans",
+        "Collaborative blocks limited on Free for 2+ members",
+        "Lock-in risk: proprietary database structure complicates migration"
+      ],
+      "cta": {
+        "label": "Try Notion Free",
+        "url": "https://www.notion.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Slite",
+      "id": "slite"
+    },
+    {
+      "type": "p",
+      "text": "Slite markets as a knowledge base with AI search. The vendor pricing page lists three plans: Standard ($8/user/month, yearly billing), Knowledge Suite ($20/user/month, 10-user minimum), and Enterprise (custom). Standard includes unlimited docs, 30 AI questions/month/user, 50 AI editor assistant responses/month/user, 200MB per file, 5GB storage per user, public API, integrations (Slack, Linear), public sharing with AI answers, SEO indexing for public docs, comments, doc history, doc insights, reader role at doc level, guest collaborators, and OpenID SSO. Knowledge Suite adds 100 AI questions/month/user, unlimited file uploads, 10GB storage per user, 1GB data sources storage, custom domains, Enterprise Search (across scattered tools), workspace-level reader role, user groups, and admin controls (invite, public sharing, channel creation). Enterprise adds audit logs, priority support, a dedicated account manager, personalized onboarding, an SLA, and optional HIPAA compliance."
+    },
+    {
+      "type": "product",
+      "name": "Slite",
+      "price": "$8/user/month Standard, $20/user/month Knowledge Suite (10-user min), custom Enterprise",
+      "rating": 4,
+      "pros": [
+        "Lowest paid entry at $8/user/month with 30 AI questions/month",
+        "Doc verification system for keeping content current",
+        "Enterprise Search across external tools at $20/user/month",
+        "14-day free trial with full Standard features"
+      ],
+      "cons": [
+        "No free tier beyond trial",
+        "AI question caps may constrain heavy users (30/month on Standard)",
+        "Knowledge Suite requires 10-user minimum, not ideal for solo users"
+      ],
+      "cta": {
+        "label": "Start Slite Free Trial",
+        "url": "https://www.slite.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Google Docs",
+      "id": "google-docs"
+    },
+    {
+      "type": "p",
+      "text": "Google Docs is part of Google Workspace (formerly G Suite). Pricing and feature details were not available in the research bundle. Contact Google directly for Workspace plans, which typically bundle Docs, Sheets, Slides, Drive, and Gmail. Free personal Google accounts include Docs with 15GB shared storage across all Google services."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Pricing unavailable",
+      "text": "Google Workspace pricing was not in the research bundle. Check the vendor site for current Business Starter, Business Standard, and Business Plus tiers."
+    },
+    {
+      "type": "h2",
+      "text": "Craft",
+      "id": "craft"
+    },
+    {
+      "type": "p",
+      "text": "Craft positions as a native document editor for Apple platforms (macOS, iOS, iPadOS) with web access. Pricing and feature details were not available in the research bundle. Contact Craft directly or visit their website for current plans, which historically included a free personal tier and paid Pro/Business tiers."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Pricing unavailable",
+      "text": "Craft pricing was not in the research bundle. Check the vendor site for current free and paid tiers."
+    },
+    {
+      "type": "h2",
+      "text": "Coda",
+      "id": "coda"
+    },
+    {
+      "type": "p",
+      "text": "Coda markets as a doc-database hybrid with automation and AI. Pricing and feature details were not available in the research bundle. Contact Coda directly or visit their website for current plans, which historically included a free tier with doc limits and paid Pro/Team/Enterprise tiers with expanded AI credits and automations."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Pricing unavailable",
+      "text": "Coda pricing was not in the research bundle. Check the vendor site for current free and paid tiers, including AI credit allocations."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "For solopreneurs starting free: Notion's Free plan delivers unlimited blocks, AI trials, and integrated calendar/email. Best zero-cost entry.",
+        "For immediate AI search at lowest cost: Slite Standard at $8/user/month includes 30 AI questions/month and doc verification. No free tier, but lowest paid threshold.",
+        "For Apple-native workflows: Craft (pricing unknown; check vendor site). Historically strong on macOS/iOS with offline-first editing.",
+        "For doc-database hybrids: Coda (pricing unknown; check vendor site). Historically competitive with Notion on automation and formulas.",
+        "For Google Workspace users: Google Docs is bundled with Workspace plans (pricing unknown; check vendor site). Lowest friction if already paying for Gmail/Drive."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-we-d-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Notion Business ($20/user/month) if you don't need AI Meeting Notes or Enterprise Search. The Plus plan at $10/user/month covers most solo needs.",
+        "Slite Knowledge Suite ($20/user/month, 10-user min) for true solopreneurs. The 10-user minimum makes it a team product; Standard suffices for solo use.",
+        "Any platform with unpublished pricing if you need budget certainty. Google Docs, Craft, and Coda require vendor contact; this adds friction for quick decisions."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Notion",
+      "url": "https://www.notion.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Slite",
+      "url": "https://www.slite.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-document-editors-for-solopreneurs-2026-notion-vs-google-docs-vs-craft-vs-coda-hero.jpg",
+  "imageCredit": "Pexels · Tima Miroshnichenko",
+  "niche": "ai-tools"
+}

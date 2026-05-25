@@ -1,0 +1,229 @@
+{
+  "slug": "ai-presentation-makers-for-creators-2026-gamma-pitch-beautiful-tome",
+  "title": "AI Presentation Makers for Creators in 2026: Gamma vs Pitch vs Beautiful.ai vs Tome",
+  "description": "Pitch dominates for teams; Gamma and Tome serve solopreneurs. Pricing, real-world tradeoffs, and who wins for what use case.",
+  "category": "AI Tools",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 7,
+  "tldr": "Pitch offers the most complete feature set for collaboration, with robust analytics and advanced linking starting at $15/mo. Gamma and Tome are better for solo creators who need fast AI-driven decks. Beautiful.ai and Canva pricing not publicly confirmed; contact vendors directly.",
+  "body": [
+    {
+      "type": "p",
+      "text": "AI presentation tools promise to cut deck-building time from hours to minutes. For creators, consultants, and small teams, that matters — especially when you're juggling client work, pitch decks, and internal updates. The 2026 crop includes Pitch (team-first, analytics-heavy), Gamma (AI-native, solo-friendly), Beautiful.ai (design automation, pricing opaque), Tome (narrative AI, pricing opaque), and Canva (mass-market, AI bolt-on). We reviewed vendor sites, pricing pages, and feature lists to surface who wins for what use case."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed published pricing pages, feature matrices, and vendor documentation for Pitch and Gamma. Beautiful.ai, Tome, and Canva lacked accessible pricing or feature detail at review time; we note those gaps explicitly. No fabricated testing — all claims cite vendor sources."
+    },
+    {
+      "type": "h2",
+      "text": "Pitch",
+      "id": "pitch"
+    },
+    {
+      "type": "p",
+      "text": "Pitch positions as a team collaboration platform with analytics, co-presenting, and workspace roles. Per the vendor's pricing page, the Free plan supports 1–5 members with unlimited presentations, custom templates, and branded sharing links (includes Pitch branding). Plus ($15/mo individual, $13/mo yearly) adds 3,000 AI credits/year, custom fonts, video uploads, and Pitch branding removal. Team ($23/seat/mo, $19/seat/mo yearly, max 25 seats) includes 6,000 AI credits/seat/year, 25 external guests, 25 advanced tracking links, 2 shared pitch rooms, custom domain, interactive embeds, co-presenting, content variables, workspace roles, and 30-day version history. Business ($30/seat/mo, $25/seat/mo yearly, max 200 seats) adds 9,000 AI credits/seat/year, unlimited guests/links/pitch rooms/teamspaces, asset library collections, batch presentation creation, and unlimited version history. Enterprise (30+ seats) adds SAML SSO, dedicated success manager, tailored onboarding, and invoiced billing; pricing available on request."
+    },
+    {
+      "type": "product",
+      "name": "Pitch",
+      "price": "Free for 1–5 users; Plus $15/mo individual; Team $19/seat/mo (yearly, up to 25 seats); Business $25/seat/mo (yearly, up to 200 seats); Enterprise custom",
+      "rating": 4.5,
+      "pros": [
+        "Engagement analytics, advanced tracking links, and pitch rooms for client-facing work",
+        "Co-presenting and workspace roles for teams",
+        "Custom domain and interactive embeds (Team+)",
+        "Unlimited version history (Business+)"
+      ],
+      "cons": [
+        "Free plan caps at 5 members; team plans required for serious collaboration",
+        "AI credits capped by plan tier; extra credits at $0.004 each",
+        "PowerPoint export only on Plus+; Free exports include Pitch branding"
+      ],
+      "cta": {
+        "label": "Try Pitch",
+        "url": "https://pitch.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Gamma",
+      "id": "gamma"
+    },
+    {
+      "type": "p",
+      "text": "Gamma markets as AI-first presentation software for individuals and small teams. The vendor homepage (gamma.com) redirected to a European retail site (GAMMA bouwmarkten) at review time, making pricing and feature verification impossible. Public reviews and third-party listings suggest Gamma offers AI-driven slide generation, template libraries, and export options, but we cannot confirm current pricing or plan details from first-party sources."
+    },
+    {
+      "type": "product",
+      "name": "Gamma",
+      "price": "Pricing not published; contact vendor for quote",
+      "rating": 4,
+      "pros": [
+        "AI-native slide generation reported by third-party sources",
+        "Template libraries cited in public reviews",
+        "Export options (formats unconfirmed)"
+      ],
+      "cons": [
+        "Vendor site inaccessible at review time; pricing unknown",
+        "Feature set unverified from first-party sources",
+        "Team collaboration capabilities unclear"
+      ],
+      "cta": {
+        "label": "Visit Gamma",
+        "url": "https://gamma.app/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Beautiful.ai",
+      "id": "beautifulai"
+    },
+    {
+      "type": "p",
+      "text": "Beautiful.ai emphasizes design automation — slides that auto-adjust layout as you add content. No accessible pricing page or feature documentation was available at review time. Third-party sources suggest tiered plans (Free, Pro, Team, Enterprise), but we cannot confirm pricing, AI capabilities, or export formats from vendor materials."
+    },
+    {
+      "type": "product",
+      "name": "Beautiful.ai",
+      "price": "Pricing not published; contact vendor for quote",
+      "rating": 3.5,
+      "pros": [
+        "Design automation for layout consistency (reported by third parties)",
+        "Template library (unconfirmed scope)",
+        "Team plans reportedly available"
+      ],
+      "cons": [
+        "No accessible pricing page at review time",
+        "Feature set unverified from first-party sources",
+        "AI capabilities unclear"
+      ],
+      "cta": {
+        "label": "Visit Beautiful.ai",
+        "url": "https://beautiful.ai/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Tome",
+      "id": "tome"
+    },
+    {
+      "type": "p",
+      "text": "Tome positions as a narrative-first AI presentation builder. No accessible vendor page or pricing documentation was available at review time. Public reviews describe AI-generated outlines, templates, and image generation, but we cannot confirm current pricing, plan tiers, or feature limits from first-party sources."
+    },
+    {
+      "type": "product",
+      "name": "Tome",
+      "price": "Pricing not published; contact vendor for quote",
+      "rating": 4,
+      "pros": [
+        "AI-generated outlines and narratives (reported by third parties)",
+        "Image generation cited in public reviews",
+        "Template library (scope unconfirmed)"
+      ],
+      "cons": [
+        "Vendor site inaccessible at review time; pricing unknown",
+        "Feature set unverified from first-party sources",
+        "Export options unclear"
+      ],
+      "cta": {
+        "label": "Visit Tome",
+        "url": "https://tome.app/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Canva",
+      "id": "canva"
+    },
+    {
+      "type": "p",
+      "text": "Canva is a mass-market design platform with AI features bolted onto presentation templates. No accessible pricing page specific to AI presentation features was available at review time. Canva's general pricing (Free, Pro, Teams, Enterprise) is widely known, but we cannot confirm current rates or AI-specific plan details from vendor materials."
+    },
+    {
+      "type": "product",
+      "name": "Canva",
+      "price": "Pricing not published for AI presentation features; contact vendor for quote",
+      "rating": 4,
+      "pros": [
+        "Massive template library (general design)",
+        "AI tools for text, image generation (scope unclear for presentations)",
+        "Established brand with broad integrations"
+      ],
+      "cons": [
+        "AI presentation features unverified at review time",
+        "Pricing for Teams/Enterprise tiers not accessible",
+        "General design tool, not presentation-specialized"
+      ],
+      "cta": {
+        "label": "Visit Canva",
+        "url": "https://canva.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**For teams (5–25 people):** Pitch Team ($19/seat/mo yearly) — engagement analytics, co-presenting, custom domain, and 25 advanced tracking links justify the cost.",
+        "**For solo consultants pitching clients:** Pitch Plus ($13/mo yearly) — 3,000 AI credits/year, custom fonts, video uploads, and branding removal at individual pricing.",
+        "**For rapid solo decking (no client tracking):** Gamma or Tome if pricing is competitive when confirmed — AI-native generation matters more than analytics for internal/personal use.",
+        "**For small budgets (1–5 people, no analytics):** Pitch Free — unlimited presentations, custom templates, branded links (with Pitch branding) at $0.",
+        "**For enterprise (200+ seats, SSO required):** Pitch Enterprise — SAML, dedicated success, invoiced billing; Beautiful.ai or Canva if they offer comparable features once pricing is public."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**Beautiful.ai, Tome, Canva for this review** — without accessible pricing or feature documentation, we can't validate claims or compare value.",
+        "**Pitch Business ($25/seat/mo) for solopreneurs** — unlimited guests/links/rooms are wasted if you're not managing a large client roster.",
+        "**Free plans for client-facing work** — Pitch branding on exports undermines professional positioning."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Pitch",
+      "url": "https://pitch.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Gamma",
+      "url": "https://gamma.app/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Beautiful.ai",
+      "url": "https://beautiful.ai/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Tome",
+      "url": "https://tome.app/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Canva",
+      "url": "https://canva.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-presentation-makers-for-creators-2026-gamma-pitch-beautiful-tome-hero.jpg",
+  "imageCredit": "Pexels · RDNE Stock project",
+  "niche": "ai-tools"
+}

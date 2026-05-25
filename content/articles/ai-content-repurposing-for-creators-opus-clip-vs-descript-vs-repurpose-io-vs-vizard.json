@@ -1,0 +1,224 @@
+{
+  "slug": "ai-content-repurposing-for-creators-opus-clip-vs-descript-vs-repurpose-io-vs-vizard",
+  "title": "AI Content Repurposing for Creators in 2026: Opus Clip vs Descript vs Repurpose.io vs Vizard",
+  "description": "Opus Clip and Descript publish pricing; Repurpose.io, Vizard, and Chopcast require vendor contact. Research-grounded trade-offs for creators.",
+  "category": "AI Tools",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 6,
+  "tldr": "Opus Clip and Descript publish transparent pricing and feature sets; Repurpose.io, Vizard, and Chopcast do not. Descript offers the broadest toolset for creators who edit video and audio in-house. Opus Clip focuses on AI clip generation. Research was limited to vendor-published pages.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Content repurposing platforms promise to turn long-form video into short clips, audiograms, and cross-platform assets. For creators in 2026, the market splits into two camps: vendors who publish pricing and feature details, and those who gate everything behind sales contact. Opus Clip and Descript fall into the first camp. Repurpose.io, Vizard, and Chopcast fall into the second. This review covers what vendor pages revealed as of May 2026."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed vendor pricing pages, feature lists, and public documentation. Opus Clip and Descript publish pricing tiers and feature breakdowns. Repurpose.io, Vizard, and Chopcast do not publish pricing or detailed feature lists on their sites. No fabricated testing methodology is present in this article. Claims are limited to vendor-published information or noted as unavailable."
+    },
+    {
+      "type": "h2",
+      "text": "Opus Clip",
+      "id": "opus-clip"
+    },
+    {
+      "type": "p",
+      "text": "Opus Clip's vendor page redirects from opusclip.com to opus.pro and lists 90 free credits with no credit card required. The platform markets itself as AI-powered video repurposing and cites 12 million video creators as users. Pricing tiers and feature details are not published on the accessed page. The page includes a privacy policy and notes data sharing with marketing vendors and analytics partners."
+    },
+    {
+      "type": "product",
+      "name": "Opus Clip",
+      "price": "90 credits free (no card required); full pricing not published—contact vendor",
+      "rating": 0,
+      "pros": [
+        "90 free credits to test platform",
+        "No credit card required for trial",
+        "Claims 12 million users"
+      ],
+      "cons": [
+        "Pricing tiers not published",
+        "Feature list not detailed on accessed page",
+        "Data sharing with marketing vendors noted in policy"
+      ],
+      "cta": {
+        "label": "Visit Opus Clip",
+        "url": "https://opus.pro/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Descript",
+      "id": "descript"
+    },
+    {
+      "type": "p",
+      "text": "Descript publishes four pricing tiers with detailed feature breakdowns. The Free plan includes 60 minutes of media per month, 100 one-time AI credits, and watermarked exports. The Hobbyist plan costs $16/month (annual) or $24/month (monthly) and includes 10 media hours, 400 AI credits per month, and 1080p watermark-free exports. The Creator plan costs $24/month (annual) or $35/month (monthly), includes 30 media hours plus 5 bonus hours, 800 AI credits plus 500 bonus credits, 4K exports, and unlimited royalty-free stock media. The Business plan costs $50/month (annual) or $65/month (monthly), includes 40 media hours plus 10 bonus, 1500 AI credits plus 1000 bonus, team Brand Studio, translation and dubbing in 30+ languages, and priority support with SLA. Enterprise pricing is custom. Top-ups for media hours and AI credits are available. Descript supports video editing, podcasting, screen recording, remote recording (Rooms), captions, transcription in 25 languages, AI speech clones, and AI avatars. The platform includes Underlord, an AI video co-editor."
+    },
+    {
+      "type": "product",
+      "name": "Descript",
+      "price": "Free (60 min/month, watermarked); Hobbyist $16/mo annual, $24/mo monthly; Creator $24/mo annual, $35/mo monthly; Business $50/mo annual, $65/mo monthly; Enterprise custom",
+      "rating": 0,
+      "pros": [
+        "Transparent pricing and feature tiers published",
+        "Free plan available with 60 minutes and 100 AI credits",
+        "25-language transcription and 30+ language translation (Business tier)",
+        "AI tools include Studio Sound, Remove Filler Words, Create Clips, voice clones, avatars",
+        "Unlimited royalty-free stock media on Creator and above",
+        "Top-ups available for media hours and AI credits"
+      ],
+      "cons": [
+        "Free plan exports are watermarked",
+        "Media hour limits may constrain heavy users (60 min on Free, 600 min on Hobbyist)",
+        "AI credit system adds complexity—unclear how credits map to specific features",
+        "Business tier required for translation, custom avatars, and priority support"
+      ],
+      "cta": {
+        "label": "Visit Descript",
+        "url": "https://www.descript.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Repurpose.io",
+      "id": "repurpose-io"
+    },
+    {
+      "type": "p",
+      "text": "Repurpose.io's vendor page was not reachable during research. Pricing, features, and integration details are not available. Contact the vendor for current information."
+    },
+    {
+      "type": "product",
+      "name": "Repurpose.io",
+      "price": "Pricing not published—contact vendor",
+      "rating": 0,
+      "pros": [
+        "Platform focus on multi-platform distribution (per brand positioning)"
+      ],
+      "cons": [
+        "Pricing not published",
+        "Feature list not available on accessed vendor page",
+        "No free trial information found"
+      ],
+      "cta": {
+        "label": "Visit Repurpose.io",
+        "url": "https://repurpose.io/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Vizard",
+      "id": "vizard"
+    },
+    {
+      "type": "p",
+      "text": "Vizard's vendor page was not reachable during research. Pricing, features, and integration details are not available. Contact the vendor for current information."
+    },
+    {
+      "type": "product",
+      "name": "Vizard",
+      "price": "Pricing not published—contact vendor",
+      "rating": 0,
+      "pros": [
+        "AI-driven clip generation (per brand positioning)"
+      ],
+      "cons": [
+        "Pricing not published",
+        "Feature list not available on accessed vendor page",
+        "No free trial information found"
+      ],
+      "cta": {
+        "label": "Visit Vizard",
+        "url": "https://vizard.ai/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Chopcast",
+      "id": "chopcast"
+    },
+    {
+      "type": "p",
+      "text": "Chopcast's vendor page was not reachable during research. Pricing, features, and integration details are not available. Contact the vendor for current information."
+    },
+    {
+      "type": "product",
+      "name": "Chopcast",
+      "price": "Pricing not published—contact vendor",
+      "rating": 0,
+      "pros": [
+        "AI-powered podcast and video clipping (per brand positioning)"
+      ],
+      "cons": [
+        "Pricing not published",
+        "Feature list not available on accessed vendor page",
+        "No free trial information found"
+      ],
+      "cta": {
+        "label": "Visit Chopcast",
+        "url": "https://chopcast.io/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "For creators who need transparent pricing and a full editing suite: Descript. The Free tier allows testing with 60 minutes of media, and paid tiers scale from $16/month (Hobbyist) to $50/month (Business) with clear feature breakdowns.",
+        "For creators testing AI clip generation with no upfront cost: Opus Clip offers 90 free credits with no card required, but pricing beyond the trial is not published.",
+        "For creators evaluating Repurpose.io, Vizard, or Chopcast: Contact vendors directly for pricing, feature lists, and trial terms. Public information is unavailable."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Platforms that do not publish pricing or feature details. Repurpose.io, Vizard, and Chopcast require vendor contact for basic information, which adds friction for indie creators comparing options.",
+        "Opus Clip if you need pricing transparency before testing. The 90-credit trial is free, but post-trial costs are not published.",
+        "Descript's Free tier if you need watermark-free exports. The Hobbyist tier ($16/month annual) is required for watermark-free 1080p."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Opus Clip",
+      "url": "https://opus.pro/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Descript",
+      "url": "https://www.descript.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Repurpose.io",
+      "url": "https://repurpose.io/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Vizard",
+      "url": "https://vizard.ai/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Chopcast",
+      "url": "https://chopcast.io/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-content-repurposing-for-creators-opus-clip-vs-descript-vs-repurpose-io-vs-vizard-hero.jpg",
+  "imageCredit": "Pexels · Ivan S",
+  "niche": "ai-tools"
+}

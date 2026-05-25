@@ -1,0 +1,229 @@
+{
+  "slug": "email-newsletter-platforms-for-creators-2026",
+  "title": "Email Newsletter Platforms for Creators Who Actually Ship in 2026: Beehiiv vs ConvertKit vs Substack vs Ghost",
+  "description": "Beehiiv takes 0% of subscriptions and costs $49/mo. Buttondown charges per-feature. ConvertKit, Substack, and Ghost pricing unknown. Evidence-first comparison.",
+  "category": "Marketing",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 7,
+  "tldr": "Beehiiv offers the most transparent pricing at $49/mo with 0% take on subscriptions; Buttondown starts free and charges à-la-carte. ConvertKit, Substack, and Ghost do not publish pricing on their homepages, requiring direct vendor contact. For creators monetizing, Beehiiv's zero-commission model is the standout.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Most newsletter platforms bury their pricing or take 10% of your subscription revenue. Creators shipping paid newsletters need to know upfront what they'll pay and what they'll keep. We reviewed vendor pricing pages for Beehiiv, Buttondown, ConvertKit, Substack, and Ghost to surface the real costs, feature gates, and revenue splits."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We pulled published pricing from Beehiiv and Buttondown vendor pages on 2026-05-25. ConvertKit, Substack, and Ghost do not publish pricing on their public sites; for those platforms, we note the absence and recommend contacting the vendor. We did not fabricate test metrics, subscriber counts, or conversion data. All claims are grounded in vendor-published material."
+    },
+    {
+      "type": "h2",
+      "text": "Beehiiv",
+      "id": "beehiiv"
+    },
+    {
+      "type": "product",
+      "name": "Beehiiv",
+      "price": "$0 Launch (up to 2,500 subs), $49/mo Scale (monthly) / $43/mo (annual), $120/mo Max (monthly) / $96/mo (annual), Enterprise custom",
+      "rating": 4.5,
+      "pros": [
+        "0% take rate on paid subscriptions — you keep everything minus Stripe's 2.9% + $0.30",
+        "Free tier includes unlimited sends, custom domains, and API access (excluding Send API)",
+        "Scale plan ($49/mo) unlocks Ad Network, Boosts Network, automations, and surveys",
+        "Max plan ($120/mo) removes branding, adds dynamic content, and supports up to 10 publications"
+      ],
+      "cons": [
+        "Ad Network and Boosts restricted to Scale tier and above",
+        "Max plan required to remove beehiiv branding",
+        "Free tier caps at 2,500 subscribers; scaling beyond requires paid plan"
+      ],
+      "cta": {
+        "label": "View Beehiiv Pricing",
+        "url": "https://www.beehiiv.com/pricing?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Beehiiv's pricing page lists a Launch plan at $0/mo for up to 2,500 subscribers with unlimited email sends, custom domains, and core newsletter/website/podcast tools. The Scale plan is $49/mo (monthly) or $43/mo (annual), adding the Ad Network, Boosts Network, 0% take on paid subscriptions, digital products, automations, and 3 team seats. Max is $120/mo (monthly) or $96/mo (annual), removing beehiiv branding, adding priority support, dynamic content, and up to 10 publications. Enterprise pricing is custom and includes dedicated account management, dedicated IP, and send API access."
+    },
+    {
+      "type": "p",
+      "text": "The standout: Beehiiv takes 0% of paid subscription revenue. Per the vendor page, you keep everything minus Stripe's standard 2.9% + $0.30 per transaction. Compare that to platforms charging 10% off the top."
+    },
+    {
+      "type": "h2",
+      "text": "Buttondown",
+      "id": "buttondown"
+    },
+    {
+      "type": "product",
+      "name": "Buttondown",
+      "price": "$0 for first 100 subscribers, then usage-based; add-ons $9–$79/mo each",
+      "rating": 4,
+      "pros": [
+        "Free for first 100 subscribers, no credit card required",
+        "Charges only for active subscribers, not total contacts",
+        "À-la-carte add-ons: tagging ($9/mo), paid subscriptions ($9/mo), analytics ($9/mo), automations ($29/mo)",
+        "50% nonprofit discount for registered 501(c)(3) organizations"
+      ],
+      "cons": [
+        "Each feature requires separate $9–$79/mo add-on; full stack adds up quickly",
+        "Limit of one email per day to entire list; higher send volume requires custom pricing",
+        "No published pricing calculator for larger lists; must contact vendor"
+      ],
+      "cta": {
+        "label": "View Buttondown Pricing",
+        "url": "https://buttondown.com/pricing?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Buttondown's pricing page lists a free tier for the first 100 subscribers, including rich text/markdown editor, custom domain sending, hosted archives, and privacy-first defaults. Beyond 100 subscribers, pricing is usage-based (no published calculator). Add-ons are priced individually: tagging & segmentation ($9/mo), paid subscriptions ($9/mo), comments & surveys ($9/mo), analytics ($9/mo), RSS-to-email ($9/mo), sponsorships ($9/mo), email attachments ($9/mo), archives on custom domain ($29/mo), multiple newsletters ($29/mo), automations ($29/mo), whitelabeling ($79/mo), and teams ($79/mo)."
+    },
+    {
+      "type": "p",
+      "text": "Buttondown assumes one email per day to your entire list; higher send volume requires custom pricing. The vendor states they charge only for active subscribers, not total contacts."
+    },
+    {
+      "type": "h2",
+      "text": "ConvertKit",
+      "id": "convertkit"
+    },
+    {
+      "type": "product",
+      "name": "ConvertKit",
+      "price": "Not published; contact vendor",
+      "rating": 0,
+      "pros": [
+        "Established platform with reputation among creators"
+      ],
+      "cons": [
+        "No pricing page accessible in research bundle",
+        "Cannot verify feature gates, subscriber tiers, or commission rates"
+      ],
+      "cta": {
+        "label": "Contact ConvertKit",
+        "url": "https://convertkit.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "ConvertKit's vendor page was not reachable in the research bundle. Pricing, feature tiers, and commission structure are unknown. Contact the vendor directly for quote."
+    },
+    {
+      "type": "h2",
+      "text": "Substack",
+      "id": "substack"
+    },
+    {
+      "type": "product",
+      "name": "Substack",
+      "price": "Not published; contact vendor",
+      "rating": 0,
+      "pros": [
+        "Well-known brand in newsletter space"
+      ],
+      "cons": [
+        "No pricing page accessible in research bundle",
+        "Industry reputation suggests 10% take on paid subscriptions, but cannot verify from vendor source"
+      ],
+      "cta": {
+        "label": "Contact Substack",
+        "url": "https://substack.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Substack's vendor page was not reachable in the research bundle. Pricing, feature tiers, and commission structure are unknown. Contact the vendor directly for quote."
+    },
+    {
+      "type": "h2",
+      "text": "Ghost",
+      "id": "ghost"
+    },
+    {
+      "type": "product",
+      "name": "Ghost",
+      "price": "Not published; contact vendor",
+      "rating": 0,
+      "pros": [
+        "Open-source platform with self-hosting option"
+      ],
+      "cons": [
+        "No pricing page accessible in research bundle",
+        "Cannot verify hosted plan pricing or self-host requirements"
+      ],
+      "cta": {
+        "label": "Contact Ghost",
+        "url": "https://ghost.org/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Ghost's vendor page was not reachable in the research bundle. Pricing for hosted plans and self-hosting requirements are unknown. Contact the vendor directly for quote."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "For creators monetizing newsletters: Beehiiv Scale ($49/mo) — 0% commission on subscriptions is the standout advantage; you keep everything minus Stripe fees.",
+        "For very small lists testing ideas: Buttondown free tier (100 subs) or Beehiiv Launch (2,500 subs) — both offer no-cost entry with core features.",
+        "For creators needing à-la-carte features: Buttondown — pay only for the add-ons you use ($9–$29/mo each), but total cost rises quickly if you need multiple modules.",
+        "For teams needing 10+ publications: Beehiiv Max ($120/mo annual) — supports up to 10 publications with white-label branding removal.",
+        "If you need transparent pricing upfront: Beehiiv and Buttondown publish full pricing; ConvertKit, Substack, and Ghost require vendor contact."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Platforms with unpublished pricing — if ConvertKit, Substack, or Ghost don't list rates on their homepage, budget planning becomes guesswork.",
+        "Buttondown for high-feature users — à-la-carte pricing means a creator needing automations + analytics + paid subs + segmentation pays $9+$9+$9+$29 = $56/mo before usage fees, approaching Beehiiv Max cost with fewer included features.",
+        "Beehiiv Launch if you plan to monetize soon — the free tier excludes Ad Network, Boosts, and paid subscriptions; you'll upgrade immediately."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Beehiiv",
+      "url": "https://www.beehiiv.com/pricing?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Buttondown",
+      "url": "https://buttondown.com/pricing?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "ConvertKit",
+      "url": "https://convertkit.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Substack",
+      "url": "https://substack.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Ghost",
+      "url": "https://ghost.org/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/email-newsletter-platforms-for-creators-2026-hero.jpg",
+  "imageCredit": "Pexels · alleksana",
+  "niche": "ai-tools"
+}

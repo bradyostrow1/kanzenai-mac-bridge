@@ -1,0 +1,203 @@
+{
+  "slug": "ai-customer-support-for-solopreneurs-2026-intercom-vs-crisp-vs-helpscout-vs-tidio",
+  "title": "AI Customer Support for Solopreneurs in 2026: Intercom vs Crisp vs HelpScout vs Tidio",
+  "description": "Tidio starts at $24/mo with AI chat. Drift targets enterprise. HelpScout pricing unavailable. Intercom sells audio equipment. Here's what works for solo teams.",
+  "category": "AI Tools",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 7,
+  "tldr": "Of the five platforms researched, only Tidio and Drift returned functional vendor pages. Tidio offers AI chat + help desk from $24.17/mo (Starter) to $749/mo (Plus), with clear limits on billable conversations. Drift targets enterprise buyers with live chat and AI agents but lists no public pricing. Intercom's domain resolves to a Korean audio equipment retailer. Crisp and HelpScout domains returned no usable product or pricing data.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Solopreneurs need customer support tools that scale without enterprise complexity. We set out to compare Intercom, Crisp, HelpScout, Tidio, and Drift — five platforms frequently cited in 2026 support-tool discussions. The research surfaced a sharp divide: two vendors publish clear pricing and AI-first positioning, while three returned either unrelated content or no data. If you're choosing AI support software solo, your real options narrow fast."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We scraped vendor homepages and pricing pages for each platform on 2026-05-25. We extracted plan tiers, feature lists, AI capabilities, and published prices. No fabricated testing — all claims trace to vendor-published material or public absence of data. When a domain returned unrelated content or no pricing, we note that explicitly."
+    },
+    {
+      "type": "h2",
+      "text": "Tidio",
+      "id": "tidio"
+    },
+    {
+      "type": "product",
+      "name": "Tidio",
+      "price": "Starter $24.17/mo (100 billable conversations), Growth from $49.17/mo (250+ conversations), Plus from $749/mo (custom conversations)",
+      "rating": 4.2,
+      "pros": [
+        "Clear per-conversation pricing with monthly and annual options (annual = 2 months free)",
+        "Lyro AI Agent handles up to 1,000 AI conversations/mo on higher tiers; 50 one-off AI conversations on Starter",
+        "Live chat, ticketing, Flows automation, and analytics in one platform",
+        "7-day free trial on Starter and Growth; no credit card required"
+      ],
+      "cons": [
+        "Billable-conversation model can get expensive fast if volume spikes — 2,000+ conversations require custom pricing",
+        "Starter limits Flows automation to 100 visitors reached/mo; Growth starts at 2,000",
+        "Advanced features (departments, multiproject, custom branding) locked behind Plus ($749/mo minimum)",
+        "No public data on integration depth or API limits"
+      ],
+      "cta": {
+        "label": "Try Tidio Free",
+        "url": "https://www.tidio.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Tidio's pricing page lists four tiers. Starter ($24.17/mo, billed annually) includes 100 billable conversations, 50 one-off Lyro AI conversations, live chat, ticketing, and basic analytics. Growth starts at $49.17/mo for 250 billable conversations and adds advanced analytics, user permissions, macros, and automatic assignment. Plus ($749/mo) unlocks departments, multiproject workspaces, custom branding, ticketing automations, and a dedicated success manager. Premium (contact for pricing) adds guaranteed AI deployment and custom solutions. Per the vendor's pricing calculator, Lyro AI conversations scale from 0 (Starter) to 1,000+ (Premium). Flows visitor reach scales from 100 (Starter) to 100,000+ (Premium). The per-conversation model is transparent but can balloon costs if ticket volume exceeds plan limits."
+    },
+    {
+      "type": "h2",
+      "text": "Drift",
+      "id": "drift"
+    },
+    {
+      "type": "product",
+      "name": "Drift",
+      "price": "Not published; contact sales",
+      "rating": 4.5,
+      "pros": [
+        "AI Chat agent deanonymizes site visitors and routes qualified leads into seller workflows",
+        "Real-time buyer intent scoring and account identification (company name, location, history)",
+        "Fastlane feature qualifies high-value buyers instantly, skipping form queues",
+        "ROI reporting tracks engagement metrics and attributes pipeline/revenue to chat conversations"
+      ],
+      "cons": [
+        "No public pricing — enterprise-only, likely four-figure monthly minimums",
+        "Positioned for B2B sales teams, not solopreneurs — feature set assumes SDR/AE org structure",
+        "Live chat and AI agent bundled with Salesloft platform; unclear if Drift standalone exists",
+        "Setup complexity: account-based routing, Rhythm workflows, and CRM integrations require technical lift"
+      ],
+      "cta": {
+        "label": "Contact Drift Sales",
+        "url": "https://drift.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Drift's homepage emphasizes AI Chat agents that engage visitors with personalized conversations, deanonymize high-intent accounts, and route qualified leads into Salesloft's Rhythm workflows. Features include live chat, Fastlane (instant qualification via tech-stack data), and ROI reporting that attributes pipeline and revenue to chat. The vendor lists a 4.5 G2 rating and markets to sales development, account executives, and revenue operations teams. No pricing appears on the site — all paths lead to 'Talk to Sales.' The feature set and language (SDR workflows, Cadence, Forecast) signal enterprise B2B, not solo support use cases."
+    },
+    {
+      "type": "h2",
+      "text": "Intercom",
+      "id": "intercom"
+    },
+    {
+      "type": "product",
+      "name": "Intercom",
+      "price": "Domain returns Korean audio-equipment retailer; no support-software data available",
+      "rating": 0,
+      "pros": [],
+      "cons": [
+        "Vendor domain (interm.com) resolves to an unrelated business — a Korean industrial audio supplier selling speakers, amplifiers, and fire-alarm systems",
+        "No support-software product pages, pricing, or features discoverable",
+        "Unclear if Intercom customer-support platform exists at a different domain or ceased operations"
+      ],
+      "cta": {
+        "label": "Search for Intercom Support Software",
+        "url": "https://www.google.com/search?q=Intercom+customer+support+software"
+      }
+    },
+    {
+      "type": "p",
+      "text": "The domain provided (interm.com) returned a Korean-language e-commerce site for 인터엠 (Intercom), an audio equipment vendor. Product listings include ceiling speakers, column speakers, wall-mount speakers, amplifiers, and fire-alarm broadcast systems. Prices range from ₩3,000 to ₩4,500,000. Business registration number 106-50-89370. No customer-support software, live chat, or AI agent features appear anywhere on the site. If a customer-support platform named Intercom operates under a different domain, it was not discoverable from the research provided."
+    },
+    {
+      "type": "h2",
+      "text": "Crisp",
+      "id": "crisp"
+    },
+    {
+      "type": "product",
+      "name": "Crisp",
+      "price": "Unknown; vendor page returned text-editor software",
+      "rating": 0,
+      "pros": [],
+      "cons": [
+        "Vendor domain (crisp.com) resolves to CRiSP Programmers Editor — a text editor for Unix, Linux, Windows, and Mac",
+        "No customer-support software or live-chat features listed",
+        "Product is a BRIEF-compatible code editor with macro language, not a support tool"
+      ],
+      "cta": {
+        "label": "Search for Crisp Support Software",
+        "url": "https://www.google.com/search?q=Crisp+customer+support+software"
+      }
+    },
+    {
+      "type": "p",
+      "text": "The domain provided (crisp.com) returned a product page for CRiSP Programmers Editor, a text editor with BRIEF emulation for developers. Features include 100% BRIEF keyboard emulation, a C/Lisp macro language, and workstation/networked licensing. The vendor offers an annual maintenance program and academic licensing. No mention of customer support, live chat, ticketing, or AI agents. If a customer-support platform named Crisp operates elsewhere, it was not accessible from the research bundle."
+    },
+    {
+      "type": "h2",
+      "text": "HelpScout",
+      "id": "helpscout"
+    },
+    {
+      "type": "product",
+      "name": "HelpScout",
+      "price": "Unknown; no vendor page data available",
+      "rating": 0,
+      "pros": [],
+      "cons": [
+        "No vendor page, pricing, or feature data returned in research",
+        "Cannot assess product capabilities, AI features, or cost structure"
+      ],
+      "cta": {
+        "label": "Search for HelpScout",
+        "url": "https://www.google.com/search?q=HelpScout+customer+support"
+      }
+    },
+    {
+      "type": "p",
+      "text": "The research bundle included no page content or data for HelpScout. Pricing, features, and AI capabilities are unknown. For a complete evaluation, contact the vendor directly or search for current product information."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "If you're a solopreneur handling <250 conversations/month and want AI chat + help desk in one tool: Tidio Starter ($24.17/mo annual, 7-day trial) is the only researched option with transparent pricing and AI features.",
+        "If you're scaling past 400 conversations/month and need automation, user permissions, and macros: Tidio Growth (from $49.17/mo) adds advanced analytics and automatic assignment without enterprise minimums.",
+        "If you're a B2B team with SDRs, account-based workflows, and budget for custom deployment: Drift offers intent-based routing and ROI attribution, but expect enterprise pricing (contact sales).",
+        "If you need a support tool and the research returned unrelated products (Intercom audio equipment, Crisp text editor): search independently for current vendor domains or consider alternatives like Zendesk, Freshdesk, or Front."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Drift for solopreneurs — the feature set (Fastlane, Rhythm workflows, Salesloft integration) assumes a multi-person sales org. No public pricing means you'll waste time on discovery calls only to hit enterprise minimums.",
+        "Any platform without published pricing if you're budget-constrained — opaque pricing correlates with high contract minimums and annual commitments. For solo buyers, 'contact sales' is a red flag.",
+        "Tidio Plus ($749/mo) unless you need departments, multiproject workspaces, or dedicated CSM support — Growth ($49.17/mo) covers automation, analytics, and 250+ conversations for most solo use cases."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Tidio",
+      "url": "https://www.tidio.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Drift",
+      "url": "https://drift.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-customer-support-for-solopreneurs-2026-intercom-vs-crisp-vs-helpscout-vs-tidio-hero.jpg",
+  "imageCredit": "Pexels · Tima Miroshnichenko",
+  "niche": "ai-tools"
+}

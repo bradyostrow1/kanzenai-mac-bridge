@@ -1,0 +1,141 @@
+{
+  "slug": "how-to-install-raycast-add-ai-extension-setup-guide",
+  "title": "How to Install Raycast on Mac and Add Your First AI Extension: Step-by-Step Guide",
+  "description": "Step-by-step tutorial: download Raycast, set up your launcher, and add your first AI extension. Complete setup in under 10 minutes.",
+  "category": "Tutorials",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 8,
+  "tldr": "You'll install Raycast on your Mac, replace Spotlight with it, and add an AI-powered extension from the Store. Takes about 10 minutes, and you can start with the free plan that includes 50 AI messages to test the platform.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Raycast is a Mac launcher that replaces Spotlight and gives you a command palette for everything—apps, files, clipboard history, window management, and AI chat. You'll install the app, bind it to your keyboard, and add your first AI extension from the built-in Store. By the end, you'll have a working Raycast setup that lets you summon AI help from anywhere on your Mac with a single keystroke."
+    },
+    {
+      "type": "h2",
+      "text": "What you'll need",
+      "id": "prereqs"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "A Mac running macOS 12 Monterey or later",
+        "Administrator access to install applications",
+        "An internet connection for the initial download",
+        "Optional: a Raycast account (free) if you want to sync settings across devices or use cloud features"
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Time + cost",
+      "text": "About 10 minutes total. Raycast is free for personal use with all core features and 50 AI messages included. If you want unlimited AI, the Pro plan is $8/month annually or $10/month."
+    },
+    {
+      "type": "h2",
+      "text": "Step 1 — Download and install Raycast",
+      "id": "step-1"
+    },
+    {
+      "type": "p",
+      "text": "Go to raycast.com and click the blue 'Download' button in the top navigation. Your browser will download a .dmg file (around 150 MB). Open the .dmg, drag the Raycast icon into your Applications folder, then double-click Raycast in Applications to launch it. macOS will ask you to confirm you want to open an app from the internet—click 'Open'. Raycast will open a small onboarding window and request Accessibility permissions. Click 'Open System Settings', then toggle Raycast on in Privacy & Security → Accessibility. Close System Settings and return to Raycast."
+    },
+    {
+      "type": "h2",
+      "text": "Step 2 — Set your keyboard shortcut",
+      "id": "step-2"
+    },
+    {
+      "type": "p",
+      "text": "Raycast will prompt you to choose a hotkey. The default is ⌘ Space, which replaces Spotlight. If you want to keep Spotlight, pick ⌥ Space or another combo. Click the shortcut field, press your preferred key combination, then click 'Continue'. Raycast is now bound to that hotkey—press it once to test. You should see the Raycast window appear with a search bar and a list of available commands."
+    },
+    {
+      "type": "h2",
+      "text": "Step 3 — Open the Store and search for an AI extension",
+      "id": "step-3"
+    },
+    {
+      "type": "p",
+      "text": "Press your Raycast hotkey, type 'Store', and hit Enter. The Store command opens a browser of community-built extensions. In the Store search bar, type 'AI Chat' or 'ChatGPT' to find AI-powered extensions. You'll see several options—'AI Chat' is Raycast's built-in AI assistant, and there are third-party extensions like 'ChatGPT' or 'OpenAI Translator'. Click on 'AI Chat' to preview it."
+    },
+    {
+      "type": "h2",
+      "text": "Step 4 — Install the AI Chat extension",
+      "id": "step-4"
+    },
+    {
+      "type": "p",
+      "text": "In the AI Chat detail view, click the blue 'Install Extension' button in the top right. Raycast will download and install it in a few seconds. Once installed, the button changes to 'Open Extension'. Click it, or press your hotkey again and type 'AI Chat', then hit Enter. A chat interface appears. Type a question—something like 'Explain Raycast in one sentence'—and press Enter. Raycast will use one of your 50 free AI messages to generate a response. You'll see the answer stream in below your prompt."
+    },
+    {
+      "type": "h2",
+      "text": "Step 5 — Pin the AI Chat command for quick access",
+      "id": "step-5"
+    },
+    {
+      "type": "p",
+      "text": "To make AI Chat easier to reach, you can pin it or assign a custom alias. Press your Raycast hotkey, type 'AI Chat', then press ⌘ K to open the action menu. Select 'Pin Extension'—now AI Chat will appear at the top of your search results. Alternatively, press ⌘ K again and choose 'Create Alias', type something short like 'ask', and hit Enter. Now you can summon AI Chat by pressing your hotkey and typing 'ask' instead of the full name."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "title": "Pro tip",
+      "text": "If you use AI Chat heavily, assign it a dedicated hotkey. Open Raycast settings (⌘ ,), go to Extensions → AI Chat, and set a 'Hotkey' under the command. Now you can jump straight into a new AI conversation without searching."
+    },
+    {
+      "type": "h2",
+      "text": "If something breaks",
+      "id": "troubleshoot"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Symptom: Raycast hotkey does nothing → Fix: Open System Settings → Privacy & Security → Accessibility and confirm Raycast is toggled on. Restart Raycast if needed.",
+        "Symptom: AI Chat returns 'No messages remaining' → Fix: You've used your 50 free messages. Upgrade to Pro ($8/month annually) in Raycast settings → Raycast AI, or wait until the next billing cycle if you already subscribed.",
+        "Symptom: Extension won't install from Store → Fix: Check your internet connection. If the Store command isn't loading, press ⌘ R in Raycast to refresh the extensions index.",
+        "Symptom: Raycast window appears off-screen or tiny → Fix: Press your hotkey, type 'Window Management', and choose 'Center' to reposition the window. Or quit Raycast (right-click the menu bar icon → Quit) and relaunch."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What to do next",
+      "id": "next"
+    },
+    {
+      "type": "p",
+      "text": "Explore more extensions in the Store—categories like Developer Tools, Productivity, and Design Tools have hundreds of workflows. Try the built-in Clipboard History (search 'Clipboard History' in Raycast) to see everything you've copied in the last three months, or Window Management to snap windows with keyboard shortcuts. If you work with a team, check out the free Teams plan to share Snippets, Quicklinks, and custom commands across your organization—no per-seat cost for the free tier."
+    },
+    {
+      "type": "product",
+      "name": "Raycast",
+      "price": "Free for personal use; Pro with AI $8/month annually, $10/month; Teams $12/user/month annually, $15/month",
+      "rating": 4.9,
+      "pros": [
+        "Free plan includes all core features and 50 AI messages",
+        "Thousands of community extensions in the built-in Store",
+        "Clipboard History, Window Management, and Snippets built-in",
+        "Pro plan is $8/month annually—cheaper than standalone AI subscriptions"
+      ],
+      "cons": [
+        "macOS only—no Windows or Linux support",
+        "Pro plan bundles AI; you can't buy Pro features without AI",
+        "Advanced AI models (GPT-4, Claude) require an $8/month add-on on top of Pro"
+      ],
+      "cta": {
+        "label": "Try Raycast",
+        "url": "https://raycast.com/?ref=kanzenai"
+      }
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Raycast",
+      "url": "https://raycast.com/?ref=kanzenai",
+      "commission": "Standard affiliate terms"
+    }
+  ],
+  "headerImage": "/articles/how-to-install-raycast-add-ai-extension-setup-guide-hero.jpg",
+  "imageCredit": "Pexels · energepic.com",
+  "niche": "ai-tools"
+}

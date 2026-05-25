@@ -1,0 +1,219 @@
+{
+  "slug": "no-code-website-builders-for-solopreneurs-2026",
+  "title": "No-Code Website Builders for Solopreneurs in 2026: Webflow vs Framer vs Carrd vs Typedream",
+  "description": "Webflow starts at $15/mo, Framer at $10/mo, Carrd free-to-$19/yr. We compare pricing, CMS limits, and trade-offs for solo builders.",
+  "category": "AI Tools",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 8,
+  "tldr": "Carrd wins on price for simple one-pagers ($0–$19/yr). Framer ($10/mo) and Webflow ($15/mo) scale better for content-heavy sites. Typedream ($15/mo Launch, $42/mo Grow) bundles e-commerce and email marketing. Super.so pricing is unlisted.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Solopreneurs building their first site face a pricing cliff: free tools cap features hard, and full CMSs start at $15–$30/mo. We compared five no-code builders on 2026 pricing, page limits, CMS features, and e-commerce support. Carrd remains the cheapest for static pages. Framer and Webflow offer richer design control and CMS at $10–$15/mo entry points. Typedream bundles product sales and email marketing. Super.so pricing is not published; contact the vendor."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We pulled pricing from vendor sites on 2026-05-25. Plans and limits are quoted exactly as listed. We note where features are paywalled, where CMS item caps bite, and where transaction fees apply. No fabricated testing."
+    },
+    {
+      "type": "h2",
+      "text": "Webflow",
+      "id": "webflow"
+    },
+    {
+      "type": "p",
+      "text": "Webflow's 2026 pricing restructure introduced a Starter plan (free, 2 static pages, webflow.io subdomain, 1 GB bandwidth, 50 form submissions) and a Basic plan ($15/mo annual, custom domain, 300 static pages, 10 GB bandwidth, unlimited forms). The Premium plan ($25/mo annual) adds the Webflow CMS with 50 GB bandwidth initially, scaling to 2.5 TB, plus code components, site search, and file uploads. Team and Enterprise plans ($2,500/mo contract for Team; custom for Enterprise) add localization, AEO agents, publishing workflows, and governance tools. All plans include Webflow AI, the MCP server, and Webflow Cloud app hosting. The Free Starter Workspace is bundled at every tier."
+    },
+    {
+      "type": "product",
+      "name": "Webflow",
+      "price": "$0 Starter (2 pages, webflow.io domain) | $15/mo Basic (300 static pages, custom domain) | $25/mo Premium (CMS, 50 GB bandwidth, code components) | $2,500/mo Team (annual contract, localization, workflows) | Custom Enterprise",
+      "rating": 4.5,
+      "pros": [
+        "Free tier includes 2 pages and AI tools for prototyping",
+        "Basic at $15/mo supports 300 static pages and unlimited forms",
+        "Premium CMS scales to 2.5 TB bandwidth with code components and site search",
+        "Team plan includes localization, AEO agents, and publishing workflows"
+      ],
+      "cons": [
+        "CMS locked behind $25/mo Premium; Starter and Basic are static-only",
+        "Team plan requires $2,500/mo annual contract—steep for solo users",
+        "Bandwidth caps on free and Basic tiers (1 GB and 10 GB) may limit traffic growth",
+        "No published pricing for Enterprise; contact sales"
+      ],
+      "cta": {
+        "label": "Try Webflow Free",
+        "url": "https://webflow.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Framer",
+      "id": "framer"
+    },
+    {
+      "type": "p",
+      "text": "Framer's pricing as of 2026-05-25: Basic ($10/mo annual, free custom domain, 30 pages, 2 CMS collections, 1,000 CMS items, 50 GB bandwidth, 20-location CDN, 30-day analytics, password protection). Pro ($30/mo annual, 150 pages, 10 CMS collections, 2,500 items, 100 GB bandwidth, staging, roles, redirects, A/B testing add-on at $50/500k events, multiple locales at $20/locale). Scale ($100/mo annual plus usage, 300 pages baseline then $20/100 pages up to 700 max, 20 CMS collections then $40/10 up to 40 max, 10k items then $20/10k up to 40k max, 200 GB bandwidth then $40/100 GB up to 2 TB max, 300+ location premium CDN, events/funnels, priority support, Advanced Hosting add-on at $200 for 6 rewrites). Additional editors: $20/mo on Basic, $40/mo on Pro/Scale. Viewers are free. Pro Experts get free editor access on client projects. Translation locales: up to 2 on Basic, 10 on Pro, 20 on Scale, all at $20/locale add-on."
+    },
+    {
+      "type": "product",
+      "name": "Framer",
+      "price": "$10/mo Basic (30 pages, 2 CMS collections, 1k items, 50 GB bandwidth, free domain) | $30/mo Pro (150 pages, 10 collections, 2.5k items, 100 GB, staging, roles) | $100/mo Scale (300 pages base, 20 collections, 10k items, 200 GB, premium CDN, usage overages)",
+      "rating": 4.6,
+      "pros": [
+        "Basic at $10/mo includes free custom domain and 30 pages—lowest CMS entry price",
+        "Pro at $30/mo adds staging, roles, A/B testing, and 10 CMS collections",
+        "Scale plan offers flexible pay-what-you-use for pages, collections, items, and bandwidth",
+        "Pro Experts get free editor seats on client projects"
+      ],
+      "cons": [
+        "Basic caps at 2 CMS collections and 1k items—limiting for content sites",
+        "Scale usage overages can escalate cost: $20/100 pages, $40/10 collections, $20/10k items, $40/100 GB bandwidth",
+        "A/B testing is a $50 add-on per 500k events; not included in base plans",
+        "Translation locales cost $20 each; Basic caps at 2, Pro at 10, Scale at 20"
+      ],
+      "cta": {
+        "label": "Start Free with Framer",
+        "url": "https://framer.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Carrd",
+      "id": "carrd"
+    },
+    {
+      "type": "p",
+      "text": "Carrd's free tier allows up to 3 one-page sites per account with responsive design and core features. Going Pro costs $19/year (per year) and unlocks: custom domains with SSL (via Let's Encrypt), more than 3 sites per account, forms (contact, signup with Mailchimp/Kit/ActiveCampaign/EmailOctopus, custom, payment-enabled), widgets and embeds (Stripe, PayPal, Gumroad, Typeform), site analytics (Google Analytics, Plausible, Matomo), and removal of 'Made with Carrd' branding. Pro offers a 7-day free trial. PayPal and major credit/debit cards accepted."
+    },
+    {
+      "type": "product",
+      "name": "Carrd",
+      "price": "$0 Free (up to 3 one-page sites, carrd.co subdomain) | $19/year Pro (unlimited sites, custom domains, SSL, forms, widgets, analytics, no branding)",
+      "rating": 4.3,
+      "pros": [
+        "Free tier supports 3 responsive one-page sites—best for testing ideas",
+        "$19/year Pro is the lowest annual cost for custom domains and form integrations",
+        "Pro includes Stripe, PayPal, Gumroad embeds and Mailchimp/Kit/ActiveCampaign signup forms",
+        "SSL via Let's Encrypt included in Pro; no hidden fees"
+      ],
+      "cons": [
+        "Locked to one-page sites; no multi-page or CMS features",
+        "Free tier forces carrd.co subdomain and 'Made with Carrd' branding",
+        "No staging, A/B testing, or advanced analytics—Pro only adds basic tracking",
+        "Forms and widgets require Pro; free tier has no form capture"
+      ],
+      "cta": {
+        "label": "Try Carrd Free",
+        "url": "https://carrd.co/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Typedream",
+      "id": "typedream"
+    },
+    {
+      "type": "p",
+      "text": "Typedream's 2026 pricing per site: Free (1 page, link-in-bio, typedream.app subdomain, Typedream badge, 1 seat max, 5% transaction fee plus card/PayPal fee, sell digital products, landing page, link-in-bio). Launch ($15/mo annual, $20/mo monthly, unlimited pages, custom domain, SEO, code injection, complete site analytics, 1 blog CMS collection, 1,000 form submissions, 2% transaction fee plus card/PayPal fee, 1,000 email marketing subscribers, 2 collaborators, free 1-year .xyz domain). Grow ($42/mo annual, $49/mo monthly, everything in Launch plus unlimited blogs/CMS collections, unlimited form submissions, 2% transaction fee, 5,000 email marketing subscribers, password protect, 5 collaborators, free 1-year .xyz domain). All plans include digital product sales, landing pages, link-in-bio, and forms. Launch and Grow add blog and email marketing."
+    },
+    {
+      "type": "product",
+      "name": "Typedream",
+      "price": "$0 Free (1 page, 5% transaction fee, 1 seat) | $15/mo Launch annual ($20/mo monthly, unlimited pages, 1 blog, 1k forms, 1k email subs, 2% transaction fee, 2 collaborators) | $42/mo Grow annual ($49/mo monthly, unlimited blogs/forms, 5k email subs, 5 collaborators)",
+      "rating": 4.4,
+      "pros": [
+        "Free tier includes digital product sales and link-in-bio—useful for quick launches",
+        "Launch at $15/mo bundles 1 blog, 1k email subscribers, and 1k form submissions",
+        "Grow at $42/mo removes form caps and adds unlimited CMS collections and 5k email subs",
+        "Transaction fees drop from 5% (free) to 2% (Launch/Grow)—better for product sellers"
+      ],
+      "cons": [
+        "Free tier caps at 1 page and 5% transaction fee—prohibitive for serious sales",
+        "Launch limits to 1 blog (CMS collection); multi-blog sites require $42/mo Grow",
+        "Email marketing caps at 1k subs on Launch, 5k on Grow—external ESP needed beyond that",
+        "Monthly pricing ($20 Launch, $49 Grow) is 25–17% more expensive than annual; no monthly discount"
+      ],
+      "cta": {
+        "label": "Start Free on Typedream",
+        "url": "https://typedream.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Super.so",
+      "id": "super-so"
+    },
+    {
+      "type": "p",
+      "text": "Super.so pricing is not published on a public page as of 2026-05-25. The vendor likely offers Notion-backed site hosting. Contact Super.so directly for plan details, limits, and custom domain support."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Super.so Pricing Unavailable",
+      "text": "We could not locate a public pricing page for Super.so. If you use Notion as a CMS and want to explore Super.so, reach out to the vendor for current rates and feature lists."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Simple one-pagers, minimal budget: Carrd Free (3 sites, no custom domain) or Carrd Pro ($19/year) for custom domains and forms.",
+        "Portfolio or landing page with light CMS needs: Framer Basic ($10/mo, 30 pages, 2 CMS collections) offers the lowest CMS entry price and a free custom domain.",
+        "Content-heavy blog or multi-page site: Webflow Premium ($25/mo, CMS, 50 GB bandwidth, site search) or Framer Pro ($30/mo, 10 CMS collections, 2,500 items, staging, roles).",
+        "Selling digital products and need email marketing: Typedream Launch ($15/mo, 1k email subs, 1 blog, 2% transaction fee) or Grow ($42/mo, unlimited blogs, 5k subs).",
+        "High-traffic or agency clients: Framer Scale ($100/mo + usage) or Webflow Team ($2,500/mo, localization, workflows). Webflow Enterprise for custom governance."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Carrd for multi-page sites or blogs—it's one-page only. Use Framer or Webflow instead.",
+        "Webflow Basic ($15/mo) if you need a blog—it's static pages only. Pay $10 extra for Premium to unlock the CMS.",
+        "Framer Basic if you plan more than 2 CMS collections—you'll hit the cap fast. Pro at $30/mo scales to 10 collections.",
+        "Typedream Free for product sales—5% transaction fee plus card fees eats margin. Launch ($15/mo, 2% fee) is the real floor.",
+        "Webflow Team ($2,500/mo) for solopreneurs—it's overkill unless you're running an agency or need enterprise workflows."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Webflow",
+      "url": "https://webflow.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Framer",
+      "url": "https://framer.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Carrd",
+      "url": "https://carrd.co/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Typedream",
+      "url": "https://typedream.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/no-code-website-builders-for-solopreneurs-2026-hero.jpg",
+  "imageCredit": "Pexels · Rodrigo Santos",
+  "niche": "ai-tools"
+}

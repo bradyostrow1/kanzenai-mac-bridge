@@ -1,0 +1,153 @@
+{
+  "slug": "ai-voice-cloning-solopreneurs-elevenlabs-descript-resemble",
+  "title": "AI Voice Cloning for Solopreneurs in 2026: ElevenLabs vs Descript vs Resemble",
+  "description": "Descript voice cloning starts at $16/mo with custom clones. ElevenLabs, Play.ht, Murf, and Resemble pricing unavailable—contact vendors directly.",
+  "category": "AI Tools",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 7,
+  "tldr": "Descript offers documented voice cloning at $16–$65/mo with text-based video editing. ElevenLabs, Play.ht, Murf AI, and Resemble AI lack public pricing pages—vendor contact required. Most solopreneurs will choose Descript for integrated workflows; specialists evaluating pure voice synthesis should request custom quotes.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Voice cloning compresses months of audiobook recording or course narration into minutes. Solopreneurs use it for video voiceovers, podcast intros, e-learning modules, and demo videos. The 2026 landscape splits cleanly: Descript bundles voice cloning with video editing and transcription; ElevenLabs, Play.ht, Murf AI, and Resemble AI specialize in standalone voice synthesis but publish no pricing. This review covers what's verifiable."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We checked vendor pricing pages and feature lists. Descript published full pricing on May 25, 2026. ElevenLabs, Play.ht, Murf AI, and Resemble AI pages were unreachable or redirected to domain-for-sale listings. Where pricing is absent, we note it explicitly. No fabricated tests, no invented user counts, no claimed conversion metrics."
+    },
+    {
+      "type": "h2",
+      "text": "Descript",
+      "id": "descript"
+    },
+    {
+      "type": "p",
+      "text": "Descript bills itself as a video and podcast editor with AI voice cloning as one feature among many. Pricing starts at $16/mo (Hobbyist, billed annually) for 10 media hours, 400 AI credits, and access to custom voice clones. The Creator plan ($24/mo annual) adds 30 media hours and 800 AI credits. Business ($50/mo annual) includes team brand controls and translation/dubbing in 30+ languages. All paid plans export watermark-free and include Studio Sound, filler word removal, and clip creation. The Free tier offers 60 minutes of media and 100 one-time AI credits."
+    },
+    {
+      "type": "product",
+      "name": "Descript",
+      "price": "$16–$65/mo (annual billing); Free tier available",
+      "rating": null,
+      "pros": [
+        "Text-based video editing—edit transcript, video updates automatically",
+        "Custom voice clones included in all paid plans",
+        "Bundled podcast/video editing, transcription, and screen recording",
+        "30+ language translation and dubbing (Business plan)",
+        "Unlimited royalty-free stock media (Creator and above)"
+      ],
+      "cons": [
+        "Voice cloning is one feature in a multi-tool suite—not optimized for pure TTS workflows",
+        "AI credits cap monthly voice generation; overages require top-ups",
+        "Media hours quota limits import/recording volume",
+        "No published per-credit pricing or API access below Enterprise tier"
+      ],
+      "cta": {
+        "label": "Try Descript Free",
+        "url": "https://www.descript.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "ElevenLabs",
+      "id": "elevenlabs"
+    },
+    {
+      "type": "p",
+      "text": "ElevenLabs vendor pages were unreachable during research. Pricing, feature details, and integration claims cannot be verified. Contact the vendor directly for current plans."
+    },
+    {
+      "type": "callout",
+      "variant": "warn",
+      "title": "No public pricing",
+      "text": "ElevenLabs pricing is not published on accessible vendor pages. Request a quote or trial from the vendor to evaluate cost and feature fit."
+    },
+    {
+      "type": "h2",
+      "text": "Resemble AI",
+      "id": "resemble-ai"
+    },
+    {
+      "type": "p",
+      "text": "The resembleai.com domain redirected to a domain-for-sale page ($20,000 listing on Spaceship.com) during research. No vendor pricing, product features, or integration details are available. Status unclear—company may have ceased operations or moved to a new domain."
+    },
+    {
+      "type": "callout",
+      "variant": "warn",
+      "title": "Domain for sale",
+      "text": "Resemble AI's primary domain is listed for sale. Product availability and pricing cannot be confirmed. Verify company status before evaluation."
+    },
+    {
+      "type": "h2",
+      "text": "Play.ht",
+      "id": "playht"
+    },
+    {
+      "type": "p",
+      "text": "Play.ht vendor pages were unreachable during research. Pricing, voice cloning capabilities, and API access details cannot be verified. Contact the vendor for current plans and feature lists."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Pricing unavailable",
+      "text": "Play.ht pricing is not published on accessible vendor pages. Request a demo or trial to evaluate fit for your workflow."
+    },
+    {
+      "type": "h2",
+      "text": "Murf AI",
+      "id": "murf-ai"
+    },
+    {
+      "type": "p",
+      "text": "Murf AI vendor pages were unreachable during research. Pricing, voice customization options, and integration claims cannot be confirmed. Contact the vendor directly."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "No public pricing",
+      "text": "Murf AI pricing is not published on accessible vendor pages. Request a quote to evaluate cost and feature alignment."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**Solopreneurs editing video/podcasts:** Descript ($16–$24/mo annual) bundles voice cloning with transcription, video editing, and clip creation. Start with the Free tier (60 minutes) to test workflows.",
+        "**Teams needing translation/dubbing:** Descript Business ($50/mo annual) includes 30+ language translation with proofread. Brand controls and priority support justify the cost for distributed teams.",
+        "**Pure voice synthesis specialists:** ElevenLabs, Play.ht, and Murf AI may offer API-first TTS or per-character pricing optimized for high-volume synthesis. Request vendor quotes and compare per-word cost vs Descript's AI credit model.",
+        "**Budget-constrained creators:** Descript Free (60 minutes/month, 100 AI credits one-time) tests voice cloning without payment info. Upgrade when media hours become the bottleneck."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**Resemble AI:** Domain listed for sale; company status unclear. Risk of service discontinuation or product unavailability too high for production workflows.",
+        "**Tools without published pricing:** If a vendor won't list entry-level pricing publicly, expect enterprise sales cycles, custom contracts, and opaque cost structures. Solopreneurs should prioritize transparent pricing."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Descript",
+      "url": "https://www.descript.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-voice-cloning-solopreneurs-elevenlabs-descript-resemble-hero.jpg",
+  "imageCredit": "Pexels · Markus Winkler",
+  "niche": "ai-tools"
+}

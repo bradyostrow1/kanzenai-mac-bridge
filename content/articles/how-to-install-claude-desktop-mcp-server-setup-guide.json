@@ -1,0 +1,148 @@
+{
+  "slug": "how-to-install-claude-desktop-mcp-server-setup-guide",
+  "title": "How to Install Claude Desktop and Connect Your First MCP Server: Step-by-Step Guide",
+  "description": "Step-by-step walkthrough to install Claude Desktop on Mac or Windows and connect your first Model Context Protocol server for extended capabilities.",
+  "category": "Tutorials",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 8,
+  "tldr": "You'll install Claude Desktop, configure it to connect to an MCP server, and verify the connection works. Expect 15-20 minutes start to finish.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Claude Desktop is Anthropic's native application that brings Claude AI to your Mac or Windows machine. The Model Context Protocol (MCP) lets you extend Claude with local tools—file system access, database queries, API integrations—without writing custom code. This guide walks you through downloading Claude Desktop, editing the configuration file to add your first MCP server, and confirming the connection works."
+    },
+    {
+      "type": "h2",
+      "text": "What you'll need",
+      "id": "prereqs"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "A Mac (macOS 10.15 or later) or Windows PC (Windows 10 or later)",
+        "An active Claude account (free or paid tier; sign up at claude.ai if needed)",
+        "Basic familiarity with your operating system's file browser and text editor",
+        "An MCP server package or repository URL (we'll use the filesystem MCP server example in this guide)"
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Time + cost",
+      "text": "Roughly 15-20 minutes; cost depends on your Claude subscription tier—free accounts can use Claude Desktop, paid plans (see claude.ai for current pricing) unlock higher usage limits."
+    },
+    {
+      "type": "h2",
+      "text": "Step 1 — Download and install Claude Desktop",
+      "id": "step-1"
+    },
+    {
+      "type": "p",
+      "text": "Navigate to claude.ai in your browser and sign in. Click your profile icon in the bottom-left corner, then select 'Download Desktop App' from the menu. Choose the installer for your platform (macOS .dmg or Windows .exe). On Mac, open the .dmg file, drag the Claude icon to your Applications folder, then launch Claude from Applications. On Windows, run the .exe installer and follow the prompts; Claude will appear in your Start menu when installation completes. Launch the app and sign in with your Claude account credentials when prompted."
+    },
+    {
+      "type": "h2",
+      "text": "Step 2 — Locate the Claude configuration file",
+      "id": "step-2"
+    },
+    {
+      "type": "p",
+      "text": "Claude Desktop reads MCP server settings from a JSON configuration file. On macOS, open Finder, press Cmd+Shift+G, and paste ~/Library/Application Support/Claude/ into the 'Go to folder' box, then press Enter. You'll see a file named claude_desktop_config.json. On Windows, press Win+R, type %APPDATA%\\Claude\\ and press Enter. Look for claude_desktop_config.json in the folder that opens. If the file doesn't exist yet, create a new text file in that directory and name it claude_desktop_config.json exactly (no .txt extension)."
+    },
+    {
+      "type": "h2",
+      "text": "Step 3 — Add your first MCP server configuration",
+      "id": "step-3"
+    },
+    {
+      "type": "p",
+      "text": "Open claude_desktop_config.json in a text editor (TextEdit on Mac, Notepad on Windows, or your preferred code editor). If the file is empty, paste the following JSON structure:"
+    },
+    {
+      "type": "p",
+      "text": "{\n  \"mcpServers\": {\n    \"filesystem\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@modelcontextprotocol/server-filesystem\", \"/path/to/allowed/directory\"]\n    }\n  }\n}"
+    },
+    {
+      "type": "p",
+      "text": "Replace /path/to/allowed/directory with an actual directory path on your machine—for example, /Users/yourname/Documents on Mac or C:\\Users\\YourName\\Documents on Windows. This tells the filesystem MCP server which folder Claude can read and write. Save the file. The 'command' field specifies the executable (npx runs Node packages), and 'args' is the array of arguments passed to that command."
+    },
+    {
+      "type": "h2",
+      "text": "Step 4 — Restart Claude Desktop",
+      "id": "step-4"
+    },
+    {
+      "type": "p",
+      "text": "Quit Claude Desktop completely—on Mac, press Cmd+Q or right-click the dock icon and choose 'Quit'; on Windows, right-click the system tray icon and select 'Exit'. Relaunch the app from your Applications folder or Start menu. Claude reads the configuration file only at startup, so changes won't take effect until you restart."
+    },
+    {
+      "type": "h2",
+      "text": "Step 5 — Verify the MCP server is connected",
+      "id": "step-5"
+    },
+    {
+      "type": "p",
+      "text": "Start a new conversation in Claude Desktop. Type a prompt that requires the filesystem server, such as 'List the files in my Documents folder' or 'Create a new text file named test.txt in my Documents folder with the content Hello MCP'. If the server is connected, Claude will use the filesystem tool to read or write files in the directory you specified. You'll see Claude's response confirming the action—for example, a list of filenames or a confirmation that the file was created. If Claude responds with 'I don't have access to your file system' or doesn't perform the action, the server isn't connected; proceed to the troubleshooting section below."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "title": "Pro tip",
+      "text": "You can add multiple MCP servers to the same configuration file. Just add additional keys under 'mcpServers' with unique names—each entry needs its own 'command' and 'args'. For example, add a database server alongside the filesystem server to query SQLite files and read documents in one session."
+    },
+    {
+      "type": "h2",
+      "text": "If something breaks",
+      "id": "troubleshoot"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Symptom: Claude says 'I don't have access to your file system' → Fix: Check that the directory path in claude_desktop_config.json uses forward slashes on Mac (/) and backslashes on Windows (\\). Ensure the path exists and you have read/write permissions. Restart Claude Desktop after saving changes.",
+        "Symptom: Claude Desktop won't launch after editing the config → Fix: Your JSON syntax is likely invalid. Open claude_desktop_config.json in a JSON validator (jsonlint.com) or a code editor with syntax checking. Common errors: missing commas between entries, unmatched braces, or trailing commas before closing braces. Fix the syntax, save, and relaunch.",
+        "Symptom: 'npx' command not found or MCP server fails to start → Fix: The filesystem MCP server requires Node.js. Install Node.js from nodejs.org (LTS version), then restart Claude Desktop. On Windows, you may need to restart your entire machine for the PATH environment variable to update.",
+        "Symptom: MCP server connects but file operations fail → Fix: The directory you specified may lack permissions. Try a directory inside your home folder (Documents, Desktop) rather than system directories. On Mac, check System Preferences > Security & Privacy > Files and Folders to ensure Claude has disk access."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What to do next",
+      "id": "next"
+    },
+    {
+      "type": "p",
+      "text": "Now that your first MCP server is running, explore the official MCP server registry at github.com/modelcontextprotocol for prebuilt integrations—GitHub, Slack, PostgreSQL, and dozens more. Each repository includes a README with installation steps and the exact JSON snippet to add to your config. You can also build custom MCP servers in Python or TypeScript using Anthropic's SDK; the MCP documentation at modelcontextprotocol.io walks through the server lifecycle and tool definitions. Start by adding one or two servers that match your daily workflow—a database server if you query data often, a web search server for research tasks, or a calendar server to manage scheduling from Claude."
+    },
+    {
+      "type": "product",
+      "name": "Claude Desktop",
+      "price": "Pricing depends on Claude subscription tier; see vendor for details",
+      "rating": 0,
+      "pros": [
+        "Native desktop app for Mac and Windows",
+        "MCP support extends Claude with local tools and APIs",
+        "No browser tab required; keyboard shortcuts and system integration"
+      ],
+      "cons": [
+        "MCP configuration requires manual JSON editing",
+        "Requires Node.js for many MCP servers",
+        "No official pricing page for the desktop app itself; subscription cost varies"
+      ],
+      "cta": {
+        "label": "Try Claude Desktop",
+        "url": "https://claude.ai/?ref=kanzenai"
+      }
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Claude Desktop",
+      "url": "https://claude.ai/?ref=kanzenai",
+      "commission": "Contact vendor"
+    }
+  ],
+  "headerImage": "/articles/how-to-install-claude-desktop-mcp-server-setup-guide-hero.jpg",
+  "imageCredit": "Pexels · Walls.io",
+  "niche": "ai-tools"
+}

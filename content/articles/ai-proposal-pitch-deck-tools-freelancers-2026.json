@@ -1,0 +1,218 @@
+{
+  "slug": "ai-proposal-pitch-deck-tools-freelancers-2026",
+  "title": "AI Proposal & Pitch Deck Tools for Freelancers in 2026: Closing Clients Faster with Better.Proposals vs PandaDoc vs Qwilr",
+  "description": "Better Proposals starts at $19/mo, PandaDoc at $19/mo, Qwilr at $35/user. We compare pricing, automation, and who wins for solopreneurs closing deals in 2026.",
+  "category": "Invoicing",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 9,
+  "tldr": "Better Proposals ($19/mo, unlimited seats, 110 docs/year) wins for budget-conscious solopreneurs. PandaDoc ($19/seat/mo, 110 docs/year) matches the price but charges per seat. Qwilr ($35/user/mo) costs more but offers interactive quotes and stronger HubSpot automation. Proposify ($19/user/mo annual, 10 sends/month) is cheapest but severely limits sends. Bonsai pricing unavailable; contact vendor.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Freelancers lose deals in email threads—version chaos, missed follow-ups, unsigned PDFs. Proposal software fixes that: web-based delivery, real-time tracking, embedded e-signature, and payment collection in one flow. Better Proposals, PandaDoc, Qwilr, Proposify, and Bonsai all claim to close deals faster. Pricing spans $0–$59/user/mo. The right pick depends on send volume, CRM stack, and whether you need interactive quotes or just clean templates with signatures."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed vendor pricing pages, feature lists, and integration documentation published as of May 2026. Pricing is quoted exactly as listed; features not documented on public pages are omitted. No fabricated testing—conclusions are drawn from published specs, not personal case counts or conversion metrics."
+    },
+    {
+      "type": "h2",
+      "text": "Better Proposals",
+      "id": "better-proposals"
+    },
+    {
+      "type": "p",
+      "text": "Better Proposals positions itself as a Word/PDF replacement: drag-and-drop editor, real-time collaboration, web-link delivery, tracking, e-signature, and post-signature client onboarding. Per the vendor's pricing page, the Starter plan is $19/mo billed annually (110 docs/year, unlimited seats). Key features include audit trail, bulk import, in-line comments, and 24/7 email/chat support. Custom branding, CRM integrations (unspecified which CRMs), deal rooms, and approval workflows arrive in the Business plan at $49/seat/mo billed annually (unlimited documents). The vendor claims 10,000+ users and emphasizes 'no design skill needed' templating."
+    },
+    {
+      "type": "product",
+      "name": "Better Proposals",
+      "price": "$19/mo Starter (110 docs/year, unlimited seats, billed annually); $49/seat/mo Business (unlimited docs, billed annually)",
+      "rating": 0,
+      "pros": [
+        "Unlimited seats on Starter—no per-user charges for small teams",
+        "110 docs/year sufficient for most solopreneurs at $19/mo entry price",
+        "Real-time collaboration and tracking included at Starter tier",
+        "Post-signature onboarding workflow (form collection, payment, calendar booking)"
+      ],
+      "cons": [
+        "Business plan required for CRM integrations—$49/seat/mo jump",
+        "CRM list not detailed on pricing page; unclear which platforms supported",
+        "110-doc annual cap may hit limit for high-volume freelancers",
+        "No pricing transparency for Enterprise or custom needs"
+      ],
+      "cta": {
+        "label": "Try Better Proposals Free",
+        "url": "https://www.betterproposals.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "PandaDoc",
+      "id": "pandadoc"
+    },
+    {
+      "type": "p",
+      "text": "PandaDoc offers document generation, CPQ (configure-price-quote), deal rooms, and e-signature. Vendor pricing page lists Free (60 docs/year, unlimited seats), Starter ($19/seat/mo billed annually, 110 docs/year, unlimited seats), Business ($49/seat/mo billed annually, unlimited docs), and Enterprise (custom pricing, per-seat or per-document). Starter includes audit trail, bulk import, in-line comments, and 24/7 support. Business adds CRM integrations (HubSpot, Salesforce, Pipedrive noted), custom branding, deal rooms, and approval workflows. Enterprise unlocks CPQ, workflow automation, smart content, SSO, team workspaces, and API. Overages: Starter $2/doc annually, $3.50/doc monthly; Business $2.60/doc monthly. Per-seat pricing applies from Starter upward."
+    },
+    {
+      "type": "product",
+      "name": "PandaDoc",
+      "price": "$19/seat/mo Starter (110 docs/year, billed annually); $49/seat/mo Business (unlimited docs, billed annually); Enterprise custom pricing",
+      "rating": 0,
+      "pros": [
+        "Strong CRM ecosystem—HubSpot, Salesforce, Pipedrive integrations at Business tier",
+        "CPQ and workflow automation at Enterprise level for scaling teams",
+        "Deal rooms and approval workflows included in Business",
+        "API access and SSO in Enterprise for custom integrations"
+      ],
+      "cons": [
+        "Per-seat pricing from Starter—$19/seat adds up for multi-person freelance collectives",
+        "CRM integrations locked behind $49/seat Business tier",
+        "Free tier's 60 docs/year insufficient for active freelancers",
+        "Overage pricing ($2–$3.50/doc) can surprise at Starter tier"
+      ],
+      "cta": {
+        "label": "Start PandaDoc Free Trial",
+        "url": "https://www.pandadoc.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Qwilr",
+      "id": "qwilr"
+    },
+    {
+      "type": "p",
+      "text": "Qwilr emphasizes interactive web pages over static PDFs: drag-and-drop editor, dynamic content (ROI calculators, forms, video embeds), quote tables, tiered pricing plans, QwilrPay for embedded payments, and e-signature. Per vendor pricing page, Business is $35/user/mo (monthly billing) with unlimited document creation, e-sign, QwilrPay (0.09% application fee per transaction), pricing/quote tables, page analytics, and HubSpot CRM integration. Enterprise is $59/user/mo billed annually (10-user minimum) and adds account manager, custom branding, team permissions, identity verification, domain-restricted access, Salesforce/Pipedrive/Zoho CRM integrations, and reduced QwilrPay fee (0.05%). Business plan supports HubSpot, Pipedrive, Zoho; Enterprise adds Salesforce."
+    },
+    {
+      "type": "product",
+      "name": "Qwilr",
+      "price": "$35/user/mo Business (monthly billing, unlimited docs); $59/user/mo Enterprise (annual billing, 10-user min)",
+      "rating": 0,
+      "pros": [
+        "Interactive quote tables and tiered pricing plans—strong for upselling optional services",
+        "QwilrPay embedded payments with low application fees (0.09% Business, 0.05% Enterprise)",
+        "HubSpot automation at Business tier; Salesforce at Enterprise",
+        "Dynamic content: ROI calculators, forms, video embeds included"
+      ],
+      "cons": [
+        "$35/user/mo entry price higher than Better Proposals and PandaDoc Starter",
+        "Enterprise 10-user minimum ($590/mo annual commitment) steep for solopreneurs",
+        "No document send cap listed, but per-user pricing adds cost for small teams",
+        "Custom fonts and domain-restricted access Enterprise-only"
+      ],
+      "cta": {
+        "label": "Try Qwilr Free",
+        "url": "https://www.qwilr.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Proposify",
+      "id": "proposify"
+    },
+    {
+      "type": "p",
+      "text": "Proposify markets to consultants, landscaping, janitorial, and construction verticals. Vendor pricing page lists Basic ($19/user/mo annual, $29/user/mo monthly, 10 sends/month, up to 3 templates), Team ($41/user/mo annual, $49/user/mo quarterly, 30 sends/month, up to 10 templates), and Business (custom pricing, starts at $3,900/year, 75 sends/month, unlimited templates). Overage rates: Basic $0.50/send, Team $0.30/send, Business $0.75/send. Basic includes e-signatures and document tracking. Team adds unlimited sending (30/month base), document analytics, integrations/automations, and custom fields/variables. Business adds unlimited templates, user roles/permissions, SSO, API, multiple workspaces, and onboarding options. Drafting and editing unlimited on all plans; sends are counted when shared with clients."
+    },
+    {
+      "type": "product",
+      "name": "Proposify",
+      "price": "$19/user/mo Basic (10 sends/month, annual billing); $41/user/mo Team (30 sends/month, annual billing); Business starts at $3,900/year (75 sends/month)",
+      "rating": 0,
+      "pros": [
+        "$19/user/mo annual matches PandaDoc Starter, undercutting monthly pricing",
+        "Overage rate transparency: $0.30–$0.75/send depending on tier",
+        "Team tier includes integrations and analytics at $41/user/mo",
+        "Business tier API and SSO for scaling operations"
+      ],
+      "cons": [
+        "10 sends/month cap on Basic plan restrictive—most solopreneurs send >10 proposals/month",
+        "Template limits (3 on Basic, 10 on Team) constrain service-line diversity",
+        "$3,900/year Business entry price high for solo operators",
+        "Overage fees add up fast if send volume exceeds tier cap"
+      ],
+      "cta": {
+        "label": "Try Proposify Free",
+        "url": "https://www.proposify.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Bonsai",
+      "id": "bonsai"
+    },
+    {
+      "type": "p",
+      "text": "Bonsai is known for bundling proposals, contracts, invoicing, time tracking, and client CRM in one freelancer suite. Vendor pricing page was unreachable in the research bundle; no pricing, feature list, or integration details available. Contact vendor directly for current plans and rates."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Bonsai Pricing Unavailable",
+      "text": "No public pricing page reachable as of May 2026. If you need an all-in-one freelancer suite (proposals + invoicing + contracts + time tracking), request a quote from Bonsai directly."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Budget solopreneurs sending <110 proposals/year: Better Proposals Starter ($19/mo, unlimited seats, 110 docs/year) or Proposify Basic ($19/user/mo annual, 10 sends/month + $0.50/overage)—but watch Proposify's 10-send cap.",
+        "Freelancers needing HubSpot automation and interactive quotes: Qwilr Business ($35/user/mo) for quote tables, tiered pricing, and embedded payments at 0.09% fee.",
+        "Teams scaling with Salesforce or Pipedrive: PandaDoc Business ($49/seat/mo, unlimited docs) or Qwilr Enterprise ($59/user/mo, 10-user min) for CPQ, approval workflows, and API.",
+        "High send volume (>110/year): PandaDoc Business (unlimited docs, $49/seat/mo) or Better Proposals Business ($49/seat/mo, unlimited docs) to avoid per-doc overage fees.",
+        "All-in-one freelancer suite (proposals + invoicing + time tracking): Bonsai—contact vendor for pricing."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Proposify Basic if you send >10 proposals/month—overage fees at $0.50/send exceed the value of other tools' unlimited-seat or higher-cap plans.",
+        "Qwilr Enterprise for solopreneurs—the 10-user minimum ($590/mo annual) is overkill unless you're a 10+ person agency.",
+        "PandaDoc Free (60 docs/year) for active freelancers—110-doc Starter tier at $19/seat is the real entry point.",
+        "Better Proposals Starter if you need CRM integrations now—those are locked behind the $49/seat Business tier, same price as PandaDoc Business which bundles CRM access."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Better Proposals",
+      "url": "https://www.betterproposals.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "PandaDoc",
+      "url": "https://www.pandadoc.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Qwilr",
+      "url": "https://www.qwilr.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Proposify",
+      "url": "https://www.proposify.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-proposal-pitch-deck-tools-freelancers-2026-hero.jpg",
+  "imageCredit": "Pexels · Danik Prihodko",
+  "niche": "ai-tools"
+}

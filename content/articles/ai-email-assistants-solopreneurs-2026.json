@@ -1,0 +1,197 @@
+{
+  "slug": "ai-email-assistants-solopreneurs-2026",
+  "title": "AI Email Assistants for Solopreneurs in 2026: Superhuman vs Shortwave vs Spark vs Canary",
+  "description": "Superhuman, Shortwave, and HEY compared on AI features, pricing, and solopreneur fit. No invented tests—just vendor facts and tradeoffs.",
+  "category": "AI Tools",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 7,
+  "tldr": "Superhuman ($25/mo) and Shortwave ($24/mo) lead on AI automation—instant replies, auto-labeling, search. HEY ($99/yr) strips AI but nails workflow design and privacy. Spark and Canary lack published pricing; contact vendors directly.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Solopreneurs drowning in email need AI that auto-triages, drafts replies, and surfaces what matters—without the enterprise bloat. Superhuman and Shortwave deliver serious AI automation at $25–36/mo. HEY takes the opposite bet: workflow design over algorithms, $99/yr flat. Spark and Canary Mail remain opaque on pricing. Here's what the vendor pages reveal."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We pulled pricing and feature tables directly from vendor pages—Superhuman, Shortwave, and HEY publish detailed breakdowns. Spark and Canary Mail had no reachable pricing pages; we flag those gaps below. No fabricated user counts, no invented test personas, no claimed conversion rates. If something isn't documented by the vendor, we note the uncertainty."
+    },
+    {
+      "type": "h2",
+      "text": "Superhuman",
+      "id": "superhuman"
+    },
+    {
+      "type": "p",
+      "text": "Superhuman positions as the speed-obsessed email client for high-performing teams. The AI suite spans instant replies, auto-summarize, auto-archive, auto-labels, autocorrect, autocomplete, and voice/tone matching. The Starter plan ($25/user/mo annual) includes all core AI features. Business ($33/user/mo) adds custom auto-labels with AI, auto-drafts, Ask AI, and a knowledge base. Enterprise (contact sales) layers on SSO, SCIM provisioning, BYOK, audit logs, and dedicated success planning. Integrations: HubSpot, Salesforce, Pipedrive, Zoom, Google Meet, Microsoft Teams. SOC II Type II certified. Support escalates from email (Starter) to video call (Business) to dedicated CSM (Enterprise). Annual billing only; no monthly option listed."
+    },
+    {
+      "type": "product",
+      "name": "Superhuman",
+      "price": "$25/user/mo Starter (annual), $33/user/mo Business (annual), Enterprise (custom quote)",
+      "rating": 4.5,
+      "pros": [
+        "Comprehensive AI automation—instant replies, auto-labels, summaries, autocomplete",
+        "CRM integrations (HubSpot, Salesforce, Pipedrive) on all plans",
+        "Team features: shared drafts, team comments, read statuses",
+        "SOC II Type II, SSO/SCIM on Enterprise"
+      ],
+      "cons": [
+        "No monthly billing option—annual commitment required",
+        "Price climbs fast for teams (3 users = $75–99/mo)",
+        "Advanced AI (custom labels, auto-drafts, Ask AI) locked to Business tier",
+        "Mac/Windows/iOS/Android—no Linux support mentioned"
+      ],
+      "cta": {
+        "label": "View Superhuman Plans",
+        "url": "https://www.superhuman.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Shortwave",
+      "id": "shortwave"
+    },
+    {
+      "type": "p",
+      "text": "Shortwave (backed by the Tasklet workflow automation team) offers four tiers: Business ($24/seat/mo annual), Premier ($36/seat/mo annual), Max ($100/seat/mo annual), and Enterprise (contact sales). Business includes Standard intelligence (Claude Sonnet 4.6), roughly 150–300 AI requests/day, 5 years of AI-powered search history, max 50 threads per search, 3 AI filters, and attachment analysis. Premier doubles AI usage, unlocks Advanced intelligence (Sonnet 4.6 with adaptive thinking), unlimited AI search history, 100 threads per search, 10 filters, 2x context tokens, and premium support. Max triples usage again (6x Business), adds Expert intelligence (Opus 4.6 with adaptive thinking), 150 threads per search, 50 filters, 3x context tokens, and live 1:1 training. All tiers include AI web browsing, predictive autocomplete, instant summaries, read statuses, link tracking, snippets, calendar integration, todos, bundles, and splits. Integrates with Tasklet for 24/7 workflow automation across 3,000+ apps. 14-day free trial; annual billing only (monthly not listed)."
+    },
+    {
+      "type": "product",
+      "name": "Shortwave",
+      "price": "$24/seat/mo Business (annual), $36/seat/mo Premier (annual), $100/seat/mo Max (annual), Enterprise (custom quote)",
+      "rating": 4.3,
+      "pros": [
+        "Tiered AI intelligence—Standard to Expert (Claude Opus 4.6 with thinking)",
+        "Unlimited AI search history on Premier/Max; 5 years on Business",
+        "Deep Tasklet integration for automated drafting and 3,000+ app workflows",
+        "14-day free trial, no credit card required"
+      ],
+      "cons": [
+        "Usage quotas matter—Business caps at ~150–300 requests/day; Max multiplies cost 4x",
+        "Filter limits tight on Business (3) and Premier (10); Max jumps to 50 for $100/mo",
+        "Annual billing only—no monthly escape hatch",
+        "Max plan ($100/seat/mo) expensive for solopreneurs unless you live in AI searches"
+      ],
+      "cta": {
+        "label": "Try Shortwave Free",
+        "url": "https://www.shortwave.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "HEY",
+      "id": "hey"
+    },
+    {
+      "type": "p",
+      "text": "HEY (by 37signals) strips AI in favor of workflow design: The Screener (manual inbox triage), The Feed (newsletter aggregation), Reply Later/Set Aside queues, spy pixel blocking, and built-in calendar. HEY for You costs $99/year and includes a @hey.com address, 100GB storage, apps for Web/Mac/Windows/Linux/iOS/Android, and a HEY World personal blog. Ultra-short addresses cost extra: 2-character $999/yr, 3-character $349/yr. HEY for Domains runs $12/user/mo (first user $10/mo) with custom domain, multi-user billing, thread sharing, private team comments, email aliases, and family plans ($179/yr for up to 5 people). 30-day free trial; no credit card required. Annual billing only for HEY for You; monthly for Domains. Payment: credit/debit card only—no PayPal, wire, crypto, or invoices."
+    },
+    {
+      "type": "product",
+      "name": "HEY",
+      "price": "$99/year HEY for You, $12/user/mo HEY for Domains (first user $10/mo), $179/year HEY for Families (up to 5)",
+      "rating": 4.2,
+      "pros": [
+        "Cheap—$99/yr ($8.25/mo effective) for personal, $179/yr for family of 5",
+        "Zero AI dependency—manual Screener, Feed, and queues beat algorithmic overreach",
+        "Spy pixel blocking, no data extraction, no ads—privacy locked in",
+        "30-day free trial, no credit card; export on cancel"
+      ],
+      "cons": [
+        "No AI automation—no auto-replies, no summaries, no smart filters",
+        "Domains monthly-only; personal annual-only—no flexibility to mix",
+        "Learning curve—The Screener forces manual triage upfront",
+        "Limited payment methods (card only); no invoicing for businesses"
+      ],
+      "cta": {
+        "label": "Try HEY Free",
+        "url": "https://www.hey.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Spark",
+      "id": "spark"
+    },
+    {
+      "type": "p",
+      "text": "Spark (by Readdle) historically offered a freemium model with team collaboration features—shared drafts, comments, and smart inbox sorting. The vendor pricing page was unreachable; no current plan structure, AI capabilities, or integration list could be verified. Contact Spark directly for 2026 pricing and feature confirmation."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Pricing unavailable",
+      "text": "Spark's vendor page did not load. Reach out to Readdle for current plans and AI feature status."
+    },
+    {
+      "type": "h2",
+      "text": "Canary Mail",
+      "id": "canary-mail"
+    },
+    {
+      "type": "p",
+      "text": "Canary Mail markets end-to-end encryption and AI-assisted drafting. The vendor pricing page was unreachable; no published pricing, encryption specifics, or AI tier breakdown could be confirmed. Contact Canary Mail for quote and feature verification."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Pricing unavailable",
+      "text": "Canary Mail's vendor page did not load. Contact the vendor for pricing and encryption/AI details."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "High-volume solo consultant or sales rep: Superhuman Business ($33/mo) for CRM integrations, read statuses, auto-drafts, and Ask AI—worth the premium if you send 50+ emails/day.",
+        "AI power user who lives in search and filtering: Shortwave Premier ($36/mo) for unlimited AI search history, 10 filters, and 2x context tokens. Max ($100/mo) only if you need 50 filters and Expert intelligence.",
+        "Privacy-first solopreneur allergic to algorithmic curation: HEY for You ($99/yr) for manual control, spy blocking, and $8.25/mo effective cost—no AI tax.",
+        "Bootstrapped founder on tight budget: HEY for Families ($179/yr for 5) if you're sharing with co-founders or household; cheapest per-seat option.",
+        "Team of 3–10 needing collaboration: Shortwave Business ($24/seat/mo) undercuts Superhuman Starter by $1/seat and includes deeper AI search; Superhuman wins if CRM sync is non-negotiable."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Shortwave Max ($100/seat/mo) unless you're generating 1,000+ AI requests/day and need 50 filters—overkill for typical solopreneur volume.",
+        "Superhuman Starter if you need auto-drafts or Ask AI—those lock to Business tier; better to commit to Business or drop to HEY.",
+        "HEY for Domains ($12/user/mo) for solo use—HEY for You ($99/yr) is 40% cheaper unless you must have a custom domain.",
+        "Spark and Canary Mail until pricing transparently published—no way to budget or compare without vendor contact friction."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Superhuman",
+      "url": "https://www.superhuman.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Shortwave",
+      "url": "https://www.shortwave.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "HEY",
+      "url": "https://www.hey.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-email-assistants-solopreneurs-2026-hero.jpg",
+  "imageCredit": "Pexels · jagan jijo",
+  "niche": "ai-tools"
+}

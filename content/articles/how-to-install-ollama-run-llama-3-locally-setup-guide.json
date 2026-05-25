@@ -1,0 +1,168 @@
+{
+  "slug": "how-to-install-ollama-run-llama-3-locally-setup-guide",
+  "title": "How to Install Ollama and Run Llama 3 Locally on Mac, Windows, and Linux: Step-by-Step Guide",
+  "description": "Step-by-step instructions to install Ollama and run Llama 3 on your machine. Download, configure, and run open models locally in under 10 minutes.",
+  "category": "Tutorials",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 8,
+  "tldr": "You'll download Ollama, install it on your Mac, Windows, or Linux machine, and run a local Llama 3 model using the command line. The entire process takes about 10 minutes and costs nothing.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Running large language models on your own hardware means your prompts stay private, you avoid API rate limits, and you work offline. This guide walks you through installing Ollama—a free, open-source tool that manages local models—and running Meta's Llama 3 model on your Mac, Windows, or Linux machine. You'll use the command line to download the model and send your first prompt. By the end, you'll have a working local AI setup you can query anytime."
+    },
+    {
+      "type": "h2",
+      "text": "What you'll need",
+      "id": "prereqs"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "A Mac (Apple Silicon or Intel), Windows PC, or Linux machine with at least 8 GB of RAM (16 GB recommended for larger models)",
+        "Internet connection to download Ollama and the model weights (Llama 3 8B is roughly 4.7 GB)",
+        "Command-line familiarity—you'll type commands into Terminal (Mac/Linux) or Command Prompt (Windows)",
+        "Administrator or sudo permissions to install software"
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Time + cost",
+      "text": "Roughly 10 minutes total. Ollama is free; running models on your own hardware is always unlimited. No subscription required."
+    },
+    {
+      "type": "h2",
+      "text": "Step 1 — Download Ollama for your operating system",
+      "id": "step-1"
+    },
+    {
+      "type": "p",
+      "text": "Visit https://www.ollama.com in your browser. On the homepage, you'll see a 'Download' button. Click it—Ollama detects your OS automatically and serves the correct installer. For Mac, you'll get a .dmg file. For Windows, you'll get an .exe installer. For Linux, the site provides a one-line install script you'll paste into your terminal. Save the file to your Downloads folder (or note the install command if you're on Linux)."
+    },
+    {
+      "type": "h2",
+      "text": "Step 2 — Install Ollama",
+      "id": "step-2"
+    },
+    {
+      "type": "p",
+      "text": "On Mac: Open the .dmg file from your Downloads folder. Drag the Ollama icon into your Applications folder. Eject the disk image. Open Terminal (press Cmd+Space, type 'Terminal', hit Enter). Type 'ollama' and press Enter. If you see a usage message listing commands like 'run', 'pull', and 'list', the installation succeeded."
+    },
+    {
+      "type": "p",
+      "text": "On Windows: Double-click the .exe installer. Click 'Next' through the prompts and accept the default install location (usually C:\\Program Files\\Ollama). Click 'Finish'. Open Command Prompt (press Win+R, type 'cmd', hit Enter). Type 'ollama' and press Enter. You should see a help message with available commands."
+    },
+    {
+      "type": "p",
+      "text": "On Linux: Open your terminal. Paste the install command shown on the Ollama download page (it looks like 'curl -fsSL https://ollama.com/install.sh | sh'). Press Enter and type your sudo password when prompted. Once the script finishes, type 'ollama' and press Enter. You'll see the same usage message as on Mac and Windows."
+    },
+    {
+      "type": "h2",
+      "text": "Step 3 — Download the Llama 3 model",
+      "id": "step-3"
+    },
+    {
+      "type": "p",
+      "text": "In your terminal or command prompt, type 'ollama pull llama3' and press Enter. Ollama connects to its model library and begins downloading the Llama 3 8B model weights. You'll see a progress bar showing the download. On a typical broadband connection, this takes 2-5 minutes. Once the download completes, you'll see a confirmation message. The model is now cached locally in Ollama's model directory (usually ~/.ollama/models on Mac/Linux or %USERPROFILE%\\.ollama\\models on Windows)."
+    },
+    {
+      "type": "h2",
+      "text": "Step 4 — Run your first prompt",
+      "id": "step-4"
+    },
+    {
+      "type": "p",
+      "text": "Type 'ollama run llama3' and press Enter. Ollama loads the model into memory—this takes a few seconds on the first run. You'll see a prompt that says 'Send a message (/? for help)'. Type any question or instruction, for example: 'Explain how photosynthesis works in two sentences.' Press Enter. The model generates a response in your terminal window. You're now running a 8-billion-parameter language model entirely on your machine. Type '/bye' to exit the interactive session."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "title": "Pro tip",
+      "text": "To speed up load times on subsequent runs, keep the Ollama service running in the background. On Mac/Linux, run 'ollama serve' in one terminal tab and use 'ollama run llama3' in another. On Windows, the installer sets up Ollama as a background service by default—just run 'ollama run llama3' directly."
+    },
+    {
+      "type": "h2",
+      "text": "Step 5 — List installed models",
+      "id": "step-5"
+    },
+    {
+      "type": "p",
+      "text": "Type 'ollama list' in your terminal and press Enter. You'll see a table showing every model you've downloaded, along with its size and the date you pulled it. This is useful if you install multiple models later (like codellama or mistral) and want to confirm what's available locally."
+    },
+    {
+      "type": "h2",
+      "text": "Step 6 — Use the API for programmatic access",
+      "id": "step-6"
+    },
+    {
+      "type": "p",
+      "text": "Ollama runs a local HTTP server on port 11434 by default. You can send POST requests to http://localhost:11434/api/generate to integrate Llama 3 into scripts or apps. Open a second terminal window (keep 'ollama serve' running in the first if needed). Type the following curl command and press Enter:"
+    },
+    {
+      "type": "p",
+      "text": "curl http://localhost:11434/api/generate -d '{\"model\": \"llama3\", \"prompt\": \"Why is the sky blue?\"}'"
+    },
+    {
+      "type": "p",
+      "text": "You'll see a stream of JSON responses, each containing a fragment of the generated text. This endpoint is how desktop apps, browser extensions, and automation scripts talk to your local Ollama instance. Full API documentation is at https://github.com/ollama/ollama/blob/main/docs/api.md."
+    },
+    {
+      "type": "h2",
+      "text": "If something breaks",
+      "id": "troubleshoot"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Symptom: 'ollama: command not found' after install → Fix: Close and reopen your terminal to refresh the PATH variable. On Mac, make sure you dragged Ollama into /Applications. On Windows, restart Command Prompt as Administrator and re-run the installer if needed.",
+        "Symptom: Download stalls at 0% or times out → Fix: Check your firewall or VPN settings—some corporate networks block large file downloads. Try switching to a personal network or tethering to your phone.",
+        "Symptom: Model loads but responses are very slow (10+ seconds per token) → Fix: You may not have enough RAM or VRAM. Try a smaller model like 'ollama pull llama3:7b-instruct' or close other memory-heavy applications. On Apple Silicon Macs, Ollama uses Metal for GPU acceleration; on NVIDIA GPUs, it uses CUDA.",
+        "Symptom: 'Error: model not found' when running 'ollama run llama3' → Fix: Re-run 'ollama pull llama3' to ensure the download completed. Check 'ollama list' to see what's actually installed.",
+        "Symptom: Port 11434 already in use → Fix: Another process is using that port. Run 'lsof -i :11434' (Mac/Linux) or 'netstat -ano | findstr :11434' (Windows) to identify it, then stop that process or configure Ollama to use a different port with the OLLAMA_HOST environment variable."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What to do next",
+      "id": "next"
+    },
+    {
+      "type": "p",
+      "text": "Now that you have Llama 3 running locally, explore Ollama's model library at https://ollama.com/library to try specialized models like codellama for coding tasks or mistral for faster responses. You can also integrate Ollama with desktop apps—40,000+ community integrations exist, including plugins for VS Code, Obsidian, and Raycast. If you want cloud models for heavier workloads, Ollama offers a Pro plan ($20/mo) that lets you run larger cloud models alongside your local setup, though local usage remains unlimited and free."
+    },
+    {
+      "type": "product",
+      "name": "Ollama",
+      "price": "Free (local usage unlimited); Pro $20/mo or $200/yr for cloud models; Max $100/mo for higher cloud concurrency",
+      "rating": 5,
+      "pros": [
+        "Unlimited local model usage at no cost—run Llama 3, Mistral, CodeLlama, and 100+ models on your hardware",
+        "Simple CLI and API—download a model with one command, integrate with scripts or apps via HTTP",
+        "Cross-platform—Mac (Apple Silicon + Intel), Windows, Linux all supported",
+        "Privacy by default—prompts never leave your machine unless you opt into cloud models",
+        "40,000+ community integrations for VS Code, Obsidian, Raycast, and more"
+      ],
+      "cons": [
+        "Requires local compute—8 GB RAM minimum, larger models need 16 GB+ and benefit from GPU acceleration",
+        "Download sizes—models like Llama 3 70B exceed 40 GB, which can be slow on slower connections",
+        "CLI-first—no built-in GUI (though desktop apps exist in the community ecosystem)"
+      ],
+      "cta": {
+        "label": "Download Ollama",
+        "url": "https://ollama.com/?ref=kanzenai"
+      }
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Ollama",
+      "url": "https://ollama.com/?ref=kanzenai",
+      "commission": "Standard affiliate"
+    }
+  ],
+  "headerImage": "/articles/how-to-install-ollama-run-llama-3-locally-setup-guide-hero.jpg",
+  "imageCredit": "Pexels · DΛVΞ GΛRCIΛ",
+  "niche": "ai-tools"
+}

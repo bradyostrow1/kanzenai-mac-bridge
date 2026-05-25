@@ -10,12 +10,29 @@ VPS_PATH="/docker/hermes-agent-nw73/data/kanzenai-snapshot.json"
 LOG="${KANZEN_ROOT}/.audit/dashboard-sync.log"
 
 mkdir -p "$(dirname "$LOG")"
-SNAP=$(mktemp -t kz-snap)
+# Cross-platform mktemp: GNU (Linux/Git Bash) requires explicit XXXXXX template;
+# BSD (macOS) accepts `-t prefix` and adds randomness itself. Try GNU first.
+SNAP=$(mktemp -t kz-snap.XXXXXX 2>/dev/null || mktemp -t kz-snap)
 trap "rm -f $SNAP" EXIT
 
 NOW=$(date -u +%Y-%m-%dT%H:%M:%SZ)
 
-KANZEN_ROOT="$KANZEN_ROOT" NOW="$NOW" python3 <<'PY' > "$SNAP"
+# Cross-platform Python: Mac/Linux have python3; Windows (Git Bash) has python.
+# `command -v python3` can match a Microsoft Store stub on Windows that exits
+# silently when invoked — so we actually EXECUTE each candidate to confirm it
+# runs and is Python 3.
+PY_BIN=""
+for candidate in python3 python python3.12 python3.11; do
+    if "$candidate" -c "import sys; sys.exit(0 if sys.version_info[0]==3 else 1)" 2>/dev/null; then
+        PY_BIN="$candidate"; break
+    fi
+done
+if [ -z "$PY_BIN" ]; then
+    echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) sync FAILED — no working Python 3 interpreter found" >> "$LOG"
+    exit 1
+fi
+
+KANZEN_ROOT="$KANZEN_ROOT" NOW="$NOW" "$PY_BIN" <<'PY' > "$SNAP"
 import json, os, time
 from pathlib import Path
 from datetime import datetime, timezone, timedelta

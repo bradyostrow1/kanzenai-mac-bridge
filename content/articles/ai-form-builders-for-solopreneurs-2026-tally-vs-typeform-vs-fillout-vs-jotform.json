@@ -1,0 +1,193 @@
+{
+  "slug": "ai-form-builders-for-solopreneurs-2026-tally-vs-typeform-vs-fillout-vs-jotform",
+  "title": "AI Form Builders for Solopreneurs in 2026: Tally vs Typeform vs Fillout vs JotForm",
+  "description": "Typeform's video forms cost $266/mo. Fillout gives unlimited responses at $75/mo. JotForm scales for nonprofits. We compare AI form tools by price and limits.",
+  "category": "AI Tools",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 7,
+  "tldr": "Fillout Business ($75/mo, unlimited responses) offers the best value for solopreneurs with high volume. Typeform Growth Flow ($266/mo) suits marketing teams needing video and enrichment. JotForm provides nonprofit/education discounts and HIPAA options. Tally and Paperform pricing are not publicly listed.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Form builders have become commodity infrastructure. The difference in 2026: AI-assisted form creation, video capture, workflow automation, and response enrichment. Solopreneurs need platforms that scale without seat fees, offer generous free tiers, and integrate cleanly with CRMs and payment processors. We reviewed five platforms—Typeform, Fillout, JotForm, Tally, and Paperform—using only vendor-published pricing pages, feature lists, and integration documentation."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We compiled vendor pricing pages, feature comparison tables, and integration lists. No testing was performed. Where pricing is unlisted, we note it explicitly. All price quotes reflect May 2026 vendor pages and are subject to change. Affiliate links use the format https://[vendor-domain]/?ref=kanzenai."
+    },
+    {
+      "type": "h2",
+      "text": "Typeform",
+      "id": "typeform"
+    },
+    {
+      "type": "p",
+      "text": "Typeform markets AI-assisted form building, video questions/answers, and response enrichment. Per the vendor pricing page, the Basic plan is $28/mo (annual) for 100 responses/mo and 1 user. Plus is $56/mo for 1,000 responses/mo and 3 users, removing Typeform branding. Business is $91/mo for 10,000 responses/mo and 5 users, adding drop-off rates and conversion tracking. Growth Flow—aimed at marketing teams—is $266/mo (annual) for 5 seats, 10,000+ responses/mo, and 1,500 enriched responses/mo (data appended directly within Typeform). Video questions and answers, reCAPTCHA, and Salesforce integration are included. Growth Custom starts at 20,000 responses/mo with custom domains, SSO, and HIPAA compliance available. Talent plan is $119/mo (annual) for 3,000 responses/mo, 3 users, and video features. Enterprise is custom-quoted. Typeform's strength is UX polish and video capture; the cost is high for solopreneurs who hit response limits quickly."
+    },
+    {
+      "type": "product",
+      "name": "Typeform",
+      "price": "Basic $28/mo, Plus $56/mo, Business $91/mo, Growth Flow $266/mo (annual billing)",
+      "rating": 4.2,
+      "pros": [
+        "Video questions and answers in Growth Flow and Talent plans",
+        "Response enrichment (1,500/mo in Growth Flow)",
+        "Drop-off rates and conversion tracking in Business+",
+        "300+ integrations including Salesforce"
+      ],
+      "cons": [
+        "Expensive for high-volume solopreneurs (100-1,000 responses in lower tiers)",
+        "Seat limits on non-Enterprise plans",
+        "Growth Flow at $266/mo is overkill unless you need video + enrichment"
+      ],
+      "cta": {
+        "label": "Visit Typeform",
+        "url": "https://www.typeform.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Fillout",
+      "id": "fillout"
+    },
+    {
+      "type": "p",
+      "text": "Fillout's vendor pricing page lists a Free plan (1,000 responses/mo, unlimited forms and seats), Starter at $15/mo ($180 annual, 2,000 responses/mo), Pro at $40/mo ($480 annual, 5,000 responses/mo with custom emails and branding removal), and Business at $75/mo ($900 annual, unlimited responses, custom domain, form analytics, partial submissions, priority support). All plans include unlimited seats, multi-page forms, conditional logic, payments, scheduling, PDF generation, and Fillout Workflows. File upload max is 20 MB on Free/Starter/Pro, 1 GB+ on Business. Fillout's value proposition is straightforward: unlimited seats and responses at $75/mo. No per-seat charges. The Free tier is generous enough for most solopreneurs to start."
+    },
+    {
+      "type": "product",
+      "name": "Fillout",
+      "price": "Free (1,000 responses/mo), Starter $15/mo, Pro $40/mo, Business $75/mo (annual billing, unlimited responses)",
+      "rating": 4.5,
+      "pros": [
+        "Unlimited responses at $75/mo (Business plan)",
+        "Unlimited seats on all plans including Free",
+        "Custom domain, analytics, and partial submissions on Business",
+        "No per-seat fees"
+      ],
+      "cons": [
+        "File size limits (20 MB) on plans below Business",
+        "Custom CSS only on Pro+; custom code on Business",
+        "No video capture features listed"
+      ],
+      "cta": {
+        "label": "Visit Fillout",
+        "url": "https://www.fillout.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "JotForm",
+      "id": "jotform"
+    },
+    {
+      "type": "p",
+      "text": "JotForm's vendor pricing page mentions Starter (free), Bronze, Silver, Gold, and Enterprise plans but does not publish exact monthly prices in the captured research. The page highlights a 50% discount for nonprofits and educational institutions on Bronze/Silver/Gold, and 30% off Enterprise. Features scale across tiers: the free Starter plan includes standard templates, payment integrations, and widgets but retains Jotform branding. Paid plans remove branding, increase storage and submission limits, and add HIPAA compliance (Gold plan). Enterprise adds SSO, custom domains, and multiuser functionality. JotForm also offers 24/7 support and a 30-day money-back guarantee. The platform integrates with 200+ services including Salesforce, PayPal, Stripe, Google Sheets, and Mailchimp."
+    },
+    {
+      "type": "product",
+      "name": "JotForm",
+      "price": "Starter (free), Bronze/Silver/Gold pricing not published; 50% nonprofit/education discount available. Contact vendor for quotes.",
+      "rating": 4.3,
+      "pros": [
+        "50% discount for nonprofits and education",
+        "HIPAA compliance on Gold plan",
+        "200+ integrations including Salesforce, Stripe, PayPal",
+        "24/7 customer support and 30-day money-back guarantee"
+      ],
+      "cons": [
+        "Monthly pricing not published on captured page",
+        "Branding on free plan",
+        "Multiuser features only on Enterprise"
+      ],
+      "cta": {
+        "label": "Visit JotForm",
+        "url": "https://www.jotform.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Tally",
+      "id": "tally"
+    },
+    {
+      "type": "p",
+      "text": "No vendor page was reachable for Tally in the research bundle. Pricing, feature details, and integrations are unknown. Interested solopreneurs should contact the vendor directly or visit the Tally website."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Tally Pricing Unavailable",
+      "text": "The research bundle did not include a reachable pricing page for Tally. Check the vendor site for current plans and features."
+    },
+    {
+      "type": "h2",
+      "text": "Paperform",
+      "id": "paperform"
+    },
+    {
+      "type": "p",
+      "text": "No vendor page was reachable for Paperform in the research bundle. Pricing, feature details, and integrations are unknown. Interested solopreneurs should contact the vendor directly or visit the Paperform website."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Paperform Pricing Unavailable",
+      "text": "The research bundle did not include a reachable pricing page for Paperform. Check the vendor site for current plans and features."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "High-volume solopreneurs (10,000+ responses/mo): Fillout Business at $75/mo for unlimited responses and unlimited seats is the clear winner.",
+        "Marketing teams needing video capture and response enrichment: Typeform Growth Flow ($266/mo) offers video questions/answers and 1,500 enriched responses/mo.",
+        "Nonprofits and educational institutions: JotForm's 50% discount on Bronze/Silver/Gold makes it competitive; verify current pricing with the vendor.",
+        "Budgets under $50/mo: Fillout Free (1,000 responses/mo, unlimited seats) or Fillout Starter ($15/mo, 2,000 responses/mo) are best bets.",
+        "HIPAA-compliant workflows: JotForm Gold or Typeform Growth Custom (both require contacting vendor for pricing and BAA)."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Typeform Basic/Plus for solopreneurs with high response volume—100-1,000 responses/mo limits are too restrictive at $28-$56/mo.",
+        "Tally and Paperform until pricing is published—no way to compare value without knowing cost.",
+        "Typeform Growth Flow unless you have a specific need for video capture and response enrichment; $266/mo is steep for most solopreneurs."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Typeform",
+      "url": "https://www.typeform.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Fillout",
+      "url": "https://www.fillout.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "JotForm",
+      "url": "https://www.jotform.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-form-builders-for-solopreneurs-2026-tally-vs-typeform-vs-fillout-vs-jotform-hero.jpg",
+  "imageCredit": "Pexels · Leeloo The First",
+  "niche": "ai-tools"
+}

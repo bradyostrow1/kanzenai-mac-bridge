@@ -58,7 +58,7 @@ if (!ANTHROPIC_KEY) {
 
 // ─── CLI args ────────────────────────────────────────────────────────────────
 type Args = {
-  mode: "review" | "compare";
+  mode: "review" | "compare" | "tutorial";
   topic: string;
   products: string[];
   category?: string;
@@ -82,13 +82,26 @@ function parseArgs(argv: string[]): Args {
     }
   }
   if (!args.topic) throw new Error("--topic is required");
-  if (!args.products) throw new Error("--products is required (comma-separated)");
-  const products = args.products.split(",").map((p) => p.trim()).filter(Boolean);
-  if (products.length < 2) throw new Error("Need at least 2 products");
 
-  const mode = (args.mode === "compare" ? "compare" : "review") as Args["mode"];
-  if (mode === "compare" && products.length !== 2) {
-    throw new Error("Comparison mode requires exactly 2 products");
+  const mode = (
+    args.mode === "compare" ? "compare" :
+    args.mode === "tutorial" ? "tutorial" :
+    "review"
+  ) as Args["mode"];
+
+  // Tutorial mode needs exactly 1 tool; review/compare need 2+
+  if (!args.products) throw new Error("--products is required (comma-separated; tutorial uses just one)");
+  const products = args.products.split(",").map((p) => p.trim()).filter(Boolean);
+
+  if (mode === "tutorial") {
+    if (products.length !== 1) {
+      throw new Error("Tutorial mode requires exactly 1 product (the tool being taught)");
+    }
+  } else {
+    if (products.length < 2) throw new Error("Need at least 2 products");
+    if (mode === "compare" && products.length !== 2) {
+      throw new Error("Comparison mode requires exactly 2 products");
+    }
   }
 
   return {
@@ -279,15 +292,57 @@ const COMPARE_SCHEMA = `{
   "imageCredit": "Unsplash"
 }`;
 
+// Tutorial uses the same Article JSON shape as reviews (so the existing
+// /articles/[slug] route renders it cleanly), but composes the body as a
+// step-by-step guide using ordered-list + h2/h3/callout blocks. One product
+// (the tool the tutorial teaches) appears at the end as a product block.
+const TUTORIAL_SCHEMA = `{
+  "slug": "string",
+  "title": "string (Format: 'How to [Verb] [Thing] with [Tool]: Step-by-Step Guide')",
+  "description": "string (under 160 chars, must mention 'step-by-step')",
+  "category": "Tutorials",
+  "publishedAt": "YYYY-MM-DD",
+  "updatedAt": "YYYY-MM-DD",
+  "readMinutes": number,
+  "tldr": "string (2-3 sentences: what the reader will accomplish + ballpark time)",
+  "body": [
+    {"type": "p", "text": "Hook paragraph: what we're building/doing, who it's for, why it matters"},
+    {"type": "h2", "text": "What you'll need", "id": "prereqs"},
+    {"type": "ul", "items": ["Required item or account (with version/tier where relevant)", "Another prereq", "..."]},
+    {"type": "callout", "variant": "info", "title": "Time + cost", "text": "Roughly X minutes; cost: free / $X one-time / $Y/mo"},
+    {"type": "h2", "text": "Step 1 — [Action]", "id": "step-1"},
+    {"type": "p", "text": "What this step accomplishes + the explicit click-by-click instructions. Include exact menu names, button labels, and field values where applicable."},
+    {"type": "h2", "text": "Step 2 — [Action]", "id": "step-2"},
+    {"type": "p", "text": "..."},
+    {"type": "h2", "text": "Step 3 — [Action]", "id": "step-3"},
+    {"type": "p", "text": "..."},
+    {"type": "callout", "variant": "tip", "title": "Pro tip", "text": "An optional speed-up or quality-improvement readers can apply."},
+    {"type": "h2", "text": "If something breaks", "id": "troubleshoot"},
+    {"type": "ul", "items": ["Symptom: [error] → Fix: [solution]", "Symptom: [...] → Fix: [...]", "Symptom: [...] → Fix: [...]"]},
+    {"type": "h2", "text": "What to do next", "id": "next"},
+    {"type": "p", "text": "1-paragraph bridge to the next thing the reader should try, with a link to a related tool or article if relevant."},
+    {"type": "product", "name": "string (the ONE tool taught)", "price": "string", "rating": number, "pros": ["string"], "cons": ["string"], "cta": {"label": "Try [Tool]", "url": "https://[vendor]/?ref=kanzenai"}}
+  ],
+  "affiliateProducts": [{"name": "string", "url": "string", "commission": "string"}],
+  "headerImage": "/articles/<slug>-hero.jpg",
+  "imageCredit": "Pexels"
+}`;
+
 function buildUserPrompt(args: Args, researchBundle: Record<string, string>, today: string): string {
   const research = Object.entries(researchBundle)
     .map(([name, text]) => `### ${name}\n${text}`)
     .join("\n\n---\n\n");
 
-  const schema = args.mode === "compare" ? COMPARE_SCHEMA : REVIEW_SCHEMA;
+  const schema =
+    args.mode === "compare" ? COMPARE_SCHEMA :
+    args.mode === "tutorial" ? TUTORIAL_SCHEMA :
+    REVIEW_SCHEMA;
+
   const modeNote =
     args.mode === "compare"
       ? "Mode: head-to-head COMPARISON of exactly 2 products. Output the comparison schema below."
+      : args.mode === "tutorial"
+      ? `Mode: STEP-BY-STEP TUTORIAL teaching the reader how to do ONE specific thing with ONE specific tool. The reader's goal is to FOLLOW the steps and reach a working outcome at the end. NOT a review, NOT a comparison — purely instructional. Voice: warm, plain-English, second-person ('you'). Each step is a discrete action a reader can complete before moving to the next. Include exact UI labels, button names, file paths, command lines, and field values where applicable. Use callouts for time-and-cost up front and for pro tips. Include a "If something breaks" section with common symptoms → fixes. End with a "What to do next" bridge.`
       : "Mode: ROUND-UP REVIEW article covering the products. Body should include an intro paragraph, a 'How we approached this' h2, one h2 per product (with a product block inside), a 'Verdict' h2 with bullet recommendations by use case, and optionally a 'What we'd skip' h2.";
 
   return `${modeNote}
@@ -296,7 +351,7 @@ Topic: ${args.topic}
 ${args.category ? `Category: ${args.category}` : ""}
 Slug: ${args.slug}
 Today's date: ${today}
-Products to cover: ${args.products.join(", ")}
+${args.mode === "tutorial" ? `Tool being taught: ${args.products[0]}` : `Products to cover: ${args.products.join(", ")}`}
 
 Use the research bundle below as your ONLY source of facts. If something isn't in here, omit it or note uncertainty.
 
@@ -310,7 +365,9 @@ ${schema}
 
 For affiliate URLs, use the format: https://[vendor-domain]/?ref=kanzenai
 
-For the round-up review, the body MUST include between 8-15 blocks total: opening paragraph, 1-2 setup h2 sections, one h2-and-product block per product, a verdict h2 with ul list, and a what-we-skip h2 with ul list.
+${args.mode === "tutorial"
+    ? "For the tutorial, body MUST include 12-20 blocks: opening hook paragraph, 'What you'll need' h2 + ul, time+cost callout, 4-7 step h2 sections (each with explanatory paragraph(s)), one pro-tip callout, 'If something breaks' h2 + ul, 'What to do next' h2 + paragraph, and a final product block for the tool taught. Number the steps in the h2 text ('Step 1 — [Action]', 'Step 2 — [Action]', etc.)."
+    : "For the round-up review, the body MUST include between 8-15 blocks total: opening paragraph, 1-2 setup h2 sections, one h2-and-product block per product, a verdict h2 with ul list, and a what-we-skip h2 with ul list."}
 
 Return ONLY the JSON.`;
 }

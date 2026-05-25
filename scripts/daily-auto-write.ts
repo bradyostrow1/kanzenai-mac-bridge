@@ -141,11 +141,17 @@ Output STRICT JSON with this shape, no prose, no markdown fences:
 }
 
 // ─── Run the writer ─────────────────────────────────────────────────────────
+// Calls write-article.ts via `node --import tsx` directly. Avoids the npm
+// indirection so spawn works cleanly on Windows (npm shims as npm.cmd which
+// makes spawn brittle without shell:true, and shell:true mangles args with
+// spaces). Direct node spawn handles arg arrays correctly on all platforms.
 async function runWriter(s: Suggestion): Promise<void> {
+  const writerPath = join(ROOT, "scripts", "write-article.ts");
   const args = [
-    "run",
-    "write",
-    "--",
+    "--env-file=.env.local",
+    "--import",
+    "tsx",
+    writerPath,
     "--topic",
     s.topic,
     "--products",
@@ -155,10 +161,10 @@ async function runWriter(s: Suggestion): Promise<void> {
     "--slug",
     s.slug,
   ];
-  console.log(`\n→ Running: npm ${args.join(" ")}\n`);
+  console.log(`\n→ Running: node ${args.slice(0, 4).join(" ")} [+ writer args]\n`);
 
   return new Promise((resolve, reject) => {
-    const proc = spawn("npm", args, { cwd: ROOT, stdio: "inherit", env: process.env });
+    const proc = spawn(process.execPath, args, { cwd: ROOT, stdio: "inherit", env: process.env });
     proc.on("close", (code) => {
       if (code === 0) resolve();
       else reject(new Error(`writer exited ${code}`));

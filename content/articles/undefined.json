@@ -1,0 +1,227 @@
+{
+  "slug": "undefined",
+  "title": "AI Social Media Caption Writers for Creators in 2026: Copy.ai vs Jasper vs ChatGPT vs Predis.ai",
+  "description": "Five AI caption tools compared for creators. Pricing unknown across the board—here's what we know and what remains uncertain.",
+  "category": "AI Tools",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 6,
+  "tldr": "Copy.ai, Jasper, ChatGPT, Predis.ai, and Lately all claim social-caption capabilities, but none provided accessible pricing or feature documentation for independent verification. Creators should request demos and pricing directly before committing.",
+  "body": [
+    {
+      "type": "p",
+      "text": "AI caption writers promise to cut the time creators spend drafting Instagram, LinkedIn, and TikTok copy. Five tools—Copy.ai, Jasper, ChatGPT, Predis.ai, and Lately—appear frequently in creator forums and YouTube reviews. We attempted to verify pricing, feature sets, and integration claims. None of the vendor pages were reachable during our research window, leaving us unable to substantiate published rates or capabilities. What follows is a structural overview and guidance on what to ask vendors directly."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed publicly available vendor resources for each platform. No pricing pages, feature lists, or integration documentation loaded during the research period. This article flags the gap and outlines the questions creators should pose to sales teams: per-post cost, output customization, multi-platform scheduling, and brand-voice tuning."
+    },
+    {
+      "type": "h2",
+      "text": "Copy.ai",
+      "id": "copyai"
+    },
+    {
+      "type": "product",
+      "name": "Copy.ai",
+      "price": "Contact vendor for pricing",
+      "rating": 0,
+      "pros": [
+        "Marketed toward long-form and short-form copy generation",
+        "Mentioned in creator communities for social-media use cases"
+      ],
+      "cons": [
+        "No accessible pricing or feature documentation during research",
+        "Cannot verify platform capabilities, integration list, or output quality",
+        "Uncertainty around per-user licensing and API access"
+      ],
+      "cta": {
+        "label": "Visit Copy.ai",
+        "url": "https://copy.ai/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Copy.ai's vendor page was unreachable. Creators should ask for a live demo covering caption templates, tone controls, and whether the platform supports bulk generation for multiple social channels."
+    },
+    {
+      "type": "h2",
+      "text": "Jasper",
+      "id": "jasper"
+    },
+    {
+      "type": "product",
+      "name": "Jasper",
+      "price": "Contact vendor for pricing",
+      "rating": 0,
+      "pros": [
+        "Positioned as an AI writing assistant with marketing templates",
+        "Frequently cited in AI-marketing tool lists"
+      ],
+      "cons": [
+        "No pricing or feature page available during research",
+        "Cannot confirm caption-specific workflows or platform integrations",
+        "Unclear licensing model and team-seat pricing"
+      ],
+      "cta": {
+        "label": "Visit Jasper",
+        "url": "https://jasper.ai/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Jasper's documentation was inaccessible. Request a walkthrough of caption templates, brand-voice training, and output length controls before evaluating."
+    },
+    {
+      "type": "h2",
+      "text": "ChatGPT",
+      "id": "chatgpt"
+    },
+    {
+      "type": "product",
+      "name": "ChatGPT",
+      "price": "Contact vendor for pricing",
+      "rating": 0,
+      "pros": [
+        "General-purpose LLM with broad adoption among creators",
+        "Free tier exists for basic prompting; paid tiers offer GPT-4 access"
+      ],
+      "cons": [
+        "No caption-specific UI or templates",
+        "Requires manual prompt engineering for consistent output",
+        "No native scheduling or multi-platform publishing"
+      ],
+      "cta": {
+        "label": "Visit ChatGPT",
+        "url": "https://chat.openai.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "ChatGPT's pricing page was unreachable during research. The platform is a general conversational AI; creators must craft prompts for each caption and copy outputs manually into scheduling tools. Ask OpenAI for current Plus and Enterprise pricing if team access is required."
+    },
+    {
+      "type": "h2",
+      "text": "Predis.ai",
+      "id": "predisai"
+    },
+    {
+      "type": "product",
+      "name": "Predis.ai",
+      "price": "Contact vendor for pricing",
+      "rating": 0,
+      "pros": [
+        "Marketed as a social-media-specific AI tool with visual and copy generation",
+        "Appears in social-media-manager software comparisons"
+      ],
+      "cons": [
+        "No accessible vendor documentation during research",
+        "Cannot verify feature set, integrations, or caption quality",
+        "Unclear pricing structure and platform limits"
+      ],
+      "cta": {
+        "label": "Visit Predis.ai",
+        "url": "https://predis.ai/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Predis.ai's site was unreachable. Inquire about caption customization, scheduling integrations, and whether the platform generates both copy and visual assets in one workflow."
+    },
+    {
+      "type": "h2",
+      "text": "Lately",
+      "id": "lately"
+    },
+    {
+      "type": "product",
+      "name": "Lately",
+      "price": "Contact vendor for pricing",
+      "rating": 0,
+      "pros": [
+        "Positioned as an AI social-writing tool with brand-voice learning",
+        "Cited in enterprise marketing-automation reviews"
+      ],
+      "cons": [
+        "No pricing or feature documentation available during research",
+        "Cannot confirm caption workflows, platform integrations, or team features",
+        "Uncertain licensing model"
+      ],
+      "cta": {
+        "label": "Visit Lately",
+        "url": "https://lately.ai/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Lately's vendor resources were inaccessible. Request a demo covering brand-voice training duration, caption approval workflows, and multi-channel publishing options."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "p",
+      "text": "None of the five tools provided verifiable pricing or feature documentation during our research period. Creators evaluating AI caption writers should prioritize the following questions in vendor conversations:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "If you publish 20–30 captions per week across Instagram, LinkedIn, and TikTok: ask for per-post cost or monthly caption quotas, and confirm multi-platform export.",
+        "If you manage brand voice for multiple clients: verify whether the tool supports saved brand profiles and tone presets.",
+        "If you need scheduling integration: confirm native connections to Buffer, Hootsuite, or Later—or whether you'll copy-paste captions manually.",
+        "If budget is under $50/mo: ChatGPT Plus (assuming $20/mo retail in prior years) may suffice if you're comfortable writing prompts; request current pricing from OpenAI.",
+        "If you want visual + caption generation in one tool: Predis.ai markets this capability—ask for a live demo and pricing breakdown."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Any tool that won't disclose pricing upfront—opaque pricing often signals enterprise-only tiers incompatible with solo-creator budgets.",
+        "Platforms without brand-voice training if you manage multiple clients—manual tone adjustment per caption erases time savings.",
+        "Tools that lack native scheduling integrations if you already pay for Buffer or Hootsuite—double tooling costs add up."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Copy.ai",
+      "url": "https://copy.ai/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Jasper",
+      "url": "https://jasper.ai/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "ChatGPT",
+      "url": "https://chat.openai.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Predis.ai",
+      "url": "https://predis.ai/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Lately",
+      "url": "https://lately.ai/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/undefined-hero.jpg",
+  "imageCredit": "Pexels · Plann",
+  "niche": "ai-tools"
+}

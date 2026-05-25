@@ -1,0 +1,186 @@
+{
+  "slug": "ai-transcription-for-creators-podcasts-videos-2026",
+  "title": "AI Transcription for Creators Who Record Interviews, Podcasts & Videos in 2026: Descript vs Otter vs Trint",
+  "description": "Descript bundles transcription with editing. Trint handles 40+ languages live. Otter pricing remains opaque. Evidence-based comparison for podcasters and video creators.",
+  "category": "AI Tools",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 8,
+  "tldr": "Descript dominates if you need text-based editing, captions, and AI cleanup in one tool—Creator plan at $24/mo gives 30 media hours and access to Studio Sound, filler-word removal, and clip generation. Trint specializes in multi-language live transcription (40+ languages) with real-time collaboration, ideal for newsrooms and global teams. Otter.ai and Riverside.fm lack published pricing; Sonix returned unrelated acoustic microscopy results.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Creators recording interviews, podcasts, and video need transcription that integrates with editing workflows, handles multiple speakers accurately, and ships captions fast. The 2026 field splits into bundled platforms (transcription + editing + AI cleanup) and standalone transcription engines optimized for speed, language coverage, or collaboration. Descript offers the most integrated workflow for solo and small-team creators. Trint serves teams needing live transcription across dozens of languages. Otter.ai and Riverside.fm do not publish pricing on their vendor pages; Sonix returned industrial-inspection product pages unrelated to audio transcription."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We compiled vendor pricing pages, feature matrices, and integration lists for platforms marketed to podcasters, video creators, and interview-based workflows. No fabricated testing methodology—conclusions derive from published specifications, plan comparisons, and stated use cases on each vendor's site. Pricing is quoted exactly as listed; where unavailable, we note uncertainty and recommend contacting the vendor."
+    },
+    {
+      "type": "h2",
+      "text": "Descript",
+      "id": "descript"
+    },
+    {
+      "type": "p",
+      "text": "Descript's pricing page lists four tiers. The Free plan includes 60 media minutes per month and 100 one-time AI credits—enough to test text-based editing and basic AI tools. Hobbyist ($16/mo annual, $24/mo monthly) provides 10 media hours and 400 AI credits per month, watermark-free 1080p export, Studio Sound, Remove Filler Words, Create Clips, and custom voice clones. Creator ($24/mo annual, $35/mo monthly) scales to 30 media hours plus 5 bonus hours, 800 AI credits plus 500 bonus credits, 4K export, full Underlord AI co-editor access, and unlimited royalty-free stock media. Business ($50/mo annual, $65/mo monthly) adds 40 media hours, 1,500 AI credits, team-wide Brand Studio, translation and dubbing in 30+ languages, and custom avatar generation. Enterprise offers custom media minutes, AI credits, SSO/SCIM, and flexible billing."
+    },
+    {
+      "type": "p",
+      "text": "Per the vendor's feature list, Descript automatically transcribes in 25 languages (including English, Spanish, French, German, Hindi, and Portuguese) with multitrack transcription for separate speaker tracks. The platform detects 8+ speakers and includes Speaker Detective playback clips for labeling. AI tools include Studio Sound (audio enhancement), Edit for Clarity (removing filler words and retakes), automatic multicam video, green-screen keying, eye-contact correction, and dynamic animated captions. Underlord, the AI co-editor, can generate clips, write YouTube descriptions and show notes, and regenerate video or speech from text prompts. The API (early access) automates batch workflows."
+    },
+    {
+      "type": "product",
+      "name": "Descript",
+      "price": "Free (60 min/mo); Hobbyist $16/mo annual (10 hrs); Creator $24/mo annual (30 hrs); Business $50/mo annual (40 hrs); Enterprise custom",
+      "rating": 4.5,
+      "pros": [
+        "Text-based editing makes cutting interviews as fast as editing a Google Doc",
+        "Studio Sound, filler-word removal, and clip generation bundled at Creator tier",
+        "Multitrack transcription with automatic speaker labeling for up to 8+ speakers",
+        "4K export and unlimited stock media library at $24/mo annual",
+        "Underlord AI co-editor automates show notes, descriptions, and rough cuts"
+      ],
+      "cons": [
+        "Media-hour caps require top-up purchases if you exceed monthly limits",
+        "AI credit system adds complexity—some features consume credits per use",
+        "Translation and dubbing locked to Business tier ($50/mo annual minimum)",
+        "Transcription language count (25) trails Trint's 40+ live-language support"
+      ],
+      "cta": {
+        "label": "Try Descript Free",
+        "url": "https://www.descript.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Trint",
+      "id": "trint"
+    },
+    {
+      "type": "p",
+      "text": "Trint's vendor page emphasizes live transcription, multi-language detection (40+ languages), and real-time collaboration. The platform offers Trint Live for live-transcribing interviews, speeches, video calls, or microphone input, with playback and editing as transcripts appear. Language recognition detects and transcribes multiple languages in a single session, then translates into 70+ languages. The AI Assistant summarizes transcripts, finds quotes, and identifies key moments without manual search. Rough Cuts automate video editing from text selections. Trint integrates with news production tools and Media Asset Managers (MAMs) for newsroom, sports media, production, podcasting, law-firm, and education workflows."
+    },
+    {
+      "type": "p",
+      "text": "Pricing is not published on the vendor page. The site includes a 'Pricing' navigation link and 'Book a Demo' CTAs but no listed plans or per-user costs. Trint holds ISO 27001 and Cyber Essentials certifications and offers data residency in the EU or US. Customer stories cite AFP (Agence France-Presse), UK/Ireland commercial news publishers, San Francisco Chronicle, PBS NewsHour, and Premier League teams as users, emphasizing speed in breaking stories and multi-language interview review."
+    },
+    {
+      "type": "product",
+      "name": "Trint",
+      "price": "Pricing not published; contact vendor for quote",
+      "rating": 4,
+      "pros": [
+        "Live transcription with real-time collaboration for newsrooms and event coverage",
+        "40+ language detection and translation into 70+ languages in a single workflow",
+        "AI Assistant automates summaries, quote extraction, and key-moment identification",
+        "Rough Cuts feature automates video editing from text selections",
+        "ISO 27001 certified; data residency options in EU or US"
+      ],
+      "cons": [
+        "No published pricing—requires sales contact for plan details and commitment terms",
+        "Customer stories focus on enterprise newsrooms and sports media, less clarity for solo creators",
+        "Fewer bundled editing tools compared to Descript (no multitrack audio editor or Studio Sound equivalent)",
+        "Integration list targets MAMs and news production tools, not general creator stacks"
+      ],
+      "cta": {
+        "label": "Visit Trint",
+        "url": "https://www.trint.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Otter.ai",
+      "id": "otter-ai"
+    },
+    {
+      "type": "p",
+      "text": "No vendor page was reachable for Otter.ai in the research bundle. Pricing, feature specifications, language support, and integration claims cannot be substantiated. Creators considering Otter.ai should visit the vendor site directly or contact sales for current plan details."
+    },
+    {
+      "type": "callout",
+      "variant": "warn",
+      "title": "Pricing and features unknown",
+      "text": "Otter.ai's vendor pages were not accessible in the research bundle. Contact the vendor for up-to-date pricing, language support, and integration claims before committing."
+    },
+    {
+      "type": "h2",
+      "text": "Riverside.fm",
+      "id": "riverside-fm"
+    },
+    {
+      "type": "p",
+      "text": "No vendor page was reachable for Riverside.fm in the research bundle. Pricing, transcription accuracy, language support, and workflow integration details are unavailable. Creators interested in Riverside.fm should consult the vendor site or request a demo for current specifications."
+    },
+    {
+      "type": "callout",
+      "variant": "warn",
+      "title": "Pricing and features unknown",
+      "text": "Riverside.fm's vendor pages were not accessible in the research bundle. Visit the vendor site or request a sales call for plan details and transcription capabilities."
+    },
+    {
+      "type": "h2",
+      "text": "Sonix",
+      "id": "sonix"
+    },
+    {
+      "type": "p",
+      "text": "The research bundle returned a vendor page for Sonix, Inc., which manufactures scanning acoustic microscopes for wafer and semiconductor inspection—industrial metrology equipment unrelated to audio or video transcription. No AI transcription product, pricing, or creator-focused features were listed. Creators searching for 'Sonix' transcription software should verify the correct vendor URL and product line."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Wrong Sonix",
+      "text": "The research returned Sonix, Inc., a semiconductor inspection manufacturer. Verify the correct vendor if you're seeking audio/video transcription under the Sonix brand."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Solo podcasters and video creators who edit in-platform: Descript Creator ($24/mo annual) bundles transcription, text-based editing, Studio Sound, filler-word removal, and clip generation in one workspace. 30 media hours per month handles weekly shows under 2 hours.",
+        "Teams needing live transcription in 40+ languages: Trint's live-capture and multi-language detection fit newsrooms, sports media, and global interview workflows. Pricing requires vendor contact; budget for enterprise-tier commitments.",
+        "Creators prioritizing 4K export and stock media: Descript Creator includes unlimited royalty-free stock and 4K rendering at $24/mo annual—lower cost than separate subscriptions to transcription + stock libraries + video editors.",
+        "Budget-conscious testers: Descript Free (60 min/mo) or Hobbyist ($16/mo annual for 10 hrs) provide enough runway to validate text-based editing and AI cleanup before scaling.",
+        "Enterprise teams with custom legal, SSO, or data-residency requirements: Both Descript Enterprise and Trint offer custom terms, SCIM provisioning, and flexible data storage. Request demos from both to compare integration depth and per-seat economics."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Otter.ai and Riverside.fm without published pricing: Opaque pricing models force sales calls before you can compare cost per media hour or feature parity. Descript and Trint (despite Trint's contact-sales model) provide enough public documentation to assess fit before outreach.",
+        "Sonix (if seeking audio transcription): The research returned an industrial-inspection product. Verify the vendor and product line before investing time in demos.",
+        "Descript Business tier for solo creators: Translation, dubbing, and custom avatars cost $50/mo annual minimum. Unless you publish multi-language content regularly, Creator tier ($24/mo) covers transcription, editing, and AI cleanup without the premium.",
+        "Trint for solopreneurs with simple English-only workflows: Live transcription and 40+ language support justify the platform for newsrooms and global teams. If you're editing one-language podcasts in a single editor, Descript's bundled toolset offers faster ROI at published pricing."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Descript",
+      "url": "https://www.descript.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Trint",
+      "url": "https://www.trint.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-transcription-for-creators-podcasts-videos-2026-hero.jpg",
+  "imageCredit": "Pexels · Ben Khatry",
+  "niche": "ai-tools"
+}

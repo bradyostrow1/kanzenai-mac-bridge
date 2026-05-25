@@ -1,0 +1,221 @@
+{
+  "slug": "ai-seo-tools-for-solopreneurs-surfer-vs-clearscope-vs-frase-vs-neuronwriter",
+  "title": "AI SEO Tools for Solopreneurs in 2026: Surfer vs Clearscope vs Frase vs NeuronWriter",
+  "description": "Evidence-first comparison of AI SEO platforms for solo content creators—pricing, semantic analysis limits, and who wins for small budgets.",
+  "category": "AI Tools",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 9,
+  "tldr": "Surfer SEO leads on visibility tracking and AI-search optimization; NeuronWriter delivers best value for multi-project solopreneurs at $19–$23/mo; MarketMuse suits strategy-first teams but starts at undisclosed pricing. Clearscope and Frase lack accessible pricing data as of May 2026.",
+  "body": [
+    {
+      "type": "p",
+      "text": "AI-powered SEO tools promise to decode Google's ranking signals and now, in 2026, optimize for AI search engines like ChatGPT and Perplexity. For solopreneurs publishing 10–50 articles per month, the choice hinges on three factors: price per optimized document, semantic analysis depth, and whether the platform tracks AI visibility. Surfer SEO, NeuronWriter, and MarketMuse each take distinct approaches; Clearscope and Frase remain viable but publish no current pricing."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed vendor pricing pages, feature lists, and published plan structures as of May 2026. No fabricated test counts—if a claim isn't in the research bundle, we note uncertainty. Pricing is quoted exactly as listed by each vendor. Affiliate links use the format https://[vendor-domain]/?ref=kanzenai."
+    },
+    {
+      "type": "h2",
+      "text": "Surfer SEO",
+      "id": "surfer-seo"
+    },
+    {
+      "type": "p",
+      "text": "Surfer positions itself as a 'visibility platform' for Google, Gemini, ChatGPT, and Perplexity. The vendor's pricing page lists five plans: Discovery at $49/mo (billed yearly, save $120), Standard at $99/mo (save $240), Pro at $182/mo (save $444), Peace of Mind at $299/mo (save $720), and Enterprise at $999/mo. All yearly figures reflect 20% annual-billing discounts."
+    },
+    {
+      "type": "p",
+      "text": "Discovery allows 120 documents and tracks 10 pages. Standard increases capacity to 360 documents, tracks 25 AI prompts refreshed weekly, and adds team collaboration and plagiarism checking. Pro ($182/mo yearly) tracks 50 AI prompts refreshed daily, supports five brand workspaces, includes cannibalization reports, and adds internal linking and content-gap templates. Peace of Mind ($299/mo) removes document caps ('unlimited*'), tracks 100 AI prompts daily, and grants API access plus a dedicated success manager. Enterprise ($999/mo) includes SSO, advisory programs, and custom limits."
+    },
+    {
+      "type": "p",
+      "text": "Surfer's AI visibility tracking—monitoring how your brand appears in ChatGPT responses—is exclusive to Standard and above. The platform integrates Google Search Console, WordPress, and Shopify starting at the Gold tier equivalent (Pro). A 1-click content optimizer and 'Surfy' AI assistant appear across all paid tiers."
+    },
+    {
+      "type": "product",
+      "name": "Surfer SEO",
+      "price": "$49/mo Discovery (120 docs), $99/mo Standard (360 docs), $182/mo Pro (50 AI prompts daily), $299/mo Peace of Mind (unlimited docs, API), $999/mo Enterprise—all billed yearly",
+      "rating": 4.5,
+      "pros": [
+        "AI visibility tracking for ChatGPT/Perplexity (Standard+)",
+        "Unlimited documents at Peace of Mind tier ($299/mo)",
+        "Cannibalization reports and multi-brand workspaces (Pro)",
+        "API access and dedicated success manager (Peace of Mind)"
+      ],
+      "cons": [
+        "Discovery tier caps at 120 documents—tight for 50-article/mo workflows",
+        "AI prompt tracking starts at 25/week (Standard); daily refresh requires Pro ($182/mo)",
+        "No monthly billing discount—yearly commitment mandatory for listed prices",
+        "GSC/WordPress integrations absent below Pro tier"
+      ],
+      "cta": {
+        "label": "Try Surfer SEO",
+        "url": "https://surferseo.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "NeuronWriter",
+      "id": "neuronwriter"
+    },
+    {
+      "type": "p",
+      "text": "NeuronWriter targets 'business owners improving rankings' (Bronze) through 'SEO/Content agencies' (Diamond). The vendor's pricing page lists monthly and yearly options with 20% annual savings. Bronze costs $23/mo monthly ($19/mo yearly), Silver $45/mo ($37 yearly), Gold $69/mo ($57 yearly), Platinum $93/mo ($77 yearly), and Diamond $117/mo ($97 yearly)."
+    },
+    {
+      "type": "p",
+      "text": "Bronze includes two projects/folders, 25 content-writer analyses, and 15,000 AI credits. Silver doubles to five projects and 50 analyses. Gold ($69/mo monthly, $57/mo yearly) adds 'Content Designer' for one-click articles, 75 plagiarism checks, and team collaboration with unlimited members at Create/Edit/Read permissions. Platinum and Diamond scale to 25 and 50 projects respectively, with 100–150 analyses and 60,000–75,000 AI credits."
+    },
+    {
+      "type": "p",
+      "text": "Gold and above integrate Google Search Console, WordPress, and Shopify. Custom AI templates and 'Advanced + Custom' templates appear at Gold+. The platform includes a Neuron API, content-plan features, and the ability to use your own OpenAI key (Gold+). A seven-day free trial under Gold plan terms is available after account creation."
+    },
+    {
+      "type": "product",
+      "name": "NeuronWriter",
+      "price": "$23/mo Bronze (25 analyses), $45/mo Silver (50 analyses), $69/mo Gold (75 analyses, team collab), $93/mo Platinum, $117/mo Diamond—20% off yearly",
+      "rating": 4.3,
+      "pros": [
+        "Lowest entry price: $19/mo yearly for Bronze",
+        "Unlimited team members with Create/Edit access (Gold+, $57/mo yearly)",
+        "Own OpenAI key support reduces per-credit costs (Gold+)",
+        "Plagiarism checks and GSC/WordPress integrations (Gold+)"
+      ],
+      "cons": [
+        "Bronze caps at two projects—restrictive for multi-niche solopreneurs",
+        "AI credit limits (15k–75k) unclear on token equivalents—no public calculator",
+        "No AI visibility tracking (ChatGPT/Perplexity monitoring absent)",
+        "Seven-day trial shorter than industry standard 14-day windows"
+      ],
+      "cta": {
+        "label": "Try NeuronWriter",
+        "url": "https://neuronwriter.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "MarketMuse",
+      "id": "marketmuse"
+    },
+    {
+      "type": "p",
+      "text": "MarketMuse emphasizes 'personalized metrics'—Personalized Difficulty, Topic Authority, Competitive Advantage—calculated per domain. The vendor's pricing page lists four plans: Free (10 queries/month, no site inventory), Optimize ($100/mo—note: research bundle shows '10 0 Tracked Topics' which appears to be a typo for 100), Research ($1,000/mo), and Strategy (pricing unlisted, requires demo)."
+    },
+    {
+      "type": "p",
+      "text": "Free grants access to Topic Navigator, SERP X-ray, and Site Heatmap with 10 monthly queries. Optimize adds one site inventory, 100 tracked topics, five content briefs per month, and one Content Strategy Document. Research scales to 1,000 tracked topics, 10 briefs/month, three Strategy Docs, and three users with unlimited queries. Strategy offers 10,000 tracked topics, 20 briefs/month, five Strategy Docs, five users, and access to all nine brief types (Article, Comparison, FAQ, Collection, Guide, How-to, Listicle, Local News/Event, Product Review)."
+    },
+    {
+      "type": "p",
+      "text": "MarketMuse's 'Topic Model' algorithm and personalized authority scores distinguish it from keyword-density tools. The platform tracks page authority, content scores, and competitive advantage relative to your domain's history. Inventory auto-updates without manual CSV uploads. Pricing for Strategy tier is not published; the page directs prospects to 'Book a demo.'"
+    },
+    {
+      "type": "product",
+      "name": "MarketMuse",
+      "price": "Free (10 queries/mo), Optimize $100/mo (5 briefs/mo), Research $1,000/mo (10 briefs/mo), Strategy (contact for pricing)",
+      "rating": 4.4,
+      "pros": [
+        "Personalized Difficulty and Topic Authority metrics tailored to your domain",
+        "Auto-updated site inventory—no manual topic uploads",
+        "Nine content brief types (Strategy tier): FAQ, Comparison, Listicle, etc.",
+        "Unlimited queries at Research+ tiers"
+      ],
+      "cons": [
+        "Optimize starts at $100/mo—3x NeuronWriter Bronze for five briefs",
+        "Research tier ($1,000/mo) targets teams, not solopreneurs",
+        "Strategy pricing unlisted—requires sales demo",
+        "No AI visibility tracking (ChatGPT/Perplexity absent from feature list)"
+      ],
+      "cta": {
+        "label": "Try MarketMuse",
+        "url": "https://marketmuse.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Clearscope",
+      "id": "clearscope"
+    },
+    {
+      "type": "p",
+      "text": "Clearscope is a known player in semantic SEO optimization, but as of May 2026, no accessible pricing page exists in the research bundle. Public reviews on G2 and Capterra historically cite Clearscope plans starting around $170–$350/mo for small teams, but these figures are unconfirmed for 2026. Prospects should contact the vendor directly for current pricing and plan details."
+    },
+    {
+      "type": "callout",
+      "variant": "warn",
+      "title": "Pricing unavailable",
+      "text": "Clearscope's vendor site did not provide pricing as of May 2026. Contact the vendor for a quote."
+    },
+    {
+      "type": "h2",
+      "text": "Frase",
+      "id": "frase"
+    },
+    {
+      "type": "p",
+      "text": "The research bundle for Frase redirects to an unrelated article on AI paraphrasing tools hosted on a third-party domain (AnswerHarbor). No Frase pricing page or feature list was retrievable. Historical references suggest Frase offers plans around $15–$115/mo, but these are not substantiated for 2026. Prospects should visit frase.io directly or request a demo."
+    },
+    {
+      "type": "callout",
+      "variant": "warn",
+      "title": "Pricing unavailable",
+      "text": "Frase's vendor site did not provide pricing in the research bundle. Visit frase.io or contact the vendor for current plans."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Solopreneur publishing 20–50 articles/mo with tight budget: NeuronWriter Gold ($57/mo yearly) delivers 75 analyses, unlimited team members, and GSC/WordPress integrations at half Surfer's Pro price.",
+        "AI visibility tracking required (ChatGPT/Perplexity monitoring): Surfer SEO Standard ($99/mo yearly) is the only platform in this comparison offering AI prompt tracking; Pro ($182/mo) upgrades to daily refresh.",
+        "Strategy-first workflows with personalized authority metrics: MarketMuse Optimize ($100/mo) suits domain-specific difficulty scoring; Research/Strategy tiers ($1,000+/mo) target multi-person teams, not solo creators.",
+        "Unlimited documents needed: Surfer Peace of Mind ($299/mo yearly) removes caps and adds API access—cost-effective for high-volume publishers vs per-document overage fees.",
+        "Multi-niche solopreneurs: NeuronWriter Platinum ($77/mo yearly) allows 25 projects with 100 analyses; Surfer Pro caps at five brand workspaces for $105/mo more."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Surfer Discovery ($49/mo): 120-document cap exhausted in 2.4 months at 50 articles/mo—pay $50 more for Standard's 360-document ceiling.",
+        "MarketMuse Optimize for solo use: $100/mo buys five briefs; NeuronWriter Gold costs $57/mo yearly for 75 analyses—Optimize makes sense only if personalized authority scoring is mission-critical.",
+        "NeuronWriter Bronze for multi-niche work: Two-project limit forces separate accounts or tier upgrades—Silver ($37/mo yearly) adds three projects for $18/mo.",
+        "Clearscope and Frase absent pricing transparency: Without published rates, budget comparison is impossible; request quotes, but prioritize vendors with public pricing for faster decision-making."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Surfer SEO",
+      "url": "https://surferseo.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "NeuronWriter",
+      "url": "https://neuronwriter.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "MarketMuse",
+      "url": "https://marketmuse.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-seo-tools-for-solopreneurs-surfer-vs-clearscope-vs-frase-vs-neuronwriter-hero.jpg",
+  "imageCredit": "Pexels · Jess Loiterton",
+  "niche": "ai-tools"
+}
