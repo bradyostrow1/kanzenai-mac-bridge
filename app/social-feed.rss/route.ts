@@ -60,9 +60,9 @@ export async function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>KanzenAI — Real Estate Agent Tool Reviews</title>
+    <title>KanzenAI — AI Tool Reviews for Solopreneurs and Creators</title>
     <link>${SITE_URL}</link>
-    <description>Honest, pricing-first reviews of CRMs, AI tools, dialers, and software for working real estate agents.</description>
+    <description>Honest, pricing-first reviews of AI software, productivity tools, automation platforms, and CRMs for solopreneurs, creators, and small businesses.</description>
     <language>en-us</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
 ${items

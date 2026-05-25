@@ -15,6 +15,13 @@ export type Article = {
   title: string;
   description: string;
   category: string;
+  /**
+   * Vertical the article serves. Articles without an explicit niche default to
+   * "real-estate" (the legacy publishing history before the 2026-05-24 pivot).
+   * New content from daily-auto-write should set "ai-tools" (the broader
+   * solopreneur/creator/small-business audience).
+   */
+  niche?: NicheSlug;
   publishedAt: string; // ISO date
   updatedAt: string;
   readMinutes: number;
@@ -46,6 +53,8 @@ export type Comparison = {
   slug: string;
   title: string;
   description: string;
+  /** See Article.niche — same defaulting rule. */
+  niche?: NicheSlug;
   publishedAt: string;
   updatedAt: string;
   contenders: ComparisonContender[];
@@ -53,6 +62,53 @@ export type Comparison = {
   verdict: string;
   headerImage?: string;
 };
+
+// ─── Niches ─────────────────────────────────────────────────────────────────
+export type NicheSlug = "real-estate" | "ai-tools";
+
+export const NICHES: { slug: NicheSlug; name: string; description: string; tagline: string }[] = [
+  {
+    slug: "ai-tools",
+    name: "AI Tools",
+    description: "Reviews and comparisons of AI software, productivity tools, automation platforms, and the SaaS stack that runs lean operations — for solopreneurs, creators, and small businesses.",
+    tagline: "For people who pick their own stack",
+  },
+  {
+    slug: "real-estate",
+    name: "Real Estate",
+    description: "Reviews and comparisons of CRMs, dialers, lead-gen platforms, AI assistants, and transaction tools for working real estate agents.",
+    tagline: "For working real estate agents",
+  },
+];
+
+/** Default niche when an article lacks an explicit one. Existing 30 articles. */
+const DEFAULT_NICHE: NicheSlug = "real-estate";
+
+export function nicheOf(article: Pick<Article, "niche">): NicheSlug {
+  return article.niche ?? DEFAULT_NICHE;
+}
+
+export function nicheBySlug(slug: string): (typeof NICHES)[number] | undefined {
+  return NICHES.find((n) => n.slug === slug);
+}
+
+export function listArticlesByNiche(slug: NicheSlug): Article[] {
+  return listArticles().filter((a) => nicheOf(a) === slug);
+}
+
+export function listComparisonsByNiche(slug: NicheSlug): Comparison[] {
+  return listComparisons().filter((c) => nicheOf(c) === slug);
+}
+
+/** Returns niches that have at least one article or comparison published. */
+export function activeNiches(): typeof NICHES {
+  const articles = listArticles();
+  const comparisons = listComparisons();
+  const used = new Set<NicheSlug>();
+  for (const a of articles) used.add(nicheOf(a));
+  for (const c of comparisons) used.add(nicheOf(c));
+  return NICHES.filter((n) => used.has(n.slug));
+}
 
 export type ComparisonContender = {
   name: string;

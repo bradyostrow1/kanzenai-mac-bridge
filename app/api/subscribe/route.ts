@@ -72,7 +72,7 @@ async function forwardToProvider(email: string, source?: string): Promise<void> 
     body: JSON.stringify({
       from: `KanzenAI <${fromAddr}>`,
       to: [email],
-      subject: "Your real estate tool stack — inside",
+      subject: "Your AI tool stack — inside",
       html: welcomeEmailHtml(source),
       text: welcomeEmailText(source),
       headers: {
@@ -93,18 +93,18 @@ function welcomeEmailHtml(source?: string): string {
   <div style="max-width:560px;margin:0 auto;padding:40px 24px;">
     <div style="text-align:center;margin-bottom:32px;">
       <div style="font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:36px;letter-spacing:-1px;">KanzenAI</div>
-      <div style="font-size:11px;letter-spacing:4px;color:#525252;margin-top:8px;">HONEST REVIEWS · REAL ESTATE AGENT TOOL STACK</div>
+      <div style="font-size:11px;letter-spacing:4px;color:#525252;margin-top:8px;">HONEST REVIEWS · AI TOOL STACK</div>
     </div>
     <p style="font-size:16px;line-height:1.6;margin:0 0 16px;">You're in. Here's the link we promised:</p>
     <div style="margin:20px 0;text-align:center;">
-      <a href="https://kanzenai.com/resources/tool-stack?ref=welcome" style="display:inline-block;background:#0a0a0a;color:#f0eee9;text-decoration:none;padding:14px 28px;font-weight:600;font-size:14px;letter-spacing:0.5px;">→ Open the 2026 Real Estate Tool Stack</a>
+      <a href="https://kanzenai.com/resources/tool-stack?ref=welcome" style="display:inline-block;background:#0a0a0a;color:#f0eee9;text-decoration:none;padding:14px 28px;font-weight:600;font-size:14px;letter-spacing:0.5px;">→ Open the 2026 AI Tool Stack</a>
     </div>
-    <p style="font-size:15px;line-height:1.6;margin:24px 0 16px;">It's a one-page breakdown of every CRM, dialer, AI tool, and lead-gen platform agents are actually using in 2026 — with the pricing they hide.</p>
+    <p style="font-size:15px;line-height:1.6;margin:24px 0 16px;">It's a one-page breakdown of every AI assistant, productivity tool, automation platform, and CRM solopreneurs and creators are actually using in 2026 — with the pricing vendors hide.</p>
     <p style="font-size:15px;line-height:1.6;margin:0 0 16px;">A few things to know:</p>
     <ul style="font-size:15px;line-height:1.7;padding-left:20px;margin:0 0 24px;">
       <li>We review every tool ourselves before listing it. No vendor pays for placement.</li>
       <li>When you click a tool's link from our site, we may earn a commission. It doesn't change the review.</li>
-      <li>We'll send 1 honest email per week. Pricing changes, new tool launches, agent-stack breakdowns. That's it.</li>
+      <li>We'll send 1 honest email per week. Pricing changes, new tool launches, tool-stack breakdowns. That's it.</li>
     </ul>
     <p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Reply to this email if you want us to dig into a specific tool. We read every reply.</p>
     <p style="font-size:15px;line-height:1.6;margin:24px 0 0;">— The KanzenAI Editorial Team</p>
@@ -117,15 +117,15 @@ function welcomeEmailHtml(source?: string): string {
 function welcomeEmailText(source?: string): string {
   return `You're in. Here's the link we promised:
 
-→ The 2026 Real Estate Tool Stack
+→ The 2026 AI Tool Stack
 https://kanzenai.com/resources/tool-stack?ref=welcome
 
-A one-page breakdown of every CRM, dialer, AI tool, and lead-gen platform agents are actually using in 2026 — with the pricing they hide.
+A one-page breakdown of every AI assistant, productivity tool, automation platform, and CRM solopreneurs and creators are actually using in 2026 — with the pricing vendors hide.
 
 A few things to know:
 - We review every tool ourselves before listing it. No vendor pays for placement.
 - When you click a tool's link from our site, we may earn a commission. It doesn't change the review.
-- We'll send 1 honest email per week. Pricing changes, new tool launches, agent-stack breakdowns. That's it.
+- We'll send 1 honest email per week. Pricing changes, new tool launches, tool-stack breakdowns. That's it.
 
 Reply to this email if you want us to dig into a specific tool. We read every reply.
 

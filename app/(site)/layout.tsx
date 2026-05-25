@@ -19,9 +19,9 @@ function Header() {
           KanzenAI
         </Link>
         <nav className="hidden sm:flex items-center gap-8 text-[15px] text-ink-0">
-          <Link href="/category/crm" className="hover:opacity-60">CRM</Link>
-          <Link href="/category/lead-gen" className="hover:opacity-60">Lead Gen</Link>
-          <Link href="/category/ai-tools" className="hover:opacity-60">AI Tools</Link>
+          <Link href="/niche/ai-tools" className="hover:opacity-60">AI Tools</Link>
+          <Link href="/niche/real-estate" className="hover:opacity-60">Real Estate</Link>
+          <Link href="/articles" className="hover:opacity-60">All reviews</Link>
           <Link href="/compare" className="hover:opacity-60">Compare</Link>
           <Link href="/about" className="hover:opacity-60">About</Link>
         </nav>

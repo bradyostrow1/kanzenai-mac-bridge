@@ -39,7 +39,7 @@ export default function Privacy() {
         <h2>What we don't collect</h2>
         <ul>
           <li>Names, addresses, phone numbers (unless you email us first)</li>
-          <li>Real estate license numbers, MLS IDs, or any agent data</li>
+          <li>Professional license numbers, account IDs, or any business-credential data</li>
           <li>Payment info — we never take payments directly</li>
           <li>Behavior tracking across other sites</li>
         </ul>

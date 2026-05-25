@@ -346,6 +346,13 @@ async function main() {
   json.updatedAt = today;
   json.slug = args.slug;
 
+  // Tag the niche. New content from this writer targets the broader AI-tool
+  // shopper audience by default (per the 2026-05-24 KanzenAI pivot). To
+  // explicitly write a real-estate-vertical article, set NICHE=real-estate.
+  // Existing 30 articles published before the pivot have no niche field and
+  // lib/articles.ts treats them as niche: "real-estate".
+  json.niche = process.env.NICHE || "ai-tools";
+
   // Hero image selection — delegated to lib/images.ts (Bot 12 territory).
   // Same Pexels-first, on-disk-pool-fallback behavior as before; the library
   // also has slots for an owned image-gen adapter (Nano Banana / fal / etc.)

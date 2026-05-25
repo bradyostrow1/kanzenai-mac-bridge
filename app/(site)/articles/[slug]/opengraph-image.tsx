@@ -14,7 +14,7 @@ import { getArticle } from "@/lib/articles";
 export const runtime = "nodejs";          // we use fs in lib/articles
 export const contentType = "image/png";
 export const size = { width: 1200, height: 630 };
-export const alt = "KanzenAI — honest reviews of real estate agent tools";
+export const alt = "KanzenAI — honest AI tool reviews for solopreneurs and creators";
 
 export default async function Image({ params }: { params: { slug: string } }) {
   const article = getArticle(params.slug);

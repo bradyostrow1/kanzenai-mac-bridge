@@ -115,7 +115,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
         <EmailCaptureForm
           variant="stack"
           source={`article:${article.slug}`}
-          headline="Get the 2026 Real Estate Tool Stack — free"
+          headline="Get the 2026 AI Tool Stack — free"
           sub={`A one-page pricing breakdown of every ${article.category.toLowerCase()} tool plus every other category. Updated monthly. 1 honest email per week — that's it.`}
         />
       </div>

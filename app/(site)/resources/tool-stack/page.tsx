@@ -4,8 +4,8 @@ import { join } from "node:path";
 import { existsSync } from "node:fs";
 
 export const metadata = {
-  title: "The 2026 Real Estate Tool Stack — KanzenAI",
-  description: "One-page pricing breakdown of every CRM, dialer, AI tool, lead-gen platform, and software agents actually use in 2026.",
+  title: "The 2026 AI Tool Stack — KanzenAI",
+  description: "One-page pricing breakdown of every AI software, productivity tool, automation platform, and CRM solopreneurs, creators, and small businesses actually use in 2026.",
   robots: { index: false, follow: false }, // gated content — not for SEO indexing
 };
 
@@ -85,9 +85,9 @@ export default async function ToolStackPage() {
           <div className="text-[10px] uppercase tracking-[0.22em] text-ink-2 mb-3">
             KANZENAI · MEMBERS RESOURCE
           </div>
-          <h1 className="display text-4xl sm:text-5xl leading-tight mb-3">The 2026 Real Estate Tool Stack</h1>
+          <h1 className="display text-4xl sm:text-5xl leading-tight mb-3">The 2026 AI Tool Stack</h1>
           <p className="text-ink-2 text-[16px] leading-relaxed max-w-2xl">
-            Every CRM, dialer, AI assistant, and lead-gen platform working agents are actually using — with the pricing vendors hide behind "Contact Sales." Updated {today}.
+            Every AI assistant, productivity tool, automation platform, and CRM solopreneurs, creators, and small businesses are actually using — with the pricing vendors hide behind "Contact Sales." Updated {today}.
           </p>
         </div>
 
