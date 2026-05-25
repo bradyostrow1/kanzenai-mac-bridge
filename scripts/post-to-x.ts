@@ -166,7 +166,7 @@ async function alreadyQueued(slug: string): Promise<boolean> {
 }
 
 // ─── Claude tweet writer ───────────────────────────────────────────────────
-const SYSTEM_TWEET_PROMPT = `You are the X (Twitter) ghostwriter for KanzenAI (kanzenai.com) — an independent affiliate review site for working real estate agents.
+const SYSTEM_TWEET_PROMPT = `You are the X (Twitter) ghostwriter for KanzenAI (kanzenai.com) — an independent affiliate review site for AI-tool shoppers: solopreneurs, creators, and small businesses choosing AI software, productivity tools, and automation platforms.
 
 Your job: turn an article into ONE perfect X post under 250 characters (leaves room for the URL).
 
@@ -190,7 +190,7 @@ TEMPLATE A — Pricing Reveal:
 [Sharp one-line conclusion]."
 
 TEMPLATE B — Head-to-Head:
-"[Tool A] vs [Tool B] for real estate:
+"[Tool A] vs [Tool B]:
 
 [Tool A] [tier]: $X
 [Tool B] [tier]: $Y

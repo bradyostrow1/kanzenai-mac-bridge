@@ -4,8 +4,8 @@ import { VisitorBeacon } from "@/components/VisitorBeacon";
 
 export const metadata = {
   metadataBase: new URL("https://kanzenai.com"),
-  title: "KanzenAI — The complete intelligence brief for real estate agents",
-  description: "Honest, deep reviews and comparisons of CRMs, AI assistants, lead-gen, and transaction tools — written for working real estate agents who don't have time for fluff.",
+  title: "KanzenAI — The complete AI tool brief for solopreneurs and creators",
+  description: "Honest, deep reviews and comparisons of AI software, productivity tools, and automation platforms — written for solopreneurs, creators, and small businesses who don't have time for fluff.",
   alternates: {
     canonical: "https://kanzenai.com",
   },
@@ -13,13 +13,13 @@ export const metadata = {
     type: "website",
     url: "https://kanzenai.com",
     siteName: "KanzenAI",
-    title: "KanzenAI — Reviews for working real estate agents",
-    description: "Honest reviews of CRMs, AI assistants, lead-gen, and transaction tools.",
+    title: "KanzenAI — AI tool reviews for solopreneurs and creators",
+    description: "Honest reviews of AI software, productivity tools, and automation platforms.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "KanzenAI — Reviews for working real estate agents",
-    description: "Honest reviews of CRMs, AI assistants, and lead-gen tools.",
+    title: "KanzenAI — AI tool reviews for solopreneurs and creators",
+    description: "Honest reviews of AI software, productivity tools, and automation platforms.",
   },
 };
 

@@ -89,12 +89,12 @@ async function suggestTopic(coverage: string): Promise<Suggestion> {
     ? `\n\nSTRATEGY EMPHASIS (from Bot 11, treat as a soft steer — don't break the other rules to satisfy it): ${emphasis}`
     : "";
 
-  const system = `You suggest the next article for KanzenAI, an affiliate review site for working real estate agents. Pick a topic that:
+  const system = `You suggest the next article for KanzenAI, an affiliate review site for AI-tool shoppers — solopreneurs, creators, and small businesses choosing AI software, productivity tools, and automation platforms. Pick a topic that:
 1. Does NOT duplicate any topic already covered (titles given below)
-2. Targets a real keyword real-estate agents would search (transactional intent preferred — "best X for Y", "X vs Y")
-3. Fills a sparse category if possible. Categories: CRM, Lead Gen, AI Tools, Marketing, Phone & Calls, Scheduling, Invoicing, Inventory.
-4. Names 3-5 REAL products that exist in the real-estate-tech space (no fictional products)
-5. Uses a distinctive, non-boilerplate title (not "Best X for Real Estate Agents in 2026" — instead something like "Real Estate Y in 2026: A vs B vs C", or "The Guide to X for Working Agents", etc.)${emphasisSection}
+2. Targets a real keyword that solopreneurs, creators, freelancers, indie hackers, or small-business owners would search (transactional intent preferred — "best X for Y", "X vs Y", "AI tool for Z")
+3. Fills a sparse category if possible. Categories: AI Writing, AI Image/Video, AI Voice, AI Coding, Productivity, Automation, CRM, Marketing, Email, Scheduling, Analytics, No-Code, Content, Finance.
+4. Names 3-5 REAL products that exist in the AI-tools / SaaS space (no fictional products). Examples to draw from: ChatGPT, Claude, Notion, Linear, Figma, Cursor, Webflow, ConvertKit, Zapier, Make, Loom, Descript, ElevenLabs, Gamma, Jasper, Copy.ai, Writesonic, Pictory, Synthesia, ClickUp, monday, Airtable, Calendly, Beehiiv, Manychat, etc. (Real-estate vertical tools are also OK if the topic naturally calls for them — but the default audience is the broader AI-tool shopper.)
+5. Uses a distinctive, non-boilerplate title (not "Best X in 2026" — instead something like "X for Solopreneurs in 2026: A vs B vs C", "The Guide to X for Indie Builders", or "X for Creators Who Actually Ship", etc.)${emphasisSection}
 
 Output STRICT JSON with this shape, no prose, no markdown fences:
 {

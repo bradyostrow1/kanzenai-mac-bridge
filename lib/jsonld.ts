@@ -20,7 +20,7 @@ export const ORG_SCHEMA = {
   name: "KanzenAI",
   url: SITE,
   logo: `${SITE}/articles/crm-hero.jpg`,
-  description: "Independent affiliate review site for working real estate agents — CRMs, AI assistants, lead-gen, and transaction tools.",
+  description: "Independent affiliate review site for AI-tool shoppers — solopreneurs, creators, and small businesses. AI software, productivity tools, and automation platforms.",
   email: "hello@kanzenai.com",
   sameAs: [],
 } as const;

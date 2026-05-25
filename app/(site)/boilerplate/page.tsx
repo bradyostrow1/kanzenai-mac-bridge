@@ -105,7 +105,7 @@ export default function BoilerplatePage() {
           <h2 className="display text-4xl mb-8">What you still have to do.</h2>
           <ul className="space-y-4 text-[16px] leading-relaxed text-ink-1">
             <li className="flex gap-3"><span className="text-ink-3">→</span> Bring your own Anthropic, Resend, Pexels, and Vercel keys (all have free tiers).</li>
-            <li className="flex gap-3"><span className="text-ink-3">→</span> Pick your niche. Real estate is hard-coded as the example — swap the topic/brand strings.</li>
+            <li className="flex gap-3"><span className="text-ink-3">→</span> Pick your niche. KanzenAI's AI-tools positioning is the example — swap the topic/brand strings to whatever vertical you're going after.</li>
             <li className="flex gap-3"><span className="text-ink-3">→</span> Apply to affiliate programs in your niche. The system tracks them but can't approve them for you.</li>
             <li className="flex gap-3"><span className="text-ink-3">→</span> X API requires <strong>credits</strong>, not free. Posting is essentially free ($0.0001/post). Search/auto-reply is expensive ($1-5/day). I'll show you which knobs to leave off.</li>
             <li className="flex gap-3"><span className="text-ink-3">→</span> Traffic still takes weeks. The boilerplate doesn't make you visitors — it makes you a publishing engine.</li>

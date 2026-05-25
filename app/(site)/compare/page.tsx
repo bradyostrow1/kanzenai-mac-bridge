@@ -4,7 +4,7 @@ import { listComparisons } from "@/lib/articles";
 
 export const metadata = {
   title: "Head-to-head comparisons · KanzenAI",
-  description: "When you've narrowed it down to two tools — see which one actually wins for working real estate agents.",
+  description: "When you've narrowed it down to two tools — see which one actually wins for solopreneurs, creators, and small businesses.",
 };
 
 export default function CompareIndex() {

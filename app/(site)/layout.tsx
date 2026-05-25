@@ -36,7 +36,7 @@ function Footer() {
       <div className="max-w-[1400px] mx-auto px-8 py-14 text-[14px] text-ink-1 leading-relaxed">
         <div className="display text-xl text-ink-0">KanzenAI</div>
         <p className="mt-3 max-w-2xl">
-          Complete intelligence for working real estate agents. We test the tools, compare
+          Complete intelligence for solopreneurs, creators, and small businesses picking AI tools. We test the tools, compare
           honestly, and earn commission only when you sign up — at no cost to you.
         </p>
         <div className="mt-6 flex gap-7 text-[13px]">

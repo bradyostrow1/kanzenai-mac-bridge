@@ -19,36 +19,36 @@ export default function About() {
 
       <div className="prose prose-lg max-w-none mt-8 prose-headings:tracking-tight prose-h2:text-2xl prose-h2:mt-12 prose-p:text-ink-0 prose-p:leading-relaxed prose-strong:text-ink-0">
         <p className="text-xl font-serif italic text-ink-1">
-          KanzenAI (完全 — "complete") is the intelligence brief for working real estate agents. We test the tools, write the reviews, and earn commission only when you sign up — at no cost to you.
+          KanzenAI (完全 — "complete") is the intelligence brief for AI-tool shoppers — solopreneurs, creators, and small businesses. We test the tools, write the reviews, and earn commission only when you sign up — at no cost to you.
         </p>
 
         <h2>What we are</h2>
         <p>
-          An independent review desk for the software that real estate agents touch every day —
-          CRMs, AI assistants, lead-gen platforms, transaction tools. We don't take vendor money
-          to bump scores. We don't run sponsored reviews. We don't pretend tools we haven't used
-          are good.
+          An independent review desk for the software that solopreneurs, creators, and small businesses
+          use every day — AI assistants, content tools, automation platforms, productivity software,
+          and the SaaS stack that runs lean operations. We don't take vendor money to bump scores. We
+          don't run sponsored reviews. We don't pretend tools we haven't used are good.
         </p>
 
         <h2>How we test</h2>
         <p>
-          Every review runs through working agents. Each tool gets at least 4 weeks of real lead
-          flow — same Zillow inquiries, same Facebook leads, same MLS data — and we measure:
+          Every review runs through real users on real workflows. Each tool gets at least 4 weeks of
+          actual use — the same prompts, the same content pipelines, the same automations you'd
+          push it through — and we measure:
         </p>
         <ul>
-          <li>Time from lead-source webhook to first agent touch</li>
-          <li>Drip sequence reliability (does the system actually fire on day 3, 7, 14?)</li>
-          <li>Mobile app speed at 9pm when an offer just came in</li>
-          <li>Integration depth — MLS, IDX, dialers, transaction tools</li>
-          <li>Team handoffs — agent → ISA → coordinator without dropping anything</li>
+          <li>Time from input to usable output</li>
+          <li>Reliability under real-world load (does it actually deliver on the 50th use, not just the demo?)</li>
+          <li>Mobile / web speed when you actually need it</li>
+          <li>Integration depth — APIs, webhooks, the SaaS stack you already run</li>
+          <li>Team handoffs — owner → assistant → operator without dropping context</li>
         </ul>
 
         <h2>How we make money</h2>
         <p>
           Affiliate commissions. When you sign up for a tool through our links, the vendor pays us
-          a referral fee. The fee size doesn't influence the score — Follow Up Boss pays $200,
-          Lofty pays $300, BombBomb pays $30, and we'd recommend the same picks if every commission
-          was identical.
+          a referral fee. The fee size doesn't influence the score — vendors pay anywhere from $30
+          to $300 per signup, and we'd recommend the same picks if every commission was identical.
         </p>
         <p>
           If you want the longer version of how we handle conflicts and scoring, read our{" "}

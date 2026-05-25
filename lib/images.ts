@@ -54,7 +54,7 @@ export function deriveQuery(brief: ImageBrief): string {
     .filter((w) => w.length > 2)
     .slice(0, 5)
     .join(" ")
-    .trim() || "real estate office";
+    .trim() || "modern workspace laptop";
 }
 
 /** Set of hero filenames already in use by other articles or comparisons.

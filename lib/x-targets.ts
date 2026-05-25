@@ -5,19 +5,21 @@
  * keywords. When a match is found, Claude drafts a substantive reply using
  * data from kanzenai.com articles, and queues it for your one-click approval.
  *
- * Adding accounts: include the X username (no @). Try to pick real-estate
- * coaches, agent influencers, brokerage execs, and industry publications.
+ * Adding accounts: include the X username (no @). Try to pick AI-tool operators,
+ * indie hackers, creator-economy voices, and the official accounts of the
+ * SaaS products KanzenAI reviews.
  */
 export const TARGET_ACCOUNTS: string[] = [
-  "RickyCarruth", // RE coach, posts daily about agent struggles + tools
-  "TomFerry", // biggest RE coach on X
-  "RyanSerhant", // top NYC agent, large following
-  "HousingWire", // industry news
-  "Inman", // industry publication
-  "BarbaraCorcoran", // RE celebrity
-  "LabCoatAgents", // huge RE agent community
-  "RealEstateCake", // tech-focused RE commentary
-  "RealEstateGood", // agent-tools coverage
+  "AnthropicAI",      // Claude / Anthropic
+  "OpenAI",           // GPT
+  "sama",             // Sam Altman
+  "karpathy",         // Andrej Karpathy
+  "goodside",         // Riley Goodside (prompt eng)
+  "swyx",             // AI dev voice
+  "levelsio",         // Pieter Levels — solopreneur / indie hacker
+  "marckohlbrugge",   // BetaList — indie launches
+  "NotionHQ",         // Notion
+  "cursor_ai",        // Cursor AI editor
 ];
 
 /**
@@ -25,52 +27,69 @@ export const TARGET_ACCOUNTS: string[] = [
  * account's tweet, signal we have a substantive reply ready.
  */
 export const REPLY_KEYWORDS: string[] = [
-  // CRM
-  "CRM",
-  "Follow Up Boss",
-  "FUB",
-  "kvCORE",
-  "Lofty",
-  "Chime",
-  "Sierra Interactive",
-  "Real Geeks",
-  // Dialers
-  "Vulcan7",
-  "Mojo Dialer",
-  "RedX",
-  "PhoneBurner",
-  "Espresso Agent",
-  "cold call",
-  // Video / messaging
-  "BombBomb",
+  // AI models / platforms
+  "Claude",
+  "ChatGPT",
+  "GPT-4",
+  "GPT-5",
+  "Anthropic",
+  "OpenAI",
+  "LLM",
+  "prompt engineering",
+  // AI writing
+  "Jasper",
+  "Copy.ai",
+  "Writesonic",
+  "AI writing",
+  // AI image / video / voice
+  "Midjourney",
+  "ElevenLabs",
+  "Descript",
+  "Pictory",
+  "Synthesia",
+  "Runway",
+  "AI voice",
+  "AI video",
+  // AI coding
+  "Cursor",
+  "Copilot",
+  "Cline",
+  "AI coding",
+  // Productivity / SaaS
+  "Notion",
+  "Linear",
+  "Airtable",
+  "ClickUp",
+  "monday",
+  "Calendly",
   "Loom",
-  "Dubb",
-  "Vidyard",
-  "video email",
-  // AI tools
-  "AI assistant",
-  "AI for agents",
-  "Structurely",
-  "AI lead",
-  // ISA / outsourcing
-  "ISA",
-  "Smith.ai",
-  "Verse.io",
-  "Ylopo",
-  // Misc agent tools
-  "Dotloop",
-  "DocuSign",
-  "SkySlope",
-  "QuickBooks",
-  "Realtyzam",
-  "ProspectsPLUS",
-  "Handwrytten",
+  // Automation / no-code
+  "Zapier",
+  "Make",
+  "n8n",
+  "no-code",
+  "automation",
+  "workflow",
+  // Email / creator
+  "ConvertKit",
+  "Beehiiv",
+  "Substack",
+  "newsletter",
+  // Design
+  "Figma",
+  "Framer",
+  "Webflow",
+  // Deployment
+  "Vercel",
+  "Netlify",
   // General-interest categories
-  "lead gen",
-  "real estate tech",
-  "agent tools",
-  "agent stack",
+  "AI tools",
+  "AI stack",
+  "tool stack",
   "tech stack",
+  "solopreneur",
+  "indie hacker",
+  "creator economy",
 ];
 
 /**

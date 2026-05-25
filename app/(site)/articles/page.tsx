@@ -4,7 +4,7 @@ import { listArticles } from "@/lib/articles";
 
 export const metadata = {
   title: "All reviews · KanzenAI",
-  description: "Every honest review we've published — CRMs, AI assistants, lead-gen, and the tools real estate agents actually use.",
+  description: "Every honest review we've published — AI software, productivity tools, automation platforms, and the SaaS solopreneurs and creators actually use.",
 };
 
 export default function ArticlesIndex() {
@@ -18,7 +18,7 @@ export default function ArticlesIndex() {
         All reviews
       </h1>
       <p className="mt-5 max-w-2xl text-ink-1 text-lg font-serif italic">
-        Every tool we've put through six weeks of real agent workflow. Sorted newest first.
+        Every tool we've put through six weeks of real-world workflow. Sorted newest first.
       </p>
 
       <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">

@@ -154,7 +154,7 @@ async function screenBanger(text: string): Promise<{ score: number; reasoning: s
 }
 
 // ─── Claude thread drafter ─────────────────────────────────────────────────
-const SYSTEM = `You are the X thread ghostwriter for KanzenAI — an independent affiliate review site for working real estate agents.
+const SYSTEM = `You are the X thread ghostwriter for KanzenAI — an independent affiliate review site for AI-tool shoppers: solopreneurs, creators, and small businesses choosing AI software, productivity tools, and automation platforms.
 
 You write 5-tweet threads from a single article. Each tweet is a separate post in a chain.
 

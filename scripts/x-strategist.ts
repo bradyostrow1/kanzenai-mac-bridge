@@ -16,7 +16,7 @@
  *      config/x-strategy-changelog.jsonl, ping Telegram one line.
  *
  * Hard rails it cannot cross (enforced in lib/x-strategy.ts validate()):
- *   - NICHE LOCK (must reference real-estate/AI-tools/productivity)
+ *   - NICHE LOCK (must reference AI tools / productivity / automation / solopreneur / creator / small biz)
  *   - VOICE LOCK (no Brady/personal/edgy persona)
  *   - NO RAGE-BAIT (no politics/drama/outrage/cancel terms)
  *   - MONEY METRIC (this script's Claude prompt explicitly optimizes for
@@ -150,10 +150,10 @@ async function askClaudeForProposal(current: XStrategy, scans: Scan[]): Promise<
     }))
   );
 
-  const system = `You are the X growth strategist for KanzenAI, a faceless editorial site about real-estate-tech and AI tools for agents. Your one job: propose tuning the strategy config so the OTHER bots ride what's actually working in the niche this week.
+  const system = `You are the X growth strategist for KanzenAI, a faceless editorial site that reviews AI tools, productivity software, and automation platforms for solopreneurs, creators, and small businesses. Your one job: propose tuning the strategy config so the OTHER bots ride what's actually working in the niche this week.
 
 NON-NEGOTIABLE RULES — failing any means output exactly: ABORT
-  1. NICHE LOCK: stay inside real-estate-tech / AI-tools / agent-productivity.
+  1. NICHE LOCK: stay inside AI tools / productivity / automation / solopreneur / creator / small-business software. Do NOT pivot the account to other verticals.
   2. VOICE LOCK: faceless "KanzenAI Team" voice. Never propose anything edgy / personal / hot-take / Brady-as-a-character.
   3. NO RAGE-BAIT: never recommend politics, drama, outrage, controversy, hot-take formats — even if trending.
   4. MONEY METRIC: optimize for followers + profile clicks + ARTICLE LINK CLICKS. Raw likes / RT vanity is worthless. Replies and impressions are proxies for what drives a profile click (the goal).
@@ -163,7 +163,7 @@ OUTPUT: strict JSON, no prose, no markdown fences. Shape:
 {
   "preferred_post_hours_local": [<2-4 ints in 0..23 — best hours US Eastern (UTC-5) to post>],
   "thread_vs_single_ratio": <0..1 float — share of posts that should be threads>,
-  "topic_emphasis": "<1-2 sentence steer for the topic-picker bot. MUST contain at least one of: 'real estate', 'realtor', 'agent', 'ai', 'tools', 'productivity'. Max 240 chars. Empty string '' is allowed if no clear signal.>",
+  "topic_emphasis": "<1-2 sentence steer for the topic-picker bot. MUST contain at least one of: 'ai', 'tools', 'tool', 'software', 'saas', 'productivity', 'automation', 'workflow', 'no-code', 'solopreneur', 'creator', 'indie', 'small business', 'prompt', 'llm', 'agent'. Max 240 chars. Empty string '' is allowed if no clear signal.>",
   "trending_formats": [<2-4 short strings describing formats getting traction, e.g. "pricing-reveal-single", "tool-teardown-thread">],
   "trending_topics": [<2-4 short topic strings inside the niche>],
   "operator_engagement_top3": [<top 3 operator usernames from the scan by replies-per-impression>],

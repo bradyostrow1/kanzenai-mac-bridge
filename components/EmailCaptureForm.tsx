@@ -54,7 +54,7 @@ export function EmailCaptureForm({
       <div className={variant === "stack" ? "border border-ink-0 bg-bg-1 p-6" : "border border-ink-0 bg-bg-1 p-4"}>
         <div className="text-[11px] uppercase tracking-[0.18em] text-ink-2 mb-1">✓ You're in</div>
         <div className="text-ink-0 text-[15px]">
-          Check your inbox — link to the 2026 Real Estate Tool Stack is on its way.
+          Check your inbox — link to the 2026 AI Tool Stack is on its way.
         </div>
       </div>
     );
@@ -67,12 +67,12 @@ export function EmailCaptureForm({
         <div className="mb-3">
           <div className="text-[10px] uppercase tracking-[0.22em] text-ink-2 mb-1">FREE · NO SPAM</div>
           <h3 className={isStack ? "display text-2xl leading-tight" : "font-bold text-[17px] leading-tight"}>
-            {headline ?? "Get the 2026 Real Estate Tool Stack — free"}
+            {headline ?? "Get the 2026 AI Tool Stack — free"}
           </h3>
         </div>
       )}
       <p className="text-ink-2 text-[14px] mb-4">
-        {sub ?? "One-page pricing breakdown of every CRM, dialer, AI tool, and lead-gen platform agents actually use. Updated monthly."}
+        {sub ?? "One-page pricing breakdown of the AI software, productivity tools, and automation platforms solopreneurs and creators actually use. Updated monthly."}
       </p>
       <form onSubmit={submit} className={isStack ? "flex flex-col sm:flex-row gap-2" : "flex gap-2"}>
         <input

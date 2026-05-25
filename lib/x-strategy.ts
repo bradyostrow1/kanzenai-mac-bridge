@@ -43,8 +43,10 @@ const DEFAULTS_PATH = join(process.cwd(), "config", "x-strategy.default.json");
 // read and the bots fall back to defaults.
 
 const NICHE_LOCK_KEYWORDS = [
-  "real estate", "realtor", "brokerage", "agent",
-  "ai", "tools", "productivity", "saas",
+  "ai", "tools", "tool", "software", "saas",
+  "productivity", "automation", "workflow", "no-code", "no code",
+  "solopreneur", "creator", "indie", "small business", "small biz",
+  "prompt", "llm", "agent",
 ];
 
 const VOICE_LOCK_BANNED = [
@@ -67,7 +69,7 @@ export function validate(c: XStrategy): void {
     if (!NICHE_LOCK_KEYWORDS.some((k) => lower.includes(k))) {
       throw new Error(
         `[x-strategy] HARD RAIL: topic_emphasis must reference the niche ` +
-        `(real-estate / AI-tools / productivity). Got: "${c.topic_emphasis.slice(0, 80)}"`
+        `(AI tools / productivity / automation / solopreneur / creator / small business). Got: "${c.topic_emphasis.slice(0, 80)}"`
       );
     }
   }

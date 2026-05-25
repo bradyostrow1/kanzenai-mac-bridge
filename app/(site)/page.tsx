@@ -18,7 +18,7 @@ export default function Home() {
       <section className="bg-bg-0">
         <div className="max-w-[1400px] mx-auto px-8 pt-4 pb-12">
           <h1 className="display text-[88px] sm:text-[140px] leading-[0.92] text-ink-0">
-            The Complete<br />Real Estate Brief
+            The Complete<br />AI Tool Brief
           </h1>
 
           {/* Hero video block with overlay copy */}
@@ -37,10 +37,10 @@ export default function Home() {
             {/* Bottom-left overlay copy */}
             <div className="absolute bottom-8 left-8 right-8 sm:left-12 sm:bottom-12 max-w-2xl">
               <div className="text-[11px] uppercase tracking-[0.22em] text-bg-0/90 font-semibold">
-                完全 · KANZENAI · For working real estate agents
+                完全 · KANZENAI · For people who pick their own stack
               </div>
               <p className="mt-3 text-bg-0 text-xl sm:text-2xl font-serif leading-snug">
-                Honest reviews of CRMs, AI assistants, and lead-gen tools — tested by us, written for agents who close deals.
+                Honest reviews of AI software, productivity tools, and automation platforms — tested by us, written for solopreneurs, creators, and small businesses.
               </p>
               <div className="mt-5 flex flex-wrap gap-3">
                 <Link href="/articles" className="cta-link">
