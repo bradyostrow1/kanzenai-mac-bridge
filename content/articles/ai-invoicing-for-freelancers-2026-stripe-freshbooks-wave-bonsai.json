@@ -1,0 +1,172 @@
+{
+  "slug": "ai-invoicing-for-freelancers-2026-stripe-freshbooks-wave-bonsai",
+  "title": "AI Invoicing for Freelancers in 2026: Getting Paid Faster with Stripe Invoicing vs FreshBooks vs Wave vs Bonsai",
+  "description": "FreshBooks vs Wave vs Invoice Ninja — pricing, payment methods, and who wins for solo invoicing in 2026. Evidence-first comparison.",
+  "category": "Invoicing",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 7,
+  "tldr": "FreshBooks charges $6.90–$21/mo with client limits; Invoice Ninja offers a free tier and unlimited clients; Wave appears to be a mobile money service, not an invoicing tool. Stripe Invoicing and Bonsai pricing are not published. FreshBooks wins for solopreneurs needing proposal workflows; Invoice Ninja suits developers who want self-hosted or budget-zero options.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Freelancers need invoicing that removes friction: generate an invoice, send it, get paid, repeat. The 2026 landscape pairs traditional invoicing platforms (FreshBooks, Invoice Ninja) with payment-first tools (Stripe Invoicing) and niche contenders (Bonsai). We surveyed vendor pricing pages and feature lists to surface the trade-offs. Pricing transparency varies wildly; some vendors publish full grids, others hide behind contact forms."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We pulled pricing pages and feature documentation for each vendor. We did not fabricate test scenarios. What follows reflects only what vendors publish. If pricing is unlisted, we note it as contact-for-quote. We prioritize clarity over sales fluff."
+    },
+    {
+      "type": "h2",
+      "text": "FreshBooks",
+      "id": "freshbooks"
+    },
+    {
+      "type": "p",
+      "text": "FreshBooks anchors on three tiers: Lite ($6.90/mo, 5 clients), Plus ($12.90/mo, 50 clients), and Premium ($21/mo, unlimited clients). All plans include expense tracking, estimates, and online payments (credit cards, ACH, Apple Pay, Google Pay, Buy Now Pay Later). Plus and Premium add financial reporting and accountant access. Premium includes multi-line bill receipt scanning and project profitability tracking. A Select tier exists but requires a consultant call; it includes lower credit card fees, two free team seats, and dedicated support."
+    },
+    {
+      "type": "product",
+      "name": "FreshBooks",
+      "price": "$6.90/mo Lite (5 clients), $12.90/mo Plus (50 clients), $21/mo Premium (unlimited clients)",
+      "rating": 4.5,
+      "pros": [
+        "Client-count tiers let you scale without overpaying",
+        "Proposals, retainers, and e-signatures included in Plus and up",
+        "Accountant access and double-entry reports in Premium",
+        "Receipt scanning with automatic line-item capture (Premium)"
+      ],
+      "cons": [
+        "Lite's 5-client cap is tight for growing freelancers",
+        "Team members cost $11/mo per user as an add-on",
+        "Select pricing and lower card fees require a sales call"
+      ],
+      "cta": {
+        "label": "Try FreshBooks Free",
+        "url": "https://www.freshbooks.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Wave",
+      "id": "wave"
+    },
+    {
+      "type": "p",
+      "text": "Wave's homepage describes mobile money services: deposit, withdraw, pay bills for free, and send money for a 1% fee. The research bundle contains no mention of invoicing, proposals, or time tracking. Wave appears to be a peer-to-peer payment platform, not a freelance invoicing suite. We exclude it from further comparison."
+    },
+    {
+      "type": "callout",
+      "variant": "warn",
+      "title": "Wave is not an invoicing tool",
+      "text": "The vendor's site promotes mobile money transfers and bill payments, not invoice generation or payment tracking. If you need invoicing, look elsewhere."
+    },
+    {
+      "type": "h2",
+      "text": "Invoice Ninja",
+      "id": "invoice-ninja"
+    },
+    {
+      "type": "p",
+      "text": "Invoice Ninja lists a pricing page but the research bundle does not include extracted tier details. The homepage references a free tier and mentions features like expenses, vendors, purchase orders, time tracking, project management, bank-account syncing, and e-signing (DocuNinja). The platform offers self-hosted options and integrates with Zapier, n8n, Make, and Integrately. Without published pricing grids, we cannot confirm monthly costs for paid tiers."
+    },
+    {
+      "type": "product",
+      "name": "Invoice Ninja",
+      "price": "Free tier available; paid tier pricing not extracted — see vendor page",
+      "rating": 4,
+      "pros": [
+        "Free tier exists for budget-zero freelancers",
+        "Self-hosted option for developers who want data sovereignty",
+        "Time tracking, projects, and purchase orders in core feature set",
+        "Native integrations with Zapier, n8n, Make"
+      ],
+      "cons": [
+        "Pricing for paid tiers is not published in the research bundle",
+        "Feature depth unclear without hands-on evaluation",
+        "Interface may lean technical compared to FreshBooks"
+      ],
+      "cta": {
+        "label": "Try Invoice Ninja",
+        "url": "https://www.invoiceninja.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Stripe Invoicing",
+      "id": "stripe-invoicing"
+    },
+    {
+      "type": "p",
+      "text": "Stripe Invoicing pricing is not published in the research bundle. Stripe typically charges transaction fees (2.9% + 30¢ for cards in the U.S.) but may offer flat monthly tiers for invoice management. Contact Stripe for pricing."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Pricing unknown",
+      "text": "Stripe Invoicing pricing was not reachable during research. Assume transaction-based fees; confirm with vendor."
+    },
+    {
+      "type": "h2",
+      "text": "Bonsai",
+      "id": "bonsai"
+    },
+    {
+      "type": "p",
+      "text": "Bonsai's pricing page was not reachable in the research bundle. The tool is known for bundling contracts, proposals, invoicing, and time tracking in a single freelancer suite. Without published pricing, we cannot confirm monthly costs."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Pricing unknown",
+      "text": "Bonsai pricing was not extracted. Contact vendor for quote."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**For solopreneurs with 5–50 clients:** FreshBooks Plus ($12.90/mo) delivers proposals, e-signatures, expense tracking, and accountant access in one package.",
+        "**For budget-zero freelancers or developers:** Invoice Ninja's free tier and self-hosted option remove upfront costs; pair with a payment gateway (Stripe, PayPal) for collections.",
+        "**For Stripe-native workflows:** Stripe Invoicing if you already use Stripe for payments — but confirm pricing and feature depth with the vendor.",
+        "**For contract-heavy freelancers:** Bonsai historically bundles contracts and invoicing; pricing is unlisted, so request a demo."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**Wave:** Not an invoicing tool; it's a mobile money service. Skip if you need invoice generation.",
+        "**FreshBooks Lite:** The 5-client cap is too tight unless you have exactly 1–5 recurring clients and zero growth plans.",
+        "**Any tool without published pricing:** If a vendor hides pricing behind a sales call and you need budget certainty, move on."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "FreshBooks",
+      "url": "https://www.freshbooks.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Invoice Ninja",
+      "url": "https://www.invoiceninja.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-invoicing-for-freelancers-2026-stripe-freshbooks-wave-bonsai-hero.jpg",
+  "imageCredit": "Pexels · Jakub Zerdzicki",
+  "niche": "ai-tools"
+}

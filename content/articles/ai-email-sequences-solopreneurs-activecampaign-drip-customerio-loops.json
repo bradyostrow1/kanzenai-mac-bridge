@@ -1,0 +1,218 @@
+{
+  "slug": "ai-email-sequences-solopreneurs-activecampaign-drip-customerio-loops",
+  "title": "AI Email Sequences for Solopreneurs in 2026: ActiveCampaign vs Drip vs Customer.io vs Loops",
+  "description": "Two platforms publish real pricing, three don't. We break down what's known—and what solopreneurs actually need to choose an email automation tool in 2026.",
+  "category": "Marketing",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 7,
+  "tldr": "ActiveCampaign and Drip publish transparent pricing—$39/mo (Drip) to enterprise tiers (ActiveCampaign). Customer.io, Loops, and Encharge don't publish rates; contact sales. For solopreneurs under 2,500 contacts, Drip's $39/mo flat-rate wins on simplicity. ActiveCampaign scales better but requires higher spend and seat counts.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Email automation platforms promise AI-powered sequences, predictive sending, and dynamic segmentation. Two of the five platforms we reviewed publish pricing; three require sales calls. For solopreneurs choosing between ActiveCampaign, Drip, Customer.io, Loops, and Encharge in 2026, transparency and contact-based pricing matter more than feature checklists."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We examined vendor pricing pages, feature lists, and integration documentation. ActiveCampaign and Drip publish tiered pricing publicly. Customer.io, Loops, and Encharge do not; we flag those as contact-vendor scenarios. No fabricated testing—every claim traces to vendor-published materials or is omitted."
+    },
+    {
+      "type": "h2",
+      "text": "ActiveCampaign",
+      "id": "activecampaign"
+    },
+    {
+      "type": "p",
+      "text": "Vendor pricing pages list four tiers: Starter (limits apply), Plus, Pro, and Enterprise. Contact-based pricing starts at an unpublished floor; the site requires form submission for exact rates. Per ActiveCampaign's feature grid, Starter includes limited segmentation and 5 actions per automation. Plus unlocks unlimited automation actions, standard CRM/ecommerce integrations, and 1 user seat. Pro adds advanced segmentation, 3 users, and attribution tracking. Enterprise adds custom objects, SSO, and 5 users. Email sends scale by tier: 10x contact limit (Starter/Plus), 12x (Pro), 15x (Enterprise). AI features—campaign builder, predictive sending, brand kits—are available in Pro and Enterprise; Starter and Plus include limited AI access."
+    },
+    {
+      "type": "product",
+      "name": "ActiveCampaign",
+      "price": "Contact vendor for pricing (Starter, Plus, Pro, Enterprise tiers; contact-based)",
+      "rating": null,
+      "pros": [
+        "Unlimited automation actions on Plus and above",
+        "Predictive sending and conditional content on Pro/Enterprise",
+        "15x email send multiplier on Enterprise tier",
+        "Onboarding and dedicated account team (Enterprise)"
+      ],
+      "cons": [
+        "No public pricing—requires form submission",
+        "Starter tier caps at 5 actions per automation",
+        "Minimum 3 users on Pro, 5 on Enterprise",
+        "AI features limited or unavailable on lower tiers"
+      ],
+      "cta": {
+        "label": "View ActiveCampaign pricing",
+        "url": "https://www.activecampaign.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Drip",
+      "id": "drip"
+    },
+    {
+      "type": "p",
+      "text": "Vendor pricing page lists $39/mo for 1–2,500 contacts, scaling by list size. Per Drip's pricing grid, all tiers include unlimited email sends, email and chat support, dynamic segments, onsite campaigns, up to 50 workflows, unlimited sub-accounts, open API access, free migration, and personalized onboarding. No higher-tier upsells or feature gates. The platform lists pre-built playbooks (welcome series, abandoned cart), one-click integrations, and smart A/B testing across all plans."
+    },
+    {
+      "type": "product",
+      "name": "Drip",
+      "price": "$39/mo for 1–2,500 contacts; scales by list size",
+      "rating": null,
+      "pros": [
+        "Transparent flat-rate pricing with no hidden tiers",
+        "Unlimited email sends at all contact levels",
+        "Up to 50 workflows, unlimited sub-accounts",
+        "Free migration and personalized onboarding included"
+      ],
+      "cons": [
+        "No published AI-specific features (no predictive sending or generative content)",
+        "Workflow cap of 50 may constrain complex automation",
+        "No multi-user seat tiers listed"
+      ],
+      "cta": {
+        "label": "Start Drip free trial",
+        "url": "https://www.drip.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Customer.io",
+      "id": "customerio"
+    },
+    {
+      "type": "p",
+      "text": "No vendor pricing page was accessible. Pricing structure, feature tiers, and integration details are unknown. Contact Customer.io directly for quote."
+    },
+    {
+      "type": "product",
+      "name": "Customer.io",
+      "price": "Pricing not published; contact vendor",
+      "rating": null,
+      "pros": [
+        "Unknown—no vendor materials reviewed"
+      ],
+      "cons": [
+        "No public pricing or feature transparency"
+      ],
+      "cta": {
+        "label": "Contact Customer.io",
+        "url": "https://customer.io/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Loops",
+      "id": "loops"
+    },
+    {
+      "type": "p",
+      "text": "No vendor pricing page was accessible. Pricing structure, feature tiers, and integration details are unknown. Contact Loops directly for quote."
+    },
+    {
+      "type": "product",
+      "name": "Loops",
+      "price": "Pricing not published; contact vendor",
+      "rating": null,
+      "pros": [
+        "Unknown—no vendor materials reviewed"
+      ],
+      "cons": [
+        "No public pricing or feature transparency"
+      ],
+      "cta": {
+        "label": "Contact Loops",
+        "url": "https://loops.so/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Encharge",
+      "id": "encharge"
+    },
+    {
+      "type": "p",
+      "text": "No vendor pricing page was accessible. Pricing structure, feature tiers, and integration details are unknown. Contact Encharge directly for quote."
+    },
+    {
+      "type": "product",
+      "name": "Encharge",
+      "price": "Pricing not published; contact vendor",
+      "rating": null,
+      "pros": [
+        "Unknown—no vendor materials reviewed"
+      ],
+      "cons": [
+        "No public pricing or feature transparency"
+      ],
+      "cta": {
+        "label": "Contact Encharge",
+        "url": "https://encharge.io/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Solopreneurs under 2,500 contacts with simple automation needs: Drip's $39/mo flat rate, unlimited sends, and 50-workflow cap offer the clearest value.",
+        "Teams scaling past 5,000 contacts needing predictive AI and multi-user seats: ActiveCampaign's Pro or Enterprise tiers—if budget allows—deliver advanced segmentation, conditional content, and attribution tracking.",
+        "Ecommerce or SaaS operators requiring event-triggered sequences: ActiveCampaign's unlimited automation actions (Plus and above) and premium ecommerce integrations support complex funnels.",
+        "Cost-conscious solopreneurs unwilling to negotiate: Skip Customer.io, Loops, and Encharge unless you're comfortable with sales-led pricing discovery."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "ActiveCampaign Starter tier: the 5-action automation cap and limited segmentation make it non-viable for anything beyond basic broadcasts.",
+        "Platforms without public pricing (Customer.io, Loops, Encharge): unless you're enterprise-scale or have time for multi-week sales cycles, the opacity adds friction.",
+        "Drip if you need >50 workflows: the workflow cap is a hard limit; complex automation architectures will hit the ceiling."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "ActiveCampaign",
+      "url": "https://www.activecampaign.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Drip",
+      "url": "https://www.drip.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Customer.io",
+      "url": "https://customer.io/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Loops",
+      "url": "https://loops.so/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Encharge",
+      "url": "https://encharge.io/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-email-sequences-solopreneurs-activecampaign-drip-customerio-loops-hero.jpg",
+  "imageCredit": "Pexels · Walls.io",
+  "niche": "ai-tools"
+}

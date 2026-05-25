@@ -1,0 +1,180 @@
+{
+  "slug": "ai-podcast-editing-for-creators-2026",
+  "title": "AI Podcast Editing for Creators in 2026: Descript vs Auphonic vs Cleanvoice vs Adobe Podcast",
+  "description": "Pricing, features, and trade-offs for Descript, Auphonic, Riverside, and others. Evidence-first review for solo creators choosing AI podcast tools.",
+  "category": "AI Tools",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 8,
+  "tldr": "Descript dominates text-based editing at $24–50/mo with video + AI speech; Auphonic wins automated audio cleanup at €9–45/mo recurring; Riverside combines recording + editing at $24–34/mo with 4K capability. Cleanvoice and Adobe Podcast data unavailable — research shows unrelated services.",
+  "body": [
+    {
+      "type": "p",
+      "text": "AI podcast editing tools in 2026 split into three camps: text-based video editors with audio cleanup (Descript), automated audio post-production engines (Auphonic), and recording-plus-editing platforms (Riverside). Pricing spans €9/mo for pure audio processing to $79/mo for multistream webinar features. Cleanvoice research returned a TeamSpeak hosting service unrelated to podcast editing; Adobe Podcast research returned a construction blog unrelated to Adobe's audio tools. We cover only products with verifiable 2026 pricing and feature claims."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We extracted pricing and feature claims directly from vendor websites accessed May 2026. All claims cite published pricing pages or feature lists. We did not fabricate testing methodology, run personal tests, or invent conversion metrics. If something isn't documented in vendor materials, we note the gap."
+    },
+    {
+      "type": "h2",
+      "text": "Descript",
+      "id": "descript"
+    },
+    {
+      "type": "p",
+      "text": "Descript positions as a text-based video and audio editor with AI co-editing features. Per the vendor's pricing page, plans range $16/mo Hobbyist (10 media hours, 400 AI credits, 1080p export) to $50/mo Business (40 media hours, 1500 AI credits, 4K export, team brand controls). The Creator plan ($24/mo, 30 media hours) is flagged \"Most Popular.\" Annual billing saves up to 35%; free tier offers 60 minutes/month with watermark. AI tools include Studio Sound, Remove Filler Words, Create Clips, AI Speech with custom voice clones, Underlord AI co-editor, and video regeneration. Multitrack audio editing and transcription in 25 languages are standard. Dynamic captions, transitions, and stock media library access come with paid plans."
+    },
+    {
+      "type": "product",
+      "name": "Descript",
+      "price": "$24/mo Creator (30 hrs), $50/mo Business (40 hrs), annual saves 35%",
+      "rating": 0,
+      "pros": [
+        "Text-based editing for video and audio",
+        "AI Speech custom voice clones included",
+        "Multitrack transcription in 25 languages",
+        "Underlord AI co-editor for automated edits",
+        "4K export on Business plan"
+      ],
+      "cons": [
+        "Media hours cap requires top-ups for heavy users",
+        "AI credit system separate from media hours",
+        "Free tier includes watermark",
+        "Pricing complexity with two usage metrics (hours + credits)"
+      ],
+      "cta": {
+        "label": "Try Descript",
+        "url": "https://www.descript.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Auphonic",
+      "id": "auphonic"
+    },
+    {
+      "type": "p",
+      "text": "Auphonic is an automated audio post-production service. According to the vendor's pricing page, free tier offers 2 hours/month with a jingle; recurring plans range €9/mo (9 hrs, plan S) to €250/mo (250 hrs, plan XXL) monthly billing, with 20% discount on annual. One-time credit packs start at 5 hours. Algorithms include Intelligent Leveler, Noise & Reverb Reduction, Filtering/AutoEQ, Loudness normalization, and Filler/Silence cutting. Speech-to-text, automatic shownotes, and video support require paid plans. Multitrack productions under 20 minutes allowed on free; unlimited on paid. Billing calculated per millisecond of processed audio, 3-minute minimum per production. Watch folders and batch productions restricted to annual/business tiers."
+    },
+    {
+      "type": "product",
+      "name": "Auphonic",
+      "price": "€9/mo (9 hrs) to €250/mo (250 hrs) recurring, 20% off annual; free 2 hrs/mo",
+      "rating": 0,
+      "pros": [
+        "Automated loudness normalization and noise reduction",
+        "Pay-per-hour pricing scales for occasional users",
+        "One-time credits never expire",
+        "API access on all paid plans",
+        "Multitrack algorithm support"
+      ],
+      "cons": [
+        "No speech-to-text on free tier",
+        "3-minute minimum billing per production",
+        "Watch folders and batch processing only on annual plans",
+        "Free tier includes jingle"
+      ],
+      "cta": {
+        "label": "Try Auphonic",
+        "url": "https://www.auphonic.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Riverside",
+      "id": "riverside"
+    },
+    {
+      "type": "p",
+      "text": "Riverside combines recording, editing, and live streaming. Per the vendor's pricing page, Pro plan is $24/mo annual ($288/yr), offering 15 hours/month multitrack recording, up to 4K video, 48kHz audio, unlimited text-based editing, AI tools (Magic Audio, transcriptions, filler word removal), and podcast publishing. Live plan ($34/mo annual, $408/yr) adds HD multistreaming to unlimited destinations and audience engagement tools. Webinar plan ($79/mo annual, $408/yr) hosts up to 100 registrants with lead capture and HubSpot integration. Free tier includes 2 hours one-off multitrack recording, 720p video, and Riverside watermark. Business plan (custom pricing) offers unlimited multitrack recording, up to 10,000 webinar registrants, SSO, and SOC2/ISO27001 certification."
+    },
+    {
+      "type": "product",
+      "name": "Riverside",
+      "price": "$24/mo Pro (15 hrs multitrack), $34/mo Live (HD streaming), $79/mo Webinar; annual billing",
+      "rating": 0,
+      "pros": [
+        "Records up to 4K video with separate tracks",
+        "Integrated text-based editor and AI tools",
+        "Podcast hosting and analytics included",
+        "Multistreaming to unlimited destinations (Live plan)",
+        "Webinar lead capture with HubSpot integration"
+      ],
+      "cons": [
+        "15-hour monthly cap on Pro requires upgrade for volume",
+        "4K recording only on Pro and above",
+        "Free tier limited to 2 hours total (not monthly)",
+        "Watermark on free exports"
+      ],
+      "cta": {
+        "label": "Try Riverside",
+        "url": "https://www.riverside.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Cleanvoice and Adobe Podcast: Data unavailable",
+      "id": "cleanvoice-adobe-podcast"
+    },
+    {
+      "type": "p",
+      "text": "Research for Cleanvoice returned a Russian-language TeamSpeak/Mumble/Ventrilo voice server hosting service with no connection to podcast editing. Adobe Podcast research returned adobepodcast.com, a blog about Adobe building restoration in New Mexico, unrelated to Adobe's audio editing tools. No verifiable 2026 pricing or feature data exists in the provided research bundle for either product as podcast editing platforms."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "For video podcasters editing in text: Descript Creator ($24/mo, 30 hrs) — text-based editing, AI speech clones, and 4K export on Business plan justify the premium.",
+        "For audio-only automated cleanup: Auphonic S (€9/mo, 9 hrs) — recurring credits reset monthly; one-time packs work for seasonal production bursts.",
+        "For remote recording + editing workflow: Riverside Pro ($24/mo annual, 15 hrs multitrack) — records separate tracks at 4K, includes text editor and AI tools in one platform.",
+        "For live streaming + podcast recording: Riverside Live ($34/mo annual) — multistream to unlimited destinations with audience engagement tools.",
+        "For webinars with lead capture: Riverside Webinar ($79/mo annual) — HubSpot integration and up to 100 registrants; Business plan scales to 10,000."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Cleanvoice (as researched) — the service in search results is voice server hosting, not podcast editing.",
+        "Adobe Podcast (as researched) — the URL returned a construction blog; no verifiable Adobe audio product pricing or features in the research bundle.",
+        "Descript Free if you need watermark-free exports — the 60-minute/month cap and mandatory watermark limit professional use; $16/mo Hobbyist removes watermark.",
+        "Auphonic Free for client deliverables — 2-hour monthly limit includes a jingle; €9/mo S plan removes it and triples capacity.",
+        "Riverside Free for ongoing production — 2-hour total (not monthly) cap exhausts quickly; $24/mo Pro offers 15 hours/month and removes watermark."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Descript",
+      "url": "https://www.descript.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Auphonic",
+      "url": "https://www.auphonic.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Riverside",
+      "url": "https://www.riverside.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-podcast-editing-for-creators-2026-hero.jpg",
+  "imageCredit": "Pexels · Benjamin  Dominguez",
+  "niche": "ai-tools"
+}
