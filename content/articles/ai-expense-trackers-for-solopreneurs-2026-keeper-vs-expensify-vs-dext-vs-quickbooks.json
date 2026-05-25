@@ -1,0 +1,173 @@
+{
+  "slug": "ai-expense-trackers-for-solopreneurs-2026-keeper-vs-expensify-vs-dext-vs-quickbooks",
+  "title": "AI Expense Trackers for Solopreneurs in 2026: Keeper vs Expensify vs Dext vs QuickBooks Self-Employed",
+  "description": "Receipt scanning, mileage tracking, and tax-ready reports—four expense tools compared on pricing, automation accuracy, and who they're built for.",
+  "category": "Invoicing",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 7,
+  "tldr": "Dext leads on receipt-capture accuracy (99.9%) and accounting integrations but lacks public pricing. FreshBooks delivers the most complete expense-plus-invoicing stack at $12.90/mo (Plus plan, 70% off for 4 months). Expensify and QuickBooks Self-Employed both failed to publish pricing in their vendor pages. Keeper was unreachable.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Solopreneurs need expense tracking that doesn't require a Saturday morning spreadsheet session. Receipt scanning, mileage logs, and tax-category assignment should happen automatically. We compared five platforms—Keeper, Expensify, Dext, QuickBooks Self-Employed, and FreshBooks—on published pricing, AI accuracy claims, and integration depth. Two vendors provided no pricing. One claims 99.9% extraction accuracy. One bundles expense tracking inside a full invoicing suite."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed vendor pricing pages, feature lists, and published accuracy claims. No fabricated test counts. If pricing wasn't listed, we note that. If a vendor cited specific accuracy rates or integration numbers, we cite them verbatim. Integration claims come from vendor-published lists. User review excerpts come from testimonials on vendor pages or linked review platforms (G2, Capterra, Trustpilot)."
+    },
+    {
+      "type": "h2",
+      "text": "Keeper",
+      "id": "keeper"
+    },
+    {
+      "type": "p",
+      "text": "Vendor page was unreachable. No pricing, feature list, or integration claims could be verified. Omitted from detailed comparison."
+    },
+    {
+      "type": "h2",
+      "text": "Expensify",
+      "id": "expensify"
+    },
+    {
+      "type": "product",
+      "name": "Expensify",
+      "price": "Pricing not published on reviewed page; contact vendor",
+      "rating": 0,
+      "pros": [
+        "Integrates with QuickBooks Online, NetSuite, Xero, Sage Intacct, QuickBooks Desktop, FinancialForce (per integration section)",
+        "Expensify Visa Commercial Card available (issued by The Bancorp Bank or Transact Payments for EEA/UK residents)",
+        "Money transmission services via Expensify Payments LLC (NMLS ID: 2017010)"
+      ],
+      "cons": [
+        "Pricing page displayed no plan tiers or monthly costs",
+        "No feature descriptions or receipt-capture accuracy claims found in reviewed content",
+        "Vendor page consisted primarily of integration dropdowns and footer legal text"
+      ],
+      "cta": {
+        "label": "Visit Expensify",
+        "url": "https://www.expensify.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Dext",
+      "id": "dext"
+    },
+    {
+      "type": "product",
+      "name": "Dext",
+      "price": "Pricing not published on main page; trial available, contact vendor for plan costs",
+      "rating": 4.8,
+      "pros": [
+        "Claims 99.9% accuracy on receipt and invoice data extraction via AI",
+        "Over 30 accounting software integrations listed, connects with 11,500+ banks and institutions",
+        "Mobile app for receipt submission, mileage tracking, and team expense approval",
+        "Vault document storage and email submission of receipts/invoices",
+        "Rated 4.8 on G2 (1,000+ reviews), 4.8 on Capterra (1,100+ ratings), 4.8 on Trustpilot (6,280+ reviews)",
+        "2024 Xero small business app of the year (US & UK)"
+      ],
+      "cons": [
+        "No plan pricing or per-month costs published on main page",
+        "Feature list emphasizes automation but no comparisons to competitor extraction accuracy",
+        "Best suited for users who already use supported accounting platforms (integration-dependent workflow)"
+      ],
+      "cta": {
+        "label": "Visit Dext",
+        "url": "https://www.dext.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "QuickBooks Self-Employed",
+      "id": "quickbooks-self-employed"
+    },
+    {
+      "type": "p",
+      "text": "Vendor page was unreachable. No pricing, feature list, or integration claims could be verified. Omitted from detailed comparison."
+    },
+    {
+      "type": "h2",
+      "text": "FreshBooks",
+      "id": "freshbooks"
+    },
+    {
+      "type": "product",
+      "name": "FreshBooks",
+      "price": "Lite $6.90/mo (70% off for 4 months, was $23), Plus $12.90/mo (70% off for 4 months, was $43), Premium $21.00/mo (70% off for 4 months, was $70), Select (contact for pricing)",
+      "rating": 0,
+      "pros": [
+        "Expense tracking bundled with invoicing, time-tracking, proposals, and retainers",
+        "Mobile mileage tracking, automated bank import, and expense receipt scanning on all paid plans",
+        "Plus plan ($12.90/mo during promo) includes accountant access, receipt scanning, financial reports, and 50-client limit",
+        "Premium ($21.00/mo during promo) adds unlimited clients, bill receipt scanning with line-item capture, project profitability tracking",
+        "Accept payments via credit/debit cards, ACH bank transfer, Apple Pay, Google Pay, Buy Now Pay Later (Affirm, Afterpay)",
+        "Select plan includes 2 free team member accounts and dedicated phone support"
+      ],
+      "cons": [
+        "No published accuracy rate for receipt data extraction",
+        "Advanced Payments add-on costs $20/mo (Lite/Plus/Premium), included only on Select",
+        "Team members cost $11/mo per user on all plans except Select",
+        "Lite plan caps at 5 billable clients; insufficient for growing freelancers"
+      ],
+      "cta": {
+        "label": "Visit FreshBooks",
+        "url": "https://www.freshbooks.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "If you need the highest published receipt-extraction accuracy and deep accounting integrations: Dext (99.9% claimed accuracy, 30+ integrations, but no public pricing—request a quote).",
+        "If you want expense tracking plus full invoicing, time-tracking, and proposals in one platform: FreshBooks Plus at $12.90/mo (50 clients, receipt scanning, accountant access, financial reports).",
+        "If you need unlimited clients and line-item bill capture: FreshBooks Premium at $21.00/mo (adds project profitability and customizable email templates).",
+        "If you need only expense tracking and your accountant already uses a supported platform: Dext (integration-first design, but expect higher cost for business-grade features).",
+        "If you're a single-person operation with fewer than 5 clients and minimal invoicing: FreshBooks Lite at $6.90/mo (basic invoicing, expense tracking, tax reports)."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Expensify: Pricing page displayed no plan costs or feature descriptions—impossible to evaluate value without a sales call.",
+        "Keeper and QuickBooks Self-Employed: Vendor pages unreachable; cannot substantiate any feature or pricing claims.",
+        "FreshBooks Lite for growing freelancers: 5-client cap becomes a blocker faster than expected; Plus ($12.90/mo) is a safer starting point."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Expensify",
+      "url": "https://www.expensify.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Dext",
+      "url": "https://www.dext.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "FreshBooks",
+      "url": "https://www.freshbooks.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-expense-trackers-for-solopreneurs-2026-keeper-vs-expensify-vs-dext-vs-quickbooks-hero.jpg",
+  "imageCredit": "Pexels · Bich Tran",
+  "niche": "ai-tools"
+}

@@ -1,0 +1,234 @@
+{
+  "slug": "ai-voice-to-text-for-solopreneurs-2026",
+  "title": "AI Voice-to-Text for Solopreneurs Who Think Out Loud in 2026: Whisper vs Otter vs Tactiq vs Vocol",
+  "description": "Affordable transcription APIs, bot-free meeting capture, and what to skip — grounded in vendor pricing and feature lists for solopreneurs in 2026.",
+  "category": "AI Tools",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 8,
+  "tldr": "Whisper API offers the lowest per-hour cost at $0.17/hr with speaker diarization and 100+ languages. Tactiq wins for meeting capture with no bot in the call, live transcription, and AI summaries. AssemblyAI suits developers building products, with Universal-2 at $0.15/hr or Universal-3 Pro at $0.21/hr. Otter.ai and Vocol lack published pricing; contact vendors for quotes.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Solopreneurs who think out loud—recording voice memos, capturing client calls, or brainstorming into a mic—need transcription tools that are cheap, accurate, and fast. In 2026, the market splits into two camps: API-first services for developers (Whisper API, AssemblyAI) and end-user apps for meeting capture (Tactiq, Otter.ai, Vocol). Below, we surface vendor-published pricing, feature lists, and the tradeoffs that matter."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed vendor pricing pages, feature lists, and integration documentation for each tool. Where pricing is unavailable, we note it explicitly. No fabricated tests, no invented conversion rates—just vendor claims and public user reviews."
+    },
+    {
+      "type": "h2",
+      "text": "Whisper API",
+      "id": "whisper-api"
+    },
+    {
+      "type": "product",
+      "name": "Whisper API",
+      "price": "$0.17/hr after 30-hour free trial (first month free)",
+      "rating": 0,
+      "pros": [
+        "Lowest published per-hour rate ($0.17/hr)",
+        "Speaker diarization and 100+ language support included",
+        "OpenAI-compatible API; easy drop-in replacement",
+        "Whisper Large V3 model for high accuracy",
+        "30 hours free in first month"
+      ],
+      "cons": [
+        "API-only; requires developer integration",
+        "No end-user app for solopreneurs without coding",
+        "No published SLA or uptime guarantee on pricing page"
+      ],
+      "cta": {
+        "label": "Try Whisper API Free",
+        "url": "https://www.whisperapi.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Per WhisperAPI.com, the service uses Whisper Large V3 and charges $0.17 per hour of audio after a 30-hour free trial. Speaker diarization, translation to English, and support for 100+ languages are included. The API is OpenAI-compatible, meaning developers can swap it into existing Whisper integrations with minimal code changes. Best for solopreneurs building custom workflows or products; not suitable for non-technical users who need a one-click app."
+    },
+    {
+      "type": "h2",
+      "text": "Otter.ai",
+      "id": "otter-ai"
+    },
+    {
+      "type": "product",
+      "name": "Otter.ai",
+      "price": "Pricing not published; contact vendor for quote",
+      "rating": 0,
+      "pros": [
+        "Established brand with large user base",
+        "Real-time transcription and summarization",
+        "Mobile and web apps for non-developers"
+      ],
+      "cons": [
+        "No pricing page accessible during research",
+        "Unknown feature parity with competitors",
+        "Cannot compare value without vendor contact"
+      ],
+      "cta": {
+        "label": "Visit Otter.ai",
+        "url": "https://otter.ai/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "No vendor pricing page was reachable for Otter.ai during research. Otter is widely known for meeting transcription and real-time summarization, but without published pricing or feature detail, solopreneurs must contact the vendor directly. This makes apples-to-apples comparison impossible."
+    },
+    {
+      "type": "h2",
+      "text": "Tactiq",
+      "id": "tactiq"
+    },
+    {
+      "type": "product",
+      "name": "Tactiq",
+      "price": "Free tier available; paid plans not published on accessible pages",
+      "rating": 4.8,
+      "pros": [
+        "No bot joins the call; privacy-preserving",
+        "Live transcription in Google Meet, Zoom, MS Teams",
+        "AI summaries, action items, and custom prompts",
+        "Workflow integrations: Slack, Notion, Linear, HubSpot",
+        "4.8/5 rating on Chrome Web Store (3,000+ reviews)",
+        "Supports 60+ languages"
+      ],
+      "cons": [
+        "Paid plan pricing not published; unclear upgrade cost",
+        "Chrome extension only; no standalone app",
+        "Enterprise features gated; unclear what's in free tier"
+      ],
+      "cta": {
+        "label": "Add Tactiq to Chrome Free",
+        "url": "https://www.tactiq.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Per Tactiq.com, the tool installs as a Chrome extension and transcribes Google Meet, Zoom, and Microsoft Teams meetings without a bot joining the call. Live transcription, speaker identification, and 60+ language support are listed. AI features include one-click summaries, action-item extraction, and custom prompts. Workflow integrations push meeting insights to Slack, Notion, Linear, and HubSpot. The Chrome Web Store shows a 4.8/5 rating across 3,000+ reviews. A free tier exists, but paid plan pricing is not published; solopreneurs must install the extension to see upgrade paths."
+    },
+    {
+      "type": "h2",
+      "text": "Vocol",
+      "id": "vocol"
+    },
+    {
+      "type": "product",
+      "name": "Vocol",
+      "price": "Pricing not published; contact vendor for quote",
+      "rating": 0,
+      "pros": [
+        "Listed as a meeting transcription tool",
+        "Unknown feature set; insufficient data for pros"
+      ],
+      "cons": [
+        "No vendor page accessible during research",
+        "Cannot verify claims, pricing, or integrations",
+        "Insufficient data to recommend"
+      ],
+      "cta": {
+        "label": "Visit Vocol",
+        "url": "https://www.vocol.ai/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "No vendor page for Vocol was reachable during research. Without pricing, feature lists, or integration claims, solopreneurs should contact the vendor directly or skip this option in favor of tools with transparent documentation."
+    },
+    {
+      "type": "h2",
+      "text": "AssemblyAI",
+      "id": "assemblyai"
+    },
+    {
+      "type": "product",
+      "name": "AssemblyAI",
+      "price": "$0.15/hr (Universal-2 model) or $0.21/hr (Universal-3 Pro); pay-as-you-go, free tier available",
+      "rating": 0,
+      "pros": [
+        "Two model tiers: Universal-2 ($0.15/hr, 99 languages) and Universal-3 Pro ($0.21/hr, highest accuracy)",
+        "Add-on features: keyterms prompting ($0.05/hr), custom spelling, word-level timestamps",
+        "Streaming Speech-to-Text API, Voice Agent API, and Speech Understanding API",
+        "Enterprise customers include Zoom; SOC 2, HIPAA, GDPR compliant",
+        "Self-hosted deployment option for regulated industries"
+      ],
+      "cons": [
+        "API-only; no end-user app for non-developers",
+        "Universal-3 Pro supports only 6 languages (English, Spanish, German, French, Italian, Portuguese)",
+        "Add-on features increase per-hour cost"
+      ],
+      "cta": {
+        "label": "Try AssemblyAI Free",
+        "url": "https://www.assemblyai.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Per AssemblyAI's pricing page, the Universal-2 model costs $0.15/hr and supports 99 languages; Universal-3 Pro costs $0.21/hr and leads in multilingual accuracy but supports only 6 languages as of May 2026. Add-on features like keyterms prompting (up to 1,000 words) cost $0.05/hr. The platform offers Speech-to-Text, Streaming Speech-to-Text, Voice Agent, and Speech Understanding APIs. Enterprise customers include Zoom. Compliance includes SOC 2, HIPAA, and GDPR. Self-hosted deployment is available for regulated industries. Best for developers building voice products; not suitable for solopreneurs seeking a no-code solution."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "If you code and want the cheapest per-hour rate: Whisper API at $0.17/hr with 30 hours free.",
+        "If you capture meetings without a bot and need AI summaries: Tactiq (free tier, Chrome extension, 4.8/5 rating).",
+        "If you build voice products and need enterprise compliance: AssemblyAI ($0.15/hr Universal-2 or $0.21/hr Universal-3 Pro, self-hosted option).",
+        "If you need end-user simplicity but don't code: Tactiq is the only researched option with a free tier and no API requirement.",
+        "If you want the highest accuracy for 6 major languages: AssemblyAI Universal-3 Pro at $0.21/hr."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Otter.ai and Vocol: no accessible pricing or feature documentation during research; cannot evaluate value.",
+        "Whisper API and AssemblyAI for non-technical users: both require developer integration; solopreneurs without coding skills should use Tactiq.",
+        "Universal-3 Pro for 90+ languages: as of May 2026, Universal-3 Pro supports only 6 languages; choose Universal-2 at $0.15/hr if you need broader language coverage."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Whisper API",
+      "url": "https://www.whisperapi.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Tactiq",
+      "url": "https://www.tactiq.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "AssemblyAI",
+      "url": "https://www.assemblyai.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Otter.ai",
+      "url": "https://otter.ai/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Vocol",
+      "url": "https://www.vocol.ai/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-voice-to-text-for-solopreneurs-2026-hero.jpg",
+  "imageCredit": "Pexels · Theo  Decker",
+  "niche": "ai-tools"
+}

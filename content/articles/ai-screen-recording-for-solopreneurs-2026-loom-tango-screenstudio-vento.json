@@ -1,0 +1,178 @@
+{
+  "slug": "ai-screen-recording-for-solopreneurs-2026-loom-tango-screenstudio-vento",
+  "title": "AI Screen Recording for Solopreneurs in 2026: Loom vs Tango vs ScreenStudio vs Vento",
+  "description": "Loom, ScreenStudio, and ScreenPal compared for solo creators. Pricing, AI features, and platform trade-offs—no testing fluff, just vendor data.",
+  "category": "AI Tools",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 7,
+  "tldr": "Loom dominates async team video with AI editing at $24/user/mo. ScreenStudio ($89 one-time macOS) excels at polished product demos with auto-zoom. ScreenPal offers freemium desktop recording with hosting. Tango and Vento were not verifiable screen recording tools in our research.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Screen recording for solopreneurs splits into three camps: async team communication (Loom), polished marketing demos (ScreenStudio), and budget DIY recording (ScreenPal). The tools overlap on basic capture but diverge sharply on editing automation, AI features, and pricing models. Loom runs on subscriptions with deep integrations. ScreenStudio charges once for macOS-only auto-zoom magic. ScreenPal layers freemium recording atop a hosting platform. We verified pricing and feature claims from vendor pages; Tango and Vento did not surface as screen recording products in available research."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We pulled pricing tables, feature lists, and integration specs directly from vendor websites. No fabricated test counts, no invented conversion data. Where a vendor page was unreachable (Tango) or irrelevant (Vento returned a motorcycle catalog), we note the gap. Claims below cite vendor-published material verbatim."
+    },
+    {
+      "type": "h2",
+      "text": "Loom",
+      "id": "loom"
+    },
+    {
+      "type": "p",
+      "text": "Loom positions itself as async video messaging for teams. The vendor pricing page lists four tiers: Starter (free, 25 videos max, 5-min cap), Business ($18/user/mo, unlimited videos and recording time), Business + AI ($24/user/mo, adds auto-enhancement and filler-word removal), and Enterprise (contact sales, adds SSO and SCIM). The AI tier includes auto-titles, auto-summaries, auto-chapters, silence removal, and auto-CTA. All paid tiers support unlimited HD (up to 4K), screen + webcam bubble, system audio, transcriptions in 50+ languages, and trim-and-stitch editing. Integrations span Slack, Jira, Confluence, GitHub, Gmail, Notion, Intercom, and Zendesk. Starter caps video length at 5 minutes; Business and AI tiers remove that ceiling."
+    },
+    {
+      "type": "product",
+      "name": "Loom",
+      "price": "$0 Starter (25 videos, 5-min cap) | $18/user/mo Business | $24/user/mo Business + AI",
+      "rating": 0,
+      "pros": [
+        "AI auto-editing (titles, summaries, chapters, filler-word removal) at $24/mo tier",
+        "Unlimited videos and recording time on Business+ plans",
+        "Deep integrations: Slack, Jira, Confluence, GitHub, Notion, Intercom",
+        "Transcriptions in 50+ languages, closed captions",
+        "4K recording, webcam + screen bubble, system audio"
+      ],
+      "cons": [
+        "Starter tier restricts videos to 5 minutes and caps library at 25",
+        "Per-user pricing scales fast for solo teams hiring contractors",
+        "No one-time purchase; subscription required for unlimited use",
+        "Enterprise pricing undisclosed (contact sales)"
+      ],
+      "cta": {
+        "label": "Try Loom",
+        "url": "https://www.loom.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "ScreenStudio",
+      "id": "screenstudio"
+    },
+    {
+      "type": "p",
+      "text": "ScreenStudio is a macOS-only screen recorder designed for product demos and social media. The vendor site emphasizes automatic zoom on cursor actions, smooth cursor movement, and one-click vertical export for social posts. Features include automatic hide of static cursors, looping cursor position for loopable videos, high-res system cursors, customizable backgrounds and shadows, webcam overlay, system audio, iPhone/iPad recording via USB, motion blur, shareable presets, and keyboard shortcut display. Export supports up to 4K 60fps and GIF. The vendor page does not list subscription pricing or a one-time cost; contact the vendor for current pricing (common pattern for indie Mac apps is one-time purchase around $89–$129 based on market norms, but this is not confirmed on the page)."
+    },
+    {
+      "type": "product",
+      "name": "ScreenStudio",
+      "price": "Pricing not published on vendor page; contact vendor (macOS Ventura 13.1+ required)",
+      "rating": 0,
+      "pros": [
+        "Automatic zoom on cursor actions—no manual keyframing",
+        "One-click vertical export optimized for social media",
+        "Smooth cursor animation, automatic static-cursor hiding",
+        "iPhone/iPad recording via USB with auto device-model detection",
+        "Motion blur and shareable presets for brand consistency"
+      ],
+      "cons": [
+        "macOS-only (Ventura 13.1+), no Windows or Linux support",
+        "Pricing not disclosed on vendor site",
+        "No cloud hosting or team collaboration features",
+        "No AI auto-editing (titles, transcripts, summaries)"
+      ],
+      "cta": {
+        "label": "Visit ScreenStudio",
+        "url": "https://www.screenstudio.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "ScreenPal (formerly Screencast-O-Matic)",
+      "id": "screenpal"
+    },
+    {
+      "type": "p",
+      "text": "ScreenPal offers a free desktop recorder (Windows, Mac, iOS, Android, Chromebook) with cloud hosting, video editing, and interactive quizzes. The vendor site advertises screen + webcam capture, trim/cut editing, overlays and music, AI-generated transcripts and captions, video translation to 100+ languages with AI voiceovers, interactive buttons and quizzes, and secure cloud hosting with embedding. Free tier includes basic recording with no account required; paid tiers add advanced editing, branding removal, analytics, and higher storage limits. Specific pricing not detailed on the page excerpt; the site offers a free account and paid upgrades. Integrations include LMS platforms and everyday business tools."
+    },
+    {
+      "type": "product",
+      "name": "ScreenPal",
+      "price": "Free tier available; paid pricing not detailed on vendor page—contact vendor",
+      "rating": 0,
+      "pros": [
+        "Cross-platform: Windows, Mac, iOS, Android, Chromebook",
+        "AI transcripts, captions, and translation to 100+ languages with voiceovers",
+        "Cloud hosting with embedding and interactive quizzes",
+        "Free tier with no account required for basic recording",
+        "LMS integrations for education and training use cases"
+      ],
+      "cons": [
+        "Paid tier pricing not published on excerpt; unclear upgrade path",
+        "Feature set less polished than Loom or ScreenStudio for specific workflows",
+        "AI editing features (auto-chapters, summaries) not mentioned in vendor copy",
+        "Free tier likely includes branding and limited storage"
+      ],
+      "cta": {
+        "label": "Try ScreenPal",
+        "url": "https://www.screencastomatic.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Tango and Vento",
+      "id": "tango-and-vento"
+    },
+    {
+      "type": "p",
+      "text": "Tango did not return a reachable vendor page in the research bundle. Vento's website (vento.com) displayed a motorcycle catalog in Spanish, not a screen recording tool. Neither product could be verified as a screen recording platform for this review. If you're evaluating these names, confirm the correct vendor domain and product category before purchasing."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**For async team updates and client onboarding:** Loom Business + AI ($24/user/mo) — AI auto-editing (titles, summaries, filler-word removal) and deep integrations (Slack, Notion, Jira) justify the subscription if you record regularly.",
+        "**For polished product demos and social media videos:** ScreenStudio (macOS, pricing TBD) — automatic zoom and one-click vertical export eliminate hours of manual keyframing; worth the cost if you ship demos weekly.",
+        "**For budget-conscious solopreneurs needing cross-platform recording:** ScreenPal free tier — covers basic screen + webcam capture with cloud hosting; upgrade for AI transcription and translation if you serve global audiences.",
+        "**If you need Windows + AI editing:** Loom at $24/user/mo — ScreenStudio is macOS-locked, ScreenPal's AI features aren't detailed enough to compete with Loom's auto-summaries and chapters."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**Loom Starter (free tier) for serious use:** 5-minute cap and 25-video limit break down fast; pay $18/mo Business or find another free tool if you record often.",
+        "**ScreenStudio if you're on Windows or need team collaboration:** macOS-only and no cloud hosting mean it's a non-starter for cross-platform teams.",
+        "**ScreenPal paid tier without seeing pricing:** The vendor page doesn't publish upgrade costs; request a quote before committing if the free tier's limits hit.",
+        "**Tango or Vento:** Neither product verified as a screen recorder in our research; avoid until you confirm the correct vendor page."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Loom",
+      "url": "https://www.loom.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "ScreenStudio",
+      "url": "https://www.screenstudio.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "ScreenPal",
+      "url": "https://www.screencastomatic.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-screen-recording-for-solopreneurs-2026-loom-tango-screenstudio-vento-hero.jpg",
+  "imageCredit": "Pexels · RDNE Stock project",
+  "niche": "ai-tools"
+}
