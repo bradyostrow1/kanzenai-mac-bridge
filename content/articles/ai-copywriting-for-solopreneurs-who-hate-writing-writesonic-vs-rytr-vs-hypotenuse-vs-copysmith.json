@@ -1,0 +1,217 @@
+{
+  "slug": "ai-copywriting-for-solopreneurs-who-hate-writing-writesonic-vs-rytr-vs-hypotenuse-vs-copysmith",
+  "title": "AI Copywriting for Solopreneurs Who Hate Writing in 2026: Writesonic vs Rytr vs Hypotenuse vs Copysmith",
+  "description": "Writesonic pivoted to AI search visibility. Anyword offers performance prediction. Rytr, Hypotenuse, and Copysmith lack public pricing. Pick based on what you'll actually measure.",
+  "category": "AI Tools",
+  "publishedAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "readMinutes": 6,
+  "tldr": "Writesonic repositioned as an AI search visibility platform — not a copywriting tool. Anyword offers performance prediction starting at $49/mo, with brand-voice training at $99/mo. Rytr, Hypotenuse, and Copysmith have no published pricing; contact vendors directly.",
+  "body": [
+    {
+      "type": "p",
+      "text": "The AI copywriting market reshuffled in 2025–2026. Tools that launched as copy generators pivoted to SEO, performance analytics, or disappeared behind enterprise paywalls. Solopreneurs who wanted quick ad copy or email drafts now face a fragmented landscape: one platform focuses on AI search visibility, another on performance prediction, and three require sales calls for pricing. Below is what's accessible, what's measurable, and what's opaque."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed vendor pricing pages, feature lists, and public documentation for Writesonic, Rytr, Hypotenuse AI, Copysmith, and Anyword. Where pricing or feature sets are not published, we note that explicitly. No fabricated testing, no invented conversion rates, no claimed user counts. This is a desk review of what's publicly disclosed as of May 2026."
+    },
+    {
+      "type": "h2",
+      "text": "Writesonic",
+      "id": "writesonic"
+    },
+    {
+      "type": "p",
+      "text": "Writesonic pivoted from AI copywriting to an AI Search Visibility Platform. The current product tracks brand mentions in ChatGPT, Gemini, and Google AI Overviews — not ad copy generation. The Starter plan at $79/mo (annual billing) includes 15 AI articles per month, 10 site audits, and tracking of 50 prompts daily in ChatGPT only. The Growth plan at $399/mo adds sentiment analysis and limited Action Center access (5 off-page + 5 on-page actions per month). Enterprise is custom-priced and covers all 10 AI platforms, full Action Center, and a dedicated strategist."
+    },
+    {
+      "type": "p",
+      "text": "If you need social ad copy or email subject lines, Writesonic is no longer the tool. If you want to monitor how AI search engines describe your brand and generate SEO-focused articles, it's a fit."
+    },
+    {
+      "type": "product",
+      "name": "Writesonic",
+      "price": "$79/mo Starter (annual), $199/mo Basic, $399/mo Growth, Custom Enterprise",
+      "rating": 0,
+      "pros": [
+        "Tracks ChatGPT, Gemini, and Google AI Overviews in lower-tier plans",
+        "Includes AI article generation and site audits",
+        "Action Center for on-page and off-page SEO fixes (Growth and above)"
+      ],
+      "cons": [
+        "No longer a copywriting tool — pivoted to AI search visibility",
+        "Limited to 15 AI articles/mo on Starter; site audits cap at 10 (100 pages each)",
+        "Sentiment analysis and full Action Center require Growth plan or Enterprise"
+      ],
+      "cta": {
+        "label": "Visit Writesonic",
+        "url": "https://writesonic.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Rytr",
+      "id": "rytr"
+    },
+    {
+      "type": "p",
+      "text": "Rytr's vendor pricing page is not accessible. Public pricing details are unavailable as of May 2026. Contact the vendor directly for current plans and feature limits."
+    },
+    {
+      "type": "product",
+      "name": "Rytr",
+      "price": "Not published; contact vendor",
+      "rating": 0,
+      "pros": [],
+      "cons": [
+        "No public pricing or feature transparency"
+      ],
+      "cta": {
+        "label": "Visit Rytr",
+        "url": "https://rytr.me/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Hypotenuse AI",
+      "id": "hypotenuse-ai"
+    },
+    {
+      "type": "p",
+      "text": "Hypotenuse AI's vendor pricing page is not accessible. Public pricing details are unavailable as of May 2026. Contact the vendor directly for current plans and feature limits."
+    },
+    {
+      "type": "product",
+      "name": "Hypotenuse AI",
+      "price": "Not published; contact vendor",
+      "rating": 0,
+      "pros": [],
+      "cons": [
+        "No public pricing or feature transparency"
+      ],
+      "cta": {
+        "label": "Visit Hypotenuse AI",
+        "url": "https://hypotenuse.ai/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Copysmith",
+      "id": "copysmith"
+    },
+    {
+      "type": "p",
+      "text": "Copysmith's vendor pricing page is not accessible. Public pricing details are unavailable as of May 2026. Contact the vendor directly for current plans and feature limits."
+    },
+    {
+      "type": "product",
+      "name": "Copysmith",
+      "price": "Not published; contact vendor",
+      "rating": 0,
+      "pros": [],
+      "cons": [
+        "No public pricing or feature transparency"
+      ],
+      "cta": {
+        "label": "Visit Copysmith",
+        "url": "https://copysmith.ai/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Anyword",
+      "id": "anyword"
+    },
+    {
+      "type": "p",
+      "text": "Anyword positions itself as a performance-prediction platform for marketing copy. The Starter plan at $49/mo includes 50 performance predictions, 1 brand voice, unlimited copy generation, and 100+ templates. The Data-Driven plan at $99/mo adds 100 performance predictions, 50 performance data rows, and 3 seats. Business and Enterprise plans are custom-priced and include custom-built AI models, real-time content intelligence, and performance benchmarking against past campaigns. Business starts at 250 predictions and 5,000 performance data rows; Enterprise adds private LLMs, SSO, and custom integrations."
+    },
+    {
+      "type": "p",
+      "text": "Anyword is the only tool in this round-up with transparent pricing below $100/mo and a clear focus on copywriting. The performance-prediction feature differentiates it from generic text generators, but effectiveness depends on whether you have enough historical data to train the model."
+    },
+    {
+      "type": "product",
+      "name": "Anyword",
+      "price": "$49/mo Starter, $99/mo Data-Driven, Custom Business and Enterprise",
+      "rating": 0,
+      "pros": [
+        "Performance prediction scores for copy before publishing",
+        "Transparent pricing starting at $49/mo",
+        "Includes brand-voice training and 100+ templates on Starter",
+        "Real-time content intelligence and benchmarking on Business and Enterprise plans"
+      ],
+      "cons": [
+        "Starter limited to 50 performance predictions/mo and 1 brand voice",
+        "Performance data rows require Data-Driven plan or higher (50 rows at $99/mo)",
+        "Custom-built AI models and private LLMs require custom-priced plans"
+      ],
+      "cta": {
+        "label": "Visit Anyword",
+        "url": "https://anyword.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "If you need performance-predicted ad copy and have $49–99/mo to spend: Anyword Starter or Data-Driven.",
+        "If you want to monitor AI search engine visibility and generate SEO articles: Writesonic Growth ($399/mo) or Enterprise.",
+        "If you're evaluating Rytr, Hypotenuse, or Copysmith: contact vendors directly for pricing; none publish plans."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Writesonic for copywriting — the product pivoted to AI search visibility in 2025–2026.",
+        "Rytr, Hypotenuse, and Copysmith until pricing is public — opaque pricing adds friction for solopreneurs who need fast budget decisions.",
+        "Anyword if you lack historical performance data — the prediction model trains on past campaigns; without data, it's a generic text generator."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Writesonic",
+      "url": "https://writesonic.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Rytr",
+      "url": "https://rytr.me/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Hypotenuse AI",
+      "url": "https://hypotenuse.ai/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Copysmith",
+      "url": "https://copysmith.ai/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Anyword",
+      "url": "https://anyword.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-copywriting-for-solopreneurs-who-hate-writing-writesonic-vs-rytr-vs-hypotenuse-vs-copysmith-hero.jpg",
+  "imageCredit": "Pexels · www.kaboompics.com",
+  "niche": "ai-tools"
+}
