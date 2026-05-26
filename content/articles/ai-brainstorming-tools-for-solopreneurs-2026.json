@@ -1,0 +1,172 @@
+{
+  "slug": "ai-brainstorming-tools-for-solopreneurs-2026",
+  "title": "AI Brainstorming Tools for Solopreneurs Who Ideate Alone in 2026: Miro vs FigJam vs Whimsical vs Napkin",
+  "description": "Miro, Whimsical, and FigJam compared for solo brainstorming. Pricing, AI features, and which tool fits solopreneurs who work alone.",
+  "category": "AI Tools",
+  "publishedAt": "2026-05-26",
+  "updatedAt": "2026-05-26",
+  "readMinutes": 7,
+  "tldr": "Whimsical offers the cleanest solo experience at $10/mo with 500 AI actions monthly and unlimited boards. Miro's free tier caps you at 3 editable boards but provides 10 AI credits monthly. FigJam, Napkin, and Excalidraw lack published pricing or positioning for solo AI brainstorming.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Solopreneurs brainstorming alone face a different problem than collaborative teams: you need quick capture, AI-assisted expansion, and zero collaboration overhead. Most whiteboard tools optimize for real-time multi-user sessions. For solo work, you want fast AI generation, unlimited private boards, and no forced team-plan pricing. We looked at Miro, FigJam, Whimsical, Napkin, and Excalidraw to see which fits the solo ideation workflow in 2026."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed vendor pricing pages and feature lists published as of May 2026. Miro and Whimsical publish transparent pricing. FigJam, Napkin, and Excalidraw do not publish accessible pricing or feature pages in the research bundle; we note where information is unavailable. No fabricated testing — all claims trace to vendor documentation."
+    },
+    {
+      "type": "h2",
+      "text": "Miro",
+      "id": "miro"
+    },
+    {
+      "type": "p",
+      "text": "Miro markets itself as an 'AI Innovation Workspace' with AI features for board content generation and synthesis. The free tier provides unlimited members but caps editable boards at 3, which limits solo users who want to run multiple projects. You get 10 Miro AI credits per month per team on the free plan, 25 credits per member monthly on the $8/mo Starter plan, and the same 25 credits per member on the $20/mo Business plan. Starter unlocks unlimited boards and 25 AI credits monthly for $8/mo billed annually ($10/mo if billed monthly). The platform includes 5,000+ templates, 160+ app integrations (Zoom, Slack, Google Drive, Sketch), and facilitation tools (Timer, Voting, Video calls). Version history and Brand Center features appear on Starter and above."
+    },
+    {
+      "type": "product",
+      "name": "Miro",
+      "price": "$0 Free (3 editable boards, 10 AI credits/mo per team) | $8/mo Starter (unlimited boards, 25 AI credits/mo per member, billed annually) | $20/mo Business (advanced security, unlimited guests, 25 AI credits/mo per member)",
+      "rating": 0,
+      "pros": [
+        "Free tier includes 10 AI credits monthly and unlimited members",
+        "160+ integrations including Zoom, Slack, Google Drive",
+        "5,000+ templates for fast starts",
+        "Starter plan at $8/mo unlocks unlimited boards and 25 AI credits"
+      ],
+      "cons": [
+        "Free tier caps you at 3 editable boards — unusable for multi-project solos",
+        "AI credit allowance is modest (10 free, 25 on paid) compared to Whimsical's 500",
+        "Pricing jumps to $20/mo for Business features that solos may not need"
+      ],
+      "cta": {
+        "label": "Try Miro Free",
+        "url": "https://www.miro.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Whimsical",
+      "id": "whimsical"
+    },
+    {
+      "type": "p",
+      "text": "Whimsical positions itself for 'product work' with AI Flowcharts and AI Mind Maps. The free tier provides 3 team boards, 3 teams, 10 guests, and 100 AI actions per editor total (not monthly). Pro at $10/mo ($12/mo if billed monthly) unlocks unlimited team boards, 6 teams, 50 guests, and 500 AI actions per editor per month — a significant jump from the free tier's lifetime cap. Business at $20/mo adds SSO/SAML, SCIM, unlimited teams, 200 guests, and 2,000 AI actions per editor monthly. Whimsical includes Boards (infinite canvas), Diagrams, Flowcharts, Mind maps, and Wireframes. Version history is 7 days on Free, 90 days on Pro, unlimited on Business. File uploads cap at 5MB per file on Free, 1GB per file on Pro, 10GB per file on Business."
+    },
+    {
+      "type": "product",
+      "name": "Whimsical",
+      "price": "$0 Free (3 team boards, 100 AI actions per editor total) | $10/mo Pro (unlimited boards, 500 AI actions/editor/month, billed annually) | $20/mo Business (SSO, SCIM, unlimited teams, 2000 AI actions/editor/month)",
+      "rating": 0,
+      "pros": [
+        "Pro plan at $10/mo offers 500 AI actions monthly — highest AI allowance for the price",
+        "Unlimited boards on Pro for multi-project solos",
+        "Clean UI designed for fast diagramming and wireframing",
+        "90-day version history on Pro, unlimited on Business"
+      ],
+      "cons": [
+        "Free tier caps AI actions at 100 total (not monthly) — runs out quickly",
+        "File upload limits (5MB free, 1GB Pro) may constrain media-heavy brainstorms",
+        "Fewer integrations than Miro (no published count in research)"
+      ],
+      "cta": {
+        "label": "Try Whimsical Free",
+        "url": "https://www.whimsical.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "FigJam",
+      "id": "figjam"
+    },
+    {
+      "type": "p",
+      "text": "FigJam (from Figma) is a collaborative whiteboard tool. No vendor pricing page was reachable in the research bundle. FigJam is known for design-team collaboration, but without published pricing or AI feature details, we cannot assess solo-AI-brainstorming fit. Contact Figma for current pricing and AI feature availability."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Pricing Unavailable",
+      "text": "FigJam pricing and AI features are not published in accessible vendor pages as of May 2026. Check Figma's site directly or contact sales."
+    },
+    {
+      "type": "h2",
+      "text": "Napkin",
+      "id": "napkin"
+    },
+    {
+      "type": "p",
+      "text": "Napkin.com, per the research bundle, is an investment and portfolio site owned by Aron Meystedt, featuring ValidatorAI.com (a startup idea validation tool) and the historic Symbolics.com domain. It is not a brainstorming or whiteboard tool. The name 'Napkin' may collide with other products, but the researched site is unrelated to AI brainstorming for solopreneurs."
+    },
+    {
+      "type": "callout",
+      "variant": "warn",
+      "title": "Product Mismatch",
+      "text": "Napkin.com (researched) is an investor portfolio site, not an AI brainstorming tool. If you meant a different 'Napkin' product, vendor information was not available in this research bundle."
+    },
+    {
+      "type": "h2",
+      "text": "Excalidraw",
+      "id": "excalidraw"
+    },
+    {
+      "type": "p",
+      "text": "Excalidraw is an open-source whiteboard tool for sketching diagrams. No vendor pricing page was reachable in the research bundle. Excalidraw is typically free and self-hosted or used via excalidraw.com, but AI features and paid plans (if any) are not documented here. For AI-assisted brainstorming, confirm feature availability directly."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Pricing and AI Features Unavailable",
+      "text": "Excalidraw pricing and AI capabilities are not published in the research bundle. Excalidraw is open-source; check the project site for current features."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Best for solo AI brainstorming on a budget: Whimsical Pro ($10/mo) — 500 AI actions monthly and unlimited boards beat Miro's 25 AI credits at $8/mo.",
+        "Best free tier for light use: Miro Free — 10 AI credits monthly and unlimited members, but 3-board cap kills multi-project workflows.",
+        "Best for design-first solos willing to pay: Whimsical Pro again — wireframes, flowcharts, and mind maps in one clean UI.",
+        "Skip if you need rich integrations: Miro wins on integrations (160+ apps); Whimsical's integration list is not detailed in research."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Miro Free for multi-project solos — 3 editable boards is too constraining.",
+        "Whimsical Free for regular AI use — 100 AI actions total (not monthly) runs out in days.",
+        "FigJam, Napkin, Excalidraw (as researched) — no accessible pricing or AI feature data for solo brainstorming in this bundle."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Miro",
+      "url": "https://www.miro.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Whimsical",
+      "url": "https://www.whimsical.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-brainstorming-tools-for-solopreneurs-2026-hero.jpg",
+  "imageCredit": "Pexels · Tima Miroshnichenko",
+  "niche": "ai-tools"
+}
