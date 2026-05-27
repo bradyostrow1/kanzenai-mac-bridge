@@ -1,0 +1,208 @@
+{
+  "slug": "ai-proposal-writers-for-freelancers-2026",
+  "title": "AI Proposal Writers for Freelancers in 2026: What Actually Works",
+  "description": "Regie, Proposify, PandaDoc, and Qwilr compared—pricing, AI features, and who wins for solopreneurs and small teams.",
+  "category": "AI Tools",
+  "publishedAt": "2026-05-27",
+  "updatedAt": "2026-05-27",
+  "readMinutes": 8,
+  "tldr": "Proposify ($19/user/mo) and Qwilr ($35/user/mo) are best for freelancers needing AI writing assistance and simple e-sign. PandaDoc ($19–$49/user/mo) wins for integrated payments and CRM automation. Regie.ai is a sales engagement platform, not a proposal tool. Loopio pricing is not public.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Freelancers and small agencies send proposals constantly—scope docs, quotes, service agreements. AI-assisted proposal platforms promise to cut drafting time, personalize copy, and track engagement. We evaluated five tools claiming AI features: Regie.ai, Proposify, PandaDoc, Qwilr, and Loopio. The field splits into two camps: dedicated proposal software (Proposify, PandaDoc, Qwilr) and adjacent tools (Regie for sales prospecting, Loopio for RFP response management). Only three are practical for freelance proposal work."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed vendor pricing pages, feature lists, and integration documentation as of May 2026. No fabricated test data—every claim is sourced from publicly available vendor materials. Pricing is quoted exactly as listed. Tools are evaluated on AI writing capability, template flexibility, e-signature, CRM integration, and suitability for solopreneurs or small teams (1–5 seats)."
+    },
+    {
+      "type": "h2",
+      "text": "Regie.ai",
+      "id": "regieai"
+    },
+    {
+      "type": "p",
+      "text": "Regie.ai positions itself as an AI sales engagement platform—prospecting, dialing, email sequencing. Vendor materials describe AI Prospecting Agents that enrich contacts, write outbound messages, and orchestrate multichannel workflows. Pricing is not published; vendor requires demo booking. Use cases center on SDR/AE teams scaling outbound, not freelancers drafting service proposals. Integrations focus on CRM enrichment and dialer features. The platform includes AI writing for cold email and social touches, but no proposal templates, quote tables, or document e-signature. Not a proposal tool."
+    },
+    {
+      "type": "product",
+      "name": "Regie.ai",
+      "price": "Contact vendor for quote",
+      "rating": null,
+      "pros": [
+        "AI agents automate prospecting workflows",
+        "Unified dialer, email, and sequencing platform",
+        "CRM enrichment and signal-driven outreach"
+      ],
+      "cons": [
+        "No pricing transparency",
+        "Built for sales teams, not proposal creation",
+        "No document e-signature or quote features"
+      ],
+      "cta": {
+        "label": "Visit Regie.ai",
+        "url": "https://regieai.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Proposify",
+      "id": "proposify"
+    },
+    {
+      "type": "p",
+      "text": "Proposify offers three plans: Basic ($19/user/mo annually, $29 monthly), Team ($41–$49/user/mo), and Business (custom, ~$3,900/year minimum). Basic includes 10 document sends/month, 3 templates, e-signature, and AI writing via embedded widget. Team adds unlimited sends, 10 templates, CRM integrations (HubSpot, Salesforce, Pipedrive), and custom fields. Business unlocks unlimited templates, API access, roles/permissions, and SSO. AI features are consistent across tiers: prompt-driven content generation, grammar fixes, condensing, and refinement. Interactive quote tables and optional line items let buyers self-select add-ons. Overage on Basic: $0.50/send beyond 10; Team: $0.30/send beyond 30."
+    },
+    {
+      "type": "product",
+      "name": "Proposify",
+      "price": "$19/user/mo annually (Basic, 10 sends), $41/user/mo annually (Team, unlimited sends)",
+      "rating": null,
+      "pros": [
+        "AI writing widget for prompts, grammar, refinement",
+        "Interactive quote tables with buyer-driven options",
+        "CRM integrations on Team tier and above"
+      ],
+      "cons": [
+        "Basic tier caps at 10 sends/month, 3 templates",
+        "Overages add $0.30–$0.50 per send",
+        "Business pricing starts at $3,900/year"
+      ],
+      "cta": {
+        "label": "Try Proposify Free",
+        "url": "https://www.proposify.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "PandaDoc",
+      "id": "pandadoc"
+    },
+    {
+      "type": "p",
+      "text": "PandaDoc publishes four tiers: Free (60 docs/year, unlimited seats), Starter ($19/user/mo annually, 110 docs/year), Business ($49/user/mo, unlimited docs), and Enterprise (custom per-seat or per-document pricing). Free and Starter include rich media editor, real-time tracking, and e-signature. Business adds CRM integrations (HubSpot, Salesforce, Pipedrive, Monday), custom quotes, approval workflows, and Deal Rooms for collaborative closing. Enterprise adds CPQ (configure-price-quote), workflow automation, smart content (adaptive documents based on recipient), and API. Vendor materials list 'Smart content' as an AI-adjacent feature—documents adapt to recipient requirements. No embedded AI writing widget is described. Integrated payments via Stripe, PayPal, Square, Authorize.net on all plans. Additional docs on Starter: $2 each (annual) or $3.50 (monthly)."
+    },
+    {
+      "type": "product",
+      "name": "PandaDoc",
+      "price": "$0 (Free, 60 docs/year), $19/user/mo annually (Starter, 110 docs/year), $49/user/mo (Business, unlimited)",
+      "rating": null,
+      "pros": [
+        "Free tier for low-volume users",
+        "Integrated payments (Stripe, PayPal, Square)",
+        "CRM integrations and approval workflows on Business"
+      ],
+      "cons": [
+        "No explicit AI writing assistant",
+        "Smart content and CPQ locked to Enterprise",
+        "Starter caps at 110 docs/year, overages at $2–$3.50 each"
+      ],
+      "cta": {
+        "label": "Start PandaDoc Free",
+        "url": "https://www.pandadoc.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Qwilr",
+      "id": "qwilr"
+    },
+    {
+      "type": "p",
+      "text": "Qwilr offers Business ($35/user/mo, single user) and Enterprise ($59/user/mo, 10-user minimum, annual billing). Both include unlimited page creation, drag-and-drop editor, e-signature, quote tables, pricing plans, and QwilrPay for payment collection. Vendor materials reference 'AI Proposal Creator' in navigation but provide no detail on AI writing features in the pricing page text. Business integrates with HubSpot, Pipedrive, Zoho; Enterprise adds Salesforce, custom branding, team permissions, identity verification, domain-restricted access. QwilrPay application fee: 0.09% per transaction on Business, 0.05% on Enterprise. Quote tables support discounts and tiered plans. Detailed content analytics, activity timeline, and Slack notifications included."
+    },
+    {
+      "type": "product",
+      "name": "Qwilr",
+      "price": "$35/user/mo (Business), $59/user/mo annually (Enterprise, 10-user min)",
+      "rating": null,
+      "pros": [
+        "Unlimited page creation on all plans",
+        "Integrated QwilrPay (0.05–0.09% fee)",
+        "Interactive quote tables and tiered pricing plans"
+      ],
+      "cons": [
+        "AI Proposal Creator referenced but details not published",
+        "Enterprise requires 10-seat minimum ($590/mo)",
+        "No monthly Business billing option shown"
+      ],
+      "cta": {
+        "label": "Try Qwilr Free",
+        "url": "https://www.qwilr.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Loopio",
+      "id": "loopio"
+    },
+    {
+      "type": "p",
+      "text": "Loopio is an RFP response platform—vendors use it to manage knowledge libraries, collaborate on questionnaires, and generate responses to formal bids. No pricing page was accessible in research materials. Loopio is built for procurement response workflows, not freelance service proposals or quotes. Unsuitable for the freelancer use case."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Loopio",
+      "text": "Pricing not published; contact vendor. Platform is designed for RFP response management, not freelance proposals."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "For AI writing assistance and low budget: Proposify Basic at $19/user/mo (10 sends, AI widget for prompts and refinement). Upgrade to Team ($41/mo) if you need unlimited sends and CRM sync.",
+        "For integrated payments and CRM automation: PandaDoc Business at $49/user/mo (unlimited docs, HubSpot/Salesforce/Pipedrive, approval workflows, Deal Rooms).",
+        "For interactive web-based proposals: Qwilr Business at $35/user/mo (unlimited pages, quote tables, QwilrPay at 0.09%). Enterprise ($59/mo, 10-user min) if you need Salesforce or advanced permissions.",
+        "For high-volume or free tier: PandaDoc Free (60 docs/year, unlimited seats, e-sign and payments included)."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Regie.ai—it's a sales prospecting platform, not a proposal tool. No document e-signature, no quote tables.",
+        "Loopio—RFP response management for procurement teams. Not designed for service proposals.",
+        "Proposify Business tier ($3,900/year min)—overkill for solopreneurs; Team tier ($41/mo) covers CRM integrations and unlimited sends."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Regie.ai",
+      "url": "https://regieai.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Proposify",
+      "url": "https://www.proposify.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "PandaDoc",
+      "url": "https://www.pandadoc.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Qwilr",
+      "url": "https://www.qwilr.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-proposal-writers-for-freelancers-2026-hero.jpg",
+  "imageCredit": "Pexels · SHVETS production",
+  "niche": "ai-tools"
+}

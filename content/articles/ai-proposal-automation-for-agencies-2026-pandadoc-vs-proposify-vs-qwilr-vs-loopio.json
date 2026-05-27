@@ -1,0 +1,206 @@
+{
+  "slug": "ai-proposal-automation-for-agencies-2026-pandadoc-vs-proposify-vs-qwilr-vs-loopio",
+  "title": "AI Proposal Automation for Agencies in 2026: Closing Retainers Faster with PandaDoc vs Proposify vs Qwilr vs Loopio",
+  "description": "Which proposal tool closes retainers fastest? Pricing, AI features, and CRM integrations compared across PandaDoc, Proposify, Qwilr, GetAccept, and Loopio.",
+  "category": "Invoicing",
+  "publishedAt": "2026-05-27",
+  "updatedAt": "2026-05-27",
+  "readMinutes": 9,
+  "tldr": "PandaDoc delivers unlimited documents at $49/seat for agencies needing CRM-native proposals. Qwilr shines for interactive, web-based pages at $35/user. GetAccept combines e-sign and Digital Sales Rooms starting at $25/user. Proposify caps sends per month; Loopio pricing is unlisted.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Agencies close retainers faster when proposals land as interactive web pages, not static PDFs. The 2026 proposal automation category splits into document-centric platforms (PandaDoc, Proposify) and web-native experiences (Qwilr, GetAccept). AI features now include draft generation, smart content blocks, and CRM-triggered templates. Pricing models vary: per-seat unlimited (PandaDoc), per-user with send caps (Proposify), per-user flat (Qwilr), and contact-sales enterprise (Loopio). Below, we compare five platforms on pricing transparency, AI capabilities, CRM integrations, and who wins for specific agency workflows."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We extracted pricing, feature lists, and integration claims from vendor pricing pages captured in May 2026. Loopio's pricing page was unreachable; we note that gap below. We did not fabricate usage tests. Our analysis focuses on published plan tiers, AI feature disclosures, CRM compatibility lists, and publicly stated limits (document sends, template counts, user minimums). All affiliate links use the placeholder format required by our FTC-compliant editorial policy."
+    },
+    {
+      "type": "h2",
+      "text": "PandaDoc",
+      "id": "pandadoc"
+    },
+    {
+      "type": "product",
+      "name": "PandaDoc",
+      "price": "Free (60 docs/year, unlimited seats); Starter $19/month per seat annually (110 docs/year); Business $49/seat/month annually (unlimited docs); Enterprise (custom pricing, CPQ, workflow automation, SSO)",
+      "rating": null,
+      "pros": [
+        "Unlimited documents on Business tier — no send-count friction",
+        "Native CRM integrations for HubSpot, Salesforce, Pipedrive, Monday listed on pricing page",
+        "CPQ (configure-price-quote) available on Enterprise tier",
+        "Approval workflows and Deal Rooms on Business tier",
+        "Free tier suitable for micro-agencies testing workflows"
+      ],
+      "cons": [
+        "AI capabilities not explicitly detailed on pricing page — unclear if draft generation is included",
+        "Business tier requires per-seat pricing; no flat-rate team option",
+        "Starter tier caps at 110 docs/year — restrictive for high-volume agencies",
+        "Enterprise pricing unlisted; contact sales for CPQ and workflow automation"
+      ],
+      "cta": {
+        "label": "Visit PandaDoc",
+        "url": "https://www.pandadoc.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Proposify",
+      "id": "proposify"
+    },
+    {
+      "type": "product",
+      "name": "Proposify",
+      "price": "Basic $19/user/month annually ($29 monthly, 10 sends/month, up to 3 templates); Team $41/user/month annually ($49 quarterly, unlimited sends, up to 10 templates); Business starts at $3,900/year (unlimited templates, SSO, API, 75 sends/month base, $0.75/overage)",
+      "rating": null,
+      "pros": [
+        "AI writing widget embedded in editor (prompt, refine, grammar fixes, condense) on all tiers",
+        "Interactive quoting — buyers choose optional fees or add quantities",
+        "CRM integrations for HubSpot, Salesforce, Pipedrive, Zoho listed; automations on Team tier",
+        "Custom fields and variables for dynamic content (Team tier and above)",
+        "Unlimited document drafting/editing across all tiers — only sends count toward cap"
+      ],
+      "cons": [
+        "Basic tier caps at 10 sends/month and 3 templates — severe bottleneck for agencies",
+        "Team tier caps at 30 sends/month ($0.30 overage) — volume agencies hit overages fast",
+        "Business tier starts at $3,900/year minimum (75 sends/month base) — steep jump",
+        "Template limits (3 on Basic, 10 on Team) restrict reusable content libraries",
+        "Overage fees compound costs for high-volume workflows"
+      ],
+      "cta": {
+        "label": "Visit Proposify",
+        "url": "https://www.proposify.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Qwilr",
+      "id": "qwilr"
+    },
+    {
+      "type": "product",
+      "name": "Qwilr",
+      "price": "Business $35/user/month monthly (save 10% annually); Enterprise $59/user/month annually (10-user minimum, account manager, advanced analytics, Salesforce CRM)",
+      "rating": null,
+      "pros": [
+        "Unlimited document creation across all tiers — no send caps like Proposify",
+        "Web-native pages (not PDFs) with embedded ROI calculators, forms, videos, Google maps",
+        "QwilrPay integrated — collect payments within proposals (0.09% fee Business, 0.05% Enterprise)",
+        "HubSpot CRM, Pipedrive, Zoho CRM integrations on Business tier; Salesforce on Enterprise",
+        "Quote tables, tiered plans, and discounts on Business tier",
+        "Custom domains and fonts on Enterprise tier for white-label branding"
+      ],
+      "cons": [
+        "No explicit AI draft-generation feature mentioned on pricing page",
+        "Enterprise tier requires 10-user minimum — excludes small agencies",
+        "Business tier excludes Salesforce CRM integration — Enterprise only",
+        "QwilrPay transaction fees (0.09% or 0.05%) add cost to payment workflows",
+        "120-day data history on Business vs 5 years on Enterprise — limited reporting window"
+      ],
+      "cta": {
+        "label": "Visit Qwilr",
+        "url": "https://www.qwilr.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "GetAccept",
+      "id": "getaccept"
+    },
+    {
+      "type": "product",
+      "name": "GetAccept",
+      "price": "eSign $25/user/month (unlimited e-signatures, contract management, engagement video); Professional $49/user/month (5-user minimum, GetAccept AI, Digital Sales Room, mutual action plans, meetings, CRM integrations); Enterprise (contact sales, CPQ, unlimited product library, SSO, API, conditional content)",
+      "rating": null,
+      "pros": [
+        "GetAccept AI includes AI Editor, Smart Content, Meeting Summarizer, AI Knowledge Base on Professional tier",
+        "Digital Sales Room with mutual action plans, file sharing, contextual commenting (Professional tier)",
+        "Unlimited e-signatures on all tiers — no per-document fees",
+        "CRM integrations (Salesforce, HubSpot, MS Dynamics, Pipedrive, SuperOffice) on Professional tier",
+        "CPQ and unlimited product library on Enterprise tier for complex quoting",
+        "Edit-after-send feature (Professional tier) — fix mistakes post-delivery"
+      ],
+      "cons": [
+        "Professional tier requires 5-user minimum — not viable for solo agencies",
+        "AI features (AI Editor, Smart Content) require add-ons beyond base Professional tier — unclear pricing",
+        "Pricing table limited to 3 products on Professional tier — Enterprise needed for unlimited product library",
+        "Enterprise CPQ and conditional content pricing unlisted — contact sales",
+        "eID verification (Sweden, Denmark, Norway, Finland) incurs additional charges"
+      ],
+      "cta": {
+        "label": "Visit GetAccept",
+        "url": "https://www.getaccept.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Loopio",
+      "id": "loopio"
+    },
+    {
+      "type": "p",
+      "text": "Loopio's pricing page was unreachable during research. The platform positions itself for RFP response automation — agencies managing compliance-heavy proposals (government, enterprise RFPs) may benefit. Without published pricing or feature tiers, we recommend contacting Loopio directly for quotes. If your agency primarily handles creative retainers or service proposals (not formal RFPs), the platforms above offer more transparent, self-serve entry points."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "High-volume agencies (50+ proposals/month): PandaDoc Business ($49/seat, unlimited docs) or Qwilr Business ($35/user, unlimited creation) — avoid Proposify's send caps and overage fees.",
+        "Agencies prioritizing AI draft assistance: GetAccept Professional ($49/user, AI Editor, Smart Content, Meeting Summarizer) or Proposify (AI writing widget on all tiers) — PandaDoc and Qwilr lack explicit AI features on pricing pages.",
+        "Salesforce-native workflows: GetAccept Professional or Qwilr Enterprise ($59/user, 10-user min) — PandaDoc and Proposify list Salesforce but integration depth unclear.",
+        "Small agencies (1-3 users) testing workflows: PandaDoc Free (60 docs/year, unlimited seats) or Proposify Basic ($19/user, 10 sends/month) — Qwilr and GetAccept lack free tiers.",
+        "Interactive web pages over PDFs: Qwilr Business ($35/user, embedded ROI calculators, forms, videos) — PandaDoc and Proposify default to document-centric flows.",
+        "Payment collection in proposals: Qwilr Business (QwilrPay, 0.09% fee) — others require external Stripe/PayPal integrations."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Proposify for high-volume agencies — send caps (10/month Basic, 30/month Team) and overage fees ($0.30-$0.75/send) create friction; Business tier at $3,900/year minimum is steep for 75-send base.",
+        "GetAccept for solo agencies — 5-user minimum on Professional tier ($49/user = $245/month min) excludes solo operators; eSign tier lacks AI and CRM integrations.",
+        "PandaDoc Enterprise without clear AI roadmap — CPQ and workflow automation pricing unlisted; AI capabilities not detailed on pricing page; contact sales for unknowns.",
+        "Loopio without transparent pricing — unlisted tiers and focus on RFP workflows misalign with creative/service agencies; better suited for compliance-heavy enterprise sales."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "PandaDoc",
+      "url": "https://www.pandadoc.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Proposify",
+      "url": "https://www.proposify.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Qwilr",
+      "url": "https://www.qwilr.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "GetAccept",
+      "url": "https://www.getaccept.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-proposal-automation-for-agencies-2026-pandadoc-vs-proposify-vs-qwilr-vs-loopio-hero.jpg",
+  "imageCredit": "Pexels · Walls.io",
+  "niche": "ai-tools"
+}
