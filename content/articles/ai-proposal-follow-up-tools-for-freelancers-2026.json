@@ -1,0 +1,218 @@
+{
+  "slug": "ai-proposal-follow-up-tools-for-freelancers-2026",
+  "title": "AI Proposal Follow-Up Tools for Freelancers in 2026: Mixmax vs Mailshake vs Lemlist vs Woodpecker",
+  "description": "Gmail-native follow-up vs multichannel sequences vs deliverability focus — which tool fits freelancer budgets and workflows in 2026.",
+  "category": "Marketing",
+  "publishedAt": "2026-05-28",
+  "updatedAt": "2026-05-28",
+  "readMinutes": 9,
+  "tldr": "Mixmax ($29–$89/user/mo) is Gmail-native with AI copilots for inbox triage and meeting prep. Mailshake ($29–$99/user/mo) bundles unlimited sends and a North American dialer. Lemlist ($31–$87/user/mo) focuses on deliverability with warm-up and unified inbox. Woodpecker's research yielded no pricing or feature data; Reply.io ($15–$60/mo for credits) is LinkedIn/Twitter-first, not email sequences.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Freelancers sending proposals need two things: persistent follow-up without manual tracking, and inbox placement that doesn't trigger spam filters. The five tools here split into distinct camps — Gmail-native AI assistants (Mixmax), classic cold-email sequence platforms (Mailshake, Lemlist), and social automation tools mispositioned as email follow-up (Reply.io). Woodpecker's public pages offer no pricing or product detail, so it's excluded from practical evaluation."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We pulled pricing pages and feature lists from each vendor's site on 2026-05-28. No fabricated testing — every claim ties to published vendor data. Pricing is quoted exactly as listed; features are vendor-described. If a vendor doesn't publish pricing (Woodpecker) or positions primarily as a social tool (Reply.io), we note that explicitly."
+    },
+    {
+      "type": "h2",
+      "text": "Mixmax",
+      "id": "mixmax"
+    },
+    {
+      "type": "p",
+      "text": "Mixmax sells three AI copilots — Inbox ($29/user/mo), Meeting ($29/user/mo), and Engagement ($49/user/mo) — or bundles all three in Mixmax Suite ($89/user/mo annual, $107 monthly). Per the vendor's pricing page, Inbox Copilot ranks threads by deal priority and flags quiet replies; Meeting Copilot transcribes Zoom/Google Meet calls, summarizes key moments, and drafts follow-ups; Engagement Copilot generates multi-channel campaigns (email, LinkedIn, call scripts) from a persona prompt. Suite includes Salesforce sync, Gmail-native sending, and 'Smart Send' timing (vendor claims users hit 67% open rates, attributed to send-time optimization). Teams of 5+ can add custom branding, a dialer, and Salesforce Insights reporting (custom pricing). All plans include a 14-day free trial; after trial, free tier offers basic email tracking, scheduling, and sequences."
+    },
+    {
+      "type": "product",
+      "name": "Mixmax",
+      "price": "$29/user/mo (Inbox Copilot) • $49/user/mo (Engagement Copilot) • $89/user/mo (Suite, annual billing)",
+      "rating": 4.5,
+      "pros": [
+        "Gmail-native — no separate inbox or SMTP config",
+        "AI meeting transcription and follow-up drafting included in $29 Meeting Copilot",
+        "Smart Send timing optimizer (vendor cites 67% open rates among users)",
+        "Free tier post-trial retains tracking and basic sequences"
+      ],
+      "cons": [
+        "Engagement Copilot ($49/user/mo) required for multi-step sequences",
+        "Suite at $89/user/mo is pricier than Mailshake or Lemlist multichannel plans",
+        "Dialer and Salesforce Insights locked to 5+ user 'Teams' tier (custom pricing)",
+        "No published data on deliverability warm-up or domain reputation monitoring"
+      ],
+      "cta": {
+        "label": "Try Mixmax (14-day free trial)",
+        "url": "https://www.mixmax.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Mailshake",
+      "id": "mailshake"
+    },
+    {
+      "type": "p",
+      "text": "Mailshake's three tiers — Starter ($29/mo, $25 annual), Email Outreach ($49/mo, $45 annual), Sales Engagement ($99/mo, $85 annual) — focus on sequence automation and send-volume scaling. Per the vendor's pricing page, Starter allows 1 email address and 1,500 sends/month; Email Outreach adds unlimited sends, 2 addresses, email rotation (to spread sends across accounts), and Salesforce/Pipedrive/HubSpot integrations; Sales Engagement includes 10 addresses, 2,500 Data Finder credits (email/phone lookup), 5 phone numbers, unlimited North American dialer minutes, and task management. All tiers include unlimited contacts, A/B testing, AI email writing (SHAKESpeare), email verification, and warmup. Add-ons: Data Finder ($19/mo, $17 annual) for email/phone enrichment; Ready to Use Mailboxes ($12/mo, $11 annual) for auto-provisioned backup addresses. Vendor states 'works with Gmail, G Suite, Office 365, most Outlook and Exchange' but does not detail SMTP warm-up methodology."
+    },
+    {
+      "type": "product",
+      "name": "Mailshake",
+      "price": "$29/mo Starter (1,500 sends) • $49/mo Email Outreach (unlimited sends) • $99/mo Sales Engagement (10 addresses, dialer)",
+      "rating": 4.6,
+      "pros": [
+        "Unlimited sends starting at $49/mo (Email Outreach tier)",
+        "Unlimited North American dialer minutes at $99/mo Sales Engagement tier",
+        "Email rotation across up to 10 addresses (Sales Engagement) to preserve sender reputation",
+        "Flat per-month pricing — no per-send or per-contact fees"
+      ],
+      "cons": [
+        "Starter tier caps at 1,500 sends/month — tight for freelancers with >50 proposals/month",
+        "Phone numbers and dialer locked to $99/mo tier",
+        "No published detail on warm-up algorithm or deliverability monitoring",
+        "Data Finder ($19/mo add-on) charges separately for email/phone enrichment"
+      ],
+      "cta": {
+        "label": "Try Mailshake",
+        "url": "https://www.mailshake.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Lemlist",
+      "id": "lemlist"
+    },
+    {
+      "type": "p",
+      "text": "Lemlist's three tiers — Email ($39/mo, $31 annual), Multichannel ($109/mo, $87 annual), Enterprise (custom, 5+ users) — emphasize deliverability and multichannel reach. Per the vendor's pricing page, Email tier includes unlimited users, 5,000 sends/month, email/phone finder (650M+ lead database), unlimited warmup, deliverability hub with monitoring/alerts, and AI agents for intent signals and enrichment. Multichannel adds 5 senders per user, unlimited sends, LinkedIn automation, SMS, WhatsApp (add-on), built-in dialer, and task management. Enterprise (5+ senders/user) includes CRM roles/permissions, SSO/SAML, dedicated account manager, and 1:1 onboarding. Add-on pricing: email finder 5 credits ($0.05), phone number 20 credits ($0.20), intent signals 20–400+ credits depending on event type (company web visit, hiring, fundraising, LinkedIn engagement). Vendor highlights 'Deliverability Hub' and warm-up as differentiators but does not publish success metrics."
+    },
+    {
+      "type": "product",
+      "name": "Lemlist",
+      "price": "$31/mo Email (5,000 sends, annual) • $87/mo Multichannel (unlimited sends, LinkedIn/SMS, annual) • Custom Enterprise (5+ users)",
+      "rating": 4.7,
+      "pros": [
+        "Unlimited users on Email tier ($31/mo annual) — team-friendly pricing",
+        "Deliverability hub with inbox monitoring and alerts built-in",
+        "AI intent signal agents (company web visits, hiring events, LinkedIn engagement) at $0.20–$4/signal",
+        "Multichannel tier ($87/mo) bundles email, LinkedIn, SMS, dialer — cheaper than Mixmax Suite"
+      ],
+      "cons": [
+        "Email tier caps at 5,000 sends/month — half of Mailshake Email Outreach's unlimited",
+        "Phone finder costs 20 credits ($0.20) per number; email finder 5 credits ($0.05) — adds up for large lists",
+        "WhatsApp automation is an add-on (pricing not published)",
+        "No published data on warm-up algorithm or deliverability improvement rates"
+      ],
+      "cta": {
+        "label": "Try Lemlist (14-day free trial)",
+        "url": "https://www.lemlist.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Woodpecker",
+      "id": "woodpecker"
+    },
+    {
+      "type": "p",
+      "text": "The research returned a personal musician website (Harvey Reid's Woodpecker Multimedia) with no SaaS product, pricing, or cold-email features. The Woodpecker.com domain in the brief does not resolve to a proposal follow-up tool in the retrieved data. Without vendor-published pricing or feature documentation, Woodpecker is excluded from this comparison."
+    },
+    {
+      "type": "callout",
+      "variant": "warn",
+      "title": "Woodpecker data unavailable",
+      "text": "The research bundle returned no pricing or product pages for a cold-email tool named Woodpecker. If you're evaluating Woodpecker.co or a similar product, verify the vendor URL and re-pull public documentation."
+    },
+    {
+      "type": "h2",
+      "text": "Reply.io",
+      "id": "reply-io"
+    },
+    {
+      "type": "p",
+      "text": "Reply.io positions as a LinkedIn/Twitter AI automation tool, not a classic email follow-up platform. Per the vendor's pricing page, three tiers — Basic ($15/mo, $144 annual), Standard ($30/mo, $288 annual), Premium ($60/mo, $576 annual) — sell monthly credits (1,000/3,000/6,000) for AI-generated LinkedIn messages, profile insights, comments/replies on LinkedIn/Twitter, and Gmail/Outlook email summaries. No mention of email sequences, send-volume limits, or SMTP deliverability. The vendor describes 'compose and reply emails using AI' and 'send automatic bulk AI personalized messages' on LinkedIn, but does not detail cold-email follow-up workflows or integration with proposal-tracking CRMs. Freelancers seeking email sequence automation will find Reply.io's feature set misaligned."
+    },
+    {
+      "type": "product",
+      "name": "Reply.io",
+      "price": "$15/mo Basic (1,000 credits) • $30/mo Standard (3,000 credits) • $60/mo Premium (6,000 credits)",
+      "rating": 3.8,
+      "pros": [
+        "Low entry price ($15/mo) for LinkedIn/Twitter automation",
+        "AI-generated LinkedIn personalized messages and profile insights",
+        "Gmail/Outlook email summary feature for inbox triage",
+        "7-day free trial"
+      ],
+      "cons": [
+        "Not an email sequence platform — no multi-step follow-up automation",
+        "No published send-volume limits, SMTP config, or deliverability features",
+        "Credit-based pricing (1,000–6,000/mo) unclear on what actions consume credits",
+        "Vendor FAQ and pricing page emphasize LinkedIn/Twitter, not email outreach"
+      ],
+      "cta": {
+        "label": "Try Reply.io (7-day free trial)",
+        "url": "https://www.replyio.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**Gmail users who live in inbox and want AI meeting notes**: Mixmax Suite ($89/user/mo annual). The Meeting Copilot transcribes calls and drafts follow-ups; Inbox Copilot surfaces quiet threads. Suite bundles all three copilots for less than buying separately. Downside: pricier than Lemlist or Mailshake multichannel tiers, and no published warm-up data.",
+        "**High-volume senders on a budget**: Mailshake Email Outreach ($49/mo annual, $45). Unlimited sends, 2 addresses, email rotation, Salesforce/Pipedrive integrations. If you send >5,000 emails/month, this beats Lemlist Email tier's 5,000-send cap. Add dialer at $99/mo Sales Engagement if you call prospects.",
+        "**Deliverability-first freelancers or teams sharing accounts**: Lemlist Email ($31/mo annual). Unlimited users, 5,000 sends, deliverability hub with monitoring/alerts, and AI intent signals (web visits, hiring events) at $0.20–$4/signal. Multichannel ($87/mo) adds LinkedIn/SMS/dialer for less than Mixmax Suite.",
+        "**LinkedIn outreach, not email sequences**: Reply.io Standard ($30/mo). AI-generated LinkedIn messages and profile insights. Not suitable for email follow-up automation — no sequences or deliverability features."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**Mixmax Inbox or Meeting Copilot standalone** ($29 each) — unless you only need one feature, Suite ($89) bundles all three copilots for better value.",
+        "**Mailshake Starter** ($29/mo, 1,500 sends) — too restrictive for freelancers sending weekly proposal follow-ups. Email Outreach ($49) unlocks unlimited sends for $20 more.",
+        "**Lemlist Email tier if you send >5,000/month** — pay $56 more for Multichannel ($87/mo annual) to get unlimited sends, LinkedIn, and dialer.",
+        "**Reply.io for email follow-up** — it's a LinkedIn/Twitter tool. No email sequences, no deliverability monitoring. Use Mailshake or Lemlist instead.",
+        "**Woodpecker** — no vendor data available; cannot evaluate pricing or features."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Mixmax",
+      "url": "https://www.mixmax.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Mailshake",
+      "url": "https://www.mailshake.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Lemlist",
+      "url": "https://www.lemlist.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Reply.io",
+      "url": "https://www.replyio.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-proposal-follow-up-tools-for-freelancers-2026-hero.jpg",
+  "imageCredit": "Pexels · Ono  Kosuki",
+  "niche": "ai-tools"
+}

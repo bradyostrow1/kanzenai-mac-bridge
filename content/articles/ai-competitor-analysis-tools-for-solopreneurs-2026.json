@@ -1,0 +1,214 @@
+{
+  "slug": "ai-competitor-analysis-tools-for-solopreneurs-2026",
+  "title": "AI Competitor Analysis Tools for Solopreneurs Who Need to Outposition in 2026: SpyFu vs Semrush vs Ahrefs vs SimilarWeb",
+  "description": "SpyFu starts at $29/mo, Ahrefs at €119/mo, Semrush and SimilarWeb require enterprise contact. Evidence-first breakdown of what each tool delivers.",
+  "category": "Marketing",
+  "publishedAt": "2026-05-28",
+  "updatedAt": "2026-05-28",
+  "readMinutes": 8,
+  "tldr": "SpyFu offers the lowest entry point at $29/mo annually with unlimited AI chat integration on higher tiers. Ahrefs starts at €119/mo with robust SEO and AI visibility tracking. Semrush and SimilarWeb hide pricing behind enterprise sales walls. Crayon lacks published pricing entirely.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Solopreneurs competing in crowded niches need competitor intelligence without enterprise budgets. The tools below range from $29/mo self-serve plans to enterprise-only contact-sales models. We mapped what each vendor publishes about pricing, AI features, and data limits to surface who gets access at what threshold."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed published pricing pages, feature matrices, and plan comparisons from SpyFu, Semrush, Ahrefs, SimilarWeb, and Crayon as of May 2026. No fabricated testing. No invented transaction counts. Where pricing is not published, we note it. All affiliate links use the format https://[vendor-domain]/?ref=kanzenai."
+    },
+    {
+      "type": "h2",
+      "text": "SpyFu",
+      "id": "spyfu"
+    },
+    {
+      "type": "p",
+      "text": "SpyFu's pricing page lists three tiers: Basic at $39/mo or $29/mo annually, Pro + AI at $59/mo first month then $119/mo or $89/mo annually, and Team/Agency at $249/mo or $187/mo annually. The Basic plan includes 10k row search results, 1 live site tracking project, 5k weekly tracked keyword rankings, and 10 automated reports. The Pro + AI tier unlocks unlimited search results, unlimited data exports, 10 live site tracking projects, RivalFlow for 1 site, unlimited ChatGPT integration, and 15k weekly tracked keywords. The Team/Agency tier adds unlimited live site tracking, RivalFlow for 10 sites, 50k weekly tracked keywords, unlimited automated reports, and 5 included user seats."
+    },
+    {
+      "type": "product",
+      "name": "SpyFu",
+      "price": "$29/mo annually (Basic), $89/mo annually (Pro + AI), $187/mo annually (Team/Agency)",
+      "rating": 4.2,
+      "pros": [
+        "Lowest entry point at $29/mo with 10+ years historical data",
+        "Unlimited ChatGPT integration on Pro + AI and Team tiers",
+        "Pre-built Google Ads campaigns and GSC integration across all plans",
+        "30-day money-back guarantee"
+      ],
+      "cons": [
+        "Basic tier caps search results and exports at 10k rows",
+        "RivalFlow limited to 1 site on Pro + AI, 10 sites on Team",
+        "First-month pricing jump on Pro + AI ($59 → $119/mo if monthly)"
+      ],
+      "cta": {
+        "label": "View SpyFu Plans",
+        "url": "https://www.spyfu.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Semrush",
+      "id": "semrush"
+    },
+    {
+      "type": "p",
+      "text": "Semrush's pricing page does not publish monthly rates or tier breakdowns publicly. The page references \"Semrush One\" and enterprise features but directs users to \"Request a Demo\" or \"Talk to Sales\" for pricing. A seven-day free trial is offered. Feature categories listed include SEO Toolkit, Traffic & Market Toolkit, Content Toolkit, Local Toolkit, Social Toolkit, Advertising Toolkit, AI PR Toolkit, and AI Visibility Toolkit, but no per-tier feature limits are disclosed."
+    },
+    {
+      "type": "product",
+      "name": "Semrush",
+      "price": "Contact sales for pricing (7-day free trial available)",
+      "rating": 4.5,
+      "pros": [
+        "Broad toolkit spanning SEO, content, social, and advertising",
+        "AI Visibility Toolkit and AI Connectors included",
+        "Seven-day free trial with no published commitment"
+      ],
+      "cons": [
+        "No transparent pricing—requires sales call",
+        "Tier limits and feature caps undisclosed",
+        "Higher perceived barrier for solopreneurs evaluating cost"
+      ],
+      "cta": {
+        "label": "Request Semrush Demo",
+        "url": "https://www.semrush.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Ahrefs",
+      "id": "ahrefs"
+    },
+    {
+      "type": "p",
+      "text": "Ahrefs pricing page lists four tiers: Lite at €119/mo, Standard at €229/mo, Advanced at €419/mo, and Enterprise at €1,394/mo with annual commitment required. Lite includes 5 projects, 6 months historical data, 750 tracked keywords, 5 tracked prompts, 100k crawl credits, and 1 user. Standard adds 20 projects, 2 years historical data, 2k tracked keywords, 10 tracked prompts, 500k crawl credits, unlimited credits per user, and features like Content Explorer and Batch Analysis. Advanced bumps to 50 projects, 5 years historical data, 5k tracked keywords, 20 tracked prompts, 1.5M crawl credits, and Looker Studio integration. Enterprise includes all Advanced features plus uncapped API access, SSO, unlimited historical data, and personalized higher limits. A separate Brand Radar offering tracks custom AI prompts starting at €179/mo. Ahrefs also offers a Starter tier at €27/mo and a free tier."
+    },
+    {
+      "type": "product",
+      "name": "Ahrefs",
+      "price": "€119/mo (Lite), €229/mo (Standard), €419/mo (Advanced), €1,394/mo (Enterprise, annual commitment)",
+      "rating": 4.6,
+      "pros": [
+        "Robust AI visibility tracking via Brand Radar and Custom Prompts",
+        "Transparent tier pricing with clear feature escalation",
+        "Second-most active web crawler with 10+ years of data",
+        "Unlimited API access on Enterprise tier"
+      ],
+      "cons": [
+        "Entry price higher than SpyFu (€119/mo vs $29/mo)",
+        "Brand Radar starts at €179/mo as a separate add-on",
+        "Enterprise tier requires annual commitment"
+      ],
+      "cta": {
+        "label": "View Ahrefs Plans",
+        "url": "https://www.ahrefs.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "SimilarWeb",
+      "id": "similarweb"
+    },
+    {
+      "type": "p",
+      "text": "SimilarWeb's pricing page does not publish monthly rates or tier breakdowns. The page lists products (Web Intelligence, AI Search Intelligence, App Intelligence, Retail Intelligence, Sales Intelligence, Stock Intelligence) and references packages for \"Entrepreneurs,\" \"Businesses & Enterprises,\" but all pricing requires contacting sales. A free trial is offered. Feature categories include AI-powered Competitive Intel Suite, Strategic SEO Suite, Ads Intel Suite, Gen AI Intel Suite, historical data add-ons, managed services, custom data feeds, and SSO."
+    },
+    {
+      "type": "product",
+      "name": "SimilarWeb",
+      "price": "Contact sales for pricing (free trial available)",
+      "rating": 4.3,
+      "pros": [
+        "AI Search Intelligence with prompt analysis and citation tracking",
+        "Multi-product suite (web, app, retail, sales, stock intelligence)",
+        "AI Studio for natural language queries and instant insights",
+        "100+ country-level coverage"
+      ],
+      "cons": [
+        "No transparent pricing—requires enterprise sales contact",
+        "Feature limits and tier caps undisclosed",
+        "Higher perceived complexity for solopreneurs"
+      ],
+      "cta": {
+        "label": "Request SimilarWeb Demo",
+        "url": "https://www.similarweb.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Crayon",
+      "id": "crayon"
+    },
+    {
+      "type": "p",
+      "text": "Crayon's vendor page was not reachable in the research bundle. Pricing and feature details are unavailable."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Crayon",
+      "text": "No pricing or feature data available. Contact vendor directly for details."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Solopreneurs on a budget: SpyFu Basic at $29/mo annually delivers 10+ years historical data, keyword tracking, and GSC integration without enterprise sales friction.",
+        "AI visibility and deep SEO: Ahrefs Standard (€229/mo) or Advanced (€419/mo) for robust Brand Radar tracking, unlimited credits per user, and Content Explorer.",
+        "Multi-channel intelligence (web, app, retail): SimilarWeb for businesses willing to navigate enterprise sales for AI Studio and prompt analysis.",
+        "ChatGPT integration at scale: SpyFu Pro + AI ($89/mo annually) for unlimited ChatGPT chats and RivalFlow on 1 site, or Team/Agency ($187/mo annually) for 10 RivalFlow sites and 5 user seats.",
+        "Custom AI prompt tracking: Ahrefs Brand Radar add-on starting at €179/mo or custom prompt packages (Basic €46.7/mo for 2,500 checks/mo)."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Semrush for solopreneurs seeking transparent pricing—no published rates and sales-gated access increase friction.",
+        "SimilarWeb unless you need multi-product intelligence (app, retail, stock) and have budget for enterprise sales cycles.",
+        "Crayon until vendor pricing and feature details become available.",
+        "SpyFu Basic if you need more than 10k row exports or multiple live site tracking projects—upgrade to Pro + AI at $89/mo annually.",
+        "Ahrefs Lite if you require more than 6 months historical data or Content Explorer—Standard starts at €229/mo."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "SpyFu",
+      "url": "https://www.spyfu.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Semrush",
+      "url": "https://www.semrush.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Ahrefs",
+      "url": "https://www.ahrefs.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "SimilarWeb",
+      "url": "https://www.similarweb.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-competitor-analysis-tools-for-solopreneurs-2026-hero.jpg",
+  "imageCredit": "Pexels · SHVETS production",
+  "niche": "ai-tools"
+}

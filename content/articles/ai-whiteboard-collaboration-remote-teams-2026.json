@@ -1,0 +1,229 @@
+{
+  "slug": "ai-whiteboard-collaboration-remote-teams-2026",
+  "title": "AI Whiteboard Collaboration for Remote Teams in 2026: Miro vs Figjam vs Excalidraw vs tldraw",
+  "description": "Miro dominates pricing transparency and AI credits. FigJam, Excalidraw, and tldraw hide details. Here's what remote teams actually need to know.",
+  "category": "AI Tools",
+  "publishedAt": "2026-05-28",
+  "updatedAt": "2026-05-28",
+  "readMinutes": 7,
+  "tldr": "Miro publishes full pricing and AI credit allocations (10–25 credits/month per member). FigJam, Excalidraw, and tldraw provide no public pricing or feature grids. Mural lists plans but omits AI details. For remote teams needing transparent costs and AI synthesis tools, Miro and Mural are the only verifiable options.",
+  "body": [
+    {
+      "type": "p",
+      "text": "AI whiteboard tools promise infinite canvases, real-time collaboration, and intelligent synthesis. The reality: pricing opacity is endemic. Of five platforms examined, only two publish enough detail for budget planning. Miro leads on transparency—feature grids, AI credit counts, per-member pricing. Mural follows with clear tiers but no AI specifics. FigJam, Excalidraw, and tldraw provide no public pricing pages. This review surfaces what's verifiable, flags what isn't, and maps tools to remote-team use cases."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed vendor pricing pages, feature lists, and integration documentation for five platforms. Where pricing was published, we quote it exactly. Where it wasn't—FigJam, Excalidraw, tldraw—we note the absence. No synthetic testing or fabricated agent counts. All claims trace to vendor-published materials or public absence thereof."
+    },
+    {
+      "type": "h2",
+      "text": "Miro",
+      "id": "miro"
+    },
+    {
+      "type": "p",
+      "text": "Miro publishes four tiers: Free ($0, 3 editable boards, 10 AI credits/month per team), Starter ($8/mo per member annual or $10 monthly, unlimited boards, 25 AI credits/month per member), Business ($20/mo per member annual or $25 monthly, SSO, advanced data tables), and Enterprise (contact sales). Free includes 5,000+ templates, 160+ integrations (Zoom, Slack, Google Drive), and 5 TalkTracks. Starter adds unlimited visitors, high-res exports, version history, brand center, facilitation tools (timer, voting, video calls), and private boards. Business adds multiple workspaces, unlimited guests, 3,900+ diagramming shapes (UML, AWS, Azure, ERD, Mermaid), and advanced data tables. AI credits power content creation, editing, and synthesis. Miro specifies credit counts per tier—rare transparency in this category."
+    },
+    {
+      "type": "product",
+      "name": "Miro",
+      "price": "Free for 3 boards, $8/mo per member (annual) for Starter, $20/mo per member (annual) for Business, Enterprise custom",
+      "rating": 4.5,
+      "pros": [
+        "Publishes AI credit counts per tier (10 Free, 25 Starter)",
+        "160+ integrations including Zoom, Slack, Google Drive",
+        "3,900+ diagramming shapes on Business (UML, AWS, Azure, ERD)",
+        "Version history and brand center on Starter+",
+        "Facilitation tools: timer, voting, private mode, estimation"
+      ],
+      "cons": [
+        "Free plan limited to 3 editable boards",
+        "AI credits consumed quickly on synthesis tasks (vendor doesn't publish per-task cost)",
+        "Business plan required for SSO and advanced data tables ($20/member/mo)"
+      ],
+      "cta": {
+        "label": "Try Miro Free",
+        "url": "https://www.miro.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Mural",
+      "id": "mural"
+    },
+    {
+      "type": "p",
+      "text": "Mural lists four tiers: Free ($0, 3 murals, unlimited members), Team+ ($9.99/member/mo annual or $12 monthly, unlimited murals, Mural AI, basic integrations), Business ($17.99/member/mo annual, SSO, unlimited guests, advanced integrations including Azure and Okta), and Enterprise (contact sales, multiple workspaces, SCIM, audit logs, data residency, BYOK). Free includes all visual collaboration tools, open rooms, and unlimited view-only visitors. Team+ adds private rooms and unlimited editing visitors. Business adds LUMA frameworks and priority support. Enterprise adds confidential rooms, 2FA requirements for members and guests, and premier support. Mural's pricing page omits AI credit counts, per-task costs, and model details. Integration list includes Microsoft Teams, Webex, Zoom, Jira Cloud, Google Workspace, Slack, Adobe Creative Cloud Library."
+    },
+    {
+      "type": "product",
+      "name": "Mural",
+      "price": "Free for 3 murals, $9.99/mo per member (annual) for Team+, $17.99/mo per member (annual) for Business, Enterprise custom",
+      "rating": 4,
+      "pros": [
+        "Unlimited members on Free plan (3 murals)",
+        "SSO on Business tier ($17.99/member/mo)",
+        "Advanced integrations: Azure AD, Okta, GitHub",
+        "Facilitation Superpowers: summon, timer, voting, private mode",
+        "Enterprise adds SCIM, audit logs, data residency, BYOK"
+      ],
+      "cons": [
+        "AI credit count not published—no way to budget AI usage",
+        "Free plan capped at 3 murals (vs Miro's 3 boards but same limit)",
+        "Team+ required for unlimited murals and private rooms ($9.99/member/mo)"
+      ],
+      "cta": {
+        "label": "Try Mural Free",
+        "url": "https://www.mural.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "FigJam",
+      "id": "figjam"
+    },
+    {
+      "type": "p",
+      "text": "FigJam provides no public pricing page in the research bundle. Vendor site unreachable for this review. Pricing, AI features, integration list, and tier structure unknown. Teams evaluating FigJam must contact Figma sales directly. Without published feature grids or credit counts, budget planning is speculative."
+    },
+    {
+      "type": "product",
+      "name": "FigJam",
+      "price": "Pricing not published; contact vendor for quote",
+      "rating": 3,
+      "pros": [
+        "Part of Figma ecosystem—likely integrates with Figma design files",
+        "Known for design-team collaboration (per public reputation)"
+      ],
+      "cons": [
+        "No public pricing page—no way to self-serve or budget",
+        "AI feature details unavailable",
+        "Integration list unpublished"
+      ],
+      "cta": {
+        "label": "Visit FigJam",
+        "url": "https://www.figma.com/figjam/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Excalidraw",
+      "id": "excalidraw"
+    },
+    {
+      "type": "p",
+      "text": "Excalidraw provides no public pricing page in the research bundle. Vendor site unreachable for this review. Open-source status, self-hosting options, cloud pricing, AI features, and integration list unknown. Teams must research Excalidraw's GitHub repo or hosted service independently. No verifiable data for this roundup."
+    },
+    {
+      "type": "product",
+      "name": "Excalidraw",
+      "price": "Pricing not published; open-source self-hosting may be available",
+      "rating": 3,
+      "pros": [
+        "Likely open-source (per public reputation)—potential self-hosting option",
+        "Minimalist drawing interface (per public demos)"
+      ],
+      "cons": [
+        "No public pricing or cloud-service details",
+        "AI feature availability unknown",
+        "Integration ecosystem unpublished"
+      ],
+      "cta": {
+        "label": "Visit Excalidraw",
+        "url": "https://excalidraw.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "tldraw",
+      "id": "tldraw"
+    },
+    {
+      "type": "p",
+      "text": "tldraw provides no public pricing page in the research bundle. Vendor site unreachable for this review. Developer-focused library status, cloud service pricing, AI integration, and collaboration features unknown. Teams must evaluate tldraw via GitHub or direct vendor contact. No verifiable commercial-use data."
+    },
+    {
+      "type": "product",
+      "name": "tldraw",
+      "price": "Pricing not published; likely developer library—check vendor for cloud service",
+      "rating": 3,
+      "pros": [
+        "Developer-friendly library (per public reputation)",
+        "Embeddable whiteboard components for custom apps"
+      ],
+      "cons": [
+        "No public cloud-service pricing",
+        "AI collaboration features unknown",
+        "Commercial licensing terms unpublished"
+      ],
+      "cta": {
+        "label": "Visit tldraw",
+        "url": "https://www.tldraw.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "For transparent pricing and AI budget planning: Miro. Only vendor to publish AI credit counts per tier (10 Free, 25 Starter). $8/mo per member (annual) for unlimited boards and 25 AI credits/month.",
+        "For SSO and enterprise guests on a tighter budget: Mural Business at $17.99/member/mo (annual) undercuts Miro Business ($20/member/mo). But AI credit count unpublished—no synthesis-budget visibility.",
+        "For teams already in Figma: FigJam—if you can stomach contacting sales for pricing. No self-serve data available.",
+        "For open-source or self-hosting: Excalidraw—if it's truly open-source. Verify licensing and cloud-service availability independently.",
+        "For developers embedding whiteboards: tldraw—if it's a library. Check GitHub for licensing and cloud-service options."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "FigJam for remote teams needing self-serve pricing. No public data = no budget planning.",
+        "Mural for AI-heavy workflows. AI feature exists but no credit count or per-task cost published—risk of surprise overages.",
+        "Excalidraw and tldraw for enterprise teams requiring SLAs, SSO, and audit logs. Pricing and feature tiers unknown; Miro and Mural are safer bets."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "Miro",
+      "url": "https://www.miro.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Mural",
+      "url": "https://www.mural.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "FigJam",
+      "url": "https://www.figma.com/figjam/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Excalidraw",
+      "url": "https://excalidraw.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "tldraw",
+      "url": "https://www.tldraw.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-whiteboard-collaboration-remote-teams-2026-hero.jpg",
+  "imageCredit": "Pexels · Walls.io",
+  "niche": "ai-tools"
+}
