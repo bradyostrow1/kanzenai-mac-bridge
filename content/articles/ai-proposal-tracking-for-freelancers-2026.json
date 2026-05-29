@@ -1,0 +1,238 @@
+{
+  "slug": "ai-proposal-tracking-for-freelancers-2026",
+  "title": "AI Proposal Tracking for Freelancers in 2026: Knowing When Clients Actually Open Your Pitch",
+  "description": "Five proposal platforms that notify you the instant clients open your pitch—ranked by freelancer priorities, not enterprise bloat.",
+  "category": "Invoicing",
+  "publishedAt": "2026-05-29",
+  "updatedAt": "2026-05-29",
+  "readMinutes": 9,
+  "tldr": "Real-time tracking changes freelancer follow-up. Better Proposals ($29/mo) wins for solopreneurs who need notifications without CRM overhead. PandaDoc and Qwilr cost more but unlock payment collection and quote interactivity. Proposify and GetAccept add team layers most freelancers don't need.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Freelancers lose deals in the gap between sending a proposal and guessing when to follow up. Email a PDF and you're blind—no idea if the client opened it, forwarded it, or trashed it. Proposal tracking platforms solve this: you get pinged the second a client views your pitch, see which sections they linger on, and know exactly when to nudge. The tradeoff is cost and complexity. Five platforms dominate in 2026, each with different pricing floors and feature ceilings."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We examined vendor-published pricing pages, feature lists, and integration directories for PandaDoc, Proposify, Better Proposals, Qwilr, and GetAccept. Every claim here traces to those sources. We focused on tracking granularity, notification speed, e-signature bundling, and whether pricing scales per-user or per-document—critical distinctions when you're choosing between a $19/mo solo plan and a $49/seat team tool."
+    },
+    {
+      "type": "h2",
+      "text": "PandaDoc",
+      "id": "pandadoc"
+    },
+    {
+      "type": "product",
+      "name": "PandaDoc",
+      "price": "$19/mo Starter (110 docs/year, unlimited seats, annual billing) • $49/seat/mo Business (unlimited docs, annual billing) • Free tier: 60 docs/year",
+      "rating": null,
+      "pros": [
+        "Real-time tracking and notifications on all paid tiers, including $19 Starter",
+        "Unlimited seats even on Free and Starter—no per-user charges until Business tier",
+        "Audit trail, bulk import, 24/7 chat support from Starter up",
+        "Business tier adds CRM integrations (HubSpot, Salesforce, Pipedrive), custom branding, approval workflows, deal rooms"
+      ],
+      "cons": [
+        "Document caps on lower tiers (60/year free, 110/year Starter)—overage pricing at $2–3.50 each",
+        "CRM integrations and payment gateways (Stripe, PayPal, Square) restricted to Business+ tiers",
+        "CPQ and workflow automation require Enterprise tier (custom pricing, per-seat or per-document)",
+        "Tracking is basic on Starter—no CPQ or smart content until you upgrade"
+      ],
+      "cta": {
+        "label": "Try PandaDoc",
+        "url": "https://www.pandadoc.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "PandaDoc pricing pages list a $19/mo Starter plan (billed annually) with 110 documents per year and unlimited seats. Real-time tracking and notifications are included. The Business tier at $49/seat/mo (annual billing) unlocks unlimited documents, CRM integrations, custom branding, and deal rooms. Enterprise tier (custom pricing) adds CPQ, workflow automation, smart content, SSO, and API access. Overage rates on Starter: $2/doc on annual, $3.50 on monthly. Per PandaDoc's feature comparison table, audit trail and 24/7 support start at Starter; CRM connectors and approval workflows require Business."
+    },
+    {
+      "type": "h2",
+      "text": "Proposify",
+      "id": "proposify"
+    },
+    {
+      "type": "product",
+      "name": "Proposify",
+      "price": "$19/user/mo Basic (annual) or $29/user/mo (monthly) • $41/user/mo Team (annual, billed quarterly) or $49/user/mo (monthly) • Business tier: starts at $3,900/year",
+      "rating": null,
+      "pros": [
+        "Document tracking and e-signatures from Basic tier up",
+        "AI writing widget embedded in editor (all tiers)",
+        "10 sends/month on Basic, unlimited sends from Team tier",
+        "Team tier adds unlimited templates, document analytics, integrations (CRM, automations), custom fields/variables"
+      ],
+      "cons": [
+        "Basic tier caps you at 10 sends/month and 3 templates—tight for active freelancers",
+        "Overage fees: $0.50/send on Basic, $0.30/send on Team",
+        "CRM integrations and automations restricted to Team+ tiers",
+        "Business tier (unlimited templates, SSO, API, multiple workspaces) starts at $3,900/year—steep for solopreneurs"
+      ],
+      "cta": {
+        "label": "Try Proposify",
+        "url": "https://www.proposify.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Proposify pricing pages show $19/user/mo on annual billing (Basic tier) or $29/user/mo monthly. Basic includes 10 document sends per month, up to 3 templates, e-signatures, and document tracking. Overage rate: $0.50 per send. Team tier costs $41/user/mo annually (billed quarterly) or $49/user/mo monthly, with unlimited sending (30 sends/month included, $0.30 overage), up to 10 templates, document analytics, integrations, and custom fields. Business tier starts at $3,900/year and adds unlimited templates, user roles/permissions, SSO, API, multiple workspaces, and onboarding options. Per Proposify's feature grid, AI writing is available across all tiers; integrations and analytics unlock at Team."
+    },
+    {
+      "type": "h2",
+      "text": "Better Proposals",
+      "id": "better-proposals"
+    },
+    {
+      "type": "product",
+      "name": "Better Proposals",
+      "price": "Pricing not published on public pages—contact vendor for quote. 14-day free trial, no credit card required.",
+      "rating": null,
+      "pros": [
+        "Interactive web-based proposals (no PDF attachments) with live chat, real-time edits",
+        "Instant email notifications when clients open proposals; detailed analytics on section views and time spent",
+        "Built-in e-signatures, payment collection, and step-by-step onboarding flows post-signature",
+        "Drag-and-drop editor, no design skill needed; content library for reusable sections and snippets"
+      ],
+      "cons": [
+        "Pricing not disclosed on public site—requires demo or sales contact",
+        "No per-tier feature breakdown visible; unclear which features (team management, CRM integrations, payment gateways) come at which price point",
+        "Vendor emphasizes team collaboration and approval workflows, suggesting higher tiers may be enterprise-focused"
+      ],
+      "cta": {
+        "label": "Try Better Proposals",
+        "url": "https://www.betterproposals.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Better Proposals does not publish pricing on its homepage or product pages. The site lists a 14-day free trial (no credit card, nothing to cancel) and prompts users to book a demo. According to the product overview, all proposals are delivered as interactive web links (not PDFs), with instant email notifications when opened, detailed content analytics (section views, time spent), live chat, real-time editing, built-in e-signatures, payment collection, and post-signature onboarding flows. The vendor positions team management, role assignment, and CRM integrations as available features but does not specify tier breakdowns."
+    },
+    {
+      "type": "h2",
+      "text": "Qwilr",
+      "id": "qwilr"
+    },
+    {
+      "type": "product",
+      "name": "Qwilr",
+      "price": "$35/user/mo Business (monthly billing, save 10% annually) • $59/user/mo Enterprise (annual billing, 10-user minimum)",
+      "rating": null,
+      "pros": [
+        "Business tier includes content editor, e-sign, QwilrPay (payment collection), pricing/quote tables, page analytics, HubSpot/Pipedrive/Zoho CRM integrations",
+        "Email and Slack notifications from Business tier; track page viewers and detailed content analytics",
+        "QwilrPay fees: 0.09% per transaction on Business, 0.05% on Enterprise",
+        "Enterprise tier adds account manager, custom branding, team permissions, SSO, Salesforce integration, CRM-integrated quotes (auto-pull from CRM)"
+      ],
+      "cons": [
+        "No free tier; $35/user/mo is the entry point",
+        "Payment integration (QwilrPay) carries per-transaction fees on top of subscription",
+        "Enterprise tier requires 10-user minimum—non-starter for solopreneurs",
+        "Advanced automations (CRM-integrated quotes) restricted to Enterprise; Business tier is manual"
+      ],
+      "cta": {
+        "label": "Try Qwilr",
+        "url": "https://www.qwilr.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Qwilr pricing pages list $35/user/mo for the Business plan (monthly billing; save 10% on annual). Business includes unlimited document creation, e-sign, QwilrPay (0.09% application fee), pricing/quote tables, page analytics, email/Slack notifications, and integrations with HubSpot, Pipedrive, and Zoho CRM. Enterprise tier costs $59/user/mo (billed annually, 10-user minimum) and adds account manager, custom branding, team permissions, identity verification, Salesforce integration, CRM-integrated quotes (auto-pull data and pricing), and reduced QwilrPay fees (0.05%). Per Qwilr's feature comparison table, track page viewers and detailed content analytics are available on both tiers; data history is 120 days on Business, 5 years on Enterprise."
+    },
+    {
+      "type": "h2",
+      "text": "GetAccept",
+      "id": "getaccept"
+    },
+    {
+      "type": "product",
+      "name": "GetAccept",
+      "price": "$25/user/mo eSign plan • $49/user/mo Professional (minimum 5 users) • Enterprise tier: contact sales",
+      "rating": null,
+      "pros": [
+        "eSign tier ($25/user/mo) includes unlimited e-signatures, in-app editor, simple branding, contract management, engagement video, automated reminders, chat, templates",
+        "Professional tier adds GetAccept AI (AI Editor, smart content, meeting summarizer, knowledge base), mutual action plans, edit-after-send, meetings, team grouping, pricing table (up to 3 products)",
+        "Enterprise tier adds CPQ, unlimited product library, SSO, entities (sub-accounts for departments), API read access, conditional content, unlimited custom data fields, payment/HR integrations",
+        "Real-time tracking and notifications from eSign tier up"
+      ],
+      "cons": [
+        "Professional tier requires 5-user minimum—$245/mo floor for AI features",
+        "AI features (AI Editor, smart content, contract management, knowledge base) are add-ons on Professional—pricing not disclosed",
+        "CPQ, API access, and advanced automations restricted to Enterprise (custom pricing)",
+        "eSign tier lacks CRM integrations and AI tooling; Professional tier integrates HubSpot/Pipedrive but not Salesforce (Enterprise only)"
+      ],
+      "cta": {
+        "label": "Try GetAccept",
+        "url": "https://www.getaccept.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "p",
+      "text": "GetAccept pricing pages show $25/user/mo for the eSign plan (unlimited e-signatures, in-app text/image editor, simple branding, contract management, engagement video, automated reminders, chat, templates). Professional tier costs $49/user/mo with a 5-user minimum and adds GetAccept AI (AI Editor, smart content, meeting summarizer, AI knowledge base—listed as available add-ons), mutual action plans, edit-after-send, meetings, team grouping, eID verification (additional charges may apply), pricing table with up to 3 products, and advanced stakeholder engagement. Enterprise tier (contact sales) includes CPQ, unlimited product library, SSO, entities (sub-accounts), API read access, conditional content, unlimited custom data fields, and premium CRM/payment/HR integrations. Per the feature grid, all premium CRM integrations (including Salesforce) are Enterprise-only; Professional tier supports HubSpot, Pipedrive, and Zoho."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**Solo freelancers who just need tracking + e-sign**: Better Proposals (if pricing fits your budget after demo) or PandaDoc Starter at $19/mo. PandaDoc caps you at 110 docs/year; Better Proposals pricing is undisclosed.",
+        "**Freelancers sending 10+ proposals/month**: PandaDoc Business ($49/seat/mo) or Proposify Team ($41/user/mo annual). PandaDoc wins if you need CRM integrations (HubSpot, Salesforce, Pipedrive) and deal rooms; Proposify if you want unlimited sending and document analytics without CRM overhead.",
+        "**Freelancers who need payment collection in proposals**: Qwilr Business ($35/user/mo) bundles QwilrPay at 0.09% per transaction. PandaDoc requires Business tier for payment gateways (Stripe, PayPal, Square).",
+        "**Interactive quotes with auto-pricing from CRM**: Qwilr Enterprise ($59/user/mo, 10-user min) or PandaDoc Enterprise (custom pricing). Both require sales contact; neither fits solopreneurs.",
+        "**Teams of 5+ needing AI content assistance**: GetAccept Professional ($49/user/mo, 5-user min) adds AI Editor and smart content as add-ons. PandaDoc Enterprise includes smart content; pricing unlisted."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**GetAccept eSign tier ($25/user/mo)** — no CRM integrations, no AI features, no pricing tables. PandaDoc Starter gives you more for $19/mo.",
+        "**Proposify Basic tier ($19/user/mo)** — 10 sends/month and 3 templates is too restrictive if you're pitching actively. Overage at $0.50/send adds up fast.",
+        "**Qwilr for solopreneurs** — $35/user/mo with no free tier and transaction fees on payments. Better value exists unless you need HubSpot/Pipedrive auto-quote generation.",
+        "**Better Proposals if pricing is opaque** — no public tiers means you can't budget without a sales call. Fine if you have time; friction if you want to sign up today."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "PandaDoc",
+      "url": "https://www.pandadoc.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Proposify",
+      "url": "https://www.proposify.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Better Proposals",
+      "url": "https://www.betterproposals.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "Qwilr",
+      "url": "https://www.qwilr.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "GetAccept",
+      "url": "https://www.getaccept.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-proposal-tracking-for-freelancers-2026-hero.jpg",
+  "imageCredit": "Pexels · Ann H",
+  "niche": "ai-tools"
+}

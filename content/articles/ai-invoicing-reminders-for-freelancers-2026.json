@@ -1,0 +1,140 @@
+{
+  "slug": "ai-invoicing-reminders-for-freelancers-2026",
+  "title": "AI Invoicing Reminders for Freelancers in 2026: Getting Paid Without the Awkward Follow-Up",
+  "description": "FreshBooks, HoneyBook, and Harvest compared: automated payment reminders, pricing, and which tool fits solo invoicing best.",
+  "category": "Invoicing",
+  "publishedAt": "2026-05-29",
+  "updatedAt": "2026-05-29",
+  "readMinutes": 7,
+  "tldr": "FreshBooks starts at $6.90/mo with automated late-payment reminders and scheduled fees. HoneyBook bundles invoicing with CRM for $29–$109/mo. Harvest's pricing and feature set for reminders are not published. Bonsai and Wave lacked accessible vendor documentation.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Chasing unpaid invoices wastes time and strains client relationships. Automated reminders handle follow-ups without manual effort. We compared invoicing platforms with AI-assisted or rule-based reminder features to identify which tools work for freelancers sending 5–50 invoices monthly."
+    },
+    {
+      "type": "h2",
+      "text": "How we approached this",
+      "id": "how-we-approached-this"
+    },
+    {
+      "type": "p",
+      "text": "We reviewed vendor pricing pages, feature lists, and publicly available plan comparisons. FreshBooks and HoneyBook publish detailed plan structures. Harvest's site displayed IoT monitoring equipment rather than invoicing software; pricing for invoicing features is unavailable. Bonsai's vendor page was unreachable. Wave's site describes mobile money services, not invoicing automation."
+    },
+    {
+      "type": "h2",
+      "text": "FreshBooks",
+      "id": "freshbooks"
+    },
+    {
+      "type": "p",
+      "text": "FreshBooks lists automated late-payment reminders and scheduled late fees as core features across all paid plans. The Lite plan ($6.90/mo, billed yearly after 70% discount for four months) supports five clients. Plus ($12.90/mo) raises the cap to 50 clients. Premium ($21/mo) removes client limits and adds customizable email templates. All plans include online card, ACH, Apple Pay, Google Pay, and buy-now-pay-later payment options."
+    },
+    {
+      "type": "product",
+      "name": "FreshBooks",
+      "price": "$6.90–$21/mo (billed yearly; 70% off first four months)",
+      "rating": 4.5,
+      "pros": [
+        "Automated late-payment reminders on all plans",
+        "Scheduled late fees",
+        "Low entry price for up to five clients"
+      ],
+      "cons": [
+        "Client caps on Lite (5) and Plus (50) plans",
+        "Custom email templates only on Premium",
+        "Add-ons ($11/mo per team member, $20/mo Advanced Payments) raise cost"
+      ],
+      "cta": {
+        "label": "Try FreshBooks",
+        "url": "https://www.freshbooks.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "HoneyBook",
+      "id": "honeybook"
+    },
+    {
+      "type": "p",
+      "text": "HoneyBook bundles invoicing with CRM, scheduling, and contracts. The Starter plan ($29/mo billed yearly) includes unlimited clients, invoices, payments, and a client portal. Essentials ($49/mo) adds scheduler, automations (including pipeline triggers), QuickBooks integration, and SMS reminders. Premium ($109/mo) provides unlimited team members and priority support. HoneyBook AI is included on all plans but specifics of AI-driven reminder logic are not detailed on the pricing page."
+    },
+    {
+      "type": "product",
+      "name": "HoneyBook",
+      "price": "$29–$109/mo (billed yearly)",
+      "rating": 4,
+      "pros": [
+        "Unlimited clients and invoices on all plans",
+        "Pipeline automations and SMS reminders on Essentials and above",
+        "Integrated CRM, scheduling, contracts"
+      ],
+      "cons": [
+        "Higher base cost than invoicing-only tools",
+        "Automations require Essentials tier or higher",
+        "AI reminder features not specified in pricing materials"
+      ],
+      "cta": {
+        "label": "Try HoneyBook",
+        "url": "https://www.honeybook.com/?ref=kanzenai"
+      }
+    },
+    {
+      "type": "h2",
+      "text": "Harvest",
+      "id": "harvest"
+    },
+    {
+      "type": "p",
+      "text": "The vendor page at harvest.com describes IoT monitoring equipment for agriculture and industrial applications. No invoicing software, pricing, or payment-reminder features are documented. If Harvest offers invoicing tools under a separate product line or domain, that information was not accessible in the research bundle."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Research gap",
+      "text": "Harvest's invoicing features and pricing are not confirmed. Contact the vendor directly for current product offerings."
+    },
+    {
+      "type": "h2",
+      "text": "Verdict",
+      "id": "verdict"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Low-volume freelancers (under 5 clients/mo): FreshBooks Lite at $6.90/mo provides automated reminders and late fees without client-cap friction.",
+        "Mid-volume freelancers (5–50 clients): FreshBooks Plus ($12.90/mo) or HoneyBook Starter ($29/mo). Pick FreshBooks for invoicing-first workflow; pick HoneyBook if you also need CRM and scheduling in one tool.",
+        "Teams or agencies: HoneyBook Essentials ($49/mo) or Premium ($109/mo) for automations, SMS, and multi-user access.",
+        "Budget-first approach: FreshBooks Lite delivers core reminder automation at the lowest entry price confirmed in this review."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What we'd skip",
+      "id": "what-wed-skip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Bonsai: Vendor page unreachable; no pricing or feature confirmation available.",
+        "Wave: Vendor site focuses on mobile money services (deposits, withdrawals, bill pay) rather than invoicing software for freelancers.",
+        "Harvest: Documentation describes IoT monitoring hardware; invoicing functionality not confirmed."
+      ]
+    }
+  ],
+  "affiliateProducts": [
+    {
+      "name": "FreshBooks",
+      "url": "https://www.freshbooks.com/?ref=kanzenai",
+      "commission": "varies"
+    },
+    {
+      "name": "HoneyBook",
+      "url": "https://www.honeybook.com/?ref=kanzenai",
+      "commission": "varies"
+    }
+  ],
+  "headerImage": "/articles/ai-invoicing-reminders-for-freelancers-2026-hero.jpg",
+  "imageCredit": "Pexels · Christopher Welsch Leveroni",
+  "niche": "ai-tools"
+}
